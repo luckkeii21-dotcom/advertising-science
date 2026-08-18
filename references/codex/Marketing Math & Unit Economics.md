@@ -1,0 +1,812 @@
+﻿---
+title: "Marketing Math & Unit Economics"
+type: codex-topic
+claim_prefix: MM
+created: 2026-08-18
+tags: [advertising-science, codex]
+---
+
+# Marketing Math & Unit Economics
+
+LTGP:CAC, contribution margin, payback windows, forecasting, and the math that decides budgets.
+
+Part of the [[00-Codex|Advertising Science Codex]]. Claims follow the tier system (T1 docs, T2 shown test, T3 practitioner, T4 theory).
+
+## Claims
+
+## LTGP:CAC and the Death Spiral
+
+### MM-001 · Average first-order contribution margin for e-com brands went from +$9 (2013) to -$29 (2022 report); giants died the same way
+Tier: T2 · Status: active
+A 2022 industry report cited: in 2013 the average e-commerce brand made $9 contribution margin on a first-time customer; by 2022 the average brand was losing $29 per new customer. SmileDirectClub IPO'd at $8.9B and was liquidated 4 years later; Casper spent $423M on advertising in 4 years while still losing about $300 per mattress. All collapse back to the LTGP:CAC equation, not "creative problems" or "bad quarters".
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22
+Last touched: 2026-08-18
+
+### MM-002 · LTGP:CAC benchmarks: below 1 losing money, 1-2 rarely profitable, 2-3 the scale zone, above 3 means underspending
+Tier: T3 · Status: contested
+Below 1 you lose on first purchase, only viable with exceptional retention, which 99.9% do not have. At 1-2, $1 in ads returns $1.50 gross profit, leaving too little for opex unless extremely lean or at enormous volume. 2-3 is where budgets get ramped; above 3 you are leaving money on the table and should push spend harder. Benchmarks come from 1,000+ brand audits.
+
+Restated across three further videos with the measurement window made explicit. The default window is 180 days. 30-day and 90-day windows are fine for benchmarking a business against itself, but comparisons across industries need a longer window because CPG and fashion carry different retention profiles. Below 1 is restated as a CAC payback period worse than 6 months, which is a cash-flow statement rather than a profit statement, and he names it as his red line: he would not run or work with a business at that payback without funding. He also warns that sub-1 is usually just weak acquisition efficiency dressed up as an LTV strategy. Why the ratio and not acquisition MER: LTGP:CAC is comparable across businesses and across time, while MER targets depend on gross margin profile and channel mix. Conversion: at $100 first-purchase gross profit, the bottom of the optimal band means a $50 CAC.
+
+Contested on the numbers by Mark Builds Brands, who sets 3:1 as the bare minimum LTV:CAC and pushes high-ticket to 7:1 or 10:1, a band that MM-002 would read as chronic underspend. The likely reconciliation is the numerator: Blue Sense divides lifetime gross PROFIT by CAC, Mark divides lifetime REVENUE by CAC, so a 3:1 LTV:CAC on a 50% gross margin product is only 1.5 LTGP:CAC and sits below the scale zone. Neither side showed comparative data. Operating rule: always state which numerator a ratio uses before acting on it.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The 1 Bottleneck I See in 80% of eCommerce Audits, 2026-05-18; Mark Builds Brands, 8 years of marketing advice in 70 minutes, 2026-03-21
+Last touched: 2026-08-18
+
+### MM-003 · Whether e-commerce must be profitable on the first purchase
+Tier: T3 · Status: contested
+Blue Sense Digital holds that e-commerce specifically must be profitable or at least liquid on first purchase because consumer repeat rates are weak, unlike B2B and agency models that break even at month 4-6; sub-1 front-end economics can only be funded by repeat-revenue subsidy, investor capital, or debt. Nick Theriot holds the opposite for LTV categories: supplement brands normally scale at 0.8-1.5x front-end ROAS with returning-customer revenue carrying profitability, and needing 3-4x front-end signals a margin problem, not an ad problem. Fraser Cottrell leans the same way as Theriot for subscription brands, warning in-platform ROAS understates their true value (see MM-015). The resolution likely depends on real, measured retention: without proven cohort LTV, the Blue Sense rule is the safe one.
+
+A worked case for the Blue Sense side, reported by Andrew Faris. She's Birdie built a software product specifically to manufacture back-end LTV on a low-repeat physical product. The software failed, the brand reverted to a one-time-purchase business, and the whole marketing calculus reset to make-money-on-first-purchase. Faris puts the consequence at roughly twice the MER the business had been running at, later hedged to maybe 50% better by the Q4 point, and at drastically lower spend. That is the cost of reversing into first-order profitability after betting on LTV that never arrived.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22; Nick Theriot, I spend $100k a day on Facebook Ads (here's who will scale & fail in 2027), 2026-08-14; Andrew Faris (with Richie Mashiko), From A 65% Decline To All-Time Revenue & Profit Highs, 2026-04-27
+Last touched: 2026-08-18
+
+### MM-004 · The death spiral is a feedback loop: CAC creeps up, fewer customers on fixed budget, revenue falls, spend raised to hold revenue, CAC rises further
+Tier: T3 · Status: active
+Without repeat-customer revenue holding the top line, a CAC creep (e.g. $50 to $60) forces spend increases that inflate CAC further; brands arrive at audit 4 months in with CAC 2x and LTGP:CAC below 1. He reports this exact cohort pattern in roughly 100 of his 1,000+ audits. Teams misdiagnose it as a traffic, creative, or seasonality problem; the diagnosis always starts from CAC and LTGP tracked monthly, with every structural change (new agency, new platform, new product) timestamped against them.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22
+Last touched: 2026-08-18
+
+### MM-005 · Split the P&L into first-time vs returning customer to unmask losses: a business can "make $100k/mo" while losing $70k/mo on new customers subsidized by repeats
+Tier: T3 · Status: active
+Filter every P&L line by Shopify's order-type tag into a first-time-customer P&L and a returning-customer P&L. Example pattern: first-time contribution slid from +$20k to -$70k/month while returning customers contributed +$300k, so the blended P&L looked healthy and masked the acquisition collapse. Sub-1 LTGP:CAC can only be funded three ways: repeat-revenue subsidy, investor capital, or debt.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22
+Last touched: 2026-08-18
+
+### MM-006 · Measure retention only via cohort analysis tied to that month's CAC, never via Klaviyo-attributed revenue, returning-customer %, or daily repeat-rate snapshots
+Tier: T3 · Status: active
+Read the Shopify cohort table: month-0 base revenue per customer, then day-30/60/90 columns show cohort revenue growth. Pull the 90-day column, convert to gross profit with real COGS (not an assumed %), and divide by that month's CAC for a 90-day LTGP:CAC. Brands that KPI CAC flat while ignoring the LTGP side miss month-to-month first-order GP swings (e.g. $70 in August vs $40 in November from portfolio mix and discounting) that flip the same $50 CAC from profitable to loss-making.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22
+Last touched: 2026-08-18
+
+### MM-007 · Industry structurally sets your LTGP band: fashion ~55% GP lift by day 365, CPG ~110%, furniture ~zero; tactics cannot move you out of the band
+Tier: T3 · Status: active
+About 80% of businesses have no meaningful lifetime gross profit contribution (maybe 20-40% lift by day 365). Furniture is near-zero repeat (purchases tied to moving house every 3-5 years), so those clients are managed purely on first-purchase GP with CAC held flat. Retention benchmarks to KPI against: fashion ~55% and CPG ~110% cumulative GP lift by day 365. Set CAC targets from the industry leaders' realistic band, not from aspiration; a $50 creatine product cannot tactic its way to outsized LTGP.
+
+Fashion gets a second checkpoint at day 90: good fashion brands see about +15% gross profit lift from existing customers by day 90 and about +55% by day 365. Index fashion on the 180-day window ([[Marketing Math & Unit Economics#MM-002|MM-002]]) because GP growth inside the first 180 days varies heavily brand to brand and the window has to be long enough to contain the return event. A brand below the +15%/+55% band has to fix front-end acquisition efficiency, because the retention band will not be tactic-ed into compliance.
+
+Second category example of a structurally acquisition-led business: Fashionphile at roughly $400M revenue sells an average of 1.1 items per person per year. The founder says they actively want to retain buyers and cannot, because a ~$2,000 average selling price caps affordability and the goods last 10-15 years. Purchase interval is a property of the category, so the business runs permanently on new-customer acquisition plus referral rather than lifecycle marketing. Read alongside [[Marketing Math & Unit Economics#MM-030|MM-030]]: no email or SMS execution moves a purchase interval set by the product.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22; Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25; Andrew Faris, Fashionphile's 27 Year Journey To $400M, 2026-05-29
+Last touched: 2026-08-18
+
+### MM-008 · For sub-$300k/mo brands the killer is often opex bloat forcing debt for inventory, a cash-flow death rather than an LTGP:CAC death
+Tier: T3 · Status: active
+From working with roughly 300-400 SMB e-commerce brands: inexperienced capital allocators over-invest in operating expenses, compressing margin, forcing debt to fund future inventory buys, and the business dies of cash constraint even when the unit economics could have worked. The same warning applies at international expansion: duplicated inventory across two markets plus localized creative spend strains working capital, and multi-country expansion 9x's the diagnostic workload.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22; Blue Sense Digital, The US Launch Playbook for Non-US Brands, 2026-08-17
+Last touched: 2026-08-18
+
+### MM-009 · Over-optimizing conversion via dark patterns or overstated angles lowers CAC now but destroys LTGP later through returns, chargebacks, and dead repeat rates
+Tier: T3 · Status: active
+Persuasion tactics and claims the product cannot fulfill (e.g. "firmer skin in 4 weeks" when untrue, or scaling an eyesight angle a supplement cannot deliver) produce a short-term conversion lift that shows up as higher return rates, chargebacks, lower repeat rates, and weaker 365-day LTV. LTV must be tracked per angle because product efficacy differs by the promise being scaled.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-071 · Accidentally spending 20-40% of budget on existing customers builds a $24-30 CAC into the one cohort that should have cost nothing
+Tier: T3 · Status: active
+Returning customers carry zero acquisition cost, higher AOV and higher units per transaction. Spend leaking onto them creates a large CAC on that cohort, because repeat volume is small so a modest absolute spend divides into few orders. It also wastes the one structural advantage DTC has, which is owned first-party data driving free repurchase. Unit economics were SHOWN for a real brand: $51 first-time-customer profit contribution per order, with the returning-customer column materially higher on both AOV and units per transaction. The 20-40% leakage share is ASSERTED ("everyone almost does" it unless the account is stringent about exclusions), so the claim is tiered T3 on that half. Operator action: exclude purchasers from prospecting, then check what share of spend still reaches them before trusting any blended efficiency number. Extends the split-P&L discipline in [[Marketing Math & Unit Economics#MM-005|MM-005]].
+Sources: Blue Sense Digital, How To Structure Your Meta Ads for Profit (Free Live Webinar), 2025-02-19
+Last touched: 2026-08-18
+
+### MM-072 · Returns double effective CAC in fashion: at a 50% return rate a $50 CAC against $100 first-purchase gross profit is really a $100 CAC
+Tier: T3 · Status: active
+The standard calculation (AOV $200 x 50% GP = $100 GP, so target a $50 CAC for a 2:1) silently assumes every acquired customer keeps the product. Half return and never buy again, so the surviving customers carry the full acquisition cost and the ratio falls from 2 to 1. Second correction on the same line: state whether the gross margin percentage is inclusive or exclusive of markdown sales, because fashion brands routinely liquidate unsold stock on a sale page, and stock that is donated or destroyed still has to be charged against average GP. Both corrections push fashion toward a longer measurement window so refunds land inside it, which is the reason for the 180-day default in [[Marketing Math & Unit Economics#MM-002|MM-002]].
+Sources: Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25
+Last touched: 2026-08-18
+
+### MM-073 · November/December cohorts return more and retain worse, so an identical acquisition MER in BFCM is worth materially less than in January
+Tier: T3 · Status: active
+Three causes: discount-driven buyers, gifting, and generous return policies that invite buy-ten-keep-two behaviour. He reports seeing brands in international markets hit 80-100% return rates during discount periods, which means effectively all revenue refunded and front-end efficiency of zero. Consequence: a 4x acquisition MER in January and a 4x in November are not the same result, and the November target must be set above January's by whatever the expected return-rate and LTV delta is. Set that number before the period, by back-propagating from the net profit target through opex to a contribution target, then to the required revenue and efficiency at the volume inventory allows. ASSERTED from fashion client work, no cohort export shown.
+Sources: Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25
+Last touched: 2026-08-18
+
+## Finance Fundamentals: Margin, CAC, and P&L Targets
+
+### MM-064 · Product margin and gross margin routinely differ by 40+ points: a $100 tee at $30 COGS is 70% product margin and 24% gross margin
+Tier: T3 · Status: active
+Cost of delivery has to include product cost, import duties, inbound freight amortised per unit, outbound shipping ($11), pick and pack ($4), transaction fees (3%), flow-through tax ($9), and a refund/discount allowance ($15 at a standard 10% fashion return rate). That is $46 of extra variable cost on the $30 unit, so $76 cost of delivery and 24% gross margin. Named error: transaction fees parked in opex because they feel fixed, when they vary with revenue and belong in cost of delivery. This matters because the margin number a brand hands its agency sets the marketing allocation and the ROAS target. At a genuine 70% you can spend 20-25% of revenue on marketing. At 24% you are driving the product at a loss and nobody in the account knows it. Terminology trap to fix in every conversation: CM1 = product margin, CM2 = gross margin, CM3 = contribution margin, and speakers routinely swap them. Illustrative worked example, ASSERTED, not an exported P&L. Feeds [[Marketing Math & Unit Economics#MM-010|MM-010]].
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-065 · Tag COGS in Shopify instead of assuming a gross margin percentage, because discounting compresses margin non-linearly: 20% off a $100 product at $50 COGS drops GM from 50% to 37.5%
+Tier: T3 · Status: active
+Price falls, unit cost does not, so a 20% discount takes 12.5 points off gross margin, a roughly 25-30% relative collapse. Brands hand their agency an averaged margin percentage from the accountant, and that single number gets baked into profit contribution, LTGP:CAC and every dashboard. It is wrong exactly when it matters most, during Black Friday and promo windows. The fix is mechanical: tag cost of goods on every product in Shopify so real-time gross margin flows into any external dashboard or sheet and captures discount compression as it happens. This is the practical precondition for every finance-grade metric downstream and the concrete implementation behind the assumed-percentage warning in [[Marketing Math & Unit Economics#MM-006|MM-006]].
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The 1 Bottleneck I See in 80% of eCommerce Audits, 2026-05-18
+Last touched: 2026-08-18
+
+### MM-066 · KPI paid media on acquisition MER (new-customer revenue / total ad spend); blended MER is a CFO metric and a bad marketing KPI
+Tier: T2 · Status: active
+Same formula as MER with the numerator cut to new-customer revenue. SHOWN with an onboarded client's January data: platform ROAS 2.14 against an acquisition MER of 1.41, from $79k attributed revenue against $56k first-time-customer net revenue. The failure blended MER produces, reported twice: MER reads 4x in January and 5x in February, so the team spends more in March, while acquisition MER underneath ran 2.0, then 1.8, then 1.6. February's lift came entirely from returning customers, and the extra spend eroded acquisition further. A second worked pair: a 2.0 blended MER that is a 1.4 acquisition MER. Hygiene rules attached. Use NET revenue with returns deducted, which is acute in fashion where today's gross revenue compresses later. Cut every finance-grade metric to new customers only (acquisition MER, new-customer profit contribution, new-customer revenue, cohort size). Acquisition MER tracks tightly with Meta 7-day-click ROAS, which is the argument for reporting on that window. There is no universal good acquisition MER, because the target is a function of gross margin profile and retention.
+
+Track a second version alongside it, acquisition MER adjusted, with returns added back. Refunds get processed in batches, so clearing a backlog on one day drops net new-customer revenue and puts a cliff in the chart that has nothing to do with delivery. When adjusted hits target and unadjusted misses, the problem is returns, and the follow-up is finding which products drove them. Neither metric exists in standard tooling; he built both as custom metrics.
+
+Where acquisition MER itself breaks: once other channels drive new-customer revenue (his example, $1M/month of influencer spend), the ratio credits Meta with revenue it did not create. Blended MER stays legitimate as a CFO control on what share of the P&L goes to marketing. Related to [[Marketing Math & Unit Economics#MM-005|MM-005]], which splits the P&L; this is the ratio metric and the reconciliation test between platform reporting and the bank account.
+Sources: Blue Sense Digital, How To Structure Your Meta Ads for Profit (Free Live Webinar), 2025-02-19; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04; Blue Sense Digital, The 1 Bottleneck I See in 80% of eCommerce Audits, 2026-05-18
+Last touched: 2026-08-18
+
+### MM-067 · True CAC is total ad spend across all channels divided by total new customers; channel-level CAC is not calculable
+Tier: T3 · Status: active
+Platform CPA runs off attributed conversions and always flatters the real number, so optimising to in-platform CPA means optimising to a number the bank account never sees. Compute CAC daily, weekly or monthly from the business's own new-customer count against all ad spend everywhere. Splitting CAC by channel reintroduces the attribution problem the metric exists to escape. CAC alone means nothing without gross profit on first purchase beside it: a $100 CAC against $10,000 GP is excellent, a $100 CAC against $20 GP loses $80 per customer.
+Sources: Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-068 · Derive the CAC target from new-customer AOV and new-customer gross profit, never from sitewide blended figures
+Tier: T3 · Status: active
+The common error: sitewide AOV $100 times a blended 70% gross profit justifies a $35 CAC target. Split to new customers and it can invert, because returning customers carry higher AOV and acquisition orders carry more discount. His worked split: new-customer AOV $90 at 50% new-customer GP, which moves the correct CAC target materially and can flip a campaign judged profitable into a loss. Same first-time-versus-returning discipline as [[Marketing Math & Unit Economics#MM-005|MM-005]], applied to the target rather than the P&L.
+Sources: Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-069 · Price by waterfalling up from the net profit target, not by multiplying COGS; keystone 2x pricing is what roughly 40% of startups do and it structurally underprices
+Tier: T3 · Status: active
+Keystone (2x COGS) and IMU (3-5x COGS) both apply an arbitrary multiple to a number that excludes every variable fulfilment cost, and neither references elasticity, competitors, or the real cost structure. Correct sequence, bottom up: net profit target 10%, opex 10%, so a 20% contribution target, then add expected CAC ($30), return allowance 3%, discount allowance 3%, shipping ($11) and COGS ($6), and solve for price (about $70 in his example). Then run competitor research. If the required price is uncompetitive and cannot be positioned as premium, kill the product rather than sell it at a loss. The 40% figure is his estimate of the startup market, ASSERTED. Contrast with [[Marketing Math & Unit Economics#MM-018|MM-018]], which sets a dropshipping floor rather than a derivation method.
+Sources: Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-070 · Back-solve a contribution margin target from net profit plus opex, then troubleshoot any missed P&L line using only the lines above it
+Tier: T3 · Status: active
+Want 20% net with opex at 15%, and the contribution margin target is 35%. That converts a bottom-of-P&L goal into a number the media team can be held to weekly. Same in dollars: a $1M net target plus $1M opex means a $2M annual contribution margin target. The diagnostic ladder is directional. Miss EBITDA and the fault is opex, marketing, or cost of delivery. Miss contribution margin and it is marketing or cost of delivery. Miss gross margin and it is cost of delivery or the gross-to-net lines (refunds, discounts, shipping collected). Track every line as a percentage month over month to see which is expanding and which is contracting.
+Sources: Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+## Margin, ROAS Targets, and Bid Power
+
+### MM-010 · Gross margin sets the ROAS breakeven: 87 points landed margin breaks even at 1.3 ROAS first-purchase; 50-60 points needs roughly 2.0
+Tier: T3 · Status: active
+A client product with 87 points of landed margin is profitable on first purchase at 1.3 ROAS, meaning ads barely need to perform to make money; another brand sits at 75+ points. At a typical 50-60 points of landed margin you live in the world of needing roughly a 2:1 ROAS constantly. High margin creates a strong incentive to deploy maximum spend and creative volume fast because the downside of a losing test is small.
+
+The formulas, stated twice by Blue Sense Digital across two videos: breakeven ROAS = 1 / gross margin %, and breakeven CAC = gross margin in dollars. Worked example: $100 AOV with $60 cost of delivery gives 40% margin, breakeven ROAS 2.5, breakeven CAC $40. Now discount 30%. Price falls to $70, COGS stays $60, margin becomes $10, breakeven ROAS becomes 10 and breakeven CAC becomes $10. That is a 5x efficiency requirement bought with a single 30% discount, and no paid platform delivers it, so that discount can never acquire new customers profitably. Run the calculation for every product and again at every discount level before the offer goes live, and ask whether the account has ever hit the resulting number. Every media buyer and agency on the account should know the breakeven figure per product. Deterministic arithmetic applied to real decisions, ASSERTED with illustrative numbers rather than exported account data.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-011 · Improving gross margin via supply chain beats improving ads: one brand moved manufacturing countries and went from ~50 to 65-70 points landed
+Tier: T3 · Status: active
+A brand at roughly 50 points of landed margin net of returns relocated manufacturing to another country and projects 65-70 points, dramatically raising how fast it can grow without any ad improvement. The rule: if gross margin is the binding lever, chasing supply chain (new suppliers, renegotiation) improves outcomes without making the ads a single moment better, and should shape which products get advertising firepower.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27
+Last touched: 2026-08-18
+
+### MM-012 · Returning-customer revenue raises the tolerable CPA and lets you outbid single-product competitors; every $100k+/mo spender has retention products, added around $30k/mo spend
+Tier: T3 · Status: active
+Higher LTV supports a higher front-end CPA, described as the ability to "bully out all the competitors and spend a lot more"; single-product, no-retention businesses hit a bid ceiling that LTV businesses do not. Every client spending $100k+/month on Facebook has multiple retention products, and they added them at roughly $30k/month spend specifically to raise LTV so a higher CAC ceiling became affordable. Blue Sense makes the same structural point: your sustainable bid IS your unit economics, and the competitor with better margin, AOV, and LTV wins more auctions with worse creative. Ben Heath adds a fourth independent statement of the same law plus the lever-ranking that follows from it: amateurs work on cutting cost per purchase from $26 to $23, professionals work on raising customer value from $120 to $320, because the second lever has far more range and therefore moves profit more. His illustration is Starbucks at roughly $7 per visit but over $14,000 per customer over a lifetime, which is what lets a business like that pay $200-500 to acquire someone; his generalization is that there are many large businesses with low single-transaction value and none with low lifetime value. Named LTV levers: subscriptions, upsells, significantly more expensive upsells, referral programs, and follow-up sequences (paid or owned) to drive the repeat purchase. He frames acquisition as an arms race where the operator who can afford to pay most per customer wins over the long run, matching MM-042.
+Sources: Nick Theriot, I spend $100k a day on Facebook Ads (here's who will scale & fail in 2027), 2026-08-14; Nick Theriot, I Spend $100k/Day On Facebook Ads (here's what's scaling in 2026), 2026-08-03; Blue Sense Digital, How The Meta Ads Algorithm Works in 2026, 2026-07-28; Ben Heath, Learn 97% of Meta Ads in Under 29 Minutes, 2026-08-18
+Last touched: 2026-08-18
+
+### MM-013 · In-platform ROAS understates subscription and repeat-purchase brands, so winner/loser calls need metrics beyond ROAS
+Tier: T3 · Status: active
+ROAS "is just a number" that ignores subscription revenue and downstream repeat purchases. For subscription brands an ad's true value exceeds its attributed ROAS, so check other metrics (CPA, CTR, funnel position) before killing or crowning an ad.
+Sources: Fraser Cottrell, How to Make Meta Ads So Good People Can't Stop Watching, 2026-08-16
+Last touched: 2026-08-18
+
+### MM-014 · Optimize profit dollars leaving the business, not the ROAS ratio: doubling volume at 2x can beat holding at 4x
+Tier: T3 · Status: active
+The gap between a scaling business and a dying one is often only 10-20% on ROAS or CPA. Volume unlocks supplier price negotiation, better shipping rates, better talent, and an unmeasurable word-of-mouth engine. There is a button to spend more money but no button that guarantees a ROAS, which is why no famous brand runs a 50-100x ROAS but hundreds spend $1k-$1M/day.
+
+Restated 2026-08-17 with a worked comparison and the compounding argument that carries it. The gap that decides profit or loss is tiny: a brand targeting 2.2 ROAS and hitting 2.0 loses money on every customer, and at 2.2 makes money on every customer, so most brands need a 10-30% ROAS improvement, not a doubling. The failure mode is chasing the ratio: brands that hyper-optimize ROAS reach 5x, 6x, 7x and then cannot spend past about $100/day, because scale falls faster than the ratio rises. His illustrative comparison runs a 2.2 ROAS spending far more against a 7.0 ROAS spending a fraction: the 2.2 case drives roughly 3x the revenue, costs much more to fulfil, and nets about $430 profit, close to what the 7.0 case nets on much less spend. The tiebreaker is customer count, since roughly 3x revenue means roughly 3x new customers, so any lifetime value at or above about 1.1x compounds the low-ROAS case into a much larger business over time. Numbers are illustrative slides, not account exports. This makes MM-014 dependent on real measured repeat purchase, so it should be read against the contested MM-003 and the cohort discipline in MM-006 before acting on it.
+
+Three additions from Professor Charley T across two videos. First, a second worked example running through AOV instead of spend volume: a 5x ROAS on $10 spend at a $50 AOV yields $40 gross profit, while a 2x ROAS on a $100 CPA at a $200 AOV yields $100, a 2.5x profit gap in favour of the worse ratio. He ties this to product mix, arguing a ROAS-managed account never learns to sell the higher-ticket SKU because the ratio always favours the cheap one. Second, the ratio does not even rank ads correctly inside one account: he reports four ads all at 1.6 ROAS carrying profit per sale from $20 to $100, and cites pairs at 1.2 ROAS/$60 and 1.9 ROAS/$100, with no correlation between the two columns. Third, a case: a fashion brand's ROAS improved from 1.2 to 3.0 after hiring an agency while revenue, profit and spend all collapsed, because the agency optimized toward easy-to-sell, low-repeat products and toward people who had already bought. Same brand reportedly went 8x in eight weeks after the approach was reversed. He says the ad-account screenshots exist in a separate case-study video; nothing was shown on stream, so this stays T3.
+Sources: Sam Piliero, Easiest Way to Scale Facebook Ads in 2026, 2026-08-03; Sam Piliero, Why total profit beats profit per order with Meta ads, 2026-08-17; Professor Charley T, The BEST Facebook Ads Strategy for 2026 Post Andromeda, 2025-12-27; Professor Charley T, The NEW SIMPLE EASY WAY to Scale BIG with Meta Ads, 2026-02-07
+Last touched: 2026-08-18
+
+### MM-015 · Run the account against ONE "king goal" metric; every other metric is only a proxy solved backward from it
+Tier: T3 · Status: active
+Businesses with 20 targets (CPC, CTR, conversion rate, ad-launch quotas) scale worst; the most effective scaling brands set one precise target (e.g. 8.0 ROAS) and derive what cost-per-add-to-cart, cost-per-initiated-checkout, and conversion rate must be to hit it via custom columns. Example managed brand: $43,000 spend in 30 days at 8.4 ROAS against an 8.0 king goal.
+Sources: Sam Piliero, Easiest Way to Scale Facebook Ads in 2026, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-016 · Realistic front-end ROAS on high-ticket lead gen is 2-5x; a forecast whose worst case does not lose money is wrong
+Tier: T3 · Status: active
+Model best/average/worst for CPL, cost per call, show rate, and close rate (example worst case: $30 CPL, $400 cost per call, 50% show, 10% close). Best-case-on-everything (10x ROAS in his example) never happens because metrics trade off against each other; a healthy scalable range is $2-5 back per $1 in on the front end. If the modeled worst case still profits, the inputs are dishonest.
+Sources: Dr. Matt Shiver, How to Run Facebook Ads for Coaches & Agency Owners (FREE COURSE), 2026-08-04
+Last touched: 2026-08-18
+
+### MM-017 · Setting a CPA target as sitewide AOV divided by target ROAS is wrong for wide-catalog brands: mean, median, and modal order values diverge wildly
+Tier: T3 · Status: active
+Example brand: mean AOV $1,027, median $512, modal order value $141. A single blended CPA target derived from mean AOV systematically overspends on low-AOV products and underspends on high-AOV products, misdistributing the budget. Fix: group products into economic units with similar AOV/margin/LTV (e.g. ad sets in a CBO each representing one unit) or use min ROAS bidding, which bakes AOV into the control.
+Sources: Andrew Faris, Do Cost Caps Work? Taylor Holiday Brings $200M Of Data, 2026-08-06
+Last touched: 2026-08-18
+
+### MM-018 · Dropshipping margin floor: at least $25 gross margin per unit AND a selling price of at least 3x COGS
+Tier: T3 · Status: active
+Both rules must hold: e.g. $10 landed cost sold at $50 gives $40 margin (above $25) and 5x markup (above 3x). Products set up with breakeven ROAS around 1.7-2.0 require sustaining roughly a 3x ROAS at scale, which "doesn't happen" at high spend levels. Margins are one of the few controllable inputs, unlike the CPA Facebook gives you.
+Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30
+Last touched: 2026-08-18
+
+### MM-079 · Pick the SKU you advertise by second-purchase rate, days to second purchase, and combined first-plus-second AOV, not by first-purchase volume
+Tier: T2 · Status: active
+Data SHOWN twice. A real supplement client's Shopify order export was read live on screen: the SKU with a 53% second-purchase rate at roughly 40 days was getting no ad support, while the heavily advertised SKU sat under 30% at roughly 50 days. His rule on that comparison is blunt: a SKU that takes 12 more days to produce $40 less is a liability regardless of unit volume. A second dashboard, sorted by number of first purchases, showed shilajit capsules at 47 days and $57 combined AOV losing to collagen peptides at 44 days and $98 combined AOV, meaning the top-first-purchase product was the wrong thing to advertise. A third case, asserted only: a $98 supplement SKU repurchasing at 57% beat the $50 SKUs repurchasing at 30%, and scaling only that product moved gross profit per transaction from $17 to $37 in four days (four days is far too short to call that durable).
+
+The no-tooling version: pull six months of receipts, filter to customers who came back, and find the single most common item they bought as new customers. That is the acquisition product. The catalog then splits into an acquisition catalog and a retention catalog, and the pixel should be trained on the hero SKU via a dedicated custom conversion. Price sensitivity gets worked on top: at a $20 acquisition cost, two sales at $40 with a $67 combined AOV leave about $17 profit, while $40 a unit returns the money three days faster and is worth about $18. Caveat: one of the dashboards is his own paid product, so treat the tool as a vendor demo and the metric set as the transferable part. This is the computable version of [[Marketing Math & Unit Economics#MM-042|MM-042]]'s qualitative criteria and the selection procedure underneath [[Marketing Math & Unit Economics#MM-012|MM-012]] and [[Marketing Math & Unit Economics#MM-029|MM-029]].
+Sources: Professor Charley T, The BEST Facebook Ads Strategy for 2026 Post Andromeda, 2025-12-27; Professor Charley T, Record Profits: the Meta Ads Andromeda Playbook, 2026-01-03; Professor Charley T, The BEST AD ON META after Andromeda, 2026-01-10; Professor Charley T, How to CRUSH Facebook Ads with a Low Budget, 2026-02-28; Professor Charley T, The NEW SIMPLE EASY WAY to Scale BIG with Meta Ads, 2026-02-07
+Last touched: 2026-08-18
+
+### MM-080 · Build GPT (gross profit per transaction) as a custom Ads Manager metric, then plot every ad on a GPT-versus-CPA grid using the account's own averages as axes
+Tier: T3 · Status: active
+Build shown in the UI: Columns, Customize columns, Custom, Create custom metric, formula "average purchases conversion value minus cost per purchase", name it GPT, currency format. It puts per-transaction profit in dollars directly on the reporting row, which is the implementation of [[Marketing Math & Unit Economics#MM-014|MM-014]]'s profit-dollars doctrine. The 2x2 uses the account's own averages, not external benchmarks. Upper right (better than average on both) are scalers. Lower left are liabilities. Good GPT with bad CPA are optimizers to refine. Good CPA with bad GPT are fake wins, because "it's a lot easier to lower the CPA than to improve the AOV" and those ads pull in the wrong buyer. Boundary case he flags explicitly: an ad with negative GPT but below-average CPA is not a double red flag and does not get cut. Order of operations: scale the scalers, refine the optimizers, cut the liabilities. Caveat he does not state: average purchase value minus CPA is gross of COGS, so it is contribution before product cost unless the value column is already margin-adjusted, which matters below roughly 60 points of landed margin ([[Marketing Math & Unit Economics#MM-010|MM-010]]).
+Sources: Professor Charley T, The NEW BEST Meta Ads Andromeda Course to Scale in 2026, 2026-01-24; Professor Charley T, How to CRUSH Facebook Ads with a Low Budget, 2026-02-28
+Last touched: 2026-08-18
+
+### MM-081 · Customer uniformity, not ad quality, is what lets an account scale at a worse front-end ROAS
+Tier: T4 · Status: active
+The causal chain he argues: creative concentration produces a homogeneous acquired cohort, a homogeneous cohort monetizes better downstream (upsell take, second purchase, email and search value), and better downstream monetization lowers the front-end return the account has to hit. He puts the range at needing a 3x versus being able to scale at what the transcript renders as "a 08", almost certainly 0.8. This is the economic argument underneath the few-ads doctrine, and it reaches the same place as [[Marketing Math & Unit Economics#MM-012|MM-012]] by a different route: sameness of the cohort rather than the existence of retention products. Entirely asserted, no data. Testing it needs cohort-level AOV and repeat data split by acquisition concept.
+Sources: Professor Charley T, The BEST AD ON META after Andromeda, 2026-01-10
+Last touched: 2026-08-18
+
+### MM-082 · Grade lead-gen ads on downstream close rate, not on cost per lead: ads with identical cost per conversation can close at 80%, 50% and 0%
+Tier: T4 · Status: active
+The qualitative layer is invisible in Ads Manager, which is the entire reason to build an offline-conversion pipe back into Meta. Once close data returns, the efficiency move is cutting ads that generate conversations nobody closes rather than ads with the highest CPL. Lead-value math attached: on a $10,000 program, a 1-in-20 close rate makes a lead worth $50 and costs 20 sales calls, while 1-in-5 makes the same lead worth $2,000 for five calls. Instruction: bucket leads at $50 / $500 / $1,000 / $2,000 and turn off ads that never produce the top bucket. Numbers illustrative, no test shown.
+Sources: Professor Charley T, Record Profits: the Meta Ads Andromeda Playbook, 2026-01-03
+Last touched: 2026-08-18
+
+### MM-083 · Resellers run about 30% gross margin after delivery and fees, forcing roughly a 10x ROI, which only works when the brands they stock are themselves advertising heavily
+Tier: T3 · Status: active
+At 30% gross margin after cost of delivery and transaction fees, the reseller has to operate at roughly a 10% MER. That is not a media-buying problem, it is a buying-team dependency. Stock a product whose brand is funding demand and a dynamic carousel can open at 15-20 ROAS. Stock a fading fad or a brand that does not advertise and no media buying rescues the margin structure. ASSERTED from experience, no account data shown. Pairs with [[Marketing Math & Unit Economics#MM-046|MM-046]] on TAM compressing margin, and with the observation that high-margin DTC categories buy their margin back in higher CAC.
+Sources: Blue Sense Digital, How To Structure Your Meta Ads for Profit (Free Live Webinar), 2025-02-19
+Last touched: 2026-08-18
+
+### MM-084 · Rising CPM and frequency compound over 2-3 years and silently absorb genuine AOV, LTV and conversion-rate gains, so the brand stands still
+Tier: T3 · Status: active
+Brands do the right work (new product development to raise AOV, retention work to raise LTV, CRO to raise conversion rate) and get no compounding benefit, because ad cost inflation takes it. Kiel's read on one account: the AOV increase did not improve profitability, it merely let the brand keep affording the platform. This is the operator-side consequence of MD-035, which banks the platform-side mechanism (Meta captures its own efficiency gains through CPMs). Diagnostic: build a multi-year table of spend, impressions, reach, frequency, CTR, add-to-cart rate, CPA and ROAS, and compare year against year rather than reading any single window.
+
+Planning application, arithmetic rather than data: if cost per thousand reached is up 50% year over year, doubling Black Friday revenue needs more than double the spend. The compounding factor is the owned-audience side. Brands spend all year assuming they are building an email list and a retargetable pool, then arrive at Black Friday to find the list has not grown at the same rate or has shrunk through unsubscribes, while returning customers make up a larger share of BFCM revenue every year. The peak-season plan cannot be built off last year's spend-to-revenue ratio.
+Sources: Andrew Faris, Your Meta Ads Account Has Too Many Campaigns: Here's Why And What To Do, 2026-05-12
+Last touched: 2026-08-18
+
+## Cash, Inventory, and Forecasting
+
+### MM-074 · The cash conversion cycle, not marketing efficiency, is the growth limiter in inventory e-commerce
+Tier: T3 · Status: active
+CCC = DIO + DSO - DPO. The mechanism: gross profit from one purchase order only funds a marginally larger next PO, and a 90-day manufacturing lead time with prepayment terms forces stockouts between batches. Levers: negotiate deposit terms (20% up front instead of 100%), shorten manufacturer lead time, or take inventory financing, which usually requires personal collateral. He reports the same failure five times. An agency ramps spend from $20k to $200k/month, the client quietly takes inventory financing to keep up, interest repayments plus degraded MER compress net margin toward zero, and a $2M business becomes a $7M business making no money while the founder's income goes to zero. Practical consequences: you cannot triple an inventory business in a year, an agency that scales spend without inventory visibility can take a cash-positive business to zero net profit, and growing slower at better efficiency with less debt often produces more profit. ASSERTED from client work, no numbers shown.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-075 · Paid media is an inventory liquidation tool: push grade B/C/D stock at breakeven or a slight loss to convert balance-sheet inventory back into cash
+Tier: T3 · Status: active
+Shopify auto-ranks inventory A (fast moving, worry about stockouts) through D (zero sell-through) under the products tab. Product launches fail often, so cash piles up as stock: a brand can show $2M of P&L profit while holding $3M of unsold inventory and be $1M cash-negative. An agency KPI'd purely on profit will never touch grade C/D because the ROAS is bad, so the marketing team needs inventory visibility and an explicit mandate. Tactics: isolate the dead SKU in its own funnel, which does not even need to sit on the main site (whitelisting pages work), or push it into a different country where heavy discounting will not erode brand equity at home.
+
+The CFO reflex in this situation is the wrong move twice over. Seeing MER spike and profit dip, the instinct is to cut marketing 40%, which drops the revenue the marketing was driving, worsens profitability, and invites a further cut. That loop is distinct from the CAC-creep spiral in [[Marketing Math & Unit Economics#MM-004|MM-004]]. Two things break it: recognising that in a marketing-driven business the compression is an efficiency problem on current spend rather than a spend-volume problem, and recognising that the underlying cash problem is unsold stock that needs MORE spend at worse efficiency to clear. His worked move is raising MER from 30% to 35% specifically to buy the sell-through that restores the cash position.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-076 · Allocate fashion budget by days of inventory, not by ROAS, because Pareto compounds and the algorithm funds the product that would have sold anyway
+Tier: T3 · Status: active
+His stated pattern: roughly 4% of products and 4% of ads drive 64% of revenue. Worked example, three products, 10,000 units each, $100k monthly budget. Product A has gone semi-viral at 55% monthly sell-through with 50 days of inventory and a 7x ROAS, so 90% of budget flows to it and compresses its days on inventory to 9. That product was going to clear in 50 days regardless, so $90k of spend converted roughly $500k of gross profit into roughly $410k of contribution margin to buy speed the business did not need. Meanwhile the products at 75 and 240 days of inventory get nothing and end up marked down. Correct allocation puts spend behind the 4.4x and 2.5x products to pull their days on inventory down, accepting near-zero contribution on those orders, because the alternative is markdown or write-off. Ties directly to [[Marketing Math & Unit Economics#MM-075|MM-075]].
+Sources: Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25
+Last touched: 2026-08-18
+
+### MM-077 · Forecast new-customer and returning-customer revenue by two separate methods: regression for new, cohort repeat curves for returning
+Tier: T3 · Status: active
+Stated as the number one rule of DTC forecasting, because the two lines have different drivers. New revenue is driven by ad spend, influencers and events. Returning revenue is driven by product launches, discount periods, activations and email/SMS.
+
+Returning method: for every historical acquisition cohort, take the cohort size, look up the average repeat rate at the month of life it is about to enter (for example 0.1% at month 32), multiply by returning-customer AOV, and sum across all cohorts. He claims this lands within about 10%, and within 1-2% after two refinements: a seasonality factor built from three years of returning-customer revenue, then one-off marketing events superimposed that did not exist last year. Accuracy figures are ASSERTED, not demonstrated.
+
+New method: plot daily acquisition MER on the y axis against daily spend on the x axis for the last year, delete sale-period and November/BFCM points because they overstate business-as-usual efficiency, delete days below the minimum realistic spend, and fit a logarithmic or linear regression by best fit. To forecast, enter at the acquisition MER the revenue goal requires, read across to the required spend, and check whether the account can physically spend that much. The real job of the exercise is exposing the gap between the achievable number and the board target, which then has to be closed by a named input (new channel, product launch, tripled creative production) rather than by hope.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-078 · Deliberate contraction can be the profit move: a 65% year-over-year Q4 revenue cut to right-size unit economics produced a multi-million-dollar EBITDA swing
+Tier: T3 · Status: active
+The brand carried "low seven figures" of lost EBITDA plus balance-sheet debt, ran zero ad spend from March to September 2025, restarted in late October under a first-order-profit mandate, and was at all-time revenue highs by Q1 2026. February and March 2026 together beat all of Q1 2024, at roughly twice the profitability. The exact EBITDA swing was bleeped at the guest's request; the 65% Q4 decline and the "twice the profitability" figures are stated openly. Faris notes Q4 scale was also inventory-constrained, so the decline was not purely chosen. Read from an internal doc on a podcast, nothing shown. Pair with [[Marketing Math & Unit Economics#MM-003|MM-003]]: this is what reverting to first-order profitability costs and returns.
+Sources: Andrew Faris (with Richie Mashiko), From A 65% Decline To All-Time Revenue & Profit Highs, 2026-04-27
+Last touched: 2026-08-18
+
+## Budget Floors and Launch Capital
+
+### MM-019 · Minimum viable daily budget is at least 1x your target cost per result; below that the platform cannot learn and results are unreliable either way
+Tier: T3 · Status: active
+Multiple independent sources converge on the same floor. Ben Heath: work out the affordable CAC for one customer and set the daily budget there; a too-small budget does not reduce risk, it just makes results unreliable because Meta cannot learn who responds. Shiver: daily budget must be at least 1x cost per booked call, so B2C coaching starts at $100/day (calls run ~$100) and B2B at $200-500/day (calls run $200-500); below the floor the account books too few calls for the algorithm to learn. Piliero states the same 1x-target-CPA-per-day minimum for prospecting.
+Sources: Ben Heath, What You NEED To Know To Get Started With Facebook Ads, 2026-08-06; Dr. Matt Shiver, How to Run Facebook Ads for Coaches & Agency Owners (FREE COURSE), 2026-08-04; Sam Piliero, The Only Facebook Ads Video You Need in 2026, 2026-07-26
+Last touched: 2026-08-18
+
+### MM-020 · Minimum viable e-com launch capital is a 30-day ad budget you can spend regardless of results: $50-100/day, so ~$2,000 total for dropshipping and $5-10k for an inventory brand
+Tier: T3 · Status: active
+Pick a daily budget you will sustain for 30 full days even with zero purchases, because the 30 days buys the iteration loops (creative tests, landing page tests, offer tweaks). Recommended $50-100/day = $1,500-3,000/month, plus ~$50/mo Shopify and ~$200/mo tools. Dropshipping start ~$2,000; a legit inventory fashion brand $5,000-10,000 (inventory floor ~$2,500). Blowing the budget in 3 days leaves 27 days with no learning capital.
+Sources: Nick Theriot, You Just Found a Winning Ad… Here's Exactly What To Do Next, 2026-07-31
+Last touched: 2026-08-18
+
+### MM-021 · Raising budget by less than your average cost per result makes cost per result appear to rise temporarily as pure arithmetic, not a performance problem
+Tier: T3 · Status: active
+If the budget increment is smaller than the average cost per result, the added spend cannot yet produce a whole new conversion, so the average CPR climbs until conversions catch up. This is expected math to sit through, not a reason to revert the budget.
+Sources: Professor Charley T, Copy This Simple Meta Ads Strategy, It'll Blow Up Your Business, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-022 · Spending ~5% of a large budget on better operators, or ~10% on creator partnership ads, nearly always lifts results by more than it costs
+Tier: T3 · Status: active
+At $100k/month, adding expertise (agency or in-house media buyer, creative, partnerships roles) for ~5% of monthly budget "nearly always" improves performance by more than 5%. Same logic for allocating ~10% of budget to creator/influencer partnership ads: the ROAS improvement typically exceeds the 10% cost, plus asset-production time saved. A $100/month operator should spend only 1-2 hours per month inside the account; daily fiddling at that level is counterproductive.
+Sources: Ben Heath, $100 vs $100,000 Facebook Ads Strategy, 2026-08-12
+Last touched: 2026-08-18
+
+### MM-023 · Weight budget by day of week: observe the account's best-ROAS days and concentrate spend there, never blanket-exclude days
+Tier: T2 · Status: active
+A shown account spends most on Wednesday/Thursday ($5,700/$5,500 average daily) and earns its highest ROAS on those high-spend days. Using breakdowns (age, gender, platform, placement, then day-of-week and time-of-day), the account deliberately concentrates spend on the best days and pulls back on weaker days. The move is observe-then-shift, never exclusion.
+Sources: Sam Piliero, The Only Facebook Ads Video You Need in 2026, 2026-07-26
+Last touched: 2026-08-18
+
+### MM-113 · Prerequisite for paid: the offer has been sold 20-30 times and the positioning is committed; the one legitimate exception is $100/day per candidate pain point to find the ICP
+Tier: T3 · Status: active
+His agency will not take a consulting client below $10k/month, because at that level the problem is message rather than traffic and ads only accelerate the burn. Without settled positioning you are taking shots in the dark, and every result is uninterpretable. The exception is a deliberate discovery test: a physical therapist or chiropractor unsure whether knee, shoulder or back is the real ICP runs $100/day against each and lets qualified leads and actual sales pick the positioning. The second gate he names is avatar specificity rather than message polish, because messaging can be adapted while a generic avatar in a saturated market cannot.
+Sources: Dr. Matt Shiver, Organic vs Paid Ads: What's Actually Working In 2026, 2026-06-25
+Last touched: 2026-08-18
+
+## Pricing, AOV, and Offer Economics
+
+### MM-024 · Repositioning beats discounting: the same product reframed as a themed bundle at full price can outconvert its discounted version with zero margin cost
+Tier: T3 · Status: active
+An identical product bundled and reframed as a "New Year's reset" at full price converted better than it ever did on sale. Bundle math: pass shipping/fulfillment savings on as the visible discount (e.g. $136 to $122 where $14 is exactly the saved duplicate shipping), add a gift-with-purchase with high perceived value and low COGS (~$30 perceived, $4-5 cost) at a threshold, and a one-click post-purchase upsell at ~50% off for 5 minutes, which has a very high take rate because the buyer is warmest right after paying.
+
+Frequency discipline added 2026-08-18. Run flat discounting once or twice a year, and point it at either the few SKUs with unusually high gross margin or the dead stock you need to convert to cash (see [[Marketing Math & Unit Economics#MM-075|MM-075]]). The named failure is the 52-week promo calendar: it trains the entire customer base and every warm in-market buyer to wait, and it permanently resets margin. His example is a brand that launched at 60% gross profit and now runs at 45% because it can no longer sell anything without a discount. Brands that discount to hit revenue targets end up structurally worse businesses with worse cash flow.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-025 · Shipping collected up to ~10% of cart AOV has no material impact on conversion rate; free shipping's CR value is overrated
+Tier: T3 · Status: active
+From own multi-store tests (2019-2020) across free shipping, reintroduced shipping, insurance, and expedited options: as long as shipping collected stays under ~10% of order value, CR does not move, and shipping collected is nearly pure profit. If giving free shipping, set it at a threshold (most brands set theirs too low) to push AOV up. The same 10%-of-AOV rule applies to all extra checkout costs combined (shipping + tax + fees).
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-026 · A persona-built bundle lifted AOV 10-20% vs other products, and higher AOV at equal conversion directly unlocks more reach and spend
+Tier: T2 · Status: active
+The She's Birdie college-safety bundle carried a 10-20% higher AOV than comparable products in the account (range depends on comparison set; highest-value ads run higher AOV than cost-cap incremental-attribution ads). If AOV rises 10-20% while converting the same or more customers, every click is worth more, so bids can support more expensive reach and spend scales.
+Sources: Andrew Faris, The Secret To Great Landing Pages Is Simpler (And Harder To Execute) Than You Think, 2026-07-20
+Last touched: 2026-08-18
+
+### MM-027 · Without pre/post-purchase upsells a fast-launched store's AOV contribution was only $14 above the front-end price against a ~$30 target
+Tier: T2 · Status: active
+Because the case-study store launched in days, no upsell/cross-sell/downsell path existed, leaving AOV contribution at ~$14 over front-end price versus a ~$30 target (roughly double). Indirect ads kept ad cost low enough that the ~1.54% tracked CVR still met target KPIs, but both CVR (via pre-landers and PDP split tests) and AOV (via upsells) are the named optimization levers after a fast launch.
+Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30
+Last touched: 2026-08-18
+
+### MM-028 · Faster delivery raised reorder economics for a specific cohort/product, mainly as a second-purchase AOV lift; the analysis must be rerun per business
+Tier: T3 · Status: active
+The delivery-speed-vs-reorder analysis (run on every company they acquire) found for one brand that faster receipt mattered for one specific cohort buying one product type: customers felt more confident and spent more on the second purchase, an AOV lift rather than a conversion-rate lift. The finding justified opening fulfillment facilities in Indianapolis, Mexico, and India. The answer "always varies" by company.
+Sources: Andrew Faris, The AI Traps Wasting Your Time In An Ecommerce Brand - Mehtab Bhogal, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-029 · Retention rate alone misleads: if second-order AOV is half of first-order AOV, downstream value collapses despite strong repurchase
+Tier: T3 · Status: active
+A brand with a genuinely high repurchase rate still had weak LTV because second-purchase AOV was half or less of first-purchase AOV due to how the product works. Downstream value = retention rate x repeat AOV, so the fix is raising second-order AOV (e.g. limited editions, finer materials), which then permits a higher acquisition CAC up front.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27
+Last touched: 2026-08-18
+
+### MM-099 · Value engineering beats ad optimization on volume SKUs: one packaging change saved $1.25 per unit across 200,000 units a year and put $375,000 straight to the bottom line
+Tier: T3 · Status: active
+The lever scales with volume, not with media-buying skill: per-unit cost saving times annual units. Before running another creative sprint on a volume SKU, compute the achievable per-unit COGS or shipping saving times annual units and compare it against the profit a 10-20% CPA improvement would produce. Sits beside [[Marketing Math & Unit Economics#MM-011|MM-011]] (supply chain beats ads) but works through design and bill of materials rather than supplier relocation.
+
+Four-step process. One, map what customers actually value, via surveys, calls and post-purchase questions, asking literally "what features were most important to you about the product and what did you care least about". This is the step operators skip, and he says most assumptions about what customers pay for are wrong. Two, break the bill of materials down line by line. Three, redesign for perceived value rather than for the features you personally like. Four, split test by shipping version A to some customers and version B to others, and read repurchase rate rather than conversion rate. A physical A/B shipment gives an uncontaminated read. Example win: a craft kit shipped with a glue stick nobody noticed or wanted, removed for COGS and pick-pack savings.
+
+The governing principle is that customers pay for perceived value, not craftsmanship. Guitar brands found buyers only wanted a dark fretboard, so they replaced ebony with dyed rosewood and nobody noticed, at dramatically lower COGS. Patek Philippe, AP and Rolex stopped hand-finishing in the early 90s without losing pricing power. High-end menswear is hand stitched at $2-3k while the female equivalent at the same price is machine stitched, because those buyers are buying different attributes. Operator move: for every cost line, name the buyer-visible attribute it serves. If you cannot name one, it is a value-engineering candidate. The $375k figure and the portfolio examples were ASSERTED in conversation, no P&L or invoice shown.
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-100 · A price increase can leave front-end conversion unchanged while cutting repurchase rate 30-40%, so judge pricing tests on returning-customer revenue
+Tier: T3 · Status: active
+The failure pattern: the increase reads as a clean win on first-order profitability, and the damage surfaces months later as a returning-customer revenue drop nobody can explain. He found it in a multi-category business by comparing repurchase behaviour of customers who entered through the repriced category against categories where price was untouched. He notes the lever runs both ways, so dropping price might have raised repurchase and produced more contribution dollars over time. ASSERTED, no cohort chart shown. This strengthens [[Marketing Math & Unit Economics#MM-030|MM-030]] by naming price as part of the acquisition offer that sets retention, and it is a direct hazard for the CRO-first mindset in [[Marketing Math & Unit Economics#MM-035|MM-035]] and [[Marketing Math & Unit Economics#MM-037|MM-037]].
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-101 · Run price tests as very large uncontrolled swings first, and only A/B test once the band is narrowed
+Tier: T3 · Status: active
+A large effect is readable without statistical rigor and is trivially reversible, so the cost of just doing it is lower than the cost of running a properly powered test. He doubles prices and triples free-shipping thresholds outright, then narrows over time, and only brings in a split-test tool at the precise end. At one brand he tripled the free-shipping cutoff and dismissed the objection that the ads were now wrong. Compatible with AT-027 (10-20% CR lifts need roughly 1,000 conversions per variant and most CRO wins are noise), because it restricts uncontrolled testing to effects big enough to escape noise. Operator caveat: define the revert criteria before the swing, or you will rationalize a bad result.
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-102 · Price-pack architecture is a separate pricing surface from headline price: unbundling free extras into paid add-ons raised realized prices ~20% with no measurable drag at one portfolio company
+Tier: T3 · Status: active
+Two surfaces exist. Straight price increases, and price-pack architecture (forced quantity, bundle size, fees, unbundling). Which one yields more is brand-specific and has to be tested; fee-based increases sometimes backfire where a straight increase would not. He credits Intelligems as the practical way to run these on Shopify. Operator move: inventory everything currently given away free (rush handling, gift wrap, returns, extended warranty, accessory inclusions) and price at least one of them as a test.
+
+The forced-quantity version is what buys auction power. True Classic Tees is built so you feel obligated to buy ten t-shirts, which means a commodity product with thin per-unit margin can still outbid every other t-shirt advertiser on transaction size. That is AU-004 (your bid is your unit economics) stated at the offer-design level. When CPMs make an account uncompetitive, bundle architecture belongs in the fix set before creative iteration. Both examples ASSERTED, no data.
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-103 · High-ticket low-ticket front end: $27 or less with an order bump to about $50, then straight to a call, with nothing in between
+Tier: T3 · Status: active
+The paid front end is a qualification filter that forces a transaction. He accepts a $10-20 net loss per buyer, because a buyer who paid is worth more than a cheaper lead who only wanted the freebie. The load-bearing constraint is that nothing may sit between purchase and call: every upsell added there reduces booked calls. He gates the funnel type on spend, since low-ticket and webinar funnels need full build-outs plus at least $150-200/day and a client comfortable losing money until it tunes.
+Sources: Dr. Matt Shiver, Organic vs Paid Ads: What's Actually Working In 2026, 2026-06-25
+Last touched: 2026-08-18
+
+## Discount Math and Offer Architecture
+
+### MM-085 · Breakeven ROAS rises linearly with discount depth while the ROAS needed to hold contribution profit rises exponentially, so a 15% and a 25% discount can be the gap between an 8 and a 20
+Tier: T4 · Status: active
+Modelled and graphed on a whiteboard with assumptions stated, no exported data. Margin compresses toward your contribution-profit target far faster than it compresses to zero, so the curve most operators reason about (breakeven) is the wrong curve. Worked case on a $100 AOV, 40% COGS product: at full price breakeven ROAS is 1.67 and a 6 ROAS produces $43.33 of contribution profit per order. Apply 25% off with units per transaction rising from 1.0 to 1.63, and AOV actually rises to $122, but COGS is 40% of the $162 retail value rather than 40% of the $122 AOV, so gross margin per order falls to $57 and holding the same contribution profit requires a $13.67 CAC, which is an 8.97 ROAS. That is a 50% efficiency improvement demanded by the discount. This is the single most commonly botched calculation in offer planning, because topline AOV goes up and hides the margin collapse. Model the efficiency lift you can realistically expect before committing to a depth: luxury brands that never discount can model 70-80%, habitual discounters about 5%. Past a point on the curve the discount is simply inapplicable however it is dressed. Extends [[Marketing Math & Unit Economics#MM-010|MM-010]] into the discount case.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-086 · Contribution profit versus discount depth is a curve with a peak: 5-10% discounts lose money because units per transaction does not move, and depth should be set at the maximum
+Tier: T4 · Status: active
+Contribution profit is the product of two opposing curves: average unit retail declining with discount depth, and units per transaction flat until the discount becomes convincing, then rising. At 5-10% nobody cares, so unit price compresses with no offsetting volume and contribution profit falls below the no-discount baseline. Past an inflection buyers respond and UPT rises. Past roughly 30-40% margin compression outruns any UPT gain and profit falls again. The correct headline discount is wherever the product of AUR and UPT peaks, which was 20% for the brand he graphs. Modelled on a whiteboard, though he states they run it on real client data when the discount history is clean enough; inconsistent discounting history makes the model unbuildable. Operator action: if you headline a percentage off, model your own UPT response from historical flat-discount periods and set the number at the peak, not at a round number. Complements [[Marketing Math & Unit Economics#MM-024|MM-024]] by quantifying when discounting does pay.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-087 · A stacked evergreen acquisition offer took modelled required ROAS from 6 to 2.9 and AOV from ~$80 to ~$190
+Tier: T4 · Status: active
+Fully modelled on a supplement example, not exported account data. The stack: 90-day supply at 25% off, plus a free app, plus a mystery gift, plus a lifetime subscription discount. Waterfall: retail $253, COGS at a flat 40% would be $101 but lands at $82 because shipping three units costs $17 while $36 of shipping is baked into the pricing, leaving $108 gross margin and a $65 allowable CAC. The mystery gift is excluded from COGS because it can be built for $0-3 (sample packs, a bulk-PO drink bottle, or a co-marketing partner supplying it free). The lifetime discount is gated on ticking the subscription box, which pulls buyers onto quarterly billing and roughly doubles repeat purchasing, which then funds even more aggressive acquisition. The strategic point is that this runs all year rather than rotating in at Black Friday, because it permanently relaxes the efficiency the media buyer has to hit. Extends [[Marketing Math & Unit Economics#MM-024|MM-024]] with a full evergreen worked case.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-088 · Gift with purchase can double contribution margin while leaving breakeven ROAS flat: $26.50 to $53.50 contribution margin at breakeven ROAS 1.89 to 1.87
+Tier: T4 · Status: active
+Modelled beach-towel example on a whiteboard. One towel at $50 with $15 COGS and $8.50 shipping plus 3PL, versus two towels at $100 with a free bag, $30 + $4 COGS and $12.50 shipping plus 3PL. Contribution margin doubles and the efficiency you are permitted to run at gets slightly WORSE-tolerant, which is the counterintuitive part. Two conditions decide whether it works in market. The gift must carry high perceived value, engineered by listing the bag for sale on your own site at $60 so the offer presents as "$160 discounted to $100" rather than "$100 and we'll throw something in". And the gift must be something the customer actually wants, which comes from survey answers about what stopped people buying, not from your margin math.
+
+General mechanism behind bundles: adding a second unit inflates shipping and fulfilment cost by only about 20% in his stated rule of thumb, so the second unit carries close to full product margin and the created margin can be handed to the customer without moving gross margin percentage. Carry the tension honestly: the towel waterfall above shows shipping plus 3PL rising from $8.50 to $12.50, which is about 47%, not 20%. Model your own fulfilment step-up rather than borrowing either number. Higher AOV then raises the affordable CAC on the platform. Extends [[Marketing Math & Unit Economics#MM-024|MM-024]] and [[Marketing Math & Unit Economics#MM-026|MM-026]].
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
+Last touched: 2026-08-18
+
+### MM-089 · Set free-shipping and gift thresholds off the AOV distribution curve, not the mean; a binomial distribution needs two offers, one per peak
+Tier: T3 · Status: active
+Failure mode: mean AOV is $100, so free shipping is set at $110. Everyone already above $110 gets it for nothing, which is pure margin given away. Everyone clustered at $70 will not double their basket to reach it. Only a thin slice sitting just below the threshold moves, roughly 10% of customers. Binomial distributions are common in large-SKU categories like fashion where buyers assemble carts freely, and in businesses whose current offer structure creates two natural basket sizes. Fix: two offers at the two peaks, each pushing its own cluster up, and the mechanics can differ (gift with purchase at one peak, something else at the other). He estimates 80%+ of brands set thresholds off the mean. Same root cause as [[Marketing Math & Unit Economics#MM-017|MM-017]] (mean, median and modal order values diverging), different operator action. Hand-drawn distribution, no exported data.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-090 · Post-purchase revenue per visit should hit 10-15% of AOV, so a store with no post-purchase upsells can add 10-15% to AOV immediately
+Tier: T3 · Status: active
+RPV = post-purchase revenue captured / post-purchase funnel visits, equivalently average upsell value times conversion rate. At a $200 AOV, 10% RPV is $20 extra per order. He cites supplement and CPG brands lifting AOV 50-60% through post-purchase stacks, which then let them double Meta spend. ASSERTED benchmark from his own accounts, no dataset shown. Gives [[Marketing Math & Unit Economics#MM-027|MM-027]] a target number rather than just a gap, and feeds [[Marketing Math & Unit Economics#MM-012|MM-012]]: higher customer value raises the affordable bid.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-091 · Upsell take rates rank post-purchase (25-40%) above in-cart (5-15%) above checkout, and offers should anchor high then downsell
+Tier: T3 · Status: active
+Checkout take rates being LOWER than in-cart is counterintuitive and reversed his own prior view: the buyer has already committed to a price and resents additions. What does work at checkout is a low-friction add-on rather than another product, and his example is $4.99 shipping protection at roughly a 30% take rate at effectively 100% margin, adding $1-2 of gross profit to every order, because refunds are rare and the carrier usually covers the loss anyway. That is one of the few offer levers with no COGS, no creative and no landing-page dependency, which makes it the fast first test for a store with no post-purchase infrastructure. Post-purchase is near-zero friction because the card is already captured and the add is one click, and it can be chained (roughly 25% take on the first offer, 10% on the second). Placement tactics: in-cart use threshold unlocks and complementary samples, checkout use add-ons, post-purchase can sell anything.
+
+Sequencing: anchor at $50-60 and downsell to $20-30, never the reverse. Most brands invert it because they think the cheap offer converts better, and leading cheap sets a $20 reference that makes every later high-value upsell read as expensive. His branching logic: anchor high, if taken flow to a slightly lower second upsell at $30-40, if declined flow to a $20-30 downsell, then a second downsell. ASSERTED throughout, and the 35-40% post-purchase figure is secondhand ("I actually know people running..."), no split-test data.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-092 · Optimize upsells on incremental contribution profit (take rate x AOV lift x gross margin), never on take rate, AOV lift or margin alone
+Tier: T4 · Status: active
+Clean worked example: a 10% take rate on a $50 upsell at 50% gross margin is $2.50 of incremental contribution profit per order. Comparison that makes the point: an upsell taking 20% at a $40 lift on 30% margin loses to one taking only 10% at a $30 lift on 60% margin, so the high-margin half-take-rate option wins. (The transcribed figures in his A-versus-B comparison are internally inconsistent across two videos, so trust the formula and the clean example rather than the comparison numbers.) Small absolute numbers still matter because the order is already locked in: if front-end acquisition contribution profit is $20, a $2.50 upsell raises it more than 10% and directly funds a higher CAC, which is how you take more market share. Five in-cart rules: one offer per slot (three causes decision fatigue and lowers take rate), relevance over price, high-margin SKUs, an offer legible in 2-3 seconds, and success measured on gross margin lift rather than AOV lift.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-093 · An offer has five mechanics (product repositioning, price architecture, value mechanic, risk reversal, urgency) and a discount touches only one
+Tier: T4 · Status: active
+Framework, no data. The taxonomy is the useful part because it makes the design space explicit. Repositioning changes who the product is for and what problem it solves. Price architecture covers thresholds, units-per-transaction forcing and bundles, not just percentage off. Value mechanic covers free shipping, free gift, BOGO, samples, second-order tiers and subscription unlocks. Risk reversal covers guarantees, trials and sample offers. Urgency covers drops, seasonality and stock windows. Discounting is only correlated with price architecture, so a brand that has "tried offers" and means "tried discounts" has tested one fifth of the surface.
+
+The generative principle underneath: from the customer's side, offer value is the perceived gap between your cost of goods and what they receive. From the business's side, the goal is getting people to spend as much as possible above COGS while believing they are paying near COGS. That explains why a flat 50-60% off works psychologically (it reads as "nobody is making money here") and why a stacked offer can beat it, since components with near-zero marginal cost widen the perceived gap without touching price. The two sides genuinely coexist when the add-on costs the business nothing and is valuable to the buyer (owned software, partner-supplied samples).
+Sources: Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-094 · Lever hierarchy in a DTC business, weakest to strongest: budget, account structure, creative, offer, brand, product
+Tier: T4 · Status: active
+Theory, no data. Budget is fuel and account structure only prevents waste. Creative decides how people hear about you. Offer decides what they get and why now. Brand decides why you over a competitor. Product decides why buy at all, and dominates at repeat purchase. The bigger levers are the harder ones to change, which is exactly why teams default to rearranging the weakest two and expect it to matter. Operator use is triage: before touching structure or budget, ask whether the offer has ever actually been tested. Complements [[Marketing Math & Unit Economics#MM-037|MM-037]], which ranks offer highest but only inside the landing page; this ranks it across the whole business. Read with [[Marketing Math & Unit Economics#MM-109|MM-109]], which sets the product ceiling above all of it.
+Sources: Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-095 · Ladder exit-intent offers by funnel stage: generous for browsers, small for cart abandoners, none for checkout abandoners
+Tier: T4 · Status: active
+Reasoned, no data. Logic is revealed commitment. A browser has shown nothing and needs a reason plus urgency. A cart abandoner has shown intent and will often buy within 1-2 days without a bribe, so keep it small. A checkout abandoner is blocked by specific friction, so remove the friction with risk reversal or free shipping rather than surrendering margin to someone likely to convert anyway within 2-3 days. He is separately dismissive of browser-exit popups as gimmicky and prefers abandoned-flow emails.
+Sources: Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-096 · Single-hero-SKU brands lean on repositioning, then gift with purchase, then disciplined discounting; multi-SKU brands unlock bundles, cross-category upsells and thresholds
+Tier: T4 · Status: active
+Decision rule, no data. It sits inside a four-question offer-selection framework: what is the gross margin floor, is the AOV distribution single-peaked or binomial, single SKU or multi, and what is the repeat behaviour. A single consumable SKU can fake multi-SKU economics by packaging the same unit multiple ways (30-day versus 90-day supply); a genuine single non-consumable cannot. Where repeat behaviour is near zero, the whole offer has to protect first-order gross margin. Gives a fast route from business shape to the right mechanic.
+Sources: Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-097 · A Q1 revenue dip is usually an offer failure rather than a season, and Q1's suppressed conversion rates make it the best offer-testing window
+Tier: T4 · Status: active
+ASSERTED, no data. Two halves: contextually relevant Q1 offers can flatten the dip, and the depressed baseline makes a genuine offer improvement easier to detect. It cuts against the standard practice of writing Q1 off and cutting spend. Treats the trough as testing capacity rather than as something to survive.
+Sources: Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+### MM-098 · Design offers from the customer's stated objection, then audit them 90-120 days after launch by surveying buyers on which component actually convinced them
+Tier: T4 · Status: active
+Reasoned, no data. Two failure modes named. Designing the offer backward from your own margin goals. And stacking components nobody wanted, his examples being a mystery gift that means nothing to the buyer and a free app that lifted front-end conversion then damaged retention because the deliverable was poor. Survey questions: what would you like to see from us, what held you back from purchasing, what were your concerns when you first bought. The output is either replacing the weak component or removing it to cut offer complexity, because simple scales.
+Sources: Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08
+Last touched: 2026-08-18
+
+## Retention and LTV Structure
+
+### MM-030 · Retention rate is set by product/category and acquisition offer, not by email/SMS execution
+Tier: T3 · Status: active
+Two operators agree independently: a low repurchase rate cannot be fixed by hiring a lifecycle/retention person or better email strategy. It is determined by what the product is, who you acquire, on what offer, and what goes into the order; in apparel you will not double repurchase rates whatever the CRM does. Retention work is really product and offer work (new landing pages, offers, messaging), not campaign tinkering.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27; Andrew Faris (with Mehtab Bhogal), The AI Traps Wasting Your Time In An Ecommerce Brand, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-031 · Subscription only retains when the delivery mechanism itself serves the customer, which is why supplement subscriptions work and forced memberships fail
+Tier: T3 · Status: active
+A daily pill has an obvious 30-day replenishment cycle, so auto-shipment genuinely improves the product experience and produces high retention. Brands that bolt on subscriptions or membership programs nobody wants sink effort into a black hole. One client discovered an unexpectedly high-retention subscription product (not a supplement) and is reorganizing the whole business around it; the filter is whether recurring delivery plays a real role in the customer's life.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27
+Last touched: 2026-08-18
+
+### MM-032 · Non-subscription email/retention work is front-loaded: a 2-6 week agency sprint, then one person maintains it in ~15 minutes a day with AI
+Tier: T3 · Status: active
+Pattern across portfolio brands: bring a technically strong email agency in for a 2-6 week sprint (deliverability, suppression cadences, IP rotation between welcome and promo flows, flow setup), then a single doer churns out campaigns from AI-modified templates while watching open and click rates, roughly 15 minutes a day. Full-time in-house retention hires are a trap for non-subscription brands; re-audit technically about every 6 months.
+Sources: Andrew Faris (with Mehtab Bhogal), The AI Traps Wasting Your Time In An Ecommerce Brand, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-033 · Renting vs owning demand: new-customer acquisition is always rented attention; owned channels only compound the LTGP side
+Tier: T3 · Status: active
+You rarely own new-customer acquisition; you rent attention, acquire, then own the first-party data for remarketing. Even organic/personal-brand reach is unreliable ownership: a 50k-follower account rarely gets a post shown to that audience without effectively re-renting distribution. So "get off paid ads" dogma is wrong for acquisition, but owned channels are the correct lever for returning-customer revenue.
+Sources: Blue Sense Digital, The Death Spiral That Kills Most eCommerce Brands, 2026-07-22
+Last touched: 2026-08-18
+
+### MM-034 · First-party database accuracy is the durable targeting edge: Tesco's Clubcard won because mailing coupons forced accurate addresses, enabling surgical response to competitor store openings
+Tier: T3 · Status: active
+Tesco mailed discounts instead of redeeming at the till, which forced customers to keep an accurate address on file. When a competitor opened nearby and a store's usage dropped, Tesco could deploy coupons against exactly the defecting households instead of spraying the region. The mechanism, accurate identity data in your database enabling person-level response, is unchanged in modern retargeting and Meta business agents.
+Sources: Ben Heath, Meta's CMO on AI Ads and Rising Meta Ad Costs, 2026-07-20
+Last touched: 2026-08-18
+
+### MM-104 · Discount-takers have structurally lower LTV, driven mainly by a collapsed second-purchase rate rather than by the margin given away on the first order
+Tier: T4 · Status: active
+The real cost of a discount-led acquisition offer is the destroyed back end, which never appears in first-order reporting. Stated as universal ("that goes for every business") with no data behind it, so tier accordingly. Supports [[Marketing Math & Unit Economics#MM-024|MM-024]] with a retention mechanism and supports [[Marketing Math & Unit Economics#MM-030|MM-030]] by naming the discount as the offending offer variable. Operator move: split cohort retention by whether the first order carried a discount code before concluding a discount-led acquisition strategy is working.
+Sources: Professor Charley T, The BEST Facebook Ads Strategy for 2026 Post Andromeda, 2025-12-27
+Last touched: 2026-08-18
+
+### MM-105 · A recurring $20/month membership front end ascends worse than a one-time purchase of $300 or less
+Tier: T3 · Status: active
+From a low-ticket business he built and exited (a $20/month subscription that reached seven figures with no back end for years) plus current client accounts. Claimed mechanism is buyer psychology: someone still being billed monthly resists a second purchase, while a one-time buyer has closed the loop and can be sold again. Implication for ascension ladders off paid traffic: prefer a one-time front-end price under about $300 over an equivalent-LTV subscription when the goal is moving people to a high-ticket call. He labels it explicitly as his own experience and tells his co-host to test it, and it runs against the usual "MRR compounds" default, so treat it as a hypothesis to test per account rather than a rule.
+Sources: Dr. Matt Shiver, Organic vs Paid Ads: What's Actually Working In 2026, 2026-06-25
+Last touched: 2026-08-18
+
+## Conversion Math and CRO Economics
+
+### MM-035 · Conversion rate is an output of ~50 inputs and is gameable; the operating metric should be revenue per visitor (CR x AOV) or contribution per visitor
+Tier: T3 · Status: active
+CR can be inflated overnight by cutting cold spend (warm traffic converts ~4x cold), so it detaches from revenue. Example: a 9% CR store at $45-55 AOV is a worse business than a 1% CR store doing $200M at 50% contribution margin. His agency tracks RPV over a 2.5-year window instead of CR. Shopify metric fixes: use net sales + shipping collected (shipping is realized revenue Shopify excludes from AOV), and use GA4 sessions because Shopify under-filters bot traffic.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-036 · Blended conversion rate mechanically declines as cold traffic share grows; big brands have lower CR by construction
+Tier: T3 · Status: active
+Worked example: blended CR 2.8% decomposes into cold Meta traffic converting at 1% and warm high-intent traffic at 4%; turn Meta off and CR jumps to 4 overnight while revenue collapses. As cold scale increases, blended CR converges toward the cold rate, so comparing CR across brands or periods without traffic-mix context is meaningless.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-037 · CRO priority order by ICE: clarity/hierarchy, copy, offer, proof, friction, with offer as the single highest-impact lever
+Tier: T3 · Status: active
+A bad offer holds CR near 0% and a great one can take it to 80%; nothing in clarity, copy, proof, or friction has that range. But offer curation is hard, so the quick-win order starts at above-the-fold clarity. The same list doubles as landing-page structure top to bottom. Above the fold must answer four questions: what is it, why this one (unique mechanism), why now, why trust you.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-038 · Going from 0 to ~80-100 reviews roughly doubles conversion rate; beyond ~80 the effect is immeasurable
+Tier: T3 · Status: active
+From running his own e-commerce brands in 2019-2020, adding reviews was the single easiest CR doubler. The jump happens from 0 to ~80; 80 vs 150 vs 400 reads the same to a consumer. Auto-sort reviews with photos/videos first and incentivize photo reviews (gift card or $10 cashback, where legal) because image/video reviews carry far more trust than text. Proof must match the specific claim being advertised: five hyper-relevant reviews beat 400 generic ones.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-039 · Cart abandonment breakdown (Baymard): ~70% abandon; the fixable causes are extra costs 39%, slow delivery 21%, card trust 19%, forced account 19%, long checkout 18%, returns policy 15%, hidden total 14%
+Tier: T2 · Status: active
+43% of abandoners were only browsing and are unrecoverable. Fixes mapped: keep checkout add-ons under 10% of AOV; test hiding delivery dates if genuinely slow; enable guest checkout (Shopify may default to forced accounts); enable Shop Pay/Apple Pay/Google Pay and strip form fields; show total cost upfront. One-page checkout converts slightly better than multi-step in their data. Caution: free returns can be net-negative in fashion via return-rate abuse.
+Sources: Blue Sense Digital, eCommerce CRO Masterclass 2026: The Full System, 2026-08-10
+Last touched: 2026-08-18
+
+### MM-040 · A brand-new store sending ads direct to a Shopify PDP with no pre-lander hit $850 on day 1 and $1,000-1,200/day by day 3-4 at a tracked 1.54% conversion rate
+Tier: T2 · Status: active
+The operator deliberately skipped his usual funnel (ad, advertorial pre-lander, sales page, order page, upsell path) and ran ad-to-PDP on a free Debut theme, fully on Shopify, on a new pixel and new ad account. Day 1: $850; account shut down day 2; restored on the 19th, first $1k day; $1.2k the next day. Conclusion: creatives plus a solid lander drive results; theme, homepage design, and funnel software are mostly noise.
+Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30
+Last touched: 2026-08-18
+
+### MM-106 · A low conversion rate is an indicator of a constraint, never the constraint itself, and it is only a real problem when it sits below the category benchmark
+Tier: T3 · Status: active
+Drawn from weekly numbers forms filled in by members of his program, where the recurring pattern is healthy CPM, CPC and CTR sitting next to a bad conversion rate. Conversion rate only tells you people arrived and did not buy, never why, so the diagnosis has to come from step-by-step funnel KPIs. His example: an extreme checkout-page drop-off traced to a payment processor nobody had configured. The paired pre-launch rule is stronger than standard QA. Do not quality-check the funnel, actively try to break it before launch, because otherwise customers will.
+
+Second half, from Professor Charley T: benchmark the page against the category before doing any CRO. At 3% against a category norm of 1%, or at an astronomical 10%, the page is not the bottleneck and the correct move is more spend. Below 1%, no volume of traffic rescues it, because you cannot scale broken math, and the fix is either traffic quality or what happens after the click. Tripling traffic while halving conversion rate still makes more money. Illustrative arithmetic, no account data. Together these turn [[Marketing Math & Unit Economics#MM-035|MM-035]] and [[Marketing Math & Unit Economics#MM-036|MM-036]] into a routing rule.
+Sources: Mark Builds Brands, 8 years of marketing advice in 70 minutes, 2026-03-21; Professor Charley T, The NEW BEST Meta Ads Andromeda Course to Scale in 2026, 2026-01-24
+Last touched: 2026-08-18
+
+## Product and Market Selection
+
+### MM-041 · Winning products are created by marketing and funnel quality, not found; the best-marketed product beats the best product
+Tier: T3 · Status: active
+Brands scale one-ingredient supplements to eight figures per month, showing the product itself is not the differentiator. What looks like striking a winning product is usually a product that was easier to market plus good creatives and a good funnel. Two sellers of the identical product get opposite results purely on marketing skill.
+Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30
+Last touched: 2026-08-18
+
+### MM-042 · Product selection criteria: a painful problem in a passionate market, shoebox-sized logistics (worldwide shipping under ~$5), and LTV potential via upsells or subscriptions
+Tier: T3 · Status: active
+The deeper the pain on Maslow's hierarchy (health/safety level), the easier the sell, and the market must either buy constantly (weight loss) or be a deep niche passion. Anything that fits a shoebox ships anywhere for roughly under $5, avoiding logistical issues. Subscriptions raise CAC but build recurring revenue; the operating thesis is "whoever can spend the most to acquire a new customer wins." Total product research should take under ~2 hours.
+Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30
+Last touched: 2026-08-18
+
+### MM-043 · Avatar brands trade TAM for dominance: a smaller market fully owned beats a sliver of a mass market
+Tier: T3 · Status: contested
+Gym Shark launched 2012 into the emerging lifter avatar Nike/Reebok/Under Armour ignored (Google Trends bump ~2010-2013) and hit a $1B valuation by 2020, versus Nike's $61B in 2026. The mechanism: the more accurately the customer sees themselves reflected in the brand, the less it feels sold to them, so the niche brand captures ALL of its segment's spend rather than a fraction of the mass market.
+
+Same thesis under the name "purple ocean": enter a market with proven demand first, then carve out a hyper-specific segment and aim for 100% of it. Cases: Primal Queen sold beef organ supplements specifically to postpartum and menopausal women inside the carnivore trend (claimed 4.5M searches/month peak, January 2025, per Google Trends) instead of a general carnivore supplement; a nootropics brand sold specifically to entrepreneurs; a pillowcase brand positioned against overnight acne rather than sleep quality. The segment does not have to be demographic, it can be a single angle. Sequence: verify demand in the parent market, then find the sub-segment with no dedicated competitor.
+
+Rare reversal case in favour of the same rule: Fashionphile added an entry-tier brand (Coach) to widen the funnel on a stated gateway-drug hypothesis, expecting buyers to move up to Chanel and Hermes over time. Existing customers objected to sifting through it. Curation itself was the product, so diluting the assortment degraded the browse experience, and the tier was withdrawn. The entry customer is now reached through separate channels rather than by broadening the catalog. Funnel-widening can cost the core segment's trust faster than it converts anyone upward.
+
+CONTESTED by Mehtab Bhogal, who argues the opposite selection rule post-iOS/ATT: broad-TAM products in dense, heavily competed categories now outperform niche products because the algorithms have more data to optimize on, and thin categories are thin for a reason. He dates the break to the loss of manual targeting precision and paid-search niche wins, and says niche CAC has risen to the point where those products are hard to sell online. Neither side showed data; both are reasoning from their own portfolios. The plausible reconciliation is [[Marketing Math & Unit Economics#MM-045|MM-045]]: broad TAM measured in category entry points, executed with hyper-specific persona creative.
+Sources: Nick Theriot, The Most Braindead Way To Find Winning Products in 2026 (this will get banned), 2026-08-17; Mark Builds Brands, 8 years of marketing advice in 70 minutes, 2026-03-21; Andrew Faris, Fashionphile's 27 Year Journey To $400M, 2026-05-29; Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-044 · Opportunity selection framework: gross margin, retention rate, TAM, unique mechanism; two or more present makes a strong brand, none means change products or quit
+Tier: T3 · Status: active
+Score products on four levers: high gross margin, high retention rate, large TAM, and a genuinely unique product/mechanism. Most brands have at most one; two or more of the four is the recipe for outsized scale. If a product has none, the honest options are: develop new products designed to add a lever, stop working on it, or deliberately play a hard category where difficulty itself keeps competitors out (e.g. Simple Modern winning Amazon drinkware by taking lower margin and more colors up front).
+
+Fifth lever added 2026-08-18: intellectual property. Bhogal rates IP the strongest product moat because its operating leverage rises with volume while manufacturing carries the same marginal cost forever. He names Ridge's wallet IP portfolio as the underdiscussed reason they could scale off one core product far longer than expected, and notes nobody tells the Ridge story that way. First-to-market is the weak moat, because copycats erode the margin. He also flags the counter-strategy of a brand that refuses all publicity precisely because it has no IP to defend a copied position. This gives [[Marketing Math & Unit Economics#MM-046|MM-046]] its exception mechanism.
+
+His new-SKU launch checklist extends the same framework into a launch decision: product-channel fit first, then whether the SKU fixes an existing weakness in the business, TAM per channel, IP defensibility, margin structure, cannibalization versus net-new, category entry points, working capital to give it a fair shot, and launch timing. Product-channel fit is scored on margin structure and unit economics per channel, since a $200 product cannot live in convenience stores that want $5.99 to $19.99. Not all boxes have to be ticked, only enough to justify the investment. His margin rule: "higher margin is more idiot-proof", with the caveat that structurally low-margin businesses are viable and simply demand far more operational rigor.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27; Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-045 · Effective TAM equals the number of category entry points: more distinct ways to talk about a product means more scalable creative reach
+Tier: T3 · Status: active
+Beyond raw headcount of buyers, TAM widens with the number of distinct value propositions (category entry points) a product supports; the Mars Man hormone supplement example spans brain health, heart health, training, and strength, giving many creative angles at once. A product with many entry points scales faster because message variety, the core creative lever, is structurally available; a niche product like a $200 baseball-glove wallet caps out regardless of execution.
+
+Size TAM per channel, never in aggregate. Bhogal runs the sequence category TAM, then channel-reachable TAM, then in-market-right-now TAM, and reports that a "couple billion dollar" category TAM can shrink 95% once restricted to what actually sells over a website to people in market at the right time, often landing at a couple million people. That final number is what sets the account's real spend ceiling. Operator move: when an account plateaus, back out the channel-restricted TAM before blaming creative. Reasoning only, no worked numbers shown.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27; Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-046 · Large TAM tends to compress margin through competition, except where price signals value
+Tier: T4 · Status: active
+When a market is huge and the product is simple to make, entry floods in and drives price and gross margin down (backpacks: expensive zippers, crowded category, low LTV, hard differentiation). The exception is categories like beauty where pricing low signals a bad product, so high margin persists regardless of TAM. Crowded "perfect" categories (supplements) also bid up CAC until unit economics break at scale.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27
+Last touched: 2026-08-18
+
+### MM-047 · A profitable owner-operated brand has almost no acquisition value; a barely-profitable brand that grows self-reliantly with a full team is worth far more
+Tier: T3 · Status: active
+A $100k/mo revenue brand where the founder does everything is nearly unsellable (some sold for maybe $20-40k) because the buyer acquires dependence, not an asset. A $100k/mo brand making only $5k/mo profit but with systems, team, and fulfillment that grow without the founder is materially more valuable. Second value driver: a genuinely new mechanism/product in a category already growing fast (his example: the first greens gummy, sold for over a billion dollars).
+Sources: Nick Theriot, You Just Found a Winning Ad… Here's Exactly What To Do Next, 2026-07-31
+Last touched: 2026-08-18
+
+### MM-048 · A declining business cannot realistically be rescued by an agency inside 30 days; turnarounds take 60-90 days if possible at all
+Tier: T3 · Status: active
+Client-selection floor: Shopify store doing at least $100k/month revenue, spending at least $30k/month on Facebook ads, with a positive P&L. For a business declining for 8 months, saving it within 30 days is "very unrealistic"; it takes 60-90 days "and that's even if we can do it." Creative and landing-page systems compound over time, so results need a solvent runway.
+Sources: Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20
+Last touched: 2026-08-18
+
+### MM-049 · Hard-seasonal, giftable, and custom products concentrate nearly all annual revenue in the peak window (up to 500:1) and cannot be forced to scale off-season
+Tier: T3 · Status: active
+Beach umbrella client: roughly $1,000-10,000/month most of the year, then ~$100k in May, ~$500k in June, ~$700k in July, collapsing in August. Toy client: $5-30k/month baseline, then ~$300k October, ~$2-2.5M November, ~$1M December ($3.5-4M combined Q4), collapsing to ~$500/day in January; the client bought inventory expecting $4M in January, tried to force scale, and failed. He refuses seasonal, custom/personalized, and gifting-driven products as year-round businesses because performance exists only 2-3 times a year, making continuous testing and scaling impossible.
+
+The fix is a counter-seasonal product, not marketing effort. Bhogal describes a women's apparel brand that died every summer and launched conservative high-coverage swimsuits, which turned summer into one of its stronger seasons and raised LTV, despite the new line having little to do with the core assortment. Faris states the choice explicitly: either lean into making the big season bigger, or go solve the low season with product. Pushing marketing spend at the trough wastes time and money. ASSERTED, no revenue-by-month data shown.
+Sources: Nick Theriot, Simple Creative Testing Framework I Use To Scale Facebook Ads In 2026, 2026-08-12; Nick Theriot, The Most Braindead Way To Find Winning Products in 2026 (this will get banned), 2026-08-17; Nick Theriot, $30k days with Facebook Ads using Emotional Intensity, 2026-07-22; Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-107 · Every launch already carries a stack of unknown variables, so never put an unproven product on top of unproven creative
+Tier: T4 · Status: active
+The variables in play at launch are media buying, creative, copy, product, market and algorithm. Creative is the largest single one and the one you can least control. If the product has never been proven to sell, a failed test cannot be attributed to anything, so nothing is learned and the money buys no information. The prescription is to enter markets where people are demonstrably already buying and hold the product constant while creative varies. This sits in tension with [[Marketing Math & Unit Economics#MM-041|MM-041]] ("winning products are created by marketing, not found"), and the reconciliation is that marketing creates the win only once demand for the category is already proven. Reasoning, no data.
+Sources: Mark Builds Brands, 8 years of marketing advice in 70 minutes, 2026-03-21
+Last touched: 2026-08-18
+
+### MM-108 · Product development obeys venture math: 8 failures in 10 is a good outcome, and one portfolio brand missed roughly 20-22 times before the launch that paid for all of them
+Tier: T3 · Status: active
+Keep the product hopper permanently full, because the development cycle runs 1-3 years and an empty hopper is a multi-year growth gap no marketing can close. He also warns that a single successful launch is usually luck rather than evidence of product-development skill. Opex should be deliberately allocated toward product bets the same way it is allocated toward creative volume. Faris generalizes it: run product, creative production and offers as portfolios of bets, and size each bet against the win it could produce. The gate is cost-of-shot relative to upside rather than probability of success, so he will spend more and wait longer on a product that can live in four channels at good margin, and refuses expensive shots at barely-incremental SKUs. ASSERTED from portfolio experience, no data shown.
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-109 · Marketing cannot push past the local maximum set by the existing product portfolio; past that ceiling only new products that expand TAM raise growth at target CAC and margin
+Tier: T4 · Status: active
+The diagnostic is whether spend can grow at target CAC. If it cannot, and creative, offer and landing-page work have already been done, the constraint is the product portfolio and the conversation belongs with whoever owns product. This converts "our ads stopped scaling" into a portfolio question. It also gives the codex a stopping rule for tactical scaling and creative claims: they are all bounded by the portfolio. Reasoning only, no data.
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-110 · Visible agency and operator "marketing win" stories are largely client selection, so reverse-engineering a tactic from an outcome is unreliable
+Tier: T4 · Status: active
+The claim the codex should carry because it sets the discount rate on every T3 practitioner claim inside it. Bhogal's case: outdoor and fitness operators looked like 300-IQ marketers in 2020-21 on demand that COVID pulled forward, and the same operators cannot make those categories work now. The winners largely picked clients that already had product-market fit and rode the growth. He applies it to himself too, saying it is very hard to know why something worked even for your own brands. Operator move: before copying a tactic, check whether the source's product, margin and TAM conditions match yours.
+Sources: Andrew Faris (with Mehtab Bhogal), One Packaging Tweak, $375K In Profit, 2026-06-18
+Last touched: 2026-08-18
+
+### MM-111 · In a two-sided resale marketplace only 13% of sellers also buy, and the two sides are opposite demographics, so one brand has to run two structurally different acquisition motions
+Tier: T3 · Status: active
+Fashionphile's sellers skew older and wealthier and mostly shop the primary market rather than resale; buyers skew younger and treat resale as a badge of honour. A 13% crossover kills the cheap assumption that you can monetize one side with the other. Supply is the constrained side, which inverts the usual e-commerce assumption that demand generation is the hard part. Operator translation for any marketplace or trade-in model: split budget and creative by side, and build the seller-side offer around speed and certainty of payment rather than price. Founder-reported figure, not shown.
+Sources: Andrew Faris, Fashionphile's 27 Year Journey To $400M, 2026-05-29
+Last touched: 2026-08-18
+
+### MM-112 · Competitor awareness spending can erase your category mindshare while your own numbers still grow
+Tier: T3 · Status: active
+Fashionphile was named by Entrepreneur Magazine in 2010 as one of the 100 smartest, most innovative companies, and was still bootstrapped, profitable and growing when The RealReal raised over $300M pre-IPO. The founder's read is that share of voice moved, not product quality or profitability: they kept growing while going under the radar for years and went from owning the awareness in their category to effectively unknown. It was the primary trigger for taking outside capital in 2018-2019 after 20 years bootstrapped, alongside technology and hiring people who had operated at larger scale. Awareness share is relative and can be bought away from you while your own trajectory looks fine, which is a real caution against judging brand health from your own numbers alone. Anecdotal, no share-of-voice measurement shown.
+Sources: Andrew Faris, Fashionphile's 27 Year Journey To $400M, 2026-05-29
+Last touched: 2026-08-18
+
+## US Market Entry Economics
+
+### MM-050 · US CPMs run roughly 2x a small home market, so copy-pasting home campaigns into the US doubles CAC at equal CTR and CVR
+Tier: T3 · Status: active
+Average CPMs cited: Australia ~$11 vs US ~$22. If CTR and conversion rate stay the same, doubled CPMs double cost per acquisition, which breaks most brands' unit economics on entry. Markets financially weaker than Australia (UK, NZ, much of Eastern Europe) have even lower CPMs, widening the gap. Stated from managing ~$300M/yr in spend (50% US) across 20+ US launches.
+Sources: Blue Sense Digital, The US Launch Playbook for Non-US Brands, 2026-08-17
+Last touched: 2026-08-18
+
+### MM-051 · The correct offset for higher US CPMs is price, not better CTR/CVR: reprice up 50-60% against the home-market price
+Tier: T3 · Status: active
+Average order value data cited: Australia ~$103 vs US ~$151, about 50% higher, which he says explains most of the CPM gap. Everyone tries to out-optimize CTR and CVR instead; the structural fix is pricing to the US market's AOV norm so dollars-per-advertising-dollar match the competitors who are outbidding you.
+
+The practical form for Australian brands is 1:1 currency, not conversion: sell at $70 USD what sells at $70 AUD. Converting $70 AUD down to about $52 USD hands the US dollar's higher purchasing power back to the customer. Fashion-specific companions: do not expand below roughly A$10M/yr (consistent with [[Marketing Math & Unit Economics#MM-052|MM-052]]), launch with proven local winners rather than fresh creative, expect low-fi content to outperform in the US relative to AU, filter the catalogue to trans-seasonal product where there is no Northern Hemisphere buying, and pick states on weather and demographics. Case: an in-house team with four to five evergreen winners each carrying roughly $250k of lifetime AU spend exported them to the US, got better efficiency there than at home because the AU market was fatigued, and roughly tripled the business, with the US now half of revenue.
+Sources: Blue Sense Digital, The US Launch Playbook for Non-US Brands, 2026-08-17; Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25
+Last touched: 2026-08-18
+
+### MM-052 · Do not launch into the US below $3M USD/yr in the home market; ideal threshold is $10M+
+Tier: T3 · Status: active
+Revenue level is a proxy for operator skill; a $3M operator competes against generally stronger US businesses. Brands doing $10M+ locally that delayed the launch consistently crush it because they arrive with skills and a bank of proven winning ads. For a new-country launch, model gross profit on first purchase only (no LTV credit) and require profitability on entry so the launch is not capital-intensive.
+Sources: Blue Sense Digital, The US Launch Playbook for Non-US Brands, 2026-08-17
+Last touched: 2026-08-18
+
+### MM-053 · Advertising yourself as a foreign brand tanks US conversion rates; full localization (perceived-US brand) is required
+Tier: T3 · Status: active
+US buyers avoid international-framed brands due to tariff exposure, shipping-time fear, and currency/customs friction, so "proudly Australian" branding backfires; everything on landing pages and ads should read as a US brand. Related economics: hold local US inventory because tariffs are paid on cost-of-goods, not retail price (de minimis suspension ended direct dropshipping; tariffs lowered/capped after a Feb 2026 Supreme Court ruling but surcharges remain). US fashion return rates can run up to 2x Australia, which must reduce both LTGP and the new-customer count in the LTV:CAC calc.
+Sources: Blue Sense Digital, The US Launch Playbook for Non-US Brands, 2026-08-17
+Last touched: 2026-08-18
+
+## Team and Org Economics
+
+### MM-054 · One full-time closer per $50-100k of monthly revenue; part-time closers fail because their incentive is to take calls, not work the pipeline
+Tier: T3 · Status: active
+A closer on ~10% commission earns $5-10k/mo at that ratio, which sustains a full-time A player. Fractional closers who share calendars across businesses only show up for booked calls and skip follow-ups and pipeline work. His business has done $200k+/mo with one setter and one closer by strictly managing the calendar; three or four closers at under $100k/mo means the closers are bad.
+Sources: Dr. Matt Shiver, How I Built a $2.25M/Year Coaching Business (Copy My System), 2026-08-11
+Last touched: 2026-08-18
+
+### MM-055 · B2C coaching needs roughly twice the fulfillment headcount of B2B at the same revenue because B2B price points run about 2x higher
+Tier: T3 · Status: active
+B2B offers carry a financial outcome so they price ~2x higher, meaning fewer clients per revenue dollar and a smaller delivery team. He cites clients at $50-100k/mo whose team complexity is twice his own purely because their offer price is half. B2B at $20-50k/mo typically needs one fulfillment hire; B2C needs at least two coaches at the same stage.
+Sources: Dr. Matt Shiver, How I Built a $2.25M/Year Coaching Business (Copy My System), 2026-08-11
+Last touched: 2026-08-18
+
+### MM-056 · AI booking bots only pay off with high lead flow; at low volume every lead needs a human setter
+Tier: T3 · Status: active
+At the $0-20k/mo stage he recommends a human messenger (20 hours/week, ~4 hours/day, booking about one call a day) over AI booking bots, even though his company sells such software, because with few leads each one is too valuable to risk on automation. He also found two 20-hour setters outperform one 40-hour setter because quality diminishes on long solo shifts.
+Sources: Dr. Matt Shiver, How I Built a $2.25M/Year Coaching Business (Copy My System), 2026-08-11
+Last touched: 2026-08-18
+
+### MM-057 · People-cost benchmark for e-commerce at scale: 5% of revenue on people (including agencies) is good, 3% exceptional
+Tier: T3 · Status: active
+A cited brand runs at 3% of revenue on people including agencies while scaling from ~$3M to $8M/month in a month and projecting $12-15M/month within 2 months. 5% is called "good" and 3% "exceptional"; the low ratio is partly a function of scale since opex scales sublinearly. With a cost base that good, chasing more AI adoption is a distraction.
+Sources: Andrew Faris (with Mehtab Bhogal), The AI Traps Wasting Your Time In An Ecommerce Brand, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-058 · Do not automate any task a $600-$1,200/month offshore employee can do unless it is mission-critical; build automations fast with a human in the loop
+Tier: T3 · Status: active
+Automating entry-level offshore work saves essentially no money. Fully automated pipelines cost far more time than human-in-the-loop, which was "100x faster to build" and more reliable; optimize for build speed over robustness because base models improve so much every ~6 months that hardened pipelines become obsolete. Never vibe-code mission-critical software (ERP, Klaviyo-class ESP); the hard part is the reliable back end, so buy it.
+Sources: Andrew Faris (with Mehtab Bhogal), The AI Traps Wasting Your Time In An Ecommerce Brand, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-059 · AI's structural payoff in e-commerce orgs is deleting the management layer: one $200-220k doer replaces roughly three $80k roles
+Tier: T3 · Status: active
+AI multiplies individual-contributor output so the manager layer between C-level and doers becomes mostly unnecessary: replace three people at ~$80k each with one at $200-220k doing the equivalent of many. The 80/20 of AI impact is opex reduction and amplifying an already-working process (e.g. creative output), not inserting AI where it is not a natural fit; a business already growing fast should mostly ignore the AI shiny object.
+Sources: Andrew Faris (with Mehtab Bhogal), The AI Traps Wasting Your Time In An Ecommerce Brand, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-060 · An agency's growth constraint is people and service quality, not cash: service businesses cash-flow without inventory, unlike e-commerce where cash is the scaling dragon
+Tier: T3 · Status: active
+Scaling an e-commerce brand is primarily cash-constrained (funding inventory ahead of sales); scaling an ad agency is constrained by founder bandwidth, hiring quality (growth strategists and creative strategists are the outsized value-creation roles and hardest to find), and quality-of-service degradation risk. AJF planned 200% growth for the year and is tracking ~450%, betting that relentless service quality is the fastest long-run growth path via churn reduction and word of mouth.
+Sources: Andrew Faris, Should Our Ad Agency Grow Slower? (With Patrick Coddou), 2026-08-17
+Last touched: 2026-08-18
+
+### MM-061 · On a complex Shopify store, a botched release costs $20-40k per day in lost conversions even when caught within 2 hours
+Tier: T3 · Status: active
+Dev-heavy stores (metafield workarounds, multi-item checkout) have had releases costing roughly $20-40k/day in conversion drop-off despite a team that catches issues in about two hours. Their fix is AI-driven adversarial QC: an in-house dev has the model write adversarial reviews of themes pre-release, which sharply reduced incidents. Related: Shopify checkout degrades noticeably past 5-8 items per cart, so 12-item-average carts see far more release and site-speed damage.
+Sources: Andrew Faris (with Mehtab Bhogal), The AI Traps Wasting Your Time In An Ecommerce Brand, 2026-08-03
+Last touched: 2026-08-18
+
+### MM-114 · Creative production budget should be roughly 25% of media budget at $30-100k/month spend, asymptoting toward 10% above $100k/month
+Tier: T3 · Status: active
+Below $30k/month the production budget is founder time rather than money, and statics plus founder-shot video are enough. At $30-100k/month, 25% of media budget goes into production, so $25k/month at $100k of spend. He calls the 25% band deliberately uncomfortable and says it is "way more than like 99% of brands are actually spending", naming under-allocation here as a primary reason accounts stall. Above $100k/month it settles toward 10%, which is roughly 2.5% of revenue at a 25% MER, and at that level funds UGC, partnership ads, a designer for statics, and a low-cost agency for one additional format. This is a separate and larger line item than [[Marketing Math & Unit Economics#MM-022|MM-022]] (about 5% on better operators, about 10% on creator partnership ads).
+Sources: Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11
+Last touched: 2026-08-18
+
+### MM-115 · Cost to produce one asset must be under the average contribution margin per ad unit, calculated per format, and most brands are underwater without knowing it
+Tier: T3 · Status: active
+The inputs: mean lifetime spend per ad unit runs about $700 to $1,500 depending on the account, and mean revenue per ad about $2,000, both from their audit process. Subtract cost of goods and the cost of serving the ad and you get contribution margin per ad unit, roughly $350 in his example. If producing one ad costs $400, the creative machine is destroying value, and the fix is either cheaper formats or a better hit rate. Run the same calculation per format to decide the production mix. Operator action: compute your own mean spend per ad from the last 12 months (total spend divided by ads launched) rather than borrowing his number, because everything downstream keys off it, then track cost per asset by source and read ROI at individual-ad level as spend against production cost.
+Sources: Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11
+Last touched: 2026-08-18
+
+### MM-116 · Creative strategists are commonly paid roughly 3% of the ad spend their creatives generate, on top of base salary, and the model breaks at large scale
+Tier: T3 · Status: active
+The incentive is direct: if their ads do not take spend, they do not get paid, so hit rate is what they optimize. He reports it works well on mid-size brands and becomes untenable on large accounts, where the payout can reach about $80,000/month and companies move off the model. Hiring guidance attached: the role barely existed 2-3 years ago, so source from copywriters (creative strategy is mostly copywriting, meaning scripts, static briefs and persona ideation), poach an existing strategist, or train up a designer or video editor, which tightens the feedback loop because they can ideate and produce.
+Sources: Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11
+Last touched: 2026-08-18
+
+## Channel Value Heuristics
+
+### MM-062 · Cold outbound DMs out-earn organic monthly for a creator-education offer despite millions of subscribers, and outbound deals skew higher-ticket
+Tier: T3 · Status: active
+Blueprint's three traffic sources rank: organic converts worst, outbound and paid lead. Outbound (cold Instagram DMs to researched channels, opener referencing their Monday-meeting channel review, then a typeform and call) produces more monthly revenue than organic and typically the highest-ticket clients, justifying the heavier per-lead infrastructure. Attributed to reaching selected ideal clients instead of filtering fans.
+Sources: Dr. Matt Shiver, How to Actually Grow a YouTube Channel (he has 3.5M subs), 2026-08-06
+Last touched: 2026-08-18
+
+### MM-063 · Valuation heuristic: one long-form YouTube view is worth roughly 10 short-form views because it is a chosen, sound-on, full-screen consumption event
+Tier: T3 · Status: active
+YouTube is the only click-based sound-on platform: the viewer's thumbnail/title click is an earned decision, then they may watch 20+ minutes, versus a passively scrolled 1-second reel "view." The working ratio is 10:1 (1,000 long-form views = 10,000 short-form), possibly higher. Displayed YouTube views also undercount reach since CTR runs 2-10% of impressions (e.g. 1M impressions to 100K views).
+Sources: Dr. Matt Shiver, How He Made $15M From YouTube (Full Breakdown), 2026-07-23
+Last touched: 2026-08-18
+
+### MM-117 · TikTok Shop's cost stack is roughly 6% platform fee plus ~7.5% blended affiliate commission plus 3-5% agency, and ad spend is what decides profitability
+Tier: T3 · Status: active
+Affiliates take 15%, but only about half of sales come through them, so model it at 7.5% blended. The stack totals roughly 16-19% of GMV before COGS and shipping, which both he and Faris call low relative to Amazon. The channel is profitable for most of his clients once the intro discount is stepped back up, and the brands losing money are the ones carrying heavy GMV Max spend. The third variable is fulfilment cost: a frozen-food client paying $30-35 to ship an order runs the channel at a deliberate loss purely for retail halo. Operator read: model the TikTok Shop P&L as fee stack plus discount depth plus ad spend, and decide up front whether the channel's job is profit or visibility. ASSERTED, no P&L shown.
+Sources: Andrew Faris, He Sold $700,000 Worth Of Pretzels On TikTok Shop In One Month, 2026-06-30
+Last touched: 2026-08-18
+
+### MM-118 · TV deal segments and inbound corporate/B2B bulk sales are high-contribution-margin channels that can carry a brand through a zero-ad-spend period
+Tier: T3 · Status: active
+Worth banking for low-AOV, giftable, mass-appeal products. The structure is a broker relationship that places the product into a televised deal segment (ABC / Good Morning America in this case). The B2B side is inbound organizations buying in bulk, run by a dedicated family member, modeled on the corporate-sales page pattern from Five Minute Journal. Both are high contribution margin precisely because they carry no 50-70% ad cost, and both kept revenue moving while the brand ran zero paid spend from March to September 2025 (see [[Marketing Math & Unit Economics#MM-078|MM-078]]). Richie says he is surprised how little e-commerce operators discuss the TV channel. Entirely asserted; no revenue share or margin numbers given for either channel.
+Sources: Andrew Faris (with Richie Mashiko), From A 65% Decline To All-Time Revenue & Profit Highs, 2026-04-27
+Last touched: 2026-08-18
+

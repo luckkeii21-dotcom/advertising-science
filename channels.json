@@ -1,0 +1,24 @@
+{
+  "comment": "Advertising Science Engine channel roster. Edit freely; the harvester reads this. density: how mechanism-heavy the channel is. backfill: 'full' means the whole catalog is wanted, default is windowed.",
+  "roster": [
+    { "slug": "bluesense-digital", "name": "Blue Sense Digital", "handle": "bluesensedigital", "channel_id": "UCtOnZyHshTvH1GoboRzHqjw", "density": "high", "topics": ["meta", "google", "cro", "economics"], "backfill": "full" },
+    { "slug": "charley-t", "name": "Professor Charley T", "handle": "CTtheDisrupter", "channel_id": "UC3kl2OhNRZ1rH_4bnd0Ap7g", "density": "high", "topics": ["meta", "auction"], "include_streams": true },
+    { "slug": "ben-heath", "name": "Ben Heath", "handle": "BenHeath", "channel_id": "UC5Dv8i_vH5M9rB3HOZDCkng", "density": "medium", "topics": ["meta"] },
+    { "slug": "sam-piliero", "name": "Sam Piliero", "handle": "SamPiliero", "channel_id": "UCFFCa4tMjhj9g_xKlvqFWxg", "density": "medium", "topics": ["meta", "google"] },
+    { "slug": "mark-builds-brands", "name": "Mark Builds Brands", "handle": "markbuildsbrands", "channel_id": "UCkRbLkvUX5zuwnKOBwFHOjg", "density": "medium", "topics": ["meta", "creative"] },
+    { "slug": "matt-shiver", "name": "Dr. Matt Shiver", "handle": "drmattshiver", "channel_id": "UCROa6tufT75NMIg0JEPtOAQ", "density": "medium", "topics": ["meta", "leadgen"] },
+    { "slug": "fraser-cottrell", "name": "Fraser Cottrell", "handle": "FraserCottrell", "channel_id": "UC8xkoDqgLjJq_lfi2DBfAQA", "density": "medium", "topics": ["creative", "meta"] },
+    { "slug": "nick-theriot", "name": "Nick Theriot", "handle": "NickTheriot", "channel_id": "UCWqjZ2W4pOOErFealWwBSXA", "density": "high", "topics": ["meta", "auction"] },
+    { "slug": "solutions8", "name": "Solutions 8 / The Google Ads Podcast", "handle": "solutionseight", "channel_id": "UCKukXk_pm3om3If9FUsBKew", "density": "high", "topics": ["google", "auction"], "include_streams": true },
+    { "slug": "jon-loomer", "name": "Jon Loomer", "handle": "jonloomer", "channel_id": "UChvdCJlKGCQ1P4x_MSJAkOQ", "density": "high", "topics": ["meta", "delivery"] },
+    { "slug": "andrew-faris", "name": "Andrew Faris", "handle": "andrewfarispodcast", "channel_id": "UCNRTc9YfEa2ag3JLhjb7G2g", "density": "high", "topics": ["economics", "attribution"] },
+    { "slug": "mike-rhodes", "name": "Mike Rhodes", "handle": "websavvy", "channel_id": "UCf-q2un7cRaJf6oK53da3pw", "density": "high", "topics": ["google", "pmax"] }
+  ],
+  "bench": [
+    { "name": "Dara Denney", "handle": "DaraDenney", "why": "creative-as-algorithmic-lever, $100M+ paid social" },
+    { "name": "Common Thread Collective", "channel_id": "UCjtbFqsqVORPBJMein0zLWQ", "why": "forecasting models, profit-system math" },
+    { "name": "Miles McNair", "handle": "MilesMcNair", "why": "Google bidding teardowns, 100M+ EUR managed" },
+    { "name": "Ben Heath Google Ads", "handle": "BenHeathGoogleAds", "why": "Ben's Google channel" },
+    { "name": "Sam Piliero Google Ads", "handle": "SamPilieroGoogleAds", "why": "Sam's Google channel" }
+  ]
+}
