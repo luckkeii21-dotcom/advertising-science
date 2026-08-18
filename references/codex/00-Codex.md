@@ -26,22 +26,22 @@ Our own client accounts are the T2 upgrade path: when we test a T3 claim on SJR,
 
 ## Topics
 
-- [[Meta Delivery & Andromeda]] — retrieval, ranking stages, GEM, why creative is targeting now
-- [[Auction Mechanics & Bidding]] — total value equation, bids, cost caps, pacing
-- [[Learning & Signal]] — learning phase, optimization events, signal quality, EMQ
-- [[Creative Science]] — creative as the main lever, fatigue, volume, testing
-- [[Scaling Models]] — budget scaling, consolidation, structure
-- [[Attribution & Incrementality]] — what platform numbers lie about, holdouts, MER
-- [[Google Auction & Smart Bidding]] — ad rank, quality score, tCPA/tROAS internals
-- [[Google PMax & Shopping]] — PMax behavior, feeds, cannibalization
-- [[TikTok Delivery]] — TikTok's auction and delivery system
-- [[Marketing Math & Unit Economics]] — LTGP:CAC, contribution margin, payback, forecasting
+- [[Meta Delivery & Andromeda]]: retrieval, ranking stages, GEM, why creative is targeting now
+- [[Auction Mechanics & Bidding]]: total value equation, bids, cost caps, pacing
+- [[Learning & Signal]]: learning phase, optimization events, signal quality, EMQ
+- [[Creative Science]]: creative as the main lever, fatigue, volume, testing
+- [[Scaling Models]]: budget scaling, consolidation, structure
+- [[Attribution & Incrementality]]: what platform numbers lie about, holdouts, MER
+- [[Google Auction & Smart Bidding]]: ad rank, quality score, tCPA/tROAS internals
+- [[Google PMax & Shopping]]: PMax behavior, feeds, cannibalization
+- [[TikTok Delivery]]: TikTok's auction and delivery system
+- [[Marketing Math & Unit Economics]]: LTGP:CAC, contribution margin, payback, forecasting
 
 ## Operations
 
-- [[Channel Roster]] — who we harvest and why
-- [[Watchlist]] — official platform pages we monitor
-- [[Harvest Log]] — what came in, day by day
+- [[Channel Roster]]: who we harvest and why
+- [[Watchlist]]: official platform pages we monitor
+- [[Harvest Log]]: what came in, day by day
 - Lessons live in `wiki/science/lessons/`
 - Raw transcripts live in `wiki/sources/transcripts/<channel>/`
 

@@ -66,9 +66,9 @@ Last touched: 2026-08-18
 
 ### GA-021 · Switching from maximize conversion value to target ROAS flattens day-to-day variance while the period average lands in roughly the same place
 Tier: T3 · Status: active
-Under maximize conversion value the campaign makes larger bets, so weeks alternate between strong efficiency and losses. tROAS flattens that curve. Total performance over the period averages out to roughly the same number. The honest reason to switch is predictability: weekly agency reporting and board-set budgets need a number that does not swing. The endorsed sequence stays launch on maximize conversion value to accumulate data, then roll into tROAS. ASSERTED. Illustrated with hand-drawn performance curves on screen, no exported account data, so this is a practitioner assertion rather than a shown test.
+Under maximize conversion value the campaign makes larger bets, so weeks alternate between strong efficiency and losses. tROAS flattens that curve. Total performance over the period averages out to roughly the same number. The honest reason to switch is predictability: weekly agency reporting and board-set budgets need a number that does not swing. The endorsed sequence stays launch on maximize conversion value to accumulate data, then roll into tROAS. That closing leg is contested. Grow My Ads opens cold Shopping builds on manual CPC or Maximize Clicks and moves to smart bidding only once conversion volume exists, recorded at GA-036 with both sides. The variance-flattening mechanism itself is uncontested. ASSERTED. Illustrated with hand-drawn performance curves on screen, no exported account data, so this is a practitioner assertion rather than a shown test.
 Sources: Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-18
+Last touched: 2026-08-19
 
 ### GA-022 · Expansive bidding carries an implicit exploration budget of roughly 30% and restrictive bidding close to 0%, with the real exploration share set by the gap between target and achieved ROAS
 Tier: T4 · Status: active
@@ -84,9 +84,39 @@ Last touched: 2026-08-18
 
 ### GA-024 · Portfolio bidding strategies pool learnings across segmented campaigns and allow a max and min CPC on top of tROAS
 Tier: T3 · Status: active
-This is the escape hatch for accounts that had to segment for commercial reasons: grade C inventory that must move, new arrivals that need surfacing for seasonality, brand versus non-brand, per-margin categories. A portfolio strategy set at account level and applied across those campaigns houses their learnings together instead of leaving each to model on its own thin conversion slice. The second benefit is a hard CPC ceiling inside a smart strategy. His example is high-end furniture, where the platform will bid $20 to $30 on a single click that is never profitable regardless of intent. The enterprise equivalent sits in SA360 and is out of reach for most advertisers. Operator step: any account that failed the consolidation test for legitimate commercial reasons should be running a portfolio strategy across those campaigns. ASSERTED. No test data shown. The two source videos state this independently.
+This is the escape hatch for accounts that had to segment for commercial reasons: grade C inventory that must move, new arrivals that need surfacing for seasonality, brand versus non-brand, per-margin categories. A portfolio strategy set at account level and applied across those campaigns houses their learnings together instead of leaving each to model on its own thin conversion slice. The second benefit is a hard CPC ceiling inside a smart strategy. His example is high-end furniture, where the platform will bid $20 to $30 on a single click that is never profitable regardless of intent. The enterprise equivalent sits in SA360 and is out of reach for most advertisers. Operator step: any account that failed the consolidation test for legitimate commercial reasons should be running a portfolio strategy across those campaigns. The mechanism underneath the pooling benefit is recorded at GA-037: bid signal is inherited from ad group, campaign, and account level, so a split account divides the pool that feeds the bid. ASSERTED. No test data shown. The two source videos state this independently.
 Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-18
+Last touched: 2026-08-19
+
+### GA-035 · For the first three months on a new Google account, buy conversion volume and ignore profitability, because there is nothing to optimise against until volume exists
+Tier: T3 · Status: active
+Austin's rule is that he does not care about profitability in the first three months on a new account. The goal is conversion volume, which he calls "finding the heat," because volume is what makes any analysis of what is working possible. Smart bidding and segmentation come after that window. The three months is a rule of thumb from portfolio experience, not a measured threshold, and no account data was shown. Read it with GA-036, the bid strategy he runs during that window, and GA-042, the budget floor that makes the window affordable. February 2025 claim, and Google has changed cold-start behaviour repeatedly since, so verify before applying to a 2026 build.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-036 · Cold-start bid strategy is contested: one agency opens new Shopping on manual CPC or Maximize Clicks, the other launches straight into maximize conversion value
+Tier: T3 · Status: contested
+Side one, Grow My Ads: open new Shopping builds on manual CPC or Maximize Clicks, and move to smart bidding only once the campaign has produced conversion volume. Manual CPC is the conservative option and Maximize Clicks the aggressive one, chosen by how much he trusts the client's backend data. He flags this as the point where most people argue with him, because Google pushes smart bidding from day one. Side two, recorded at GA-021: launch on maximize conversion value to accumulate data, then roll into tROAS. Both are T3 practitioner assertions, both from the same channel, and neither showed any data, so nothing in the material resolves it. Named failure mode on the aggressive option: running Maximize Clicks with an "everything else" catch-all product ad group in the same campaign lets the catch-all consume the budget before top sellers get spend, so either segment the catch-all further or take the conservative bid. What would resolve it: one account split at launch, manual CPC or Maximize Clicks against maximize conversion value, judged on cost per conversion at day 30 and day 90. February 2025 material on side one, and Google's smart bidding cold start has moved since.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
+Last touched: 2026-08-19
+
+### GA-037 · Google inherits bid signal from ad group, campaign, and account level, so heavy campaign segmentation splits the conversion pool that feeds the bid
+Tier: T4 · Status: active
+Nathan's model of why over-segmentation degrades performance. Data sits in silos at ad group level, campaign level, and account level, and the auction bid draws on all three. Split an account into many campaigns and that pool divides, so no single campaign accumulates enough conversion volume to bid well. He frames the operating question as avoiding both 200 campaigns and a single campaign. This is his understanding of the system rather than documentation, and both speakers concede repeatedly that nobody outside Google knows the real mechanism, which holds it at T4. It is the mechanism underneath GA-024, where a portfolio bid strategy pools learnings back across campaigns that had to be split for commercial reasons.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-038 · Mixing low performers with high performers taxes the winners, because the system hits its target on the winners and spends the surplus testing the losers
+Tier: T4 · Status: active
+Austin's stated reason for segmenting at all. The bidding system knows it can reach the target ROAS from the high performers, so it keeps allocating budget to test the low performers on that headroom. Pulling the low performers out is meant to leave only high-converting inventory for the algorithm to work with. He offers this as a mental model with no test data. He also names the tension himself: the same episode carries a case where excluding roughly 18,000 SKUs at once killed the campaign, and the exclusions had to be reintroduced and then removed in chunks of about 5,000 to reach the same end state. So the direction may be right while the execution speed decides whether the campaign survives it. February 2025, T4, mechanism asserted with nothing shown.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-039 · Bidding-strategy edges still exist, target impression share is a named one, and Google closes each edge shortly after it is found
+Tier: T3 · Status: active
+The speaker says exploitable in-platform edges are still real and names target impression share targeting as one that was yielding a delta at the time. His claim about platform behaviour is that Google and Meta actively stamp these out, because neither wants an uneven field where one operator has found a bidding trick. The operating implication is that a micro-optimisation edge has a short half-life and cannot carry a service model. No test data was shown for the target impression share delta and no size was given for it. June 2025 claim, so assume the specific edge is already closed. The half-life rule is the durable part and the named tactic needs a fresh test before use.
+Sources: Blue Sense Digital, The Future of Google Ads, AI & Agencies (with Caden), 2025-06-19
+Last touched: 2026-08-19
 
 ## Ad Rank and Quality
 
@@ -142,9 +172,9 @@ Last touched: 2026-08-18
 
 ### GA-025 · CPC is a vanity metric: it correlates with return only at the extremes, because click quality varies with the auctions the bidding entered
 Tier: T3 · Status: active
-He reports accounts with high CPCs and high ROAS, and accounts with the reverse, at both campaign and product level. The identity that matters is CPA = CPC / conversion rate. Rising CPCs are fine as long as conversion rate rises with them, because CPA holds. The failure state is CPCs rising while conversion rate stays flat, which points to quality score, a new competitor, or entering premium auctions that do not pay off. The extremes carry real information: at $100 CPCs you will never be profitable, and at 10c CPCs the traffic is junk and you will also never be profitable. In between the metric says almost nothing. A lower CPC frequently means worse users, because the bidding model bought a cheaper pool. Diagnostic columns when CPCs move: expected CTR, ad relevance, landing page experience. Landing page experience is the hardest to shift because Google's rescan cadence is unpublished and can take weeks or months. He states the same holds on Meta and TikTok. ASSERTED from "any large data set and analysis". No dataset shown on screen. The two source videos state this independently.
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-18
+He reports accounts with high CPCs and high ROAS, and accounts with the reverse, at both campaign and product level. The identity that matters is CPA = CPC / conversion rate. Rising CPCs are fine as long as conversion rate rises with them, because CPA holds. The failure state is CPCs rising while conversion rate stays flat, which points to quality score, a new competitor, or entering premium auctions that do not pay off. The extremes carry real information: at $100 CPCs you will never be profitable, and at 10c CPCs the traffic is junk and you will also never be profitable. In between the metric says almost nothing. A lower CPC frequently means worse users, because the bidding model bought a cheaper pool. Diagnostic columns when CPCs move: expected CTR, ad relevance, landing page experience. Landing page experience is the hardest to shift because Google's rescan cadence is unpublished and can take weeks or months. He states the same holds on Meta and TikTok. Baseline to subtract before diagnosing any CPC move: a December 2025 episode reports small CPC increases year over year across client accounts as a standing annual trend, with no numbers attached, so a small yearly drift should be treated as background cost inflation and not opened as an investigation. ASSERTED from "any large data set and analysis". No dataset shown on screen. The three source videos state this independently.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
 
 ## Keyword Intent and Landing Page Fit
 
@@ -198,6 +228,24 @@ New campaigns go out deliberately broad, so the early search term report carries
 Sources: Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
 Last touched: 2026-08-18
 
+### GA-040 · Judge products and brands against the account's own trailing average, not against the target ROAS, when deciding what to consolidate
+Tier: T3 · Status: active
+Austin's diagnostic on an over-segmented account that is struggling. Pull a year of data, compute the account-wide blended average, for example a 2x ROAS and a 1% conversion rate, and treat that as the bar. Brands and products beating the account average on both volume and conversion rate are the keep candidates. The target ROAS is the wrong bar for this decision because it describes what the business wants rather than what the account has ever produced. Before acting he requires answers on seasonality, price changes, and promos that could explain the gap. The 2x and 1% are illustrative, no client data was shown. This is the account-level form of the same discipline as GA-034: complete the causal sentence before touching anything.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-041 · Win consolidated first, then segment, because a working consolidated campaign can be split later and a fractured account cannot be repaired quickly
+Tier: T3 · Status: active
+Austin's sequencing rule after the loss of SKAG and Alpha/Beta control. Lean consolidated at the start, get the campaign converting, then segment for business reasons once volume exists. He applies it to both the new-account roadmap and the rescue of an already over-segmented account. The asymmetry is the whole argument: splitting a working campaign is reversible, and restarting a broken one is slow. He also gates segmentation on being able to name the business reason, margin differences between categories or removing proven low performers, and on the segment having enough conversion volume to survive alone. Portfolio-wide practitioner claim, no data shown. February 2025, before later Google structure changes.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-042 · Grow My Ads' working minimum for a new ecommerce Google account is $5,000 to $10,000 a month, and below it everything stays in one campaign
+Tier: T3 · Status: active
+Austin states his agency mostly works with clients who have at least $5,000 to $10,000 a month to start. The number is tied directly to the segmentation advice in GA-041: below it he keeps everything in one campaign rather than splitting top sellers out, because the split campaigns would each be too thin to accumulate conversion data. It is stated as a client filter and no evidence was given that performance breaks at that threshold, so treat it as an agency intake rule rather than a measured floor. February 2025 figure, so inflate it for 2026 CPCs before quoting it to anyone.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
 ## Reading the Account: Reporting Artefacts and Diagnosis
 
 ### GA-030 · Google attributes conversions to the CLICK date, not the purchase date, so the last 3-4 days of any Google report always look bad
@@ -229,4 +277,68 @@ Tier: T3 · Status: active
 The sequence is business KPI, then cross-channel, then campaign type, then campaign, then metric, then submetric, using CPA = CPC / conversion rate and clicks = impressions x CTR, with revenue = conversion rate x AOV x sessions at business level. The gate he imposes: you may not touch the account until you can complete "this campaign is underperforming because this metric dropped, driven by this submetric, caused by this trigger, which is the root cause." Prior steps before any of it: check change history, extend the time horizon, correct for Google's click-date conversion latency (GA-030), and check whether the channel even carries enough spend share to explain a business-level move. A campaign holding 10% of Google spend inside a 40% Google mix cannot explain a business decline. Rebuilds come last because they trigger a learning reset that deepens the decline, producing a change-decline-change spiral. ASSERTED as an agency process. No case data shown.
 Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15
 Last touched: 2026-08-18
+
+### GA-043 · Broad match, shopping feeds, PMax, and AI Max can already serve inside AI Overviews and AI Mode, with no advertiser control and no reporting segmentation
+Tier: T3 · Status: active
+As of December 2025, an account running broad match keywords, shopping ads with a feed, Performance Max, or AI Max had the potential to serve inside AI Overviews and AI Mode. There is no setting to turn it off and no report that breaks those clicks out, so no advertiser can state what share of spend landed there. His words: "I have no reporting either. So I don't even know if I'm getting clicks there or not and how many." He hoped Google would ship the reporting during 2026, which is worth re-checking now. This is a live measurement blind spot rather than a tactic, and it is the most consequential Google claim in this batch. Two consequences for us. Any account of ours running any of those four surfaces contains an unmeasured spend allocation, and any statement we make about where Google budget went inherits that unknown. Practitioner claim with no platform documentation cited, so verify against Google's current help docs and promote to T1 on confirmation.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+### GA-044 · One agency's whole book shows no paid-side decline from zero-click AI results, with the traffic collapse landing on informational and publisher pages instead
+Tier: T3 · Status: active
+Austin accepts that the traffic declines are real for media sites built on blog posts and articles, which sit on the informational side of the journey. On the advertising side he reports seeing no decline anywhere across his client accounts, in either ad clicks or revenue. His structural argument is that Google will not cannibalise the ad revenue that makes up the majority of its business. This is a portfolio-level assertion across a book of accounts and zero numbers were given: no account count, no spend, no click or revenue deltas, no before-and-after window, no control. The one movement he does report is small yearly CPC increases, which he treats as a normal annual trend rather than an AI effect, also with no figure attached. December 2025 claim, AI Mode has expanded since, so re-check rather than assume it still holds. Pair it with GA-043: an absence of a visible decline is weaker evidence when the surface in question has no reporting at all.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+## Google's Product Cycle and Platform Roadmap
+
+### GA-045 · Google ships ad products before they work, pushes them through reps, and some become genuinely good later, so put a re-test date on every product you rejected
+Tier: T4 · Status: active
+Austin's pattern claim across three product cycles. Smart bidding was "hot garbage" at launch and he was a manual CPC loyalist. Broad match was likewise rejected and later became what he calls a Nitro boost when layered in correctly. He expects PMax to follow the same arc, which is why he keeps testing it against his own instinct. He also names the distribution mechanism: Google reps hound accounts telling them they are behind unless they adopt the new product, and that pressure is how the tech gets trained. Operating rule: schedule a re-test of any Google product you have dismissed instead of holding a permanent position on it. This is also why GA-047 on AI Max reads as a snapshot rather than a verdict. Pattern reasoning with no data, and the three examples are selected after the fact, so survivorship is uncontrolled.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-046 · Cap novel structural tests at 10 to 20 percent of the account portfolio, and never promote a single account's result to a rule
+Tier: T4 · Status: active
+Nathan's rule for handling novel tactics, with John Moran's feeder strategy and Target Impression Share on Search as the named examples. Cap exposure at 10 to 20 percent of accounts. He states the failure mode directly: one tiny data set gets read as a rule and rolled out everywhere when it was probably an edge case. Austin runs the same discipline in reverse and refuses to publish a tactic until it works for the majority, restricting risky tests to clients with high risk tolerance. This is the evidence standard the codex runs on, applied to account management. Reasoning only, no data, and the 10 to 20 percent is a stated preference rather than a derived number.
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27
+Last touched: 2026-08-19
+
+### GA-047 · AI Max showed no measurable benefit across a large agency's ongoing testing as of December 2025, and Google is expected to push it harder regardless
+Tier: T3 · Status: active
+Austin's words are that he has not really seen too much benefit from it from their testing, run across a large number of accounts. Testing is referenced and zero numbers were given: no account count, no spend, no CPA or ROAS comparison, no control, no window. Treat this as an unquantified practitioner read and never quote it as a null result. He expects Google to push AI Max heavier through 2026 on the reasoning that Google does not build and resource a product for fun, and he allows that it may become good during the year. Surrounding structural point: Google now ships four products that solve substantially the same problem, PMax, dynamic search ads, broad match, and AI Max, and advertisers commonly run all four at once with no model of what each one is doing. His speculation, flagged as speculation by him, is that DSA is the retirement candidate because AI Max covers the same capability. December 2025 snapshot of a product under active development, so assume it is stale and run a fresh test before taking any position.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+### GA-048 · Expect Google to keep forcing YouTube inventory into automated campaign types, because YouTube revenue growth is a standing item in every quarterly earnings call
+Tier: T4 · Status: active
+Austin's method for predicting Google product behaviour is to read the quarterly earnings calls, where YouTube advertising growth is a recurring priority. The precedent he cites is factual: Performance Max's launch pushed advertisers into YouTube inventory unless they ran feed-only. His forecast of more of the same through 2026 is a prediction, which holds this at T4 even though the precedent behind it is solid. He cites no specific report and no figure. The transferable part is the method: platform roadmap is legible from public earnings priorities, so read those before assuming a product push is about advertiser performance.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+### GA-049 · A one-click world bids acquisition cost up to the product's remaining margin, while the LLM query shift expands ad inventory first and fills it later
+Tier: T4 · Status: active
+Two halves of the same auction argument. First, when the platform compresses the funnel to a single click from query to purchase, competition bids costs up until the margin left on the product is exhausted, which is the structural ceiling on pure demand capture. The speaker extends it to shopping-intent queries inside LLMs and asks why anyone would place on a query that returns $1 of contribution. Second, he estimates his own behaviour moved from about 3 Google searches a day to about 20 questions a day, generalises that to a 2x to 5x increase in total query volume, and concludes costs should stay flat in the short term because inventory expands faster than budgets. Then the inventory fills, budgets follow, and it becomes expensive demand capture again. He says outright that he does not know the real number, so 2x to 5x is a guess. The same conversation notes Alphabet reported its first quarter of declining Google search volume. June 2025 reasoning, no measured result, and the query-volume half is now testable against public data.
+Sources: Blue Sense Digital, The Future of Google Ads, AI & Agencies (with Caden), 2025-06-19
+Last touched: 2026-08-19
+
+## Channel Fit: Where Google Belongs and When YouTube Pays
+
+### GA-050 · Google Ads is a middle and mostly bottom funnel channel, with bottom of funnel defined as non-brand product or service intent
+Tier: T3 · Status: active
+Michael Nadalin, who is publicly known for Google Ads work, says he does not recommend Google Ads for top of funnel to any client. He places it middle and mostly bottom funnel and defines bottom of funnel as someone proactively searching for the product or service. A search for the brand name does not count. That exclusion matters in reporting, because a Google account carried by brand search is being credited for demand another channel created. His paired position is that Meta owns middle and top funnel capture. Asserted from client experience, no data shown, December 2025.
+Sources: Blue Sense Digital, Two Years Later: What Still Works (And What Doesn't) ft. Michael Nadalin, 2025-12-27
+Last touched: 2026-08-19
+
+### GA-051 · YouTube stays off the plan for most accounts on four grounds, with a stated threshold of roughly $200,000 a month on Meta before it is worth considering
+Tier: T3 · Status: active
+The four reasons given: YouTube needs a lot of spend, its placement algorithm is worse than Meta's at learning where to put ads, attribution is poor because viewers rarely click and buy so the effect runs as a halo, and reading the channel at all requires MMM and incrementality tooling that smaller businesses do not have. The stated rule of thumb is that a business spending $50,000 a month on Meta should probably get to $200,000 a month there before considering YouTube. Austin agrees and says he steers clients to Meta first. A creative constraint sits alongside it: pasting a working Meta ad straight into YouTube fails most of the time and the asset has to be rebuilt for the platform. Practitioner claim, no test data shown, and the $50,000 and $200,000 figures are thresholds he states rather than ones he measured. December 2025.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+### GA-052 · YouTube pays reliably in three cases: high-ticket info with a VSL funnel, a brand with a large existing YouTube channel to remarket against, and budgets big enough for it to be a line item
+Tier: T3 · Status: active
+Austin's segmentation of where YouTube ads work. High-ticket info products running a VSL funnel work well. A brand with a substantial existing YouTube presence can target and remarket to viewers of its own channel and videos, which is the second reliable case. The third is very large budgets, where YouTube is a line item next to something like $250,000 on Meta, search, and shopping. Ecommerce brands are harder in his experience. This is the positive counterpart to GA-051, so read the pair together before ruling YouTube in or out for a client. Practitioner observation from client and prospect conversations, no data shown. December 2025, and YouTube campaign types change often, so re-check the mechanics before building.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
 
