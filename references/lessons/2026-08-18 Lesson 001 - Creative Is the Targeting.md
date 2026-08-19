@@ -39,7 +39,10 @@ We have been obeying this law without naming it:
 
 - **ChiroWorks / chiro statics:** our rule that the hook is the BODY PART (one condition noun, 6x size) is an avatar callout. "SCIATICA" is not decoration; it is the targeting input that tells Meta which sufferers to find.
 - **SJR dump truck ads:** the Spanish volteo scripts speak to Beto, an owner-operator with a specific situation. That specificity is why ES dump delivers volume. A generic "trucks for sale" ad would enter far fewer of the right auctions.
-- **Phoenix Truxx:** the $3.19 ES business-starter winner names the exact person (first-truck buyer starting a business). The creative did the targeting; the ad set was broad.
+- **Phoenix Truxx:** the $3.19 ES winner names the exact person. The creative did the targeting; the ad set was broad.
+
+> [!warning] Correction, 2026-08-19
+> This line originally read "the $3.19 ES business-starter winner". That is wrong and was checked against the filed reports during the Lesson 003 run. In `report-2026-04-24.md`, **$3.19 is Faceless0001 Spanish** (80 leads, $255.22). The **Business Starter ad is Script 04 at $5.14** that week, $5.05 stated elsewhere in the same report, $4.92 all-time. The two became our standing bench pair, quoted as "$3.19 ES / $5.14 EN" in three later reports. The lesson's point about avatar callouts still holds; the ad name attached to the number did not. Two other unrelated figures also read $3.19 (Phoenix all-time blended CPL at 24 Apr, and SJR's cargo van 15-day CPL), which is likely how the mix-up happened.
 
 The upgrade path: when we next test creative, we treat avatar-niched versus generic as a real experiment and bank the numbers. That turns a T3 claim into OUR T2.
 

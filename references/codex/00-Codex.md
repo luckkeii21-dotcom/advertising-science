@@ -35,6 +35,7 @@ Our own client accounts are the T2 upgrade path: when we test a T3 claim on SJR,
 - [[Google Auction & Smart Bidding]]: ad rank, quality score, tCPA/tROAS internals
 - [[Google PMax & Shopping]]: PMax behavior, feeds, cannibalization
 - [[TikTok Delivery]]: TikTok's auction and delivery system
+- [[Emerging Channels]]: Pinterest, Snapchat, Reddit, Amazon, X, Applovin/Axon. Opened 2026-08-19. Everything in it is T3 or below, from operators whose main book is elsewhere
 - [[Marketing Math & Unit Economics]]: LTGP:CAC, contribution margin, payback, forecasting
 
 ## Operations
@@ -47,4 +48,4 @@ Our own client accounts are the T2 upgrade path: when we test a T3 claim on SJR,
 
 ## Claim ID scheme
 
-`<TOPIC>-<NNN>`: MD (Meta delivery), AU (auction), LS (learning/signal), CR (creative), SC (scaling), AT (attribution), GA (Google auction), GP (PMax/Shopping), TT (TikTok), MM (math/economics). IDs are permanent; never reuse one.
+`<TOPIC>-<NNN>`: MD (Meta delivery), AU (auction), LS (learning/signal), CR (creative), SC (scaling), AT (attribution), GA (Google auction), GP (PMax/Shopping), TT (TikTok), EC (emerging channels), MM (math/economics). IDs are permanent; never reuse one.

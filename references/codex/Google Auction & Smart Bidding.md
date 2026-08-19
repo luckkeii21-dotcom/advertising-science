@@ -54,9 +54,9 @@ Last touched: 2026-08-18
 
 ### GA-019 · Raising target ROAS shrinks the pool of users the campaign will bid on, and cold audiences are cut first
 Tier: T3 · Status: active
-Every increase in tROAS restricts who the campaign bids on. Cold users are cut first because they carry the lowest predicted value. The described pattern is a quarter of stepwise increases, 400% to 425% to 450% to 500%, at a flat $1,000/day. Reported ROAS moves from roughly 4 to roughly 6 and reads as excellent media buying. The 500% campaign is by then bidding almost entirely on people who already visited the site, already bought, or already saw the brand on Facebook. Lowering the target reopens the circle to colder users at worse measured efficiency. Verification method given: pull new-customer ROAS in a third-party tool. NC ROAS on a high-tROAS PMax campaign is typically poor, and the same campaign at a low target shows better NC ROAS. Operator rule: tROAS is an audience-temperature dial. Never read a tROAS-driven efficiency gain as a performance improvement until new-customer volume has been checked. ASSERTED from agency practice. No account data shown on screen. The two source videos state this independently.
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-18
+Every increase in tROAS restricts who the campaign bids on. Cold users are cut first because they carry the lowest predicted value. The described pattern is a quarter of stepwise increases, 400% to 425% to 450% to 500%, at a flat $1,000/day. Reported ROAS moves from roughly 4 to roughly 6 and reads as excellent media buying. The 500% campaign is by then bidding almost entirely on people who already visited the site, already bought, or already saw the brand on Facebook. Lowering the target reopens the circle to colder users at worse measured efficiency. Verification method given: pull new-customer ROAS in a third-party tool. NC ROAS on a high-tROAS PMax campaign is typically poor, and the same campaign at a low target shows better NC ROAS. Operator rule: tROAS is an audience-temperature dial. Never read a tROAS-driven efficiency gain as a performance improvement until new-customer volume has been checked. A third statement of the same mechanism arrived on 2026-02-25, attributed second-hand to John Moran: squeezing target ROAS up does not produce a better return, it prioritises higher-intent bottom-of-funnel traffic. That version adds an inverted tactic this claim did not carry, setting target ROAS as low as 50% to deliberately force the campaign into top-of-funnel acquisition that then feeds retargeting. The 50% figure is second-hand, no account data sits behind it, and nobody has published a result from running it. The auction-level price of the same dial is recorded at GA-053: smart bidding bids up on high-intent users, so a cold campaign left eligible on the brand term pays $2 to $4 a click for traffic a dedicated brand campaign buys at roughly 2 cents. ASSERTED from agency practice. No account data shown on screen. Three source videos state it independently and the third is second-hand.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Blue Sense Digital, Why We Turned OFF Flexible Ads & Cost Caps in 2026, 2026-02-25
+Last touched: 2026-08-19
 
 ### GA-020 · The tROAS death spiral is a closed loop: missing target cuts spend, thinner conversion data degrades the model, targeting worsens, volume falls again
 Tier: T3 · Status: active
@@ -118,6 +118,14 @@ The speaker says exploitable in-platform edges are still real and names target i
 Sources: Blue Sense Digital, The Future of Google Ads, AI & Agencies (with Caden), 2025-06-19
 Last touched: 2026-08-19
 
+### GA-060 · Set the ad schedule in hour increments at launch, then negate the day-parts that spend budget and return nothing
+Tier: T3 · Status: active
+The routine: at campaign launch set the ad schedule in one-hour increments, so the account reports traffic volume and traffic quality by hour of day rather than as a daily blur. Read it for a while, then cut the hours that consume clicks and return no purchases. The worked case is a B2C e-commerce account spending on clicks between 12am and 7am with no purchases coming through, which he negates out.
+Named tension, unresolved anywhere in the material. Weekday and time of day in the user's timezone is a documented Smart Bidding signal at GA-002, so a campaign on a smart strategy already prices hour of day using more data than the operator can see. Hand-negating a day-part overrides that. The argument for doing it anyway is that a bid adjustment prices an hour while a schedule exclusion removes it, and those are different actions with different outcomes when the bidder's own model is wrong. Nobody has published the test either way, so treat this as a diagnostic worth reading before it is a change worth making.
+ASSERTED. A standing operating routine across accounts. No day-part performance table, no before and after, no account shown.
+Sources: Solutions 8 / The Google Ads Podcast, Google Ads Essentials: Tips & Strategies, 2025-12-11
+Last touched: 2026-08-19
+
 ## Ad Rank and Quality
 
 ### GA-007 · Ad Rank is recalculated in every auction from bid, auction-time ad quality, thresholds, competitiveness, search context, and expected asset impact
@@ -176,6 +184,25 @@ He reports accounts with high CPCs and high ROAS, and accounts with the reverse,
 Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
 Last touched: 2026-08-19
 
+### GA-053 · A cold campaign left eligible on the brand term pays $2 to $4 a click for traffic a dedicated brand campaign buys at roughly 2 cents
+Tier: T3 · Status: active
+The mechanism is Smart Bidding doing exactly what it is built to do. It raises bids on high-intent users, and nobody on Google is higher intent than a person typing the brand name. Leave a cold prospecting campaign eligible on that query and the bidding system pays a premium for a user who was going to click the organic listing anyway. Segment the same query into its own campaign with its own bid strategy and the click costs roughly 2 cents. The stated spread is 100x to 200x on the same user.
+Prevalence: the same agency reports brand overspend inside supposedly cold campaigns in roughly 90% of the Google accounts it audits, at $2,000 a month and at $100,000 a month alike, and calls it the single most common defect it finds. Brand terms surface across multiple campaigns regardless of the exclusions already in place, which is why the check has to be run on search terms rather than on the settings.
+Fix stack given: PMax brand exclusions, dedicated brand Search and brand Shopping campaigns, brand negatives on everything cold. Claimed result across the majority of onboarded accounts is a 10x to 20x cut in cost allocated to brand, released back into acquisition or efficiency.
+This is the auction-level price of the dial in GA-019. Target ROAS sorts users by predicted value and brand searchers sit at the top of that sort, so the same lever that looks like an efficiency gain is buying the cheapest possible demand at the highest possible price. Before applying the fix stack read GA-054, which questions whether the brand campaign needs to exist at all, and note that hard brand exclusions carry a stated cost in branded Shopping recorded in the PMax and Shopping file.
+ASSERTED. The $2 to $4, the 2 cents, the 90% and the 10x to 20x are all stated from memory across an audit book. No account, no screenshot, no before and after was shown.
+Sources: Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06
+Last touched: 2026-08-19
+
+### GA-054 · Almost no e-commerce brand has a competitor bidding on its brand keyword, including every nine-figure brand this agency has audited
+Tier: T3 · Status: active
+The claim runs against the standard defensive argument for brand campaigns. Across seven-, eight- and nine-figure brands the reported finding is that nobody is bidding on the brand term. Named cases: every nine-figure brand audited, plus multiple $50m to $60m brands either worked with or audited. The cost of defending against nobody scales with brand size. A brand pulling 100,000 to 200,000 brand searches a month is described as spending $30,000 to $50,000 a period defending a slot no competitor contests, and the stated recommendation is to cut it.
+This sits alongside GA-053 rather than against it. Nobody bidding is precisely why the segmented brand click costs 2 cents, and 2 cents is also why the line item never gets questioned. GA-053 stops the cold campaign paying $2 to $4. This claim asks the next question, whether the cheap brand campaign should run at all.
+Two checks before cutting. Auction Insights on the brand term answers the competitor question directly for any specific account, and the speaker never opened it on camera. And hard brand exclusions have a named cost in branded Shopping, where vacating the slot lets competitors place shopping ads above the brand's own organic listing, which is recorded in the PMax and Shopping file. A brand with genuinely zero competitors on Search may still lose money by vacating Shopping.
+ASSERTED. Every figure is recalled across an audit book. No auction insights screen, no account, no spend table was shown.
+Sources: Blue Sense Digital, Best Google Ad Account Structure for eCommerce in 2025, 2025-09-02
+Last touched: 2026-08-19
+
 ## Keyword Intent and Landing Page Fit
 
 ### GA-015 · Keyword modifiers map to positions on the intent spectrum: 'best' = commercial interest, 'review'/'versus' = active narrowing, 'pricing' = budget-fit check, 'buy' = transactional
@@ -207,6 +234,15 @@ Tier: T3 · Status: active
 Everything done inside the platform, segmentation, asset groups, audience signals, feed work, exists to enter better auctions. A competitor converting at twice your rate can outbid you with worse ads and worse structure and still win. Doubling site conversion rate lets you pay double per click at identical economics. That makes conversion rate and AOV the only durable way to outbid someone whose numbers beat yours. Implementation given: duplicate the ad inside one ad group pointing at two different landing pages, judge on conversion rate over 30 to 60 days, retire the loser, rotate the next challenger in, compound. He states almost nobody does this. Extends AU-004 (your bid is your unit economics) from Meta onto Google Search with a concrete test method. ASSERTED. No test results shown. The two source videos state this independently.
 Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
 Last touched: 2026-08-18
+
+### GA-059 · Changing the CTA from "Get started" to "Schedule your free consultation" raised conversion rate over a 30-day single-variable test, and the magnitude was never stated
+Tier: T3 · Status: active
+A real single-variable test with a clean control and an unusable magnitude. One account, 30 days, the CTA text changed on both the ad and the landing page with nothing else moved. The reported outcome is a much higher conversion rate on "Schedule your free consultation" and what the speaker calls a clear-cut winner. No conversion rate was given for either arm, no traffic volume, no account. The size of the win cannot be checked and cannot be planned against, which holds this at T3. A test whose magnitude nobody states gives a direction and nothing to forecast with.
+The diagnostic behind it is weaker still. Qualified traffic was hovering on the CTA without clicking, read as the CTA demanding more commitment than the visitor's stage in the journey supports. Naming the specific next action is the stated fix. No hover data or heatmap was shown, so that half is interpretation rather than observation.
+Test-design rule stated alongside: give a Google Ads A/B test about a month so it clears learning, and move exactly one variable inside the window. The documented version of the learning period sits at GA-006 and is the harder number to work from.
+Transferable form: the winning CTA named what happens next and the losing one described a state. Test it against your own front-end offer rather than adopting the wording. Read with GA-026, which puts landing page split testing as the largest lever in Search and gives the duplicate-ad-two-pages method for running it, and with GA-018 on intent-to-page fit.
+Sources: Solutions 8 / The Google Ads Podcast, Google Ads Essentials: Tips & Strategies, 2025-12-11
+Last touched: 2026-08-19
 
 ## Search Campaign Structure
 
@@ -262,9 +298,9 @@ Last touched: 2026-08-18
 
 ### GA-032 · Three default settings silently leak Google budget: display enabled inside Search campaigns, broad match paired with a non-smart bidding strategy, and auto-apply recommendations left on
 Tier: T3 · Status: active
-All three are on-by-default or easy-to-miss states rather than strategy errors, which is why they survive in accounts for years. Display expansion inside a Search campaign pushes cold spend onto the Display network. Broad match requires a smart bidding strategy to function, so broad plus maximize clicks is structurally broken rather than merely suboptimal. Auto-apply recommendations lets Google make unattended account changes he says are almost never in the advertiser's interest. Add to the same sweep: missing branded negatives on cold campaigns, and missing negatives generally. These are the first checks in any Google audit. ASSERTED. No quantification of the leak was given for any of the three.
+All three are on-by-default or easy-to-miss states rather than strategy errors, which is why they survive in accounts for years. Display expansion inside a Search campaign pushes cold spend onto the Display network. Broad match requires a smart bidding strategy to function, so broad plus maximize clicks is structurally broken rather than merely suboptimal. Auto-apply recommendations lets Google make unattended account changes he says are almost never in the advertiser's interest. Add to the same sweep: missing branded negatives on cold campaigns, and missing negatives generally. These are the first checks in any Google audit. That last item is the biggest of them and it is now quantified separately at GA-053: the same agency reports brand overspend inside supposedly cold campaigns in roughly 90% of the accounts it audits, at $2,000 a month and at $100,000 a month alike. ASSERTED. No quantification of the leak was given for any of the three named settings.
 Sources: Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-18
+Last touched: 2026-08-19
 
 ### GA-033 · "Limited by budget" shows on nearly every campaign at any spend level, so it is a weak indicator and never evidence that profitable incremental spend exists
 Tier: T3 · Status: active
@@ -288,6 +324,13 @@ Last touched: 2026-08-19
 Tier: T3 · Status: active
 Austin accepts that the traffic declines are real for media sites built on blog posts and articles, which sit on the informational side of the journey. On the advertising side he reports seeing no decline anywhere across his client accounts, in either ad clicks or revenue. His structural argument is that Google will not cannibalise the ad revenue that makes up the majority of its business. This is a portfolio-level assertion across a book of accounts and zero numbers were given: no account count, no spend, no click or revenue deltas, no before-and-after window, no control. The one movement he does report is small yearly CPC increases, which he treats as a normal annual trend rather than an AI effect, also with no figure attached. December 2025 claim, AI Mode has expanded since, so re-check rather than assume it still holds. Pair it with GA-043: an absence of a visible decline is weaker evidence when the surface in question has no reporting at all.
 Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+### GA-061 · Never commit a Google Ads click count, because click volume is buyable and click quality is not
+Tier: T4 · Status: active
+A promised number of clicks inside a stated window is a red flag on whoever promised it. Volume can be bought at any time by bidding for it, and nothing in that purchase makes the clicks qualified or capable of producing customers. The honest form of the same conversation is a projection against industry benchmarks, labelled as a projection. Small claim, and it is the entry-level form of a discipline the codex already runs elsewhere: GA-033 says the equivalent about "limited by budget" as evidence that profitable incremental spend exists, and GA-025 says it about CPC as a performance metric.
+ASSERTED with no data. A stated position on forecastability rather than a finding.
+Sources: Solutions 8 / The Google Ads Podcast, Google Ads Essentials: Tips & Strategies, 2025-12-11
 Last touched: 2026-08-19
 
 ## Google's Product Cycle and Platform Roadmap
@@ -332,13 +375,51 @@ Last touched: 2026-08-19
 
 ### GA-051 · YouTube stays off the plan for most accounts on four grounds, with a stated threshold of roughly $200,000 a month on Meta before it is worth considering
 Tier: T3 · Status: active
-The four reasons given: YouTube needs a lot of spend, its placement algorithm is worse than Meta's at learning where to put ads, attribution is poor because viewers rarely click and buy so the effect runs as a halo, and reading the channel at all requires MMM and incrementality tooling that smaller businesses do not have. The stated rule of thumb is that a business spending $50,000 a month on Meta should probably get to $200,000 a month there before considering YouTube. Austin agrees and says he steers clients to Meta first. A creative constraint sits alongside it: pasting a working Meta ad straight into YouTube fails most of the time and the asset has to be rebuilt for the platform. Practitioner claim, no test data shown, and the $50,000 and $200,000 figures are thresholds he states rather than ones he measured. December 2025.
-Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+The four reasons given: YouTube needs a lot of spend, its placement algorithm is worse than Meta's at learning where to put ads, attribution is poor because viewers rarely click and buy so the effect runs as a halo, and reading the channel at all requires MMM and incrementality tooling that smaller businesses do not have. The stated rule of thumb is that a business spending $50,000 a month on Meta should probably get to $200,000 a month there before considering YouTube. Austin agrees and says he steers clients to Meta first. A creative constraint sits alongside it: pasting a working Meta ad straight into YouTube fails most of the time and the asset has to be rebuilt for the platform. A second agency puts a number on the spend requirement: YouTube campaigns have never performed for him below $400 a day, because under that the campaign cannot gather enough signal to work out who to prioritise. Those are two different gates and both should be read. $400 a day is where the campaign can function at all. $200,000 a month on Meta is where it is worth the attention. Practitioner claim, no test data shown, and the $50,000, $200,000 and $400 figures are all thresholds stated from experience rather than measured breakpoints. December 2025 on the first source, September 2025 on the second.
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15; Blue Sense Digital, Best Google Ad Account Structure for eCommerce in 2025, 2025-09-02
 Last touched: 2026-08-19
 
 ### GA-052 · YouTube pays reliably in three cases: high-ticket info with a VSL funnel, a brand with a large existing YouTube channel to remarket against, and budgets big enough for it to be a line item
 Tier: T3 · Status: active
 Austin's segmentation of where YouTube ads work. High-ticket info products running a VSL funnel work well. A brand with a substantial existing YouTube presence can target and remarket to viewers of its own channel and videos, which is the second reliable case. The third is very large budgets, where YouTube is a line item next to something like $250,000 on Meta, search, and shopping. Ecommerce brands are harder in his experience. This is the positive counterpart to GA-051, so read the pair together before ruling YouTube in or out for a client. Practitioner observation from client and prospect conversations, no data shown. December 2025, and YouTube campaign types change often, so re-check the mechanics before building.
 Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
+Last touched: 2026-08-19
+
+### GA-055 · A 21-day Demand Gen geo holdout produced no statistically relevant new-customer lift and an implied incremental CAC of $140
+Tier: T2 · Status: active
+The first Google claim in this codex carrying a real test with real numbers. Every other Google claim we hold is practitioner assertion or platform documentation.
+Design. Single geo holdout, Australia, 21 days. Test geo was Victoria plus Queensland, selected by correlating monthly order volume state to state, screening p-values, then cross-correlating to find the states that best predict the rest. Control was the rest of Australia. Baseline was 12 months of daily orders. New-customer and returning-customer orders were measured separately. Confidence set at 90%.
+New customers, the acquisition question: expected 2,771 orders, actual 2,857, a lift of 85 against the 166 needed for 90% confidence. No statistical relevance. Implied incremental CAC on new customers was $140, unprofitable on first purchase, and the speaker says plainly the figure is not even statistically supportable before it is unprofitable. New-customer orders fell in both arms over the window: down 4.5% in the rest of Australia, down 1.41% in the test states.
+Returning customers, where the campaign did move: a 6.8% period-on-period lift in the test states while the rest of Australia dipped. Expected 1,211 returning-customer orders, achieved 1,521, at $39 per returning-customer order.
+Operating decision taken directly off the result: Demand Gen kept running at significantly reduced budget and reclassified as a returning-customer retargeting campaign rather than an acquisition campaign.
+Data integrity note, and it belongs on the claim. The transcript's baseline figures are internally inconsistent. A roughly 2,500-order baseline and a 254-order lift threshold are stated early, then 2,771 expected and a 166 threshold at 90% appear later. The reconciliation that fits is that the 2,500 and 254 pair is the 95% confidence scenario used to size the budget before the test, and the 2,771 and 166 pair is the 90% read used to call the result. Nobody restated it on camera, so carry the ambiguity forward with the numbers.
+SHOWN. Real spend, counts and the significance threshold stated explicitly, analysis narrated on screen. The interpretation of why it came out this way is a separate and weaker thing, held at GA-056.
+Cross-file note, 2026-08-19. The same test is filed twice more. AT-072 in the Attribution file holds it as the geo-holdout method and the new-versus-returning split rule, and the PMax and Shopping file references it as GP-040 from the incrementality side. One test, three entries by design, because it answers a different question in each file. This entry is the Google channel verdict on Demand Gen. Never count it as more than one experiment when weighing evidence.
+Sources: Blue Sense Digital, We Tested Google Demand Gen - Here's What Happened, 2025-07-24
+Last touched: 2026-08-19
+
+### GA-056 · Demand Gen harvests users already inside the funnel, so any lift is instantaneous, exhausts, and then converts into returning-customer spend
+Tier: T3 · Status: active
+This is the speaker's reading of his own measured result at GA-055, laid over the measurement rather than drawn from a second test. The mechanism claimed: whatever lift Demand Gen produces comes from going quickly after people already warm and already in the funnel, capitalising on top-of-funnel traffic that other channels created. Once that pool is exhausted the campaign either does nothing or moves onto returning customers and burns budget. The measured pattern is consistent with it: no new-customer lift, a 6.8% returning-customer lift at $39 an order.
+Portfolio-level generalisations from the same agency, both without numbers. March 2025: Demand Gen had not delivered consistent, provable cold customer acquisition across four to five larger accounts under active test, and rep pressure to adopt it is a sales motion rather than a performance recommendation. August 2025: Demand Gen significantly over-attributes and has no positive impact on new customer acquisition for 90%+ of ad accounts. The speaker time-stamps the August version himself and tells the viewer to check the publication date, because Google keeps tweaking the product.
+Operating rule that falls out: never read a Demand Gen lift blended. Split returning-customer order lift from new-customer order lift, or a retargeting result reads as acquisition.
+ASSERTED. The mechanism is interpretation, and the four-to-five-account and 90%+ figures are recalled with nothing shown. Read GA-045 before treating this as permanent: Google ships ad products before they work and some become good later, so this needs a re-test date rather than a standing position.
+Sources: Blue Sense Digital, We Tested Google Demand Gen - Here's What Happened, 2025-07-24; Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06; Blue Sense Digital, Best Google Ad Account Structure for eCommerce in 2025, 2025-09-02
+Last touched: 2026-08-19
+
+### GA-057 · Cold Search is a post-$50,000-a-month channel in e-commerce and stops scaling around $100 a day, while lead generation search scales to $500,000 a month
+Tier: T3 · Status: active
+Two claims from the same agency about how far Google's non-Shopping channels actually go. First, the sequencing gate: cold Search, YouTube and Demand Gen do not outperform a PMax plus standard Shopping pair until the account is spending at least $50,000 a month, at which point cold Search becomes the next step. Second, the ceiling: plenty of e-commerce accounts under management run cold Search profitably at roughly $100 a day, and cold Search does not carry from there to thousands or tens of thousands a day on an e-commerce brand. Lead generation behaves differently, with managed accounts spending $500,000 a month on Search alone.
+The asymmetry is the useful part. On e-commerce, Search is a small profitable line rather than a scaling engine. On lead generation, Search carries the whole account. Any Google threshold quoted at us should be checked against which of those two businesses it came from before it is applied, because most published Google structure advice is written from e-commerce.
+ASSERTED. The $50,000 gate is a stated threshold rather than a measured breakpoint, the same standing as GA-042. The $100 a day and the $500,000 a month describe real managed spend recalled from memory. No account, no CPA, no dates were shown. September 2025.
+Sources: Blue Sense Digital, Best Google Ad Account Structure for eCommerce in 2025, 2025-09-02
+Last touched: 2026-08-19
+
+### GA-058 · Search out-returns Shopping for the 2% to 4% of e-commerce accounts carrying a B2B component
+Tier: T3 · Status: active
+The default for e-commerce is Shopping first, and that default was filed to the PMax and Shopping file from this same episode. This is the named exception to it. Where the business has a B2B component, Search campaigns sometimes return better than Shopping, because B2B buyers click Search ads over Shopping ads and arrive at a higher average order value, and that AOV gap outweighs Shopping's conversion-rate advantage. The speaker sizes the exception at 2% to 4% of e-commerce advertisers and states outright that he does not know why B2B buying prefers Search.
+Operator use: run this check when an e-commerce account has a trade, wholesale or business-buyer segment and Shopping is underperforming the default expectation. A consumer-only account gets no benefit from the test.
+ASSERTED. Observed across a client book. No ROAS comparison, no AOV figures, no account shown, and the causal explanation is explicitly unknown to the speaker.
+Sources: Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06
 Last touched: 2026-08-19
 
