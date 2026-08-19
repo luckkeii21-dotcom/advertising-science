@@ -42,9 +42,15 @@ So: a T2 contest about whether the lever does anything at all, sitting underneat
 
 **What survives on every side:**
 
-1. Killing LOW spenders is always safe. Faris concedes it explicitly.
-2. Judge at account level over 2-3 days.
-3. The resolving test is cheap and reversible: turn the top spender off for 2-3 days, read **account-level** cost per result, turn it back on if the account gets worse.
+1. **Judge at ad-set level, never on the ad's own row** ([[Scaling Models|SC-011]], T2, active). This is the strongest thing standing in the whole argument.
+2. The resolving test is cheap and reversible: turn the top spender off for 2-3 days, read **account-level** cost per result, turn it back on if the account gets worse.
+
+> [!warning] This section was rewritten six hours after it was drafted
+> The first draft carried a third survivor: *killing LOW spenders is always safe*, conceded by both sides. **That clause broke tonight.** The second research pass of 2026-08-19 flipped [[Scaling Models|SC-009]] to contested. Blue Sense Digital calls killing the starved ads the category's biggest mistake and gives two mechanisms, both untested: the **assist** role, where a low-spend ad sits inside a conversion sequence another ad closes, and the **reserve** role, where Meta rotates delivery back into starved ads once the winner fatigues.
+>
+> The likely reconciling boundary, and nobody has tested it: Theriot only kills once cumulative spend has actually accrued against zero purchases, so a genuinely zero-spend ad costs nothing to keep. A true $0 ad is free optionality. An ad that has quietly eaten a few hundred dollars at zero conversions is a measured loss.
+>
+> Read this as the lesson demonstrating itself. A claim you were taught as settled at 4pm was contested by 11pm, and neither side has ever shown controlled data. That is the actual working condition of this job.
 
 ## Our accounts
 
@@ -83,7 +89,9 @@ On zero of five accounts can we run the resolving test cleanly today. The honest
 
 ## The decision rule
 
-**Kill low spenders freely. Leave high spenders on unless you can read account-level cost per result at daily resolution with a CPM control, and if you cannot read it, leaving it on is the default.**
+**Judge at ad-set level, never on the ad's own row. Leave high spenders on unless you can read account-level cost per result at daily resolution with a CPM control, and if you cannot read it, leaving it on is the default.**
+
+On low spenders, as of tonight there is no safe default either way. A genuinely $0 ad costs nothing to keep, so keep it. An ad that has accumulated real spend at zero results is a measured loss and killing it is defensible. Anywhere in between, say out loud that you are making a bet.
 
 ## Quiz
 
@@ -99,5 +107,7 @@ Drop your answers in `lessons/_answers-inbox.md` (just "L003: 1) ... 2) ...").
 > 1. Because spend inside an ad set distributes as a funnel sequence, not a contest: the top spender runs top-of-funnel and the low-spend ads close people it already warmed, so their cheap numbers are borrowed from its work. MD-010, T3.
 > 2. SC-085 is T3 both ways: Charley T and Faris both assert from experience and neither shows a dataset, so it is two strong hypotheses in conflict and nothing more. SC-007 is T2 both ways: CTC back-tested on billions in managed spend and Theriot shows a live account with real figures. The T2 contest deserves more weight, and it is the more unsettling one, because it questions whether manual on/off does anything measurable at all. Neither can be quoted as law.
 > 3. A rising cost per lead has two candidate causes: our change, or the auction getting more expensive. CPM falling 13.9% removes the auction, which is what lets us attribute the rise to the pause. If CPM had risen 30%, the auction would be a live competing explanation, the pause would be unproven, and the honest write-up would name both causes rather than pick one.
-> 4. Do not kill him. He is the feeder at 63% of spend and MD-010 plus the surviving half of law 3 both say the account, not his row, decides. Before touching him you need a readable account-level cost-per-result baseline at daily resolution, which SJR does not currently have (Meta blocked 7 weeks, one week of daily arrays). The correct move is cap him and fund a separate ABO lane for the starved creative, not kill him. To the client: his CPL walk from $3.20 to $9.18 at frequency 2.33 is real fatigue and we are acting on it, and the way we act on it is capping and refreshing, because pausing the ad carrying 63% of delivery risks the whole campaign and we cannot currently measure the fallout.
+> 4. Do not kill him. He is the feeder at 63% of spend, and MD-010 plus the one surviving clause of law 3 (judge at ad-set level, SC-011, T2) both say his own row does not decide. Before touching him you need a readable account-level cost-per-result baseline at daily resolution, which SJR does not currently have (Meta blocked 7 weeks, one week of daily arrays). The correct move is cap him and fund a separate ABO lane for the starved creative, not kill him. To the client: his CPL walk from $3.20 to $9.18 at frequency 2.33 is real fatigue and we are acting on it, and the way we act on it is capping and refreshing, because pausing the ad carrying 63% of delivery risks the whole campaign and we cannot currently measure the fallout.
+> **Bonus, ungraded.** The "killing low spenders is safe" clause broke between this lesson being drafted and being published. Argue the SJR case both ways: the three dump statics that took $0.58 in a week are either dead weight worth clearing, or the ad set's assist and reserve layer worth keeping for free. Which do you actually believe, and what would you need to see to change your mind? There is no answer key for this one, because the codex does not have one either.
+>
 > 5. You cannot run it there. ChiroWorks has no daily series at all, only 4 overlapping period rows on unequal windows, and volume is roughly 15 leads per 9 days, so a 3-day read is 3 to 5 leads. That is inside normal variance and would produce a confident answer from noise. Fix the measurement first, or run the test on the account with a real daily baseline once Meta reporting is restored.

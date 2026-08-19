@@ -483,6 +483,15 @@ On multi-advertiser ads: "unselect multi-advertiser ads unless you are a commodi
 Sources: Sam Piliero, The BEST Facebook Ads Campaign Structure for 2026, 2026-07-05
 Last touched: 2026-08-19
 
+### MD-099 · Opportunity Score is a 0 to 100 account and ad health score that issues ranked optimisation recommendations, and we hold ZERO evidence that following them helps
+Tier: T1 · Status: active
+T1 for EXISTENCE AND SURFACE ONLY, on the TT-029 precedent. Meta describes it on its own property as "a 'real-time health check' for your ad account and ads. The system assigns a score from 0 to 100 and offers specific optimization recommendations," and separately as a tool that "ranks recommendations based on what will most quickly improve performance." A second Meta post shows it issuing a concrete instruction, recommending a Taiwanese retailer shift from online-only purchase optimisation to omnichannel optimisation.
+**What is NOT known, and it is nearly everything that matters.** How the score is computed, what it weights, whether the recommendations are ranked by advertiser outcome or by Meta revenue, and above all whether an account that follows them ends up better off. No holdout, no before-and-after, nothing. Both sources are Meta marketing posts and the only outcome figures attached are single-advertiser case studies chosen by Meta, which cannot support a causal read.
+**Why this is banked rather than skipped: we have already quoted a score without defining it.** Lesson 002 records ChiroWorks sitting at 60 out of 100. A number on a client account with no definition behind it invites treating it as a diagnosis. It is a vendor recommendation engine. Read it as a checklist of things Meta wants changed, verify each against the codex before acting, and never report the score to a client as a performance grade.
+Open and cheap to close: the recommendation surface is visible in every account we run, so log what it recommends across our accounts over a month and see whether the advice is account-specific or boilerplate.
+Sources: Meta for Business, Meta Growth Drivers: Putting Your Digital Marketing Strategy on "Auto-Pilot", 2026-01-28; Meta for Business, Performance Spotlight: Trends from Around the World, 2026-04-09 (both read 2026-08-20)
+Last touched: 2026-08-20
+
 ## The Official Delivery Architecture (Meta Engineering)
 
 ### MD-022 · Meta's ads delivery is a multi-stage funnel: retrieval narrows tens of millions of candidates to a few thousand before ranking picks the final ads, all in ~200ms
