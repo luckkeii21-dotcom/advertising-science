@@ -191,8 +191,9 @@ Prevalence: the same agency reports brand overspend inside supposedly cold campa
 Fix stack given: PMax brand exclusions, dedicated brand Search and brand Shopping campaigns, brand negatives on everything cold. Claimed result across the majority of onboarded accounts is a 10x to 20x cut in cost allocated to brand, released back into acquisition or efficiency.
 This is the auction-level price of the dial in GA-019. Target ROAS sorts users by predicted value and brand searchers sit at the top of that sort, so the same lever that looks like an efficiency gain is buying the cheapest possible demand at the highest possible price. Before applying the fix stack read GA-054, which questions whether the brand campaign needs to exist at all, and note that hard brand exclusions carry a stated cost in branded Shopping recorded in the PMax and Shopping file.
 ASSERTED. The $2 to $4, the 2 cents, the 90% and the 10x to 20x are all stated from memory across an audit book. No account, no screenshot, no before and after was shown.
-Sources: Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06
-Last touched: 2026-08-19
+Weak corroboration added 2026-08-20, and it is recorded as weak on purpose. A second agency says in passing that a brand whose volume sits on high-intent branded search sees "better pricing" on a blended basis than a comparable brand "dealing with expensive non-branded clicks in a brutal category with a weaker offer." It is one clause inside a budgeting answer, it carries no branded or non-branded CPC, and it was not the point being made. It moves the direction of this claim not at all. Logged so the next reader knows it was found and weighed rather than missed.
+Sources: Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06; Solutions 8, 2026-05-19, "How Much Should You Spend on Google Ads? (And When to Stop)" (passing corroboration, no figures)
+Last touched: 2026-08-20
 
 ### GA-054 · Almost no e-commerce brand has a competitor bidding on its brand keyword, including every nine-figure brand this agency has audited
 Tier: T3 · Status: active

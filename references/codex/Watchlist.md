@@ -71,3 +71,11 @@ Require a hit on the **advertising** list, not the ranking list:
 - `\bads?\b` must be a whole word. Substring matching pulls in "adaptive", "advanced" and "gradient".
 
 A day with 0 arXiv items is the normal result. Report it as 0 rather than padding with recsys papers.
+
+### arXiv scheduling lag: the daily run always reads YESTERDAY's build (found 2026-08-20)
+
+arXiv rebuilds the cs.IR feed at **04:00 UTC**. The daily research task fires at **07:00 IST, which is 01:30 UTC**, so it lands **2.5 hours before that day's rebuild**. The feed served at run time is always the previous day's.
+
+Two runs in a row (02:07 IST and 07:00 IST on 20 August) both read the Wed 19 Aug 04:00 UTC build and both correctly reported 0 new. Neither says anything about Thursday's papers.
+
+**No papers are lost.** They are picked up by the next morning's run, one day late. So the honest phrasing in a run log is "0 new in the build served, which is yesterday's", never "no advertising papers today". Fix if the lag ever matters: move the task past **09:30 IST**. Until then, state the lag.

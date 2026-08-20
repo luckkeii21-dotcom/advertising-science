@@ -25,6 +25,9 @@ Three practical consequences:
 
 - **The avatar callout is the targeting input.** Name the person, their situation, or their objection in the creative, and delivery routes to them (MD-001, T3, three independent operators agree). One verified case: the same product, re-shot for one specific avatar, cut cost per purchase from $73 to $35 at the same $1,000/day spend ([[Creative Science|CR-005, T2]]).
 - **Near-duplicates are worthless.** Ads that look the same collapse into one entity ID and share identical delivery, zero extra reach. 200 lookalike variations can count as 20 real ads (MD-003, T3). Diversity has to live at concept level: different angle, different persona, different offer. Changing format (a static animated into video) does escape the collapse.
+
+> [!warning] Correction, 2026-08-20
+> The bullet above states the collapse as settled. It is not. **MD-003 flipped to `contested` on 2026-08-19.** Blue Sense contradicts it head-on from account observation ("it might count the bodies as the same ad and group them together. Well, I can tell you it doesn't"), backed by a fatigued 6-7 month winner revived to the account's top two by 4 newly shot hooks. Ben Heath arrives on the collapse side the same month. **Nobody on either side has shown an entity ID or a unique-reach figure**, so it is assertion against assertion, both T3. The rebuttal is scoped to swaps that change the VISUAL, which is consistent with MD-043: differences the parser can see (media type, landing-page URL, a new 3-second opener) register as distinct, metadata tweaks like a headline swap may not. Speak the collapse as a bet, never as a mechanism. The practical advice in the bullet survives either way, because concept-level diversity is cheap insurance. See skill law 2.
 - **Your settings still matter at the edges only.** Location, minimum age, language, exclusions. That is the fence. Everything inside the fence, the creative decides.
 
 ## The evidence, in tiers

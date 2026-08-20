@@ -9,6 +9,53 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-08-20 (research run, second pass same day, 07:00 IST scheduled slot)
+
+- Ran 07:00 IST. Harvest: **0 new transcripts** across all 12 channels, 0 harvester errors, 3 videos skipped under the length floor. Second consecutive zero-harvest day.
+- Watchlist: **0 new items on every source that answers.** All 4 RSS feeds parsed to item level and diffed: Meta Engineering 9, Meta Newsroom 10, Google Ads & Commerce 20, arXiv cs.IR 19, all identical to cache. Google Ads Announcements: 2,349 visible lines both sides, the single differing line is a session token, newest dated entry still 20 May 2026. Meta for Business News: 12 slugs, all 12 already in the cache union, newest still 11 June 2026. TikTok SDK changelog still v0.1.8. Thursday, so the 9 Monday-only sources were not due.
+- **Yesterday's Meta-for-Business date-diff fix is validated: 0 false positives today, against 5 under the old link-set method.**
+- **TikTok Newsroom and the for-Business blog were deliberately NOT retried**, per yesterday's geo-block root cause. Not an outage and no longer logged as one.
+- ⚠ **NEW METHOD BUG: the daily run always reads YESTERDAY's arXiv build.** arXiv rebuilds cs.IR at 04:00 UTC; the 07:00 IST task fires at 01:30 UTC, permanently 2.5 hours early. No papers are lost, they arrive one run late, but "0 new" must never be written as "no advertising papers today". Fix if it ever matters: move the task past 09:30 IST. Recorded in the Watchlist and cache.
+
+### Backlog batch: 25 transcripts, 116,119 words, all read in full
+
+- Selection weighted to currently CONTESTED laws rather than to word count alone: 5 Theriot on ad counts and scaling, 4 Heath on structure and small budgets, 4 Charley T on Andromeda and ROAS, 3 Shiver on platform updates and testing, 3 Faris on the Meta summit and measurement, 3 Blue Sense on cold traffic and unit economics, 3 Solutions 8 to attack the Google gap.
+- **369 candidate claims**, every one carrying a verbatim quote (21 T1, 9 T2, 283 T3, 56 T4). 7 extractors, then 7 merge agents, one per topic file so there were no write conflicts. Two singleton topics merged by hand.
+- **Codex 830 to 896 claims** (63 T1, 82 T2, 633 T3, 118 T4; 820 active, 71 contested, 5 superseded). No duplicate IDs. Backlog 291 to 266.
+
+### ⚠ MD-019 RESOLVED on Meta's own documentation, after sitting open three runs
+
+- The question: do new/engaged/existing audience segment definitions reach the DELIVERY model, or are they a reporting lens? Heath said delivery, Charley T said reporting, neither showed evidence, and the codex kept recording that Meta's help documentation settles it and nobody had looked it up.
+- **Somebody looked it up.** There are three surfaces wearing similar names. **Audience segments is reporting only**, "You can use audience segments to enable breakdown reporting", exposed in the API as `user_segment_key`, a **breakdowns parameter on the insights endpoint**, with no matching field on the campaign object. **A real delivery control existed**, `existing_customer_budget_percentage`, an **ad set** parameter sitting among the bidding fields. **Meta removed it.** The help centre says it "is no longer available"; the API docs say such campaigns "will be paused" at **Marketing API v26.0, which shipped 29 July 2026**, 22 days before this check. A third control, Customer lifecycle strategy, survives under a different name and works by exclusion coverage.
+- **So Heath described a real product Meta removed, and Charley T is right about the product as it stands.** Banked T1 at MD-019 and MD-019b, contested flag removed, MD-020 upgraded, MD-052 weakened. Promoted to skill law 1b. **Transferable lesson: when a claim says "resolvable by docs", reading the docs beat reading another 25 transcripts.**
+- Honest limit: all five help-centre articles are client-rendered and needed a real browser. Plain fetch returned titles only and geo-redirected to Hindi.
+
+### Laws that moved
+
+- **Law 4a, the ad-count debate, largely dissolved.** Four operators finally stated their units. **Heath counts LIVE ads per ad set**, 20-plus, explicitly concurrent, no upper limit, production capacity the constraint. **Theriot and Blue Sense count LAUNCHED ads per week or month**, and across five Theriot transcripts not one number is a concurrency count. Different quantities, which is why they never reconciled. Also banked: Ads Manager holds 5 primary text, 5 headline and 5 description variations **inside one ad unit**, read off Meta's screen, so copy tests never consume ad slots. That confirms Blue Sense's position that headline and copy changes are the SAME ad. Surviving disagreement is narrow: how many should be live and eligible at once.
+- **Law 10 upgraded T3 to T1.** Shiver walks Meta's attribution setting with old and new side by side and reads the product copy aloud: "video only" removed from engaged view, which now counts an ad click including a like, share or save followed by a conversion within 1 day. He dates it, "this changed in March." Faris independently places it around March 2026. **One detail banked but NOT settled:** a 5-second / 97%-of-length threshold read off screen but attached to an ambiguous window label, so the mapping is marked unverified.
+- **Law 3 got its first shown data on low spenders.** A real account, 198 live ads, 95 turned off at once, those 95 holding **10.89% of total spend**, figures on screen. Principle offered: kill risk scales with SPEND SHARE removed, not ad count. **It only half works and we recorded that.** Law 12's prune removed roughly HALF its campaign's spend and 10x'd spend anyway, which this principle would score as the maximum-risk move available. Banked T4 at SC-107 with an explicit instruction not to promote it.
+- **Law 20's contested numerator got an answer better than a winner.** Three operators state it out loud and disagree. **Theriot uses REVENUE pre-COGS**, so anyone quoting his LTV:CAC as gross-profit-based is misreading him. **Faris uses GROSS PROFIT.** **Blue Sense uses gross profit at cart level.** The ratio is not portable. The finding IS the rule: state the numerator before comparing, because at 50 points of margin two identical-looking 2.5s are a factor of two apart.
+- **Law 6 gained a third option (LS-050)**, the first that does not pay for quality in volume: keep the shallow high-volume optimization event, push CRM qualification back as **labelled audiences**, express quality as a **bid multiplier** through value rules. Shiver's plumbing runs live across five populations. **The bid layer does not: "I haven't done this yet."** Cheapest experiment on our board, because every client already has the CRM half built.
+- **New law 1a:** the ad set has a CONTROLS section that binds (location, minimum age, language, exclusions) and a SUGGESTIONS section that does not (interests, lookalikes, custom audiences). A 180-day website-visitor custom audience does not restrict delivery. Geo is the one targeting lever that still does what it says.
+
+### ⚠ Platform updates that touch live client accounts
+
+- **Related details** renders an email capture form inside the ad unit, on by default. Submissions never reached the advertiser and produced no notification, and engagement with it pulls spend. A client noticed it before he did. **We run lead gen. Audit every account.**
+- **Related media** injects other creatives already in your ad account into your ad, four or five auto-added on upload. It invalidates creative tests. Spend split visible under Breakdown, related media.
+- **Test new features**, an account-level master switch, on by default, is what keeps enabling these.
+- **Push delivery to an ad** guarantees a named ad a set percentage of ad set budget for 1 to 30 days. Zero performance evidence, but it is the first surface that would force delivery to a refresh without building a new ad set, which is exactly the SJR CBO starvation problem.
+- **AU-042 moved, and yesterday's "nothing was said" was wrong.** The cost-cap ROAS guardrail was announced from the stage at Meta's May 2026 summit and may be in limited rollout. Guards held: unnamed staff, no document, speaker says "I don't understand exactly the tool" and has not used it. T3, not shipped. Yesterday's sweep missed it because it excluded the summit recap episode.
+
+### Honesty notes, including two corrections to my own instructions
+
+- **A merge agent corrected my brief and was right.** I wrote that Shiver "uses labelled audiences for bid adjustment." The transcript shows he built the CRM plumbing and has never run the bid layer, and says so on camera. Banked accurately instead.
+- **A second merge agent stress-tested the spend-share reconciliation I proposed and found it fails against SC-050.** Recorded as a contradiction rather than smoothed over.
+- **The Google gap is now a finding about the source, not a scheduling accident.** Three Solutions 8 episodes, including their dedicated budget episode, showed **zero** account data. The budget episode declines to name a figure: "I cannot tell you a single beautiful happy number... That doesn't exist." Across 5,500 words from a Google agency, PMax, broad match, Quality Score, target ROAS, smart bidding, brand exclusion, RSA, Ad Strength, AI Overviews and AI Mode appear **zero times**. A Google agency on the roster is not Google evidence on the roster.
+- **CR-124 still has no answer.** Whether re-cutting the first 3 to 5 seconds of an existing shoot revives a fatigued winner was searched across all 25 transcripts and came back empty. All three near misses are written into the claim so nobody re-searches this corpus.
+- **Our own tiering is inconsistent and needs a ruling.** Meta product copy read off the Ads Manager screen was filed T1 by three merges and T2 by the creative merge. Both are defensible, neither survives alongside the other. Flagged as a watch item.
+- Refused to bank: an operator's $100k-a-month close whose own arithmetic contradicts it three ways, both versions of a test-volume formula that disagree with each other, a 1,000-ad corpus headline with no per-ad data, and the £58,000 Heath attribution gap as a measured figure (paid sponsor segment, no control).
+
 ## 2026-08-20 (research run)
 
 - Ran 02:05 IST. Harvest: **0 new transcripts** across all 12 channels, 0 harvester errors, 1 video skipped under the length floor.

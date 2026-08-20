@@ -41,6 +41,16 @@ Drawn from an audit of a private-equity-owned multi-brand group spending across 
 Sources: Blue Sense Digital, 2025-08-18, "Should You Should Run TikTok Ads In 2025?"
 Last touched: 2026-08-19
 
+## Creator partnerships
+
+### EC-005 · Paying a creator on affiliate terms hands them your exact sales and return data, and a large enough creator can then replicate the product under their own brand
+Tier: T3 · Status: active
+The trade-off is stated as a de-risking choice that carries a defection risk. Affiliate-only terms cost a small brand nothing up front, which is why small brands reach for them. The cost is visibility: an affiliate creator can see precisely what the product sells and what comes back, and a creator with enough reach can act on it. His words: "If they're big enough, it becomes very easy for the creator to go, I'm going to do that... I'm going to replicate. I'm gonna sell that thing that I'm promoting under my own brand name." His default recommendation for most brands is a flat fee, which keeps the sales numbers inside the business.
+Asserted. No case is named, no defection is described as having actually happened, and no threshold is given for how big "big enough" is. Treat it as a contracting principle worth weighing, not as an observed failure rate.
+**Filed here for want of a better home, and that is a finding in itself.** This is a commercial-terms claim about how you pay a creator, not a claim about how a channel delivers. It is not Meta delivery, not creative science, and not quite unit economics. The codex has no Creator or Partnerships topic, and creator-sourced inventory is now large enough on Meta that one may be warranted. Logged as a gap below.
+Sources: Charley T, 2026-06-13, "The BEST NEW Way to Run Facebook Ads in 2026 (Andromeda 2.0)"
+Last touched: 2026-08-20
+
 ## Applovin / Axon
 
 ### EC-004 · Axon is claimed to be the first new visibility source since Meta in 2012 to acquire net new customers at scale, at efficiency beating Meta in many cases, and to already hold more advertising market share than TikTok.
@@ -55,3 +65,4 @@ Last touched: 2026-08-19
 - **Nobody on the roster runs these channels as a primary book.** Every claim above is a side remark from a Meta or Google operator. Adding one emerging-channel operator to the roster would be worth more than another Meta channel.
 - **The Axon market-share claim is checkable and unchecked.** Published market-share figures exist. Verify it or downgrade it.
 - **No Reddit, Amazon or X coverage at all**, despite all three carrying real ad businesses.
+- **There is no Creator or Partnerships topic and EC-005 shows the cost of that.** A claim about how you contract with a creator landed here because nothing fitted better. Creator-sourced inventory is a large share of what actually runs on Meta now, partnership ads have their own delivery surface, and the roster keeps producing claims about creator sourcing, licensing and payment terms. If a second homeless creator claim arrives, open the topic rather than stacking them here. Noted 2026-08-20.
