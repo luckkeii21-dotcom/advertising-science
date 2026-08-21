@@ -9,6 +9,47 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-08-21 (research run, late slot 18:53 IST)
+
+- Harvest: **1 new transcript**, Matt Shiver on quiz funnels with guest Justin Mahaley, 11,114 words, 48 minutes. 0 harvester errors, 9 videos skipped under the length floor, 11 of 12 channels returned nothing.
+- Watchlist: **1 genuinely new item across every source that answers.** Meta Engineering 9 items and Meta Newsroom 10, both identical to cache. Meta for Business News newest still 11 June 2026, checked on dates per the 2026-08-20 method fix, 0 false positives again. Google Ads Announcements newest still 20 May 2026. TikTok SDK changelog still v0.1.8. Thursday, so the 9 Monday-only sources were not due.
+- **The arXiv scheduling lag was validated by the opposite case.** Yesterday we found the 07:00 IST task always reads the previous day's build, because it fires at 01:30 UTC against a 04:00 UTC rebuild. This run fired at 13:23 UTC and read the **same-day 21 August build**, the first time that has happened. 29 items, 2 bank-list hits, 1 banked. The fix is confirmed as a scheduling problem and nothing else: move the task past 09:30 IST and the lag disappears.
+- arXiv discard worth recording: BARGE hit the filter on "click-through rate" alone, which appears only as an evaluation metric on a Tencent content recommender. That is exactly the false positive the 2026-08-19 filter tightening was written to prevent, so the bank-list rule held and the discard was correct.
+- TikTok Newsroom and the for-Business blog **deliberately not retried**, per the permanent India geo-block. Only the SDK changelog was read, so **TikTok is not logged as clean today.**
+
+### ⚠ The find of the day is a Google measurement instrument, and it retires an excuse we have been using
+
+- Google shipped **AI Max experiments** and documented them (GA-062, T1 for surface and product copy). The split is **inside one existing Search campaign**, a traffic percentage with the AI Max toggle off as control against the remainder with it on. The clause that matters, verbatim from Google's help article: "If you add brand inclusions or brand exclusions during setup, these settings will automatically apply to both your control and treatment arms for the duration of the experiment." **The brand guardrail is held constant across arms instead of being surrendered to run the test.** Documented blocker: the flow refuses a campaign that already has text customization enabled.
+- **Why this matters more than it looks.** GA-047, our only AI Max performance claim, is a December 2025 practitioner read with zero numbers that the codex already forbids quoting as a null result. We have been carrying "AI Max returned no benefit" while holding no way to check. There is now a documented way to check, and GA-045 already says to put a re-test date on every Google product we dismissed.
+- Same 2026-08-20 post: a **multi-campaign A/B for budgets and ROI targets, rolling out September 2026** (GA-063). Budget step size at law 7 and target ROAS at law 17 are both folklore-tier for one reason, which is that nobody runs the controlled test. Google is shipping that test on the Search side. Not live, zero numbers in the post, no eligibility stated, so do not plan against it yet.
+- Guard banked in the same claim: Performance Planner now previews bidding and budget changes with **one-click apply**. That output is a Google forecast and never a measurement, same standing as Opportunity Score at law 4c, and the one-click apply makes accepting an unvalidated vendor forecast a single action.
+
+### Backlog batch: 25 transcripts, 147,379 words, all read in full
+
+- Selection capped per channel to protect diversity and filtered for advertising content: 5 Shiver, 6 Blue Sense, 3 Theriot, 3 Mark Builds Brands, 3 Heath, 2 Fraser Cottrell, and one each of Piliero, Charley T and Faris. 7 extraction agents, then 7 merge agents, one per topic file so there were no write conflicts.
+- **Codex 896 to 962 claims** (67 T1, 90 T2, 675 T3, 130 T4; 872 active, 85 contested, 5 superseded). No duplicate IDs, zero em dashes. Backlog 266 to 241.
+- **T2 rose 82 to 90, which is the number worth watching.** Shown-data claims are the scarce thing and eight arrived today, including Meta's own incremental attribution column cutting one account from 379 to 206 conversions at $14 to $26 CPA, an $84,000 spend at 5x in platform against $727,000 total sales at 8.5x blended, and a 12,000-person free list against a 385-person paid list returning identical 36 hand raises to the same post on the same morning.
+- **Contested rose 71 to 85.** Same pattern as the last two passes, the engine keeps converting false confidence into recorded disagreement.
+
+### ⚠ A law we had been stating as an absolute was wrong
+
+- **Law 1a is corrected.** We have been saying interests, lookalikes and custom audiences never bind. **A documented toggle makes them bind.** Ticking "further limit the reach of your ads" and switching off "use as suggestion" converts the suggested audience into hard targeting, and **three independent operators have now demonstrated it in the UI** with audience size visibly dropping and reverting on screen (MD-013). Correct form: **suggestions by default, binding on request.** The same source also gave the law its strongest support yet by reading Meta's own on-screen section labels aloud, "there is a control section, and then underneath is a suggested audience section."
+- Practical consequence: an account whose targeting appears not to bind gets checked for this toggle before the behaviour is blamed on Andromeda.
+
+### Other laws that moved
+
+- **Law 6 got its first reported FAILURE of the quality route, and we had been holding only successes (LS-062).** An operator rewrote every ad and the VSL for high-income women AND fed only qualified conversions back to the pixel, the LS-044 and LS-045 route: "We do all of the best practices, right? But that didn't work." No numbers, so it refutes nothing, and it corrects a real selection bias. The same account also kills the obvious qualifier: income did not predict purchase, $30k to $50k earners bought a $3,000-plus offer, and higher income sometimes predicted a lower chance of buying. **An income question on that form would have excluded the customers.**
+- **Law 6, the volume pole got weaker on arithmetic (LS-060).** At a $500 cost per booked call, 50 conversions in 7 days is $25,000 a week, so the learning floor is unreachable and "protect event volume" defends something the account never had. His words: "I am always in limited learning." Every client we run is high-ticket lead gen and sits in exactly that state.
+- **Law 7 sharpened into something more useful than a range.** Two more operators landed at 20 to 30% per step. **The percentage is converging. The hold duration is not (2-4, 3-5, 5-10 days). The budget level is stated by nobody except Heath.** Read that way the 3% floor and 100% ceiling are cadence artefacts rather than rival answers. A third governing variable also appeared, headroom against target.
+- **Law 4a's surviving question got two more answers and they disagree.** Live concurrently per ad set: 4 to 6, 5 to 10, and 20-plus. Three real books, a 10x spread, no comparative test. **Two mechanisms found today explain why these were never comparable:** Theriot never switches ads off between weekly launches so his live count climbs while his launch rate is fixed (SC-121), and Dynamic Creative is present in some accounts and gone in others, so identical assets are one ad or many (SC-122). Ask which before comparing any two numbers.
+- **TT-024 flipped to contested, and the contradiction is internal to one operator.** In April 2025 he says TikTok makes pop-up submission rates "just tank". In August 2025 he says they hold flat or improve while what follows collapses. Both cannot be the signature. His guest declines to confirm either and names the missing control: "we haven't done a holdout test."
+
+### Gaps and honest notes
+
+- **Nobody has still run a controlled test on budget step size, on killing top or low spenders, or on whether AI creative outperforms non-AI creative.** The last one is new and it is a finding about our sources: three transcripts explicitly about AI creative, zero comparisons against non-AI, every stated advantage resting on production speed and cost (CR-169).
+- Two internal contradictions inside single transcripts are now on the record rather than silently averaged: Piliero's step size stated as "20 to 30%" and twice more as "10% to 30%", and a "Do not use CBO" sentence that contradicts the two sentences before it and reads as a transcription drop.
+- One extraction agent returned a truncated result and had to be asked to re-send. Caught by checking claim numbering against the transcript count. Worth remembering: a long agent reply can arrive incomplete and look finished.
+
 ## 2026-08-20 (research run, second pass same day, 07:00 IST scheduled slot)
 
 - Ran 07:00 IST. Harvest: **0 new transcripts** across all 12 channels, 0 harvester errors, 3 videos skipped under the length floor. Second consecutive zero-harvest day.
@@ -55,6 +96,14 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 - **CR-124 still has no answer.** Whether re-cutting the first 3 to 5 seconds of an existing shoot revives a fatigued winner was searched across all 25 transcripts and came back empty. All three near misses are written into the claim so nobody re-searches this corpus.
 - **Our own tiering is inconsistent and needs a ruling.** Meta product copy read off the Ads Manager screen was filed T1 by three merges and T2 by the creative merge. Both are defensible, neither survives alongside the other. Flagged as a watch item.
 - Refused to bank: an operator's $100k-a-month close whose own arithmetic contradicts it three ways, both versions of a test-volume formula that disagree with each other, a 1,000-ad corpus headline with no per-ad data, and the £58,000 Heath attribution gap as a measured figure (paid sponsor segment, no control).
+
+### Teacher run (08:00 IST)
+
+- **Lesson 004 shipped: "Controls Bind, Suggestions Don't", video no** (Thursday is not a video day). Taught from this morning's harvest: MD-019 resolved to T1, MD-019b new, built on MD-013 (T2) with MD-062, MD-068, MD-076 and MD-100.
+- Inbox empty for the fourth consecutive run, so nothing was graded and topic choice again came purely off this log. Recorded on the scoreboard as a real problem: with zero graded quizzes the teacher pass cannot aim at a measured weak spot, which is the thing it exists to do.
+- **The SJR figures in the lesson were recomputed from the raw Meta exports rather than quoted from the session note, and the recompute corrected the note.** Confirmed exactly: non-lot-state share of spend 9.0% ($439.98 of $4,897.15) Jun 9-16, rising to 19.8% ($202.64 of $1,024.23) Jul 10-20. June CPM by state confirmed: NJ $26.02, NY $35.77, PA $33.14 against NC $11.54, VA $11.71, MD $12.00, CT $12.68, MA $13.83. **Corrected: the note's per-region CPL pair ($3.76 against $10.06) is not reproducible from these exports, because Meta withheld per-region lead counts in BOTH windows, every regional lead cell is zero.** The lesson quotes spend and CPM only and says so in the text.
+- **New claim-merge candidate for the next research run, from our own account.** MD-062 ("set geo to the full area you can serve and let Meta find the pockets inside it") is T3 and the codex marks it ASSERTED, no data. SJR supplies its first shown numbers and a boundary condition it lacks: inside a control boundary Meta walks toward the CHEAPEST impressions, which equals the best pocket only when every pocket is equally serviceable. Cheapest is best for national ecommerce and worthless for a two-lot walk-in dealership. Not banked by the teacher pass, flagged for merge.
+- Honesty note carried into the lesson: SJR blended cost per result fell $6.25 to $4.00 (36%) while the out-of-market share doubled, which is the reporting trap this account is currently sitting in. The geo drift is named as a **candidate** contributor only, because creative and budget both changed in the same window.
 
 ## 2026-08-20 (research run)
 

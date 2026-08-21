@@ -200,11 +200,14 @@ SHOWN, with the confound stated by the source rather than by us.
 Sources: Blue Sense Digital, Be Careful: TikTok Ads Nearly Bankrupted This Business, 2025-03-24
 Last touched: 2026-08-19
 
-### TT-024 · TikTok traffic degrades on-site funnel quality in a specific pattern: pop-up form submission rate holds flat or improves while conversion off the back of those submissions collapses.
-Tier: T3 · Status: active
+### TT-024 · TikTok traffic degrades on-site funnel quality, and the DIRECTION the pop-up submission rate moves is CONTESTED by the same operator four months apart
+Tier: T3 · Status: contested
 Repeated observation across brands that turned TikTok on. Submission rate is not the tell, because a discount pop-up converts a curious scroller as readily as a buyer. What breaks is what happens after: the submitted emails do not buy, and they sit dormant on the list as discount-claiming non-buyers. Two costs follow. List quality falls, and any funnel metric measured at the submission stops meaning anything. No rates, no account and no dashboards shown, so ASSERTED. This is the leading-indicator version of the shown collapse in TT-022. The generic diagnostic behind it, splitting average session duration, add-to-cart rate and pop-up fill rate by traffic source, is filed in [[Attribution & Incrementality]].
-Sources: Blue Sense Digital, Should You Should Run TikTok Ads In 2025?, 2025-08-18
-Last touched: 2026-08-19
+**FLIPPED TO CONTESTED 2026-08-21, and the contradiction is internal to one operator.** In August 2025 he holds that submission rate stays flat or improves while what follows collapses, which is the paragraph above. In April 2025, four months earlier, the same operator states the opposite direction outright: "anytime I've seen Tik Tok introduced into the marketing mix, just pop-up form submission rates just tank. And they they never come back until you turn Tik Tok off. And that just like immediately makes me think that this is junk traffic." Flat-or-improving and tanking cannot both be the signature.
+**A second voice in that April episode declines to confirm either version and names the missing control.** His guest, who works the email side across a client book, answers: "I mean I've had scenarios where that hasn't happened. Like I have a few clients who run Tik Tok and pop-up forms still holds healthy, but we haven't done a holdout test where they have they've just always been running Tik Tok as far as I've known them." So there are three positions on file, tanks, holds, and holds-but-the-people-do-not-buy, all from the same two people, and nobody has run the holdout that separates them.
+**Operating consequence: do not use pop-up submission RATE as a TikTok traffic-quality tell in either direction.** The claim that survives is narrower and unaffected by the contradiction, which is that a metric measured at the submission stops meaning anything once TikTok is on. The same guest's separate point at [[Attribution & Incrementality]], that the pop-up VIEW count rather than the submission rate is the acquisition indicator, is the more robust instrument.
+Sources: Blue Sense Digital, Should You Should Run TikTok Ads In 2025?, 2025-08-18; Blue Sense Digital, The Myths and Realities of eCommerce Pop-up Forms with Angus Cowan, 2025-04-07
+Last touched: 2026-08-21
 
 ### TT-025 · Cheap TikTok CPMs carry no signal about channel value: in the case account CPMs were strong while CPCs sat about level with Facebook.
 Tier: T3 · Status: active
