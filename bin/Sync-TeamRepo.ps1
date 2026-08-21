@@ -1,7 +1,8 @@
 <#
 .SYNOPSIS
   Publish the advertising-science skill + codex snapshot to the team repo
-  EverythingAI-Pro/advertising-science. Called by the daily research run
+  EverythingAI-Pro/advertising-science AND to Lucky's personal mirror
+  luckkeii21-dotcom/advertising-science. Called by the daily research run
   (RUNBOOK-RESEARCH.md step 5); safe to run by hand any time.
 
   Commits and pushes ONLY when something changed. Excludes machine state
@@ -19,6 +20,7 @@ $SkillDir = Split-Path -Parent $PSScriptRoot
 $Root = (Resolve-Path (Join-Path $SkillDir '..\..\..')).Path
 $Science = Join-Path $Root 'Obsidian God-level Marketing Vault\God-level Marketing\wiki\science'
 $RepoUrl = 'https://github.com/EverythingAI-Pro/advertising-science.git'
+$PersonalUrl = 'https://github.com/luckkeii21-dotcom/advertising-science.git'
 
 # git writes progress to stderr; in PS 5.1 with EAP=Stop that becomes a fatal
 # NativeCommandError, so every git call goes through this wrapper.
@@ -36,6 +38,20 @@ if(-not (Test-Path (Join-Path $RepoClone '.git'))){
 }
 # tolerate an empty just-created repo (pull fails when origin has no commits)
 G -C $RepoClone pull --rebase --quiet | Out-Null
+
+# personal mirror remote, self-healing if the clone was ever rebuilt
+$remotes = G -C $RepoClone remote
+if($remotes -notcontains 'personal'){
+  G -C $RepoClone remote add personal $PersonalUrl | Out-Null
+}
+
+# pushes the personal mirror; never fatal, so a personal-repo hiccup can't
+# break team distribution — but the daily log line makes a failure visible
+function Push-Personal {
+  G -C $RepoClone push --quiet personal HEAD | Out-Null
+  if($script:GitExit -ne 0){ Write-Output "personal mirror push FAILED (team repo unaffected)" }
+  else { Write-Output "personal mirror: pushed" }
+}
 
 # ---- skill files ----
 foreach($f in 'SKILL.md','README.md','channels.json','RUNBOOK-RESEARCH.md','RUNBOOK-TEACHER.md'){
@@ -72,7 +88,8 @@ Get-ChildItem $codexDst -Filter '*.md' | ForEach-Object {
 # ---- commit + push only on change ----
 G -C $RepoClone add -A | Out-Null
 $pending = G -C $RepoClone status --porcelain
-if(-not $pending){ Write-Output "team repo sync: no changes"; exit 0 }
+# even with no new commit, catch the mirror up in case a prior personal push failed
+if(-not $pending){ Write-Output "team repo sync: no changes"; Push-Personal; exit 0 }
 
 $stamp = Get-Date -Format 'yyyy-MM-dd'
 $msg = "Daily science sync ${stamp}: codex $claims claims`n`nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
@@ -81,3 +98,4 @@ if($script:GitExit -ne 0){ throw "commit failed" }
 G -C $RepoClone push --quiet origin HEAD | Out-Null
 if($script:GitExit -ne 0){ throw "push failed" }
 Write-Output "team repo sync: pushed ($claims claims)"
+Push-Personal
