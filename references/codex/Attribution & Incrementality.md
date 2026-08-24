@@ -758,3 +758,27 @@ ASSERTED, no audit numbers, no count of brands, and the revenue band is a rule o
 Sources: Blue Sense Digital, Vetting Agencies in eCommerce with Angus Cowan, 2025-03-14
 Last touched: 2026-08-21
 
+
+
+### AT-096 - RESOLVED: the 5-second video threshold governs ENGAGE-THROUGH, which is a NEW named attribution category, and click-through now requires a click on the ad's main destination link
+Tier: T1 - Status: active
+[[Attribution & Incrementality#AT-036|AT-036]] banked a 5-second-or-97% video threshold off Meta's screen and explicitly refused to say which window it governs, marking the mapping unverified and telling nobody to repeat it. **That question is now answered, from a second operator walking the same panel three months earlier.**
+Ben Heath, 7 April 2026, names the new category outright: "the other big change that's happening to attribution is the creation of a new attribution category called engage-through attribution. And that's going to be the new home for what was previously included under click-through attribution". The threshold belongs to it: "engage-through is counted when a video is played for at least 5 seconds or for 97% of its total length if it's shorter than 5 seconds." So the threshold governs ENGAGE-THROUGH, not view-through, and Shiver's ambiguous delivery was a mislabel rather than a different rule.
+**The mechanism of the step-down, which AT-036 had only in outline.** Before: "Meta was including any click on the ad. That could be a like or another type of reaction, could be a comment, could be a share, um could be clicking uh to read more of the primary text, which is a long primary text, could be clicking in to watch more of the video." After: "any click, the main destination that you've set from um the ad that you've created, whether that's internal within a Meta app or external, your website, landing page, etc., that is what people are going to need to do in order to qualify as a click-through attributed conversion going forward."
+The categories are mutually exclusive: "in order to count under engage-through attribution, those people need to have not also clicked on the link cuz as soon as they do that, they would then fall under the click-through attribution should they go ahead and convert".
+The panel now exposes three independent windows, read off the screen: "We've got click-through 7 days, we can change that to 1 day. Engage-through 1 day, we can change that to none. You can see Meta is very much recommending you don't do that. And then we've got view-through 1 day again, we can change that to none." Location: ad set level, under attribution model, behind "show more options".
+**Tier discipline unchanged from AT-036: the surface and Meta's on-screen definitions are T1, every operator interpretation of what to do about it stays T3.** One transcript oddity survives into this entry: "97% of its total length if it's shorter than 5 seconds" is how both operators render it, and it is internally strange as written. The 5-second half is safe. Treat the 97% clause as read-off-screen wording that has not been checked against Meta's documentation.
+Sources: Ben Heath, Your Meta Ad Results Are About To Change, 2026-04-07; Dr. Matt Shiver, New Facebook Ads Features & Changes (July 2026), 2026-06-30
+Last touched: 2026-08-24
+
+### AT-097 - The March 2026 redefinition costs video-heavy accounts about 3x more reported clicks than image-heavy accounts, because all-clicks ran near 3x link clicks
+Tier: T2 - Status: active
+This is the size of the artefact that law 10 says must never be reported as a performance decline, and it is the first number attached to it.
+Ben Heath, on screen, 7 April 2026: "You can see that top campaign's got 415 link clicks, but clicks all, which would include those social and media clicks, 1,179. So, literally almost three times as many clicks as link clicks."
+**The format dependence is the operationally useful half.** Across four campaigns shown: "that's because these top two campaigns are very video heavy, and these bottom two campaigns where the discrepancy is less are more image heavy. So, how much this impacts you will depend on the type of creative you're using."
+So the reported-conversion loss is not uniform across an account. Video-led campaigns absorb the largest drop, statics the smallest, and a mixed account will show its video campaigns falling hardest for reasons that have nothing to do with performance. **Anyone reading a creative-format comparison across the March 2026 boundary will conclude video got worse. It did not.**
+Evidence quality: real account numbers on screen, four campaigns, and the raw figures are given for only the top campaign. Observational, not a controlled test. He reaches the same reporting conclusion the codex already holds: "don't compare old campaigns to newer campaigns and think, 'Ah, they're performing worse.' It might just be the difference in attribution settings".
+One further consequence he names, T3: post-change Ads Manager sits closer to last-click third-party tools such as Google Analytics than it used to.
+**Not banked from this transcript: the Hyros figures.** The 96,000 against 38,000 pound comparison sits inside a paid sponsor read with no methodology, and he concedes the account is "a relatively extreme example". That is advertising, not evidence.
+Sources: Ben Heath, Your Meta Ad Results Are About To Change, 2026-04-07
+Last touched: 2026-08-24

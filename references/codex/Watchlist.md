@@ -79,3 +79,16 @@ arXiv rebuilds the cs.IR feed at **04:00 UTC**. The daily research task fires at
 Two runs in a row (02:07 IST and 07:00 IST on 20 August) both read the Wed 19 Aug 04:00 UTC build and both correctly reported 0 new. Neither says anything about Thursday's papers.
 
 **No papers are lost.** They are picked up by the next morning's run, one day late. So the honest phrasing in a run log is "0 new in the build served, which is yesterday's", never "no advertising papers today". Fix if the lag ever matters: move the task past **09:30 IST**. Until then, state the lag.
+
+### The MONDAY run always reads an EMPTY feed (found 2026-08-24)
+
+Second consequence of the same lag, and it is worth stating separately because it looks like a broken fetch. A Monday run reads **Sunday's** build, and arXiv announces nothing on Sunday. On 2026-08-24 the feed body was **892 bytes containing zero `<item>` elements**, with `lastBuildDate` of Sun, 23 Aug 2026 04:00:00 +0000.
+
+That is not a fetch failure, not a parse failure, and not a filter result. There was nothing in the file. Log it as "feed empty, weekend build", never as "0 advertising papers today" and never as an error. The same will be true of every future Monday run until the task moves past 09:30 IST.
+
+## Source-quality gaps recorded 2026-08-24
+
+Two watchlist sources are weaker than the table above implies, and both were found by checking rather than by failing.
+
+- **Meta Advertising Standards has no cached baseline.** Plain fetch returns HTTP 400, the page displays no last-updated or effective date, and no text snapshot has ever been saved. So the lane can report the page's structure and genuinely cannot detect a silent rewrite. This matters because four chiropractic accounts depend on the health and personal-attributes sections. **Do not log this source as clean.** Fix: add a WebFetch-based snapshot step so future runs have something to diff.
+- **The Marketing API changelog index under-renders.** On 2026-08-24 it showed only through v25.0; v26.0 (29 July 2026) had to be confirmed from the Graph API changelog and the v26.0 detail page. A future run reporting "newest is v25.0" from the index alone is seeing a rendering artefact, not a rollback.
