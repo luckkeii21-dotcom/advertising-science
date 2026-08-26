@@ -9,6 +9,47 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-08-26 (research run, SECOND PASS of the day)
+
+**This is the second run on 2026-08-26. The scheduled task fired at 07:00 IST after a manual pass had already completed at 01:50, whose entry is below. Harvest returned 0 new transcripts and the watchlist returned 0 new items, both verified independently rather than assumed from the earlier run. The whole value of this pass is a second 25-transcript backlog batch. Backlog 149 to 124.**
+
+**Headline: the instrument this file has called "the answer" for five consecutive passes finally has a NUMBER to compare a reading against.** The audience-segment breakdown has been named as unopened in five runs, always without a target. Blue Sense supplies the read and the tripwire together: **existing-customer spend under 10% for any business that is not fashion or CPG** (25 to 30% for fashion, CPG excluded and given no number). **All five of our clients are local service businesses, so under 10% is our line.** Five passes of "go look" is now "go look and compare it to 10%" (MD-019).
+
+**Two long-open questions closed.** Meta's customer lifecycle strategy does NOT hold privileged data about who your existing customers are: the operator who called it "mysterious" in April says in June it merely **relocates the manual exclusion control inside the ad-set UI**, "That's it" (MD-122). Only the narrow v26.0 survival question remains. And law 3's 20%-daily-kill-cap retraction is now **settled at thirteen transcripts with zero occurrences**, two more Charley T files today plus a sixth operator who reaches the kill decision with no threshold at all (SC-137, SC-143).
+
+**Law 4a gained a fourth counting variable, and it is the first that produces a 10x gap without anybody changing their unit: CAMPAIGN TYPE.** One operator, one video, 2025-03-31: "three to six ads in an adset. Six is the absolute maximum" for ABO and CBO, against "30 40 50 ads in advantage plus and performance only improved... you want as many ads in here as possible." **Ask which campaign type before comparing any two live-ad counts** (CR-182).
+
+**The finding that should change how we brief creative volume: how many ads Meta FUNDS is a function of account spend, and at our clients' spend it is about one.** "You look at a 200k plus account, Advantage Plus is spending on 20 ads effectively. You look at a 20K, 30K a month account, Advantage Plus has one ad that's really holding up the entire campaign." Every client we run is under $30k/month (MD-137). A second spend-keyed launch rate also landed, one net new ad per $1,000/month, which disagrees with Piliero's Rule of 10,000 by 2.3x, **and is refuted by the same operator's own two $100k accounts running 200 and 30 ads a month at similar efficiency** (CR-185).
+
+**The engine closed a gap it logged against itself this morning.** The 01:50 entry recorded "the engine still has no step that re-checks arithmetic on figures it banks." This pass re-checked every headline figure against its own components before banking. **Seven failed:** "70% cheaper" CPM computes to 60%; "30% lower" CPA computes to 25%; a "7x" spend ratio inside Meta's own breakdown chart computes to 9x; a hit-rate ceiling is stated as both 13-14% and 15% in consecutive sentences joined by "which means"; a prescribed funnel split cannot sum to 100; 4 base ads plus 50 iterations is presented as 100; and 5% of 10 ads is asserted to yield one winner. **All seven are banked with the failure attached, and not one entered a law.**
+
+**Verification caught one candidate before it was banked.** A reader returned "pixel event audiences are 60-70% complete" attributed to the 2025-03-26 retargeting transcript. Grepping the raw file showed the real quote is scoped to an **add-to-cart** audience specifically, "you're only going to pick up 60 70% of people that actually added to cart", not pixel audiences generally. It is banked in its true scope at MD-123, where it becomes the first NUMBER on the match-quality reconciliation for whether exclusions bind. **Quoted at the wider scope it would have been the eighth invented figure in this codex.**
+
+| | Before | After |
+|---|---|---|
+| Total claims | 1,020 | **1,033** |
+| T1 | 80 | 81 |
+| T2 | 101 | 103 |
+| T3 | 706 | 715 |
+| T4 | 133 | 134 |
+| active | 923 | 934 |
+| contested | 92 | 94 |
+
+New: MD-135, MD-136, MD-137, MD-138, CR-185, CR-186, CR-187, SC-143, SC-144, SC-145, AT-100, AT-101, AT-102. Updated in place: MD-003, MD-019, MD-122, MD-123, CR-182, SC-137, AT-098.
+
+**Other law-level movement.** **AT-100** gives law 3's "never judge on the ad's own row" its best source yet, Meta's own breakdown-effect documentation: the readable unit of analysis is whichever level HOLDS THE BUDGET, and Meta equalises marginal rather than average cost. **AT-102**, a DPA campaign's ROAS measures how well the top of funnel is funded, so a good DPA ROAS is a reason not to scale it. **MD-135**, the default performance goal buys the cheapest conversion, which is the cheapest product, shown at 0.89 ROAS on the top-spending ad of a $4M/month account, with the agency misdiagnosing a settings-level cause as a creative problem. **MD-138**, ad-level frequency sits at or below 2 while account-level runs 3 to 6, with a free 90-day ex-retargeting procedure to check it. **SC-144**, TAM saturation computed before the spend increase: 23M reachable, 20% TAM, 4.6M addressable, 2.7M already reached, so 5 to 6 months of runway at $100k/month.
+
+**Watchlist: 0 new, everything reproduced independently rather than trusted from the 01:50 run.** Meta Engineering 0 new (newest still the 2026-08-24 MetaRoCE/MTIA-300 pair, non-ads). Meta Newsroom 0 new. Google Ads & Commerce 0 new. Google Ads Announcements re-scraped, 349 distinct dates, identical to cache, true newest still 1 July 2026. TikTok SDK changelog HTTP 200, unchanged at v0.1.8. arXiv served the SAME Tue 25 Aug 04:00 UTC build the 01:50 run read, because 07:00 IST is 01:30 UTC and lands before the 04:00 UTC rebuild, so 0 new by construction; the filter was re-applied independently and reproduced the same 2 hits and the same 1 real paper.
+
+**Two watchlist maintenance items actioned.** **Meta for Business News returned HTTP 400 on curl for the second consecutive run, so the transport change is persistent rather than a one-off and the source now permanently requires the browser.** The 263KB cache was again deliberately not overwritten with the 1,542-byte error body. And the arXiv `links[]` had been left at an older 52-item build, which made a naive diff report 69 false new; it is now written from the build actually read, so tomorrow's diff is clean.
+
+**Gaps.**
+- **The audience-segment breakdown now has a threshold and STILL has not been opened on any of our five accounts.** Sixth consecutive pass naming it. It is one Ads Manager query and it now returns a pass or a fail rather than an uninterpretable number.
+- **MD-138 adds a second free instrument with a written procedure**, 90 days, ad level, retargeting excluded. Neither has been run.
+- **Nobody who runs incrementality tests professionally has published a gap figure.** AT-101's operator names "incremental conversions" as an output field and never populates it, so law 11b's 3.7x still rests on two accounts.
+- **Nick Theriot has been read eight times across passes and has still never stated a live ad count.** Not re-opened today; recorded so it stops being re-opened.
+- **`mark-builds-brands` holds 20 of the remaining 124 backlog transcripts and is a personal-finance and mindset channel**, not ad science. Ranking the backlog by word count puts it at the top and would waste an entire batch. Rank by ad-science density, or drop the channel from the roster.
+
 ## 2026-08-26 (research run, 07:00 IST)
 
 **Headline: the source this codex leans on hardest for law 2 argues BOTH sides of it five days apart, and the pass caught the next invented number before it existed.** Blue Sense is quoted in the skill file as the anti-collapse pole. On **2026-01-08** he says grouping does not happen, "I can tell you it doesn't". On **2026-01-13, five days later**, he builds an entire framework on it happening, naming a creative similarity score that gets decreased "and therefore throttle performance". **MD-003's chronology defence, that he was updating his view across six months, is dead. Stop citing him as the anti-collapse pole.** Third consecutive pass where re-reading an operator's CORPUS rather than our own CLAIM produced the finding, after Ben Heath (MD-123) and Fraser Cottrell (CR-124).
