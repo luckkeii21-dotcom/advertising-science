@@ -1623,3 +1623,78 @@ Blue Sense published a video titled "Traffic Campaigns Are Killing Your Meta Res
 **Two numbers in this file must never be repeated as findings.** *Arithmetic failure:* he states sales CPM about $25 versus traffic CPM about $10 and calls it "about 70% cheaper"; the components give 60%. *Quarantined figure:* a "27% better performance" result he attributes to Meta and then discredits himself in the same sentence, "but you don't know the brands, you don't know the test design, etc." It has no provenance beyond an unnamed Meta claim introduced in order to be rejected.
 Sources: Blue Sense Digital, Traffic Campaigns Are Killing Your Meta Results Heres Why, 2025-10-01
 Last touched: 2026-08-26
+
+### CR-188 · Theriot deliberately runs three NEAR-IDENTICAL creatives in one ad set at $6M/30-day scale, which is the anti-collapse pole law 2 lost yesterday
+Tier: T3 · Status: active
+[[Meta Delivery & Andromeda#MD-003|MD-003]] lost its anti-collapse witness on 2026-08-26 when Blue Sense turned out to hold both positions five days apart. This is the replacement, and it is better sourced than the one it replaces, because it is a standing practice rather than an opinion.
+Nick Theriot, 2026-08-26, opening on scale: "Over the last 30 days, we spent over $6 million on ads at my ad agency, specifically for our clients."
+**His standard testing unit is three creatives per ad set that differ in exactly one element.** Images: "The three images are going to have the same text hook, just a different background on each of those images." Videos, and this is as near-duplicate as it gets: "this is the same exact video three times, all have the same body, same length, same everything, but the visual hook is different."
+**Why this is evidence.** If Meta bundled near-duplicates into one entity with zero unique reach, this practice would be self-defeating, and it is not a stray test, it is how every ad set in the book is built. That is an operational bet placed with $6,000,000 over 30 days against the collapse thesis. Note the boundary it respects: the varied element is the VISUAL in both cases, which is consistent with the scope already recorded at MD-003, where the rebuttal is limited to swaps that change the visual.
+**What has NOT changed, and this is the ninth month of it.** He shows no entity ID, no similarity score and no unique-reach figure, exactly like everyone else on both sides. **The evidentiary hole is unchanged; only the roster of the anti-collapse side changed.**
+**A second Theriot practice cuts the other way and belongs in the same entry.** He also expands by swapping the person: "we'll test different ethnicities of people uh with our winning messaging and our winning creative to be able to appeal to more people, so we can spend more and scale", and reports finding a winner "by creating the exact same ad but a female version". That corroborates [[Meta Delivery & Andromeda#MD-001|MD-001]]'s avatar mechanism from a third operator. **NO NUMBER GIVEN for either the female version or the bag-avatar win.**
+Sources: Nick Theriot, How To Lower Facebook Ads CPA in 2026 4 Things I Fix First, 2026-08-26
+Last touched: 2026-08-27
+
+### CR-189 · A landing page beat a product page by roughly $20 CPA, and the operator states the winning number two incompatible ways
+Tier: T2 for the test, with an arithmetic conflict attached · Status: active
+Banked with the failure attached rather than smoothed, per the check added 2026-08-26.
+Nick Theriot ran the clean version of this test, one ad launched twice against the same audience with only the destination changed: "we launched this ad twice, one with a PDP and one with a landing page."
+**Statement one, mid-video:** "the landing page spent 10 times more compared to the PDP with a nearly $20, $22 cheaper cost per purchase compared to um, the PDP itself with an $85 cost per purchase." That puts the PDP at $85 and the landing page at roughly $63 to $65.
+**Statement two, in his own recap minutes later:** "spent 10 times more with a $20 cost per purchase." That puts the landing page at $20.
+**These cannot both be true. $20 CHEAPER than $85 is $65, not $20.** The recap understates the landing page's cost by roughly 3x. A third statement, "we lowered cost per acquisition by $20 by doing this", agrees with statement one, so the weight of his own testimony favours $65 and the recap is the error. **Quote the delta, never the level: a roughly $20 improvement on an $85 baseline is what this test supports.**
+Supporting components he reports moving the right way: cheaper cost per link click and better CPMs, with "CVR roughly stayed the same but the traffic was cheaper."
+**Scope guards.** One ad, one client, one product, no date range, no spend figure, no significance test, and the 10x spend difference means the two arms were never equally funded. His explanation for WHY it worked is a separate and unsupported claim, quarantined at [[Meta Delivery & Andromeda#MD-144|MD-144]]. **A future run must not merge the two: the result is T2 and the mechanism is T4.**
+Sources: Nick Theriot, How To Lower Facebook Ads CPA in 2026 4 Things I Fix First, 2026-08-26
+Last touched: 2026-08-27
+
+### CR-190 · The Ads Library now sorts by IMPRESSIONS and shows inactive ads, which repairs the broken "long-running equals winner" heuristic
+Tier: T1, read off the product · Status: active
+The cheapest competitor-research upgrade in the codex, and it comes with a correction to a rule this codex has repeated.
+Ben Heath, 2026-04-14, walking the Library. Two capabilities that did not previously exist: "That is the ability to sort by impressions high to low", and "you can look at inactive ads as well as active ads. That's not something you used to be able to do", reached via "Just make sure in filters, you've got active status as active and inactive."
+**The correction.** The old rule was runtime: "And if an ad has been active for more than 6 months a year, it probably is a best performer." He keeps it and breaks it in the same breath, because zombie ads sit active on zero spend, a problem he attributes to delivery changes: "a problem that was getting worse given how Meta Ads delivery system has updated". **The repaired signal is the intersection, not either alone:** "lots of impressions plus um been running for a long time is as close to a guarantee".
+**A load-bearing filter note that will cause misreads if missed.** The Library's location filter is where the ad is DELIVERED, not where the advertiser sits: "the location you set is not where you are, or even where the competitor is based." Every geo-scoped competitor pull we run depends on that.
+The detail panel also exposes the exact run window and the variation count under one ad entry, e.g. "We can see there's the three variations of this ad that was run", which is a free read on the ad-object-versus-creative-asset counting problem at [[Meta Delivery & Andromeda#MD-124|MD-124]].
+Sources: Ben Heath, How To Spy On Your Competitors Meta Ads for FREE, 2026-04-14
+Last touched: 2026-08-27
+
+### CR-191 · Creative production budget as a share of media spend: 10%+ above $100k/mo, 25% at $30k/mo, and the worked model's numbers are self-declared FAKE
+Tier: T3 for the allocation bands, T4 for the model · Status: active
+Blue Sense, 2025-10-14, on a real starved account: "We have an ad account right now that's spending 300K per month on Meta."
+**The bands, stated as anecdote and labelled as such by him:** "those that allocate about 10% or more of their budget to creative production end up seeing really good results", explicitly "based on anecdotal experience from the clients that we've worked with". The share must rise as spend falls: "When you're spending only 30k a month, you really want to be looking at something like 25% allocated to production costs." Below $5k a month there is no external budget at all and "the founder needs to be involved in content creation".
+**Read the bands against our own book before using them. Every client we run sits under $30k a month, so the 25% end applies, not the 10% end.**
+**The critical guard, and he supplies it himself on the record: every figure in the worked model is invented.** "I'm going to start making up numbers, so I'm not actually giving away the real numbers of this business." **So the $50 CPA, the $20K reallocation and the 6,000-conversion baseline are illustrative and must never be quoted as an account result.**
+**The arithmetic inside the fake model is nonetheless correct, which is worth stating because it is the rarer outcome in this corpus.** $300K at $50 CPA is 6,000 conversions; moving $20K to production leaves $280K, which must beat 6,000 conversions, requiring a CPA at or under $46.67. His sweep lands exactly there, rejecting $48 and $47 and accepting $46, and his stated threshold "we need to see a drop in CPA by at least $4" is the correct conservative rounding.
+**What is NOT in the file: any outcome.** The reallocation is a forecast, stated as a certainty it has not earned, "we will guaranteed to get at least a $4 drop in CPA by doing this over a 60-day time period". **NO OUTCOME NUMBER GIVEN.** Production rate at $20K/month is given as "about 60 new video assets per month", which computes to $333 per video.
+Sources: Blue Sense Digital, Heres How Much You Should Be Spending On Creative, 2025-10-14
+Last touched: 2026-08-27
+
+### CR-192 · Consolidating 36 ads into 6 is reported with no performance number at all
+Tier: T3 · Status: active
+A no-number guard, banked because the ad-count debate at law 4a keeps acquiring figures that were never measured.
+Jon Loomer, 2026-05-04, using the new multimedia workflow: "I took what was previously 36 ads and consolidated it into six." **NO PERFORMANCE NUMBER GIVEN.** No CPA, no ROAS, no delivery change, no before and after of any kind. The entire justification is structural: "These new six ads are truly diverse, and I eliminated the repetition that Meta discourages."
+**He then states the neutrality rule that his own episode argues against:** "Now, fewer ads isn't necessarily better, just as more ads isn't necessarily worse." The reconciliation he implies is that the variable is creative DIVERSITY and the count is a side effect. **Anyone citing 36-to-6 as evidence that consolidation improves results is citing a structural preference as a result.**
+Note the mechanical cause of the 6x collapse: the workflow at [[Meta Delivery & Andromeda#MD-124|MD-124]] holds up to 10 assets in one ad object, so 36 assets fit in 6 objects with no creative removed. **The asset count did not fall. Only the object count fell.** This is the counting trap at MD-124 happening in the wild, in a published note, by a careful operator.
+Sources: Jon Loomer, Dont Get Attached to Your Ad Process, 2026-05-04
+Last touched: 2026-08-27
+
+### CR-193 · Putting the exact clicked video at the top of the landing page: three accounts, and not one performance number
+Tier: T3 · Status: active
+Pairs directly with the LP-versus-PDP result at [[Creative Science#CR-189|CR-189]], and it is the mechanism-free version of the same idea: make the page continuous with the ad.
+**The spec, which is concrete enough to build from.** Above the fold sits "a full 4x5 view of the video that they just clicked on playing in real time in the background with no noise", with a sticky add-to-cart and price laid over it, and listicle-style education below. The stated failure it replaces is one page serving every angle: "they all land on the same landing page, which then has 5,000 benefits listed".
+**⚠ The evidence is a spend level, not a result, and this is the whole guard.** The only figure in the file is "We took them from spending pretty much nothing to $1,000 a day within about a 7-day period". **Spend is an INPUT.** There is no ROAS, no CPA, no conversion rate, no AOV and no click-through rate anywhere in the transcript. Breadth is asserted without measurement too: "We've now tested this on three separate accounts and seen really good success across all of them", with no test design, control or metric for any of the three.
+**So the honest statement is that a named operator scaled an account to $1,000/day within a week of shipping this page and attributes it to the page. That is a hypothesis worth testing, not a result.**
+He predicts his own tactic decays once page generation is automated: "I think that this opportunity will probably just be arbitrageed out of the market." He also names the reason nobody tests upper-funnel page strategies, which is a measurement problem rather than a creative one: you "just can't run strategies like that without being able to have clarity over the incremental impact".
+Sources: Blue Sense Digital, New Strategy To Scale Meta Ads Faster, 2025-05-02
+Last touched: 2026-08-27
+
+### CR-194 · Segmenting creative by PURCHASE TRIGGER rather than by brand message, and an audience that opened 25 years younger
+Tier: T3 · Status: active
+A Google-agency account team describing the same move law 1 describes from the Meta side, reached independently.
+**The core claim:** "It was really when we segmented out these campaigns in our ads by purchase trigger, by pain point that we saw significant growth." **NO NUMBER GIVEN**, here or anywhere in the file.
+**The concrete case is the useful part.** A fashion brand where "their core demographics for the past 50 years has been women 60 plus" opened women 35-60 by reframing the product as an investment purchase, in language borrowed from competitor messaging, without changing the product. The reported outcome is hedged by the speaker herself: "we definitely saw that demographic has you know grown exponentially in the past three months". **NO NUMBER GIVEN.**
+**They also state law 1's mechanism in weaker, more careful terms than most operators use, and the hedge is worth copying:** "Meta at times can even take your creative and your ad copy into account when showing your ad to users." **"At times" and "can even" is a more honest statement of what [[Meta Delivery & Andromeda#MD-120|MD-120]] actually documents than the flat "creative is the targeting" shorthand.**
+**Two operating rules with nothing behind them but both cheap.** A refresh must be a genuine change: "We never want to launch one version of creative and launch the same thing a month later with no changes". And demographic-matched creative decays if every segment lands on the same page, which is the post-click half of [[Creative Science#CR-189|CR-189]].
+**Guards, and they are the story of this file.** Every claim is unquantified. The portfolio-level summary is the emptiest sentence in this pass: "we saw really, really great success out of the gate. really significant year-over-year gains." **A prospecting frequency range of "three or four" is offered with no window and no source.**
+**⚠ It also conflicts with [[Scaling Models#SC-149|SC-149]].** Jon Loomer's qualifying test for any demographic restriction is that your data contains something Meta lacks, at lifetime-value grade. No LTV data appears here. Note the conflict is narrow: they are segmenting CREATIVE by demographic, which Loomer never objects to, and also recommending hard demographic targeting, which he does.
+Sources: Solutions 8, eCommerce Success with Demographic-Focused Creatives, 2025-09-15
+Last touched: 2026-08-27

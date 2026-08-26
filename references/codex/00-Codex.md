@@ -18,7 +18,7 @@ The permanent, growing record of how modern advertising actually works. Every en
 | **T3** | Practitioner claim from real spend, no shown test | Experience, treat as strong hypothesis |
 | **T4** | Theory or reasoning, untested | Idea only |
 
-Our own client accounts are the T2 upgrade path: when we test a T3 claim on SJR, Phoenix, ChiroWorks, StayWell, or Mattia and it holds, it becomes T2 with our numbers.
+Our own client accounts are the T2 upgrade path: when we test a T3 claim on SJR, Phoenix, ChiroWorks, StayWell/Chiropraise, or MetaTechAI and it holds, it becomes T2 with our numbers.
 
 ## Claim statuses
 

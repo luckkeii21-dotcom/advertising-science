@@ -327,3 +327,13 @@ The operator's interpretation of his own T2 result at GP-040, plus the decision 
 Sources: Blue Sense Digital, We Tested Google Demand Gen - Here's What Happened, 2025-07-24; Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06; Blue Sense Digital, Best Google Ad Account Structure for eCommerce in 2025, 2025-09-02
 Last touched: 2026-08-19
 
+
+### GP-042 · PMax's "new customer acquisition" setting is overridden by the conversion action, so it skews warm anyway
+Tier: T3 · Status: active
+A direct operating claim against a setting whose name promises the opposite. Google specialist on Blue Sense's channel, 2025-09-10: "the algorithm is going to prioritize the conversion action over the audience every single time."
+**The consequence, with a frequency estimate attached.** Where other channels are also driving repeat purchases, PMax follows the conversion signal into the warm pool: "greater than 50% of the time performance max goes after repeat".
+**The structural fix is the same one that appears at [[Attribution & Incrementality#AT-104|AT-104]]:** separate cold from branded and repeat at CAMPAIGN level rather than trusting an in-campaign audience toggle, "rather than having a Pmax that encapsulates branded key terms".
+**Why this belongs next to [[Meta Delivery & Andromeda#MD-019|MD-019]] and law 1a.** It is the Google-side instance of the same pattern the Meta half of this codex has spent five passes on: an audience-labelled control that turns out to be a suggestion, or in this case a signal that loses to the optimisation event. **On both platforms, the conversion event beats the audience setting.** That is close to a cross-platform rule and it is worth testing as one.
+**Guards.** T3, no account shown, no data. "Greater than 50% of the time" has no denominator and no measurement behind it. He does not say whether the setting was verified as enabled in the accounts he is describing.
+Sources: Blue Sense Digital, Cold vs Warm Tactics on Meta Google Ads with Caden, 2025-09-10
+Last touched: 2026-08-27

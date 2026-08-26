@@ -446,3 +446,14 @@ Same post, third item, and it carries a guard rather than an opportunity. Perfor
 Sources: Google Ads & Commerce Blog, Make AI Max work for your business with new testing and planning tools, 2026-08-20
 Last touched: 2026-08-21
 
+
+### GA-064 · Raising target ROAS narrows the bid onto warm traffic and collapses prospecting into a self-feeding spiral
+Tier: T3 · Status: active
+The mechanism claim that explains a failure pattern most operators diagnose backwards. A Google specialist on Blue Sense's channel, 2025-09-10: "it causes prospecting to fall off and then it sort of eats itself into essentially what we call the death spiral".
+**The lever runs the opposite way to intuition. To buy cold, drop the target hard:** "Instead of going to 300% maybe we'll be going down to 100% or 40%."
+**The diagnostic is the useful part, because it catches the failure from inside the reports.** A high target makes a campaign look like it is buying cold in the search-term data while it is actually buying warm clicks, and the tell is a conversion rate that cold traffic cannot produce: "why is this campaign converting at 14% on cold traffic? It's like, well, it obviously isn't."
+**The general heuristic he attaches, which is the same shape as the attribution work at [[Attribution & Incrementality#AT-104|AT-104]]:** "if it looks worse in platform, it might actually be better. And if it looks way better in platform, oh my god, something's probably broken."
+**A related format claim:** product listing ads bias the system bottom-funnel and self-reinforce, and on audits their incremental ROAS on cold sits "70% 80% lower" than attributed, with "I've honestly like never seen them above a 1.5 rorowaz" on cold.
+**Guards.** No account, no shown data, no test. The 70-80% incrementality gap is stated from audit memory with no study, no denominator and no methodology. Treat the mechanism as a strong hypothesis and the percentages as unbanked.
+Sources: Blue Sense Digital, Cold vs Warm Tactics on Meta Google Ads with Caden, 2025-09-10
+Last touched: 2026-08-27
