@@ -337,3 +337,11 @@ A direct operating claim against a setting whose name promises the opposite. Goo
 **Guards.** T3, no account shown, no data. "Greater than 50% of the time" has no denominator and no measurement behind it. He does not say whether the setting was verified as enabled in the accounts he is describing.
 Sources: Blue Sense Digital, Cold vs Warm Tactics on Meta Google Ads with Caden, 2025-09-10
 Last touched: 2026-08-27
+### GP-043 · Merchant Center performance reporting definitions changed on 24 August 2026, so any Shopping report spanning that date contains a definitional break
+Tier: T1, off the Merchant Center changelog · Status: active
+Announced 11 August 2026, effective **24 August 2026**, which is seven days before this entry was written.
+Google is modifying Merchant Center performance reports to align reporting definitions across Google surfaces including Ads and YouTube. The named specific is that **YouTube affiliate results are separated out from other metrics**.
+**Why it is banked despite being small.** This is the same shape as the Meta 7-day-click redefinition already recorded in this codex: a metric changes meaning on a date, the number moves, and the movement gets read as performance. **A Shopping or Merchant Center number that steps on or around 24 August 2026 is a candidate definitional artefact and must be checked against the change before it is explained as a result.**
+**Read quality.** The changelog entry was read; the linked detail page returned HTTP 404 to a direct fetch, so the exact metric-by-metric mapping has not been read and is not stated here. Do not describe the change more precisely than this entry does until that page is read.
+Sources: Google Merchant Center announcements changelog, entry dated 2026-08-11, read 2026-08-31
+Last touched: 2026-08-31
