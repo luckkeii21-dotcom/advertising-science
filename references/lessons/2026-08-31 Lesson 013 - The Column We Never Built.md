@@ -11,6 +11,8 @@ tags: [advertising-science, lesson, marketing-math, scaling]
 
 # Lesson 013 · The Column We Never Built
 
+🎬 **Lesson video (2m 44s, silent, watch anywhere):** [[video/2026-08-31-lesson-013.mp4]]
+
 > Lesson 003 said an ad's own row is not the verdict. Lesson 007 said hook rate ranks the wrong ad. Lesson 011 said a starved row never bought a chance. This one is about the row you trust most, cost per opt-in, and the column that has to sit next to it before that number means anything.
 
 **If you only answer two questions, answer Q2 and Q5.** Q2 is live on StayWell this week. Q5 is the guard that stops this lesson turning into a reason to stop cutting ads.

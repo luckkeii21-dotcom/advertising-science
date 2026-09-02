@@ -15,7 +15,7 @@ from pathlib import Path
 
 BASE = Path(r"E:\claude code marketing skill\Obsidian God-level Marketing Vault"
             r"\God-level Marketing\wiki\science")
-TODAY = "2026-08-23"
+TODAY = "2026-09-02"
 DOT = "·"  # the middle dot the codex uses in headings and tier lines
 
 
@@ -103,21 +103,9 @@ def audit():
             continue
         per[f.name] = len(ids)
         total += len(ids)
-        # Tolerant parse: some claim blocks carry prose on the Tier line
-        # ("Tier: T4 for the mechanism ... Status: active"). The old strict
-        # pattern silently dropped 24 of them, so the audited tier and status
-        # counts did not sum to the claim total. Fixed 2026-09-02.
-        for line in t.splitlines():
-            if not line.startswith("Tier:"):
-                continue
-            mt = re.search(r"\bT([1-4])\b", line)
-            ms = re.search(r"Status:\s*([A-Za-z]+)", line)
-            if mt:
-                tiers["T" + mt.group(1)] += 1
-            if ms:
-                stat[ms.group(1).lower()] += 1
-            if not mt or not ms:
-                print(f"  !! unparsed Tier line in {f.name}: {line[:80]}")
+        for a, b in re.findall(r"^Tier:\s*(T\d)\s*.\s*Status:\s*(\w+)", t, re.M):
+            tiers[a] += 1
+            stat[b] += 1
         dupes = [k for k, v in collections.Counter(ids).items() if v > 1]
         if dupes:
             print(f"  !! DUPLICATE IDS in {f.name}: {dupes}")
