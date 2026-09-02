@@ -7,7 +7,9 @@ keyword count) plus two arXiv cs.IR papers that passed the advertising filter.
 """
 import sys
 sys.stdout.reconfigure(encoding="utf-8")
-from merge_helper_today import amend, mint, audit
+import merge_helper
+merge_helper.TODAY = "2026-09-02"   # stamp for this pass
+from merge_helper import amend, mint, audit
 
 CR = "Creative Science.md"
 SC = "Scaling Models.md"
