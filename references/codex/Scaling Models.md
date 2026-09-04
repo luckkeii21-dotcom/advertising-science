@@ -1371,3 +1371,40 @@ A full-year account walkthrough read off Ads Manager, and it matters most becaus
 **Guards.** One account, one vertical, one operator, read off screen with no export. The 180 ad sets accumulated over a year include an unstated number of paused ones, so the live count is unknown. Nothing isolates the floor from the other choices in the account.
 Sources: Nick Theriot, Inside a $1,000,000 Facebook Ads Campaign, 2026-08-31
 Last touched: 2026-09-02
+
+### SC-155 · A promotional peak is the worst testing window of the year, because everything wins and none of the conclusions survive into January
+Tier: T3 · Status: active
+The reasoning is seductive and wrong, and he names himself as having made the mistake: spend goes up fourfold in the peak, so it looks like the moment to put four times as much creative through. Two independent reasons not to.
+
+**Reason one: the reads are worthless.** Everything posts a high attributed return in a peak. Buyers are cross-pollinating across every ad they see so attribution is scattered, and a heavy discount converts anyone already in the funnel regardless of what the ad looks like. "If you're doing a 60% off offer, it doesn't matter what you put in front of people... Whether it's a piece of UGC with an overlay or whether it's just a blank static image with an overlay, it doesn't matter." A conclusion drawn inside that window does not hold in a normal January or February.
+
+**Reason two: the tests cost you the peak.** Testing fails at its normal rate, and that failure rate is now applied to the highest-spend weeks of the year. "Not only do you make the time period worse in terms of efficiency because you do a bunch of testing with the budget, but number two, all that testing is for nothing because you can't even use the insights moving forward."
+
+**Where this sits in the codex.** [[Attribution & Incrementality#AT-081|AT-081]] already says never RUN an incrementality test in a high-seasonality month because seasonal noise swamps the effect, and [[Attribution & Incrementality#AT-084|AT-084]] says never READ a case study whose lift sits inside a promotional window. This is the same rule applied to ordinary creative testing, which is the case operators actually face every year. All three point one direction: **a peak is for harvesting, and the creative that harvests it should have been validated before it started.**
+
+Asserted from agency practice plus his own stated error. No comparison run.
+Sources: Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27
+Last touched: 2026-09-03
+
+### SC-156 · The post-peak slump is a funnel-emptying artefact you created, and the only real fix is paying for top-of-funnel through the peak at a loss
+Tier: T3 · Status: active
+"Your Black Friday slump isn't the market, it's a planning problem."
+
+**The mechanism.** A sale pulls forward everyone in the funnel who was going to buy at some point in the future. They all buy at once, the funnel empties, and Q1 declines because there is nobody left in it. The corollary is the one operators feel and rarely name: **the deeper the discount, the bigger the hangover**, because a deeper discount pulls more of the future forward.
+
+**Three counters, in his order of preference.**
+1. **Extend the sale** through rolling messaging: Christmas gifting, a January self-gift, Valentine's, back to school. Works, and it just moves the fatigue later.
+2. **Discount less deeply.** A smaller peak, a smaller collapse, and the deferred sales are recouped later at full price, which he notes is arguably the better position.
+3. **Keep buying top of funnel through November and December.** This is the one he calls best, and it is the one that costs you in-period profit.
+
+**What counter three looks like in the account.** Spend naturally migrates to middle and bottom of funnel during a peak because that is where the immediate return is, and he agrees that is the correct read in the moment. The deliberate exception is a fixed allocation: **80% of spend on two creative types, 20% on top-of-funnel education.** The 80% is (a) a bare offer image with nothing else on it and (b) the account's existing best creatives with an offer overlay. The 20% will not return in period and will suppress contribution profit, and it is what keeps a funnel to convert in January and February. "This isn't going to realize into a good return immediately... but what it is going to do is prevent a lot of fatigue post sale."
+
+**The structural reason the offer creative wins in a peak**, and it is worth stating because it explains why peak creative looks cheap: those ads are not appealing to a cold viewer. Almost nobody buys from a brand they first met on the Black Friday weekend. The offer static works because the viewer already knows the brand from September and October.
+
+**The account-structure requirement, which is the operational core.** Do not put the top-of-funnel 20% in the same campaign as the offer ads. Meta can usually tell a top-funnel asset from a bottom-funnel one and route it, but **in a peak everything converts**, so the educational assets will be served to warm users, post a good attributed return, and never reach the new audience they were bought for. Separate campaign, with exclusions. His calibration: **30-day website visitors and existing customers, yes; 180-day website visitors is too aggressive** and starves the campaign of the signal it needs to optimise.
+
+**The rule underneath all of it, stated twice.** To make November good you have to spend in September and October when the attributed return reads low. To stop Q1 collapsing you have to spend on top of funnel in November and December when the attributed return reads low. Both are the same act: prefilling a funnel that converts later. Consistent with the demand-harvest logic at [[Auction Mechanics & Bidding#AU-026|AU-026]] and with the exclusion-leak caution at [[Auction Mechanics & Bidding#AU-063|AU-063]].
+
+Prescriptive, drawn from agency practice. No before-and-after account shown for any of the three counters.
+Sources: Blue Sense Digital, Beat the Post-BFCM Slump: The 3 Moves That Prevent It, 2025-10-03
+Last touched: 2026-09-03

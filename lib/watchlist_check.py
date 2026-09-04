@@ -39,7 +39,11 @@ GOOGLE_ANN_CACHE = CACHE / "google-ads-announcements-today.html"
 # arXiv filter, per Watchlist.md (tightened 2026-08-19). A bank-list hit is
 # required; recommend/ranking/retrieval alone never qualify.
 BANK_RE = re.compile("|".join([
-    r"advertis", r"\bads?\b", r"ad auction", r"sponsored", r"click-through rate",
+    # "click-through rate" left the bank list on 2026-09-03. It was the only
+    # hit on arXiv 2609.01652, a job-matching recommender with zero advertising
+    # content, and Watchlist.md already states CTR alone must not qualify.
+    # "CTR prediction" stays, because the doc lists it.
+    r"advertis", r"\bads?\b", r"ad auction", r"sponsored",
     r"CTR prediction", r"bid landscape", r"bidding", r"conversion lift",
     r"incrementality", r"budget pacing", r"creative selection", r"\bGSP\b",
     r"second-price",

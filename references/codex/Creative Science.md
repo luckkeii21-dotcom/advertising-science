@@ -450,8 +450,9 @@ Last touched: 2026-08-20
 Tier: T3 · Status: active
 After each 7-day run, the media buyer marks each batch successful/unsuccessful and the creative strategist logs what went right, wrong, and improvable for every creative. He calls it the most important part of the whole process: the team's model of what works improves batch over batch, which is why client results improve with tenure rather than in the first month.
 The artefact and the pre-launch half, restated 2026-06-26: every ad is logged in a Google Sheet with a WRITTEN HYPOTHESIS before it launches, and the review runs exactly 7 days after launch. "we create the idea, we create the hypothesis of why we want to test this and why we believe it's going to improve performance and stuff. And then we do creative learnings 7 days after it was ran." The hypothesis is the gate, not the log: an ad with no stated reason to beat the current top spender does not get built ([[Creative Science#CR-026|CR-026]]). The review output feeds the next round of ideas and drives concept cuts, though he attaches no cut threshold to it.
-Sources: Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20; Nick Theriot, How Many Ads Should You Be Testing a Week?, 2026-06-26
-Last touched: 2026-08-20
+**The specification half arrived 2026-09-03 and it belongs with this claim.** CR-041 gives the cadence, a written hypothesis before launch and a review seven days after. What it never specified is what the written thing has to contain. Professor Charley T's pre-launch specification supplies four parts: a hypothesis with a BECAUSE in it that names a business result, an explicit statement of what the test does NOT cover, a list written in advance of what a loss would put in doubt, and a statement of what a win breaks next. The third part is the one that changes behaviour, because without it a losing ad drags the product decision and the research back into the argument every time. Full contents and the worked example at [[Creative Science#CR-222|CR-222]].
+Sources: Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20; Nick Theriot, How Many Ads Should You Be Testing a Week?, 2026-06-26; Professor Charley T, Claude Has Officially Changed Facebook Ads Forever! (Tutorial), 2026-09-02
+Last touched: 2026-09-03
 
 ### CR-042 · Do flexible ads outperform separate ads?
 Tier: T3 · Status: contested
@@ -1612,8 +1613,9 @@ Feeds law 4a. Until 2026-08-25 the codex had exactly one launch rate keyed to sp
 **A fixed ads-per-spend ratio is therefore not supported by the only paired real-account evidence anybody has offered for one.** Use these as order-of-magnitude anchors, never as targets, and never quote either without the 6.7x counterexample attached.
 **A stated exception to the ratio, which is a second regime rather than a contradiction:** once a winner bank exists, the requirement decays at flat spend. "if you're doing 50 net new ads per month, after about six to 12 months of doing this, you'll have so many winners pre-existing within the account that you actually don't need to continue to introduce 50 new ads a month. You could drop this down to 10, maybe 20." That is one ad per $2,500 to $5,000 at the same $50,000, so an account holding spend steady with an established bank needs 2.5x to 5x less new creative than one trying to scale.
 **Scaling behaviour, and the absence is the finding: he says the ratio is non-linear and gives no exponent.** "you can actually scale spend more exponentially than ad volume requirements increase um if you're global. If you're in Australia, it actually becomes very tough. It's actually the opposite way. You actually need exponentially more ads because the TAM is so small." **"Exponentially" appears twice with zero figures attached. Do not supply one.** The TAM mechanism behind it is at [[Scaling Models#SC-144|SC-144]].
-Sources: Blue Sense Digital, How to Audit Your Ad Account for Scale Step-by-Step Guide, 2025-12-10
-Last touched: 2026-08-26
+**A third spend-independent number joined the disagreement on 2026-09-03, and it is stated as a floor rather than a ratio.** Mark Builds Brands: "an absolute minimum of 25 net new concepts a week. That's completely new creative material. This is no variations, no iterations, new creative concepts." His diversity axis is FORMAT as much as idea, and he lists the formats he counts: distinct image concepts, short-form UGC, long-form UGC, full VSL and mini VSL. He attaches the number to no spend level at all, which is what makes it incompatible with both rules already in this claim: Blue Sense's one net-new ad per $1,000 of monthly spend would put 25 a week at roughly $100,000 a month, while Nick Theriot's concept ladder puts 20 concepts a week at a $40,000-a-month client. So the three cannot be reconciled by arithmetic, because one is a ratio to spend, one is a ratio to retainer, and this one is a fixed personal floor. Nothing is measured behind any of the three. Also note his own qualifier, "if you're just kind of starting out it'll be less", which he does not quantify.
+Sources: Blue Sense Digital, How to Audit Your Ad Account for Scale Step-by-Step Guide, 2025-12-10; Mark Builds Brands, 10 brutal lessons after making $9,867,257 in 2025 w/ branded dropshipping, 2026-01-02
+Last touched: 2026-09-03
 
 ### CR-186 · Creative hit rate is claimed to cap at 13 to 14% of all ads ever introduced, with a stated statistical definition and a self-contradiction in the next sentence
 Tier: T3 · Status: contested
@@ -2009,3 +2011,147 @@ Craft rules from the same masterclass, banked together because each one is a nam
 **Shoot economics stated alongside, and read the ratio carefully.** He puts 10 hooks against 3 bodies at 30 ads, and 60 with two CTA variants, from "about 4 minutes to 5 minutes of the camera recording". That is camera time only. His own framing is that "99% of the performance, 99% of the work, actually comes from the scripting, the copywriting, the ideation", so the cheap number is the shoot and the expensive one is everything before it. He reports clients producing 200 to 400 ads a month with content teams of one or two people, and a one to two hour founder shoot yielding three to four months of assets. Every figure here is asserted, none is shown, and the 99% is rhetorical.
 Sources: Blue Sense Digital, How To Create Founder Ads That Scale (Masterclass), 2026-09-01
 Last touched: 2026-09-02
+
+### CR-220 · An ad can do exactly three jobs (earn attention, clarify value, convert trust), the job is chosen before the format, and there is no mid-funnel
+Tier: T4 · Status: active
+A decision order rather than a finding, banked because it removes the most common ambiguity in a creative brief.
+
+**The three jobs.** Earn attention. Clarify value. Convert trust. "Finding the right customer doesn't fix the account if you ask the ad to do the wrong job."
+
+**The refusal that gives it teeth.** He will not accept a mid-funnel diagnosis: "Mid-funnel is a myth. Either you're trying to scale, or you're trying to get more efficient." Upper funnel is the scale lever, lower funnel is the efficiency lever, and the operator picks by naming which of those two problems the account has right now. He notes the question is deliberately about your ad account rather than about theory, which is why he says you cannot answer it wrong.
+
+**The ordering rule.** The job is decided first, and the format follows from the job. In the worked example the evidence pointed to an attention problem, the job was set to earn attention, and only then did the tool choose video over static and a testimonial treatment over the alternatives, stating what a static could have done that this ad could not.
+
+**The non-duplication rule that follows.** Material collected during research and not used by this ad is marked and held rather than spent. In the example, a price rebuttal, brew versatility and bag mechanics were all on the evidence map, all deliberately left out of an attention ad, and reserved for the next ring, whose job is clarifying value. "Nothing gets gathered twice. This is how you complete a conversation in a funnel."
+
+Fits directly on top of the Olympic Rings structure at [[Scaling Models#SC-021|SC-021]], which assigns five concepts distinct jobs; this is the rule for deciding which job a given ad gets. Framework only. No comparison between the three jobs, no data.
+Sources: Professor Charley T, Claude Has Officially Changed Facebook Ads Forever! (Tutorial), 2026-09-02
+Last touched: 2026-09-03
+
+### CR-221 · Performance data is deliberately excluded from creative research inputs, and a contradiction BETWEEN evidence sources is the finding rather than a defect
+Tier: T3 · Status: active
+Two method rules from a research process run on screen against one brand's real files.
+
+**Rule one: no performance data goes in.** The research intake accepts reviews, surveys, support tickets and ad comments, the brand's own ads and landing page, competitor material and customer interviews. It refuses ad performance figures outright. His reason: "attribution based vanity metrics don't tell you anything about why something happened. Rank your ads by results and all you get back is make more of last month's winner. That's the loop we're trying to get out of." The sharper half of the argument is about quality of customer rather than quality of ad: "A high-performing ad built on an unsupported claim might have a great ROAS, but it's buying the customers who never buy again."
+
+**Weighting.** Reviews carry the most weight, and he notes what reviews structurally cannot give you: 340 reviews told him why people stay and almost nothing about what nearly stopped them buying, so objections had to come from the survey and the support layer instead. Three of the six sources use the customer's words; the brand's own ads and landing page are added last, specifically to measure the gap between what the brand claims and what customers say.
+
+**Rule two, and it is the one operators get wrong: sources are allowed to disagree, and the disagreement is data.** In the shown case, a survey of churned buyers had **49 of 62 mentioning price or suitability**, and he separates those immediately: "Those are not the same objection, and they don't get solved by the same ad." Then **18 support tickets mentioned neither taste nor price**, which fails to corroborate the "too fancy for me" hesitation the survey produced. He records the non-corroboration rather than discarding either source. Operating rule: **an objection that appears in exactly one source is a hypothesis, not a finding**, and the ad built on it should be labelled as testing that hypothesis.
+
+**The gap the method is built to find.** In this account the brand's core vocabulary appeared **zero times across more than 400 pieces of customer evidence**, and **5 of the 9 live ads claimed something customers never say**. That is the output the process exists to produce.
+
+One account, shown on screen, no test. Corroborated the same week and independently by [[Creative Science#CR-227|CR-227]].
+Sources: Professor Charley T, Claude Has Officially Changed Facebook Ads Forever! (Tutorial), 2026-09-02
+Last touched: 2026-09-03
+
+### CR-222 · Write the test specification BEFORE launch: a hypothesis containing a because, what the test does not cover, what a loss puts in doubt, and what a win breaks next
+Tier: T3 · Status: active
+The strongest testing-discipline artefact on file, because it is the only version that specifies what to write down about the OUTCOME before the outcome exists.
+
+**Four required parts, quoted from the shown specification.**
+1. **A hypothesis with a because in it.** "If cold buyers are excluding themselves because they think they're not serious enough about coffee, and 23 of 62 told us they nearly did, then a video that disqualifies expertise brings in first purchases at or below what I'm running now because it removes the barrier before price is considered." The because is the mechanism, and it names a business result rather than a platform metric. "A test without a hypothesis is just spending... most people that run 322s don't learn anything."
+2. **What this does not test.** Written down explicitly, so a loss cannot later be blamed on something the test never touched.
+3. **What a loss puts in doubt, listed in advance.** In the shown case the list has exactly one item: the concept. Not the hero product, because that came from receipts and a creative test cannot overturn it. Not the evidence, because "people did say those things and a losing ad can't unsay them". What is in doubt is one assumption, that a connoisseurship barrier is capping cold reach. It also states, in priority order, which parts of the ad to revisit first.
+4. **What a win breaks.** "If this works, the landing page becomes the bottleneck", because the page still opens on a specialty enthusiast while the ad disqualifies expertise. A win that creates a continuity break is a planned next job, not a surprise.
+
+**Why part three is the load-bearing one.** Without it, every losing test drags the whole chain of prior decisions back into the argument, and the account relitigates its product and its research every time an ad fails. Writing the blast radius down in advance is what stops that.
+
+This is the pre-registration half of [[Creative Science#CR-041|CR-041]], which already requires a written hypothesis before launch and a review seven days after. CR-041 supplies the cadence, this supplies the contents. Shown once, on one account, with no comparison against teams that do not do it.
+Sources: Professor Charley T, Claude Has Officially Changed Facebook Ads Forever! (Tutorial), 2026-09-02
+Last touched: 2026-09-03
+
+### CR-223 · Image ads exist to find the winning SALES MESSAGE, and the hook carries 90% of a video ad's outcome with copy inside the hook carrying 70 to 80%
+Tier: T4 · Status: active
+Two stated weightings from an operator running branded direct-to-consumer at eight figures. Both are asserted with no data behind them, and both are useful because they are specific enough to argue with.
+
+**The asset is the message, not the ad.** "Everybody kind of talks about winning ad this, winning ad that, but the best thing that you're really looking for is your winning sales message, because as soon as you have that message, that can be transmuted into videos, into different formats of images, into UGC, into a VSL, into short form, into founder UGC." Image ads are the cheapest and fastest instrument for finding it, so the sequence is find the message on statics, then invest production money in video. That is a different justification for statics than cost alone, and it is the reason a static test is not wasted when the winner ends up being a video.
+
+**The hook weighting.** "90% of your success in video ads is going to come down to having a really really good hook", defined as the first three to five seconds. Inside the hook he splits it again: **copy at 70 to 80%**, then the scroll-stopping clip, then the audio, which he calls the least of your worries. His definition of a scroll stopper is behavioural rather than aesthetic: "something you look at and you literally have to be like, what did I just look at."
+
+**Then the counterweight he supplies himself, five months earlier.** He warns against maximising hook metrics for their own sake: operators running high-curiosity native creative report a high click-through rate and no conversions, "cuz you forgot to sell them". So the hook weighting governs whether the ad gets watched, and it says nothing about whether it sells. Read the 90% strictly as attention, never as outcome.
+
+Both weightings are stated as experience with nothing shown. They are compatible with the hook-variation economics at [[Creative Science#CR-124|CR-124]] and add no evidence to it.
+Sources: Mark Builds Brands, how i create AI ads w/ higgsfield that print, 2026-04-11; Mark Builds Brands, i asked claude to find me a $1k/day product, 2026-06-11
+Last touched: 2026-09-03
+
+### CR-224 · The current AI ad pipeline is text-to-image for the start frame then image-to-video per line, and both failure modes are prompt depth rather than model limits
+Tier: T3 · Status: active
+The production method, stated by an operator who builds ads this way daily, and two claims about where it breaks that we can test cheaply on our own accounts.
+
+**The five steps.** Find a swipe as a starting point. Rewrite the script against the brand's own research documents. Storyboard, which is one script line mapped to one or two clips. Build the prompts. Assemble, caption and cut. The prompting step is two-part and that is the part people skip: **a text-to-image prompt generates the START FRAME, then a separate image-to-video prompt animates it.** "Just getting the image as a starting frame is only half of it. You have to make sure you have a really good prompt with it as well."
+
+**The named stack, dated April 2026.** Nano Banana Pro for the start frame, Kling for image to video, both inside Higgsfield, with clip length taken from the script line, 6 to 8 seconds in his worked example. For a swiped static he uploads the competitor's image plus a transparent PNG of his own product on white, and the model returns the layout with his brand's details.
+
+**Failure-mode claim, and it is the checkable one.** Misspelled or malformed text in a generated image or video is a prompt-depth failure, not a model limit: "if you ever struggle with having text being off on an image or a video, it's because you didn't go into enough depth on the prompt. These LLMs can't extract everything from an image. They can get pretty close, but if you add in the details where it's missing, it can create flawless images and videos." Asserted, no comparison run, and directly testable by re-prompting a failed generation with the missing details supplied.
+
+**Independent corroboration on model choice from a different operator seven months earlier.** Blue Sense Digital, refreshing existing statics for a promotion, reaches the same model for the same reason: Nano Banana "is particularly good at keeping things like people's faces and likeliness looking consistent", where the alternative "may make the image look a little bit softer, could literally change the people that are in the ads". **And a named weakness: it will not reframe.** After repeated prompting it refused to convert a 9:16 asset to 1:1, and the workaround was a different tool that did the resize while visibly altering the image. Operating rule that follows: **download every source asset in the ratios you need rather than generating one and converting it.**
+
+Two operators, no measurement from either. Read as a working recipe, not a benchmark.
+Sources: Mark Builds Brands, how i create AI ads w/ higgsfield that print, 2026-04-11; Blue Sense Digital, No Assets for BFCM? Here's the Workflow That Saves You, 2025-11-19
+Last touched: 2026-09-03
+
+### CR-225 · The post-Andromeda test order is inverted: validate the CONCEPT first, then spam variations of what survived, and variations are demonstrably not dead
+Tier: T3 · Status: active
+A direct correction of a widely repeated reading of the Andromeda change, from an operator with variations of his own winners among the top spenders in a live account.
+
+**The claim.** "I have variations that are running in my account that are spending a large sum of money daily that are 100% variations of my winning ads. It's nothing new. It's what was already working... One of them is the top spender in my account right now."
+
+**What actually changed is the ORDER, not the tool.** The old procedure, which he dates to 2017 and 2018, launched one net-new concept accompanied by three to five variations of it. The problem he names is that this spends variation budget on a concept nobody has validated yet. The new procedure is the reverse: **launch broad new concepts first, and only once a concept is validated do you build variations of it.** "Instead of going and testing like an ad on day one, you test five variations. You don't even know if this ad concept is validated yet. First, you want to validate the concept and then you go and test all these variations."
+
+**Why this matters to us.** It reconciles two camps that read as contradictory. The volume camp is right that net-new concepts are the scaling input, and the iteration camp is right that variations carry spend, and the two are simply different stages of the same ladder. It also lines up with the one-concept-per-322 rule at [[Creative Science#CR-042|CR-042]], where all three creatives share a concept precisely so the variable under test is execution rather than idea. A concept that has not been validated has no business inside a variation unit.
+
+**Guards.** One account, no screen, no numbers, no CPA and no dates on the ads he describes. It is an assertion against another assertion, and the useful part is the mechanism rather than the verdict.
+Sources: Mark Builds Brands, 10 brutal lessons after making $9,867,257 in 2025 w/ branded dropshipping, 2026-01-02
+Last touched: 2026-09-03
+
+### CR-226 · The creative diagnostic ladder is cost per click first as the warning light, then click-through rate, then cost per thousand, and the three are causally linked
+Tier: T3 · Status: active
+The ad half of the failed-test diagnostic. US direct-to-consumer e-commerce benchmarks, practitioner numbers with nothing shown.
+
+**The ladder.**
+1. **Link cost per click** is the check-engine light. His target is **about $1.50** in the US. "It doesn't tell you what's wrong, but it tells you something is wrong." At two, three or four dollars, go to step two.
+2. **Click-through rate.** Floor **3%, preferably closer to 4%**. Below 3% with an elevated cost per click, "you have a serious creative issue" and the diagnosis stops there.
+3. **Cost per thousand impressions**, only if click-through rate is healthy and cost per click is still high. He refuses to give a hard target and says it is heavily niche and geography dependent, then offers **over about $80 in the US** as where he would draw a line.
+
+**The loop that connects them, and it is why the ladder terminates at creative most of the time.** "Facebook likes to reward people that have really good creatives, really engaging creatives without pissing off all their users with low CPMs. So it's kind of a self-consuming issue. Your creatives aren't good enough, your CPMs will be higher and your CTR will be lower. So it's a perfect shitstorm for a really high CPC." His summary: **90% of what he sees is an ad problem**, and specifically operators who believe their ads are good.
+
+**The mandatory counterweight.** He immediately warns against optimising these three for their own sake: high-curiosity native creative posts an excellent click-through rate and does not convert, "cuz you forgot to sell them". The ladder diagnoses a delivery problem. It never certifies an ad.
+
+**Transfer warning.** These are e-commerce numbers on a link-click funnel. A lead-generation account on Instant Forms has no link cost per click of this kind and no comparable click-through band, so **do not carry $1.50 or 3% into a local-service account**. The funnel half of the same diagnostic is at [[Marketing Math & Unit Economics#MM-201|MM-201]].
+Sources: Mark Builds Brands, i asked claude to find me a $1k/day product, 2026-06-11
+Last touched: 2026-09-03
+
+### CR-227 · Two operators independently reach the same research instruction in the same week: call your own customers and ask what ALMOST STOPPED them buying
+Tier: T3 · Status: active
+Banked because the corroboration is what raises it above opinion. Two operators, different businesses, no shared source, arriving at the same question.
+
+**The instruction.** Stop reading competitor ad libraries and speak to the people who already bought. "How many of you that have generated at least one customer in e-commerce have actually called one of your customers? How many of you have spoken to them on the phone? It's almost nobody. Yet here you go looking on the Facebook ad library... when you have the best source of data right in front of you." And the question that matters is not why they bought: **"a better question to ask is what was something that almost kept you from buying?"**
+
+**The independent second instance.** Charley T's research process, on a real brand, surveys churned buyers with exactly that question and gets 49 of 62 naming price or suitability, then builds the winning concept on the 23 of 62 who "nearly did" not buy because they thought they were not serious enough about the category. See [[Creative Science#CR-221|CR-221]]. Two operators, one week apart, same question, same use.
+
+**The named wrong source.** Comment sections. "It's like Facebook comments where all the lowest of the low people hang out", and the objection is structural rather than snobbery: comment threads select for people who did not buy and who are performing for an audience, so the signal is rage rather than hesitation.
+
+**Two logical fallacies he names as the failure mode of swipe-led strategy**, and they are worth carrying because they are the honest limit of every competitor-research workflow in this codex. **Hasty generalisation**, it works for them so it must work for me, when the product, market, angle, page, funnel and ads all differ. **Survivorship bias**, reasoning from the visible winners while the identical strategies that failed are invisible.
+
+Both instances are practitioner assertion. Neither shows a test comparing interview-led creative against library-led creative, which is the missing measurement.
+Sources: Mark Builds Brands, 10 brutal lessons after making $9,867,257 in 2025 w/ branded dropshipping, 2026-01-02; Professor Charley T, Claude Has Officially Changed Facebook Ads Forever! (Tutorial), 2026-09-02
+Last touched: 2026-09-03
+
+### CR-228 · The zero-asset peak workflow: three templates that need no brand files, plus a re-skin of the account's own top performers, inside an hour
+Tier: T3 · Status: active
+A production fallback for a peak you are not ready for, from an agency running it on live client accounts. Its honest framing first: "AI isn't magic. It is a multiplier... Video generators particularly are just not there yet."
+
+**Three templates that require no access to a brand's raw files.**
+1. **A bare offer static.** Black background, the promotion in large type, brand logo. No imagery at all. He says it does particularly well in retargeting and warm audiences. Caution attached: if you let Advantage+ pull a product carousel underneath it, check the products pulled are relevant to the promotion.
+2. **A transparent-centre PNG frame** in brand colours, carrying the promotion, uploaded manually into a dynamic product ad or catalogue carousel. For fashion or any account with a large SKU count already performing on catalogue.
+3. **A fast-cut montage** assembled from images and video pulled off the brand's own website, to get many products in front of the viewer quickly, with the offer stated clearly and the logo on top.
+
+**Then re-skin what already works.** Pull top performers two ways: the top 10 to 20 from previous peak periods, plus the top performers of the trailing 365 days. Volume scales with spend, and his worked example is a brand at **$60,000 a month, from which he pulled the top 20 to 30 assets**. Selection metrics: return on ad spend, low cost per result, low cost per click, high click-through rate, high hook rate, and amount spent as the confidence weight, "the more amount that you've spent on a certain ad, the more usable that data is".
+
+**The access workaround worth knowing.** If the raw files are unreachable, search the winning ad's NAME inside the ad account's own media library and download the video, static or GIF directly from there. Any account you have access to carries its media library with it.
+
+**The re-skin prompt, and the model constraint.** One static at a time, "turn this exact ad into a Black Friday version with the headline X, the discount Y, keep everything else in the ad exactly the same". Model behaviour and its aspect-ratio failure are recorded at [[Creative Science#CR-224|CR-224]].
+
+**What it is worth.** He is explicit that this is for brands out of time or budget, not a replacement for new production, and the output is "at least having some base with a hypothesis" because it is built on assets that already won. Nothing was measured.
+Sources: Blue Sense Digital, No Assets for BFCM? Here's the Workflow That Saves You, 2025-11-19
+Last touched: 2026-09-03

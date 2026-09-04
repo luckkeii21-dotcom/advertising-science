@@ -11,7 +11,7 @@ tags: [advertising-science, lesson, google, targeting, language]
 
 # Lesson 014 · What Holds the Spanish Ad in Spanish
 
-🎬 **Lesson video (silent, watch anywhere):** [[video/2026-09-02-lesson-014.mp4]]
+🎬 **Lesson video (2m 30s, silent, watch anywhere):** [[video/2026-09-02-lesson-014.mp4]]
 
 > Lesson 004 said controls bind and suggestions don't. This one is a control becoming a suggestion, stated by the platform, in writing, with a date on it. That has never happened before in this codex.
 

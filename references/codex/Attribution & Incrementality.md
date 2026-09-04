@@ -993,3 +993,19 @@ Blue Sense Digital, 2025-04-22, on a nine-figure Australian fashion brand's Spai
 **One absolute claim recorded with its emptiness attached.** On spending against existing-customer lists he says: "We have run so many incrementality tests internally where we have taken existing customer lists, spent more on them, and measured whether there were any incremental conversions... There was zero. I'd never seen it work." **No test count, no spend, no brands, no dates, no data shown.** It is the mechanism people reach for under [[Meta Delivery & Andromeda#MD-019|MD-019]]'s under-10% threshold, and it is an assertion, not the evidence for it.
 Sources: Blue Sense Digital, How We Accelerated KOOKAÏ Australia's Growth Rate By 100%, 2025-04-22 (backlog, read in full 2026-08-31)
 Last touched: 2026-08-31
+
+### AT-113 · Google's return on ad spend multiplies overnight at a promotional peak and for most brands it is not incremental, so scaling into it buys revenue you already had
+Tier: T3 · Status: active
+"Literally everyone does this."
+
+**The trap.** Google's attributed return quadruples as November starts. The target is a 10, the account is reading a 40, and the arithmetic says pour budget in. **For roughly 70% of brands, he says, that return is not incremental.** The rise has two ordinary causes and neither is Google finding new demand: site-wide conversion rate is up because it is a peak, and Meta is driving people across platform who then complete on a branded or shopping click. Scaling into it buys more of the revenue you were getting anyway.
+
+**The instruction.** Let Google run. Let the attributed return sit high. Do not treat it as headroom.
+
+**How to hold this honestly.** The 70% is his own figure from audit practice with nothing published behind it, and he flags the exception himself, "this doesn't apply for everyone". The mechanism is the same last-click harvesting pattern this topic already documents, applied to the one moment in the year when the illusion is strongest and the budget is largest. It is also the reason [[Attribution & Incrementality#AT-081|AT-081]] refuses to run an incrementality test in November: the very window where you most want to know the answer is the window where the measurement is least trustworthy.
+
+**Client-reporting consequence for us.** In a peak, a channel's attributed return rising sharply is the expected artefact, not evidence the channel improved. Say so in the report before anyone proposes moving budget onto it.
+
+Asserted from audit practice across a stated 1,000+ accounts. No lift study shown.
+Sources: Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27
+Last touched: 2026-09-03

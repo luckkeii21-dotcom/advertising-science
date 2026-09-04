@@ -711,8 +711,9 @@ Tier: T4 · Status: active
 Modelled and graphed on a whiteboard with assumptions stated, no exported data. Margin compresses toward your contribution-profit target far faster than it compresses to zero, so the curve most operators reason about (breakeven) is the wrong curve. Worked case on a $100 AOV, 40% COGS product: at full price breakeven ROAS is 1.67 and a 6 ROAS produces $43.33 of contribution profit per order. Apply 25% off with units per transaction rising from 1.0 to 1.63, and AOV actually rises to $122, but COGS is 40% of the $162 retail value rather than 40% of the $122 AOV, so gross margin per order falls to $57 and holding the same contribution profit requires a $13.67 CAC, which is an 8.97 ROAS. That is a 50% efficiency improvement demanded by the discount. This is the single most commonly botched calculation in offer planning, because topline AOV goes up and hides the margin collapse. Model the efficiency lift you can realistically expect before committing to a depth: luxury brands that never discount can model 70-80%, habitual discounters about 5%. Past a point on the curve the discount is simply inapplicable however it is dressed. Extends [[Marketing Math & Unit Economics#MM-010|MM-010]] into the discount case.
 
 The one-line mechanism underneath all of it, added 2026-08-20 and stated while stepping down a live unit deck: "we move through to cost of goods and you can see cost of goods is the same, and this is what happens when you discount, is that your cost of goods stays the same, you just lose a bunch of margin." Price falls, unit cost does not, so the ENTIRE discount comes out of margin rather than being shared with the supply chain. That is why the required-return curve bends the way it does, and it is the sentence to put in front of anyone who proposes a discount depth without modelling it. Same arithmetic as the 20%-off compression in [[Marketing Math & Unit Economics#MM-065|MM-065]], stated as the general rule rather than one example.
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08; Blue Sense Digital, How to Double Your Profit Using Levers in Your Unit Economics, 2025-04-01
-Last touched: 2026-08-20
+**The same trap stated as an operating error rather than a curve, 2026-09-03.** Blue Sense Digital gives the version an operator actually commits: keeping the business-as-usual efficiency target while running a discounted offer. His worked chain: a 50% gross margin brand with a 25% contribution-profit target sets a MER of 4, because MER 4 means 25% of revenue goes to marketing, leaving 25% contribution. Apply a discount, gross margin falls to 35%, hold MER at 4, and **contribution profit lands at 10%**, which is below most brands' operating expenses. "Meaning you lost money in November." *Arithmetic: 50 - 25 = 25, and 35 - 25 = 10. Both exact.* The instruction is the same as this claim's, reached without the UPT curve: **if the offer changes the unit economics, the efficiency target has to move with it**, whether that offer is a flat discount or a bundle. Read alongside [[Marketing Math & Unit Economics#MM-204|MM-204]], which supplies a second and independent reason the peak target must be tighter.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, How 8 and 9 Figure Brands Build Offers Without Discounting, 2026-06-08; Blue Sense Digital, How to Double Your Profit Using Levers in Your Unit Economics, 2025-04-01; Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27
+Last touched: 2026-09-03
 
 ### MM-086 · Contribution profit versus discount depth is a curve with a peak: 5-10% discounts lose money because units per transaction does not move, and depth should be set at the maximum
 Tier: T4 · Status: active
@@ -1786,3 +1787,140 @@ The account runs a 2x blended return at a 17% net margin on a $50 cost per purch
 Narrated from one account with the margin and return figures stated on screen. No back-end test has been run, and the $100 target is an aspiration rather than a modelled number.
 Sources: Nick Theriot, Inside a $1,000,000 Facebook Ads Campaign, 2026-08-31
 Last touched: 2026-09-02
+
+### MM-200 · The hero product is the entry SKU with the highest CONFIDENCE-ADJUSTED repurchase rate, which is usually neither the best seller nor the highest raw repurchase rate
+Tier: T3 · Status: active
+Worked on screen against one coffee brand's own order export, stated as "a couple million a year out of Washington", 13 entry products.
+
+**The three numbers that make the point.** The **discovery sampler** is the best seller at nearly 16,000 first-time customers, has always carried the best return on ad spend and the most ad spend, and repurchases at **just over 8%**, which he calls third worst in the business. **Panama Geisha** repurchases at **over 70%**, the best rate in the catalogue, on a small base. **Single origin Ethiopia**, a product nobody was looking at, has **nearly 8,000 customers at a 35% repurchase rate**, and it wins. Two consequences he states: a customer who starts on Ethiopia is **4.3 times more likely to buy again** than one who starts on the sampler, and Ethiopia **already earns more returning revenue than any other product in the business from half the first-time customers the sampler brings in**.
+
+**The statistic that resolves the tie, and it is the transferable part.** Ranking on the raw percentage hands the crown to the 70% product on a tiny base. He ranks on the **Wilson score interval** (Edwin Wilson, 1927), which applies a confidence correction to a percentage measured on a small sample, and is the same statistic behind social-platform ranking. On the confidence chart the highest point is Ethiopia, not the 70% product and not the best seller. Operator rule: **never pick a hero product off a repurchase percentage without a sample-size correction**, because the highest raw rate in any catalogue is almost always the lowest-volume SKU.
+
+**The caveat he states himself, and it must travel with the claim.** "This report describes a pattern in your receipts, but it does not explain that pattern... Maybe the product is genuinely excellent. Maybe the people who buy it are just the kind of buyer who repurchases from anyone. The data can't separate those two, and I'm not going to pretend that it can." So this is a selection heuristic, not a causal finding. It tells you where to point spend next; it does not tell you the product caused the repeat.
+
+**Why it matters for spend.** He frames the entire read as the answer to one question, "can we spend more money tomorrow", with growth in revenue from non-first-time buyers as the only success definition. That is the same allowable-acquisition-cost logic as [[Marketing Math & Unit Economics#MM-199|MM-199]] approached from the product side rather than the P&L side, and it sits directly beside the hero-product exclusion-window logic in [[Auction Mechanics & Bidding#AU-060|AU-060]].
+
+**Evidence class.** One account, shown on screen, no control, no test. Every number is his narration of his own report.
+Sources: Professor Charley T, Claude Has Officially Changed Facebook Ads Forever! (Tutorial), 2026-09-02
+Last touched: 2026-09-03
+
+### MM-201 · Two funnel ratios and two margin floors that decide whether a failed product test is an ads problem or a funnel problem
+Tier: T3 · Status: active
+Stated for US direct-to-consumer e-commerce by an operator claiming tens of millions in Meta spend. All benchmarks, none of them measured on screen.
+
+**Funnel ratios.**
+- **Add to cart rate: at least 10%** of everyone who lands on the first page, whether that page is an advertorial, a pre-sell or the product page. He allows 8 to 9% on a higher-priced product. Below that, either the funnel is not good enough or the ads are sending unqualified traffic.
+- **Add to cart through to purchase: at least 30%.** Ten carts should produce at least three orders. Below that the fault sits between cart and payment, and his named suspects are payment-processor approval rates and an over-complicated checkout. His fix direction is subtraction: "you'll be much better removing things than you are trying to add all these various things".
+- **Average order value: 20 to 40% above the main product's price** on a straight Shopify build, with lifetime value substantially higher again if there is a subscription or a retention motion. *Note an internal inconsistency: having given the 20 to 40% band he immediately says push it to "even like 50% above that number". Use the band, not the aside.*
+
+**Margin floors, and he dates the change.**
+- **At least 3x cost of goods sold at the price point.** Sourced and shipped at $15 means selling at $45 minimum.
+- **At least $30 gross margin per order.** He raised this from $20, and gives the reason as Meta costs rising: "$30 margins is a good place to be".
+
+**Where this sits.** It is a set of pass conditions to apply before blaming a product, and he is explicit that the product is rarely the fault: the failure is either ad-related or funnel-related, and "90% of the issues that I see is ad-related". The ad half of the same diagnostic is at [[Creative Science#CR-226|CR-226]]. These are e-commerce numbers with a physical product and a cart, so **none of them transfer to a lead-generation account** without being restated as opt-in rate and opt-in to booked call.
+Sources: Mark Builds Brands, i asked claude to find me a $1k/day product, 2026-06-11
+Last touched: 2026-09-03
+
+### MM-202 · The public-traffic revenue estimate for a competitor is four stacked assumptions, and the operator who teaches it says outright he cannot calculate the real number
+Tier: T4 · Status: active
+The method, because it is what almost every competitor-research workflow actually runs on, and the honest accounting of what it is worth.
+
+**The formula.** Monthly visits from a SimilarWeb reading, times an assumed conversion rate, times an assumed average order value. His assumed conversion band is **1.5% to 3.5%, lower for a more expensive product**. His worked example on a barefoot-shoe brand: the extension read close to 2 million visits a month, he deliberately marked it down to **1.5 million**, applied **2%** to get **30,000 orders**, and applied a **$90** average order value to reach **roughly $2.7 million a month**. *Arithmetic checks: 1,500,000 x 0.02 = 30,000 exactly, and 30,000 x $90 = $2,700,000 exactly.* His bar for treating a competitor as validated is **$200,000 to $300,000 a month minimum**.
+
+**What is actually known and what is guessed.** One input is observed and it is itself a model: SimilarWeb's traffic figure is an estimate, not a counter. The conversion rate is assumed. The average order value is assumed from browsing the offer stack. The cost of goods is assumed. He says it plainly: "how the hell are you able to calculate exactly how much money? Well, I can't." So the output is an order-of-magnitude sort, useful for ranking candidates and worthless as a number.
+
+**How to use it without lying.** Treat the result as a bucket, not a figure. Never put a competitor revenue estimate produced this way in a client document as a number, and never let it anchor a budget. The one thing it does well is separate a brand doing something real from a brand running ads into nothing, which is all he claims for it.
+
+**A structural caution he adds and it is the better half of the video.** A competitor has usually been buying longer and has better supplier pricing than a new entrant, so their unit economics are not available to you on day one. Copying their price point without their cost base is the trap.
+Sources: Mark Builds Brands, i asked claude to find me a $1k/day product, 2026-06-11
+Last touched: 2026-09-03
+
+### MM-203 · Plan a promotional peak against a contribution-profit target, never a revenue target, because the last slice of peak spend buys revenue at a loss
+Tier: T3 · Status: active
+From an operator stating 250+ e-commerce brands worked through the Black Friday period and over a thousand accounts audited.
+
+**The failure mode.** Everyone sets a revenue target for the peak, and the reason is legitimate, because inventory has to be planned against revenue. The damage is that nobody sets a contribution-profit target underneath it, so spend keeps going in past the point where it pays. His worked example, reconstructed from a garbled auto-transcript: **spend $250,000 and make $1,000,000, or spend $200,000 and make $980,000. The extra $50,000 of spend bought $20,000 of incremental revenue.** *Arithmetic: $250,000 - $200,000 = $50,000, and $1,000,000 - $980,000 = $20,000. Both reconcile exactly, which is what identifies the "$4 million" in the raw transcript as a mis-transcription of $250,000.* The verdict he draws: you turned over inventory for nothing and made the profit and loss worse, and "you may as well have just pulled back and been more efficient."
+
+**The replacement planning question.** Not "what revenue do we want in November", but "what contribution profit do we need, and at what efficiency does efficiency start to erode". Set the spend at that point and accept a smaller headline number than the brand down the road. "Ultimately, who won the period?"
+
+**Two named consequences.**
+- Peak revenue is the metric most often used to sell a case study and it is the one that says least. This is the planning-side twin of [[Attribution & Incrementality#AT-084|AT-084]], where a Shopify chart rising through October and November is confounded with the season and shows topline rather than profit.
+- The efficiency target itself has to move for the peak. Two independent reasons now sit in this codex: discounting compresses gross margin, so the same efficiency target yields less profit ([[Marketing Math & Unit Economics#MM-085|MM-085]]), and the customers acquired in the peak repeat worse, so a target grounded in a retention assumption is wrong ([[Marketing Math & Unit Economics#MM-204|MM-204]]).
+
+Asserted from audit practice. No account data shown.
+Sources: Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27
+Last touched: 2026-09-03
+
+### MM-204 · November cohorts repeat substantially worse than off-peak cohorts, so the peak efficiency target must be set HIGHER, and January and February can be set lower
+Tier: T2 · Status: active
+The sharpest thing in today's read, because it inverts the intuitive move and it is shown against real cohort reports rather than asserted.
+
+**The mechanism, in consumer terms.** A November buyer is someone a large discount pushed over the edge. A January or February buyer walked past every sale of the previous two months, which means both high disposable income and genuine conviction about the product. So the November cohort is structurally the year's worst and the January cohort is structurally among the best. "November customers are the worst customers in the entire year."
+
+**Brand one, Shopify customer cohort analysis on screen.** November 2024 cohort: average spend per customer **$114**, rising to **$158 by month six**, an increase of **$44** which he reads as **38.5%**. A February or March cohort on the same report: an increase of **$79**, which he reads as **63%**. *Arithmetic: 44/114 = 38.6%, matching his 38.5%. His summary that the November cohort is "50% worse" overstates it; 38.5/63 = 0.61, so it is 39% worse on the numbers on his own screen. Use 39%, not 50%.*
+
+**Brand two, a different industry, both brands stated as over $10 million online.** November **$116** to **$170** by month six, **+46%**. *Arithmetic: 54/116 = 46.6%, matching.* February on the same report, **+55%**. He calls this the less extreme case, and it is: 46/55 = 0.84, so 16% worse rather than 39%.
+
+**The blind spot he then names, and it is why the gap is understated.** The Shopify cohort report is built on REVENUE. Peak revenue carries a much worse gross-profit percentage because of the discounting, so $54 of six-month growth from a November cohort is worth less gross profit than $54 from a February cohort, and the report cannot show that. His illustrative pair is $27 of gross profit against $18. **Those two numbers are made up on the spot to keep the arithmetic easy and he says so.** The real instruction is to rebuild the cohort analysis at gross-profit level, which his agency does and the native Shopify report does not.
+
+**The operating consequence, stated in both directions.** An efficiency target justified by a retention assumption does not hold in November. His illustrative calendar: a target of MER 5 through November and December, coming down to about 4.0 or 4.1 in January, because the January cohort will prop up returning revenue through the following six months. He attaches the cash-flow condition explicitly: you can only get more aggressive in January if the working capital is there.
+
+**Evidence class.** Two brands, two industries, cohort reports read on screen with figures visible. Not a controlled test, so it does not establish the causal story, but it is real measured cohort data rather than recollection, which is why this is banked as T2 while [[Marketing Math & Unit Economics#MM-203|MM-203]] from the same operator is T3.
+Sources: Blue Sense Digital, Don't Make This Black Friday Mistake, 2025-11-06
+Last touched: 2026-09-03
+
+### MM-205 · Returning-customer revenue is a function of cohorts you have already acquired, so it cannot be forecast by applying a growth multiple
+Tier: T3 · Status: active
+A forecasting rule that kills the most common peak-planning error among brands sophisticated enough to split revenue into new and returning.
+
+The error: take last year's returning-customer revenue for November and multiply by the growth ambition, 40% up on last year. "You can't just simply generate 40% more returning customer revenue out of thin air." Most of November's returning revenue comes from cohorts acquired **earlier in the same year**, so by the time you are building the November forecast the input is already fixed and unchangeable.
+
+**The diagnostic is one line.** Look at this year's new-customer acquisition against last year's. If it is flat, slightly up or slightly down, returning-customer revenue in November will be **5 to 10% better at most**, not 40%. If you want a materially better returning number for a peak, the lever was new-customer acquisition six to twelve months earlier, and it is gone.
+
+Direct consequence for anyone building a forecast: returning revenue is a cohort roll-forward, never a growth multiple applied to a total. It is the same object [[Marketing Math & Unit Economics#MM-006|MM-006]] insists on measuring by cohort rather than by Klaviyo-attributed revenue or a returning-customer percentage, pointed forward instead of backward. Asserted from audit practice, no forecast model shown.
+Sources: Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27
+Last touched: 2026-09-03
+
+### MM-206 · Never benchmark your peak growth rate against Shopify's published GMV, because that number is inflated by enterprise onboarding
+Tier: T3 · Status: active
+Shopify publishes a gross merchandise value figure each Black Friday and its growth rate reliably looks strong. The reason given is that Shopify onboards large enterprise retailers each year, and those accounts land inside the total, so the published growth rate mixes new platform accounts with same-store growth. A brand comparing its own same-store November against that number will always look bad and the comparison is meaningless.
+
+He supports it with a concentration figure and flags his own uncertainty in the same breath: "I don't have the numbers on me off the top of my head, but it is something like 70% of total Shopify GMV comes from 5% of Shopify stores." **Record that as his recollection, unverified, and do not quote the 70/5 split to a client.** The structural argument stands without it: a platform total that gains accounts each year is not a same-store index.
+
+Operating rule: benchmark a peak against your own prior-year same-store performance, and against your own contribution profit, never against a platform-wide total. Same class of reading error as [[Attribution & Incrementality#AT-084|AT-084]].
+Sources: Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27
+Last touched: 2026-09-03
+
+### MM-207 · A long promotional window needs an offer ROTATION and a permanent sale page, and launching on the actual peak weekend loses revenue to competitors who launched two weeks earlier
+Tier: T3 · Status: active
+Four operational rules for a five-week sale, from the same audit practice.
+
+**Launch timing.** The average consumer knows the sale is somewhere in late November and does not know the date. Because every competitor launches early, a brand that launches on or just before the weekend finds its customers have already spent their November budget elsewhere. His example: an eight-figure activewear brand launching on the 26th against competitors launching two weeks earlier, and the customer thinking "I've already spent $400 so far this month, I already kind of got this from a competitor". **The counter is a VIP list**, an offer nobody else gets, which locks loyal buyers in place while competitors are live. He judges the risk asymmetric: "There really isn't much damage of launching early."
+
+**Then the cost of launching early, which is the offer running too long.** Five weeks on one flat percentage discount erodes brand equity and fatigues. **Do not run one offer for five weeks.** His rotation, in order: enter on a **bundle** offer, move to **flat percentage discounting** across the peak weekend because it is the fastest thing to communicate under a time squeeze ("You do not want complicated messaging during the tight squeeze"), then move out into **single core SKU discounting** for December gifting.
+
+**A consolidated sale page in the site navigation.** Most brands discount across the whole site and never build a destination. With a sale page you can keep every offer in the rotation live at once and simply push retired ones down the page, which keeps the ads pointing at them alive even as spend comes off. Without it the rotation forces a hard cut each time.
+
+**Bundle contingency.** Bundles share SKUs, so one component selling through kills several bundles at once. Keep **plan B and plan C bundles in draft**, with their ads and landing pages built, so a merchandising failure is a switch rather than a scramble.
+
+Prescriptive, drawn from agency practice across a stated 250+ brands. Nothing measured.
+Sources: Blue Sense Digital, Avoid These Mistakes This Black Friday (eCommerce), 2025-08-27; Blue Sense Digital, Beat the Post-BFCM Slump: The 3 Moves That Prevent It, 2025-10-03
+Last touched: 2026-09-03
+
+### MM-208 · A free-course funnel to a high-ticket offer books under 5% of opt-ins on the front end and closes 3 to 9 months later, and that is the design rather than a fault
+Tier: T3 · Status: active
+The economics of the free-community funnel, with the numbers its operator put on screen.
+
+**The shown P&L.** March 2026: gross revenue **$222,000**, net income **$96,384**, against a standing target of $100,000 net a month. *That is a 43.4% net margin, which is worth holding against the same operator's coaching cost model at [[Marketing Math & Unit Economics#MM-198|MM-198]], where 20/15/20/15 leaves 30% net. His own month beat his own model by 13 points, so read the 30% as a planning floor rather than a ceiling.*
+
+**The funnel's shape.** A free community, 8,300+ members, positioned as a free ads course. Paid traffic and YouTube organic feed an opt-in page, not the community. **1,353 organic joins year to date as of 7 April 2026**, attributed by UTM in Hyros down to the individual video. Opt-in page converting **around 20%** against a 25%+ target.
+
+**The two numbers that define the model.** Front-end call bookings are **under 5%, "closer to like two or three percent"**. The average buyer purchases **three, six, even nine months** after entering, read out of Hyros. He accepts both, because the common objection is that people want to work through the course first, and the nurture layer is built for that window: weekly YouTube, weekly email, and informal in-community video.
+
+**What the free thing has to be.** Step one only, and genuinely complete. "Can someone go through this and launch ads within 7 days, 14 days" so they get a quick win, at which point the next problem appears on its own: how do I scale this. He gives away a 30-minute campaign build others charge for, on the argument that a person who gets a result names you as the person to call. The gap is made visible rather than hidden: locked classroom modules and members-only calendar entries stay on screen with an apply button.
+
+**Direct read for our own book.** Any funnel with a free destination has to be underwritten on a three-to-nine-month payback, not on front-end booked calls, and the nurture layer is the product. Sits against the free-destination quality problem: a free entry point selects for people who cannot yet pay, which is why the qualification step at [[Learning & Signal#LS-075|LS-075]] carries the whole model.
+
+One operator, one account, figures shown on screen. No cohort table behind the 3-to-9-month claim.
+Sources: Dr. Matt Shiver, How I Used Skool to Build a 7-Figure Coaching Business (Full Breakdown), 2026-04-28
+Last touched: 2026-09-03
