@@ -162,8 +162,16 @@ Last touched: 2026-08-21
 ### MM-065 · Tag COGS in Shopify instead of assuming a gross margin percentage, because discounting compresses margin non-linearly: 20% off a $100 product at $50 COGS drops GM from 50% to 37.5%
 Tier: T3 · Status: active
 Price falls, unit cost does not, so a 20% discount takes 12.5 points off gross margin, a roughly 25-30% relative collapse. Brands hand their agency an averaged margin percentage from the accountant, and that single number gets baked into profit contribution, LTGP:CAC and every dashboard. It is wrong exactly when it matters most, during Black Friday and promo windows. The fix is mechanical: tag cost of goods on every product in Shopify so real-time gross margin flows into any external dashboard or sheet and captures discount compression as it happens. This is the practical precondition for every finance-grade metric downstream and the concrete implementation behind the assumed-percentage warning in [[Marketing Math & Unit Economics#MM-006|MM-006]].
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The 1 Bottleneck I See in 80% of eCommerce Audits, 2026-05-18
-Last touched: 2026-08-18
+**The account-level consequence, from the dedicated episode on this, and it is the number that makes the claim worth enforcing.** Baseline month: $100,000 of revenue, cost of goods assumed at 30% = $30,000, shipping and fulfilment at order level = $10,000, transaction fees at 3% = $3,000, so gross profit is $57,000 and, after $20,000 of ad spend, contribution is **$37,000**. Now discount 30%: the $100 product at $30 cost was making $70 a unit and now makes $40, and holding revenue flat at $100,000 means moving far more units to get there.
+
+With cost of goods actually tagged, Shopify returns **$55,000** rather than the assumed $30,000, fulfilment rises with the order count to $15,000, transaction fees stay at $3,000 because revenue did not move, gross profit falls to $27,000 and contribution lands at **$7,000**. **With the static 30% assumption the model returns $37,000 for that same month. The true figure is $7,000, so the model overstates contribution by 81%.** That is exactly the "80% or 90% lower" he describes, and it is the gap that appears when the accountant's profit and loss statement arrives two months later and contradicts the agency's November report. Every figure in the chain recomputes.
+
+Two more things ship with it. **Accuracy band:** tagged cost of goods will still not be dollar-for-dollar with the eventual statement, but he puts it within **5% to 10%**, against being wrong by 80% to 90% on the assumption. **The alternative is not practical:** recomputing a fresh cost-of-goods percentage for a promotional month requires forecasting sell-through at individual product and bundle level, which he says almost nobody can do and which introduces its own error.
+
+**The operating payoff is a live KPI, not a reporting improvement.** With cost of goods tagged you can pull gross margin for yesterday, see it compressed by 20%, and move the efficiency target from 4 to 6 or 7 the same day, so the marketing goal tracks the profit the discount actually leaves behind. That converts this from a bookkeeping chore into the input that sets the number the media team is held to.
+
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The 1 Bottleneck I See in 80% of eCommerce Audits, 2026-05-18; Blue Sense Digital, Why You Need To Have COGS Tagged Up In Shopify, 2025-09-03
+Last touched: 2026-09-05
 
 ### MM-066 · KPI paid media on acquisition MER (new-customer revenue / total ad spend); blended MER is a CFO metric and a bad marketing KPI
 Tier: T2 · Status: active
@@ -364,8 +372,14 @@ Tier: T3 · Status: contested
 Both rules must hold: e.g. $10 landed cost sold at $50 gives $40 margin (above $25) and 5x markup (above 3x). Products set up with breakeven ROAS around 1.7-2.0 require sustaining roughly a 3x ROAS at scale, which "doesn't happen" at high spend levels. Margins are one of the few controllable inputs, unlike the CPA Facebook gives you.
 
 CONTESTED on the role of the first product. Professor Charley T rejects single-product hunting entirely and says dropshipping is about building an email list at break-even: the front product's only job is to be the best possible lead magnet into a second purchase, so acquire it at break-even and recover the margin through the list at zero incremental media cost. That directly opposes the first-order margin floor above, because a break-even front end by definition fails the $25-gross-margin test. Mark Builds Brands is T3 with a case study behind the floor; Charley T's version is asserted with no data. What resolves it is a measured repeat rate and repeat window on a dropshipped catalogue: the break-even strategy is only solvent where a real second purchase exists, which is the same condition [[Marketing Math & Unit Economics#MM-003|MM-003]] turns on. Absent that measurement, the margin floor is the safe rule.
-Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30; Professor Charley T, If you run Facebook Ads... everything just changed., 2025-12-06
-Last touched: 2026-08-19
+**Two problems with the numbers in this claim, both found 2026-09-05, and neither changes the rule's direction.**
+
+**One, the "3x" is written in the keystone convention and the body mislabels it.** The heading says selling price of at least 3x cost of goods, which is unambiguous. The worked example then calls $10 landed cost sold at $50 a "5x markup". Five is the price-to-cost ratio; by the actual markup formula, (price less cost) over cost, that product is 4x. **Anyone applying the formal definition to the "3x" would impose a floor of price = 4x cost, which is a materially stricter rule than intended.** Read every multiple in this claim as price divided by cost. The two competing definitions and the conversion formulas are at [[Marketing Math & Unit Economics#MM-210|MM-210]].
+
+**Two, the operator behind the floor states it at two different numbers three months apart.** On 2026-04-24 he gives it as at least **$30** of gross margin per unit and 3x cost of goods, with the same shoe-box and passionate-market conditions attached. On 2026-07-30, the source already on this claim, it is **$25**. Same speaker, same rule, same structure, different absolute threshold, and he never acknowledges the change. Treat the floor as "roughly $25 to $30 of gross margin per unit" rather than as a precise number, because it is a rule of thumb that moves.
+
+Sources: Mark Builds Brands, f*ck it. ZERO to $1k/day in 3 days with ai dropshipping. [full case study], 2026-07-30; Professor Charley T, If you run Facebook Ads... everything just changed., 2025-12-06; Mark Builds Brands, how to print money with AI (before NPCs ruin it), 2026-04-24
+Last touched: 2026-09-05
 
 ### MM-079 · Pick the SKU you advertise by second-purchase rate, days to second purchase, and combined first-plus-second AOV, not by first-purchase volume
 Tier: T2 · Status: active
@@ -458,8 +472,18 @@ Last touched: 2026-08-19
 ### MM-074 · The cash conversion cycle, not marketing efficiency, is the growth limiter in inventory e-commerce
 Tier: T3 · Status: active
 CCC = DIO + DSO - DPO. The mechanism: gross profit from one purchase order only funds a marginally larger next PO, and a 90-day manufacturing lead time with prepayment terms forces stockouts between batches. Levers: negotiate deposit terms (20% up front instead of 100%), shorten manufacturer lead time, or take inventory financing, which usually requires personal collateral. He reports the same failure five times. An agency ramps spend from $20k to $200k/month, the client quietly takes inventory financing to keep up, interest repayments plus degraded MER compress net margin toward zero, and a $2M business becomes a $7M business making no money while the founder's income goes to zero. Practical consequences: you cannot triple an inventory business in a year, an agency that scales spend without inventory visibility can take a cash-positive business to zero net profit, and growing slower at better efficiency with less debt often produces more profit. ASSERTED from client work, no numbers shown.
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04
-Last touched: 2026-08-18
+**The earliest statement of this thesis on the roster, and it adds the timing mechanism the entries above do not carry.** Recorded 2025-01-23, fourteen months before the two sources previously on this claim. His model: $10,000 of stock plus $5,000 of ads returns $20,000 at a 2x price-to-cost multiple and a 4x efficiency ratio, on a $15,000 founding injection and a roughly 60-day cycle. Cycle two buys $14,000 of stock, spends $7,000 on ads and ends at $27,000 of cash. All of that looks healthy.
+
+**Then he moves the purchase order to when it actually has to be placed, which is roughly 30 days BEFORE the current cycle's revenue lands, because otherwise you stock out while the factory runs.** The same point in the cycle now holds $20,000 less $14,000 = **$6,000**, and the next $7,000 of advertising has to come out of that $6,000. **The business is short before a single operating expense is counted, and the steady-state bank balance is $6,000 against the $15,000 that was put in.** Push the efficiency ratio down to the 2x a new brand without product-market fit actually achieves and the ad spend needed to move the same stock becomes $14,000, at which point there is no money left at all. Every figure recomputes exactly as stated.
+
+**The financing ladder, which explains why the debt in the paragraph above is so expensive.** A company loan requires a full financial year of statements to satisfy a lender, which a first-year brand does not have, so the realistic instrument is a merchant cash advance at a stated **35% to 350%**. (The company-loan range is garbled in the auto-transcript as "17 to 16%" and is not usable; the merchant cash advance figure is clean.) His established-client case: a target of **$750,000 over the 60-day November-December window at a 3x price-to-cost multiple requires about $250,000 of stock**, financed at roughly 20%, which is **about $4,200 a month** and **$8,000 to $12,000** over the 60 to 90 days it takes to pay down. At a 20% to 25% net margin that is a good trade, **and only if the revenue target is near-certain.** He names both failure branches himself: land at $400,000 instead and roughly $100,000 of the loan cannot be paid down, or hit the $750,000 but at a 2.1x efficiency ratio instead of 4x, so the free cash flow that was meant to clear the loan went back into the next purchase order.
+
+**The consequence he draws is aimed at agencies, and it is why this sits in our codex rather than in a finance note: an aggressive growth projection is a request that the client take on debt.** The client rarely says so out loud. Our own version of the same failure is already recorded above from his 2026 material, where an agency ramps spend and the client quietly finances the inventory behind it.
+
+His closing line is the cleanest statement of the mechanism anywhere in this claim: **the cash conversion cycle does not start at the first dollar of ad spend, it starts at the first dollar of inventory purchase.** Read alongside [[Marketing Math & Unit Economics#MM-189|MM-189]], which says advertising sits outside the accounting formula and lengthens the real cycle. Those are the two ends of the same clock. Illustrative model plus one asserted client case, no documents shown.
+
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04; Blue Sense Digital, Why eCommerce Is So Difficult (Deep Dive), 2025-01-23
+Last touched: 2026-09-05
 
 ### MM-075 · Paid media is an inventory liquidation tool: push grade B/C/D stock at breakeven or a slight loss to convert balance-sheet inventory back into cash
 Tier: T3 · Status: active
@@ -1697,8 +1721,12 @@ Tier: T3 · Status: active
 6. **Every attribution panel is unusable.** Sales by social referral, sessions by social referral, top referrals, sales attributed to marketing. "attribution is a futile effort particularly if you're going to go and use tracking reported to you by Shopify... you should not use this section at all for decision making."
 
 Also filter reporting to the Online Store channel before holding a media partner accountable, or POS, the Shop app and draft orders contaminate the number. Checkout funnel benchmark: a 4:2:1 ratio of add-to-cart to reach-checkout to purchase is the general average, and 2:1:1 is achievable on low-ticket and FMCG, with very little drop between checkout and purchase. He claims a below-the-fold positioning fix "immediately increased conversion rates by 40 to 50% overnight", with no account named and no before-and-after shown, so treat that figure as an anecdote. **This same episode states the growth-ceiling thesis independently two months before the CFO interview that quantifies it**, that net profit margin and sell-through together cap the maximum growth rate through the cash cycle, which is [[Marketing Math & Unit Economics#MM-188|MM-188]]. Walkthrough of a live dashboard, definitional rather than tested.
-Sources: Blue Sense Digital, What Metrics Matter In The Shopify Analytics Dashboard, 2025-02-07; Blue Sense Digital, How We Fixed A Bad Performing BFCM With One Change, 2025-11-18
-Last touched: 2026-08-30
+**The dedicated episode behind trap one, recorded eight days before the source above, and it adds the reason the shipping line has to be added back.** Shopify treats shipping collected the way it treats tax, as a flow-through that cancels against shipping paid. **It does not cancel: "shipping collected never equals shipping paid, I've never seen it before."** There is always a differential, and that differential is either profit or loss on fulfilment. Netting it out of the revenue figure hides which one it is. So the figure to use is net sales **plus** shipping charges, and the shipping line is then read on its own to see whether the store makes or loses money moving product.
+
+**The diagnostic he attaches is the practical use of the whole claim.** When contribution margin, the efficiency ratio and return on ad spend refuse to reconcile with each other, the cause is almost always that each was computed on a different revenue figure. Standardise the numerator across all three and they triangulate. Worth running before anyone investigates a performance question that is actually an arithmetic question.
+
+Sources: Blue Sense Digital, What Metrics Matter In The Shopify Analytics Dashboard, 2025-02-07; Blue Sense Digital, How We Fixed A Bad Performing BFCM With One Change, 2025-11-18; Blue Sense Digital, Why Tax In Shopify Is Ruining Your Reporting & Measurement, 2025-01-30
+Last touched: 2026-09-05
 
 ### MM-193 · A free low-cost gift at an order threshold IMPROVES break-even efficiency, a percentage bundle worsens it, and a flat storewide discount destroys it, on one consistent set of unit economics
 Tier: T3 · Status: active
@@ -1924,3 +1952,34 @@ The economics of the free-community funnel, with the numbers its operator put on
 One operator, one account, figures shown on screen. No cohort table behind the 3-to-9-month claim.
 Sources: Dr. Matt Shiver, How I Used Skool to Build a 7-Figure Coaching Business (Full Breakdown), 2026-04-28
 Last touched: 2026-09-03
+
+### MM-209 · Tax is a flow-through that must leave every revenue figure used in an efficiency calculation, and in a multi-country store the tax MIX makes the same headline revenue increase worth different amounts
+Tier: T3 · Status: active
+Tax appears on both sides of the profit and loss statement, collected at checkout and paid to the government, so it cancels. Carry it inside the revenue numerator and the resulting efficiency ratio is wrong by the tax rate. That much is definitional and uncontroversial.
+
+**The part worth banking is the multi-country distortion, because it makes an efficiency number move when nothing about the advertising changed.** His worked case: an Australian store collects 10% goods and services tax at home and 0% on export sales to the United States, with revenue split evenly at $100,000 a month each. Scale Australia to $120,000 and the $20,000 increment is worth $20,000 x 90% = $18,000 of real income. Scale the United States to $120,000 and the increment is a full $20,000. **Same headline growth, different money, and any blended efficiency ratio built on tax-inclusive revenue will read the two as identical.** A store whose geographic mix drifts month to month therefore has an efficiency trend that is partly an accounting artefact.
+
+**The fix is the numerator already used elsewhere in this file.** Not total sales, which adds tax, duties and additional fees. Not gross sales, which sits before discounts and returns and is only useful when the levers are being broken out separately. Net sales is closest and still wrong, because it excludes shipping charges collected at checkout. Use **net sales plus shipping charges**, the same figure [[Marketing Math & Unit Economics#MM-192|MM-192]] calls cash collected and [[Marketing Math & Unit Economics#MM-149|MM-149]] pins its launch-rate model to. He notes this has to be assembled by hand or through an API as a custom daily metric, because no single Shopify field returns it.
+
+Country-level unit economics is [[Marketing Math & Unit Economics#MM-166|MM-166]], which ranks markets on shipping, fulfilment and return-rate differences and does not carry the tax leg. This is that leg. The flow-through tax line inside the cost-of-delivery stack is at [[Marketing Math & Unit Economics#MM-064|MM-064]].
+
+Reasoning from the profit and loss structure with an illustrative worked example. **No account, no exported statement and no measured before-and-after.** The arithmetic reproduces exactly as stated.
+Sources: Blue Sense Digital, Why Tax In Shopify Is Ruining Your Reporting & Measurement, 2025-01-30
+Last touched: 2026-09-05
+
+### MM-210 · Markup and margin share a numerator and differ only in the denominator, and the word "markup" itself carries two incompatible definitions in live use
+Tier: T3 · Status: active
+Margin is (selling price less cost price) divided by **selling price**. Markup is (selling price less cost price) divided by **cost price**. A $100 product at $20 cost is 80% margin and 4x markup. Conversions both ways: **margin = markup / (1 + markup)** and **markup = margin / (1 - margin)**. Both check against that example, 4 / 5 = 0.8 and 0.8 / 0.2 = 4.
+
+**Two named ways the number arrives wrong, and the second one is the dangerous one.**
+
+1. Someone says "50% margin" and means 50% markup. A 50% markup is a 33% margin, so every downstream target is set against a margin that does not exist.
+2. **"Markup" is spoken in two conventions and nobody announces which.** The formula above gives 4x on a $10 cost sold at $50. Keystone pricing, which is what most operators actually mean, divides selling price by cost and calls the same product 5x. **So "3x markup" means selling price is 3x cost to one speaker and 4x cost to another.** That is a whole multiple of difference in a rule that sets product selection.
+
+A third error sits underneath both: markup computed on the product's landed cost alone, with no shipping, fulfilment or transaction fees. He puts fulfilment at 5% to 20% of revenue, which is enough to halve an apparent margin. That is the same construction error [[Marketing Math & Unit Economics#MM-064|MM-064]] documents from the other direction.
+
+**This lands directly on a claim already in this file.** [[Marketing Math & Unit Economics#MM-018|MM-018]] requires a selling price of at least 3x cost of goods, and its worked example describes $10 landed cost sold at $50 as a "5x markup". 5 is the price-to-cost ratio; by the formula above that product is a 4x markup. **MM-018 is therefore written in the keystone convention, and anyone applying the formal definition to its "3x" would impose a materially stricter floor than intended.** The flag is carried on MM-018 itself.
+
+Why it matters beyond bookkeeping: the margin figure a brand hands its agency sets the allowable acquisition cost and the efficiency target. He states the failure plainly, that a wrong margin causes overspend on marketing against profit that was never there. Definitional, taught with worked examples. No account data, and none is needed for the arithmetic.
+Sources: Blue Sense Digital, Markup vs Margin (with an Easy Converter Calculator), 2025-02-04
+Last touched: 2026-09-05

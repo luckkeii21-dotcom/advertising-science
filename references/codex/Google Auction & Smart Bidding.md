@@ -97,8 +97,12 @@ Last touched: 2026-08-19
 ### GA-036 · Cold-start bid strategy is contested: one agency opens new Shopping on manual CPC or Maximize Clicks, the other launches straight into maximize conversion value
 Tier: T3 · Status: contested
 Side one, Grow My Ads: open new Shopping builds on manual CPC or Maximize Clicks, and move to smart bidding only once the campaign has produced conversion volume. Manual CPC is the conservative option and Maximize Clicks the aggressive one, chosen by how much he trusts the client's backend data. He flags this as the point where most people argue with him, because Google pushes smart bidding from day one. Side two, recorded at GA-021: launch on maximize conversion value to accumulate data, then roll into tROAS. Both are T3 practitioner assertions, both from the same channel, and neither showed any data, so nothing in the material resolves it. Named failure mode on the aggressive option: running Maximize Clicks with an "everything else" catch-all product ad group in the same campaign lets the catch-all consume the budget before top sellers get spend, so either segment the catch-all further or take the conservative bid. What would resolve it: one account split at launch, manual CPC or Maximize Clicks against maximize conversion value, judged on cost per conversion at day 30 and day 90. February 2025 material on side one, and Google's smart bidding cold start has moved since.
-Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-19
+**A third position, added 2026-09-05 and more specific than either above.** Blue Sense opens a new standard Shopping campaign on a brand-new account with **Maximize Clicks and no maximum bid set**, explicitly accepting early wasted spend on the argument that a capped bid stops the campaign ramping at all: "you have some wasted spend or the campaign never ramps and spends in itself". Where the account is established enough for target ROAS to be available, he sets it at **50%**, and says anything above that prevents the campaign from spending. The observable he uses to tell whether the choice is working is the impression-doubling ramp at [[Google PMax & Shopping#GP-044|GP-044]].
+
+That puts three positions on this contested claim: manual CPC or Maximize Clicks, straight into maximize conversion value, and Maximize Clicks uncapped or a deliberately slack 50% target. **All three are practitioner defaults with no shown test**, and the 50% figure is the same number the same operator uses for the feeder campaign at [[Google PMax & Shopping#GP-008|GP-008]], so it is one number reused rather than independent corroboration.
+
+Sources: Blue Sense Digital, The Best Google Ad Structure in eCommerce (ft Austin from Grow My Ads), 2025-02-27; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Blue Sense Digital, Why Your New Google Shopping Campaign Isn't Spending, 2025-03-19
+Last touched: 2026-09-05
 
 ### GA-037 · Google inherits bid signal from ad group, campaign, and account level, so heavy campaign segmentation splits the conversion pool that feeds the bid
 Tier: T4 · Status: active
@@ -525,3 +529,17 @@ A structural rule with no data behind it, banked because it replaces a number pe
 **T4 and it stays there.** No account, no data, no test, and the 20 is offered as a rule of thumb by the presenter's own description. It is a useful audit question set and it decides nothing on its own.
 Sources: Solutions 8, Are You Using Too Many Keywords in Google Ads, 2026-09-01
 Last touched: 2026-09-02
+
+### GA-071 · "I cannot see my own ads" is never an account diagnosis, and the most common cause is that the person searched repeatedly and never clicked
+Tier: T3 · Status: active
+A question this operator reports receiving from clients for over three years, with the same answer every time. Three causes, in his stated order of likelihood:
+
+1. **You searched and never clicked, so the system stopped serving you.** After the ad is shown to the same user several times with no click, delivery to that user stops. His reason is platform-side experience quality: continuing to serve someone who never engages degrades the results page for them. He puts this at roughly 90% of the cases he is asked about.
+2. **You are not the demographic smart bidding selected.** A value-based or smart bidding strategy is choosing users against the converting profile, and the person checking is usually not in it.
+3. **You are excluded.** An IP block, a customer list exclusion or a visitor exclusion will suppress the ad for exactly the people most likely to go looking for it, which is the client and their staff.
+
+**The operating rule is the whole value of the claim: never let this become evidence about the account.** It is a self-report from an unrepresentative single user with no click intent, and it routinely triggers a real diagnosis of a campaign that is working. Answer it, then go back to the spend and conversion data. He does add the honest tail, that if the person genuinely is in the demographic, genuinely does click, and multiple people cannot find the ads, then look at budget, structure and spend leaking onto brand and existing customers.
+
+**One figure in the source is unsourced and should not be repeated:** he says Google optimises against "60 million plus different psychographic data points". No documentation is cited and nothing supports the number. The mechanism in point 1 is likewise asserted with no documentation. What is documented about auction-time signals is the list at [[Google Auction & Smart Bidding#GA-002|GA-002]], which is the safe thing to quote instead.
+Sources: Blue Sense Digital, Why Am I Not Seeing My Google Ads?, 2025-01-22
+Last touched: 2026-09-05

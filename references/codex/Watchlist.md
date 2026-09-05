@@ -86,6 +86,14 @@ Second consequence of the same lag, and it is worth stating separately because i
 
 That is not a fetch failure, not a parse failure, and not a filter result. There was nothing in the file. Log it as "feed empty, weekend build", never as "0 advertising papers today" and never as an error. The same will be true of every future Monday run until the task moves past 09:30 IST.
 
+### The SATURDAY run reads an empty feed too, for a different reason (found 2026-09-05)
+
+Same empty file, different cause, and worth separating so neither is mistaken for a fault. The Monday case above is the lag: Monday reads Sunday's build and arXiv announces nothing on Sunday. **A Saturday run that lands AFTER 04:00 UTC reads Saturday's own build, and arXiv does not announce on Saturday either.** The feed carries `<skipDays>` naming Saturday and Sunday explicitly.
+
+Observed 2026-09-05 at 06:31 UTC: **892 bytes, zero `<item>` elements, `lastBuildDate` Sat, 05 Sep 2026 04:00:04 +0000**, byte-signature identical to the 2026-08-24 Monday observation. **No build was skipped and no paper was lost**; Friday's build was read by Friday's run. Log it as "feed empty, weekend build" and move on.
+
+Practical consequence for the whole weekend: **a Friday-evening-through-Sunday window announces nothing**, so Saturday, Sunday and Monday runs all have an empty or stale arXiv lane by construction. Only Tuesday through Friday runs can return papers.
+
 ## Source-quality gaps recorded 2026-08-24
 
 Two watchlist sources are weaker than the table above implies, and both were found by checking rather than by failing.

@@ -203,8 +203,14 @@ Last touched: 2026-08-19
 ### GP-014 · GMC titles: brand name last, front-load keywords proven in the search terms report, pack in every relevant attribute, and treat variants as separate listings.
 Tier: T3 · Status: active
 The default Shopify-style title (brand + internal product name + size + colour) spends the highest-value positions on tokens nobody searches. The brand is redundant when brand terms are excluded and already displays at the bottom of the listing, and a proprietary product name means nothing to a shopper who is not product-aware. Google weights keyword match by position in the title, so the rebuild is proven query first, then product type, then attributes, then brand ("formal dress [product name] size 12"; for CPG, "dissolvable creatine powder clear flavored portable [brand]"). Attribute density expands the query surface the listing can place on, since a title carrying "blue" can rank for "blue dress". Keywords must come from the account's own search-term conversion data, never invented. Variant hack: a 50g/100g/500g product generates three separate shopping listings, so each can carry a different title, image and description targeting a different keyword pool while sharing one landing page. Roll title changes out slowly, because a bulk rollover resets learning across every campaign. ASSERTED, no lift numbers shown.
-Sources: Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22
-Last touched: 2026-08-18
+**The variant instruction above has a counter-case from the same channel, and the two are not talking about the same kind of variant.** The rule here is built on a 50g/100g/500g product, where each size is a genuinely different search and three listings open three keyword pools. A separate episode argues the opposite for **colour**: a product carried in 30 to 40 colours submits 30 to 40 near-identical listings and "your spend within Google ads is too finely split across hundreds of different product variants", so only the first variant should reach Merchant Center.
+
+**Reconciliation, and it is ours rather than either operator's: the variant TYPE decides.** A size, weight or format variant expands the query surface because shoppers search the size. A colour variant of the same garment does not create thirty distinct query pools, it fragments the spend and the conversion data across thirty copies of one listing. **Neither operator addresses the other's case**, so this is a boundary we are drawing, not a position either of them stated. The practical test before submitting every variant: would a shopper type this attribute into the search bar? If yes, separate listings. If no, one listing.
+
+Two ways to execute the restriction. The Simprosys feed app carries a variant submission preference under sync settings, first variant only against all variants, which is a one-click change and resync. Without that app it is the excluded_destination attribute applied through a supplemental feed, one row per variant to suppress, which becomes unmanageable above a few thousand products.
+
+Sources: Blue Sense Digital, Why Most Fashion Brands Are Running Paid Media Wrong, 2026-05-25; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Blue Sense Digital, How to Submit ONLY 1 Product Variant into Google Merchant Center NEXT, 2025-02-21
+Last touched: 2026-09-05
 
 ### GP-015 · Supply shopping images at 4:5 through a supplementary feed and optimise for contrast against neighbouring listings; the image is roughly 70% of the listing's real estate.
 Tier: T3 · Status: active
@@ -233,8 +239,14 @@ Last touched: 2026-08-19
 ### GP-031 · Pull spend by product ID, cross-reference each high-spend product against its own landing page conversion rate, and remove the below-average converters from the feed.
 Tier: T3 · Status: active
 Scope warning: the audit shown is a Meta catalogue, so the Google application is an untested transfer, though Shopping reports product-level spend natively and the same cross-reference is available. Method: break spend down by product ID, sort by amount spent, and read exactly which products the catalogue is actually buying. In the audited account $3,500 of $24,000 went to a single mesh top. Then pull conversion rate by landing page for the same 30-day window from site analytics and remove any high-spending product whose page converts below the site average, for example a 0.5% product page against a 2% site rate. Charley T names a double cost: that traffic is close to impossible to monetize, and the machine learns that the people you send to the site bounce, which degrades delivery across the rest of the account. Suggested structure is a second product set restricted to above-average-converting pages. This adds a variable the performance tiers at GP-021 do not carry, since a product can read as a mid-tier performer on ROAS while its landing page is the actual constraint. Spend figures came from a screen-shared audit; no before or after on the fix, so the removal rule itself is asserted.
-Sources: Professor Charley T, Copy this Meta Ad strategy to BLOW UP your business. (After Andromeda, Clothing Niche), 2026-01-31
-Last touched: 2026-08-19
+**Two implementation notes for the pull-and-remove half of this claim, both added 2026-09-05.**
+
+**Removing a product from Shopping without delisting it: the excluded_destination attribute.** Applied through a supplemental feed keyed on item ID, it takes a product out of Shopping ads and Display ads while leaving it live in free listings, and multiple channels are comma-separated in the one cell. That is the mechanism for the removal this claim prescribes, and for the ordinary case of a gift card that should never enter a Shopping auction at all.
+
+**Getting the per-product funnel data this claim depends on.** Shopify does not expose add-to-carts per product natively; its reports carry add-to-cart rates and ratios but no product-level count. The route is a GA4 Explore free-form report with **item ID and item name as rows and "items added to cart" as the metric**. That gives the layer between spend by product and purchase by product, which is what tells you whether a high-spending product is failing at the page or at the checkout. Useful against the site-level checkout funnel benchmark at [[Marketing Math & Unit Economics#MM-192|MM-192]], which cannot localise where the drop happens.
+
+Sources: Professor Charley T, Copy this Meta Ad strategy to BLOW UP your business. (After Andromeda, Clothing Niche), 2026-01-31; Blue Sense Digital, [excluded_destination] Attribute in Google Merchant Center NEXT Explained, 2025-02-12; Blue Sense Digital, ADD TO CART Report in Google Analytics, 2025-02-03
+Last touched: 2026-09-05
 
 ### GP-037 · Get Merchant Center disapprovals under roughly 5% and Shopping performance rises 10-30% immediately, because feed quality feeds a per-listing quality score.
 Tier: T3 · Status: active
@@ -345,3 +357,30 @@ Google is modifying Merchant Center performance reports to align reporting defin
 **Read quality.** The changelog entry was read; the linked detail page returned HTTP 404 to a direct fetch, so the exact metric-by-metric mapping has not been read and is not stated here. Do not describe the change more precisely than this entry does until that page is read.
 Sources: Google Merchant Center announcements changelog, entry dated 2026-08-11, read 2026-08-31
 Last touched: 2026-08-31
+
+### GP-044 · A new standard Shopping campaign on a new account does not spend for weeks, and the only diagnostic that matters during the ramp is whether daily impressions are DOUBLING
+Tier: T3 · Status: active
+The reported shape: 2 to 4 impressions a day at the start, then from roughly day three or four the count doubles daily, 4 to 8 to 16 to 32 to 64, while spend sits near a dollar a day for the first two to three weeks and then ramps quickly to full budget. **The campaign is not broken and the products are not the problem.** The single thing to watch is the doubling. If impressions stop doubling, that is the moment to troubleshoot; before that there is nothing to diagnose.
+
+**Two operating rules ship with it.**
+- **Do not touch the feed during the ramp.** Changing titles, descriptions or landing pages inside the three to four week window restarts the process. He reports his own brands taking 8 to 10 weeks because he kept tweaking titles to try to speed it up, which is a self-inflicted delay. This is the same learning-reset warning [[Google PMax & Shopping#GP-014|GP-014]] attaches to bulk title rollouts, arriving at a different moment in the account's life.
+- **Bid so the campaign is allowed to spend.** On a genuinely new account target ROAS is unavailable, so run Maximize Clicks with **no maximum bid set**, accepting early wasted spend as the price of the ramp happening at all. Where target ROAS is available, set it at 50%; anything higher and the campaign will not spend and the impressions will not double. That is a third position on the contested cold start at [[Google Auction & Smart Bidding#GA-036|GA-036]] and it sits inside the buy-volume-first window at [[Google Auction & Smart Bidding#GA-035|GA-035]]. Note the 50% figure is the same number [[Google PMax & Shopping#GP-008|GP-008]] uses for the feeder campaign, from the same operator, so it is one number used twice rather than two independent findings.
+
+**The stated cause is hearsay and is not banked as fact.** He attributes the hold to a fraud-prevention mechanism on new Merchant Center and new Google Ads accounts, sourced to "what I've been told by Google reps over the course of the last few years". No documentation, no policy page, no support article. Carry the observable ramp and the operating rules; do not repeat the fraud explanation to a client as Google's position. Same evidence problem as the rep-sourced causal reading at [[Google Auction & Smart Bidding#GA-065|GA-065]].
+Sources: Blue Sense Digital, Why Your New Google Shopping Campaign Isn't Spending, 2025-03-19
+Last touched: 2026-09-05
+
+### GP-045 · Google matches submitted product reviews to products by GTIN, not by review ID, so a missing barcode value silently disapproves the whole review feed and no stars ever appear
+Tier: T3 · Status: active
+Star ratings on Shopping listings come from a separate review feed, usually an XML URL generated by a third-party review app, submitted under product reviews in Merchant Center. **The failure mode worth knowing is silent: the feed connects, the reviews import and show in Merchant Center, and then every one of them is disapproved and nothing reaches the listings.** The cause he names is the matching key. Google matches a submitted review to a product on the **GTIN**, the 11 to 14 digit barcode value, not on any review identifier. A store that never filled in the barcode field in Shopify, or filled it with something that is not a valid GTIN, has a review feed that cannot bind to anything.
+
+Three timing and threshold facts that stop a healthy setup being misread as a fault:
+- The product ratings add-on is gated behind a short form and takes roughly 15 minutes to approve.
+- A stated minimum of about 50 reviews before the feed is worth submitting.
+- **The feed's status takes two to three weeks to turn active, entirely on Google's schedule.** Absence of stars inside that window is not a problem to fix.
+
+Why this belongs beside the feed-quality work rather than in a tooling note: [[Google PMax & Shopping#GP-037|GP-037]] holds that pushing Merchant Center disapprovals under roughly 5% lifts Shopping performance 10 to 30%, and this is a disapproval source that lives in a **different feed** from the product feed most audits check. The star rating is also the one listing element that differentiates on the results page besides the image, which [[Google PMax & Shopping#GP-015|GP-015]] puts at roughly 70% of the listing's real estate.
+
+Live platform walkthrough with the Merchant Center help document linked in the source. The GTIN matching rule is his statement rather than a quoted line of documentation, so confirm against Google's own page before relying on it in a client diagnosis.
+Sources: Blue Sense Digital, Reviews Feed Setup in Google Merchant Center Next using 3rd Party Review Aggregator, 2025-01-24
+Last touched: 2026-09-05

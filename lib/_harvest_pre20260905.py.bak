@@ -187,26 +187,13 @@ def run(mode, days, only_channel, max_per_channel):
     cutoff = datetime.now() - timedelta(days=days)
     summary = {"mode": mode, "started": datetime.now().isoformat(timespec="seconds"),
                "new_transcripts": [], "skipped_short": 0, "no_subs": 0,
-               "out_of_window": 0, "errors": [], "rss_fallback": [],
-               "per_channel": {}}
+               "out_of_window": 0, "errors": [], "per_channel": {}}
     tmpdir = tempfile.mkdtemp(prefix="adsci-")
     for ch in channels:
         got = 0
         try:
             if mode == "daily":
-                # RSS first (cheap). YouTube's feeds/videos.xml endpoint began
-                # returning 404/500 for every channel on 2026-09-05, including
-                # YouTube's own channel, so fall back to the /videos tab, which
-                # yt-dlp still lists fine. Fallback use is recorded in the
-                # summary so a run log can never call an RSS outage a quiet day.
-                try:
-                    id_lists = [rss_ids(ch["channel_id"])]
-                except Exception as rss_err:
-                    ids = tab_ids(ch, 15)
-                    if not ids:
-                        raise
-                    id_lists = [ids]
-                    summary["rss_fallback"].append(f"{ch['slug']}: {rss_err}")
+                id_lists = [rss_ids(ch["channel_id"])]
             else:
                 id_lists = [tab_ids(ch, max_per_channel)]
                 if ch.get("include_streams"):
