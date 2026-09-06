@@ -9,6 +9,18 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-06 (research run)
+
+**Quiet day, and a real one. 0 new transcripts, 0 claims banked, 0 amended, 0 contested, no law changed. Codex unchanged at 1,169.** Harvest read **12 of 12 channels on the first RSS attempt, 0 errors, 0 fallbacks**, so this is a genuinely empty inbox and not the 2026-08-29 under-report. 6 new videos found, all 6 under the 150-second floor, all correctly skipped as Shorts. Transcript backlog stays at **0 unextracted of 447**.
+
+**Watchlist: 0 new on every readable source, 0 fetch errors.** Meta Engineering 200, 9 in feed, 0 new (build Wed 2 Sep). Meta Newsroom 200, 10 in feed, 0 new (build Fri 4 Sep). Google Ads and Commerce 200, 20 in feed, 0 new (build Wed 2 Sep). Google Ads Announcements 200, 2,350 lines both sides, 1 added and 1 removed and both are numeric page nonces, the same artefact again. TikTok SDK changelog 200, unchanged at v0.1.8; the three geo-blocked TikTok sources were not retried, so **TikTok policy and creative stay unmonitored rather than clean**. arXiv served the empty weekend build again, 0 items, `lastBuildDate` Sat 5 Sep 04:00 UTC with `skipDays` naming Saturday and Sunday, which is the documented Sunday case and not a fault. Weekly Monday sources correctly skipped.
+
+**Meta for Business News rotated five slugs and the rotation trap was checked, not assumed. Zero new, fifth consecutive confirmation.** Five slugs left the listing and five arrived versus yesterday's set, and every incoming card is dated **2024 or older**: 17 June 2024, 28 February 2023, 29 July 2022, 6 July 2022, 20 May 2022. Newest post on this source is still **11 June 2026**. Cache written by hand and read back, per the 2026-09-05 method note.
+
+**Operational finding: this source does not need a browser, it needs a renderer.** All three Playwright profiles failed to connect this session, and **WebFetch returned the full 12-card listing on the first try** where plain curl returned HTTP 400 for the eighth consecutive run. From our India egress the page renders in Hindi, and the card dates stay in Latin digits, so the read-the-date method is unaffected. `Watchlist.md` said BROWSER REQUIRED; the cheaper route is now on file.
+
+**Gaps, all carried.** The launcher still cannot tell an auth failure from a quiet day, sixth run carried. With the backlog at zero the engine's claim volume is capped by a daily inbox running at roughly 0 to 2 files, and today it was 0. The five never-opened account instruments are unchanged: Audience Segments breakdown, the attribution comparison at AT-082 and AT-098, the CPM matched pair at MD-118, the SC-133 CBO-with-floors comparison, and LS-074 and LS-075 on the cost of a qualification gate.
+
 ## 2026-09-05 (teacher run)
 
 **Lesson 017 shipped: A Spend Floor Is a Share, Not a Dollar, video yes** (Friday). Inbox empty for the **seventeenth** consecutive run, so no grading and no measured weak spot to steer on.
