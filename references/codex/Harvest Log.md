@@ -46,7 +46,7 @@ Weekly (Monday) sources, all seven fetched:
 
 **Law layer: unchanged.** GA-072 is T1 but it governs API access for tooling, not delivery, so no law moved. It is added to the timely watch items in SKILL.md with the 7 October date.
 
-**Codex now 1,170 claim entries across 11 topic files** (93 T1, 117 T2, 804 T3, 156 T4; 1,064 active, 100 contested, 5 superseded, 1 refuted). Both breakdowns sum to 1,170 exactly. Up from 1,169 before this run.
+**Codex now 1,171 claim entries across 11 topic files** (93 T1, 118 T2, 804 T3, 156 T4; 1,065 active, 100 contested, 5 superseded, 1 refuted). Both breakdowns sum to 1,171 exactly. Two of today's entries are this run's GA-072 and the teacher lane's MM-211, which landed in the working tree mid-run.
 
 **Gaps unchanged and worth restating because none of them needs another transcript.** The Audience Segments breakdown has still never been opened on ChiroWorks, Chiropraise, Phoenix Truxx or SJR Commercial, and this is the sixth consecutive pass to name it. The attribution comparison at AT-082 and AT-098 is still unopened. TikTok remains a permanent India geo-block with only the endpoint-level SDK changelog readable. Google evidence on the roster is still assertion with no shown account data.
 
