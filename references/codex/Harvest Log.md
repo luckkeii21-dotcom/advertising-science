@@ -9,6 +9,63 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-07 (research run)
+
+**Quiet on YouTube, one claim from the weekly lane. Harvest 0 new transcripts, all 12 channels listed clean, 0 errors. Backlog is 0: all 447 transcripts on file are flagged extracted.** 5 videos skipped under the 150-second floor, 2 had no subtitles. This is a trustworthy zero, unlike 2026-08-29 where 8 of 12 channels silently failed to list.
+
+**Banked 1 claim: GA-072, T1.** Google renamed the Google Ads API Policy to the Google Ads Developer Policies and now requires every integration to "connect directly to Google Ads services using their own dedicated Google Cloud project", ending the shared "programmatic proxy" architecture. **No effective date is published**; enforcement is a review already running, and Google contacts the tool's developer rather than the advertiser. **The exposure is ours in a specific way: our Google Ads reporting reaches client accounts through hosted connectors we do not operate, so the first symptom would be a connector going dark mid-week rather than a policy email.** Companion dated deadline in the same claim: **Google Ads API v22 stops answering on 7 October 2026**, checkable in the Cloud Console under APIs and Services, Google Ads API, Metrics, where the Methods table prints the version inside each method name. Both posts read in full. T1 for what the rule is and for the dates only; nothing in either post measures anything and no integration has been reported cut off.
+
+**Watchlist: every readable source fetched, 0 errors, 0 new anywhere except the developer blog above.**
+
+| Source | Result |
+|---|---|
+| Meta Engineering RSS | 200, 9 in feed, 0 new (build Wed 02 Sep) |
+| Meta Newsroom RSS | 200, 10 in feed, 0 new (build Fri 04 Sep) |
+| Google Ads & Commerce RSS | 200, 20 in feed, 0 new (build Wed 02 Sep) |
+| arXiv cs.IR | 200, 27 in feed, 23 new links, 1 passed the ad filter, **0 banked** (false positive, below) |
+| TikTok SDK changelog | 200, top version 0.1.8, unchanged |
+| Google Ads Announcements | 200, 2350 lines both sides, 1 added / 1 removed, **per-response nonce, not content** |
+| Meta for Business News | 12 cards, **card set identical to yesterday**, newest still 11 June 2026 |
+
+Weekly (Monday) sources, all seven fetched:
+
+- **Ads Developer Blog: two new posts since the 2026-08-31 check**, both read in full and banked as GA-072.
+- Marketing API changelog: no change, v26.0 of 29 July 2026 is still newest. **The index under-rendered to v25.0 for the third time.** Artefact, not a rollback.
+- Google Ads API release notes: no change, v25.1 of 19 August 2026, already banked.
+- Merchant Center changelog: no change, newest is still the 11 August 2026 reporting-definitions entry banked as GP-043.
+- AI at Meta blog: no change, newest 27 July 2026, zero ads-ranking or delivery content.
+- **Meta Advertising Standards: structure unchanged, body not diffable.** All 16 baseline headings present in order. "Health and Wellness" and "Privacy Violations and Personal Attributes" both confirmed present. Page still carries no date marker anywhere. Not logged as clean.
+- **TikTok browser check skipped: the `playwright`, `playwright-arcads` and `playwright-higgsfield` MCP profiles all failed to connect (CONNECT_TIMEOUT).** The three geo-blocked sources were not retried, per the standing rule. Only the SDK changelog was read, so TikTok policy and creative news is unmonitored today.
+
+**Three method findings, all of them corrections to our own instructions rather than platform news.**
+
+- ⚠ **The "Monday always reads an empty arXiv feed" rule is wrong as written, and it is about run time.** Today is a Monday and the feed carried **27 items** with `lastBuildDate` Mon 07 Sep 04:00:12 UTC, because this run fired at 05:25 UTC. The correct statement: a run **before** 04:00 UTC reads yesterday's build, a run **after** reads today's. Empty results are Saturday and Sunday at any hour, plus Monday before 04:00 UTC. Watchlist.md corrected.
+- **The arXiv filter has a second false-positive term, `sponsored`.** It fired on arXiv 2609.05063, a complementary-product retrieval system for organic discovery at Allegro, on the last clause of the abstract: "drives substantial revenue growth in sponsored placements". No auction, no bidding, no ad ranking anywhere in the method. **Same shape as the `CTR prediction` failure (2026-08-26) and the `HubMixer` framing-sentence failure (2026-08-31): the advertising term appears once, in framing or in an outcome clause, never in the method.** The fix is a co-occurrence requirement or a rule discounting a lone hit confined to the first or last sentence.
+- **WebFetch returns the Google Ads Developer Blog chrome without the article body**, second occurrence after 2026-08-31, where it cost GA-069 its primary source. **Plain urllib plus a `post-body` regex returned both posts in full on the first attempt.** Use WebFetch for index and archive pages, urllib for bodies. Recorded in Watchlist.md.
+- **One false positive caught and not banked:** the Advertising Standards page returned 17 headings against a baseline of 16. The extra entry, "Introduction to the Advertising Standards", is the page H1 sitting under the breadcrumb, confirmed on a second fetch. The baseline file now records it so a future run does not fire on it.
+
+**Law layer: unchanged.** GA-072 is T1 but it governs API access for tooling, not delivery, so no law moved. It is added to the timely watch items in SKILL.md with the 7 October date.
+
+**Codex now 1,170 claim entries across 11 topic files** (93 T1, 117 T2, 804 T3, 156 T4; 1,064 active, 100 contested, 5 superseded, 1 refuted). Both breakdowns sum to 1,170 exactly. Up from 1,169 before this run.
+
+**Gaps unchanged and worth restating because none of them needs another transcript.** The Audience Segments breakdown has still never been opened on ChiroWorks, Chiropraise, Phoenix Truxx or SJR Commercial, and this is the sixth consecutive pass to name it. The attribution comparison at AT-082 and AT-098 is still unopened. TikTok remains a permanent India geo-block with only the endpoint-level SDK changelog readable. Google evidence on the roster is still assertion with no shown account data.
+
+## 2026-09-06 (teacher run)
+
+**Lesson 018 shipped: The Contact Landed and Nobody Came, video no** (Sunday, so not a video day). Inbox empty for the **eighteenth** consecutive run, so no grading and no measured weak spot to steer on.
+
+**Taught from the queue, because today's harvest was a real quiet day and banked nothing.** AT-114 was queued second by the 2026-09-05 teacher pass. Chosen over MM-018's markup convention because AT-114 lands on a build MetaTechAI is shipping this week, and over MM-204 which still has no honest local-service translation. The topic is Attribution & Incrementality, which is the rotation pointer's own topic, so the pointer advanced **5 to 6** under the exception first used 2026-08-27. Third lesson on this topic.
+
+**The lanes did not collide for the second consecutive day.** Research finished 07:05, this run started 08:00.
+
+**The teaching pass widened the claim and corrected three of our own records.** AT-114 was banked from a source whose failure mode is a **lost submission** through a hidden native form. Our own architecture (coded form to a Cloudflare Worker to the GHL Contacts API) removes that browser-side failure entirely, and moves the failure to a **lost TAG**, which is worse: the contact still upserts, the CRM looks healthy, the contact count matches the ad account's opt-in count, and nothing calls the person, because in these platforms the tag is the workflow trigger. AT-114 amended with the second architecture, the audit, and the stronger operating rule. `Last touched` moved to 2026-09-06.
+
+**⚠ Account finding, six records and six different states, on our only coded-form build.** Mattia ran two coded landing pages. The shockwave page has one confirmed end-to-end test on file. **The spinal-decompression page, which was a live Google Ads Final URL, has none.** The deployed page points at the Worker (line 1247) and declares `funnel: 'spinal-decompression'` (line 1534); the Worker routes that to a **different tag set, `sd-lead`, not `sw-lead`**; that Worker change is **UNCOMMITTED**, 14 insertions loose in a working tree whose three repo commits are all dated 2026-07-07; the only workflow instruction on file names `sw-lead` and **never mentions `sd-lead`**; the vault relay note still said "Pending"; and `_HOT.md` said closed by the churn, meaning never done. **The deployed state is unreadable from the record**, because `wrangler deploy` ships the working tree without a commit. Reported as unknown rather than broken, which is what the evidence supports.
+
+**Vault corrections made this run:** the Mattia relay note's stale Pending block replaced with what the files actually show (it also proposed a `dc-lead` tag that was never used); the `_HOT.md` closed-by-churn list corrected and the go-live gate added to the carry-forward list; and a **Go-live gate section added to the reusable playbook** `Free GHL Lead Relay (Cloudflare Worker)`, which is the note MetaTechAI's landing page will be built from. That gate is the transferable output of this lesson: confirm the submission in the platform's own record AND confirm the tag on it is the one the workflow triggers on, test the page you are buying traffic to rather than its sibling, keep one tag name across code and workflow doc, and commit before deploying.
+
+**Gaps carried.** The launcher still cannot tell an auth failure from a quiet day, sixth run. The watchdog still has no teacher relaunch path. The stale `index.lock` in the parent workspace repo is now four days old and still untouched, for the same reason as yesterday.
+
 ## 2026-09-06 (research run)
 
 **Quiet day, and a real one. 0 new transcripts, 0 claims banked, 0 amended, 0 contested, no law changed. Codex unchanged at 1,169.** Harvest read **12 of 12 channels on the first RSS attempt, 0 errors, 0 fallbacks**, so this is a genuinely empty inbox and not the 2026-08-29 under-report. 6 new videos found, all 6 under the 150-second floor, all correctly skipped as Shorts. Transcript backlog stays at **0 unextracted of 447**.

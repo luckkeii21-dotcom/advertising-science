@@ -292,8 +292,9 @@ Last touched: 2026-08-19
 ### GA-030 · Google attributes conversions to the CLICK date, not the purchase date, so the last 3-4 days of any Google report always look bad
 Tier: T3 · Status: active
 Timeline given: a click on the 1st, another click on the 3rd, a purchase on the 7th. Most platforms record the conversion on the 7th. Google backdates it to the click. The result is a structural, universal artefact: any trailing 3 to 7 day window shows depressed ROAS that fills in later. Beginners misread it as a real performance collapse and act on it. The remedy is the "conversions by conversion time" column, added as a custom column. This is the first of three checks he requires before any diagnostic work, alongside checking change history and extending the time horizon. Direct consequence for any weekly reporting cadence that pulls a trailing window on Google: the most recent days are always understated and must be labelled as incomplete. ASSERTED, and consistent with documented Google attribution behaviour, though no platform doc was cited in the transcript.
+Extended 2026-09-07 to the back end, where we still have live accounts and Google no longer runs any. The same two-clock split appears one step down the funnel and is MEASURED on our own book at [[Marketing Math & Unit Economics#MM-211|MM-211]]: a CRM files an appointment on the day it was BOOKED, the show or no-show is decided on the day of the VISIT, and on a ChiroWorks 9-day window the two clocks select different people. The remedy has the same shape as the conversion-time column, name the clock in the query, and it needs one extra condition Google's column does not: the window has to have closed at least one full booking-to-visit lag before the rate is computed.
 Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15
-Last touched: 2026-08-18
+Last touched: 2026-09-07
 
 ### GA-031 · Using GA4 events as the primary conversion action loses roughly 10-15% of conversions versus a direct Google Ads snippet
 Tier: T3 · Status: active
@@ -543,3 +544,21 @@ A question this operator reports receiving from clients for over three years, wi
 **One figure in the source is unsourced and should not be repeated:** he says Google optimises against "60 million plus different psychographic data points". No documentation is cited and nothing supports the number. The mechanism in point 1 is likewise asserted with no documentation. What is documented about auction-time signals is the list at [[Google Auction & Smart Bidding#GA-002|GA-002]], which is the safe thing to quote instead.
 Sources: Blue Sense Digital, Why Am I Not Seeing My Google Ads?, 2025-01-22
 Last touched: 2026-09-05
+
+### GA-072 · Google now requires every integration to call the Ads API directly from its own Google Cloud project, and "programmatic proxies" are being reviewed out
+Tier: T1, Google Ads Developer Blog · Status: active
+A platform-side change to who is allowed to touch a Google Ads account through the API. It decides nothing about auction behaviour and it can silently cut off the tools we read accounts with, which is why it is banked.
+
+**What Google states.** The Google Ads API Policy is renamed the Google Ads Developer Policies, and the operative sentence is: "Historically, some integrations have relied on programmatic proxies, which bypass the verifiable and secure interface between end-users and Google. To help protect advertising partners against fraud and security risks, integrations now need to connect directly to Google Ads services using their own dedicated Google Cloud project."
+
+**Two named reasons, both about the proxy operator rather than the advertiser.** Security: "Using unaudited proxies can provide unauthorized actors access to your account. They also introduce the risk of cross-tenant data leaks." Throughput: "High-volume traffic routed through a single proxy can throttle throughput, cause latency across all users, and require enforcement across all users of a proxy when mitigating localized Denial of Service."
+
+**No effective date is given anywhere in the post.** Enforcement is described as a review already under way: "the Ads API Compliance team is actively reviewing existing integrations", and Google says it will contact affected developers directly from a `google.com` domain. So the deadline is per-integration and arrives as an email to the tool's developer, not to us.
+
+**Why it matters here rather than in a developer changelog.** A shared-proxy architecture is exactly how a hosted third-party connector reaches many advertisers' accounts on one set of credentials. Our own Google Ads reporting reaches accounts through hosted connectors we do not operate. If one of them is on a shared proxy, its access can be pulled with no notice reaching us, and the failure shows up as a reporting outage on a client Friday rather than as a policy event. The cheap preparatory move is the same one GA-062 and MD-149 both point at: confirm the connector's access model before it breaks, not after.
+
+**Companion deadline, dated and from the same source lane.** Google Ads API **v22 sunsets on 7 October 2026**, verbatim: "Starting on this date, all v22 API requests will begin to fail." Google's stated way to check exposure is the Cloud Console, APIs and Services, Google Ads API, Metrics subtab, where the Methods table prints the version inside each method name, for example `google.ads.googleads.v22.services.GoogleAdsService.Mutate`. Current version is v25.1, released 19 August 2026 (GA-062 lane).
+
+**The honest limit.** This is product and policy copy, so it is T1 for what the rule IS and for the dates. Nothing in it measures anything, and no operator has reported an integration actually being cut off. Do not present it to a client as an outage that has happened.
+Sources: Google Ads Developer Blog, "Making Google Ads More Secure with Updates to Developer Policies", 2026-08-31, read in full 2026-09-07; Google Ads Developer Blog, "Google Ads API v22 sunset reminder", 2026-09-02, read in full 2026-09-07
+Last touched: 2026-09-07

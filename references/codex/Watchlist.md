@@ -100,3 +100,47 @@ Two watchlist sources are weaker than the table above implies, and both were fou
 
 - **Meta Advertising Standards has no cached baseline.** Plain fetch returns HTTP 400, the page displays no last-updated or effective date, and no text snapshot has ever been saved. So the lane can report the page's structure and genuinely cannot detect a silent rewrite. This matters because our chiropractic accounts, ChiroWorks and Chiropraise, depend on the health and personal-attributes sections. *(Count corrected 2026-08-27 from "four": Mattia was offboarded 2026-07-24.)* **Do not log this source as clean.** Fix: add a WebFetch-based snapshot step so future runs have something to diff.
 - **The Marketing API changelog index under-renders.** On 2026-08-24 it showed only through v25.0; v26.0 (29 July 2026) had to be confirmed from the Graph API changelog and the v26.0 detail page. A future run reporting "newest is v25.0" from the index alone is seeing a rendering artefact, not a rollback.
+
+### The "Monday is always empty" rule is about RUN TIME, not about Monday (corrected 2026-09-07)
+
+The note above says a Monday run always reads Sunday's empty build. That is true only for a run
+that fires **before 04:00 UTC**, which the scheduled 07:00 IST task does.
+
+Observed 2026-09-07 (a Monday) at **05:25 UTC**, after that morning's rebuild: the feed carried
+**27 items**, `lastBuildDate` **Mon, 07 Sep 2026 04:00:12 +0000**, 23 of them not previously seen.
+So arXiv **does** announce on Monday, and Monday's 04:00 UTC build carries it.
+
+Corrected statement of the whole lag: **a run before 04:00 UTC reads yesterday's build; a run after
+04:00 UTC reads today's.** Combined with `<skipDays>` Saturday and Sunday, the empty results are:
+a Saturday or Sunday run at any hour, and a Monday run before 04:00 UTC. **A Monday run after
+04:00 UTC is a normal, full read.** Do not log it as "feed empty, weekend build" without checking
+`lastBuildDate` against the clock.
+
+### arXiv filter: "sponsored" is the second false-positive term (found 2026-09-07)
+
+`sponsored` sits on the bank list and fired on arXiv 2609.05063, *Beyond Co-purchase Relation:
+Evolution of Complementary Recommendations at Allegro*. The paper is a complementary-product
+retrieval system for organic discovery at an e-commerce marketplace. It has no auction, no bidding,
+no ad ranking and no advertising mechanism. The single trigger is the last clause of the abstract,
+where sponsored placements appear as a **downstream revenue beneficiary**: "delivers significant
+uplifts in attributed GMV for organic discovery and drives substantial revenue growth in sponsored
+placements."
+
+This is the same shape as the two failures already recorded: `CTR prediction` firing on a pure
+recsys paper (2026-08-26) and `HubMixer` passing on an advertising mention inside a framing
+sentence (2026-08-31). **The pattern across all three is that the advertising term appears once, in
+framing or in an outcome clause, never in the method.** The filter needs a rule that discounts a
+single bank-list hit confined to the first or last sentence of an abstract, or a co-occurrence
+requirement of two distinct bank terms. Until that ships, expect roughly one false positive a week
+and read the abstract before banking.
+
+### Google Ads Developer Blog: WebFetch returns the chrome without the article body
+
+Second occurrence, after 2026-08-31. WebFetch on a post permalink returns the blog header, sharing
+buttons, labels, archive nav and footer, and **no post body**. On 2026-08-31 that cost GA-069 its
+primary source and the substance had to come from the help centre.
+
+**The working route is a plain urllib fetch plus a `post-body` div regex**, which returned both
+2026-09-07 posts in full on the first attempt. Use it whenever a post's substance is needed. The
+index and archive pages render fine through WebFetch, so use WebFetch for titles and dates and
+urllib for bodies.

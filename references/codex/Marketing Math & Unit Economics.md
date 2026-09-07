@@ -1254,6 +1254,26 @@ He does not compute the rates. They are 0.3% against 9.4%, roughly 31x. The oper
 Sources: Dr. Matt Shiver, Two 7-Figure Coaches Compare Their Skool Funnels, 2026-06-11
 Last touched: 2026-08-21
 
+### MM-211 · An outcome rate needs THREE dates and our reports carry one: on ChiroWorks' 2026-08-08 to 2026-08-16 window, the booking clock and the visit clock select different people and only one person appears on both
+Tier: T2 · Status: active
+MEASURED from our own filed report `clients/ChiroWorks/reports/report-2026-08-16.md`, a 9-day window. Three appointments are on file and each sits differently against that one window. Ivorie: booked in a PRIOR window, visit 10 Aug, inside. Leondra: booked 10 Aug, visit 12 Aug, both inside. Courtney: booked 14 Aug, visit 21 Aug, booking inside and the visit **5 days after the window closed**. On the booking clock the window holds Leondra and Courtney. On the visit clock it holds Leondra and Ivorie. Two each way, one person in both. The report headlines "2 appointments booked in-window", which is the booking clock and correct on it.
+
+MEASURED booking-to-visit lag, from the only two records carrying both dates: **2 days and 7 days**. Two data points, so this is the order of magnitude and not a distribution. A 7-day lag beginning on day 7 of a 7-day window cannot resolve inside it, which is [[Attribution & Incrementality#AT-095|AT-095]]'s shape moved onto the back end.
+
+A SECOND and independent cause of the same blank cell, and the two must never be merged: **"No ChiroWorks appointment has ever been marked showed/no-show"**, the report's own words. Leondra's visit sat fully inside the window with four days to spare and still produces nothing. One blank is cured by waiting, the other is cured by somebody marking a calendar, and a report that reads them as one number learns neither.
+
+The instrument defect this exposes, and it is ours. `weekly-client-reports/RUNBOOK.md` named the clock for one query and not the next: "Opportunities **created** in window" against "**Appointments in window** ... Show rate = showed ÷ booked × 100". "In window" is not a clock. **The rate that decides a renewal was computed off the one line in the SOP that never said which date it meant.** Corrected 2026-09-07 to two explicit clocks with the maturity condition attached.
+
+The permission that ambiguity granted, MEASURED across one run. The 2026-08-27 reports, same script, same day: SJR Commercial wrote "4 appointments booked, 0 marked shown, show rate not yet measurable"; Phoenix Truxx wrote "Show rate not computable"; StayWell published a KPI row reading "Show rate | 0% | 0% | flat, the standing wall" on a single cancelled appointment, directly beneath "Reached appointment stage | 3" whose outcomes had not occurred. All three are arithmetically defensible. Two make a claim weaker than their data and one makes a claim stronger, and the strong one is a manufactured trend that later gets argued about as lead quality.
+
+Operating rule: **an outcome rate is readable only when the window closed at least one full event-to-outcome lag ago; until then publish the two counts and the two dates, never the percentage.** Name the clock in every query. Report bookings on the booking clock and shows on the visit clock as separate rows.
+
+Scope and limits. Four accounts, one of them (Phoenix Truxx) with zero appointments logged for eleven straight weeks so it contributes only the treatment comparison. The lag figure rests on two records from one clinic and must not be carried to another account. Nothing here measures how large the distortion is in general; it establishes that the sign is always the same, understatement, and that our SOP could not distinguish the two causes.
+
+This is the back-end form of [[Google Auction & Smart Bidding#GA-030|GA-030]] (Google files a conversion on the click date) and the funnel form of [[Attribution & Incrementality#AT-068|AT-068]] (a period-end report reads its most incomplete days as final). Law 11a carries AT-068 at the ad platform and stops there. [[Marketing Math & Unit Economics#MM-160|MM-160]] holds the show-rate benchmarks this rate would be graded against, which is why the clock has to be settled before any of them can be used.
+Sources: EvrythingAI filed reports, ChiroWorks 2026-08-16 and SJR Commercial / Phoenix Truxx / Chiropraise 2026-08-27; `.claude/skills/weekly-client-reports/RUNBOOK.md` lines 83-84 as written before 2026-09-07
+Last touched: 2026-09-07
+
 ## Team and Org Economics
 
 ### MM-054 · One full-time closer per $50-100k of monthly revenue; part-time closers fail because their incentive is to take calls, not work the pipeline
