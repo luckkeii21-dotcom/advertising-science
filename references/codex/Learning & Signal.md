@@ -660,3 +660,11 @@ The cleanest statement of optimisation-event control on file, because the operat
 One operator, his own funnel, shown on screen. No comparison against the same funnel without the gate.
 Sources: Dr. Matt Shiver, How I Used Skool to Build a 7-Figure Coaching Business (Full Breakdown), 2026-04-28
 Last touched: 2026-09-03
+
+### LS-076 - Meta shipped a personal AI agent and stated in the launch post that its conversations and data do not reach the ad systems, so the largest new Meta surface of 2026 supplies no targeting signal
+Tier: T1 · Status: active
+Meta Newsroom, 2026-09-08, launching Muse. The whole claim is one sentence in the post: **"Muse doesn't share a person's conversations or the data in their VM with Meta's ad systems."** The post carries no other advertising content, no ad product, no placement and no advertiser-facing feature.
+**Why a negative is worth an ID.** Every claim in this file about signal supply assumes new Meta surfaces eventually become both inventory and input. This is Meta drawing that boundary explicitly at launch on a surface designed to hold long personal conversations, which would be the richest intent data the company has ever collected. It is the counterexample to the assumption, and it is the kind of statement that gets quietly revised, so it is banked with its date attached so a future change is visible as a change rather than read as new information.
+**What it does not say, and the limits are the useful part.** It says nothing about whether Muse becomes an ad placement later, nothing about aggregate or derived signals, and nothing about any other Meta AI surface. **A stated policy at launch is not an architecture.** Treat this as a dated commitment to check again, never as a permanent property of the system, and never quote it to a client as a privacy guarantee.
+Sources: Meta Newsroom, Introducing Muse: The World's First Personal AI Agent Built for Everyone, 2026-09-08
+Last touched: 2026-09-09
