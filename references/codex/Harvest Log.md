@@ -9,6 +9,65 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-10 (research run)
+
+**2 new transcripts, both read in full. 3 claims added, 4 amended, 3 hot-layer laws amended, 1 watchlist ceiling broken, 0 unreadable sources.** Backlog 0 going in and **0 going out**; 452 transcripts on file, all flagged extracted.
+
+### The one thing to act on: duplicate count is not a winner signal, and we have been treating it as one
+
+**Our own winning-ad definition takes an ad that is kept active AND duplicated as confirmation. Half of that is wrong (CR-206, amended).** Nick Theriot names the other reasons an advertiser duplicates an ad: "it's like usually ads that are like constantly getting banned or not necessarily banned, but they're turned off or you can duplicate to other campaigns for other countries... There's a reason why it keeps getting duplicated... So, there could have some like negative drawbacks to it."
+
+**So a high duplicate count has at least three causes and only one is a win.** The ad performed and was cloned to scale. The ad was disapproved or switched off and was relaunched. The ad was cloned sideways into another country or campaign, where it proves nothing about this one. **From outside an account the three are indistinguishable.** Kept-active survives untouched. Duplication now needs a companion signal, spend rank or growth direction, or it should not be read at all. Theriot's own selection in the video is the ad that is "rising really good right now, and it's top 18%", not the most-duplicated one.
+
+**Same operator supplies a second source for a correction this codex already held (CR-190):** "even though it's been active for a really long time, it doesn't mean it's top performing." His separator is an ordinal spend rank inside the advertiser's account rather than an impression count, and he gives it in plain terms: 1 of 97 is "taking majority of all of the spend", 57 of 97 is mid-pack, "if it's 83 or 94 out of 97, it's like it's barely getting any spend." **Two operators, two different instruments, one conclusion: runtime alone was never a winner signal.**
+
+**Provenance flag that now applies to the whole competitor-research lane.** Every operator on this roster teaching competitor research is demonstrating a paid tool. Cottrell ran a vendor demo with a paid link (CR-206). Theriot states his conflict on camera, "Yes, I am technically sponsored by Trend Track", and gives a discount code. Piliero sells the workflow at CR-209. **Three operators, three paid instruments, and nobody has validated a single estimated spend, rank or revenue figure against an account whose real numbers are known.** Bank the methods, never the estimates.
+
+### Placement control: the account-level lever is three placements, and the risk it protected against may not exist
+
+**Two additions to MD-150 and MD-151 from Jon Loomer's 2026-09-09 episode, plus one new claim.**
+
+**The surviving account-wide off switch covers exactly three things: Audience Network, Facebook Marketplace and Facebook right column.** Against 17 to 21 placements selectable in the ad set. **No feed, Reels or Stories placement can be switched off by any control that survives the change.** Loomer's own advice on the lever is not to use it.
+
+**The scope note now has a Meta-side origin and it is still T3.** "A contact within Meta's product team reached out to me to clarify that this will only apply to bottom of the funnel campaign objectives." An unnamed employee relayed second-hand is testimony, not documentation, so the tier does not move. It does make Sales-and-Leads-only the one part of the rollout story that did not come from an advertiser inference, and it is the part Ben Heath contradicts.
+
+**MD-152, new and it is the claim that decides whether any of this costs us money.** Loomer: "I've found that Meta doesn't even try to show ads on Audience Network when optimizing for conversions... Or if money is spent there, it's a very small percentage", and "there aren't any placements that are known to be sources of cheap and low-quality purchases. It's just not a thing." **He asserts it for purchases and hedges it twice for LEADS, which is our entire book:** "I have doubts whether a placement is a source of cheap and low-quality leads." He separates lead quality from placement explicitly.
+
+**⚠ ACCOUNT GAP, and it is cheap to close.** The instrument is a breakdown by placement on a live client account after meaningful results, and **we have never run one on any of our accounts.** The guard on reading it: share of spend, never conversion rate by placement. Loomer is blunt about the wrong version, "trying to micromanage placements by conversion rates... is a waste of time. Impressions have value, even when they don't lead to the highest conversion rate." That is the placement-level restatement of judge-at-the-level-that-holds-the-budget.
+
+**A third upper-funnel failure pairing was named:** the reach objective and the ads-on-Facebook-Reels placement, cheap with enormous inventory and "an easily ignored placement". With Audience Network for link clicks and landing-page views, and Audience Network Rewarded Video for ThruPlay, the pattern is one sentence: **Meta buys the cheapest inventory that technically satisfies the goal you named, so the fault is in the goal and not in the placement.**
+
+### Meta for Business News broke an eleven-check ceiling, and the finding is how the numbers are worded
+
+**First new post on this source since 11 June 2026: "Businesses driving results with Meta AI ads", 3 September 2026 (MD-153, new).** Five named advertisers across five different products.
+
+Underneat on Advantage+ Sales Campaigns, "a 13% incremental lift in purchases and 16% more add-to-cart conversions". Zanskar Health on Advantage+ Creative with generative AI, "64% lower cost per purchase". HubX on Partnership Ads with creators, "28% more incremental subscriptions and 23% lower cost per subscription". Movida on Meta Business Agent over WhatsApp, "a 54% increase in daily bookings through WhatsApp compared to the same period the prior year" and "85% of conversations are resolved instantly". General Motors on Omni for Automotive, "a 4.4% lift in vehicle sales".
+
+**The finding is the wording split.** Three of the five say *incremental* or *lift*, which is the language of a holdout. Two do not, and **Movida's is an explicit year-over-year comparison**, which carries every seasonal and market effect of a full year and is printed in the same register as a stated incremental lift. **Meta publishes no methodology, no test window, no holdout size and no absolute figures for any of the five.**
+
+**The rule this produces, and it generalises well past this page: before repeating any platform-published case-study number, find the word.** *Incremental* or *lift* means somebody at least claims a holdout. *Increase*, *more*, *lower cost*, *compared to last year* means a before-and-after, and a before-and-after is not evidence that the product caused anything. Promoted to the hot layer as law 11a.
+
+**One genuinely new product name, and it points at two of our clients: Omni for Automotive**, described as connecting digital ads to dealership sales. It appears nowhere else in this codex. **SJR Commercial and Phoenix Truxx are both vehicle dealerships.** Nothing on the page says the product is available to an independent dealer, and a General Motors deployment tells us nothing about whether it is. Watch item, not an action.
+
+### CR-231, new: after the teardown there are three places to differentiate and they are checked in order
+
+Format gap (a creative format none of them run that we execute well), then mechanism gap (what we can claim about the product that they cannot), then avatar gap (keep the problem and desire, narrow WHO). **Avatar is last on purpose: format and mechanism are properties of the market and may genuinely not be there, avatar is a property of the brief so it is always available, which makes it the tempting first answer and the weakest one to reach for early.** Theriot dates his own format-gap example decaying inside a year, so a format gap is an expiring asset rather than a position. T4, no data, sponsored video, banked as a way to structure the decision and never as evidence about which gap pays.
+
+### Watchlist
+
+- **Meta for Business News: 1 genuinely new item**, 3 September 2026, read in full and banked at MD-153. The 11 June ceiling had held across eleven consecutive daily checks. **A plain HTTPS fetch answered fine today**, so the HTTP 400 that forced this source to the browser in earlier runs was not permanent. The page geo-renders in Hindi from our New Delhi egress; `?locale=en_US` returns English, and no number was transcribed out of the Hindi.
+- **RSS 0 new across every feed.** Meta Engineering 9 items, Meta Newsroom 10, Google Ads & Commerce 20, all identical to cache. arXiv cs.IR returned 16 items, 15 links new, **0 passed the advertising bank-list filter**, which is the normal result for that source.
+- **Google Ads Announcements: the 1-line diff is the session token again**, and it was verified rather than assumed. Neither the added nor the removed 19-digit string appears in the 30 August cache, and the removed one sits inside minified page JavaScript next to `hc_str_default_value_url_params`. **Newest dated announcement on the page is still 20 May 2026, now nearly four months old.**
+- **TikTok: SDK changelog unchanged at v0.1.8. The three geo-blocked TikTok sources were not retried and TikTok policy and creative news remains genuinely unmonitored**, per the permanent India geo-block finding. Do not read today's TikTok line as clean.
+- Thursday, so the 9 Monday-only sources were not due.
+
+### Errors and gaps
+
+- **The Playwright browser was unavailable for the whole session**, all three profiles timing out at 30 seconds. It was not needed: every source that mattered answered on a plain fetch. Worth knowing that the browser lane is not currently a fallback.
+- **The harvester's RSS fallback returned HTTP 404 on all 12 channels.** The primary listing path worked and found both of today's videos, so this changed nothing today, but the fallback is dead and would silently produce a zero-transcript day if the primary path ever broke. Flagged for repair.
+- **Open account gap, unchanged and now more expensive: no placement breakdown has ever been run on any client account.** MD-152 cannot be tested against our own book until one is.
+- Still open from 2026-09-09: MD-150 needs a live US client ad set on a manual Sales or Leads campaign, which means SJR Commercial or Phoenix Truxx. The chiropractic accounts are the wrong instrument because health and wellness sits among the verticals Loomer says are excluded.
+
 ## 2026-09-09 (research run)
 
 **⚠ PLATFORM CHANGE AFFECTING OUR CLIENTS. Meta is withdrawing ad-set exclusion of placements, platforms, devices and operating systems.** The notice is live inside Ads Manager and is quoted verbatim at MD-150: *"Excluding placements, platforms, devices and operating systems will no longer be available for your ad sets."* **Meta has published no announcement**, trade coverage on 2026-08-25 found the Business Help Centre still describing manual placement selection as available, and the unofficial scope is a test on Sales and Leads objectives only with sensitive verticals excluded. **Nobody should tell a client this has happened to their account.** Our own read today found all four controls still present.
@@ -72,6 +131,54 @@ Ad account 645682541775849, ad set editor opened on a **Leads** objective (Advan
 - **Meta Advertising Standards still has no cached baseline**, open since 2026-08-24. The lane cannot detect a silent rewrite, and ChiroWorks and Chiropraise depend on its health and personal-attributes sections.
 - **The client-account placement check is the queued instrument and it is time-limited.** Open a live SJR Commercial or Phoenix Truxx Sales or Leads ad set and record whether the four controls are still present. It has to be done before the change lands to be worth anything, and it is the only way to date our own exposure rather than repeat a rumour.
 - **Nobody has measured what share of delivery survives a 90% bid decrease.** That number now sits under the only ad-set placement lever we will have left, and it is unmeasured by every source on the roster. Any of our own accounts could produce it with a placement breakdown before and after a rule.
+
+## 2026-09-09 (teacher run)
+
+**Lesson 021 shipped: The Offer Changed, the Prediction Did Not, video yes** (Wednesday). Inbox empty for the **twenty-first** consecutive run, so no grading and no measured weak spot to steer on.
+
+**Harvest-driven from yesterday's research, and the pointer holds at 8.** Both lanes launched in the same second again, 13:23:01, **third day running**, so today's research had banked nothing at topic-lock. The newest harvest entry was the 2026-09-08 research run, which banked AU-086, AU-087 and AU-088 on manual bids breaking during a sale. Topic is rotation index 1, not the pointer's own topic (index 8, TikTok Delivery), so no exception was needed and the pointer did not move. Fourth lesson on Auction Mechanics & Bidding.
+
+**Why this topic today rather than any other.** ChiropracticWorks changed the invisa-RED offer from a free consultation to a $49 introductory session on **2026-09-06**, three days before this run. That is the exact step change AU-086 describes, arriving on the ad set that carries about two thirds of a $66/day CBO, and there is a measurement window closing on it this week.
+
+### The finding: the claims are all about manual bids, and we run none
+
+**MEASURED across every filed export that carries the column.** 344 ad rows over five windows on ChiroWorks and SJR: **every single row reads `Bid 0` / `Bid type ABSOLUTE_OCPM`.** That is lowest cost with no manual bid, on every ad. Phoenix Truxx and StayWell exports do not carry the column at all, so those two are unread rather than confirmed. AU-086, AU-087 and AU-088 are all cost-cap claims, so on a literal reading yesterday's entire harvest misses our book.
+
+**The transfer that makes them apply, banked as AU-089.** The stale prediction is not a property of the bid. [[Auction Mechanics & Bidding#AU-071|AU-071]] (T1, withdrawn-mirror provenance) puts the click and conversion predictions inside the estimated action rate, which is an auction term for every ad on every bid strategy. A cap does not create the stale prediction, it gives it a visible edge to break against. **Removing the cap makes the failure quieter, not smaller:** the ad set spends its full share regardless and the whole error lands in cost per opt-in, a column that already carries three competing explanations.
+
+**A fourth absorber added to AU-083's signature table.** The identity is cost per opt-in = CPM / (1000 x CTR x conversion rate). AU-083 listed three readings that can be told apart on exported columns: repricing, creative wear, pool narrowing. **An offer or price change is a fourth, and it is the only one that moves click-to-opt-in while leaving CTR alone**, because the price is invisible until the form opens. Strict scope condition: the tell dies if the ad copy changed on the same date.
+
+### The shown series, rebuilt from raw exports
+
+ChiroWorks, one CBO recorded at $66/day, the invisa-RED ad set, three consecutive filed windows from `weekly-client-reports/runs/2026-08-17`, `2026-08-24` and `2026-08-31`.
+
+| Window | Spend | Impressions | Clicks | Opt-ins | CPM | CTR | Click to opt-in | Cost per opt-in |
+|---|---|---|---|---|---|---|---|---|
+| 8-16 Aug | $507.52 | 17,811 | 171 | 14 | $28.49 | 0.96% | **8.19%** | **$36.25** |
+| 17-23 Aug | $320.54 | 10,088 | 91 | 8 | $31.77 | 0.90% | **8.79%** | **$40.07** |
+| 24-30 Aug | $315.33 | 11,156 | 93 | 7 | $28.27 | 0.83% | **7.53%** | **$45.05** |
+
+Cost per opt-in rose 24.3% and the decomposition is exact rather than approximate: CPM contributed **0.992** (a 0.8% fall), CTR **1.152**, click-to-opt-in **1.088**, and 0.992 x 1.152 x 1.088 = **1.2426** against a measured ratio of **1.2426**. Frequency sat between 1.19 and 1.55 on every ad with real spend in the last window and the top ad reached 5,207 people against 5,280 in the first, so pool narrowing is ruled out. **The pre-change deterioration is creative wear on the click side plus a small conversion-side drift, with no price effect in it anywhere.** That is the baseline the $49 will be measured against.
+
+### Two gaps found on our own book, both time-sensitive
+
+- **The last clean pre-change week has never been pulled.** The last filed ChiroWorks export ends **30 August** and the 2026-09-04 weekly run pulled Phoenix, SJR and StayWell but produced no ChiroWorks folder. **31 August to 5 September is the last honest reading of the free offer** and it is still sitting in Ads Manager. Pull it and the account owns a before-and-after on a dated single-variable change, which is the cheapest T2 available anywhere on our book right now.
+- **The offer change is half shipped.** 25 files on disk mention invisa-RED and still carry free-consultation language, newest dated **2026-08-14**, including the live lead-form document, the final image-ad copy, the v2 launch copy and the winning-video copy deck. The live ad account state is **UNVERIFIED** from here because the Meta connectors are unauthorised in this session. A live ad promising free while the form charges $49 costs more than the price does, and this account already lost a confirmed opt-in (Lisa, 8-16 Aug window) to the same mismatch running the other way.
+
+**One scheduling call made and recorded.** The 2026-08-25 campaign split is still unshipped after fifteen days. **Shipping it inside the same fortnight as the price change makes both unreadable**, which is the Phoenix Truxx Video02 confound repeating. Price change first, it is already live, two clean weeks, then revisit the split with the direction correction from yesterday attached.
+
+### Codex and vault changes
+
+- **AU-089 banked**, T3 for the transfer, T2 for the pre-change series, definitional for the identity, with the provenance stated so it is never attributed to Faris.
+- **AU-086 scope widened**, not superseded, with the 344-of-344 bid-strategy fact and a cross-reference to AU-089. `Last touched` 2026-09-09.
+- **AU-083 amended** with the fourth absorber and its scope condition. `Last touched` 2026-09-09.
+- **ChiroWorks `_HOT.md`** gained a dated open item for the 31 Aug to 5 Sep pull, the pre-change baseline numbers, the read-the-tell instruction, the half-shipped warning and the do-not-split-this-fortnight warning.
+
+**Late note, added after the lesson shipped.** The research lane finished at 13:41, twenty minutes behind this one, and it was **not** a quiet day: it banked MD-150, MD-151 and LS-076 on Meta withdrawing ad-set exclusion of placements, platforms, devices and operating systems, plus four amendments and a change to law 1a. That is a live platform change touching SJR and Phoenix directly, and it arrived after topic-lock. **It is the standing candidate for lesson 022** and should be taught ahead of the rotation. The same-second launch cost the engine nothing today only because yesterday's harvest was strong enough to carry the lesson.
+
+**Decision rule delivered:** an offer change is a dated event, so write the date down and capture click-to-opt-in on both sides of it. Delivery keeps buying against the old offer for days, and the bill arrives in cost per opt-in disguised as creative fatigue.
+
+**Gaps carried.** The launcher still cannot tell a failed run from a quiet day, ninth run. The watchdog still has no teacher relaunch path. Both lanes started in the same second for the third day running. The stale `index.lock` in the parent workspace repo is now seven days old and was left untouched again for the same reason: that repo's only remote is a PUBLIC one and the vault, `Clients/`, `Invoices/` and the bank statements sit inside it unignored. **The Meta connectors are unauthorised in this session**, which is why the live ChiroWorks ad state could only be reported as unverified rather than checked.
 
 ## 2026-09-08 (teacher run)
 

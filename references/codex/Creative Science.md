@@ -1688,9 +1688,10 @@ The cheapest competitor-research upgrade in the codex, and it comes with a corre
 Ben Heath, 2026-04-14, walking the Library. Two capabilities that did not previously exist: "That is the ability to sort by impressions high to low", and "you can look at inactive ads as well as active ads. That's not something you used to be able to do", reached via "Just make sure in filters, you've got active status as active and inactive."
 **The correction.** The old rule was runtime: "And if an ad has been active for more than 6 months a year, it probably is a best performer." He keeps it and breaks it in the same breath, because zombie ads sit active on zero spend, a problem he attributes to delivery changes: "a problem that was getting worse given how Meta Ads delivery system has updated". **The repaired signal is the intersection, not either alone:** "lots of impressions plus um been running for a long time is as close to a guarantee".
 **A load-bearing filter note that will cause misreads if missed.** The Library's location filter is where the ad is DELIVERED, not where the advertiser sits: "the location you set is not where you are, or even where the competitor is based." Every geo-scoped competitor pull we run depends on that.
+**A second operator reached the same correction from the paid-tool side on 2026-09-09, which matters because it is the same finding arrived at through a different instrument.** Nick Theriot, reading a third-party library: "even though it's been active for a really long time, it doesn't mean it's top performing." His separator is an ordinal spend rank inside the advertiser's own account rather than an impression count, and he gives the threshold in plain terms: an ad at 57 of 97 is mid-pack, and "if it's 83 or 94 out of 97, it's like it's barely getting any spend", while 1 of 97 is "taking majority of all of the spend in that account". **Two operators, two different instruments, one conclusion: runtime alone is not a winner signal and never was.** See the tier warning on that rank field at [[Creative Science#CR-206|CR-206]] before quoting the number itself.
 The detail panel also exposes the exact run window and the variation count under one ad entry, e.g. "We can see there's the three variations of this ad that was run", which is a free read on the ad-object-versus-creative-asset counting problem at [[Meta Delivery & Andromeda#MD-124|MD-124]].
-Sources: Ben Heath, How To Spy On Your Competitors Meta Ads for FREE, 2026-04-14
-Last touched: 2026-08-27
+Sources: Ben Heath, How To Spy On Your Competitors Meta Ads for FREE, 2026-04-14; Nick Theriot, How To Spy On Your Competitor's Facebook Ads in 2026, 2026-09-09
+Last touched: 2026-09-10
 
 ### CR-191 · Creative production budget as a share of media spend: 10%+ above $100k/mo, 25% at $30k/mo, and the worked model's numbers are self-declared FAKE
 Tier: T3 for the allocation bands, T4 for the model · Status: active
@@ -1871,9 +1872,15 @@ Tier: T3 · Status: active
 
 **Three signals he uses to separate winners from long-runners, and one caution.** Duplicate count, on the reasoning that an advertiser who finds a winner duplicates it, so repeats in the library are a proxy for spend. Run duration combined with active status. And growth direction, whether the ad is scaling or decaying. He is explicit that this replaces the usual heuristic: "you're no longer just going off vibes or by what's the longest running in the ad account."
 
+**THE QUALIFICATION THIS CLAIM WAS MISSING, added 2026-09-09 from a second operator, and it cuts at our own practice.** Duplicate count was banked here as a one-way winner signal. It is not. Nick Theriot names the other reasons an advertiser duplicates an ad: "it's like usually ads that are like constantly getting banned or not necessarily banned, but they're turned off or you can duplicate to other campaigns for other countries or yada yada yada. There's a reason why it keeps getting duplicated... So, there could have some like negative drawbacks to it." **So a high duplicate count has at least three causes and only one of them is a win: the ad performed and was cloned to scale, the ad was disapproved or switched off and was relaunched, or the ad was cloned sideways into another country or campaign where it proves nothing about this one.** From outside an account the three are indistinguishable.
+
+**Read duplicate count with a companion signal or not at all.** Theriot's own resolution is to read the spend rank alongside it, and the ad he actually selects is "rising really good right now, and it's top 18%" rather than the most-duplicated one. **This is the sharpest correction available to our own winning-ad definition, which treats kept-active plus duplicated as confirmation.** Kept active survives untouched. Duplication needs the second signal.
+
+**Provenance note that applies to this claim, to [[Creative Science#CR-170|CR-170]] and to [[Creative Science#CR-209|CR-209]] equally: every operator teaching competitor research on this roster is now demonstrating a paid tool.** Cottrell ran a vendor demo with a paid link. Theriot states his own conflict on camera, "Yes, I am technically sponsored by Trend Track", and gives a discount code. Piliero sells the workflow at CR-209. **Three operators, three paid instruments, and still nobody has validated a single estimated spend, rank or revenue figure against an account whose real numbers are known.** Bank the methods, never the estimates.
+
 **Where the evidence gets thin, and it matters because these tools are entering our workflow.** For ads running in the UK and EU, Meta is legally required to publish impressions, and the tool converts that into an estimated spend using an average CPM, which is a modelled figure and not a reported one. He then reads a field called ad rank, "this is literally Meta telling us which ads are performing the best", showing an ad at number 3 of 107 in an advertiser's account. **Meta's EU transparency obligation covers reach and impression ranges, not a performance rank, so that field is almost certainly the vendor's own derived score being described as the platform's.** Bank the workflow, do not repeat the attribution. Vendor demo with a paid link in the description, no validation of the tool's estimates against any known account.
-Sources: Fraser Cottrell, How to use AI to Copy Winning Ads (Step by Step), 2026-05-17
-Last touched: 2026-08-30
+Sources: Fraser Cottrell, How to use AI to Copy Winning Ads (Step by Step), 2026-05-17; Nick Theriot, How To Spy On Your Competitor's Facebook Ads in 2026, 2026-09-09
+Last touched: 2026-09-10
 
 ### CR-207 · A discount code lives only in the ad and a struck-through price lives on the page, and that difference cost one brand 36 points of conversion rate
 Tier: T2 · Status: active
@@ -2200,3 +2207,21 @@ Tier: T3 · Status: active
 The failure this rule is built to prevent is the same one at [[Creative Science#CR-125|CR-125]]: teams pick a format first, run it badly for the job, and conclude the format does not work. Asserted from agency practice across the examples he shows, with no comparison of two formats carrying the same message at matched spend.
 Sources: Nick Theriot, UGC vs Native vs Static Ads: Which One Scales Best in 2026?, 2026-09-07
 Last touched: 2026-09-08
+
+### CR-231 - After the competitor teardown there are exactly three places to differentiate, and they are checked in order: creative FORMAT they are not running, MECHANISM they cannot claim, then AVATAR they are ignoring
+Tier: T4 | Status: active
+The decision rule at the end of a competitor audit, which is the step most teardown workflows never reach. Nick Theriot, 2026-09-09, having pulled a category's direct and indirect competitors apart ad by ad. **The output of a teardown is not a swipe file, it is a choice about where you are going to be different.** Three gaps, checked in this order.
+
+**1. The format gap. Is there a creative format none of them are running that we can execute well?** His worked case is native ads: "when like native ads really took off and blew up... it was this almost like not undiscovered but slept on technically creative format because there wasn't a lot of people utilizing it. And because not many people are utilizing it, it felt new to people." **He then dates its own decay in the same breath, which is the honest part: "you could still technically do it today, but it's just it's become a little bit more saturated than it was in, you know, a year ago."** So a format gap is a decaying asset, not a position, and the window is roughly a year in this instance.
+
+**2. The mechanism gap. What can we claim about the product that they cannot?** Read off the competitor set he pulls: one brand's whole argument is the FORM of the ingredient, one is the COUNT of forms, one is a purity comparison against a named alternative source. Each is a different answer to the same buyer question.
+
+**3. The avatar gap, and it is the fallback when the first two are empty.** Keep the problem and the desire exactly as the category states them, and narrow WHO. His example: everyone in the category sells to people who cannot sleep, so sell to night-shift workers who cannot sleep during the day. **Explicitly not a change of desire: "I'm not saying we need to go and change the desire."** This is the only one of the three that is always available, because it costs nothing but a decision.
+
+**Why the order matters.** Format and mechanism are properties of the market and may genuinely not be there. Avatar is a property of the brief, so it is always there, which makes it the tempting first answer and the weakest one to reach for early. **The rule is to look for a real gap twice before manufacturing one.**
+
+Then he writes the hypothesis down before producing anything: avatar, problem, desire, mechanism, format, and why the test matters. That is the same discipline as the pre-launch test specification at [[Creative Science#CR-222|CR-222]], arrived at independently, and it is the part worth copying regardless of what one thinks of the three gaps.
+
+No data of any kind attached, one operator, and the video is a sponsored tool walkthrough. It is a framework for structuring a decision, never evidence about which gap pays.
+Sources: Nick Theriot, How To Spy On Your Competitor's Facebook Ads in 2026, 2026-09-09
+Last touched: 2026-09-10

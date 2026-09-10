@@ -10,7 +10,7 @@ tags: [advertising-science, lesson]
 
 # Lesson 021 · The Offer Changed, the Prediction Did Not
 
-🎬 Video: [[video/2026-09-09-lesson-021.mp4]]
+🎬 **Lesson video (2m 32s, silent, watch anywhere):** [[video/2026-09-09-lesson-021.mp4]]
 
 Three days ago ChiropracticWorks changed the invisa-RED offer from a free consultation to a $49 introductory session. Meta has not been told. Meta cannot be told. This lesson is about what happens in the gap.
 

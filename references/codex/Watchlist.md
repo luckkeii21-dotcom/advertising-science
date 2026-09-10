@@ -24,7 +24,9 @@ The pages the daily Research run monitors for platform updates. All URLs verifie
 
 The listing is a **rotating module, not a chronological feed.** On 2026-08-20 a link-set diff against the cache showed 5 links absent from the cache and 5 present in the cache but gone from the page. All 5 "new" ones were opened and dated: 13 October 2025, 28 January 2026, 9 April 2026 and 11 June 2026. **Zero were new.** The page had simply rotated a different slice of the same back catalogue into view.
 
-So a link-set diff produces a 5-item false positive on this source. Read the date on each candidate before treating it as new, and remember the page uses UK date format ("13th October 2025") on some posts, which a `Month D, YYYY` regex silently misses. The newest post seen to date is still **11 June 2026**.
+So a link-set diff produces a 5-item false positive on this source. Read the date on each candidate before treating it as new, and remember the page uses UK date format ("13th October 2025") on some posts, which a `Month D, YYYY` regex silently misses. **CEILING BROKEN 2026-09-10. The newest post is now 3 September 2026, "Businesses driving results with Meta AI ads", and it is the first new item on this source since 11 June.** It carries five named advertiser case studies across five products and is banked at MD-153. The 11 June ceiling had held across eleven consecutive daily checks, which is long enough that a future run should treat a long flat period on this source as normal rather than as a fault.
+
+**Transport note, 2026-09-10.** Earlier runs recorded HTTP 400 on a plain curl and moved this source to the browser. A plain HTTPS fetch answered fine today, so the 400 was not permanent. The page geo-renders in Hindi from our New Delhi egress; append `?locale=en_US` to read it in English, and never transcribe a number out of the machine-translated Hindi.
 
 ## Google
 
