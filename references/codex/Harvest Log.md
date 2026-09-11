@@ -9,6 +9,64 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-11 (research run)
+
+**0 new transcripts. 1 watchlist post read in full. 2 claims added, 1 amended, 2 hot-layer laws amended, 1 source unreadable.** Backlog 0 going in and 0 going out. The whole day came from one Google blog post; the YouTube roster produced nothing.
+
+### The one thing to act on: the top of our own measurement hierarchy is now free, and we still cannot afford the volume
+
+**Meridian GeoX went generally available worldwide on 2026-09-10 (AT-115, T1).** Google's own words: "our global open-source library for running causal geo-experiments across any advertising platform", now "generally available globally in Meridian", usable standalone or to feed incrementality results into an MMM.
+
+**Why it matters here and not as a Google story.** AT-022 puts a geo holdout above MMM and above every platform report, and puts incrementality at roughly the top 20% of operators, the $10M-a-month tier. That gate was two costs stacked: the tooling and analyst cost of building the experiment, and the order volume needed to detect a lift. **The first cost is now zero, open-source, and explicitly cross-platform, so it applies to Meta as readily as to Google.** Law 17b is amended to say so.
+
+**The second cost has not moved one inch, and this is the part to hold.** Our own banked geo holdout ran 21 days and produced 85 orders of lift against the 166 the design required (GA-055 / AT-072). AT-022 already warns that an underpowered geo test almost always returns a false "not incremental". A free library makes the experiment cheap to build and does nothing to make it readable on a small account. Before anyone plans one, size it backwards from the lift we would need to detect, per AT-071.
+
+**Nobody here has installed it.** The codex holds zero evidence GeoX returns a usable answer at ChiroWorks, SJR Commercial, Phoenix Truxx or StayWell volumes. Google publishes no accuracy figure, no minimum spend and no worked example.
+
+**This also closes half a gap the log has carried since 3 September: "Meridian and Qualified Future Conversions still have no codex entry."** Meridian now has one. Qualified Future Conversions still does not.
+
+### Law 11a was wrong for a day, and the correction is worth more than the law
+
+**Yesterday's pass wrote law 11a: before repeating a platform-published case-study number, find the word. *Incremental* or *lift* means somebody at least claims a holdout.** Today's Google post breaks it on the first figure.
+
+Google claims a **"26% average increase in incremental ROAS"** for advertisers who connect offline and app data to Data Manager. The provenance Google itself prints is "Google Data, Global, Measurement, April 2025 - April 2026. Based on Search campaigns bidding to conversion value." **No control group, no holdout, no geo, no confidence level anywhere on the page.**
+
+**The word is there because incremental ROAS is the NAME of a Google metric, not because anyone ran a counterfactual.** So the test needs a second step: find the word, then ask whether it describes the METHOD or names the METRIC. A holdout claim looks like a design. A metric name looks like a column heading. Law 11a is amended.
+
+The other three figures in the post fail the original test cleanly and are worth carrying with their labels: 11% more Search conversions from enhanced conversions, sourced to a **14-day window**, 1 to 14 January 2026; 14% conversion uplift from Google tag gateway, sourced to **"Google Internal Data, Global, Finance, July -Dec 2024 vs Jan-June 2025"**, a finance-department half-year comparison rather than a test; and over 20% uplift on Demand Gen, sourced to another **14-day window**, 3 to 17 June 2026. The 20% is aimed at the same product our own holdout found no new-customer lift on. **Four vendor figures, zero control groups.** Second instance of the GA-068 pattern in three weeks.
+
+### The rest of the same post, banked and not acted on (GA-073, T1)
+
+Data Manager is being integrated directly into Google Analytics and DV360. Enhanced conversions is launching inside both. **The Data Manager API is now universal and built on the IAB Tech Lab Event and Conversions API (ECAPI) standard**, which is the first cross-platform conversions-API standard on file and is directly relevant to how we wire client conversion data. Built-in diagnostics arrive in Data Manager. And a **Data Strength Uplift metric** lands in Google Ads that "calculates the additional conversions recovered by your first-party data setup", which is a number Google computes about Google's own contribution, with no method and no holdout published. **Same standing as Opportunity Score and Performance Planner at law 4c. Expect it in a rep's deck. Never repeat it to a client as a lift.** No rollout date or eligibility is stated for any of the five.
+
+### Sources checked
+
+- **YouTube roster: 0 new transcripts across all 12 channels**, 9 videos correctly skipped under the 150-second Shorts floor, **zero listing failures and zero fallbacks**. Worth noting against the 2026-08-29 finding that a rotating listing failure can fake a quiet day: today every channel genuinely listed, so the quiet is real.
+- **Meta Engineering: 0 new**, feed built Tue 8 Sep. **Meta Newsroom: 0 new**, feed built Tue 8 Sep.
+- **Google Ads & Commerce blog: 2 new links, 1 read in full.** The other, "3 ways to prep for your next big race with Search", is consumer Search content with no advertising substance.
+- **arXiv cs.IR: 24 items in the Friday 04:00 UTC build, 22 not previously seen, 0 passed the advertising filter.** Titles read; the category was entirely RAG, recommender and retrieval work. An honest 0, not a padded one. Run time was after the rebuild, so this is today's build and not yesterday's.
+- **TikTok SDK changelog: unchanged at v0.1.8.** Newsroom and for-Business blog remain India geo-blocked and were not retried, per the standing rule. **TikTok policy and creative news is unmonitored, not clean.**
+- **Google Ads Announcements: 2,350 visible lines against 2,350 cached, with 1 line added and 1 removed.** Both are bare numeric IDs, and **two runs of the same script minutes apart returned different IDs against the same cache**, so this is a render nonce and not news. Confirmed by re-running rather than assumed.
+- **Meta for Business News could not be read today. HTTP 400 on four routes** with full browser headers, including the `?locale=en_US` form that answered on 2026-09-10, and the Playwright MCP browser failed to connect in this session. **The source is unchecked, not clean.** The 2026-09-10 note that the earlier 400 "was not permanent" stands; the transport is intermittent, so future runs should expect either route to work on any given day and log a failure rather than a pass.
+- Weekly Monday sources were not due. Friday.
+
+### Counts and hygiene
+
+**Codex recomputed line by line: 1,185 claims** (100 T1, 118 T2, 810 T3, 157 T4; 1,079 active, 100 contested, 5 superseded, 1 refuted) across 11 topic files. Every one of the 1,185 headings carries a Tier line directly beneath it.
+
+**Yesterday's figure of 1,179 was four low** (2 T1, 1 T3, 1 T4). The cause is a counting method, not a missing claim: a regex that matched a heading and then scanned forward for its Tier line could run past the next heading and consume it. Today's method matches each heading to the line immediately beneath. **1,183 pre-existing plus today's 2 reconciles exactly.** The 2026-09-10 log made the same correction to the 2026-09-09 figure, which means this recount has now been wrong twice in a row for the same reason. Fix the counter, not the number.
+
+`MD-019b` reads as a duplicate of `MD-019` to any ID regex that stops at the digits. It is a legitimate distinct claim. Any future tooling that dedupes claim IDs must allow a letter suffix.
+
+### Gaps noticed
+
+- **GeoX is the fifth consecutive instrument named as the answer and not opened.** It joins the audience-segments breakdown, the attribution comparison at AT-082 and AT-098, and the CPM matched pair at MD-118. Reading about instruments has now substituted for running one for weeks.
+- **Qualified Future Conversions still has no codex entry**, carried since 3 September.
+- **The Meta for Business News transport is unreliable in both directions** and we have no fallback that works without a browser. Two of the last three runs needed a different route than the one before.
+- The arXiv framing-sentence filter gap is still open. It did not fire today because 0 items matched at all.
+- The launcher still cannot distinguish an auth failure from a quiet day, carried a sixth time.
+- The daily inbox is running at 0 to 2 files a day with the backlog at zero, so claim volume is now capped by what the roster publishes. **Today it published nothing, and the entire day's haul came from a watchlist source.** That is an argument for widening the watchlist rather than the channel roster.
+
 ## 2026-09-10 (research run)
 
 **2 new transcripts, both read in full. 3 claims added, 4 amended, 3 hot-layer laws amended, 1 watchlist ceiling broken, 0 unreadable sources.** Backlog 0 going in and **0 going out**; 452 transcripts on file, all flagged extracted.
@@ -67,6 +125,63 @@ Format gap (a creative format none of them run that we execute well), then mecha
 - **The harvester's RSS fallback returned HTTP 404 on all 12 channels.** The primary listing path worked and found both of today's videos, so this changed nothing today, but the fallback is dead and would silently produce a zero-transcript day if the primary path ever broke. Flagged for repair.
 - **Open account gap, unchanged and now more expensive: no placement breakdown has ever been run on any client account.** MD-152 cannot be tested against our own book until one is.
 - Still open from 2026-09-09: MD-150 needs a live US client ad set on a manual Sales or Leads campaign, which means SJR Commercial or Phoenix Truxx. The chiropractic accounts are the wrong instrument because health and wellness sits among the verticals Loomer says are excluded.
+
+## 2026-09-10 (teacher run)
+
+**Lesson 022 shipped: An Empty Row Has Two Causes, video no** (Thursday; video days are Mon/Wed/Fri). Inbox empty for the **twenty-second** consecutive run, so no grading and no measured weak spot to steer on.
+
+**Harvest-driven from yesterday's research, taught ahead of the rotation, and the pointer holds at 8.** Yesterday's teacher entry named this the standing candidate for lesson 022 in writing. Topic is rotation index 0, Meta Delivery & Andromeda, which is not the pointer's own topic (index 8, TikTok Delivery), so no exception was needed and the pointer did not move. Fourth lesson on this topic.
+
+**Both lanes launched in the same second for the FOURTH day running, 12:20:59, and today it had teeth.** The research lane banked **MD-152 and MD-153 into the same topic file while the teaching pass was reading it**, and MD-152 is on the identical subject as the lesson. Nothing was lost, and only because the new IDs were spotted before the teaching pass wrote its own. The two passes ended up complementary: research banked the operator claim, teaching supplied the measurement that claim explicitly asks for. That was luck.
+
+### The finding: MD-152 says nobody has run this test, and three of them were already on disk
+
+MD-152, banked this morning, prescribes opening the placement breakdown on a real account and says "we have never run it on a single client account." **Three placement breakdowns were already sitting in the client folders, dated May, July and August, and none had been opened.** The gap was in the reading rather than in the pulling. Worth asking how many of the other never-opened instruments are the same shape.
+
+**Measured, recomputed from the raw placement CSVs rather than from any summary table. Audience Network took $0.00 on all three windows.**
+
+| Account | Window | Spend | Opt-ins | Audience Network |
+|---|---|---|---|---|
+| SJR Commercial | 10-20 Jul 2026 | $1,024.23 | 256 | **$0.00** |
+| ChiroWorks | 10-27 Jul 2026 | $890.84 | 28 | **$0.00** |
+| Mattia Spinal Care | 26 Jul - 3 Aug 2026 | $546.63 | 19 | **$0.00** |
+
+SJR's placement rows sum to the account total to the cent, so that window is the whole account rather than a filtered slice.
+
+**The one window on our book where Audience Network is present is SJR's own, roughly 90 days to 2026-05-18: $563.02 of $33,532.56, or 1.68%**, split $309.44 Rewarded Video at a $68.23 CPM and $253.58 Classic at $31.00. That window also contains a live LINK_CLICKS campaign, VIN IQ Used Unique Units, $1,086.14 at a $5.53 CPM, which is exactly the upper-funnel exposure SC-149 predicts. No filed export crosstabs campaign against placement, so it is consistent-with rather than shown.
+
+**Two scoreboard results.** Loomer's "very small percentage" survives on both sides of our data. **Charley T's under-0.1%-of-budget rebuttal at MD-016 does not: 1.68% is nearly seventeen times it.** Note also that the AN Rewarded Video CPM was the **most expensive impression in the account** against a blended $24.05, which is the opposite of the cheap-junk-inventory folklore and is consistent with it: a viewer paid in virtual currency finishes the video, so the CPM is high and the ThruPlay is cheap.
+
+### The claim this produced, and it is a property of the report rather than of Meta
+
+**MD-154 banked, T1 for the format fact.** A placement breakdown records what delivery bought and has no field for what it was forbidden to buy. An absent row has two causes, an ad-set exclusion and delivery declining to buy, and they export identically. **The only artefact that separates them is the ad-set setting Meta is removing.** So the report that survives the change cannot answer the question, and the screen that answers the question is going.
+
+That ambiguity is live and unresolved on SJR right now. Five positions live in its spring window are absent from its July window, including Instream Video at 5.8% and Reels Overlay at 1.2%, which nobody would ever exclude, so a campaign and creative change is the likelier reading. The reading that cannot be ruled out is that somebody acted on the May audit, which recommended in writing that "Audience Network across the board should be off for lead campaigns".
+
+### The sharpest account finding is on the withdrawn control nobody is discussing
+
+**SJR's device breakdown for the 90 days to 2026-05-18 carries spend, impressions, reach, frequency and CPM, and no opt-ins at all.** It reads **Android smartphone at a $29.91 CPM against iPhone at $21.36**, 40% dearer, on **36.7% of account spend ($12,313.98)**. An operator using the operating-system control to act on that gap would have removed over a third of delivery on a cost number with no result number beside it. Desktop and both tablet types together took $664.77, or 1.98%. The withdrawn control that could have hurt us most is the one getting no attention.
+
+### The platform read, three accounts, same summer
+
+| Account | Opt-ins | Instagram share of spend | Cost per opt-in, Facebook | Cost per opt-in, Instagram |
+|---|---|---|---|---|
+| SJR Commercial | **256** | 28.91% | **$4.0007** | **$4.0012** |
+| ChiroWorks | 28 | 6.70% | $34.62 | $14.93 |
+| Mattia Spinal Care | 19 | 29.90% | $23.95 | $54.49 |
+
+The account with volume prices its two platforms level to the cent, which is what an auction equalising marginal cost per result across surfaces should produce and is the cleanest demonstration of SC-149 on our own book. The two small accounts disagree by 2.3x **in opposite directions** on 19 and 28 opt-ins, and Mattia's Instagram figure rests on three. **Platform is also the one withdrawn control with no value-rule replacement at all**, so the control our data gives the least ability to use correctly is the one being removed most completely.
+
+### Codex changes
+
+- **MD-154 banked**, T1 for the format fact, with the operating consequences marked as reasoning.
+- **MD-152 amended** with the measured half it asked for, moving the lead-side reading from unmeasured to measured at T2, plus the correction to its own sentence about never having run the test. `Last touched` 2026-09-10.
+
+**Gaps carried.** The launcher still cannot tell a failed run from a quiet day, tenth run. The watchdog still has no teacher relaunch path. Both lanes started in the same second for the fourth day running and this time wrote into the same file concurrently. The stale `index.lock` in the parent workspace repo is now eight days old and was left untouched again for the same reason: that repo's only remote is a PUBLIC one and the vault, `Clients/`, `Invoices/` and the bank statements sit inside it unignored. The Meta connectors are unauthorised in this session, so every number above comes from filed exports and no live account state was read.
+
+**Decision rule delivered:** a spend breakdown records what was bought and never what was forbidden, so read the ad-set settings before Meta removes them, because after that the answer stops existing.
+
+**New open item, time-limited.** Open a live SJR Commercial or Phoenix Truxx Sales or Leads ad set, record placements, platforms, devices and operating systems as currently set, and date it. The chiropractic accounts are the wrong instrument, because Loomer puts health and wellness among the verticals excluded from the test.
 
 ## 2026-09-09 (research run)
 
