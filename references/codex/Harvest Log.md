@@ -56,6 +56,8 @@ Data Manager is being integrated directly into Google Analytics and DV360. Enhan
 
 **Yesterday's figure of 1,179 was four low** (2 T1, 1 T3, 1 T4). The cause is a counting method, not a missing claim: a regex that matched a heading and then scanned forward for its Tier line could run past the next heading and consume it. Today's method matches each heading to the line immediately beneath. **1,183 pre-existing plus today's 2 reconciles exactly.** The 2026-09-10 log made the same correction to the 2026-09-09 figure, which means this recount has now been wrong twice in a row for the same reason. Fix the counter, not the number.
 
+**The team-repo sync prints 1,186 and this log prints 1,185. Both are right and the gap is one line.** The sync counter runs its regex over every file it copies into references/codex, which includes the Harvest Log, and the 2026-09-10 entry opens a section with ### CR-231, new:. That is a log heading, not a claim. **The real figure is 1,185 claims in the 11 topic files.** Either stop writing claim-shaped headings in this log, or scope the sync counter to the topic files. Until one of those happens, the team repo commit message will read one high.
+
 `MD-019b` reads as a duplicate of `MD-019` to any ID regex that stops at the digits. It is a legitimate distinct claim. Any future tooling that dedupes claim IDs must allow a letter suffix.
 
 ### Gaps noticed
