@@ -668,3 +668,15 @@ Meta Newsroom, 2026-09-08, launching Muse. The whole claim is one sentence in th
 **What it does not say, and the limits are the useful part.** It says nothing about whether Muse becomes an ad placement later, nothing about aggregate or derived signals, and nothing about any other Meta AI surface. **A stated policy at launch is not an architecture.** Treat this as a dated commitment to check again, never as a permanent property of the system, and never quote it to a client as a privacy guarantee.
 Sources: Meta Newsroom, Introducing Muse: The World's First Personal AI Agent Built for Everyone, 2026-09-08
 Last touched: 2026-09-09
+
+### LS-077 · An advertiser claims that running more channels improves Meta performance by feeding Meta more signal, and the claim has an ordinary confound it never addresses
+Tier: T4 · Status: active
+Instant Hydration, in a Meta-published case study, 10-11 September 2026: "Where we really see the signal get better is the fact that we're running on so many channels now. It actually improves our Meta performance because there's more signals from these different channels coming in."
+
+**Why it is banked at T4 and not higher.** No mechanism is described, no measurement is offered, and the sentence conflates two things. Site and purchase events fired by traffic from other channels do reach the pixel and the conversions API, so a busier site genuinely sends more events. That is not the same as those events improving Meta's ranking of Meta impressions, which is what the advertiser is claiming. **The ordinary explanation is that spending on more channels raises total demand, and Meta's last-click column captures some of it.** That produces exactly the reported pattern with no signal story at all.
+
+**Why it is banked at all.** It is a clean, checkable statement of a belief that is widespread and almost never written down, and it points at a real question this file has no entry for: does off-Meta-sourced conversion volume improve Meta's delivery on the same account. **A test exists and it is not cheap**, because it needs a channel turned off or on with Meta spend held flat, which is the natural experiment shape already recorded at [[Attribution & Incrementality#AT-050|AT-050]]. Until someone runs it, do not repeat this to a client as a reason to add a channel.
+
+**From the same account, and it belongs beside this one because it is the same person describing their operating model.** They run an agent against a third-party tool that reads business-level CAC and reallocates budget across ad sets in real time: "Right now your CAC is very low, the business is performing well, and it just allocates budget to the best ad sets." No tool named, no rules shown, no result attached. Record it as a dated example of external-signal budget control existing in a large account, never as a recommendation.
+Sources: Meta for Business News, Performance Spotlight: How Instant Hydration Built a System for AI to Scale, 2026-09-10
+Last touched: 2026-09-12

@@ -4,7 +4,7 @@ type: lesson
 lesson: 23
 date: 2026-09-11
 topic: TikTok Delivery
-claims: [AT-115, AT-100, TT-022, TT-021, TT-025, TT-026, MD-154]
+claims: [AT-116, AT-100, TT-022, TT-021, TT-025, TT-026, MD-154]
 tags: [advertising-science, lesson]
 ---
 
@@ -16,7 +16,7 @@ Every Friday you open an account and read one number off the top of the screen. 
 
 ## 1. The mechanism
 
-Cost per opt-in at account level is total spend divided by total opt-ins. That is not an average of your ad sets. It is a weighted average, and the weights are how the budget happened to split that week.
+Cost per opt-in at account level is total spend divided by total opt-ins. That makes it a weighted average of your ad sets, with the weights set by how the budget happened to split that week. A plain average of the ad-set numbers gives you a different figure, and Meta never shows you that one.
 
 Think about your drive across Delhi. Thirty kilometres of open road at 80 km/h, five kilometres of Ring Road traffic at 15 km/h. Your average speed for the trip is not 47.5 km/h, because the slow bit eats far more of your clock than it does of your distance. Now drive the same two roads next week, both exactly as fast as before, and take ten kilometres of Ring Road instead of five. Your average speed drops. Nothing on either road changed. You changed the mix.
 
@@ -33,7 +33,7 @@ Two smaller claims from the same account are worth carrying. The top line hid th
 - **[[Attribution & Incrementality#AT-100|AT-100]]**, T1 for the mechanism, T3 for the verdict. The readable unit of analysis is whichever level holds the budget, and this comes from Meta's own breakdown-effect documentation. Meta solves pacing and placement together, and it equalises marginal cost rather than average cost. The claim carries a warning we can now do something about: the worked example in the source does not survive arithmetic, so the codex has held this mechanism for months **with no verified numeric proof of it**.
 - **[[TikTok Delivery#TT-022|TT-022]]**, T2, shown. The blended rate falls when you add a source whose people do not convert, and the tell is the absolute count rather than the rate.
 - **[[TikTok Delivery#TT-026|TT-026]]**, T2, shown. A related trap on the same account: a campaign optimised for view-content reported 449 clicks and 206 conversions, so cost per conversion was a cost per page view. Choosing the wrong event makes the column unreadable in a different way, and the two errors compound.
-- **[[Attribution & Incrementality#AT-115|AT-115]]**, T2, banked by this lesson from our own raw exports. The numeric proof AT-100 was missing.
+- **[[Attribution & Incrementality#AT-116|AT-116]]**, T2, banked by this lesson from our own raw exports. The numeric proof AT-100 was missing.
 
 Read the tiers. TT-022 is a single brand, walked through on screen, and it is the strongest TikTok evidence we hold. AT-100's mechanism half is documentation. The verdict half is an operator's judgment. Our own tables below are T2 because they are computed, checkable and from raw files, and they are still three accounts.
 
@@ -75,7 +75,7 @@ Anyone reading only the headline saw a good week. Anyone reading only invisa-RED
 
 The mechanics take about four minutes. Pull spend and results by ad set for both windows. Compute each lane's own cost per opt-in and its share of spend. If a lane's share moved more than a few points, the mix owns part of the story and you say how much. State the absolute counts alongside every rate, because the rate is what the mix contaminates and the count is not.
 
-When a genuinely new ad set turns on, the rate you watch is not its own row. Watch whether the **absolute count** of the money event holds. That is TT-022's rule and it needs no attribution model to run.
+When a genuinely new ad set turns on, watch whether the **absolute count** of the money event holds. Its own row will tell you what it cost and nothing about what it displaced. That is TT-022's rule and it needs no attribution model to run.
 
 ## 5. Quiz
 
@@ -89,7 +89,7 @@ Five questions. Put answers in `_answers-inbox.md`, any format, partial is fine.
 
 **Q4.** Argue the opposite. Build the strongest case that the ChiroWorks week two rise to $54.41 really was a performance problem rather than a mix effect. Then name the exact column that settles it and say which way it has to read for your own argument to survive.
 
-**Q5.** AT-100's mechanism is T1 and the codex has carried it for months with no verified arithmetic behind it. Explain what our two tables add and what they do not, and say what would have to be true for AT-115 to deserve better than T2.
+**Q5.** AT-100's mechanism is T1 and the codex has carried it for months with no verified arithmetic behind it. Explain what our two tables add and what they do not, and say what would have to be true for AT-116 to deserve better than T2.
 
 > [!note]- Answer key
 >
@@ -101,7 +101,7 @@ Five questions. Put answers in `_answers-inbox.md`, any format, partial is fine.
 >
 > **Q4.** The strongest opposing case: invisa-RED's own cost per opt-in rose in every one of the three weeks, $36.25 to $40.07 to $45.05, a 24.3% climb with no mix effect in it at all, because that is one ad set measured against itself. Lesson 021 decomposed exactly that rise and found CTR falling, which is creative wear and a genuine performance problem. Volume also halved, 15 opt-ins to 8. So there was a real problem in week two and the mix merely amplified it. **The column that settles the split is the share of spend by ad set.** For the opposing case to survive, invisa-RED's share has to have held roughly flat while its cost rose. It did not: it fell 80.7% to 73.6%, and the spend that moved bought nothing, which is where $14.34 of the $54.41 came from. Full marks require naming the direction and conceding that both effects were live at once, because they were.
 >
-> **Q5.** The tables add checkable arithmetic on real accounts for a mechanism the codex previously held only as documentation plus an operator's unverifiable example. SJR shows the weighted-average behaviour with volume, 256 opt-ins, and shows the range the headline can be pushed across without touching anything. ChiroWorks shows the two numbers diverging in opposite directions in one week. What they do not add: any evidence about what Meta's allocator is optimising, because they are consistent with the mechanism rather than a test of it, and no counterfactual was run on a live account. **For AT-115 to beat T2 you would need the shares deliberately moved on a live account with the ad sets held constant, and the predicted headline computed in advance and then compared to the exported one.** That is a cheap test and nobody has run it. Credit for noticing that the $4.0002 against $4.0001 check is a consistency check on our own arithmetic and not a prediction, because the shares were read off the same file.
+> **Q5.** The tables add checkable arithmetic on real accounts for a mechanism the codex previously held only as documentation plus an operator's unverifiable example. SJR shows the weighted-average behaviour with volume, 256 opt-ins, and shows the range the headline can be pushed across without touching anything. ChiroWorks shows the two numbers diverging in opposite directions in one week. What they do not add: any evidence about what Meta's allocator is optimising, because they are consistent with the mechanism rather than a test of it, and no counterfactual was run on a live account. **For AT-116 to beat T2 you would need the shares deliberately moved on a live account with the ad sets held constant, and the predicted headline computed in advance and then compared to the exported one.** That is a cheap test and nobody has run it. Credit for noticing that the $4.0002 against $4.0001 check is a consistency check on our own arithmetic and not a prediction, because the shares were read off the same file.
 
 ---
 

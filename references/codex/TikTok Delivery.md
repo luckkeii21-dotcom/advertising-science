@@ -189,8 +189,9 @@ Sessions rose 63%, from about 18,000 to nearly 30,000, roughly 11,000 extra sess
 The mechanism: TikTok delivered volume that was not in market, and because site conversion rate is blended across all sources, the new traffic dragged the denominator and the whole site read as broken. Every downstream metric the brand looked at was contaminated by a channel that occupied 33% of media budget.
 Operator action: when a new channel turns on, watch blended site conversion rate and the ABSOLUTE count of cart additions, never the channel's own row. If cart additions fall in absolute terms while sessions rise, the channel is buying traffic that will not convert and no attribution model is needed to make the call. This is the shown instance behind the rule filed in [[Scaling Models]]: never raise spend on a channel while backend metrics fall.
 SHOWN.
+**AMENDED 2026-09-11 by the teaching pass: the same arithmetic is now measured on our own lead-gen accounts at [[Attribution & Incrementality#AT-116|AT-116]] (T2), on the COST side rather than the traffic side.** SJR Commercial runs two lanes at $3.27 and $8.46 per opt-in and reports an account figure of $4.00 that no ad in it produced; moving only the budget share puts the same account anywhere between $3.48 and $4.72. ChiroWorks shows the dominant ad set 12.4% dearer and the account 11.8% cheaper inside the same week. **The transfer is that this claim's rule is not TikTok-specific and not e-commerce-specific.** Any blended rate is a weighted average whose weights are the budget split, so watch the absolute count of the money event, because the mix contaminates the rate and cannot touch a count. The Meta-documentation version of the mechanism is at [[Attribution & Incrementality#AT-100|AT-100]].
 Sources: Blue Sense Digital, Be Careful: TikTok Ads Nearly Bankrupted This Business, 2025-03-24
-Last touched: 2026-08-19
+Last touched: 2026-09-11
 
 ### TT-023 · Turning TikTok off produced no revenue drop, and site conversion rate went 1.5% to 8% overnight before settling near 6%.
 Tier: T2 · Status: active

@@ -9,6 +9,137 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-12 (research run)
+
+**1 transcript in, 1 watchlist post read in full. 4 claims added, 5 amended, 2 laws amended. 1 source genuinely unmonitored.** Backlog 0 in, 0 out.
+
+### What came in
+
+**YouTube, 1 new transcript out of 12 channels.** Nick Theriot, "We Cut This Brand's Facebook Ads CPA by 75%", 2026-09-11, 7 minutes, 1,525 words. One video skipped under the 150-second floor. Zero listing failures and zero errors, so every channel was genuinely read.
+
+**⚠ 11 of 12 channels fell back from RSS to the /videos tab.** The RSS endpoint returned 404 or 500 for eleven channels; only Ben Heath answered on the primary route. The fallback lists fine and no channel was missed, so today's near-quiet YouTube result is real. It is worth flagging because the 2026-09-11 run recorded zero fallbacks and used that as its evidence that the quiet day was honest. **That evidence is not available today**, and the only reason the quiet is still trustworthy is that the harvester records fallback use explicitly and logs a genuine listing failure separately.
+
+**Meta for Business News broke its own ceiling for the second time in nine days.** New post dated 10 September on the listing card and 11 Sep 2026 on the post itself, "Performance Spotlight: How Instant Hydration Built a System for AI to Scale". Read in full. The previous newest was the 3 September post banked at MD-153.
+
+**Transport, and it flipped again.** The LISTING page answered a plain fetch with a locale override on the first attempt, HTTP 200, 237KB. The POST returned **HTTP 400 on six routes**: bare, trailing slash, en_US, en_GB, web.facebook.com and m.facebook.com. The Playwright browser opened it on the first attempt. That is the fourth different transport outcome on this source in five days, and the pattern across them is that the listing and the post do not behave alike. **Try the browser on a post body straight away rather than working through fetch routes.**
+
+### Everything else on the watchlist
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 0 new. Feed still built Tue 8 Sep 16:52 UTC, fourth day flat |
+| Meta Newsroom (RSS) | 0 new. Feed still built Tue 8 Sep 18:45 UTC |
+| Google Ads & Commerce (RSS) | 0 new. Feed built Thu 10 Sep 16:00 UTC |
+| arXiv cs.IR (RSS) | Empty by construction. 892-byte Saturday build, `skipDays` names Saturday and Sunday |
+| TikTok SDK changelog | Unchanged at v0.1.8 |
+| Google Ads Announcements | 2,350 lines against 2,350 cached, 1 added / 1 removed, both render nonces |
+
+Saturday, so the Monday-only sources were not due.
+
+**The Google Ads Announcements nonce was re-confirmed live rather than assumed.** The checker was run twice minutes apart against the same cache and returned a different bare numeric ID as "added" each time (526795959019865150, then 11413881109636762997). Same behaviour as 2026-09-11. Line count identical. Not news.
+
+**TikTok stays a blind spot and is not logged as clean.** The SDK changelog ships endpoint names, so it detects new ad products and misses every policy and creative announcement. The Newsroom and the for-Business blog are permanently India geo-blocked from our egress.
+
+### The one source, and what it is worth
+
+Instant Hydration, an electrolyte brand, DTC from mid-2024 and pushing into retail this summer. Kevin Cooper, Founding Partner and VP of Paid Acquisition, quoted by name throughout. Meta published it, Meta sells everything it praises, and no number on the page carries a method. Read with that discount and there is still real content, because the operating model is described in specifics.
+
+**AT-117, new, T1 for what Meta published and T3 for the figure.** "About 35% higher net-new visits" from running the same ads under incremental attribution instead of a conversion campaign on 7-day click plus 1-day view, which Meta calls "a lift validated by their third-party MTA tool". **The validator is the finding.** Multi-touch attribution observes only exposed users, has no unexposed cell, and therefore cannot answer whether the visit would have happened anyway. Two models on the same exposed population agreeing is not a control. The outcome is also site VISITS, which is not what [[Attribution & Incrementality#AT-003|AT-003]] says the switch has to be read on.
+
+**AT-035 amended, and this is the first Meta text this claim has ever held.** The claim has recorded since 2026-08-20 that all three competing accounts of how incremental attribution works come from practitioners and that no Meta documentation is quoted anywhere. Meta now has prose on the record: the setting "shifts delivery toward users the platform predicts wouldn't have visited otherwise". **The verb is evidence.** *Predicts* is a model scoring users, which argues against the permanent-10%-holdout position and sits comfortably with the factor-derived-from-other-advertisers position. It settles nothing about the training data, and a case study is not documentation, so the claim stays contested.
+
+**CR-232, new, T3, and it is the more useful half of the day.** The advertiser says creative the team thought had burned out "can come back to life" when repurposed into incremental attribution campaigns, with the asset untouched. Nothing shown, vendor page, weak as evidence for the lever. **Strong as a reframe**, because it splits fatigue into two diagnoses that produce an identical Ads Manager row: an audience that has stopped responding, which only new creative fixes, or an asset the delivery system stopped selecting, which a different objective can reverse. Test costs one duplicate.
+
+**CR-115 amended** with where a creator brief's SUBJECT comes from: analyse the creator's own organic posts, find the themes their audience responds to, brief on the overlap with the product. The named case is a health condition the creator posted about often that electrolytes help. **CR-068 amended** with a sixth operator position that is the first scoped by ad TYPE rather than by enhancement type: enhancements off on whitelisted creator ads specifically, so a creator's handle never appears on an asset they did not make, argued on brand integrity rather than performance. **MD-013 amended** with one line: Advantage+ audience and placements on every ad set, one manual lever, a lifecycle exclusion of existing customers, and the audience expansion credited to creator diversity rather than to any setting.
+
+**LS-077, new, T4.** "It actually improves our Meta performance because there's more signals from these different channels coming in." Banked low and with the confound named, because the ordinary explanation is that spending on more channels raises total demand and Meta's last-click column catches some of it. Banked at all because this file had no entry for the question and the belief is widespread.
+
+### The transcript
+
+**CR-233, new, T2 for the numbers and T3 for attributing them to the format.** A fragrance account, statics only at a $491 cost per purchase on about $2,000 over the 30 days before onboarding, video only at $107 on about $3,400 over the 30 days after. He says 75%; the figures give 78%. The agency changed at the same time as the format, spend rose about 73%, no window is stated, and $107 on $3,400 is roughly 32 purchases.
+
+**The mechanism is narrower and better than "video beats statics".** A fragrance cannot show its benefit, one person saying it smells good reads as bought, and several different people reacting inside one video is what makes the claim believable. **When a product's benefit cannot be seen on screen, the creative has to carry witnesses, and one witness is worse than none.** That is testable on our own book and it is not a format claim.
+
+### Laws
+
+**Two amended, none added, none retired.**
+
+**Law 11a gains a third step.** Find the word, ask whether it names the method or the metric, then ask what the validator actually measures. A named third party raises the bar for nothing unless that party ran an unexposed cell. The law was written on 2026-09-10, amended on 2026-09-11 when Google triggered the metric-name false pass, and amended again today by a different false pass. **Three days, three versions, and each new failure mode was found by reading one page carefully.**
+
+**Law 4b gains a free test that sits outside the asset.** The codex's longest-open question had been framed entirely as a question about recutting footage. Change the optimization setting before funding a reshoot.
+
+### Counts
+
+**1,191 claims** across 11 topic files at 10:30 IST: 101 T1, 121 T2, 811 T3, 158 T4; 1,085 active, 100 contested, 5 superseded, 1 refuted. Both columns sum to 1,191.
+
+**The reconciliation from 1,185 runs through two passes, and this is the fix for the recount that was wrong twice in a row.** The 2026-09-11 teaching pass banked AT-116 after that day's research count was taken, the 2026-09-12 teaching pass banked AT-118, and this pass banked four. 1,185 plus 2 plus 4 is 1,191. **Any claim count published by either daily pass is a mid-day snapshot**, because both passes write claims into the same files.
+
+**The counter is fixed and the fix is two lines.** It pairs each heading with the line immediately beneath it, and it reads only the 11 topic files. Scoping it to the topic files is what stops the Harvest Log's `### CR-231, new:` heading from being counted as a claim, which is exactly the one-line gap the 2026-09-11 log traced in the team-repo sync. **The sync counter has not been fixed and will still read one high until it is scoped the same way.**
+
+### Errors and failures
+
+- **Meta for Business News POST body: HTTP 400 on six routes.** The browser opened it first try. No data lost.
+- **11 of 12 YouTube channels fell back from RSS to the /videos tab** (404 or 500). Fallback listed fine, nothing missed.
+- No harvester errors, no listing failures, no watchlist script errors.
+
+### Gaps noticed
+
+- **The research and teacher lanes launched in the same second for the sixth consecutive day**, both write claims into the same files, and today the teacher pass held AT-117 as its next free ID while this pass was writing AT-117. It renumbered to AT-118 because somebody re-checked. **Three days running, the only thing preventing a duplicate ID has been a human-grade check.** Stagger the launches or have both passes reserve an ID atomically.
+- **GeoX is still not installed**, a sixth consecutive run naming an instrument and not opening it. Today's teacher pass at least established that four of five of our accounts cannot supply a per-region outcome column, which makes installing it less urgent and the data problem more urgent.
+- **The arXiv framing-sentence filter gap is still open.** It did not fire today only because the feed was empty.
+- **Qualified Future Conversions still has no codex entry**, carried since 3 September.
+- **Meta for Business News has no stable fetch route**, and the listing and post pages now demonstrably behave differently.
+- **The launcher still cannot distinguish an auth failure from a quiet day**, carried a seventh time.
+- **The day's substance again came from a watchlist source rather than from the channel roster**, second time in two days. Widening the watchlist beats widening the channel roster.
+
+## 2026-09-12 (teacher run)
+
+**Lesson 024 shipped: The Tool Got Free and the Test Did Not, video no** (Saturday, and video days are Mon/Wed/Fri). Inbox empty for the **twenty-fourth** consecutive run, so no grading and no measured weak spot to steer on.
+
+**Harvest-driven from the 2026-09-11 research run**, which banked AT-115 at T1 on Meridian GeoX going generally available worldwide and amended AT-022 to say the tooling half of the incrementality gate is now free. Lesson 023 shipped before that harvest was written, so AT-115 was untaught. **Topic is rotation index 5, not the pointer's own topic (index 9, Marketing Math & Unit Economics), so the pointer HOLDS at 9.** Fourth lesson on Attribution & Incrementality: 002 covered the attribution column as an instrument, 012 the twin as a control, 018 the break between the ad and the record, this one covers the test we cannot run.
+
+**The collision bit for the third day running.** Both lanes launched at 09:45:08, **sixth consecutive day in the same second**. The research lane banked **AT-117** mid-run while this pass held AT-117 as the next free ID, verified twenty minutes earlier. Caught by re-checking immediately before writing and renumbered to **AT-118**. Three days in a row now, and on all three the only thing that prevented a duplicate was somebody checking. Stagger the launches.
+
+### The finding: the first gate on a geo test is a column, not a p-value
+
+AT-050 says a geo design starts by building per-region daily series of spend and new-customer outcomes. Nobody had checked whether our accounts can supply that. **Every regional breakdown on disk across all five accounts was opened for this pass, most of them for the first time.**
+
+**Four of five cannot produce a test cell before statistics is reached.**
+
+| Account | Window | Regions in the export | Outcomes by region |
+|---|---|---|---|
+| Mattia Spinal Care | 26 Jul to 3 Aug | 1 (Florida) | 19 of 19 in one region |
+| StayWell | 8 to 16 Aug | 1 (Michigan) | 12 of 12 in one region |
+| Phoenix Truxx | none on file | no regional export exists | none |
+| SJR Commercial | 10 to 20 Jul | 10 states, $1,024.14 of spend | blank in all 10 rows |
+| ChiroWorks | 8 to 16 Aug | 2 (Illinois, Missouri) | 8 and 7 |
+
+SJR's file carries `Leads` and `Cost per lead` populated on the total row only, 256 and $4.0009, and empty in all ten state rows. **Same cost-side-only defect MD-154 recorded in SJR's device breakdown two days ago.** Two of that account's richest breakdowns report what was bought and not what came back.
+
+**ChiroWorks is the only genuine split**, Illinois and Missouri across the Metro East, recomputed line by line from raw CSV.
+
+| Window | Days | Illinois | Missouri | Account |
+|---|---|---|---|---|
+| 10 to 20 Jul | 11 | $392.08 / 9 / $43.56 | $161.36 / 5 / $32.27 | $553.44 / 14 |
+| 10 to 27 Jul | 18 | $629.81 / 19 | $261.03 / 9 | $890.84 / 28 |
+| 8 to 16 Aug | 9 | $429.33 / 8 / $53.67 | $199.56 / 7 / $28.51 | $628.89 / 15 / $41.93 |
+
+The August row reconciles to the cent against the filed weekly export. The 10 to 27 July window contains the 10 to 20 July window, so those rows are not independent. The July state rows sum to $553.44 against a total row of $553.26, an 18-cent gap not chased.
+
+**Power, as an order-of-magnitude gate rather than a power calculation.** Holding AT-071's design, confidence level and split fixed and scaling count noise as the square root of baseline, Blue Sense's threshold of 166 on 2,771 sets the constant at 3.15. Our 21-day volumes: **SJR 489 opt-ins needs ~14%, Mattia 44 needs ~47%, ChiroWorks 30 needs ~57%, StayWell 28 needs ~60%, and the only buildable ChiroWorks cell, Missouri at 10 to 16, needs ~78% to ~97%.** Blue Sense needed 5.99% and measured 3.07%. The method's limits travel with it in the claim and in the lesson.
+
+**The third gate is the one we control, and it is bigger than the geo question.** AT-050 requires new-customer ORDERS, never blended. We would be feeding opt-ins. **Across five accounts exactly one attributed-sale series exists: Phoenix Truxx, 19 sold records, 13 marked ours, 18 March to 21 August. 157 days and 13 sales is 1.7 in a 21-day window against Blue Sense's 2,771.** On ChiroWorks no appointment has ever been marked showed or no-show, established 2026-09-07, so past the form there is no outcome series at any stage.
+
+### Codex changes
+
+- **AT-118 banked at T2**, every figure recomputed from raw CSV, with the three gates, the method limits and the path to beating T2 written into the claim.
+- **AT-115 amended** with the cross-reference and the plain statement that free changed the tooling line and changed nothing about whether we can run one. `Last touched` 2026-09-12.
+
+### Open and cheap
+
+- **Re-pull SJR's regional breakdown with the results column populated.** It is the only export with ten regions and real volume, 256 opt-ins in 11 days, and its outcome column is empty. Until that is fixed the one account big enough to host a geo test cannot supply the series.
+- **The regional breakdown came off the never-opened list today and paid on the first read.** That is two instruments opened in three days and both paid immediately. The rest of that list is worth the same treatment.
+
 ## 2026-09-11 (research run)
 
 **0 new transcripts. 1 watchlist post read in full. 2 claims added, 1 amended, 2 hot-layer laws amended, 1 source unreadable.** Backlog 0 going in and 0 going out. The whole day came from one Google blog post; the YouTube roster produced nothing.
@@ -68,6 +199,57 @@ Data Manager is being integrated directly into Google Analytics and DV360. Enhan
 - The arXiv framing-sentence filter gap is still open. It did not fire today because 0 items matched at all.
 - The launcher still cannot distinguish an auth failure from a quiet day, carried a sixth time.
 - The daily inbox is running at 0 to 2 files a day with the backlog at zero, so claim volume is now capped by what the roster publishes. **Today it published nothing, and the entire day's haul came from a watchlist source.** That is an argument for widening the watchlist rather than the channel roster.
+
+## 2026-09-11 (teacher run)
+
+**Lesson 023 shipped: Nothing Got Worse and the Number Did, video yes** (Friday, and video days are Mon/Wed/Fri). Inbox empty for the **twenty-third** consecutive run, so no grading and no measured weak spot to steer on.
+
+**Rotation index 8, TikTok Delivery, taken in the ordinary way. Pointer advanced 8 to 9 with no exception needed. First lesson on this topic.** No harvest was available when the topic was locked: **both lanes launched in the same second for the FIFTH consecutive day, 13:33:52**, so this morning's research had banked nothing, and the newest Harvest Log entry was the 2026-09-10 research run, which lesson 022 had already taught.
+
+**The collision had teeth for the second day running.** The research lane banked AT-115 and GA-073 mid-run, and this pass had already drafted its own new claim as AT-115. It was caught before anything was written and renumbered to **AT-116**. Twice in two days the same launch second has nearly produced a duplicate claim ID, and on both days the only thing that prevented it was somebody checking. Stagger the launches.
+
+### The finding: AT-100 has needed this arithmetic since 26 August and nobody had supplied it
+
+AT-100 holds the readable-unit rule at **T1 for the mechanism**, sourced to Meta's own breakdown-effect documentation. It also carries an explicit warning, written when it was banked, that **the worked example in its source does not survive arithmetic**: the operator says 7x where his own figures give 9x, and the central Simpson's-paradox numbers cannot be verified from the transcript at all. So the codex has carried this rule for sixteen days with documentation behind the mechanism and **nothing checkable behind the numbers**.
+
+This pass supplied the numbers from our own raw exports, recomputed line by line rather than read off any summary table. **AT-116 banked at T2.**
+
+**SJR Commercial, 10 to 20 July 2026, whole account.** Placement rows sum to the account total to the cent against the day-by-day campaign export, so the window is the whole account.
+
+| Lane | Spend | Opt-ins | Cost per opt-in | Share of spend |
+|---|---|---|---|---|
+| Cargo Vans program | $719.42 | 220 | $3.2701 | 70.25% |
+| Dump Trucks test | $304.60 | 36 | $8.4611 | 29.75% |
+| Account | $1,024.02 | 256 | **$4.0001** | 100% |
+
+**No ad in the account cost $4.00.** Cheapest funded ad $2.09 (Asia Hybrid Ad, $39.68 / 19). Largest spender $3.34 (UGC Inspirational, $625.12 / 187, 61.0% of account spend). Dearest funded $10.24 (DUMP_05 Brand Authority, $92.19 / 9).
+
+**Counterfactual, holding both lanes at their measured rates and moving only the money: $3.4838 at a 10% dump-truck share, $4.7171 at 50%.** A 35% swing in the client-facing number with no ad, audience, bid, creative or offer touched. Putting the share back to the real 29.75% returns $4.0002 against the exported $4.0001, which is a consistency check on the arithmetic and not a prediction.
+
+**ChiropracticWorks, three consecutive reported weeks, ad-set level from the weekly-report raw exports.**
+
+| Window | Account | invisa-RED | Its share | Spend returning zero |
+|---|---|---|---|---|
+| 8-16 Aug | $41.93 (15) | $36.25 (14) | 80.7% | $54.08, 8.6% |
+| 17-23 Aug | $54.41 (8) | $40.07 (8) | 73.6% | $98.77, 22.7% |
+| 24-30 Aug | $47.97 (10) | $45.05 (7) | 65.7% | $62.47, 13.0% |
+
+**Week one to two the dominant ad set moved 10.5% and the headline moved 29.8%**, so two thirds of what the client saw came from the mix. **In week two every opt-in in the account came from invisa-RED**, which means that account bought 8 opt-ins at $40.07 and the same 8 at $54.41, both true, the $14.34 gap being $98.77 of Advantage+ spend that returned nothing.
+
+**Week two to three the two numbers move in OPPOSITE directions inside one week on one account: invisa-RED 12.4% dearer, the account 11.8% cheaper**, because two new Advantage+ ad sets produced 3 opt-ins on 20.4% of budget, one at $25.55 which was the cheapest result in the account.
+
+**Stated limits, and they travel with the claim.** ChiroWorks runs 15, 8 and 10 opt-ins, so it demonstrates arithmetic and never grades an ad set. SJR's 256 is the only volume in the pass. Stripping zero-result spend out of a blend gives a diagnostic and never a truer number, because that money was genuinely spent. And none of this tests what Meta's allocator is optimising: the tables are consistent with AT-100's mechanism rather than an experiment on it.
+
+### Codex changes
+
+- **AT-116 banked at T2**, with every figure recomputed from raw CSV rather than from a summary table, and the path to a real T2-beating test written into the claim.
+- **AT-100 amended.** The arithmetic warning it has carried since 2026-08-26 stands unchanged and the hole it describes is now closed from a different direction. `Last touched` 2026-09-11.
+- **TT-022 amended** with the cost-side transfer, and with the note that its rule is neither TikTok-specific nor e-commerce-specific.
+- **Law 25 added to the hot layer**, the first law-level addition since law 4g on 2026-09-06.
+
+### Open and cheap
+
+**AT-116 reaches T2 on arithmetic alone.** To beat T2, somebody moves the budget shares on a live account deliberately, holds the ad sets constant, and writes the predicted account figure down **before** pulling the export. Nobody here has ever done that.
 
 ## 2026-09-10 (research run)
 
