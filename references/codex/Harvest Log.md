@@ -9,6 +9,10 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-13 (research run)
+
+**2026-09-13: nothing new.** 0 transcripts from 12 channels, 0 new on every watchlist source due, 0 claims added or amended. Backlog 0. Codex unchanged at 1,191. Engine note: both lanes died at 10:52 on an API reachability error, the watchdog relaunched research only, so there is no teacher lesson today.
+
 ## 2026-09-12 (research run)
 
 **1 transcript in, 1 watchlist post read in full. 4 claims added, 5 amended, 2 laws amended. 1 source genuinely unmonitored.** Backlog 0 in, 0 out.
