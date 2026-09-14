@@ -625,6 +625,12 @@ Each pack (ad set) holds one avatar x concept; new launches never interfere with
 Restated 2026-08-19 as an absolute with no exception, which is the sharper form: "Every time we launch new ads, we launch them into a new pack or a new ad set. We never inject new ads into old packs. Let that sit with you. That is critical." The consequence that makes this a doom-cycle claim as well as a structure claim: if test creative never enters an incumbent ad set, the top-spending winner is never disturbed by a test, and the kill decision moves off the ad and onto the ad set. See [[Scaling Models#SC-085|SC-085]] and the passive verdict method in [[Scaling Models#SC-025|SC-025]]. Asserted across the agency's roughly 100 brands, no test shown.
 
 A fourth video restates the same rule with the grouping named, added 2026-08-21: "every time we launch new creatives, we do so in a grouping of avatar and concept together in a new ad set." Ads Manager structure and the naming convention were SHOWN on screen. No performance number accompanied the walkthrough, so the structure is demonstrated and its effect still is not.
+**A FIFTH video adds the enforcement mechanism and, for the first time, the reason, 2026-09-14.** Every restatement above describes WHERE new ads go. This one describes what is done to make them deliver, and names the failure it exists to prevent: **a 7-day minimum budget is forced onto each new pack.** "The reason we set this 7-day minimum budget is because it forces for just 7 days budget against a new adset to give it a fair shot to see if it's actually scalable."
+
+**The stated diagnosis is the part worth carrying.** "One of the biggest problems in the Andromeda algorithm that we have experienced is that when we launch new ads in existing campaigns, they get no spend and then we never know if the creative that we've spent so much time producing actually works. Occasionally, it ramps to the top on its own, but we always want to give it a little bit of a booster pad." So the pack rule is not only about protecting incumbents from tests. It is about a CBO refusing to fund anything unproven, with the minimum budget as the workaround. That converges with [[Scaling Models#SC-086|SC-086]] on consolidation starving committed spend, and it is the same problem [[Meta Delivery & Andromeda#MD-094|MD-094]] says Meta's own creative-testing tool solves by forcing minimum spend through chosen ads.
+
+Also newly specified: each pack holds **one avatar and between two and eight creatives**, and packs are trimmed rather than paused wholesale, "you're pausing the bad, you're keeping the good". Still no performance data attached to any of it after five videos.
+Added source: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14
 Sources: Sam Piliero, The Only Facebook Ads Video You Need in 2026, 2026-07-26; Sam Piliero, Do THIS and the Meta Andromeda Algorithm Will LOVE You!, 2026-08-14; Sam Piliero, The BEST Facebook Ads Campaign Structure for 2026, 2026-07-05; Sam Piliero, 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15
 Last touched: 2026-08-21
 
@@ -1412,3 +1418,31 @@ Tier: T3 · Status: active
 Prescriptive, drawn from agency practice. No before-and-after account shown for any of the three counters.
 Sources: Blue Sense Digital, Beat the Post-BFCM Slump: The 3 Moves That Prevent It, 2025-10-03
 Last touched: 2026-09-03
+
+### SC-157 · An ad account can be a harvesting layer rather than a demand engine, and when it is, the in-account levers are close to powerless: 96% of Alo Yoga's ads sit in the bottom two awareness stages
+Tier: T3 · Status: active
+Blue Sense Digital teardown of Alo Yoga, 2026-09-14, built from a scrape of the public ad library plus the landing pages. The agency states 15 to 20 nine-figure fashion brands as its own book. **No account access and no spend distribution**, and the presenter says so twice unprompted: "ad account honestly means nothing because it doesn't tell us spend distribution."
+
+**The measured shape of the account.** 96% of ads sit in the product-aware and most-aware stages. 21% are dynamic catalogue. 99.6% use "Shop now". **15% of ads carry a celebrity or creator name in the copy.** 0% mention price, 0% mention a discount, 0% carry the risk reversal the brand actually offers, 0% mention the loyalty programme, the app, or the 150-plus retail stores. Three quarters of paid traffic lands on a category page.
+
+**The claim.** Demand is created outside the account by celebrity and creator seeding, and the account's only job is capture. His one-line summary: "Alo Yoga runs ads for people that already know about Alo Yoga."
+
+**The consequence he draws, and this is the part to carry past fashion.** In an account shaped this way the commercial impact of in-account work is small and systematically overstated. "Does launching a new ad set in a meta campaign with the same ads on a different bidding strategy, is that going to grow this 100-200 million business? Probably not. At best, it's probably going to add 1% to the existing performance out of that campaign." He then names the failure mode precisely: revenue dips on a natural fluctuation, the agency bumps budgets 5%, changes a bid and kills a creative, revenue recovers on its own, and both sides now hold a false belief about what those three changes are worth.
+
+**The named dependency, which is the honest cost of the strategy.** There is no true cold-prospecting creative in the account, so if cultural attention softens there is nothing in the account to find new customers with. He is explicit both that this is working and that roughly 95% of brands cannot run it, because they use Meta as the new-customer engine with nothing outside it doing the top-of-funnel work.
+Sources: Blue Sense Digital, Alo Yoga Teardown: Creative, Offers, Landers & Acquisition, 2026-09-14
+Last touched: 2026-09-14
+
+### SC-158 · Interest ad sets are run to WIDEN the pixel rather than to scale, and the interests are chosen to be deliberately unlike the brand
+Tier: T3 · Status: contested
+Sam Piliero, 2026-09-14. He keeps interest ad sets inside a broad CBO prospecting campaign and states a purpose that is explicitly not performance: "The reason we use interest targeting is not because it's going to significantly scale our whole account or not because it's going to drive massive amounts of return on ad spend. Ideally, all interest targeting does is it just finds something semi-similar and then eventually it allows the pixel to expand its reach to more customers."
+
+**The selection rule is the specific part, and it inverts normal practice.** The interest must be far from the category. "If I was Nike, the interest group I would choose here is not Adidas. It is not Reebok. It is not running shoes. It's something totally different. Maybe it's something just high quality like Sony cameras... maybe it's something like Range Rover because that indicates someone who's aspirational." **The selection criterion is a proxy for customer VALUE, not for category affinity.**
+
+**The diagnosis behind it.** A pixel narrows onto one pocket and stops exploring: "your pixel seems to narrow to like this little grouping right here, and it forgets to try to go over here." The claimed effect of the dissimilar interest set is lower CPM, more reach and a larger available pool.
+
+**Contested, and against two claims rather than one.** [[Scaling Models#SC-070|SC-070]] lists interest targeting among the dead media-buying levers. [[Attribution & Incrementality#AT-061|AT-061]] proposes that interest and lookalike ad sets running beside broad add no conversions and take last-touch credit from broad, so broad reads worse than it is.
+
+**Read the shape of the disagreement carefully, because Piliero does not actually contradict AT-061.** He concedes the conversions, twice and unprompted. His claim is about CPM and reach, which AT-061 says nothing about. So the live proposition is new rather than a rerun: **an ad set can be worth running while contributing no incremental conversions, if what it changes is what the delivery system learns.** Nothing in this codex supports that mechanism from the platform side, no test is shown, and the cheapest way to settle it is the CPM and reach trend on an account before and after the interest sets come out. [[Scaling Models#SC-088|SC-088]] describes a live $1M/month account running broad plus an interest stack plus a lookalike stack with identical ads in all three, which is the structure this claim would justify.
+Sources: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14
+Last touched: 2026-09-14

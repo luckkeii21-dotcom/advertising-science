@@ -680,3 +680,17 @@ Instant Hydration, in a Meta-published case study, 10-11 September 2026: "Where 
 **From the same account, and it belongs beside this one because it is the same person describing their operating model.** They run an agent against a third-party tool that reads business-level CAC and reallocates budget across ad sets in real time: "Right now your CAC is very low, the business is performing well, and it just allocates budget to the best ad sets." No tool named, no rules shown, no result attached. Record it as a dated example of external-signal budget control existing in a large account, never as a recommendation.
 Sources: Meta for Business News, Performance Spotlight: How Instant Hydration Built a System for AI to Scale, 2026-09-10
 Last touched: 2026-09-12
+
+### LS-078 · Ad ranking is moving to a cached, target-independent summary of the user's whole history, which decouples long-history modelling from the scoring of each candidate ad
+Tier: T1 · Status: active
+ChronicleRec, arXiv 2609.12375v1, announced 2026-09-14. Evaluated on KuaiRand and **Tencent AdLive**, with a seven-day online A/B test the authors say produced significant production gains. Read as the abstract; the full paper was not opened.
+
+**The problem it names.** Feeding thousands of historical user actions into a ranking model is computationally prohibitive, and truncating the history discards long-range signal. Existing lifelong-interest methods retrieve target-relevant behaviours **per candidate**, which couples long-sequence modelling to candidate scoring and pays the cost again on every request.
+
+**The move.** Compress the entire behaviour sequence ONCE into a chronologically ordered set of tokens, with recent behaviour preserved at fine grain and distant history coarsened. Query tokens are interleaved with the merged sequence under a causal encoder, so each summary covers only the history before its own point in time. Because the tokens are target-independent, they can be **cached per user**, which is the whole point: ultra-long sequence modelling stops being part of the per-request cost.
+
+**Why it belongs here.** It is a direct statement from people shipping it that the expensive object in modern ad ranking is the user's history rather than the ad, and that the industry answer is a durable per-user representation computed ahead of time. That is the same shape as the latent user and interest representations at [[Meta Delivery & Andromeda#MD-025|MD-025]], and it is a mechanism underneath why a pixel's accumulated history behaves like an asset rather than a setting. Compare [[Learning & Signal#LS-039|LS-039]], which holds that the reinforcement signal is wider than the optimization event.
+
+**Filter note, and read it before treating this as an advertising paper.** The word "advertising" appears in this abstract exactly once, in the first sentence, which is the shape of all three arXiv false positives recorded in Watchlist.md. It was banked on a different ground: the EVALUATION runs on Tencent AdLive, an advertising dataset, with a seven-day online A/B test. The method itself is not advertising-specific and the paper is not about auctions, bidding or creative.
+Sources: ChronicleRec: Pre-training Temporally Anchored Tokens for Lifelong User Modeling, arXiv 2609.12375v1, announced 2026-09-14 (abstract read)
+Last touched: 2026-09-14

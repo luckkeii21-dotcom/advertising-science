@@ -1274,6 +1274,36 @@ This is the back-end form of [[Google Auction & Smart Bidding#GA-030|GA-030]] (G
 Sources: EvrythingAI filed reports, ChiroWorks 2026-08-16 and SJR Commercial / Phoenix Truxx / Chiropraise 2026-08-27; `.claude/skills/weekly-client-reports/RUNBOOK.md` lines 83-84 as written before 2026-09-07
 Last touched: 2026-09-07
 
+### MM-212 · In a local service business the front-door PRICE is a selection instrument, so cost per opt-in cannot be read across a change to it, and on our own book the change has been made twice with no downstream series on either side
+Tier: T3 · Status: active
+The local-service translation of [[Marketing Math & Unit Economics#MM-204|MM-204]], which had been carried unteachable since 2026-09-09 because its evidence is Shopify cohort spend over six months and no client of ours has a repeat purchase to follow.
+
+**What transfers is the mechanism.** A price or a discount changes WHO says yes, not only how many. The acquisition column charges the same for both populations and prints one number over the top of them, so a cost per opt-in measured before a price change and one measured after it are describing two different populations in the same column. The e-commerce form of the consequence is worse repeat spend. **The local-service form is a worse show rate**, which resolves in days rather than in six months and is therefore cheaper to test than the claim it comes from.
+
+**Two of our clients have made the move, both toward a paid front door, and neither has a measured result.**
+
+StayWell Spine & Joint moved its knee offer from a free consultation to a paid roughly $39 evaluation in May 2026. The stated reason is MM-204's mechanism in a clinician's words: too many booked appointments were no-showing, so the price adds friction and only serious patients book and show. The instruction attached to it was to put the price in the ad itself so it filters before the form fill. **No before-and-after show rate was captured.**
+
+ChiropracticWorks moved the invisa-RED front door from a free consultation to a **$49 introductory session on 2026-09-06**. Three conditions as at 2026-09-13, seven days later, all verified on disk: the live Instant Form is still named `invisa-RED Free Consultation Form EvrythingAI` (ID `1759974908344299`), still asks "How soon would you like to come in for your free consultation?", still ends on a `Free invisa-RED Consultation` headline, and the project file still reads "Active offer (advertise this ONLY): the $0 Free Consultation"; **no ChiroWorks data has been pulled since 30 August**, the weekly runs of 4 and 11 September producing no ChiroWorks folder at all; and **no ChiroWorks appointment has ever been marked showed or no-show**, established at [[Marketing Math & Unit Economics#MM-211|MM-211]]. The ad promises free and the clinic charges $49, which collects the free door's acquisition cost and the paid door's arrival risk together.
+
+**The one measured selection effect on our book is by CRM age rather than by price, and it shows the instrument's blindness rather than the price's effect.** ChiroWorks 10 to 24 July 2026, 24 traced opt-ins: 9 were already CRM contacts aged 169 to 1,979 days and produced all 3 bookings; 0 of the 15 genuinely new opt-ins booked. Carry the limits with it, they are ours: three events, one-sided Fisher p = 0.042 which goes to p = 0.31 if one booking moves group and to p = 0.084 across the wider 10 to 27 July window (3-of-9 against 1-of-19), and a confound we found ourselves, that all three bookings arrived through SMS automation while only 2 of 22 called opt-ins reached a live human at a median call length of 5 seconds. The test that ran was "text a familiar name" against "text a stranger".
+
+**A parallel-week observation, and it is a sighting rather than a comparison.** Week of 24 to 30 August 2026, recomputed from the raw ad-level exports. StayWell, paid $39 door: **$249.59 / 10 opt-ins / $24.96**, its largest ad named `StayWell | BestPerformer Remake | $39+FREE Xray` at $98.57 and 4 opt-ins. ChiroWorks, free door: **$479.68 / 10 opt-ins / $47.97**, with the invisa-RED ad set at $315.33 / 7 / $45.05 on 65.7% of the account. Different cities, services, creative, budgets and structures, one week, ten opt-ins each. **It settles nothing about price and it does retire the assumption that the free door is the cheap door**, which on our own book, in the same vertical, in the same week, it was not.
+
+**The break-even arithmetic a price change has to beat.** Net cost per patient in the chair matches the free door when the paid show rate reaches `P_paid / (P_free / s_free + 49)`, the $49 being collected from everyone who arrives. On the $45.05 invisa-RED baseline:
+
+| Cost per opt-in rises | Paid door | s_free 10% | 20% | 30% |
+|---|---|---|---|---|
+| 1.5x | $67.57 | 13.5% (1.35x) | 24.6% (1.23x) | 33.9% (1.13x) |
+| 2.0x | $90.10 | 18.0% (1.80x) | 32.9% (1.64x) | 45.2% (1.51x) |
+| 3.0x | $135.15 | 27.1% (2.71x) | 49.3% (2.46x) | 67.9% (2.26x) |
+
+A gate that halves opt-in volume must lift show rate 64% in relative terms to break even. **These are floors.** The table credits the paid door with the full $49 as contribution, charges it no cost of delivering the session, and ignores that the change also resets what delivery has learned ([[Auction Mechanics & Bidding#AU-089|AU-089]] covers the prediction going stale on this same ChiroWorks change).
+
+**Why T3 and not T2.** Every figure above is recomputed from our own raw exports and reconciles, but none of it measures the thing the claim asserts. Neither account holds a before-and-after show rate across its own price change, and ChiroWorks has never written to the field at all. **The path to T2 is narrow and cheap: turn on the appointment and show write-back, pull ChiroWorks from 31 August, and report the two sides of 6 September as two series.** Sits beside [[Marketing Math & Unit Economics#MM-164|MM-164]], where 50-cent leads met a 10% show rate, and one level up from [[Marketing Math & Unit Economics#MM-190|MM-190]], because a downstream column does not rescue a comparison drawn across a change of population.
+Sources: EvrythingAI raw ad-level exports, ChiroWorks and StayWell 2026-08-24 to 2026-08-30; EvrythingAI client attribution audit, ChiroWorks 2026-07-24 (Jul 10-24 window); StayWell offer decision, May 2026; ChiropracticWorks offer confirmation, 2026-09-06; `invisa-RED Lead Form - LIVE + Launch Steps.md` and client `CLAUDE.md` as on disk 2026-09-13
+Last touched: 2026-09-13
+
 ## Team and Org Economics
 
 ### MM-054 · One full-time closer per $50-100k of monthly revenue; part-time closers fail because their incentive is to take calls, not work the pipeline
@@ -1914,8 +1944,10 @@ The sharpest thing in today's read, because it inverts the intuitive move and it
 **The operating consequence, stated in both directions.** An efficiency target justified by a retention assumption does not hold in November. His illustrative calendar: a target of MER 5 through November and December, coming down to about 4.0 or 4.1 in January, because the January cohort will prop up returning revenue through the following six months. He attaches the cash-flow condition explicitly: you can only get more aggressive in January if the working capital is there.
 
 **Evidence class.** Two brands, two industries, cohort reports read on screen with figures visible. Not a controlled test, so it does not establish the causal story, but it is real measured cohort data rather than recollection, which is why this is banked as T2 while [[Marketing Math & Unit Economics#MM-203|MM-203]] from the same operator is T3.
-Sources: Blue Sense Digital, Don't Make This Black Friday Mistake, 2025-11-06
-Last touched: 2026-09-03
+
+**The local-service translation, made 2026-09-13 after this claim had been carried unteachable for four days.** The evidence here is Shopify cohort spend over six months and no client of ours has a repeat purchase to follow, so the question was what survives the move to a chiropractic clinic or a truck dealership. **The mechanism survives and the measurement does not.** What transfers is selection: a price or a discount changes WHO says yes, not only how many, and the acquisition column charges the same for both populations. What does not transfer is the instrument, because the local-service form of "repeats worse" is "does not show up", which lives in a CRM field rather than in a cohort report. **That makes the local-service version cheaper to test than this one, because a show rate resolves in days.** Two of our own clients have already moved to a paid front door for exactly the reason stated above, StayWell in May 2026 and ChiropracticWorks on 2026-09-06, and neither captured a before-and-after show rate. Full working, the break-even table a front-door price has to beat, and the one measured selection effect on our book at [[Marketing Math & Unit Economics#MM-212|MM-212]].
+Sources: Blue Sense Digital, Don't Make This Black Friday Mistake, 2025-11-06; EvrythingAI account read 2026-09-13 (translation only)
+Last touched: 2026-09-13
 
 ### MM-205 · Returning-customer revenue is a function of cohorts you have already acquired, so it cannot be forecast by applying a growth multiple
 Tier: T3 · Status: active
@@ -2003,3 +2035,43 @@ A third error sits underneath both: markup computed on the product's landed cost
 Why it matters beyond bookkeeping: the margin figure a brand hands its agency sets the allowable acquisition cost and the efficiency target. He states the failure plainly, that a wrong margin causes overspend on marketing against profit that was never there. Definitional, taught with worked examples. No account data, and none is needed for the arithmetic.
 Sources: Blue Sense Digital, Markup vs Margin (with an Easy Converter Calculator), 2025-02-04
 Last touched: 2026-09-05
+
+### MM-213 · Opening retail stores in a market lifts that market's online revenue, observed as roughly 20% overnight on a Canada entry, so a store opening is an unmodelled confounder in any paid-channel read
+Tier: T3 · Status: active
+Blue Sense Digital, 2026-09-14, from their own client work entering new markets rather than from the Alo Yoga scrape: "we might enter into as an example Canada and then the client begins opening stores in Canada and online revenue overnight will just go up 20%." No client named, no data shown, stated as a repeated pattern.
+
+**Two mechanisms are offered and they are different in kind.** One is trust: physical distribution raises willingness to buy online from the same brand, which he frames as brand impact. The other is mechanical and specific to apparel: customers try garments in store, buy one item, return it and rebuy online; or the size or colour they want is not in stock in store so they buy it online on the spot; or the decision window simply runs past the visit. He calls the relationship "very one for one" between stores opening and online revenue.
+
+**Why this belongs in the marketing math rather than in a retail note.** A 20% overnight lift in online revenue with no change in ad spend lands in the blended numbers and gets attributed to whatever was running. **Any MER, blended-ROAS or incrementality read taken across a store-opening window is confounded, and the confounder is large enough to swamp the effect being measured.** Ask every client with physical retail for the store-opening calendar before reading a trend line.
+
+**The opinion attached to it, kept separate because it carries no evidence.** He argues retail plus DTC beats DTC alone at scale, on the reasoning that scaling pure DTC through paid drives CAC up with no arbitrage available to suppress it. That is a position, not a finding.
+Sources: Blue Sense Digital, Alo Yoga Teardown: Creative, Offers, Landers & Acquisition, 2026-09-14
+Last touched: 2026-09-14
+
+### MM-214 · Break-even ROAS is one over the gross margin and the profit take comes out of the margin before the division: 33% COGS gives 1.49, taking 10% gives 1.75
+Tier: T3 for the practice, arithmetic verified independently · Status: active
+Sam Piliero, 2026-09-14, worked on screen: 300 orders at $100 each = $30,000 revenue, cost of goods at 33% = $9,900, fixed costs set to zero for the illustration. He reports break-even at **1.49**, then sets a 10% profit take and reports **1.75**.
+
+**The arithmetic checks out, and it is worth stating as a formula because he never does.** Break-even ROAS = 1 / gross margin = 1 / 0.67 = 1.49. With a take of t expressed as a share of revenue, required ROAS = 1 / (margin - t) = 1 / (0.67 - 0.10) = 1.75. Fixed costs enter by reducing the margin before the division, which is why he says the number "goes up and up and up" once a warehouse, a supplier or a salary is included.
+
+**One wording trap, and repeating his sentence produces a 2x error.** He says "if you have a 33% margin business, that means your break even return on investment for the business is 1.49." **1.49 is the answer for 33% COGS, which is a 67% MARGIN business.** A genuine 33%-margin business needs 1 / 0.33 = **3.03**. Decide whether the 33% is cost or margin before touching the formula, and never carry his sentence across.
+
+**The rule he attaches.** The figure with the take included is the account's target, and the only hard floor is never falling under the no-take break-even. He runs the whole scaling decision against this one number, which is how it connects to [[Attribution & Incrementality#AT-119|AT-119]].
+
+**Where it sits.** [[Marketing Math & Unit Economics#MM-068|MM-068]] already requires the CAC target to come from new-customer AOV and new-customer gross profit rather than sitewide figures, and this model does use blended sitewide numbers, which is its main weakness. [[Marketing Math & Unit Economics#MM-088|MM-088]] and [[Marketing Math & Unit Economics#MM-085|MM-085]] carry the discount-depth versions of the same arithmetic.
+Sources: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14
+Last touched: 2026-09-14
+
+### MM-215 · An evergreen offer adds value rather than subtracting price, runs two to four weeks at a time, and the named cost of discounting instead is a degraded pixel
+Tier: T3 · Status: active
+Sam Piliero, 2026-09-14. He separates an offer from a sale and pulls six live examples on screen: AG1 (20% off a first subscription with a code), Talentless (a six-pack tee at 44% off, not sitewide), IM8 (a 90-day reset with a free welcome kit, five sachets and a 90-day money-back guarantee), Manscaped (a bundle at 24% off), Caraway (free baking sheet duo over $675, free shipping over $90), Magic Spoon (subscribe and save 26% plus a free bowl set). The common property he points at in each is that the discount is attached to a specific construction, never applied sitewide.
+
+**The construction menu, verbatim from the list he shares.** Bundle-and-save, dollar off, percent off, buy X get X free, buy X get a percentage off, free gift with purchase, **upgrades** (ship the larger or pro version free), tiered spend-X-save-X, starter or trial kits ("7-day discovery kit", "90-day starting plan", "discovery set"), and a sample gift with purchase. Then stack them: "you create outsized value for the customer, they feel like they're getting a striking deal, but it's only costing you a few extra bucks."
+
+**Evergreen means weeks, not days, and he calls out the common error directly.** Three to six offers in rotation, each running two to four weeks, wrapped in a seasonal name. "Do not get this too confused that you need to run this for three or 4 days and have the next one ready to go and ready to go."
+
+**The mechanism he claims for why straight discounting is worse, and it is a SIGNAL claim rather than a margin claim, which is what makes it new here.** Discounting acquires customers who never return: "their LTV metrics tank, their pixel gets completely killed, you have to recondition the pixel with good customers. Good customers want more. They don't want cheap." No test is shown and no account is named, so the pixel half of this is assertion.
+
+**Where it sits.** Same direction as the discount-depth curve at [[Marketing Math & Unit Economics#MM-085|MM-085]] and [[Marketing Math & Unit Economics#MM-086|MM-086]] and the stacked-offer result at [[Marketing Math & Unit Economics#MM-087|MM-087]], reached by a different argument: those three are margin arithmetic, this one is about who the offer recruits. See also the always-on evergreen offer at [[Creative Science#CR-075|CR-075]].
+Sources: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14
+Last touched: 2026-09-14

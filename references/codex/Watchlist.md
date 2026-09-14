@@ -146,3 +146,51 @@ primary source and the substance had to come from the help centre.
 2026-09-07 posts in full on the first attempt. Use it whenever a post's substance is needed. The
 index and archive pages render fine through WebFetch, so use WebFetch for titles and dates and
 urllib for bodies.
+
+### Meta for Business News: the card DATES drift by one day, so a date diff is not safe either (found 2026-09-14)
+
+The rule at the top of this note says diff on dates, never on the link set, because a link-set diff
+produced five false positives on 2026-08-20. That rule is still right about links and it is now
+known to be incomplete.
+
+**Observed 2026-09-14 against 2026-09-13, same 12 cards, same order, nothing new.** Five of the
+twelve card dates rendered exactly ONE DAY EARLIER than they had the day before:
+
+| 2026-09-13 | 2026-09-14 | Post |
+|---|---|---|
+| 11 Sep | **10 Sep** | Performance Spotlight: How Instant Hydration Built a System for AI to Scale |
+| 26 Aug | **25 Aug** | Small to Scale: How Sydney Sock Project Scaled a Cause |
+| 12 Aug | **11 Aug** | Win over shoppers with ad formats they're engaging with |
+| 7 Aug | **6 Aug** | Performance Spotlight: What Your CFO Actually Wants to Hear About Marketing |
+| 28 Jul | **27 Jul** | Getting Your Small Business Holiday-Ready |
+
+The other seven (3 Sep, two 19 Aug, three 11 Aug, 15 Jul) were identical. So the drift is not applied
+uniformly, it is a timezone boundary catching whichever posts sit near midnight in the rendering
+locale. **This also explains the 2026-09-13 entry that read the card "catching up" from 10 Sep to
+11 Sep. It was not catching up. It drifted, and it drifted back.**
+
+**Consequence for the method.** Neither key is stable on its own: the link set rotates, and the dates
+move by a day. **Diff on the post TITLE, and read the date only to decide whether a genuinely new
+title is worth opening.** A whole-list shift of one day with the titles unchanged is a rendering
+artefact and must never be logged as twelve new items or as twelve disappearances.
+
+**Transport, sixth consecutive daily observation.** The browser opened the listing on the first
+attempt again. The plain-fetch routes have now returned 200, 400, 200 and 400 across six days. The
+honest instruction for this source is "use the browser", not "try fetch first".
+
+### Meta Advertising Standards: the source-quality gap recorded 2026-08-24 is CLOSED (2026-09-14)
+
+That note said the lane could report the page's structure and genuinely could not detect a silent
+rewrite, and it sat directly under our two chiropractic accounts. Two things changed today.
+
+1. **The heading baseline caught a real change on its 20th day**, its first ever: section 7 renamed
+   from "Fraud, Scams, and Deceptive Practices" to "Prohibited Commercial Practices", with two
+   policies collapsed into one. Banked as MD-156.
+2. **A per-section SHA-256 map of the rendered body now exists**, so a rewrite under an unchanged
+   title is detectable from the next run onward. Method and the 16 baseline hashes are in
+   `.claude/skills/advertising-science/cache/meta-ad-standards-baseline.md`.
+
+**New standing instruction for this source: read BOTH `/policies/ad-standards/` and
+`/en-gb/policies/ad-standards/`.** They disagreed on 2026-09-14, in the same browser session, on the
+name and count of a policy section. Meta stages these rewrites by locale. A single-locale read will
+show a change a week late or not at all, depending on which locale you happen to check.

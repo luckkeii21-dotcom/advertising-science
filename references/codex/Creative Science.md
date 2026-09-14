@@ -323,6 +323,10 @@ Because video and image are different media types, Meta is very unlikely to tag 
 Sources: Fraser Cottrell, Claude + Arcads MCP | Fastest Way to Make Iterations Meta Ad Creatives, 2026-08-09
 Last touched: 2026-08-18
 
+**The static-to-static threshold, added 2026-09-14.** This claim covers turning a static into a video. Fraser Cottrell states the rule for staying INSIDE the static format, and it is stricter than most variation practice: a headline swap on one design does not clear the bar. "Instead of just having that static and switching out the headline, we're building different designed ads, essentially different statics, but based around the same messaging... You want to make these assets as different as you can do, so Meta sees them as different assets."
+
+So the unit being varied is the DESIGN and the thing held constant is the MESSAGE, which is the inverse of how most variation batches get built. His worked example is one message, a perfume line about claiming a scent before the group chat does, rendered as several visually unrelated statics including a call-out ad. He frames it as harder than it was: "with Meta's Andromeda changes, it can be a little bit harder. It's a bit more of a dance." Asserted from agency practice, no test shown, and it is the same threshold question left open at [[Creative Science#CR-172|CR-172]].
+Added source: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
 ### CR-116 · Purchase probability collapses after two impressions of the SAME creative, but holds if impressions three and four are novel creatives
 Tier: T3 · Status: active
 The curve as described: impression 1 baseline, impression 2 flat or slightly higher because the viewer is warmer, impression 3 declines massively, impression 4 near zero. Substituting a different ad at impression 3 holds probability at the impression-2 level. This is the mechanistic case for creative rotation as a delivery requirement rather than a nice-to-have. It converts to a concrete audit: pull the ad level on cold campaigns over 30-60 days and read frequency, and treat anything above 2 as a creative fatigue and diversity red flag.
@@ -2270,3 +2274,143 @@ Nick Theriot, 2026-09-11, a new agency client selling a fragrance. Both windows 
 **The counterweight in the same session, recorded because it cuts against the research-heavy default elsewhere in this file.** He did no research on this account: "some products just are simple products and you need a very simple thing... research is just a tool", matched to the job. That is a defensible position and it is also the position of someone describing a win after the fact.
 Sources: Nick Theriot, We Cut This Brand's Facebook Ads CPA by 75% (Here's How), 2026-09-11
 Last touched: 2026-09-12
+
+### CR-234 · Pinterest's production creative-selection system gives each creative COMPONENT its own tower and then adjusts the score for how much screen the ad will occupy, for +3.09% CTR
+Tier: T1 · Status: active
+PinDCO, arXiv 2609.11943v1, announced 2026-09-14. A Pinterest engineering paper describing a system the authors state is launched in the Pinterest Ads platform. Read as the abstract; the full paper was not opened, and this claim says nothing the abstract does not.
+
+**The architecture, and why it is not just another ranker.** A Creative Component Fusion Network models each component of the creative, the paper names image, title and layout, with **its own dedicated tower and its own hyperparameters**, on the stated reasoning that components differ in modelling complexity. The component representations are then fused into a creative-level score that is **conditioned on the ad-level prediction**. Creative score and ad score are separate quantities, and the creative one is computed on top of the other.
+
+**The part with no analogue anywhere else in this codex.** A Pixel-aware Adjustment Module changes a creative's score **according to the size it will render at**, because Pinterest's waterfall grid means one creative's rendered size displaces neighbouring content and moves session-level engagement. Creative selection is being optimised for the whole page, not for the ad's own click.
+
+**Scale plumbing, stated and worth noting because it is the same problem every platform now has.** A lightweight pre-selection model prunes candidates early, with caching and dynamic batching behind it. The paper's reason for needing any of this is that generative AI has multiplied candidate variants per campaign, which is the platform-side statement of the creative-volume argument this codex has so far only heard from operators.
+
+**Result.** +3.09% ad click-through rate online with positive whole-page metrics, from offline analysis plus online A/B.
+
+**Read it as direction of travel, not as Meta.** This is Pinterest, and [[Emerging Channels#EC-001|EC-001]] and [[Emerging Channels#EC-002|EC-002]] both hold that Pinterest is a thin, structurally over-attributing surface we do not buy. Its value is as a rare published description of a production creative-selection system, and it converges with the content-based retrieval architecture at [[Meta Delivery & Andromeda#MD-022|MD-022]] and [[Meta Delivery & Andromeda#MD-025|MD-025]].
+Sources: PinDCO: Whole-Page Aware Dynamic Creative Optimization at Scale, arXiv 2609.11943v1, announced 2026-09-14 (abstract read)
+Last touched: 2026-09-14
+
+### CR-235 · Alo Yoga's live ads have a 5-day median age and a 24-day oldest, and the operator's verdict is that a turnover clock this tight is an unforced error that stops winners being milked
+Tier: T3 · Status: active
+Same teardown, from a public ad-library scrape. 190 distinct copy lines across the account, new assets entering roughly every 7 days on what he reads as the merchandising drop calendar, **median age of a live ad 5 days, oldest live ad 24 days**. Nothing in the account is older than a month. The unique-asset count is garbled in the auto-transcript and is deliberately not reported here.
+
+**The tension he names is specific to fashion and generalises past it.** "You are constantly balancing newness whilst trying to maximize winners, and most people will overoptimize towards newness rather than maximizing winners."
+
+**His recommendation runs against his own explanation of why Alo does it.** He accepts that a distribution-shaped account wants grade-A inventory only and wants last season's assets gone. He still calls the 24-day ceiling "wild" and argues for holding winners: "If you have a winning product, you should triple down on the thing. You should just be ordering and ordering for years on end until the market stops wanting that product." The binding constraint he concedes is stock, and his answer is replenishment inside 3 to 4 weeks rather than letting the ad die with the size run.
+
+**Read this against the turnover claims, because it points the other way.** Most of this codex's fatigue material argues for volume and replacement. This one says a 24-day ceiling discards proven assets on a calendar rather than on performance. Both hold: what he is attacking is turnover ON A CLOCK, not turnover. The single caveat he offers himself is that the verdict flips if Alo is flexing budgets hard enough to exhaust an asset inside 20 days, which the ad library cannot show.
+Sources: Blue Sense Digital, Alo Yoga Teardown: Creative, Offers, Landers & Acquisition, 2026-09-14
+Last touched: 2026-09-14
+
+### CR-236 · Premium positioning is asserted through photography and association and never defended in words: 0% of Alo Yoga's ads mention price, discount, risk reversal, loyalty or stores
+Tier: T3 · Status: active
+Same teardown. Median product $118, leggings $98 to $148, pants to $338. The cheapest entry point is a $48 bra and **nothing in the account promotes it**, which he reads as deliberate and correct: do not advertise your lowest average unit retail.
+
+**The claim.** "Their premium pricing is asserted through photography, positioning, associations. It's not defended through words." The brand holds real incentives (10% off for an email, a gift-with-purchase programme, free express for members, Afterpay, instant refunds) and keeps every one of them out of the ad, letting them work post-click. He classes the risk reversals as table stakes that hold conversion rate rather than as an offer: "if they didn't have this stuff it would impact conversion rate."
+
+**The stated mechanism.** Making a price or discount association destroys the aspirational frame that holds the pricing power. This is the reason he gives for the absence of problem-agitating creative too, and he treats the two as one decision: choosing to repel the problem-aware buyer is the cost of the price point.
+
+**His one dissent, and it is a geography argument rather than a brand argument.** Zero ads mention the 150-plus stores. He argues that in a market with no store a store mention is pure credibility with no downside, because the viewer cannot walk in. "I had no idea that Alo Yoga had stores until last week... immediately conversion rates will go up a little bit, brand trust will go up a little bit, which will help the entire funnel." The executable version is store hauls, try-ons or collection walkthroughs shot in a flagship and run into countries with no stores.
+
+**The limit he puts on the whole aspirational play, offered as a challenge to his own audience.** He has never seen a $100M women's fashion brand that problem-agitates, can name roughly six on the men's side, and guesses that problem-agitating brands do not price this high. Treat that as an observation from one agency's book, not as a rule.
+Sources: Blue Sense Digital, Alo Yoga Teardown: Creative, Offers, Landers & Acquisition, 2026-09-14
+Last touched: 2026-09-14
+
+### CR-237 · Sending paid traffic to a fashion collection page makes the top six products the real landing page, and a size-curve stock-out tanks conversion rate with no account change to explain it
+Tier: T3 · Status: active
+Same teardown. Three quarters of Alo Yoga's paid traffic lands on a category page: 220 ads to New Arrivals, 79 to Best Sellers, the remainder across homepage, men's equivalents and product pages.
+
+**The first-order claim.** "The performance of a collection page in fashion is going to be heavily dependent on whatever the top six products are... if this is grade C inventory, if people don't want these products for whatever reason, this landing page performance will tank." The grid order is a conversion-rate lever that sits outside the ad account entirely.
+
+**The second-order version, which is the one that gets missed.** Traffic concentrates on the winning products and then on the winning variants inside them. When the best-selling colour and the middle sizes go out of stock, he estimates roughly 30% of arriving traffic lands on an unbuyable variant. "Size curves breaking in fashion ends up being a very large contributor to decreasing conversion rates." Nothing in the ad account changed, so every in-account diagnosis of that decline will be wrong.
+
+**This is independent convergence on [[Google PMax & Shopping#GP-017|GP-017]], from a different channel and a different operator.** GP-017 holds that a fashion size curve breaking costs roughly 50% of efficiency and prescribes a feed rule that pulls the whole product when its highest-sell-through size hits zero. That claim is about the Shopping feed. This one is about a Meta-driven collection page. Same failure, two surfaces, and the two operators reached it separately, which raises confidence in the mechanism well above either claim's own tier.
+
+**The operational consequence he assigns.** A named person owns the grid order and watches that lander's conversion rate daily. He will not extend the practice outside the vertical: "if you're not in fashion, questionable, I'd be careful, I'd probably do custom landers."
+Sources: Blue Sense Digital, Alo Yoga Teardown: Creative, Offers, Landers & Acquisition, 2026-09-14
+Last touched: 2026-09-14
+
+### CR-238 · A landing page built from one creator's own shoot gives an ad-to-page congruence a collection page cannot, and the blocker is usually the talent contract rather than the build
+Tier: T3 · Status: active
+Same teardown. Alo Yoga runs a custom collaboration page for one celebrity, filled with that person's own photo shoot, and the ads featuring her land on it. "This performs incredibly well because it has congruency from the front end messaging." He calls it the most interesting page in the account and a recent learning of his own.
+
+**His criticism is of the execution, not the idea.** The page as scraped is a stack of images with no product carousel and no story about how the collaboration came about, both of which he would add. He recommends the pattern for any fashion brand running a large performing creator, and his guess for why it is not done for the brand's other recent signings is that the talent negotiation forbade it. That is a guess and is labelled as one.
+
+**Where it sits.** [[Creative Science#CR-086|CR-086]] already holds that the landing page must mirror the ad's persona, angle and offer, and that congruence rather than page format is what wins. This is that rule with a PERSON as the matched variable, which is the version that applies to every creator-led and testimonial-led account, not only to fashion.
+Sources: Blue Sense Digital, Alo Yoga Teardown: Creative, Offers, Landers & Acquisition, 2026-09-14
+Last touched: 2026-09-14
+
+### CR-239 · A static gets a glance where a video gets seconds, so it carries three parts and no more, and its audience is people who already know the brand
+Tier: T3 · Status: active
+Fraser Cottrell, 2026-09-13, walking through four statics from his agency's client accounts, two of which he states spent six figures on Meta.
+
+**The anatomy, stated as fixed.** "We have the three pieces that go into every single static ad. A headline, an image, a CTA. You want to catch people's eye with the image. You want to give them more information with the headline and you want to tell them what to do with the CTA."
+
+**The reason for the three-part limit is a timing argument, and it is the useful half.** "Unlike a video, we don't have a couple of seconds where we can hook people in. We have a glance." Everything a static does has to survive being looked at once, briefly, which is why he pushes colour and contrast against the feed rather than composition.
+
+**Where he places statics in the funnel, and it is lower than most of this codex assumes.** "Statics usually sit at the bottom of the funnel, meaning that the people who are consuming them are product aware and problem aware. They know of you. They might have even purchased you in the past. These ads are just all about scooping up those final remaining sales." His illustration is his own behaviour: he ran out of a hair product, forgot to reorder, and a static from that brand triggered the purchase.
+
+**Read against [[Creative Science#CR-048|CR-048]], which holds that statics work across the awareness spectrum but produce fewer winners than b-roll video.** These are compatible: CR-048 is about where statics CAN work, this is about where this operator believes their yield is. The disagreement worth noting is that CR-048 treats statics as spectrum-wide and this treats them as a harvesting instrument, which changes what you measure them against.
+Sources: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
+Last touched: 2026-09-14
+
+### CR-240 · Frame a real on-site review as a social comment, with a face and a like heart, so a designed ad reads as organic: six figures of spend, ranked 3rd of 435 ads
+Tier: T3 · Status: active
+Fraser Cottrell, 2026-09-13, on a static built for a UK meal-replacement protein brand. He states it "has spent over six figures on Meta" and shows it ranked in the top 1% of the account's ads, **third out of 435**, read from Trend Track.
+
+**The build.** Product image, a review, a CTA, and nothing else. The review is pulled from the brand's own website and then **reformatted as a social comment**: speech-bubble frame, a photo of a woman inside the target demographic as the commenter, and a small love-heart to imply it has already been liked. "This makes the ad feel more organic even though it's highly designed."
+
+**Where the format came from, which is the part that generalises.** He says they saw competitors using social proof screenshotted directly from social platforms, and reverse-engineered the visual grammar onto a source they actually controlled. The on-site review is real; only its presentation is borrowed.
+
+**Two copy decisions he calls out.** The review chosen is results-driven for the specific product ("Absolutely love these shakes. The weight is dropping off") because the buyer of a meal replacement is after weight loss, not protein. And the opener is deliberately conversational: "starting with something that sounds like someone you know, something someone has said, will do wonders for an ad."
+
+**The SKU decision was data-led and is easy to skip.** The ad names a single flavour, pineapple coconut, because the brand told them it was becoming a top seller. Other SKUs were tested in the same frame and this one won. "The more data that you can arm yourself with, whether it's what SKU sells the best or how your customer sounds, all of this can come together."
+
+Related: [[Creative Science#CR-131|CR-131]] holds the Twitter-style static as another operator's most profitable and longest-lived format. Both are the same move, a designed ad wearing a social-native costume.
+Sources: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
+Last touched: 2026-09-14
+
+### CR-241 · The native storytelling static puts the whole argument in the CAPTION and uses a shocking recognisable image plus the above-the-fold first line as the headline
+Tier: T3 · Status: active
+Fraser Cottrell, 2026-09-13, on a format he says he has not covered before and that is "fast becoming an incredibly popular format across our clients". The example is for an eczema brand.
+
+**The inversion.** The image is an extreme close-up of broken eczema skin and does almost no selling: "the actual image isn't really doing anything" on its own. The caption carries the entire story and runs long enough to need a "see more". "It's telling a story which the image then supports."
+
+**The two-part mechanism he names.** First, the image is recognisable enough to stop the exact person who has the problem: "if you have eczema you will automatically recognize that." Second, the first line of the caption, the only line above the fold, functions as the headline. His example line is "a customer shared this with us the other day", and the reaction he is engineering is "oh, well that's what my hands look like. Oh, a customer. Hm, okay, click."
+
+**The production order is backwards from a normal static and he says so.** "Spend time on that copy and then go and find yourself an image that supports it." His method for the image is to search Google Images for the shape he wants, then use that as a reference in an image model and change it enough to be a different image while keeping the shock.
+
+**His own honesty about durability, which is worth keeping attached.** "This might be a trend. This might be something that drops off in a couple of months time. I'm not sure." He notes drop shippers used the same format heavily years ago. The brand launched a batch of these off the back of the first one, and he reports they "spend like crazy" with no figure attached.
+Sources: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
+Last touched: 2026-09-14
+
+### CR-242 · The native story image is a phone photo dressed as an Instagram story, and the underlined @handle harvests mis-taps into clicks: reported 3.5% CTR, built in 10 to 15 minutes
+Tier: T3 · Status: active
+Fraser Cottrell, 2026-09-13, on a static for an electrolyte brand. Build: pull the product off the store-room shelf, have someone hold it in a kitchen, take one photo on a phone, drop it into Figma, and add text styled to imitate Instagram's own story UI. He reports six figures of spend, **a click-through rate of "like 3.5% or something"**, and a build time of 10 to 15 minutes.
+
+**The effect he is buying.** "If you're scrolling through your stories, you are going to stop at something where you don't recognize it, but it kind of interests you. It piques your interest enough to stop, you consume the content, and then you realize it's an ad." He cites watching his wife do exactly that.
+
+**The specific trick, and this one is mechanical rather than creative.** The brand name and the @handle are underlined in the story-UI style, so viewers try to TAP them the way they would tap a real handle. "They'll try to click on it and of course that will up the click-through rate and send them to the landing page." The tap goes to the landing page because every tap on an ad does. Note that this inflates CTR by capturing intent to view a profile rather than intent to buy, so the 3.5% should not be read as 3.5% of people wanting the product.
+
+**His production warning, which applies to every AI-assisted static.** Do not generate the image and the text together in one pass, because changing one word forces a full regeneration. Shoot or generate a few POV product images, write the copy separately, assemble in a Figma frame, and test the combinations. "Set up a little Figma framework in there and just fire them out."
+
+**The stacking note.** He recommends pairing this format with whitelisting or a partnership ad, so the organic-looking creative also carries a real handle behind it.
+Sources: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
+Last touched: 2026-09-14
+
+### CR-243 · Reviews are the concept source and the voice at once, and a winning static is an idea to port into other formats rather than an asset to iterate
+Tier: T3 · Status: active
+Fraser Cottrell, 2026-09-13, demonstrated live rather than described. He opens a fragrance client's product page, scrolls to reviews, and reads one aloud: "I put this on after my shower and my husband went crazy... He's super sensitive to fragrances and usually hates everything I put on. This was different... Please don't make it limited edition. I've been looking for my scent forever."
+
+**Three concepts out of one review in about two minutes, which is the claim.** The first sentence becomes a video hook. "Totally 10 out of five stars" becomes a quoted headline over a product image. The sensitive-husband line becomes a whole podcast-ad narrative about a woman who could not wear perfume because the smell gave her partner a headache. "If you just read that and scroll by, then you might need to readdress your career, because that is absolute gold."
+
+**The voice rule, and it is the reason he insists on doing this manually first.** For the caption-led formats, copy the review nearly verbatim. "That is your story static, because it sounds like the customer, because it's written by the customer... if it sounds like someone that's not them, they aren't going to relate to it. They're just going to scroll by." He is explicit that AI should only enter after the operator can do it by hand: "I really don't want us to become AI-brained here."
+
+**The second half of the claim, on what to do with a winner.** A static is cheap enough to be an idea-testing instrument, and the idea is the asset. His example is a perfume headline, "Claim it before the group chat does", built on the reader's expectation that friends will copy her purchase. That one line spawned UGC videos and podcast ads built on the same tension. "Don't let just one idea be one idea. It can become so many different formats."
+
+**And the loss case is also information.** "When you test the static, even if that static doesn't work, what about it didn't work? Was it the messaging? Was it the imagery?" Decompose before discarding.
+
+Related: [[Creative Science#CR-102|CR-102]] already mines incumbent reviews to pick the launch AVATAR. This mines your own reviews for ANGLE and VOICE, which is the later-stage use of the same corpus.
+Sources: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
+Last touched: 2026-09-14
