@@ -694,3 +694,15 @@ ChronicleRec, arXiv 2609.12375v1, announced 2026-09-14. Evaluated on KuaiRand an
 **Filter note, and read it before treating this as an advertising paper.** The word "advertising" appears in this abstract exactly once, in the first sentence, which is the shape of all three arXiv false positives recorded in Watchlist.md. It was banked on a different ground: the EVALUATION runs on Tencent AdLive, an advertising dataset, with a seven-day online A/B test. The method itself is not advertising-specific and the paper is not about auctions, bidding or creative.
 Sources: ChronicleRec: Pre-training Temporally Anchored Tokens for Lifelong User Modeling, arXiv 2609.12375v1, announced 2026-09-14 (abstract read)
 Last touched: 2026-09-14
+
+### LS-079 · A wide average-order-value spread inside one ad set teaches the optimiser to "sell anything", so value homogeneity is part of signal quality
+Tier: T3 · Status: active
+Professor Charley T, 2026-09-14, reading average order value per ad as a measure of customer quality rather than as revenue. "If we're in an ad set where the AOVs are dramatically different, say one is 65 and another is 100, we're selling dramatically different products to dramatically different people. That means we're not teaching the machine what success actually looks like. We're just saying sell anything."
+
+**The second-order version is the practical trap, and it runs through the dashboard rather than through the delivery system.** An ad can post an excellent cost per acquisition because its average order value is low and the product is an easy sale of no real value to the business. "Maybe an ad has a great CPA because the AOV is really low and it's just a easy sale product that has no real value to us." Rank ads on cost per result alone and that ad wins every week, so the account trains toward the cheapest customer rather than the best one.
+
+**What it implies if it holds.** A purchase event is not one thing when the value behind it varies widely, so an ad set is a value bucket as well as an audience bucket, and a mixed-value ad set degrades the optimisation target without anything in the interface reporting a problem. The instrument is average order value carried as a column beside cost per acquisition and gross profit per transaction, which is the dashboard built at [[Marketing Math & Unit Economics#MM-080|MM-080]], and the profit algebra behind it is [[Marketing Math & Unit Economics#MM-121|MM-121]].
+
+Asserted with illustrative numbers, no account shown and no before-and-after on splitting a mixed-value ad set. The cheap check on any live account: pull average order value at the ad level inside one ad set and look at the spread before trusting that ad set's cost-per-result ranking.
+Sources: Professor Charley T, The NEW BEST Way To Scale Facebook Ads, 2026-09-14
+Last touched: 2026-09-15
