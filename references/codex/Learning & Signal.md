@@ -706,3 +706,15 @@ Professor Charley T, 2026-09-14, reading average order value per ad as a measure
 Asserted with illustrative numbers, no account shown and no before-and-after on splitting a mixed-value ad set. The cheap check on any live account: pull average order value at the ad level inside one ad set and look at the spread before trusting that ad set's cost-per-result ranking.
 Sources: Professor Charley T, The NEW BEST Way To Scale Facebook Ads, 2026-09-14
 Last touched: 2026-09-15
+
+### LS-080 · A longer video ad qualifies the viewer before the call to action is heard, so script length is set by lead volume rather than by a best practice
+Tier: T3 · Status: active
+Stated as a flat rule: "Anytime the video ad is longer, you will have better quality with leads because they have to get through that before they hear your call to action." The mechanism is friction placed in the ASSET rather than in the form or the funnel, which is what makes it new here. Everyone who reaches the call to action has already spent the runtime, so runtime is a self-selection filter that costs nothing to build and needs no conditional logic.
+
+**The operating rule is conditional on the account's current volume, which inverts the usual instinct to shorten everything.** Low lead volume, keep the script short: his worked case is the mistake angle cut down to a single mistake before the call to action. High lead volume, lengthen it: "If you're getting a ton of leads, we can add more friction by adding a longer script, aka more mistakes, in this example here, before we give the call to action." So an account drowning in unqualified opt-ins has a creative lever available before it touches the form, the offer or the optimisation event.
+
+**Where it sits in the friction contest at [[Learning & Signal#LS-009|LS-009]].** That claim is entirely about qualification friction inside the FUNNEL, an application step or a pixel-conditioning question, and both poles of it argue over the form. This is a third surface neither pole names, and it is compatible with both: Heath can run zero form friction and still lengthen a script, Shiver can run a gated form and lengthen a script on top of it. It is also the cheapest of the three to reverse, because a shorter cut is an edit rather than a funnel change.
+
+**Asserted, no data, and the obvious cost is not priced.** A longer script reaches fewer people and almost certainly costs more per opt-in, and he gives no figure for that trade at any runtime. Treat the direction as the claim and the size as unknown. The opposite-direction warning already on file, that a falling cost per lead is a quality warning, is at [[Learning & Signal#LS-043|LS-043]].
+Sources: Dr. Matt Shiver, How I use Ad Angles to Scale Call Funnels to $100k/mo, 2026-09-15
+Last touched: 2026-09-16

@@ -66,3 +66,15 @@ Last touched: 2026-08-19
 - **The Axon market-share claim is checkable and unchecked.** Published market-share figures exist. Verify it or downgrade it.
 - **No Reddit, Amazon or X coverage at all**, despite all three carrying real ad businesses.
 - **There is no Creator or Partnerships topic and EC-005 shows the cost of that.** A claim about how you contract with a creator landed here because nothing fitted better. Creator-sourced inventory is a large share of what actually runs on Meta now, partnership ads have their own delivery surface, and the roster keeps producing claims about creator sourcing, licensing and payment terms. If a second homeless creator claim arrives, open the topic rather than stacking them here. Noted 2026-08-20.
+
+### EC-006 · YouTube is a second channel rather than a first one: start on Meta, and add YouTube at roughly $30k to $50k a month of spend
+Tier: T3 · Status: active
+A named threshold, which this file has been short of: "most people should just start with Facebook and until you're spending, you know, 30, 40, maybe even 50k a month, I don't think it makes a ton of sense to get onto YouTube." He extends it into a business-stage rule, that YouTube earns its place for an advertiser aiming at $1M a month and not for one aiming at $100k to $200k a month, where the time is better spent getting better at the channel already running.
+
+**His three reasons for Meta first are all operational rather than about reach.** The pixel is better, the data comes back faster so learning is quicker, and the interface is more usable, which he concedes is a low bar: "Meta is not the most user-friendly but I still think it's even more user-friendly than YouTube ads."
+
+**The one asymmetry that favours YouTube is asset life, and it is the part worth carrying.** "You can set them and forget them and they last a lot longer." He ties it to the organic behaviour of each platform, where an Instagram or Facebook post dies within two days and a Meta ad lasts weeks to a couple of months, against YouTube organic and YouTube ads both lasting far longer. That makes creative fatigue a channel property rather than a universal, and it predicts that the creative-refresh cadence our Meta claims assume does not transfer. No retention curve is shown for either platform.
+
+**Fit rule: YouTube suits mass-market B2C** (his examples are online weight loss and investing) and works for B2B only when the addressable market is large enough, "it's just a lot harder". **His own account is the honest footnote on the whole claim**: he spends $3,000 to $5,000 a month on YouTube, most of it retargeting people already watching his organic videos, at roughly $30 to $50 a day. So the operator giving the threshold is not himself running YouTube as an acquisition channel, and every figure here is asserted with no cost comparison shown.
+Sources: Dr. Matt Shiver, YouTube Ads vs Facebook Ads: Who Each One Is Actually For, 2026-09-15
+Last touched: 2026-09-16

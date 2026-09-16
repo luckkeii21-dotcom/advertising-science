@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Scaling Models"
 type: codex-topic
 claim_prefix: SC
@@ -1458,8 +1458,11 @@ Sam Piliero, 2026-09-14. He keeps interest ad sets inside a broad CBO prospectin
 **Contested, and against two claims rather than one.** [[Scaling Models#SC-070|SC-070]] lists interest targeting among the dead media-buying levers. [[Attribution & Incrementality#AT-061|AT-061]] proposes that interest and lookalike ad sets running beside broad add no conversions and take last-touch credit from broad, so broad reads worse than it is.
 
 **Read the shape of the disagreement carefully, because Piliero does not actually contradict AT-061.** He concedes the conversions, twice and unprompted. His claim is about CPM and reach, which AT-061 says nothing about. So the live proposition is new rather than a rerun: **an ad set can be worth running while contributing no incremental conversions, if what it changes is what the delivery system learns.** Nothing in this codex supports that mechanism from the platform side, no test is shown, and the cheapest way to settle it is the CPM and reach trend on an account before and after the interest sets come out. [[Scaling Models#SC-088|SC-088]] describes a live $1M/month account running broad plus an interest stack plus a lookalike stack with identical ads in all three, which is the structure this claim would justify.
+**TESTED AGAINST OUR OWN BOOK 2026-09-15, and the result is that it cannot be tested here yet ([[Scaling Models#SC-160|SC-160]], T2 for the measurements).** Every ad-set-level export for 24 to 30 August across NJ Auto Lending, ChiroWorks and StayWell holds **zero interest ad sets and zero lookalike audiences**, so this claim has never met our data. The one non-broad ad set we run is a three-second-video-viewer retargeting set, and it is the wrong kind for this claim: its value would have to be **widening**, and a pool built from our own viewers is the narrowest audience in the account. It also inverts by column, $4.74 per opt-in against $8.19 for the rest of its lane while carrying a $40.94 CPM against $13.38 and $16.55 for the two broad ad sets. **The account where the argument would have to land instead fails on size:** ChiroWorks reached 8,869 people in 18 days against a 300,000 to 500,000 radius pool, so there is no over-narrowed pixel to widen.
+
+**Two T2 claims settle more of this than the T3 argument does, and one of them makes the mechanism plausible rather than dismissing it.** [[Meta Delivery & Andromeda#MD-002|MD-002]] already describes the narrowing Piliero calls a fault, and describes it as the design working, so **his diagnosis is supported at T2 and his remedy is not.** [[Meta Delivery & Andromeda#MD-013|MD-013]] makes the interest a suggestion delivery leaves rather than a fence, which is the only shape in which a widening lever could work, and it yields the operating instruction he never states: **leave "further limit the reach of your ads" OFF**, or the seed becomes a cage and the mechanism is gone.
 Sources: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14
-Last touched: 2026-09-14
+Last touched: 2026-09-15
 
 ### SC-159 · The scaling loop is three moves in a fixed order, and the removal move has a spend window: take out the biggest ad under 40% of the budget, never one over it
 Tier: T3 · Status: active
@@ -1477,4 +1480,33 @@ Professor Charley T, 2026-09-14, against a claimed lifetime figure of more than 
 
 Relation to what is already here: [[Scaling Models#SC-004|SC-004]] holds that if you can spend more you do not launch a test, which is moves one and three with nothing between them. The middle move and the 10-to-40 window are new. Asserted from agency and program practice. No account shown, and neither threshold carries a distribution behind it, so treat 10% and 40% as one operator's working rule rather than as measured breakpoints.
 Sources: Professor Charley T, The NEW BEST Way To Scale Facebook Ads, 2026-09-14
+Last touched: 2026-09-15
+### SC-160 · Our only non-broad ad set reads as the account's cheapest on cost per opt-in and its most expensive on both reach columns: $4.74 against $8.19, with a $40.94 CPM against $13.38 and $16.55
+Tier: T2 for the measurements, which are recomputed from our own raw ad-level exports. The proposition they were built to test, [[Scaling Models#SC-158|SC-158]], stays T3. · Status: active
+
+**Built to test SC-158 on our own book, and the first thing it establishes is that we had nothing to test it with.** Every ad-set-level export we hold for the week of 24 to 30 August was read across NJ Auto Lending, ChiroWorks and StayWell. **Zero interest ad sets and zero lookalike audiences anywhere.** ChiroWorks runs open targeting and Advantage+ only. NJ Auto Lending's 27 ad sets are named by geography, language and creative. The only strings resembling "lal" in the files are the word "Halal". SC-158 is untested here and stays untested until somebody runs one.
+
+**The one non-broad ad set we do run. NJ Auto Lending, 24 to 30 August, $4,440.35 across 27 ad sets and four result types.** Compared inside the Instant Form lane only (`actions:leadgen.other`, 15 ad sets, $2,157.43, 276 opt-ins, $7.82):
+
+| Ad set | Spend | Opt-ins | Cost per opt-in | CPM | Cost per 1,000 reached | Frequency |
+|---|---|---|---|---|---|---|
+| NJ/SI - 3s VV Retarget | $142.05 | 30 | **$4.74** | **$40.94** | **$52.89** | 1.292 |
+| ES - > open targeting | $173.20 | 27 | $6.41 | $13.38 | $24.07 | 1.798 |
+| EN-> open targeting | $108.96 | 14 | $7.78 | $16.55 | $25.86 | 1.562 |
+| Lane, retarget removed | $2,015.38 | 246 | $8.19 | $29.83 | $45.82 | 1.536 |
+
+**The retargeting ad set is 42% cheaper than the rest of its lane on cost per opt-in, 2.5x and 3.1x the two broad ad sets on CPM, and 2.05x the English broad ad set on cost per person reached.** Against the lane average its CPM is 1.35x, which is the conservative reading and still the wrong direction.
+
+**The finding is about which column settles the question, not about whether the ad set is good.** Its pool is our own three-second video viewers, so every person in it was found and paid for by another ad set first. [[Attribution & Incrementality#AT-061|AT-061]] predicts a cheap row here whether the ad set added thirty opt-ins or zero, so the row is consistent with the claim and with its negation and cannot discriminate between them. The two reach columns had never been opened on this account at any level.
+
+**Where it lands on SC-158, and the two claims separate cleanly.** SC-158's proposed value is **widening**. A retargeting pool built from our own viewers is the narrowest audience in the account and can widen nothing, so on Piliero's own stated mechanism the one non-broad ad set we run is the wrong kind. The account where his argument would have to land instead also fails: ChiroWorks reached 8,869 people in 18 days against a radius pool of 300,000 to 500,000 ([[Meta Delivery & Andromeda#MD-155|MD-155]]), under 3% of the tightest version, so there is no over-narrowed pixel to widen.
+
+**Two T2 claims from the Meta file decide more of SC-158 than any T3 in this one, and they had never been read against it.** [[Meta Delivery & Andromeda#MD-002|MD-002]] already holds that broad sprinkles spend across the embedding space and then concentrates, which is Piliero's "the pixel narrows to this little grouping" stated at T2 months earlier and stated as the design working. **His diagnosis is supported at T2; his remedy is not.** [[Meta Delivery & Andromeda#MD-013|MD-013]] holds that an interest is a suggestion delivery leaves, which is the only shape in which a widening argument can work at all, and it produces an operating instruction Piliero never gives: **run the dissimilar-interest ad set with "further limit the reach of your ads" OFF**, because turning it on converts the seed into a fence and removes the entire mechanism. The same claim supplies the counter, since seeds delivery abandons converge, which is [[Scaling Models#SC-022|SC-022]] arriving by another road.
+
+**Limits.** Seven days, one account, one week, no holdout. The export has no unexposed cell, so nothing here measures the incrementality of anything. Retargeting CPMs are expected to run high on a small thin-auction pool, so the CPM gap is a finding about which column to read rather than evidence of waste. The frequency figures are one week and do not test [[Meta Delivery & Andromeda#MD-138|MD-138]]'s 90-day protocol.
+
+**The cheap path to a better version, and it costs two ordinary weeks.** Switch `NJ/SI - 3s VV Retarget` off for a fortnight with the campaign budget held fixed, then read total account opt-ins and account cost per opt-in against a fortnight on. That is AT-061's own named falsification and nobody here has ever run it.
+
+**One blocked task found on the way.** The Phoenix Truxx report of 21 August plans a buyer lookalike seeded from 18 marketing-sourced sales. [[Learning & Signal#LS-019|LS-019]] puts the seed floor at 100 people in the source audience. It is blocked on arithmetic rather than on strategy and should stop being carried as in progress.
+Sources: our own raw ad-level exports, `.claude/skills/weekly-client-reports/runs/2026-08-31/{sjr,chiroworks,staywell}/meta_ads.csv`, recomputed 2026-09-15
 Last touched: 2026-09-15
