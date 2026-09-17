@@ -9,6 +9,141 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-17 (teacher run)
+
+**Lesson 029 shipped: The Results Column Has No Unit. Video no, and that is correct: video days are Mon/Wed/Fri and today is Thursday.** Inbox empty for the twenty-ninth consecutive run, no grading.
+
+**Topic taken from the rotation at index 2, Learning & Signal, in the ordinary way. Pointer advances 2 to 3, no exception needed.** No harvest material existed at topic-lock: both lanes launched in the same second again (12:46:26) and the research lane had banked nothing by 12:57, so the newest Harvest Log entry was yesterday's teacher entry, already taught. Fourth lesson on this topic; 005 covered the learning-phase price tag, 010 covered what delivery trains on below the floor, 015 covered form gates.
+
+**The subject: Meta's Results column prints whatever each ad set's own optimisation event happens to be, and the unit lives in a separate field, Result indicator, that is not in the default view.** Nothing in the codex had ever said one account's column can hold several units at once, and every claim that reasons about it, including LS-008 and law 6, silently assumed it holds one. The phrase "Result indicator" and "Results column" returned **zero hits across all 28 prior lessons and zero across every topic file**, so this had never been looked at here.
+
+**Measured on SJR Commercial, 24 to 30 August 2026, $4,440.35 across 53 ads, recomputed from the weekly export grouped on Result indicator. Four different indicators in ONE column.** Meta form opt-in: 18 ads, 276 results, $2,157.43, **$7.8168**. Website opt-in: 18 ads, 440 results, $1,531.07, **$3.4797**. Either door: 4 ads, 238 results, $479.84, **$2.0161**. **A page view on the website: 1 ad, 659 results, $239.89, $0.3640.** Plus 12 ads holding $32.12 with no result. **The column printed 1,613 numbers and 659 of them, 40.9%, are page views produced by a single ad.** At least 954 are opt-ins, costing $4,168.34, so $4.3693 per counted opt-in.
+
+**The finding: the per-result figures are monotone in how shallow the event is, $7.82 / $3.48 / $2.02 / $0.36, so sorting the column by cost per result ranks by event depth and crowns the shallowest row.** That is LS-021 arriving as a table on our own book instead of as an assertion. Sorted cheapest first, the best-performing ad in SJR is a page-view ad.
+
+**A same-named creative under two optimisation events, and the size is large.** `Hal w hook` ran in `NJ/SI - Halal` on the Meta form ($11.75, 3 opt-ins) and in `NJ/SI - Halal - SOKAL wesbite` on a website content view ($239.89, 659 content views) in the same week. The June export carries the pair with a Leads column attached: 9 to 16 June, content-view optimisation took $275.32 for 669 content views and **2 opt-ins, $137.66 each**, against form optimisation at $69.94 for **20 opt-ins, $3.497 each**. **A factor of 39.** **LIMIT, stated in the claim, the law and the lesson:** a shared ad name is strong evidence of a shared creative and is not proof, and the destination and the budget move with the event, so it is a natural pairing and not an experiment. The cheapest fix is named: hold the destination fixed on the website and vary only the optimisation event.
+
+**A SECOND and separate finding, and it is the one that touches every client report on that account.** SJR, 9 to 16 June, $4,897.15: **783 opt-ins, 560 through Meta forms and 223 through the website, so 28.48% arrive through a door a form ad set's own Results column cannot count.** The `Truck buyer leads | NJ` campaign, 2 ad sets, $910.26: English 60 results against 91 real opt-ins, Spanish 26 against 41, **34.85% of the campaign outside its own column**, and the campaign reads **$10.5844 per result against $6.8959 per actual opt-in**.
+
+**What the 28% does NOT do, and the lesson turns on it.** It does not move the learning position, because an ad set trains on its own optimisation event rather than on the sum of both doors. The Spanish ad set counts 22.75 a week against 35.88 real and both sit under LS-001's 50. **The uncounted door changes the price we report; it does not change what the ad set is learning from.**
+
+**A control on the same week, which is why this is banked as an account fact rather than a platform law.** ChiropracticWorks 24 to 30 August carried one indicator only: $479.68, 10 opt-ins off $391.67 across 5 ads at $39.17 each, 45 ads holding $88.01 with no result. **StayWell and Phoenix Truxx cannot be checked from the files on disk at all**, because their weekly export preset was built around the Opt-ins custom metric and carries no Result indicator column. That is a one-click gap and it is now on the open list.
+
+**Codex changes: LS-081 banked**, T2 for the counts which are recomputed line by line from our own raw exports, arithmetic for the ratios. **LS-008 amended** with a precondition it had assumed for a month. **Law 6a added to SKILL.md**, the first amendment to law 6 since it was written. Claim count 1,222 to **1,223**, verified by counting claim headers across all topic files, no duplicate IDs found.
+
+**Engine: ELEVENTH consecutive same-second launch (12:46:26) and today it missed.** The highest free claim ID was re-checked at **12:57:52** immediately before writing, which is standing practice now, and LS-081 was still free because the research lane had banked nothing by then; its harvest json was written at 12:56 with transcripts pulled and no claims. **The fix is still unbuilt: stagger the two launches, or add an ID lock.** The watchdog still guards only the research lane, and both lanes still stage the whole science folder rather than their own files, which is the second collision surface found yesterday.
+
+**One carried engine item was checked rather than repeated, and it was wrong as carried.** The scoreboard has been reporting a stale `.git/index.lock` as blocking, fourteen days now. It is zero bytes, dated 2 September, and it sits in the **workspace repo** (`ad-scriptwriter-skill`), not in the vault repo at `Obsidian God-level Marketing Vault/God-level Marketing/.git`. **It has never blocked a vault commit and it does not block this one.** The gitignore warning attached to it still stands for the workspace repo.
+
+## 2026-09-17 (research run)
+
+**3 transcripts in, all read in full. 8 claims added, 4 amended, 0 contested, 0 refuted. Backlog 0. Codex now holds 1,231 claim entries, 8 of them from this run.** One law amended, none changed.
+
+**Google answered a question we have had open since December and the answer is no.** AI performance insights went generally available in Merchant Center on 2026-09-16, reporting brand and product share of voice on AI Mode and AI Overviews. It is the first platform movement on the AI-surface blind spot in GA-043, and it reports visibility rather than ad clicks or ad spend, so the blind spot stays open.
+
+### 1. YouTube harvest
+
+`lib/harvest.py daily`, 12:55:04 to 12:56:02. Summary at `runs/2026-09-17-1256-harvest.json`.
+
+- **3 new transcripts.**
+  - `nick-theriot/2026-09-16--nick-theriot--How I Turned a Losing Client Into a 29000Day Winner in 60 Days.md`, 9 minutes, 2,083 words.
+  - `jon-loomer/2026-09-16--jon-loomer--Ive Never Been More Uncertain About Meta Ads.md`, 10 minutes, 1,511 words.
+  - `andrew-faris/2026-09-17--andrew-faris--How Id Build A Growth Playbook For Every DTC Category With Patrick Cod.md`, 53 minutes, 11,368 words.
+- 5 skipped under the 150-second Shorts floor, 0 out of window, 0 missing subtitles.
+- **0 errors, 0 listing failures, `rss_fallback` empty.**
+
+**Third consecutive day with all 12 channels listing on the primary route.** The 09-11 to 09-13 decay now has three clean days against it, which is enough to stop treating it as a current fault.
+
+**14,962 words in, and the value is lopsided.** Faris is 76% of the words and produced 3 of the 8 new claims. Loomer's 1,511 words produced one T4 and nothing else, which is the right outcome for an episode whose own thesis is that its author does not know.
+
+### 2. Watchlist
+
+Thursday, so the nine Monday-only sources were not due.
+
+| Source | Result |
+|---|---|
+| Meta Newsroom (RSS) | HTTP 200, 10 items, **2 new**, feed rebuilt Wed 16 Sep 20:22:09 UTC |
+| Meta Engineering (RSS) | HTTP 200, 9 items, 0 new. Feed still built Mon 14 Sep 23:01:09 UTC |
+| Google Ads & Commerce (RSS) | HTTP 200, 20 items, **3 new**, feed rebuilt Wed 16 Sep 16:00 UTC |
+| arXiv cs.IR (RSS) | HTTP 200, 28 items, 24 unseen, **2 passed the advertising filter** |
+| TikTok SDK changelog | HTTP 200, unchanged at v0.1.8 |
+| Google Ads Announcements | HTTP 200, **395 post ids against 395 cached, 0 new, 0 gone** |
+| Meta for Business News | **NOT CHECKED. Plain fetch HTTP 400, browser unavailable** |
+
+**The Google Ads & Commerce feed carried the day's only real platform news.** Three new items, all dated 16 Sep, all tied to Google's Rethink 2026 retail event. Two are substance, one is a collection page. The agentic commerce post was fetched in full and is the T1 source behind GP-046 and GP-047. The Ads Decoded post is where **AI Max for Shopping is described as in open beta**, with text customization and Final URL expansion, which is a product-state line worth carrying into the next Google account review.
+
+**Meta Newsroom's 2 new items are both off-topic and neither was banked.** A Toronto startup using DINOv2 in a bionic prosthetic arm, and a Threads podcast toolkit. The Threads post was read in full to check for an ads angle and there is none: profile banners, episode cards, reminders and a creator insights panel, all organic.
+
+**arXiv read Thursday's own build and the filter did its job for once.** `lastBuildDate` Thu 17 Sep 04:00:12 UTC against a run at 07:25 UTC, so the 2026-09-07 correction applies and this is a full current read. 24 unseen, 2 passed, and **neither is the framing-sentence false positive this filter is known for.** `2609.18296` is a deployed sponsored-search ads retrieval framework (ANGLE) where advertising is the method, not an outcome clause. `2510.04816` is a post-click conversion-rate counterfactual paper (ESCIM) naming online advertising as its domain in the first line; it is an **Announce Type: cross** with a 2510 identifier, so it is an October 2025 paper cross-listed into cs.IR now, not new work. **Neither was banked today.** Both are queued to be read in full on a run with room, because a paper is not bankable off its abstract, and that rule is what stops this lane inflating a day's haul.
+
+**The Google Ads Announcements nonce is on its sixth consecutive day, and the method got better today.** A raw line diff showed 35 changed lines, which looks like news and is not. Stripping `nonce="..."` and hashed asset filenames cuts it to 3, and those 3 are a session id and CSS ordering. **The reliable key on this page is the announcement post id:** 395 cached, 395 today, zero added, zero removed. Use the id set, not the line count.
+
+**Meta for Business News was not checked, and calling it clean would be false.** Plain HTTPS returned HTTP 400 again, the unreliable half the watchlist already records, and **all four Playwright MCP servers failed to connect at session start** (`playwright`, `playwright-arcads`, `playwright-higgsfield`, `playwright-metatech`, all CONNECT_TIMEOUT at 30s). That is the second consecutive run with no browser. The title baseline from 2026-09-14 is intact and untouched.
+
+**TikTok is not logged as clean.** Only the SDK changelog was read. The Newsroom and the for-Business blog remain permanently India geo-blocked from this egress.
+
+### 3. Claims merged
+
+All three transcripts read in full and marked `extracted: true`. **8 added, 4 amended, 0 contested, 0 refuted.**
+
+#### New
+
+- **GP-046** (T1) · Google is putting a conversational **Business Agent inside YouTube ads**, US beta, opt-in for eligible retailers, extending what shipped in Search earlier in 2026. The viewer can ask complex product questions without leaving YouTube. **No performance figure of any kind is attached**, so it is a product state to watch and not evidence that conversational ad units work.
+- **GP-047** (T1) · The rest of the same release, and the two numbers in it. **AI performance insights GA** in Australia, Canada, India, New Zealand and the US, reporting share of voice against other brands on AI Mode and AI Overviews. **Feed hygiene at 5%**, Google's own average conversion increase the following month for merchants adopting core feed best practices, with no sample size and no control. **Conversational attributes at 50%**, the share of lululemon-submitted attributes incorporated into relevant AI Mode product recommendations in testing, one brand. Plus Universal Commerce Protocol additions and loyalty data in Merchant Center. **We run no Shopping accounts, so none of it is actionable today.**
+- **AU-091** (T3) · Theriot's complete cost-cap build, the most complete anyone in the roster has given: **one ad set** by rule, the cap set at **$40 from the account's own trailing 30-day $30 to $39 cost per purchase** rather than at a wished-for target, **1-day-click attribution chosen deliberately** so that day's clicks drive that day's delivery, budget ramped $400-500 to $3,000 a day. **The attribution half is in tension with AU-005**, which is T2 across $200M of CTC spend and found 1-day click missed target more often. The T2 rules that question; this is the thing to test, not the thing to adopt. **He shows the build and never the capped campaign's results.**
+- **SC-161** (T3) · New creative arriving into a CBO that already held the client's proven winners could not win spend, so it was broken out into its own prospecting campaign, and spend on it went **$11k to $64k across consecutive 30-day windows**. Banked with three caveats inside the claim: he says outright he cannot explain why it worked, it contradicts the one-CBO structure he teaches, and it is the first **sandbox split** in this codex reported to have paid, against SC-053 and SC-054 which hold that the only legitimate reason to split is economic. The cheaper alternative already banked at SC-024, a new concept-grouped ad set inside the same CBO, was not tried and is not compared.
+- **SC-162** (T3) · The same takeover read as a ramp shape, with the P&L read off screen. **Month one: $11k spend, about $20k back, and a stated net LOSS of $3,000 to $4,000 once 30% expenses and a $10,000 agency fee are netted out.** Month two: about $64k spend, about $140k back, 2.1 to 2.2 ROAS. His honest expectation is **45 to 60 days**, with the spread given as one week to six months. **Nothing is held constant across the two windows** (structure, creative, a new cost-cap campaign, 5.8x spend), so it is evidence about a realistic ramp and not about any single cause.
+- **MM-217** (T3) · Faris's DTC category economics as a table. **Durables: sub-20% retention and sub-20% expansion in a year, with surprisingly low cross-sell. Supplements: about 200% first-year LTV at 60-plus points of margin when subscription carries a material share. Apparel: 80 to 100% LTV against 20%-plus return rates, because fit is hard online. Jewellery and accessories: between the two, low returns, high gross margin.** Carried with his own two disclaimers quoted: of the durables example he says "I'm just making this up", and asked whether every brand fits its category playbook he answers that the whole idea may be "a fool's errand".
+- **CR-246** (T3) · Which creative format a brand needs is set by the category, and the explainer is the dividing line. **Durables need it in a fixed order**: beautiful, then how it works, then the result. **Apparel and jewellery need no explanation at all**, they need about ten seconds of someone in the target demographic looking good in the product, because the job is identification rather than comprehension. **The health and wellness case is asked as a question, not stated**, and his "somebody in a lab coat" line runs against CR-123, which holds that credibility comes from a domain-relevant figure and specifically not a generic lab coat. That tension is flagged inside the claim.
+- **CR-247** (T4) · Loomer's sameness-at-auction-scale hypothesis, banked at T4 and only because it scales CR-212's within-account founder-face ceiling up to the whole market. **Two mechanisms are bundled in his sentence and only one is new:** shared training corpora producing shared output is a property of the tools, while independent optimisation converging on one local maximum would happen with no AI at all. **It decides nothing.** Its value is as a research target: if true it should appear as rising CPMs or faster fatigue where AI creative adoption is highest, and nobody has measured that.
+
+#### Amended
+
+- **GA-043** · Checked against Google's own release and **the gap is still open**. Added the 2026-09-16 launch with the reason it does not close the claim: a brand and product visibility view inside Merchant Center is not a spend or click breakout inside Google Ads, and it reaches only accounts with a feed.
+- **SC-054** · Faris restates the divergent-unit-economics split with a second worked pair, **a $50 CAC on product A and $75 on product B both producing 2:1 ROAS**, and adds the clause that upgrades it from a structure preference to a scaling constraint: it "limits your ability to super consolidate the way that meta wants you to." Also captured the single-SKU shape where the constraint vanishes, a whole account run as one value-optimised and one volume-optimised campaign, with his own concession that the pair may be redundant.
+- **CR-024** · The 200 to 400 ads a month range now carries the rule that predicts where a brand lands inside it, from the operator who set the number. **It is creative TYPE, not spend:** still-image-led brands sit at the high end, brands needing five-minute video explainers sit under 200. He concedes the range is uselessly wide as a promise. Consequence: a volume target copied between two brands in different categories compares two different units of work.
+- **MM-046** · Verbatim restatement of the backpack and zipper margin case with no new evidence, logged as a restatement rather than counted as a second source.
+
+### 4. Skill update
+
+**One law amended, none changed, none added.**
+
+**Law 16a keeps its finding and improves its evidence.** It held that a share of Google spend is unmeasurable on the strength of GA-043, a T3 practitioner claim, and the watch item beside it noted that seven Google episodes read in full had never once mentioned AI surfaces in either direction. **That silence was broken by the platform rather than by the roster.** 16a now carries the 2026-09-16 launch as a T1 line, states plainly that a visibility product is not ad reporting, and adds the instruction never to present one as the other in a client review. The matching watch item was rewritten to point at the Google Ads-side equivalent as the thing that would actually close it.
+
+### 5. Gaps noticed
+
+- **Two advertising papers passed the arXiv filter and neither was read in full.** Both are queued. This is the first day the filter returned genuine advertising work rather than a framing-sentence false positive, and this run did not have room to read either properly. Flagged so tomorrow does not treat them as handled: they are unbanked, not discarded.
+- **The arXiv false-positive gap is still untested.** It did not fire today, and it did not fire because both hits were real, which is a second consecutive non-result rather than evidence the filter is fixed.
+- **Meta for Business News has now gone two consecutive runs unchecked** for want of a browser. Plain fetch has returned 200, 400, 200, 400, 400 across the observed days, so "use the browser" stays the honest instruction and the browser is the thing that is down.
+- **No cost-cap outcome data exists anywhere in the codex from Theriot's build.** AU-091 documents a complete setup with zero results attached. If we ever run cost caps on a client, that is the cheapest place to turn AU-091 into a T2, and the attribution window is the variable worth holding against AU-005.
+
+## 2026-09-16 (teacher run)
+
+**Lesson 028 shipped: Counting Ad Sets Does Not Count the Overlap. Video yes, 2m 37s, which is correct: Wednesday is a video day.** Inbox empty for the twenty-eighth consecutive run, no grading.
+
+**Topic taken from the rotation at index 1, Auction Mechanics & Bidding, in the ordinary way. Pointer advances 1 to 2, no exception needed.** No harvest material existed at topic-lock: both lanes launched in the same second again (13:13:53), and today's research lane had only finished pulling four transcripts at 13:22 with zero claims banked, so the newest Harvest Log entry was yesterday's teacher entry, already taught. Second lesson on this topic; 009 covered why a CPM does not say why.
+
+**The subject: three claims where two operators assert opposite things about ad-set self-competition and NEITHER has ever shown a number.** AU-058 says your own ad sets cannibalise each other in the auction. AU-056 calls the bidding-against-yourself story silly, because thousands of advertisers already bid for those people. AU-057, from the same speaker as AU-056 and in the same breath, supplies a third position that is about pacing rather than price: Meta forms a per-person delivery plan and fragmenting one buyer across ad sets breaks its ability to execute it. **The quantity all three argue about had never been measured on any account we run.**
+
+**The instrument, and it is one level up from lesson 026's.** Impressions add across ad sets and reach does not, so `sum of the ad-set Reach cells / account Reach` gives the number of ad sets the average reached person was actually inside. Floor 1.00, ceiling the number of ad sets. It decomposes account frequency the same way MD-155 does. Arithmetic, so it proves nothing about Meta; **only the sizes are evidence.**
+
+**Measured exactly on two accounts over the identical window, 10 to 20 July 2026, recomputed line by line from the ad-set exports on disk. On both accounts the ad-set rows reconcile to the account total EXACTLY on impressions and on spend**, which is how we know no ad set is missing. **ChiropracticWorks**, 7 ad sets, $553.26: **1.26343931**, with account frequency **2.80462428** = 2.21983301 x 1.26343931 to Meta's own eight printed decimals, and **at least 73.7% of reached people served by exactly one ad set**. **SJR Commercial**, 4 ad sets across two CBOs, $1,024.02: **1.05947769**, account frequency **1.67405824** = 1.58007880 x 1.05947769, and **at least 94.1% in exactly one ad set**.
+
+**The finding: ChiroWorks runs 1.75x the ad sets and carries 4.4x the overlap, so the COUNT predicts nothing.** What predicts it is **MD-013 (T2), which neither operator cites**: Meta's only hard boundaries are location, minimum age, language and exclusions. SJR splits on **language** and vehicle programme, which is a real fence. Six of ChiroWorks' seven ad sets are Advantage+ in one town split only by the creative concept in the name, which is a suggestion. **Not six audiences, six draws from one audience, and the reach column says so.** This is the measured consequence of lesson 004, arriving two levels down in a column nobody had opened.
+
+**A chance baseline was computed on purpose, because a low overlap number has two causes and the raw figure cannot separate them.** Independent draws from the Metro East catchment predict **1.0047 at 700,000 and 1.0110 at a tight 300,000 radius**, so the observed excess is **24x to 56x chance**. Account smallness does not explain it and the convergence is real, which is MD-002 showing up in the reach column.
+
+**An internal check across two independently pulled exports passed and it had to.** Ad sets must be less fragmented than ads. On SJR's identical window: account reach 29,944 <= sum of ad-set reach 31,725 <= sum of ad reach 32,738, the last taken from lesson 026's published 1.0933 ad-level factor.
+
+**What it does NOT settle, stated in the claim, the lesson and the video.** It says the fragmentation is real and far above chance. **It says nothing about whether it costs money**, so AU-056 against AU-058 is still open and untested on our book, and the test AU-056 itself names is cheap and still unrun: same creative, same total budget, consolidated for a fortnight against split for a fortnight, compare delivered CPM. It does constrain AU-057 hard, since a pacing mechanism that needs one person split across ad sets has nothing to act on for 94.1% of SJR and 73.7% of ChiroWorks.
+
+**Codex changes: AU-090 banked**, T2 for the measurements and arithmetic for the identity. **AU-056, AU-057 and AU-058 all amended** with the result. **No law changed and none added:** what was measured is an account fact rather than a platform law, and the price question the contest actually turns on has not moved off zero data. Claim count 1,215 to **1,222** with the research lane's six, verified by counting claim headers across all topic files, with the two apparent duplicates confirmed benign (a CR-231 narrative heading inside the Harvest Log, and MD-019b matching MD-019 on a prefix).
+
+**Engine: TENTH consecutive same-second launch (13:13:53) and today it MISSED, by 65 seconds.** This pass re-checked the highest free claim ID at **13:30:26** immediately before writing and took AU-090 at 13:30:54; the research lane wrote its six claims at 13:31:59. They missed only because this pass was writing to Auction Mechanics and that pass was writing to five other files. **Closest call yet, and the fix is still unbuilt: stagger the launches, or add an ID lock.** The watchdog still guards only the research lane.
+
+**A SECOND, NEW collision surface found today and it is not the ID.** The research lane's commit `571b1f5` at 13:31 swept in **this lane's half-written lesson 028 file**, because that commit staged the science folder rather than its own files. Nothing was lost, since the teacher lane's later edits stayed on disk and are in `e7c1901`, but **an incomplete lesson existed in git history for eight minutes.** The ID re-check does not protect against this; only scoped staging does. **Both lanes should stage their own files by path and never the whole science folder.**
+
+
 ## 2026-09-16 (research run)
 
 **4 transcripts in, all read in full. 6 claims banked, 5 amended, 0 contested, 0 refuted. Backlog 0. Codex 1,215 to 1,222.** No law changed.

@@ -1095,8 +1095,8 @@ Last touched: 2026-08-20
 ### MM-046 · Large TAM tends to compress margin through competition, except where price signals value
 Tier: T4 · Status: active
 When a market is huge and the product is simple to make, entry floods in and drives price and gross margin down (backpacks: expensive zippers, crowded category, low LTV, hard differentiation). The exception is categories like beauty where pricing low signals a bad product, so high margin persists regardless of TAM. Crowded "perfect" categories (supplements) also bid up CAC until unit economics break at scale.
-Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27
-Last touched: 2026-08-18
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27 · Andrew Faris, How I'd Build A Growth Playbook For Every DTC Category (With Patrick Coddou), 2026-09-17 (restates the backpack/zipper case verbatim, no new evidence)
+Last touched: 2026-09-17
 
 ### MM-047 · A profitable owner-operated brand has almost no acquisition value; a barely-profitable brand that grows self-reliantly with a full team is worth far more
 Tier: T3 · Status: active
@@ -2091,3 +2091,24 @@ Taylor Holiday on why supplement businesses are hard to make durable, and the ar
 **Two limits before quoting any of it.** This is one operator reasoning out loud in a conversation, with no cohort data, no acquisition-cost series and no named failure. The counter-position sits in the same exchange: a low barrier to entry is also why the category has been an unusually good opportunity, and a business sold for $30M to $50M is a good outcome that needs none of this to hold.
 Sources: Andrew Faris, The Death Of Supplements & What Taylor Holiday What Do Instead, 2026-09-15 (Taylor Holiday speaking)
 Last touched: 2026-09-16
+
+### MM-217 · First-year LTV, retention and return rates differ enough between DTC categories that the same media plan cannot be right for all of them
+Tier: T3 · Status: active
+Andrew Faris, 2026-09-17, laying out the economics his agency sees across a book that spans supplements, apparel, jewellery, accessories, durables and other CPG. These are portfolio observations stated from memory in conversation, not a shown dataset, and he flags one of them as invented (below). Carry the ranges, never the decimals.
+
+| Category | First-year LTV | The number that bites |
+|---|---|---|
+| Durable consumer goods (his examples: a $200-ish popcorn maker, early Ridge, backpacks, leather goods) | all the money is on first purchase | **sub-20% retention in a year, sub-20% expansion**, and "surprisingly low cross-sell" |
+| Supplements | **~200% in a year**, so a customer spending $1 today spends about $3 by year end | requires "some material portion" of revenue on subscription; often delivered at **60+ points of margin** |
+| Apparel | **80 to 100% in a year**, which he calls surprisingly good | **20%+ return rates**, because fit is hard online and no amount of execution fixes it |
+| Jewellery and accessories | between durables and apparel | low return rate (fit is not the problem), high gross margin, product development straightforward |
+
+**His own caveat, quoted because it governs the durables row:** "I have not seen Popsmith's numbers so just to be clear I'm just making this up." Take the durables row as the shape his agency sees in that category, not as one brand's figures.
+
+**What the differences actually change.** Faris's answer is that there is a core system and the category inflects it: "There are some media buying beliefs that we believe in across all of those about how you do creative testing and how you scale ads and manual bids and cohort forecasts... But those are all inflected by the category." He names how each category grows, and the growth engines are not interchangeable. **Jewellery and accessories** grow on influencer, product releases, sales and a full marketing calendar, then on sales-channel diversification into retail. **Supplements** grow on "monster, incessant ad volume across a small SKU set", hunting hooks, angles, funnels and offers, with LTV carrying it. That second one is the same shape as the front-end-ROAS argument in [[Marketing Math & Unit Economics#MM-003|MM-003]], where supplement brands scale at 0.8 to 1.5x front-end because returning revenue carries profitability.
+
+**A margin note that repeats an existing claim rather than adding to it.** He restates the backpack problem, that zippers are expensive to make and there is no way to win there, which is already banked at [[Marketing Math & Unit Economics#MM-046|MM-046]].
+
+**The limit he puts on his own framework, unprompted.** Asked whether every jewellery brand fits the jewellery playbook, he answers "I think it's exactly the right concern. I think it's possible that this whole idea that I'm suggesting there was a fool's errand." Treat category playbooks as a starting hypothesis a specific account is allowed to break, which is also the safer reading for our own book, where none of these categories apply directly.
+Sources: Andrew Faris, How I'd Build A Growth Playbook For Every DTC Category (With Patrick Coddou), 2026-09-17
+Last touched: 2026-09-17

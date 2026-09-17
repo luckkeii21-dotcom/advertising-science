@@ -10,7 +10,7 @@ tags: [advertising-science, lesson]
 
 # Lesson 028 · Counting Ad Sets Does Not Count the Overlap
 
-🎬 **Lesson video (2m 41s, silent, watch anywhere):** [[video/2026-09-16-lesson-028.mp4]]
+🎬 **Lesson video (2m 37s, silent, watch anywhere):** [[video/2026-09-16-lesson-028.mp4]]
 
 Someone on a call says the ad sets are competing with each other. Someone else says that is nonsense, there are thousands of advertisers in that auction already. Both of them are certain. Neither of them has ever counted the thing they are arguing about, and it takes four minutes to count.
 

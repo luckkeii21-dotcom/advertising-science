@@ -323,8 +323,10 @@ Last touched: 2026-08-18
 ### GA-043 · Broad match, shopping feeds, PMax, and AI Max can already serve inside AI Overviews and AI Mode, with no advertiser control and no reporting segmentation
 Tier: T3 · Status: active
 As of December 2025, an account running broad match keywords, shopping ads with a feed, Performance Max, or AI Max had the potential to serve inside AI Overviews and AI Mode. There is no setting to turn it off and no report that breaks those clicks out, so no advertiser can state what share of spend landed there. His words: "I have no reporting either. So I don't even know if I'm getting clicks there or not and how many." He hoped Google would ship the reporting during 2026, which is worth re-checking now. This is a live measurement blind spot rather than a tactic, and it is the most consequential Google claim in this batch. Two consequences for us. Any account of ours running any of those four surfaces contains an unmeasured spend allocation, and any statement we make about where Google budget went inherits that unknown. Practitioner claim with no platform documentation cited, so verify against Google's current help docs and promote to T1 on confirmation.
-Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15
-Last touched: 2026-08-19
+**Checked against Google's own release, 2026-09-17, and the gap is still open.** On 2026-09-16 Google made AI performance insights generally available in Merchant Center across five countries, giving a retailer a **share-of-voice view of how its brand and products are discovered on AI Mode and AI Overviews**. That is the closest thing Google has shipped to answering this claim and it does not answer it. It is a brand and product visibility report inside Merchant Center, not a spend or click breakout inside Google Ads, and it reaches only merchants with a feed. **An account running broad match, PMax or AI Max still cannot state what share of its spend landed on an AI surface.** Full release detail at [[Google PMax & Shopping#GP-047|GP-047]]. Keep re-checking; do not let a visibility product be reported to a client as ad reporting.
+
+Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15 · Google, Boost your holiday sales with these agentic commerce updates, 2026-09-16
+Last touched: 2026-09-17
 
 ### GA-044 · One agency's whole book shows no paid-side decline from zero-click AI results, with the traffic collapse landing on informational and publisher pages instead
 Tier: T3 · Status: active

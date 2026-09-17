@@ -771,3 +771,21 @@ The overlap argument at [[Auction Mechanics & Bidding#AU-056|AU-056]] and [[Auct
 **Limits.** Eleven days is not a delivery lifetime and an ad set launched mid-window under-reads. It measures overlap among people ACTUALLY REACHED, not overlap between targeted pools, so it reports what delivery did rather than what the settings said. The chance baseline rests on the vault's population figure, not on anything Meta published. Two accounts is two accounts.
 Sources: our own raw ad-set exports, `Clients/Chiroworks INC [Chiropraise]/Raw Reports/Campaign Adset Performance.csv` and `Clients/SJRC/Raw Exports - 10th July - 20th July/SJR-EvrythingAI-Campaigns-Adsets-Performance-10th-20th-July-2026.csv`; population figures from `wiki/clients/ChiroWorks/Region Population.md`; taught in Lesson 028
 Last touched: 2026-09-16
+
+### AU-091 · One operator's complete cost-cap build: a single ad set, the cap set at the account's own trailing 30-day CPA, and 1-day-click attribution chosen on purpose
+Tier: T3 · Status: active
+Nick Theriot walks the setup on screen, 2026-09-16, on a live e-commerce account. It is the most complete cost-cap build anyone in the roster has given, and it is one account with no comparison arm.
+
+**One ad set, stated as a rule.** "Why one ad set? Cuz there's no reason to create more ad sets. It's a cost cap campaign." He gives no mechanism. It is consistent with the consolidation logic elsewhere in this codex, where extra ad sets fragment signal and multiply audience overlap, and he does not make that argument himself.
+
+**The cap is set from the account's own recent cost, not from a target.** The account had been running a $30 to $39 cost per purchase across its ads, drifting above $45, against a stated want of $40 or less. He set the cap at **$40**: "last 30 days, these ads were doing that and I'm perfectly happy if they're getting $40 or less." **This is the operating detail worth carrying.** The cap is anchored to demonstrated recent performance rather than to the CPA the business wishes for, which is the failure mode that starves a capped campaign of delivery. Settings on screen: website, maximize number of conversions, purchase, cost per result goal $40.
+
+**Attribution set to 1-day click, deliberately, and his reasoning is about what the optimiser sees today.** He does not want 7-day click plus 1-day view "because that's going to kind of take in the last couple of days of performance as well", and he wants "that day the clicks that are happening" driving that day's delivery, since the cap decides how much Meta can spend that day against the conversions it can find at that price.
+
+**Flag the tension rather than resolving it.** [[Auction Mechanics & Bidding#AU-005|AU-005]] is T2 across $200M of CTC cost-controlled spend and records that **1-day click missed target more often**, consistent with a noisier window, while 7-day click delivered 96.5% of target and 7-day-click-plus-1-day-view delivered 101%. The two are not strictly the same claim: AU-005 measures minimum-ROAS value campaigns against a target, Theriot is running a cost cap on purchase volume and is describing why he chooses the window, not how often it hits. **On the evidence as it stands the T2 rules the target-accuracy question and this T3 does not unseat it.** If we run cost caps on a client, run the window CTC measured and treat Theriot's preference as the thing being tested.
+
+**Budget ramp, for sizing.** Started at $400 to $500 a day, raised to about $3,000 a day, and he notes the full $3,000 spent only once or twice. He names his reason for not going higher as risk of a Meta overspend episode rather than a delivery principle: "I don't have the balls like some of you guys to put like ninety-nine thousand dollars as a daily budget, and then all of a sudden Facebook has its one or two moments a year where it just decides to blow all that ad spend."
+
+**What was not shown.** No cost-cap campaign results at all. He shows the build and the surrounding account numbers, never the capped campaign's own CPA or delivery against the $40. He is explicit that the campaign exists "purely just to simply test it."
+Sources: Nick Theriot, How I Turned a Losing Client Into a $29,000/Day Winner in 60 Days, 2026-09-16
+Last touched: 2026-09-17

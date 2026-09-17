@@ -387,3 +387,31 @@ Why this belongs beside the feed-quality work rather than in a tooling note: [[G
 Live platform walkthrough with the Merchant Center help document linked in the source. The GTIN matching rule is his statement rather than a quoted line of documentation, so confirm against Google's own page before relying on it in a client diagnosis.
 Sources: Blue Sense Digital, Reviews Feed Setup in Google Merchant Center Next using 3rd Party Review Aggregator, 2025-01-24
 Last touched: 2026-09-05
+
+### GP-046 · Google is embedding a conversational Business Agent inside YouTube ads, in US beta, so the ad unit itself answers product questions
+Tier: T1 · Status: active
+Announced by Google on 2026-09-16 as part of a holiday retail release. Eligible US retailers can sign up for a beta in which **Business Agent embeds directly within YouTube ads**, and Google's description of what the viewer then does is "conduct self-driven research, ask complex product questions, and receive tailored guidance without leaving their YouTube context."
+
+**What is actually new is where the conversation happens.** Google says Business Agent shipped in Search earlier in 2026 and this extends the same thing into the video unit. So the surface being changed is the ad, not the results page. A YouTube ad stops being a one-way asset the viewer either clicks or scrolls past, and becomes something the viewer can interrogate before they ever reach a landing page.
+
+**The consequence for how a video ad is briefed, if the beta generalises.** Every objection-handling beat a script currently has to pre-empt is a beat the agent can be asked directly instead, which cuts both ways: the ad no longer has to carry every answer, and the ad no longer controls which answer the viewer gets. Nothing here says how the agent is grounded, what it is allowed to say about price or stock, or who is liable for an answer it gets wrong.
+
+**The honest limit.** This is an announcement with no performance figure attached. Google gives no engagement rate, no conversion delta, no cost, and no indication of what share of impressions the agent is even offered on. It is US-only and opt-in. Treat it as a product state to watch, never as evidence that conversational ad units perform.
+Sources: Google, Boost your holiday sales with these agentic commerce updates, 2026-09-16
+Last touched: 2026-09-17
+
+### GP-047 · Google published two feed numbers worth carrying, and made brand visibility on AI Mode and AI Overviews reportable in Merchant Center, though not for ad spend
+Tier: T1 · Status: active
+Same 2026-09-16 release. Three parts, and they are worth separating because only two of them carry a number.
+
+**AI performance insights in Merchant Center is now generally available in Australia, Canada, India, New Zealand and the US.** Google's stated function: it shows a retailer "how their brand and products are being discovered", comparing **their share of voice with other brands across surfaces like AI Mode and AI Overviews**. Read against [[Google Auction & Smart Bidding#GA-043|GA-043]], this is close to, and is not, the thing that claim was waiting for. GA-043 records that broad match, Shopping feeds, PMax and AI Max can all serve inside AI Overviews and AI Mode with **no reporting segmentation of ad clicks or spend**. What shipped is an organic-style share-of-voice view for a merchant's brand and products inside Merchant Center. **It does not break out what an ad account spent on those surfaces, so the measurement blind spot in GA-043 stays open.** State it that way in any account review rather than presenting AI visibility as AI ad reporting.
+
+**Two published numbers, both Google's own.**
+- **Feed hygiene, 5%.** "On average, merchants adopting core Merchant Center feed best practices see a 5% increase in conversions the following month." No sample size, no definition of which practices count, no control. It is directionally consistent with [[Google PMax & Shopping#GP-037|GP-037]], which puts disapproval cleanup at a 10 to 30% Shopping lift, and it is a smaller and vaguer claim than that one, so do not stack them.
+- **Conversational attributes, 50%.** In testing with lululemon, attributes the brand submitted were "incorporated 50% of the time in relevant product recommendations in AI Mode." One brand, one test, no denominator for what counts as a relevant recommendation. It is the first figure anyone has published for whether a merchant-supplied field actually reaches an AI answer, which makes it worth carrying and not worth generalising.
+
+**The rest of the release, for completeness and with no numbers.** The Universal Commerce Protocol integration hub in Merchant Center adds cart transfer to a merchant site and enhanced checkout flow testing, rolling out in the US with Australia and Canada following early next year; Google says UCP already powers direct checkout for "hundreds of thousands" of brands. Loyalty data connected in Merchant Center surfaces member pricing and perks across Google and lets a merchant "steer bids toward your highest-value shoppers", which is a bidding claim stated in one clause with no mechanism given. A `video link` feed attribute powers shoppable video formats.
+
+**Scope check for our own book.** We run no e-commerce Shopping accounts today, so none of this is actionable on a current client. It is banked because the AI-surface reporting question in GA-043 is a live gap and this is the first movement on it.
+Sources: Google, Boost your holiday sales with these agentic commerce updates, 2026-09-16
+Last touched: 2026-09-17
