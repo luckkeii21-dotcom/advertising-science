@@ -1219,8 +1219,11 @@ Tier: T3 · Status: active
 The three page types were SHOWN on screen. The rates are ASSERTED with no analytics displayed. A VSL offer page with no opt-in gate converts roughly 5% of visitors straight into a booked call or submitted application. Put an opt-in step in front and 10 to 20% of the opt-ins reach the VSL page and then book or apply, so the second number is a rate on a smaller and warmer base than the first and the two are not directly comparable. A free-community lead magnet page opts in 25 to 30% of visitors, which is a page rate on the cheapest possible commitment and says nothing about what those opt-ins are worth.
 
 Traffic temperature is ambiguous on the 5% figure, because he mentions warm traffic in the same breath. Do not carry it as a cold-traffic benchmark. The category-benchmark routing rule in [[Marketing Math & Unit Economics#MM-106|MM-106]] applies before any of these are used to declare a page broken.
+
+**Amended 2026-09-18.** These three rates say nothing about WHICH lead magnet belongs in the opt-in gate. [[Marketing Math & Unit Economics#MM-218|MM-218]] answers that from a different operator: a downloadable PDF opts in at a higher rate than a free training video, and the video is then placed on the thank-you page behind a deliberate 8-minute delay on the PDF email. That claim carries no booking rate, so it stacks onto this one rather than competing with it.
+
 Sources: Dr. Matt Shiver, If I Wanted to Make My First 100k mo in 2026 Id Do This, 2026-06-02
-Last touched: 2026-08-21
+Last touched: 2026-09-18
 
 ### MM-162 · A measured opt-in-to-response failure: 43 people into a funnel, 5 responses, 1 booked call, and an account audited sub-10% against an asserted 20-25% target
 Tier: T2 · Status: active
@@ -1303,6 +1306,38 @@ A gate that halves opt-in volume must lift show rate 64% in relative terms to br
 **Why T3 and not T2.** Every figure above is recomputed from our own raw exports and reconciles, but none of it measures the thing the claim asserts. Neither account holds a before-and-after show rate across its own price change, and ChiroWorks has never written to the field at all. **The path to T2 is narrow and cheap: turn on the appointment and show write-back, pull ChiroWorks from 31 August, and report the two sides of 6 September as two series.** Sits beside [[Marketing Math & Unit Economics#MM-164|MM-164]], where 50-cent leads met a 10% show rate, and one level up from [[Marketing Math & Unit Economics#MM-190|MM-190]], because a downstream column does not rescue a comparison drawn across a change of population.
 Sources: EvrythingAI raw ad-level exports, ChiroWorks and StayWell 2026-08-24 to 2026-08-30; EvrythingAI client attribution audit, ChiroWorks 2026-07-24 (Jul 10-24 window); StayWell offer decision, May 2026; ChiropracticWorks offer confirmation, 2026-09-06; `invisa-RED Lead Form - LIVE + Launch Steps.md` and client `CLAUDE.md` as on disk 2026-09-13
 Last touched: 2026-09-13
+
+### MM-218 · The "Trojan horse PDF" funnel: a downloadable PDF opts in at a higher rate than a free training video, and the email is deliberately delayed 8 minutes so people watch the video while they wait
+Tier: T3 · Status: active
+**The build, step by step as described.** The ad shows the physical PDF held on camera while the presenter talks through what is inside it, and the call to action is to download it. The click goes to an opt-in page that captures contact details. The thank-you page then says the PDF is on its way to the email inbox and offers "now watch the video version of the PDF while you wait". The video leads into booking a call.
+
+**The deliberate mechanic, and he names it as deliberate.** The PDF email is held back 8 minutes on purpose, and the page pre-frames the wait with a line saying it can take 5 to 10 minutes. "We tested this. That makes them more likely to watch the video." His own reaction on camera is "I feel bad", followed by the reasoning that a viewer who starts the video is in, while a viewer who gets the PDF first skims it and files it for later.
+
+**Why the PDF beats the video as the thing in the gate.** People opt in for a PDF at a higher rate than for a training video, which he puts down to the PDF being a thing they do not want to miss out on rather than a commitment of time.
+
+**The numbers he gives, and the sentence that qualifies all of them.** About 60% of opt-ins watched the video, with a view-rate curve he describes as matching what they saw when people signed up for a VSL directly, and a materially lower cost per opt-in. **Immediately after giving the 60% he says "I have to check the stats now. I haven't checked in like a year."** Nothing was on screen. The interviewer's corroborating figure is about the thing being replaced rather than the replacement: he abandoned the VSL opt-in step entirely because it reached $100-plus per opt-in on a specific avatar.
+
+**The sales-floor half, which is the part most people who copy this funnel leave behind.** The outbound call to an opt-in who has not booked opens "I just wanted to make sure you got our PDF, I know sometimes it goes to spam" instead of "have you watched our video". A service frame rather than a sales frame, and the caller is asking about a deliverable the prospect actually requested. Both parties on the call agree that is the meaningful difference.
+
+**His current configuration, for scale.** A 30-minute VSL he rewrites annually plus a 19-page PDF on the coaching offer, and a separate 5-to-7-minute direct-offer funnel for the done-for-you offer, on the stated ground that done-for-you buyers do not want the 30 minutes and want track record and differentiation instead.
+
+**Where it sits against what we hold.** [[Marketing Math & Unit Economics#MM-161|MM-161]] already carries page-level rates for the three call-funnel shapes and says nothing about which bribe belongs in the gate. This claim answers that and says nothing about booking rates, so the two stack rather than conflict. He also reports the format decayed for years and has recently recovered, which he attributes to fatiguing his own audience rather than to the format dying, consistent with [[Creative Science#CR-251|CR-251]].
+
+**Our own position on the 8-minute delay, recorded so nobody repeats it blind.** The email really does arrive, so the line is not a false claim. It is still a manufactured wait presented in language that reads as a technical limitation. Before any version of "this can take 5 to 10 minutes" goes into our copy, say out loud that the delay is a choice, and check it against the client's own tolerance for that.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
+
+### MM-219 · Booking-source mix on a working B2B coaching and done-for-you funnel: roughly 50 to 60% direct and retargeting, 30 to 40% appointment setters, under 10% email
+Tier: T3 · Status: active
+**The split, with his own hedge attached.** Asked where bookings come from, he gives "ballpark numbers" and says he does not have them separated: a little more than half books directly through the marketing funnel, with retargeting lumped into that same bucket, roughly 30 to 40% comes from appointment setters dialling, and email is "less than 10%".
+
+**The email collapse has a stated cause and a stated date.** He attributes it to Gmail's promotions-tab change roughly two years earlier, after which list performance dropped. The workaround was a weekly value-first newsletter ending in a call booking, which worked for a period and then decayed, which he attributes to newsletter saturation across the category while conceding "or maybe that's just mine" because he has run his for a long time.
+
+**Why it is worth banking despite being ballpark.** A coaching and agency offer with a funnel this operator has spent years tuning still gets a third or more of its booked calls from humans on the phone. **Any forecast for this offer type that assumes the funnel books everything is wrong by 30 to 40% of bookings.** That is a staffing line in a P&L rather than a marketing detail, and it belongs beside any proposal we write for an offer of this shape.
+
+**Guards.** One account. Figures given as ballpark and never reconciled to 100%. Direct and retargeting are not separated, which matters because retargeting bookings are created by spend counted elsewhere. No CRM was shown. The email figure is a share of bookings and says nothing about the profitability of the list.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
 
 ## Team and Org Economics
 

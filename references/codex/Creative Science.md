@@ -376,6 +376,20 @@ Downstream consequence he attaches, and it converts a creative shortfall into a 
 Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11; Andrew Faris, How To Fix The Most Common Bid Cap & Cost Cap Mistake I See, 2026-06-25; Blue Sense Digital, 5 Step Checklist to Increase Meta Ad Performance Overnight, 2025-02-26; Blue Sense Digital, How to Double Your Profit Using Levers in Your Unit Economics, 2025-04-01
 Last touched: 2026-08-20
 
+### CR-251 · An operator puts YouTube creative refresh at quarterly under $1,000 a day against weekly on Meta, and attributes the roughly 13x gap to intent targeting replenishing its own audience
+Tier: T3 · Status: active
+**The numbers as given.** On YouTube, an account spending under $1,000 a day can refresh creative quarterly. Accounts spending heavily move to monthly or bi-weekly. He says he tells Meta operators the quarterly figure and they call it insane. The interviewer, who runs Meta, confirms his own cadence on camera as "literally every week new".
+
+**The mechanism he claims for the gap.** YouTube's targeting is built on intent, so the audience replenishes itself: new people type the search term every day and the pool refills underneath a campaign that has not changed. Meta's targeting resolves to a pocket of people, and that pocket exhausts. He does not claim YouTube creative never fatigues, and he supplies his own counter-example unprompted: his PDF ad ran for years, decayed, and has recently recovered, which he puts down to fatiguing his own audience rather than the format dying.
+
+**This agrees with the codex on mechanism and disagrees only on where each platform sits.** Ben Heath's claim already on file is that accounts over $100k a month fatigue within days, that the driver is audience size against spend rather than creative quality, and that "better ads will last longer" is false. If exhaustion of a finite pocket is the driver, a platform whose audience refills by construction should carry creative longer, which is exactly the shape of this claim. **So the two are consistent, and this one is unmeasured where Heath's is also unmeasured.**
+
+**Guards, and they are not small.** No data, no account, no fatigue curve, one operator. He sells YouTube training and done-for-you YouTube management, and a lower cost of creative ownership is a selling point for that product. The $1,000-a-day threshold is stated without derivation. The comparison against Meta is his characterisation of somebody else's platform.
+
+**What it does NOT license for our own book.** Every account we run on Meta stays on its current weekly to fortnightly cadence; nothing here touches that. The claim is useful only as a cost estimate for a YouTube test: it says the creative bill for sustaining a YouTube campaign is a fraction of the Meta bill, which changes what a test costs to keep alive rather than what it is likely to return.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
+
 ## Testing systems
 
 ### CR-032 · Width/depth testing: prove a new message with 2-3 formats, then multiply the winner across every format
@@ -981,8 +995,15 @@ THE ONLY TWO NUMBERS ATTACHED TO AI CREATIVE ANYWHERE. [[Creative Science#CR-168
 THE PRODUCTION ECONOMICS, stated, and this is the part that is genuinely established: about 30 minutes for a finished AI UGC video, "You can create AI UGC that looks just like this, and it only takes about half an hour"; about 5 minutes for a finished AI static including generation; $5 to $30 in AI credits per high-quality ad. Set that against the creative-budget arithmetic in [[Creative Science#CR-119|CR-119]] and the per-concept cost of roughly $300 at agency rates in [[Creative Science#CR-024|CR-024]], and the cost case stands on its own without needing a performance case.
 THE RULE THAT FOLLOWS, and it binds our own writing. Any AI-creative claim we repeat is labelled a PRODUCTION-COST claim until somebody runs the comparison. We do not write "AI creative performs better", because no source in this codex has shown it. We can write that it costs one to two orders of magnitude less to produce, because several sources have shown that.
 THE TEST TO RUN ON OUR OWN ACCOUNTS, which is cheap and is the reason this claim is worth its space. Launch matched pairs into the same ad set, same message, same offer, same hook, one produced conventionally and one produced with AI, and read cost per result and share of spend. We have five accounts and a standing creative cadence, so the marginal cost is one extra asset per concept. Until that runs, the honest position is that AI creative is cheaper and that its performance relative to conventional creative is UNMEASURED, not equal and not worse.
+
+**Amended 2026-09-18. The gap is still open, and the closest attempt on file is now recorded at [[Creative Science#CR-249|CR-249]].** A YouTube lead-gen operator describes running exactly the comparison this claim says nobody runs: three arms, no AI, all AI, and an AI hook in the first 8 seconds followed by conventional footage. He reports all-AI worst, the hybrid best at the time, and the ranking since reversing as AI stopped being novel.
+
+**Read why that does not close this claim, because the reasons are the ones this claim exists for.** No cost per result, no spend, no window, no sample size, arms not held constant beyond the AI variable, and the whole account recalled from memory about a period roughly six months before recording. It is a direction rather than a measurement. **The rule in this claim is unchanged: any AI-creative claim we repeat is labelled a production-cost claim until somebody shows the comparison with numbers.**
+
+**What it does improve is the test design this claim asks for.** The hybrid arm is the cheap version: an AI-generated first 8 seconds on otherwise conventional footage is a hook swap, which our accounts already produce on cadence, so the matched pair costs one extra asset per concept instead of a parallel production line.
+
 Sources: Mark Builds Brands, i tried running only AI ads for 30 days, 2026-04-29; Fraser Cottrell, The New Way to Make Ai UGC in 2026, 2026-03-15; Fraser Cottrell, Watch Me Create 3 Static Ads With AI From Scratch, 2026-04-05
-Last touched: 2026-08-21
+Last touched: 2026-09-18
 
 ### CR-168 · Thirty days of AI-only ads produced $2.2M in sales on just over $1M of spend, with no control period
 Tier: T2 · Status: active
@@ -1009,6 +1030,44 @@ WHY THIS MATTERS BEYOND ONE SPEAKER. Reroll count is the hidden variable in ever
 THE ADJACENT UNSUPPORTED CONFIDENCE CLAIM, recorded because it is the assumption underneath the entire AI-creative case: "I can almost guarantee you that no one will tell that they are AI." No blind test, no comment-section evidence, no survey, no A/B. It sits directly against [[Creative Science#CR-060|CR-060]], where viewers who spot the AI are said to distrust the brand, and against [[Creative Science#CR-046|CR-046]], whose whole mechanism is that animation works BECAUSE viewers know it is not real. Treat undetectability as an open question, and note that the cheapest evidence available on it is free: read the comments on your own AI ads.
 Sources: Fraser Cottrell, The New Way to Make Ai UGC in 2026, 2026-03-15; Fraser Cottrell, Watch Me Create 3 Static Ads With AI From Scratch, 2026-04-05
 Last touched: 2026-08-21
+
+### CR-249 · The closest thing on file to an AI-versus-non-AI creative comparison: three arms, all-AI worst, AI-hook-then-real-footage best, and the operator says the ranking has since reversed as AI stopped being novel
+Tier: T3 · Status: active
+**Why this claim exists.** [[Creative Science#CR-169|CR-169]] holds that nobody in this codex's AI-creative sources has compared AI creative against non-AI creative in the same account, and that every stated advantage is therefore a production-cost claim. This is the first source read into the codex that describes running that comparison. **It still does not close CR-169**, for the reasons listed at the bottom, and CR-169 stays open.
+
+**The three arms, in his words.** Ads with no AI. Ads that are entirely AI. Ads with an AI-generated hook in the first 8 seconds followed by conventional footage for the rest.
+
+**The result he reports for the period roughly six months before recording.** All-AI was the worst. The hybrid outperformed everything. No-AI sat in the middle. His stated reason the all-AI arm lost: it fails to build know, like and trust, because the viewer cannot work out who the brand is.
+
+**The reversal he reports as current, and it is the more useful half.** No-AI ads are performing better again and the hybrid's edge has decayed. He attributes this to AI video no longer being novel, and says the bar has moved: an AI video now has to be a better AI video to earn the same result. His forward position is that the pendulum keeps swinging, so the finding has a short shelf life by his own account.
+
+**The hybrid hooks he names, and what they have in common.** Every one puts HIM inside a stylised world rather than replacing him: walking a medieval street as "king of YouTube" over a line about living in medieval times, a revenue roller coaster, a Pixar style, a Lego character, an anime character, an astronaut. His read on why a SET of them works is persona-shaped rather than novelty-shaped: each style captures the slice of the audience that likes that style, which he compares explicitly to varying backgrounds and characters on Meta so the system can find who responds. That is the logic of [[Creative Science#CR-212|CR-212]] on the founder face as a sameness signal, applied to style instead of scene.
+
+**The enrolment anecdote is not evidence and he does not present it as any.** A client told him on a group call that he enrolled because he saw the Lego ad and loves Lego. One person self-reporting a reason for a purchase is the weakest attribution there is, and it is told as a joke against himself.
+
+**Why CR-169 stays open.** No cost per result, no spend, no impressions, no window, no sample size. The arms were not held constant beyond the AI variable, and he does not say whether the offer, the funnel or the targeting moved. The whole account is recalled from memory about a period he places around six months earlier, and he separately says in the same conversation that he has not personally checked his own funnel stats in about a year. **File as a directional recollection, not as a test.**
+
+**The one part cheap enough to act on now.** The hybrid structure does not require committing to synthetic creative. An AI-generated first 8 seconds bolted onto otherwise conventional footage is a hook swap in the sense of [[Creative Science#CR-124|CR-124]], which we already run, so it costs one asset per concept to try, and it is the matched-pair test CR-169 asks for.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
+
+### CR-250 · Putting a non-founder spokesperson in the ad is gated on SPEND: below roughly $100k a month it costs the founder's credibility and buys nothing, and the working build hands to the founder at 30 seconds
+Tier: T3 · Status: active
+**The rule as a spend gate.** "If you're spending less than 100 grand a month, definitely like less than 30, like you really shouldn't do that." He calls it an advanced strategy that makes sense at a certain level of scale, and the gate is the scale rather than the creative brief.
+
+**Three reasons he gives, and the third is the one nobody says out loud.** One, you lose the branding value of positioning the founder as the expert, which for an expert-led business is part of what the ad spend buys. Two, not everyone articulates the offer as well as the founder does, so a spokesperson is a range of outcomes and some of them are worse. Three, an early-stage company has no company credibility for a new face to borrow, so an unknown presenter fronting an unknown founder opens two credibility gaps where there was one. His phrasing: "who is this other person? But then also, who are you? What's your track record?"
+
+**The inverse case, and why it works there.** At scale the ad is building the company brand rather than the founder's, the company already has a track record the presenter can stand on, and the new face reaches a group the founder's face was not reaching. He cites a competitor with a large team and a long client list as someone for whom it works for exactly that reason.
+
+**His worked build, which is the transferable part.** The spokesperson opens and carries the hook. At about 30 seconds she hands over explicitly ("let me introduce you to...") and the founder speaks to camera. The founder hands back, and she takes the call to action. The stated purpose of the handoff is to get the founder's face into an ad fronted by somebody else, so the ad reaches the new audience without giving up the positioning. **They then tested the landing page both ways, founder alone and both faces, and kept both faces.** Production detail he volunteers: they rented an Airbnb for the backdrop rather than shooting in the usual room.
+
+**The hook in that ad, for the record.** A time claim plus a company result: ten minutes to learn the strategy, tied to $200 million generated for clients. He notes the hook outlived the spokesperson and that he has since delivered the same hook himself.
+
+**Guards.** No CPA, no spend on those specific ads, and no comparison against the founder-only version of the same ad. The $30k and $100k thresholds are asserted with no derivation. The campaign is a recollection from several years earlier, during a period he describes as hyper-scaling with a peak month around $400k of ad spend, and he says the account no longer runs at that level. The interviewer offers a contradicting data point from his own account, where a female employee's ads "didn't do the best", and neither side is measured.
+
+**Where it sits against what we already hold.** [[Creative Science#CR-212|CR-212]] says persona is the hardest thing to vary in a founder-led format, because the founder's age and sex are fixed, and recommends varying scene and format first because they are cheap. This claim is the expensive way through the same wall, and its contribution is naming the spend level at which it becomes available at all. Our own standing rule that a creator never speaks the call to action is not in conflict: here the spokesperson is the brand's own employee rather than a creator, and the CTA is hers by design.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
 
 ## Meta creative enhancements
 
@@ -2521,3 +2580,32 @@ Jon Loomer, 2026-09-16, in an episode that is explicitly an uncertainty essay ra
 **Nothing here decides anything.** T4 never decides, and this claim carries no volume number, no fatigue curve and no test. **The one thing it is good for is a research target:** if it is right, it should show up as rising CPMs or faster fatigue in categories where AI creative adoption is highest, and nobody has measured that. Log it as the gap it is.
 Sources: Jon Loomer, I've Never Been More Uncertain About Meta Ads, 2026-09-16
 Last touched: 2026-09-17
+
+
+### CR-248 · Meta's three ad relevance rankings are percentiles against the competing auction pool, so they read the room rather than the ad: across three of our accounts 22 of 24 conversion-rate grades were Above average, and inside one door the quality grade ran backwards against cost per opt-in
+Tier: T2 · Status: active
+Measured on our own raw weekly exports, so the counts are T2 and the ratios derived from them are arithmetic. **Quality ranking, Engagement rate ranking and Conversion rate ranking are each a percentile against other ads competing for the same audience.** The comparison pool is chosen by the platform and it is not your account, which is why the grade behaves like a property of the auction rather than a property of the creative. **Nothing in this codex had ever examined these three columns.** The exact phrases appear five times across the whole science folder and all five trace to one finding, the twin-ad divergence in [[Attribution & Incrementality#AT-107|AT-107]] and its lesson, where a single sentence used them as corroboration. Creative Science carried zero.
+
+**Read this next to [[Google Auction & Smart Bidding#GA-010|GA-010]], which is the same object on Google and is T1.** Quality Score's components are rated Above average / Average / Below average against advertisers whose ads showed for the same searches over the past 90 days, and Google states outright that Quality Score is not an auction input. Meta's own [[Auction Mechanics & Bidding#AU-002|AU-002]], also T1, says an ad-quality estimate IS an auction component. **The two are not in conflict: the auction consumes an internal estimate, and the column reports a percentile of it against a pool. Two objects, one name.**
+
+**Measured 24 to 30 August 2026 across three accounts, 136 ads, $6,307.80.**
+
+| Account | Ads | Spend | Quality graded | Conversion graded | Share of spend under a conversion grade |
+|---|---|---|---|---|---|
+| SJR Commercial | 53 | $4,440.35 | 27 | 20 | 70.8% |
+| Phoenix Truxx | 33 | $1,387.77 | 9 | 3 | 52.4% |
+| ChiroWorks | 50 | $479.68 | 1 | 1 | 40.3% |
+
+**Finding 1, the grade is near-constant inside an account and flips between accounts.** Every conversion-rate grade in the week: SJR 19 Above average and 1 Below average; Phoenix Truxx 3 Above average; ChiroWorks 1 Below average, with 2 of 2 Below average the prior week, 17 to 23 August. **22 of 24 are Above average and both exceptions sit in the one account selling a different product into a different auction.** A column that returns the same answer for 19 of 20 ads is not separating those ads.
+
+**Finding 2, inside a single optimisation event the quality grade ran backwards against cost.** SJR's website-opt-in ad sets, 18 ads, one event throughout so [[Learning & Signal#LS-081|LS-081]] cannot contaminate the unit: Above average 2 ads, 76 opt-ins, $346.51, **$4.5593 each**; Average 7 ads, 221 opt-ins, $874.73, **$3.9581**; Below average 1 ad, 72 opt-ins, $254.08, **$3.5289**. Monotone in the wrong direction. The single Below-average ad, `JFF Its back`, produced more opt-ins than any other website ad in the account. **LIMIT, and it is a hard one: the Below tier is one ad and the Above tier is two ads inside one ad set.** This is enough to say the grade did not pick the winner here. It is nowhere near enough to say the ranking is inverted in general.
+
+**Finding 3, the one Below-average conversion grade in SJR landed on the right ad.** `Hal w hook` in `NJ/SI - Halal - SOKAL wesbite` is the ad LS-081 found showing $0.36 per result where the result was a page view, 659 of them. Its grades are Quality Below average and Conversion rate Below average, the only Below-average conversion grade in a 53-ad account. **The diagnostic column flagged the exact ad the Results column crowned, on the same screen.**
+
+**Finding 4, the documented 500-impression floor does not describe our file.** 35 SJR ads cleared 500 impressions and 27 carried a quality grade. 8 ads cleared 500 with no quality grade, the largest at 5,613 impressions; 15 cleared 500 with no conversion grade, the largest at 12,941. **The decisive pair: inside `EN-> open targeting`, same optimisation event and same last-edit date, `Dump Testimonial 02` at 970 impressions is graded Average while `DUMP_05_Brand Authority` at 5,613 impressions is graded nothing.** Shared ad set rules out the audience, shared event rules out the objective, shared edit date rules out the reset history. **Our files cannot explain it and no explanation is asserted here.** The consequence stands on its own: you cannot predict which of your ads will carry a grade.
+
+**Operating rule.** Read the three rankings as a description of the auction you are buying in, never as a ranking of your own ads against each other, and never let a grade move budget before cost per opt-in has been checked inside a single optimisation event. The one thing the column does well is flag an outlier: a lone Below-average grade in an account full of Above ones is worth four minutes.
+
+**What would upgrade this.** Meta's own help pages return a title and no body to an automated read, so the percentile bands and the 500-impression floor are carried from secondary summaries rather than from the source; get them off the page in a browser session and the mechanism half becomes T1. Then run the same decomposition across every week on file for SJR and Phoenix Truxx, which are the two accounts with enough graded ads to carry it.
+Sources: our own Meta ad-level weekly exports, `.claude/skills/weekly-client-reports/runs/2026-08-24`, `2026-08-28` and `2026-08-31` (SJR Commercial, Phoenix Truxx, ChiropracticWorks), recomputed 2026-09-18
+Last touched: 2026-09-18

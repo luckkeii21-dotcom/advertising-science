@@ -194,3 +194,45 @@ rewrite, and it sat directly under our two chiropractic accounts. Two things cha
 `/en-gb/policies/ad-standards/`.** They disagreed on 2026-09-14, in the same browser session, on the
 name and count of a policy section. Meta stages these rewrites by locale. A single-locale read will
 show a change a week late or not at all, depending on which locale you happen to check.
+
+### Google Ads Announcements: the script's own diff key is UNSTABLE, and the stable key is the answer href (found 2026-09-18)
+
+`lib/watchlist_check.py` diffs this page on a line comparison and reports an added and removed id
+count from it. **That output is not reliable.** Two fetches taken seconds apart on 2026-09-18, both
+against the same cache, reported a DIFFERENT "added" id: `11355155681876453040` on the first run and
+`7690260504386057358` on the second. A long-digit regex over the page body returns 30 ids, and 3 of
+those 30 change on every render. They are per-render session values, the same class of artefact as
+the `nonce` recorded on 2026-09-16. The "removed" list is worse noise still: it contains nav labels
+("Start advertising", "Campaigns", "Explore features"), which drop out whenever the page renders in
+a different locale.
+
+**The stable key is the answer permalink id:** `/google-ads/answer/(\d+)`. On 2026-09-18 it returned
+**396 ids, byte-identical across two consecutive fetches**, and 396 against the cached copy with zero
+added and zero removed.
+
+Method for any future run: extract the answer-href id SET from a fresh fetch and from the cache, and
+diff the sets. Never report the script's `added`/`removed` line counts as news. Note the count has
+drifted by one against the 2026-09-17 log, which reported 395 from the same cached file; that is a
+regex difference between runs and not a page change, which is exactly why the SET diff is the thing
+to read and the count is not.
+
+### Meta for Business News: the ceiling moved to 15 September 2026 (checked 2026-09-18)
+
+Previous ceiling was the Instant Hydration performance spotlight at 10 or 11 September, held since
+the 2026-09-14 check. **Two genuinely new cards, both dated 15 September 2026, both read in full:**
+"Introducing Meta One plans for businesses" and "IAB Global Creator Week: Making it Easier for
+Businesses to Partner with Creators and Turn Discovery into Purchase". Banked at MD-159 and as an
+amendment to MD-157.
+
+Title diff is working as the 2026-09-14 rule intends. Same 12-card module, two in, and "Getting Your
+Small Business Holiday-Ready" (late July) rotated out, which is the rotation the link-set rule
+already warns about. All five drift-prone cards rendered their EARLIER date today (10 Sep, 25 Aug,
+11 Aug, 11 Aug, 6 Aug), consistent with the one-day timezone artefact and not a change.
+
+**Transport, 2026-09-18.** Plain HTTPS returned HTTP 400 on both `?locale=en_US` and the bare URL.
+The browser opened it first try. The instruction stays "use the browser".
+
+**Browser availability note.** `playwright` and `playwright-arcads` both failed to connect at session
+start, and `playwright-metatech` was already locked by another process. `playwright-higgsfield`
+connected and did the work. When this source needs a browser, try every configured Playwright profile
+before logging it unchecked.

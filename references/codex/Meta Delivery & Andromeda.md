@@ -1503,8 +1503,20 @@ Meta's own newsroom post is the source for every number here. Meta One is a subs
 **Two limits on the pricing, both from Meta's own wording, and both easy to misquote.** Every business figure is "starting at", and Meta states that "plans, benefits, pricing, and availability may vary by region, by app, and by account". So no single price can be given to a client as their price without them opening the subscription flow on their own account. **A per-platform total circulating from the practitioner account, $45 a month for a verified badge across Instagram, Facebook and WhatsApp, is that operator's own arithmetic and appears nowhere in Meta's post.** Do not repeat it.
 
 **Nothing Meta announced is a claim about ad delivery, ad cost or ad performance.** This is an organic, profile and support product sold to advertisers. The half with real advertiser consequence is at [[Meta Delivery & Andromeda#MD-158|MD-158]], and that half is T3 because Meta did not publish it.
+
+**Amended 2026-09-18 from Meta's BUSINESS-facing version of the same announcement, which carries three things the newsroom post does not.**
+
+**One, the pricing unit, and it is the material addition.** The business post states "(pricing per asset)" and then, plainly: **"Plans are priced per profile, so each plan covers one account."** The newsroom post does not say this. It changes the arithmetic for anyone running more than one profile, and it is the fact that explains the $45-a-month figure flagged above: a per-profile price means a business covering Instagram, Facebook and WhatsApp is not buying one subscription, which is how that operator arrived at a number Meta never published. **Still do not repeat the $45.** Quote the per-profile rule instead and send the client to their own subscription flow.
+
+**Two, Meta Verified is being folded in.** "We're bringing the best of Meta Verified into Meta One." Current Meta Verified subscribers are explicitly unchanged for now, with migration plans in progress and a notification promised when they can switch. So Meta Verified sits on a deprecation path rather than running alongside, and any client already paying for it should expect a migration prompt.
+
+**Three, Meta Business Agent is metered by tier.** It is free to start, and a Meta One plan on WhatsApp buys more Business Agent responses per month. It answers customer messages on WhatsApp Business on the business's behalf, with the operator able to take over a conversation and to train it. Worth knowing because it is Meta's own text-answering agent sitting in the same job our voice agent does, and because the limit is a response count rather than a feature flag.
+
+**The feature list confirms the closing line above rather than changing it.** Competitive Insights on Instagram comparing up to 10 public accounts on public metrics, extended insights history beyond 90 days with CSV export, Custom Audience Insights on Facebook covering people who engage but do not follow, content scheduling up to a year ahead for reels and posts and 30 days for stories, links in organic posts and reels, an Instagram link page holding up to 20 links, a bold follow button, verified WhatsApp channels and a custom WhatsApp web URL. **Every one of those is organic, profile or support tooling. Nothing in Meta One touches ad delivery, ad cost or ad ranking.**
+Sources (added 2026-09-18): Meta for Business, "Introducing Meta One plans for businesses", 2026-09-15, read in full 2026-09-18
+
 Sources: Meta Newsroom, Introducing Meta One: A Subscription Service With More Features and AI to Create, Connect, and Stand Out, 2026-09-15, https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/; Ben Heath, Breaking Meta Ads News! Meta One is here..., 2026-09-15
-Last touched: 2026-09-16
+Last touched: 2026-09-18
 
 ### MD-158 · Human support and organic distribution are now things a business buys from Meta by subscription, and neither is in Meta's own Meta One announcement
 Tier: T3 · Status: active
@@ -1521,3 +1533,27 @@ Everything here comes from one operator who spent two weeks on the Meta One Max 
 **The honest limit, and it is large.** Nobody has measured any of this. He says the feed carousel has not been seen in the wild because adoption is still too low to judge how often it serves, gives no figure for the follow-button lift and flags his own 50% example as imagined. There is no performance claim here, and a subscription is not a delivery lever.
 Sources: Ben Heath, Breaking Meta Ads News! Meta One is here..., 2026-09-15
 Last touched: 2026-09-16
+
+### MD-159 · Meta's 15 September creator release: Creator Marketing Hub global, three APIs expanded, Partnership Ads coming to the Meta Ads MCP connector, and Instagram Live video ads generally available from 29 September 2026
+Tier: T1 · Status: active
+Meta's own Business News post is the source for every product and date here, announced at the IAB's first Global Creator Week.
+
+**Meta Creator Marketing Hub expands globally from 15 September**, with the named features rolling out across the rest of 2026: discovery filters that surface creators and content featuring your products, including a filter for known and predicted affiliate content; content-level permissions with expiry dates; one-click Partnership Ad creation inside the Hub; content recommendations that suggest an ad objective such as sales or awareness; ad-readiness editing that strips common blockers like copyrighted music and stickers; and Partnership Messaging moved inside the Hub so discovery, outreach and activation happen in one tool.
+
+**Three API changes.** Facebook creators join Instagram creators in the Creator Marketplace API, so both are reachable through a single integration. A new Messaging API enables creator outreach, with what Meta calls built-in protections for creators. The Content Discovery API expands to carry recommendations on top-performing organic creator content, advanced filters, keyword search, organic insights and a flag for which content is ready to run as an ad.
+
+**Two agent-facing changes, and the second is the one to watch.** The Meta AI business assistant is being integrated into the Hub for creator search and workflow guidance. And **Partnership Ads are coming to the Meta Ads MCP connector**, so an advertiser can create Partnership Ads and manage creator permissions from an external agent. No date is given for either.
+
+**One dated launch, and it is the only hard date in the post.** Live video ads already run on Facebook and are **expanding to Instagram, reaching general availability beginning 29 September 2026**, available to all advertisers and agencies. Paired with Partnership Ads, a creator's live content can be amplified as a Partnership Ad.
+
+**The two figures and exactly what stands behind them.** Creator recommendations influence 45% of all consumer purchases, and creator-economy ad spend has reached $37 billion, growing 4x faster than media overall. Both are footnoted to the 2025 IAB Creator Economy Report and Meta Modern Shopper Research Q4 2025. **No methodology, no population and no definition of "influence" is given, and one of the two cited sources is Meta's own research.** Quote them as industry figures with that attribution or not at all.
+
+**The vendor line with nothing behind it.** Meta writes that Partnership Ads "have become one of the strongest-performing formats", with no comparison, no metric and no population. That is an assertion in a launch post, and it does not upgrade [[Creative Science#CR-058|CR-058]], which already holds the creator-versus-brand-produced performance claim from practitioner sources.
+
+**Not one performance figure is attached to any of the launches.** T1 covers what the products are, which surfaces they touch and the 29 September date, on the [[Meta Delivery & Andromeda#MD-099|MD-099]] precedent of T1-for-existence-and-surface-only. Nothing here measures anything.
+
+**What is actionable for our own book, honestly scoped.** We run no creator partnerships on any account today, so the Hub and the creator APIs are not actionable. Two things are worth carrying forward. The 29 September Instagram Live video ads date, because it is a new placement arriving on a platform we already buy. And the MCP connector line, because a Meta buying surface reachable from an external agent is the first one our own tooling could drive directly, and it is worth knowing it exists before somebody asks for it.
+
+**It also turns an observation into a shipped product.** The codex already records, from one attendee at Meta's 2026 Performance Marketing Summit, that Meta said little about mass-generating AI creative and pushed creators and partnership ads hard instead. This release is Meta spending engineering on the second half of that, which is corroboration by roadmap rather than by statement.
+Sources: Meta for Business, "IAB Global Creator Week: Making it Easier for Businesses to Partner with Creators and Turn Discovery into Purchase", 2026-09-15, read in full 2026-09-18
+Last touched: 2026-09-18

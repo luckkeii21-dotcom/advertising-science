@@ -130,6 +130,18 @@ ASSERTED. A standing operating routine across accounts. No day-part performance 
 Sources: Solutions 8 / The Google Ads Podcast, Google Ads Essentials: Tips & Strategies, 2025-12-11
 Last touched: 2026-08-19
 
+### GA-075 · An operator running YouTube lead gen prefers a target CPA cap over maximize conversions specifically BECAUSE Google throttles spend when it cannot hit the target
+Tier: T3 · Status: active
+**The setup.** On Demand Gen and YouTube you pay on impressions and bid on a conversion. The available strategies are the four already banked at [[Google Auction & Smart Bidding#GA-001|GA-001]]. His preference is target CPA over maximize conversions or maximize conversion value, and he applies it even when the target is set well above what he expects to pay, because the point is having a ceiling rather than hitting a specific number.
+
+**His stated reason, and it inverts the usual complaint.** "Google actually will limit the spend on your campaign if it doesn't think it can achieve the CPA, which is actually good because it means that like I'm getting okay, I'm going to get like a average cost per conversion within the range of that CPA." Most operators treat a throttled campaign as the price of running a cap. He treats the throttle as the product. His trade preference follows from it: a higher budget with a CPA cap over a lower budget with no cap.
+
+**Where this is stronger than Google's own documentation.** [[Google Auction & Smart Bidding#GA-003|GA-003]] is T1 from Google's help centre and says target CPA holds the AVERAGE cost per conversion at target, with individual conversions allowed to cost more or less, judged over at least 30 days and 30 conversions. His "within a percentage range" is a tighter promise than Google makes, and he does not say over what window he reads it. Where the two conflict, the documentation wins.
+
+**The cost he never quantifies.** A campaign Google declines to spend on is a campaign delivering no volume, and he gives no figure for how often a capped campaign under-delivers, by how much, or what that costs against the same budget run uncapped. He also never separates a cap that throttles from a cap set so low the campaign never leaves the gate. **Nothing was shown on screen: no account, no CPA, no spend, no comparison against maximize conversions.** It is an operating preference from real spend, which is what T3 means, and it is cheap to A/B on one of our own Google accounts.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
+
 ## Ad Rank and Quality
 
 ### GA-007 · Ad Rank is recalculated in every auction from bid, auction-time ad quality, thresholds, competitiveness, search context, and expected asset impact
@@ -430,6 +442,26 @@ Operator use: run this check when an e-commerce account has a trade, wholesale o
 ASSERTED. Observed across a client book. No ROAS comparison, no AOV figures, no account shown, and the causal explanation is explicitly unknown to the speaker.
 Sources: Blue Sense Digital, 6 Step Checklist to Increase Google Ad Performance, 2025-03-06
 Last touched: 2026-08-19
+
+### GA-074 · YouTube's two back-to-back targeting changes removed keyword and channel placement, moved buying into Demand Gen, and an operator who sells the transition says the result is a higher scale ceiling
+Tier: T3 · Status: active
+**What the operator says changed, in order.** First, content targeting went away: you could previously put an ad in front of a specific keyword's viewers or a specific channel's audience, and that instrument was withdrawn in favour of audience-based targeting. Second, YouTube buying was folded into Demand Gen, which serves in-stream ads, Shorts ads, in-feed ads in search results and suggested videos, and video inventory on partner surfaces off YouTube. He says Google handled the handover badly, and that advertisers who moved without changing their method saw worse initial results and concluded the channel had broken.
+
+**The instruments he names in place of content targeting.** Custom intent audiences built from what people search on Google, YouTube and Google Maps, served to that person the next time they open YouTube inside a recency window. URL affinity, which targets people who visit a named website, his examples being a competitor site or a category site. A top-10% household income layer stacked on either. His worked target for a nutrition offer is people searching how to count calories, layered with the income bracket.
+
+**The claim that matters and the reason he gives for it.** Before the change he describes YouTube as a "highly highly profitable lowspend platform" where he could beat an advertiser's Meta results and then hit a ceiling on how far the campaign would go. He attributes that ceiling to targeting what someone is watching right now, and says audience targeting lifted it by targeting who the person is and what they searched recently. **No spend figure, no CPA and no before-and-after is attached to the ceiling claim.**
+
+**His scaling shape, which is the transferable half.** He frames YouTube as closer to traditional media buying than Meta: find the keyword or audience that works, buy more of it, measure where diminishing returns start, hold it there and launch another campaign. His image is a forest of campaigns grown from many seeds, against a balloon inflated until it pops. On Meta he characterises the same operation as handing the system every magazine and every channel at once and asking it to find the buyers, which scales impressively and leaves the operator with no account of where the next pocket came from.
+
+**A caution he volunteers, and it applies directly to every account we run.** Performance Max is the wrong container for lead generation, because it bundles Demand Gen with Shopping, Search and Display and leaves less direct control over targeting and therefore over lead quality. He says it is skewed to e-commerce. Demand Gen is where he puts lead-gen budget.
+
+**This runs opposite to the only measured Demand Gen evidence in this codex, and neither side resolves the other.** [[Google Auction & Smart Bidding#GA-055|GA-055]], [[Google Auction & Smart Bidding#GA-056|GA-056]] and [[Attribution & Incrementality#AT-072|AT-072]] are one 21-day geo holdout that found no statistically relevant new-customer lift from Demand Gen, with the whole measured lift landing on returning customers. That test was a single e-commerce advertiser. This claim comes from a lead-gen coaching and consulting operator describing a different objective, a different funnel and a different conversion event, so the two are not a like-for-like contradiction. **What is true of both: he shows no holdout, and the holdout tested no lead-gen account.**
+
+**Commercial interest, recorded because he states it himself.** His value proposition during the transition was helping advertisers move over, sold as training and as done-for-you. A claim that the change was good for advertisers is also a claim that his product was worth buying.
+
+**One figure inside this, carried as an unverified recollection.** He puts YouTube Premium penetration under 10% of users, "between like you know seven and 9%" in the United States and lower elsewhere, then immediately says "I don't have the exact stats right now". Do not repeat those numbers as data. His argument around them does not depend on them: an advertiser pays nothing to fail to reach an unreachable user, so Premium removes reach rather than adding cost, and ad-supported tiers are growing on YouTube, Netflix and Amazon rather than shrinking.
+Sources: Dr. Matt Shiver, YouTube Ads Playbook for Coaches in 2026, 2026-09-17, read in full 2026-09-18
+Last touched: 2026-09-18
 
 ## Test Instruments Google Ships
 

@@ -9,6 +9,30 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-18 (research run)
+
+**1 transcript in, read in full. 8 claims added, 3 amended, 0 contested, 0 refuted. Backlog 0. No law changed.** The day's single video is 12,377 words and produced 7 of the 8 claims; the eighth came off a Meta post the watchlist had not been able to reach for four days.
+
+**The finding worth reading first: the AI-creative evidence gap at CR-169 finally has a source who says he ran the comparison, and it stays open anyway.** Three arms, no AI, all AI, and an AI hook in the first 8 seconds over conventional footage. All-AI worst, hybrid best at the time, and he reports the ranking has since reversed because AI stopped being novel. No cost per result, no spend, no window, no sample size, and recalled from memory about a period six months earlier. Banked CR-249 as a direction. **What it does change is the price of settling it ourselves: the hybrid arm is a hook swap, which our accounts already produce on cadence.**
+
+**Harvest.** `lib/harvest.py daily`, 12:23:35 to 12:24:05. 1 new transcript, `matt-shiver/2026-09-17 YouTube Ads Playbook for Coaches in 2026`, 49 minutes, 12,377 words, a guest interview with the founder of AdOutreach. 0 skipped, 0 missing subtitles, 0 out of window, 0 errors. **The RSS route returned HTTP 404 on all 12 channels and the /videos tab fallback carried the whole run.** That is the 2026-09-05 fallback working exactly as it was built to, and the summary recorded it, so the day cannot be mistaken for a quiet one. First all-12 RSS failure since the fallback was added.
+
+**Watchlist.** Friday, so the nine Monday-only sources were not due. Meta Engineering 0 new, feed still built Mon 14 Sep. Meta Newsroom 0 new, feed built Wed 16 Sep. Google Ads & Commerce 0 new, feed built Wed 16 Sep, so the three Rethink posts read yesterday remain the newest. TikTok SDK changelog unchanged at v0.1.8, and TikTok is not logged as clean because the Newsroom and for-Business blog stay India geo-blocked. Google Ads Announcements 396 answer-href ids against 396 cached, zero added, zero removed.
+
+**Meta for Business News was reachable for the first time since 2026-09-14, and the ceiling moved.** Plain HTTPS returned HTTP 400 on both routes again. Three of four Playwright profiles were unavailable and the fourth opened the page first try. **Two genuinely new cards, both 15 September, both read in full:** the Meta One business post and the IAB Global Creator Week post. Banked MD-159, amended MD-157.
+
+**arXiv read Friday's own build (Fri 18 Sep 04:00:41 UTC against a 06:54 UTC run), 32 items, 28 unseen, 2 passed the filter, 0 banked.** Both are known false-positive shapes and both were read before being discarded. 2609.19151 fired on a single `advertis` inside "negative sentiment concentrates in advertising (91%)", a complaint category in app-store reviews. 2509.01184 (MARS) fired on `CTR prediction` and opens by calling it "a cornerstone of recommender systems"; no auction, no bidding, no advertiser, and an Announce Type of **replace** on a 2509 identifier, so it is a revision of September 2025 work. **Two of the filter's three known failure shapes in one day.**
+
+**Claims added:** GA-074 (YouTube's content-targeting removal and the Demand Gen move, with the scale-ceiling claim and its tension against our own Demand Gen holdout), GA-075 (a tCPA cap preferred because Google throttles when it cannot hit target), CR-251 (quarterly YouTube creative refresh against weekly on Meta, attributed to intent targeting replenishing its audience), CR-249 (the three-arm AI comparison), CR-250 (non-founder spokesperson gated on spend, with the 30-second handoff build), MM-218 (the Trojan-horse PDF funnel and the deliberate 8-minute email delay), MM-219 (booking mix: 50 to 60% funnel, 30 to 40% setters, under 10% email), MD-159 (Meta's 15 September creator release, T1).
+
+**Claims amended:** CR-169 (the AI comparison gap, still open), MM-161 (which lead magnet belongs in the gate), MD-157 (Meta One is priced **per profile**, Meta Verified is being folded in, and Business Agent is metered by tier).
+
+**Two method fixes written into Watchlist.md.** The Google Ads Announcements diff key in `watchlist_check.py` is unstable: two fetches seconds apart against the same cache reported different "added" ids, because 3 of the 30 long-digit ids on the page are per-render values. The stable key is `/google-ads/answer/(\d+)`. And the Meta for Business News ceiling and browser-profile fallback are now recorded.
+
+**⚠ The two daily lanes collided on a claim ID for the first time.** Both launch in the same second and both allocate the next ID from the same max-plus-one scan with no lock. This lane checked, found CR-248 free, spent the read on a 12,377-word transcript, and in that window the teacher lane banked its own CR-248 (T2, Meta relevance rankings measured on our own exports). **The teacher lane keeps CR-248; this lane's claim was renumbered CR-251 and its inbound link rewritten.** Verified after: 1,239 unique ids, no remaining collision. Caught by a post-merge duplicate count rather than by either lane's own output, which is the reason to keep running that count.
+
+**Gaps noticed.** The claim-ID allocator needs a lock, a stagger or a per-lane ID block. The arXiv co-occurrence rule is still unshipped and now costs an adjudication almost every run. `watchlist_check.py` still reports the unreliable line diff for Google Announcements rather than the answer-href set. Every claim from today's transcript comes from an operator selling YouTube services, and none of it was shown on screen.
+
 ## 2026-09-17 (teacher run)
 
 **Lesson 029 shipped: The Results Column Has No Unit. Video no, and that is correct: video days are Mon/Wed/Fri and today is Thursday.** Inbox empty for the twenty-ninth consecutive run, no grading.
@@ -116,6 +140,22 @@ All three transcripts read in full and marked `extracted: true`. **8 added, 4 am
 - **The arXiv false-positive gap is still untested.** It did not fire today, and it did not fire because both hits were real, which is a second consecutive non-result rather than evidence the filter is fixed.
 - **Meta for Business News has now gone two consecutive runs unchecked** for want of a browser. Plain fetch has returned 200, 400, 200, 400, 400 across the observed days, so "use the browser" stays the honest instruction and the browser is the thing that is down.
 - **No cost-cap outcome data exists anywhere in the codex from Theriot's build.** AU-091 documents a complete setup with zero results attached. If we ever run cost caps on a client, that is the cheapest place to turn AU-091 into a T2, and the attribution window is the variable worth holding against AU-005.
+
+## 6. Commit and sync
+
+**Vault committed and pushed, `3406996`.** One commit covering the seven changed science files plus the three new transcripts.
+
+**Scoped deliberately, same as yesterday.** The vault working tree held 43 changed files, 33 of them unrelated client work from other sessions (MetaTechAI and Phoenix Truxx notes, SJR business facts, ten new concept pages, two analytics notes). This run staged `wiki/science/` and `wiki/sources/transcripts/` only. **Those 33 files are still uncommitted and still sitting in the working tree for whoever is writing them.**
+
+**Team repo sync: pushed, and it printed 1,232 against this log's 1,231. Seventh consecutive day at exactly one high, and the cause was re-checked rather than assumed.** A grep for claim-shaped headings across the four non-topic files in the science wing returns exactly one line, `Harvest Log.md:555`, the 2026-09-10 entry opening `### CR-231, new:`. The sync counter runs its regex over every file it copies into `references/codex`, and the Harvest Log is one of them. **1,231 is the real figure.** Today's Harvest Log entry adds no claim-shaped heading, so the offset stays at one. The two-line scoping fix already applied to the research counter has still not been applied to the sync counter, a seventh day.
+
+**Personal mirror: pushed.**
+
+## 7. Standing problem, unchanged for 15 days
+
+**The workspace repo at `E:\claude code marketing skill` still has a zero-byte `.git/index.lock` dated 2 September 14:47.** No git process is running. Flagged on 2026-09-16 and untouched since, so **everything the skills side of this engine writes has now gone 15 days without a commit**: every run log, the merge scripts, the watchlist cache, and today's SKILL.md law amendment. The vault repo is separate and unaffected, which is why the daily pushes keep succeeding and nothing else has flagged it.
+
+**Not cleared by this run on purpose.** Removing it is a one-line fix and it is a change to a repo this runbook does not own, so it is Lucky's call. If the answer is yes, the fix is to delete that file and commit `.claude/skills/advertising-science/`.
 
 ## 2026-09-16 (teacher run)
 
