@@ -11,7 +11,7 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 
 ## 2026-09-19 (research run)
 
-**1 transcript in, read in full. 6 claims added, 4 amended, 0 contested, 0 refuted. Backlog 0. Codex now holds 1,245 claim entries, 6 of them from this run. No law changed. One reading rule added, and one number this engine published twice is corrected.**
+**1 transcript in, read in full. 6 claims added, 4 amended, 0 contested, 0 refuted. Backlog 0. Codex 1,240 to 1,246, 6 of them from this run. No law changed, one reading rule added.**
 
 **The finding of the day is a correction to our own codex and it arrived for free.** CR-117 and CR-048 both carried a static that Nick Theriot said on 2026-09-07 had spent **$260,000** since 2025-07-19, in the words "this particular static ad right here". On 2026-09-18 he walked the same asset, same client, same headline, and gave it as **$234,853 over the last 12 months at a $27 cost per lead**, then added the half the first telling left out: "we do have it in three different cities. So that's why it's three different times right there. But if you put them all together, over $234,000 all was spent on this." **It is three ads, not one. Per ad that is roughly $78,300 across 12 months, so the tail point sits 52 to 112 times the $700 to $1,500 per-ad mean rather than the 170 to 370 times the codex recorded.** The two figures do not contradict, they differ on window: the asset was built 2025-07-19, so a trailing-12-month read drops its first seven weeks.
 
@@ -27,11 +27,16 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 
 **Two creative claims from the transcript beyond the correction.** **CR-252 (new, T3):** a new mechanism has to compete on speed, price, simplicity or without-what-they-hate, and Theriot refuses accounts whose mechanism competes on none of the four, "they're just not going to do great when it comes onto Facebook ads". It is the cheapest pre-flight check in the creative file because it needs no account, no spend and no creative. **CR-023 lifted T4 to T3:** the five-stage sophistication ladder had been sitting on a book citation since August and now has an operator walking it against a live asset that has taken six figures of spend.
 
-**The claim count, and the 2026-09-18 correction went the wrong way.** That day's log first said 1,239 unique ids, then a later commit changed it to 1,240 headers and 1,240 distinct ids. **1,239 was right.** Counting at the committed revision returns 1,239 headers across the 11 topic files, 1,239 distinct ids, no duplicates, and no gaps in any prefix.
+**The claim count, and a correction to this entry's own first draft.** The codex now holds **1,246 claims** across the 11 topic files: 112 T1, 126 T2, 850 T3, 158 T4, and 1,139 active, 101 contested, 5 superseded, 1 refuted. Both columns sum to 1,246, all 1,246 ids are distinct, and every heading carries a Tier line. **2026-09-18's published 1,240 was right, and 1,240 plus this run's six is 1,246.**
 
-**The extra one is a log entry, not a claim.** `Harvest Log.md` line 665 opens an entry with `### CR-231, new: after the teardown there are three places to differentiate`. A counter that scans every `.md` in this folder, or that matches `### XX-000` without requiring the space that separates an id from its title, counts that heading as a claim. **1,239 plus that stray heading is 1,240.** The method this engine documents already says the counter reads only the 11 topic files, so the method was right and the recount was not.
+**This pass first published 1,245 and said the 2026-09-18 figure had been corrected in the wrong direction. That was this pass's error**, caught half an hour later by the sync script's own counter printing a third number.
 
-**The test that catches it costs nothing: check that every prefix runs unbroken from 1 to its maximum.** At 1,239 there were no gaps and no duplicates, so nothing was missing and the higher number had nowhere to come from. Today: 1,239 plus this run's six is **1,245**, verified the same way, 1,245 headers, 1,245 distinct ids, every prefix contiguous, both the tier and status columns summing to 1,245.
+**Counting this codex has exactly two traps and they pull in opposite directions.**
+
+- **`MD-019b` is a sub-lettered id, the only one in the codex.** A regex of the form `^### XX-000 ` that requires a space straight after the digits drops it and returns **1,245**. That is the one this pass hit.
+- **`Harvest Log.md` carries a log entry whose own heading reads `### CR-231, new: after the teardown...`.** That is a log entry quoting a claim header, not a claim. A counter that scans every `.md` in this folder rather than the 11 topic files counts it and returns **1,247**. `bin/Sync-TeamRepo.ps1` does exactly that, so every sync commit message it has written overstates the codex by one.
+
+**The method that is right: the 11 topic files only, matching the id on a word boundary so a letter suffix still counts.** Worth fixing the sync script's regex and scope so the two counters agree.
 
 **Watchlist, Saturday 19 September.**
 
