@@ -4,10 +4,13 @@ type: lesson
 lesson: 30
 date: 2026-09-18
 topic: Creative Science
+claims: [CR-248, CR-176, CR-018, CR-122, LS-081, AU-002, GA-010, AT-107]
 tags: [advertising-science, lesson, creative-science]
 ---
 
 # Lesson 030 · Above Average Against Whom
+
+🎬 **Lesson video (2m 40s, silent, watch anywhere):** [[video/2026-09-18-lesson-030.mp4]]
 
 Meta puts three free grades on every ad you run. Quality ranking, Engagement rate ranking, Conversion rate ranking. They sit in Ads Manager, they cost nothing, and almost nobody reads them. Today they got read across three of our accounts for the first time, and they do something different from what the name suggests.
 
@@ -45,7 +48,7 @@ Notice the shape CR-176 and CR-018 share. A platform-supplied number that looks 
 
 Put the two together and the shape is clear. The auction consumes an internal estimate of ad quality. The column hands you a percentile of that estimate against a pool the platform chose. **Two different objects with one name.**
 
-**What the codex had on this before today: almost nothing.** The phrases "quality ranking" and "conversion-rate ranking" appear five times in the whole science folder, and every one of them traces to a single finding, the twin-ad divergence in AT-107 and its lesson 012, where one sentence used the rankings as corroboration. Creative Science, the topic that owns creative, had zero. Nobody had ever asked what the columns measure, and no claim had ever been built on them. A free, always-on, per-ad diagnostic sat unopened for a month of daily research.
+**What the codex had on this before today: almost nothing.** The phrases "quality ranking" and "conversion-rate ranking" appear four times across the whole science folder, and all four trace to a single finding, the twin-ad divergence in [[Attribution & Incrementality#AT-107|AT-107]] and its lesson 012, where one sentence used the rankings as corroboration. One further use of the words "seed quality ranking" sits in Meta Delivery and means something else entirely, the quality of an audience seed. Creative Science, the topic that owns creative, had zero. Nobody had ever asked what the columns measure, and no claim had ever been built on them. A free, always-on, per-ad diagnostic sat unopened for a month of daily research.
 
 ## 3. Our accounts
 
