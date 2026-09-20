@@ -236,3 +236,37 @@ The browser opened it first try. The instruction stays "use the browser".
 start, and `playwright-metatech` was already locked by another process. `playwright-higgsfield`
 connected and did the work. When this source needs a browser, try every configured Playwright profile
 before logging it unchecked.
+
+### Meta for Business News is LOCALE-PARTITIONED, and reading one locale misses a whole catalogue (found 2026-09-20)
+
+Every note above this one treats the source as a single 12-card module that rotates. It is not. **The bare URL and `?locale=en_US` serve two DIFFERENT catalogues from the same browser, in the same session, seconds apart.**
+
+Observed 2026-09-20, `playwright` profile, both reads inside one minute:
+
+| Read | Newest card | What it carried |
+|---|---|---|
+| `facebook.com/business/news` (renders en_GB from our New Delhi egress) | **11 September 2026** | Instant Hydration spotlight, Meta AI ads, and **four posts no US render has ever shown** |
+| `facebook.com/business/news?locale=en_US` | **15 September 2026** | Meta One plans, IAB Global Creator Week, Sydney Sock Project, Laura Geller, the three holiday posts |
+
+Only two cards appear in both. **The UK ceiling is FOUR DAYS OLDER than the US ceiling, so a run that reads only the bare URL will report the source as gone quiet while the US catalogue has moved.** That is the exact failure the 2026-09-18 entry would have produced if the bare URL had answered that day.
+
+**The four UK-only posts, all read in full on 2026-09-20 and all previously unbanked:**
+
+- *Why social search and traditional search aren't competing*, 13 May 2026
+- *How to optimise content for social search on Meta technologies*, 14 May 2026, source of the caption-indexing statement banked at [[Meta Delivery & Andromeda#MD-161|MD-161]]
+- *The trends reshaping search and the ROI that justifies moving now*, 15 May 2026, source of [[Attribution & Incrementality#AT-120|AT-120]] and [[Marketing Math & Unit Economics#MM-221|MM-221]]
+- *Closing the creator measurement gap: How L'Oreal...*, 11 June 2026, source of [[Creative Science#CR-254|CR-254]]
+
+A three-part series with a platform statement about how Meta search indexes captions sat unread for **four months** because the daily check only ever saw one locale's shelf. Five claims came out of one day's reading of it.
+
+**New standing instruction: read BOTH the bare URL and `?locale=en_US` every day, and diff the TITLE sets separately.** This is the same rule the 2026-09-14 entry already imposed on Meta Advertising Standards, arriving independently on a second source. Assume by default that any Meta property stages content by locale.
+
+**Two smaller observations from the same check.** The bare URL rendered in ENGLISH (UK), not the Hindi the 2026-09-10 note records, so the geo-render language is not stable either. And a post's own page can date itself in a different format from its card: *Closing the creator measurement gap* shows "11 June 2026" on the UK listing and "June 11, 2026" in its own header.
+
+**Transport and browser, 2026-09-20.** The `playwright` profile connected and opened the listing on the first attempt, after three consecutive days of CONNECT_TIMEOUT at session start. Plain fetch was not attempted; the standing instruction is still "use the browser".
+
+### Google Ads Announcements: the answer-href set diff is now IN THE SCRIPT (2026-09-20)
+
+The 2026-09-18 entry above diagnosed the unstable key and left the fix as an instruction to future runs. It is now code. `lib/watchlist_check.py` diffs `/google-ads/answer/(\d+)` as a SET against the cached copy and reports `answer_ids_now`, `answer_ids_cached`, `added` and `removed`, replacing the visible-line diff that printed a phantom added id on 2026-09-16, 09-17, 09-18, 09-19 and again on the first run of 09-20.
+
+Verified the same day: the old code reported `added 1, removed 1` with a DIFFERENT added id on two consecutive runs (`4881972142780550782`, then `5979057098169415478`). The new code reports **396 answer ids, 0 added, 0 removed**, matching a hand check of two fresh fetches that were byte-identical to each other and to the cache. The phantom-id class of finding does not need to be re-diagnosed by another run.

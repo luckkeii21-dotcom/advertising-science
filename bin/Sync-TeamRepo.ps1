@@ -80,10 +80,16 @@ Get-ChildItem (Join-Path $Science 'lessons') -Filter '*.md' |
 Set-Content -Path (Join-Path $RepoClone '.gitignore') -Value "state.json`nruns/`ncache/`n" -Encoding utf8
 
 # ---- claim count for the commit message ----
+# Count the 11 TOPIC files only. Harvest Log.md quotes claim headers in its
+# entries ("### CR-231, new: ..."), so scanning every .md overstates the codex.
+# 00-Codex.md, Channel Roster.md and Watchlist.md hold no claims either.
+$notTopic = '00-Codex.md','Harvest Log.md','Watchlist.md','Channel Roster.md'
 $claims = 0
-Get-ChildItem $codexDst -Filter '*.md' | ForEach-Object {
-  $claims += ([regex]::Matches((Get-Content $_.FullName -Raw), '(?m)^### [A-Z]{2}-\d')).Count
-}
+Get-ChildItem $codexDst -Filter '*.md' |
+  Where-Object { $notTopic -notcontains $_.Name } |
+  ForEach-Object {
+    $claims += ([regex]::Matches((Get-Content $_.FullName -Raw), '(?m)^### [A-Z]{2}-\d+[a-z]?\b')).Count
+  }
 
 # ---- commit + push only on change ----
 G -C $RepoClone add -A | Out-Null

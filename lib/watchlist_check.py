@@ -35,6 +35,8 @@ RSS = {
 TIKTOK_SDK = "https://raw.githubusercontent.com/tiktok/tiktok-business-api-sdk/main/Changelog.md"
 GOOGLE_ANN = "https://support.google.com/google-ads/announcements/9048695"
 GOOGLE_ANN_CACHE = CACHE / "google-ads-announcements-today.html"
+# The only stable key on the announcements page. See Watchlist.md 2026-09-18.
+ANSWER_ID_RE = re.compile(r"/google-ads/answer/(\d+)")
 
 # arXiv filter, per Watchlist.md (tightened 2026-08-19). A bank-list hit is
 # required; recommend/ranking/retrieval alone never qualify.
@@ -144,24 +146,31 @@ def main():
         report["sources"]["tiktok-sdk-changelog"] = {"status": "ERROR"}
         report["errors"].append(f"tiktok-sdk-changelog: {type(e).__name__}: {e}")
 
-    # Google Ads announcements: visible-text diff against yesterday's cached copy.
+    # Google Ads announcements: diff the ANSWER PERMALINK ID SET, never the
+    # visible-text lines. Per Watchlist.md (2026-09-18), ~3 of the long digit
+    # strings on this page are per-render session values and the nav labels
+    # drop in and out with the locale, so a line diff reports a different
+    # phantom "added" id on every fetch. The answer-href set is byte-stable
+    # across consecutive fetches.
     try:
         status, body = fetch(GOOGLE_ANN)
-        new_lines = visible_text(body)
-        old_lines = visible_text(GOOGLE_ANN_CACHE.read_text(encoding="utf-8", errors="replace")) \
-            if GOOGLE_ANN_CACHE.exists() else []
-        added = [ln for ln in new_lines if ln not in set(old_lines)]
-        removed = [ln for ln in old_lines if ln not in set(new_lines)]
+        now_ids = set(ANSWER_ID_RE.findall(body))
+        cached_ids = set(ANSWER_ID_RE.findall(
+            GOOGLE_ANN_CACHE.read_text(encoding="utf-8", errors="replace"))) \
+            if GOOGLE_ANN_CACHE.exists() else set()
+        added = sorted(now_ids - cached_ids)
+        removed = sorted(cached_ids - now_ids)
         report["sources"]["google-ads-announcements"] = {
-            "status": status, "lines_now": len(new_lines), "lines_cached": len(old_lines),
+            "status": status, "answer_ids_now": len(now_ids),
+            "answer_ids_cached": len(cached_ids),
             "added": len(added), "removed": len(removed),
-            "added_sample": added[:20], "removed_sample": removed[:20],
+            "added_ids": added[:20], "removed_ids": removed[:20],
         }
         if commit:
             GOOGLE_ANN_CACHE.write_text(body, encoding="utf-8")
             pages.setdefault("google-ads-announcements", {}).update(
-                {"last_checked": today, "method": "plain fetch; visible-text diff after stripping script/style",
-                 "result": f"{len(new_lines)} visible lines, {len(added)} added, {len(removed)} removed"})
+                {"last_checked": today, "method": "plain fetch; /google-ads/answer/<id> set diff",
+                 "result": f"{len(now_ids)} answer ids, {len(added)} added, {len(removed)} removed"})
     except Exception as e:
         report["sources"]["google-ads-announcements"] = {"status": "ERROR"}
         report["errors"].append(f"google-ads-announcements: {type(e).__name__}: {e}")
