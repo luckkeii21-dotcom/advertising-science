@@ -270,3 +270,35 @@ A three-part series with a platform statement about how Meta search indexes capt
 The 2026-09-18 entry above diagnosed the unstable key and left the fix as an instruction to future runs. It is now code. `lib/watchlist_check.py` diffs `/google-ads/answer/(\d+)` as a SET against the cached copy and reports `answer_ids_now`, `answer_ids_cached`, `added` and `removed`, replacing the visible-line diff that printed a phantom added id on 2026-09-16, 09-17, 09-18, 09-19 and again on the first run of 09-20.
 
 Verified the same day: the old code reported `added 1, removed 1` with a DIFFERENT added id on two consecutive runs (`4881972142780550782`, then `5979057098169415478`). The new code reports **396 answer ids, 0 added, 0 removed**, matching a hand check of two fresh fetches that were byte-identical to each other and to the cache. The phantom-id class of finding does not need to be re-diagnosed by another run.
+
+### Zero-browser day: the whole Meta lane is unreadable when no Playwright profile connects (2026-09-22)
+
+Every note above assumes a browser can be found if enough profiles are tried. On 2026-09-22 none could, and the consequence is larger than a single missed source because **Meta serves HTTP 400 to plain fetch on every property this watchlist tracks.**
+
+Observed, all in one run, plain HTTPS with a normal desktop user agent:
+
+| Source | Result |
+|---|---|
+| Meta for Business News, bare URL | HTTP 400, 1,542-byte error body |
+| Meta for Business News, `?locale=en_US` | HTTP 400, identical 1,542 bytes |
+| Marketing API changelog | HTTP 400 |
+| Graph API changelog | HTTP 400 |
+| Advertising Standards, `/policies/ad-standards/` | HTTP 400 |
+| Advertising Standards, `/en-gb/policies/ad-standards/` | HTTP 400 |
+| AI at Meta blog | HTTP 400 |
+
+All four configured Playwright MCP profiles failed at session start: `playwright`, `playwright-arcads`, `playwright-higgsfield` and `playwright-metatech`, all CONNECT_TIMEOUT at 30s. The 2026-09-18 instruction to try every profile before logging a source unchecked was followed and there was nothing left to try.
+
+**The honest phrasing for a run log on a day like this is "the Meta lane was not checked", never "no Meta changes".** The distinction matters because the locale-partition finding of 2026-09-20 exists precisely because a source can look quiet while a catalogue behind it has moved.
+
+**Non-Meta sources are unaffected.** Every Google source, the arXiv feed and the TikTok SDK changelog all answered a plain fetch normally in the same run, so a zero-browser day is a Meta-lane outage and not a network fault.
+
+### Google weekly lane: a Monday failure silently costs a whole week (2026-09-22)
+
+The 2026-09-21 research run exited on `API Error: Can't reach the API server (ENOTFOUND)` and the watchdog relaunched once, then stood down for the rest of the day. Monday is the only day the weekly sources are read, so the failure took the whole weekly lane with it and nothing recorded that it had.
+
+Caught and run as catch-up on the Tuesday. **Add to the runbook's reading of "Weekly (Mon) sources: only on Mondays": if the previous Monday's run did not complete, run them on the next day that does.** The cheapest check is `runs/<yesterday>/research-claude.log` and the presence of a `<date>-research-log.md`.
+
+**Merchant Center renders differently by transport, and the difference looks like a rollback.** A plain fetch on 2026-09-22 showed a newest dated entry of 15 July 2026; the 2026-09-07 WebFetch check recorded 11 August 2026. Same page, two transports, and the older-looking result is the artefact. This is the same class as the Marketing API changelog index under-rendering to v25.0. **Never report a newest-entry date going backwards as news; re-read on the other transport first.**
+
+**The Developer Blog post-body regex is not universal.** The urllib plus `post-body` div route recorded on 2026-09-07 returned nothing on the 2026-09-10 permalink `new-onboarding-experience-for-google-ads-api.html`, so that post's body has not been read. The index and the Atom feed both render its title and date fine.

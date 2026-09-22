@@ -542,8 +542,10 @@ A third position added 2026-08-21, which refuses the choice: Sam Piliero uses CB
 **His two triggers for reaching for ABO are the same symptom, and it is our symptom.** New ads receiving literally zero spend, not merely low spend: "when they're earning purely zero spend, this is when I'm inclined to want to go and set up that ABO campaign." Low-but-nonzero delivery he explicitly accepts, "50, 75, 90, $48, like they're still getting some spend ... I'm okay with that. That's enough for me." Second trigger: accounts spending tens of thousands a day where nothing new is funded inside the main CBO. **He gives three incompatible frequencies for the exception inside one 20-minute video, 2 to 5%, 10%, and 20%. Quote the exception, never the rate.**
 **What he uses ABO for is diagnosis, not performance.** The stated purpose is confidence that a creative was genuinely bad rather than merely unfunded, and he reports the answer usually comes back against him: "nine times out of ten we're wrong and Facebook still is correct with its choice." He also prices the ABO route: forced testing consumes a fixed 10 to 20% of daily budget, and a winner found in ABO takes an extra 3 to 4 days to reach the scaling campaign, against a CBO winner that took $6,300 of spend in 4 days and moved that campaign's cost per purchase from $57 to $46.
 **Read this against [[Meta Delivery & Andromeda#MD-137|MD-137]] before importing it.** His accounts run $5,000 a day through a single CBO. Every client on our book is under $30,000 a MONTH, where the same claim says roughly one ad gets funded. **The 97% is an argument for CBO at his spend, and the zero-spend trigger he names as the rare exception is the everyday condition at ours.**
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11; Blue Sense Digital, How To Structure A Meta Ads Account At Every Spend Tier In 2026, 2026-06-01; Sam Piliero, 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15; Nick Theriot, ABO vs CBO in 2026: Which One Should You Actually Use?, 2026-08-28
-Last touched: 2026-08-28
+
+**A dataset landed against this claim on 2026-09-22 and it is banked as a boundary rather than a refutation.** Blue Sense portfolio data across an estimated $50 to $100 million of Black Friday spend puts the top 20 ads at 46% of spend and the bottom 80% of ads at 54%, with concentration FALLING as accounts get bigger. That is the opposite shape from the compounding described here. The likely reconciliation is spend level relative to the winners' per-ad daily ceiling, not a disagreement about CBO. See [[Scaling Models#SC-163|SC-163]].
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11; Blue Sense Digital, How To Structure A Meta Ads Account At Every Spend Tier In 2026, 2026-06-01; Sam Piliero, 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15; Nick Theriot, ABO vs CBO in 2026: Which One Should You Actually Use?, 2026-08-28; Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
 
 ### SC-059 · The default structure at scale is a CBO with minimum and maximum spend limits controlling ~60% of budget while ~40% flows wherever Meta wants
 Tier: T3 · Status: active
@@ -1401,8 +1403,16 @@ A full-year account walkthrough read off Ads Manager, and it matters most becaus
 **Why the floor is the interesting part for our book.** [[Scaling Models#SC-058|SC-058]] and our own accounts record CBO starving new creative, and a proportional per-ad-set floor at roughly 0.5% of campaign budget is the cheapest control anyone has stated for it that does not require duplicating the ad set and discarding its learning.
 **Guards.** One account, one vertical, one operator, read off screen with no export. The 180 ad sets accumulated over a year include an unstated number of paused ones, so the live count is unknown. Nothing isolates the floor from the other choices in the account.
 **The three headline numbers do not reconcile without that live count, found 2026-09-05.** 180 ad sets x $25 is $4,500 against a $5,000/day budget, which pins **90% of the campaign** and leaves Meta $500 to allocate across 180 ad sets. For the floor to stay under 20% of budget at most **40** of the 180 can be live. **So the 0.5% is a fact about one ad set and says nothing about the campaign.** The figure that decides whether a floor is a nudge or a cage is floor x LIVE ad sets / campaign budget. Record that, never the dollar alone.
-Sources: Nick Theriot, Inside a $1,000,000 Facebook Ads Campaign, 2026-08-31
-Last touched: 2026-09-05
+
+**Second full-year instance of this exact structure, different operator, 2026-09-21, and the shape holds.** Nick Theriot walks a $5 million e-commerce account run from **one USA-and-Canada broad CBO**, same ads in both countries, no separate stores and no separate campaigns, which he says arrived that way from the previous team and has never caused a problem.
+
+**The numbers, read off the account for 1 August 2025 to 16 September 2026.** About **$5 million in sales**, **67% revenue growth**, 66% growth in ad spend, a slight ROAS improvement, a slight fall in new-customer CPA, and about a **50% increase in net profit**, which he puts at $200,000 to $300,000 of additional profit. Roughly **$1.6 million spent in this ad account** against **$2.4 million** across the business, the gap being an earlier ad account and some Google. **Well over two thirds of all spend ran through the single campaign.** Last 7 days about **$114,000** in revenue, so about $460,000 a month.
+
+**The cadence inside the campaign, which is the part that matches SC-154 most closely.** **193 ad sets created in roughly 11 months, about $1.4 million spent across them, one ad IDEA per ad set and usually three creatives around it.** That is three to four new ad sets a week, every week, each one preceded by research (reviewing old creative data, Reddit, TikTok). Exceptions are named rather than hidden: a hot period such as Black Friday might get 8, 20 or 30 image ads in one ad set, which he puts at 10 to 15% of cases, and he would not go to 30 or 40. A bid cap campaign was launched, never took off, and was left running because its cost per purchase was fine.
+
+**Two things he attaches that are not structural.** The account went through a profit DECLINE for the first one to three months before the winning ads were found, and he credits the client's patience as a precondition. And the current ceiling is not delivery, it is **LTV**: the brand is front-order profitable only, so further scaling waits on new products to raise lifetime value, at which point they will accept a higher front-end CPA.
+Sources: Nick Theriot, Inside a $1,000,000 Facebook Ads Campaign, 2026-08-31; Nick Theriot, How We Helped This Brand Scale To $5M a Year (It's Boring But It Works), 2026-09-21
+Last touched: 2026-09-22
 
 ### SC-155 · A promotional peak is the worst testing window of the year, because everything wins and none of the conclusions survive into January
 Tier: T3 · Status: active
@@ -1542,3 +1552,73 @@ Numbers read off the ad account on screen, 2026-09-16. **First window, 12 July t
 **Why this is worth banking beside [[Creative Science#CR-120|CR-120]].** The same operator's earlier takeover case, banked at CR-120's discussion of the static-to-UGC switch, has the same confound and this one is cleaner about admitting it. Nothing is held constant across the two windows: campaign structure changed (see [[Scaling Models#SC-161|SC-161]]), the creative changed, a cost-cap campaign was added, and spend rose 5.8x. **So this is evidence about what a realistic agency ramp looks like on a real P&L, and it is not evidence that any single change caused the turn.** Its practical value is client expectation setting, where it converges with the launch ladder already banked in the MM file: write off month one, target break-even in month two.
 Sources: Nick Theriot, How I Turned a Losing Client Into a $29,000/Day Winner in 60 Days, 2026-09-16
 Last touched: 2026-09-17
+
+### SC-163 · Pareto BREAKS in the Black Friday window: the bottom 80% of ads hold 54% of spend, and concentration falls as the account gets bigger
+Tier: T3 · Status: active
+The first dataset in this file that disagrees with [[Scaling Models#SC-058|SC-058]]'s compounding-Pareto claim, and it comes from the same operator's own portfolio rather than from an opponent. Pulled from the Meta MCP across what he estimates as **$50 to $100 million of ad spend** over the 2025 Black Friday period.
+
+**Spend held by the top ads, averaged across accounts.** Top single ad **7%**. Top 3 **17%**. Top 5 **23%**. Top 10 **33%**. Top 20 **46%**. So **54% of spend sits in the bottom 80% of ads**, against the 80/20 shape this codex has banked as the normal CBO end state.
+
+**Concentration FALLS as accounts get bigger, which is the half nobody predicts.** Share of spend held by the top 20% of ads, by November spend bracket: under $250k spent, **53%**; the next bracket, **44%**; the largest, **33%**. His mechanism is a ceiling rather than a preference: an individual ad has a maximum daily spend it can absorb (see [[Creative Science#CR-255|CR-255]]), so once an account is pushing past what its winners can carry, the overflow necessarily distributes into the tail.
+
+**The operating consequence, and it is why the slide exists.** It is not only winners that hold up an account in the peak. A plan that funds 12 winners and nothing else leaves roughly half the required spend with nowhere to go. Volume is load-bearing here for a structural reason, not as insurance.
+
+**How to read this against [[Scaling Models#SC-058|SC-058]].** SC-058 says CBO compounds Pareto until about 4% of ads hold about 64% of spend, asserted across two videos with no dataset shown. This is a dataset and it disagrees, but it is measured in a window where spend per account sits several times above its evergreen level. **Treat it as a boundary on SC-058 rather than a refutation: concentration looks like a function of how much spend the account is pushing relative to its winners' ceilings, so it compounds at normal spend and decompresses under a peak ramp.** Neither has been tested against the other on one account across both windows, which is the test that would settle it.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### SC-164 · Revenue-spend elasticity is a CUT instrument only, and scaling on it overspends by construction
+Tier: T3 · Status: active
+A rare case of an operator publishing a metric and then naming which direction you are allowed to use it in.
+
+**The calculation.** The log of revenue on day two over revenue on day one, divided by the log of spend on day two over spend on day one. The output normalises roughly between 0 and 2 and reads as underspending, spending about right, or room to push. It works retrospectively and on a three to four day rolling delay.
+
+**Why it may only be used to cut.** It is observational, not causal. **You raise spend on the days demand was already going to be high.** Black Friday spend goes up because Black Friday is expected to be a good day, so the metric returns a high elasticity and says spend more, when the revenue was arriving regardless. "It's not that the spend is causing revenue, it's that you might just be spending more because the revenue is going to be high anyway." Used as a scaling trigger it produces severe overspend. Used as a cut trigger the same correlation does no harm, because a low reading is a low reading whichever way causation runs.
+
+**The scaling rule he uses instead.** Scale on **three-day rolling marginal averages**, not day to day. If contribution margin three is marginally improving on the three-day rolling, increase. If it is not, do nothing. **Two consecutive poor reads, decrease.** Day to day is used only when total spend is high enough that the pacing sheet is already moving money fast.
+
+**Where the ceiling sits.** Scale toward the point where **marginal ROAS equals break-even ROAS**, which is one over gross margin ([[Marketing Math & Unit Economics#MM-214|MM-214]]). Contribution margin three is the floor, not the ROAS number. Keep pushing until CM3 flattens; past that point revenue still rises while marginal contribution profit goes negative.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### SC-165 · Fund the pre-season: 31 to 43% of the September-to-December budget belongs in September and October
+Tier: T3 · Status: active
+The spend-shape recommendation that falls out of [[Attribution & Incrementality#AT-122|AT-122]]'s attribution finding. The default failure is going all in on November with very little September and October spend, which shrinks the funnel the sale is supposed to collapse.
+
+**The prescription.** Roughly **double November spend against October**, on top of a genuinely funded pre-season, with **31 to 43% of the September-to-December budget sitting in September and October**. A "light warm-up" is named and explicitly not recommended.
+
+**Portfolio benchmarks from his best-performing clients last year, by November spend bracket.** Clients spending **$500k to $2 million in November** spent **1.76x** their October figure; November was **13.8%** of their entire yearly spend; the revenue multiple was close enough that the ratio came out at **0.95**, so spend moved almost exactly proportional to the incremental revenue. Clients over **$2 million** spent a little less than that and their returns were better, which he reads as that bracket having **underspent**. Averaged across the whole book including sub-$500k clients, about a **1.8x** spend multiple at a ratio near **1.0**.
+
+**Two operating rules attached.** Model a **base case and a stretch case**, with the efficiency and spend unlocks agreed in advance, so the team can push into an opportunity at 8am on the Saturday without waiting on the client. And **the budget is a ceiling to be deployed against incremental returns, not a target to be spent**: a retail client with a $1.5 million mandate does not get $1.5 million spent into diminishing contribution margin.
+
+Agency portfolio figures described off slides, not published.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### SC-166 · Cost caps as a MEASUREMENT instrument: run them in the peak to find where the marginal frontier actually is
+Tier: T3 · Status: active
+A use for cost caps this codex has not recorded, and it comes from an operator who is on record against them as a delivery strategy.
+
+**His standing position is anti-cost-cap**, publicly stated: they create too much account volatility and they demand very high volumes of creative. Most of the portfolio does not run them.
+
+**The exception, and the reason for it.** During Black Friday he runs some cost cap campaigns specifically to **see what they will spend to**. A cost cap deploys budget only while it can find conversions at the stated price, so the spend it actually reaches is a read on how much volume exists at that efficiency. That number then calibrates how hard the maximize-volume campaigns can be pushed.
+
+**Why this is worth banking separately from the cost-cap performance debate.** Every other cost-cap claim in this codex argues whether caps deliver better or worse than maximize volume. This one does not care: the campaign is an instrument and its output is a headroom estimate for the campaigns carrying the real money. It sits directly against [[Scaling Models#SC-164|SC-164]], where the elasticity calculation is disqualified for exactly the causality a cap partly supplies.
+
+Asserted as portfolio practice, with no comparison shown between the cap's spend ceiling and the volume campaign's realised headroom.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### SC-167 · Dead weight inside a CBO is real money and it is measurable: 52 of 60 ad sets spending with zero sales, about $6,000 a month
+Tier: T3 · Status: active
+The first figure in this file that prices the tail of an unmanaged CBO, and it arrives from a takeover audit rather than from a theory about delivery.
+
+**The account.** A newly onboarded client running **north of $150 to $200 cost per acquisition**, with **over 70 ad sets live in one main CBO campaign**. Theriot turned off **around 60 of them**. Of those 60, **52 were receiving spend and had produced zero sales**, collectively about **$200 a day**. That is roughly **$6,000 a month**, which he annualises at about **$72,000**.
+
+**Why the number is the useful part.** It converts "clean up the account" into a quantity, and it lands on the opposite side of the argument from [[Scaling Models#SC-163|SC-163]], where the tail of a Black Friday account carries 54% of spend productively. The two are compatible and the distinction is the whole point: **a tail that spends and converts is capacity, a tail that spends and does not convert is leakage, and only the results column separates them.**
+
+**His reading routine, which is the transferable half.** He does not open ad sets. He goes to the **ad level for the whole campaign with no ad set selected**, sorts by amount spent, and turns off individual ads from that view. He also reports having tested leaving all ads on permanently and abandoned it: it worked on some accounts and not others, and his constraint is a standard set of decisions that must be profitable on the majority of accounts before he adopts it across the book.
+
+**Live tension with the same day's harvest, recorded rather than resolved.** [[Meta Delivery & Andromeda#MD-163|MD-163]] argues that turning ads off at this rate destroys the sequencing signal and manufactures the volatility operators blame on Meta. Theriot's figure says the spend is real and recoverable. Nobody has run both policies on one account.
+Sources: Nick Theriot, How We Helped This Brand Scale To $5M a Year (It's Boring But It Works), 2026-09-21
+Last touched: 2026-09-22

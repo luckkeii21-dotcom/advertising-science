@@ -428,8 +428,12 @@ Charley T's seasonal calendar, stated across two videos. Impression supply spike
 **Meta corroborates the effect and supplies the missing DEMAND-side mechanism, added 2026-08-20.** Meta's own Q5 best-practice post states that during Q5 "there is typically less competition in the auction as larger brands have left and shipping deadlines have passed," that on its internal data "CPMs fell to their lowest levels of the season," and that CPAs sat below pre-Cyber-5 levels. Charley T explains the drop entirely on the SUPPLY side, more people on more devices for longer. Meta explains it on the DEMAND side, advertisers exiting the auction. The two are complementary rather than competing, and together they are a stronger account of the same window than either alone. Meta also dates Q5 as late December to mid-January, which agrees with Charley T's 10 to 15 January end.
 **Tier stays T3 and the reasons matter.** Meta shows no figures, only the direction, so nothing here is checkable. It is a best-practice marketing post rather than engineering documentation. And Meta profits directly from advertisers spending in Q5, so this is a self-interested source arguing for spend. Two independent voices agreeing is corroboration, not measurement.
 **Scope warning for our own book.** Meta's version is scoped to mobile game developers and Charley T's to ecommerce. The CPM half is an auction-wide price effect and should reach any advertiser in the same auction. The buying-intent half rests on gift-card and gift-money spending, and NOBODY has evidenced it for lead gen. Every client we run is lead gen, so treat Q5 as a cheap-impression window for us and not as an intent window until we measure it ourselves.
-Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Meta for Business, Maximise Q5 Performance: Unlocking the Value of Q5 Marketing for Mobile Game Developers, 2025-10-13 (read 2026-08-20)
-Last touched: 2026-08-20
+
+**Confirmed again 2026-09-22 from portfolio data, with the window stated slightly wider.** Blue Sense calls **16 to 31 December the cheapest media of the quarter** and says CPMs drop massively, which matches this claim's direction on a window that starts a few days earlier than Boxing Day. Portfolio frequency also relaxes across it, from a 1.96 Black Friday peak back to 1.82 ([[Auction Mechanics & Bidding#AU-093|AU-093]]).
+
+**One mechanism he adds, which cuts against the obvious read of a cheap window.** He states that CPMs correlate with auction pressure and more specifically with **expected action rate on the landing page**: when conversion rates are strong and returns are good, Meta charges more, because it can. When an advertiser is unprofitable, CPMs sometimes come down. He flags the statement as a generalisation with a lot of nuance. The practical consequence for Q5 is that arriving with a genuinely good offer will itself inflate the CPM somewhat, so the cheap window is cheaper before you succeed in it than after. Asserted, nothing shown, and it should not be quoted as a mechanism Meta has described.
+Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Meta for Business, Maximise Q5 Performance: Unlocking the Value of Q5 Marketing for Mobile Game Developers, 2025-10-13 (read 2026-08-20); Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
 
 ### AU-035 · Holding-company agencies return in the first weeks of January and their budget-insensitive spend lifts CPMs and takes the best impressions
 Tier: T3 · Status: contested
@@ -789,3 +793,33 @@ Nick Theriot walks the setup on screen, 2026-09-16, on a live e-commerce account
 **What was not shown.** No cost-cap campaign results at all. He shows the build and the surrounding account numbers, never the capped campaign's own CPA or delivery against the $40. He is explicit that the campaign exists "purely just to simply test it."
 Sources: Nick Theriot, How I Turned a Losing Client Into a $29,000/Day Winner in 60 Days, 2026-09-16
 Last touched: 2026-09-17
+
+### AU-092 · The cheap 2025 Black Friday auction was bought with INVENTORY EXPANSION, and that lever is now spent
+Tier: T3 · Status: active
+The best-evidenced piece of the 2026 Black Friday read, and the part with the longest shelf life, because it explains a year that every operator mis-remembers.
+
+**Meta's own published quarterly numbers for the period.** Price per ad **up 6%**, impressions **up 18%**. Meta publishes total impressions and ad revenue, so CPM falls out of the division. Blue Sense's reading: **Meta opened a large amount of additional ad inventory over Black Friday**, so where a user previously saw 100 ads they saw 118, at the cost of organic posts and content. That extra supply is what held CPMs down against the normal year-on-year trend. "Year-on-year CPMs on Meta are much higher than 6% but we didn't see a spike during the Black Friday period."
+
+**Third-party reads of the same window disagree in magnitude and agree in direction.** Triple Whale measured **7.8% CPM inflation**. Two other sources he pulled showed an outright **decline** in CPMs. He notes these reports all measure differently, which is why the percentages do not line up.
+
+**Why 2025 is a misleading baseline for 2026.** In **Q1 2026 and Q2 2026 impressions have begun compressing year on year**, so the inventory growth is not repeating, and **year-on-year CPM growth is now worse than it was during Black Friday last year.** His forecast: no repeat of 18% impression growth, price per ad up considerably, total impression volume somewhat lower.
+
+**What the peak curve looked like in his own portfolio**, pulled from the Meta MCP across an estimated $50 to $100 million of spend: October is the baseline, **from 12 November CPMs run 25 to 30% above that baseline** and climb through the period. Efficiency also peaks: ROAS outperforms the baseline by about **1.12x**, which he frames as barely enough, because gross margin is compressed by discounting at the same time.
+
+**Triple Whale's 2025 period-on-period comparison, which splits the platforms.** Meta CPMs **+50%** over the Black Friday weekend, Google **+10%**. On Meta, CPA falls and ROAS improves. On Google, CPA worsens, ROAS worsens and impression-to-purchase falls (see [[Google Auction & Smart Bidding#GA-079|GA-079]]).
+
+The 6% and 18% figures are Meta's own published reporting and are the T1 element here; the inventory-expansion interpretation, the portfolio curve and the 2026 forecast are the operator's and are T3.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### AU-093 · Peak saturation is mild: portfolio frequency went 1.75 to 1.96 and back to 1.82, so the Black Friday wall is offer response, not audience exhaustion
+Tier: T3 · Status: active
+Directly against the common belief that frequency spikes during Black Friday. Across the Blue Sense portfolio last year, **baseline frequency 1.75, peak 1.96 during Black Friday, 1.82 in Q5.** "Nobody really ran out of people."
+
+**The diagnostic consequence.** When an account stops responding at its peak, it is usually **not a reach problem**. It is that the existing buyers have stopped responding: you have moved along the response curve to where the next dollar buys much less. The cause is offer fatigue or creative or audience fatigue on whatever is being pushed, not an exhausted pool.
+
+**Two honest boundaries he attaches.** It can be a reach problem if you underspent going into the period and never built the funnel ([[Scaling Models#SC-165|SC-165]]). And **the dataset is large brands**: a small brand without a big pull will run much higher frequency on the same spend shape, so the 1.96 ceiling does not transfer down-market.
+
+**Read against [[Creative Science#CR-177|CR-177]]**, where the fatigue metric operators actually use is ad-level frequency above 2.0 over 14 days on cold. A whole portfolio peaking at 1.96 at the busiest moment of the year suggests that threshold is rarely crossed at account level even under maximum pressure, which makes it a much less common trigger than its usage implies.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22

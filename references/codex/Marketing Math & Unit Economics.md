@@ -1981,8 +1981,16 @@ The sharpest thing in today's read, because it inverts the intuitive move and it
 **Evidence class.** Two brands, two industries, cohort reports read on screen with figures visible. Not a controlled test, so it does not establish the causal story, but it is real measured cohort data rather than recollection, which is why this is banked as T2 while [[Marketing Math & Unit Economics#MM-203|MM-203]] from the same operator is T3.
 
 **The local-service translation, made 2026-09-13 after this claim had been carried unteachable for four days.** The evidence here is Shopify cohort spend over six months and no client of ours has a repeat purchase to follow, so the question was what survives the move to a chiropractic clinic or a truck dealership. **The mechanism survives and the measurement does not.** What transfers is selection: a price or a discount changes WHO says yes, not only how many, and the acquisition column charges the same for both populations. What does not transfer is the instrument, because the local-service form of "repeats worse" is "does not show up", which lives in a CRM field rather than in a cohort report. **That makes the local-service version cheaper to test than this one, because a show rate resolves in days.** Two of our own clients have already moved to a paid front door for exactly the reason stated above, StayWell in May 2026 and ChiropracticWorks on 2026-09-06, and neither captured a before-and-after show rate. Full working, the break-even table a front-door price has to beat, and the one measured selection effect on our book at [[Marketing Math & Unit Economics#MM-212|MM-212]].
-Sources: Blue Sense Digital, Don't Make This Black Friday Mistake, 2025-11-06; EvrythingAI account read 2026-09-13 (translation only)
-Last touched: 2026-09-13
+
+**Third instance, 2026-09-22, and it is the first one that reports a NULL result alongside the effect.** The same operator brings a wider sample to the same question: **10 clients, cohort data pulled manually and averaged.** A **November cohort delivered an average 38.5% six-month repeat lift against a February cohort's 63%**, which are the same two figures already on this claim from brand one above, now stated as a book-wide average rather than one report.
+
+**The new and load-bearing part: 2 of the 10 brands showed NO difference at all**, November repeat rate lift identical to February. So the effect is real on average and is not universal, and the honest instruction that comes with it is to measure it per brand rather than apply it as a rule. His own process is to pull the last two years of November repeat-rate cohort lift for every client; where there is no difference, the CAC tolerance is unchanged.
+
+**He also names the double error this produces in a peak CAC allowance**, which is worth carrying: most operators do not put the discount into the allowance, so gross profit per order is modelled as business as usual when it is not, AND the customer acquired is worth less over annual LTV. Both corrections push the same way, which is why a peak CAC tolerance set off list-price margin is wrong twice.
+
+*He again summarises the gap as "50% worse". The arithmetic on his own numbers is 38.5/63 = 0.61, so 39% worse, matching the correction already recorded above. Use 39%.*
+Sources: Blue Sense Digital, Don't Make This Black Friday Mistake, 2025-11-06; EvrythingAI account read 2026-09-13 (translation only); Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
 
 ### MM-205 · Returning-customer revenue is a function of cohorts you have already acquired, so it cannot be forecast by applying a growth multiple
 Tier: T3 · Status: active
@@ -2094,8 +2102,12 @@ Sam Piliero, 2026-09-14, worked on screen: 300 orders at $100 each = $30,000 rev
 **The rule he attaches.** The figure with the take included is the account's target, and the only hard floor is never falling under the no-take break-even. He runs the whole scaling decision against this one number, which is how it connects to [[Attribution & Incrementality#AT-119|AT-119]].
 
 **Where it sits.** [[Marketing Math & Unit Economics#MM-068|MM-068]] already requires the CAC target to come from new-customer AOV and new-customer gross profit rather than sitewide figures, and this model does use blended sitewide numbers, which is its main weakness. [[Marketing Math & Unit Economics#MM-088|MM-088]] and [[Marketing Math & Unit Economics#MM-085|MM-085]] carry the discount-depth versions of the same arithmetic.
-Sources: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14
-Last touched: 2026-09-14
+
+**Second operator, same construction, 2026-09-20, with a ceiling on the profit take that this claim did not carry.** Sam Piliero builds the target the same way: start at the break-even ROAS or CAC for **new customers only**, then add whatever take you want. His worked version, 50% margins on a $100 average order value, gives $50 of take, so break-even is a $50 CAC or a 2x ROAS; wanting 10% of the order as first-purchase profit adds $10 and raises the target accordingly.
+
+**The ceiling is the new part.** "If you're going beyond 20 or 30%, understand that you are not in the e-commerce game to scale. Any e-commerce business that is actually trying to scale tries to work as close to break even as possible and makes their money on the lifetime value of the customer." He immediately qualifies it as a business decision rather than a rule, and does not tell anyone to sacrifice years of profit. **Carry it as a stated position on the trade between first-order take and growth rate, not as a threshold with evidence behind it.** Nothing is shown.
+Sources: Sam Piliero, The Most Valuable Ecommerce Ads Training You'll Ever Watch, 2026-09-14; Sam Piliero, This is how real businesses scale Facebook Ads FAST, 2026-09-20
+Last touched: 2026-09-22
 
 ### MM-215 · An evergreen offer adds value rather than subtracting price, runs two to four weeks at a time, and the named cost of discounting instead is a degraded pixel
 Tier: T3 · Status: active
@@ -2168,3 +2180,49 @@ Four third-party numbers, collected here because they are the assumptions undern
 **Where this lands on our own book.** We run Google for Mattia and SJR alongside Meta. None of this is a reason to move a dollar on its own. It is the reason to stop treating the current search-to-social split as a fixed baseline, and to price the question with a real test rather than with a forecast.
 Sources: Meta for Business News, social search series parts 1 and 3, 13 and 15 May 2026, read in full 2026-09-20, citing eMarketer April 2026, Datos/SparkToro Q4 2025, SE Ranking via eMarketer, and Kantar "Beyond the Search Bar" March 2026
 Last touched: 2026-09-20
+
+### MM-222 · Averages hide the marginal dollar: an $80,000 increase that kept average CAC inside a $400 tolerance had a marginal CAC of $1,000
+Tier: T3 · Status: active
+The cleanest worked example of the average-versus-marginal trap in this file, and the numbers are the claim.
+
+**The scenario.** Baseline new-customer cost per acquisition **$337**. Add **25% more spend, which is $80,000**. Average CAC degrades to **$392**. Against a **$400 CAC tolerance** that reads as fine, and most reporting stops there.
+
+**What the increment actually bought.** That $80,000 produced **76 more customers**, which is a **marginal CAC of about $1,000**, two and a half times the tolerance. *Arithmetic check: 80,000 / 76 = $1,052, consistent with his stated $1,000.* The average absorbed it because the baseline volume was large enough to dilute it.
+
+**The rule.** Scale on marginal returns, never on blended averages, both when planning against last year and when pushing intraday. "Averages will always mask the top incremental return."
+
+**The second half, which moves the target rather than the reading.** Discount depth raises the required break-even ROAS **exponentially**, because gross profit per order is compressed. His worked point: a business breaking even at a **2.0** ROAS is breaking even at **4.5** once it discounts **40%**. This extends [[Marketing Math & Unit Economics#MM-214|MM-214]]'s one-over-gross-margin rule into the sale period, where the margin in the denominator is not the margin on the price list. Two things have to be known before any peak efficiency target can be set: the discount, and what it does to gross margin.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### MM-223 · Two account-level health metrics that are not ratios: the revenue floor, and profit volume
+Tier: T3 · Status: active
+From an operator claiming over a billion dollars of Facebook spend across more than a decade, and the argument is that both of the numbers most accounts are run on are ratios that can rise while the business shrinks.
+
+**The revenue floor.** Defined as **how much of your revenue comes from people who are not buying from you for the first time**, read month over month. If it rises every month the business is healthy; if it does not, it is not. He proposes it as the single definition of success, above ROAS, CPA, AOV and creative hit rate.
+
+**Profit volume.** Defined as **total revenue minus total ad spend**, absolute, not a ratio of anything, built as a custom metric in a dashboard. It does two jobs. If profit volume rises and the bank account does not, whatever you are doing is not working regardless of what the attribution report says. If it rises and the bank account does too, you know what moved it.
+
+**The observation that motivates both, and it is checkable on any account in about five minutes.** Pull the account with every line item removed, broken down by week, across the whole year, sorted chronologically, with ROAS added alongside. **The weeks with the highest ROAS are not the weeks with the highest profit volume**, and the best-ROAS weeks are often the weeks where revenue suffered most, because ad spend was not driving much incremental revenue in them.
+
+**The mechanism he attaches to why ROAS-chasing degrades the business.** The traits that win on ROAS, low price, low friction, broad appeal, discount responsiveness and direct response, are the same traits that select for the customer least likely to return. So **optimising for ROAS is not neutral toward retention, it selects against it.** That half is a mechanism assertion with nothing shown, and should be carried as reasoning rather than as a finding. The two metric definitions stand on their own and cost nothing to build.
+Sources: Professor Charley T, This Facebook Ads Lie is Killing Your Business!, 2026-09-21
+Last touched: 2026-09-22
+
+### MM-224 · Pick the acquisition offer by the Wilson lower bound on repeat purchase rate, not by raw repeat rate and not by best-seller volume
+Tier: T3 · Status: active
+A statistical method for a decision this codex has so far treated as judgement: which product should the ad account be built around.
+
+**The question it answers.** Not the best seller by volume and not the highest margin product. **Which product, when bought first, most reliably produces a repeat buyer, ranked by how much confidence the sample actually supports.** The input is one receipts export with four columns: customer ID, order date, product, revenue.
+
+**Why the confidence bound rather than the raw rate.** In the shown case, Rose Hip Repair had the **highest raw repeat purchase rate at 67.5%**, on **40 first-time customers**, which is not significant. Vitamin C had the highest raw volume of returning customers. **The Barrier Repair ceramide cream won on the Wilson lower bound: a repeat rate of nearly 55% on almost 500 customers, with a confidence floor above 50%**, making its buyers more than twice as likely to buy again as the number one selling product's. **His thresholds: a confidence floor over 35 is solid, over 50 is strong.** Plotted, everything left of the confidence line does not have enough data to be trusted.
+
+**The case, with the numbers that make it worth banking and the caveat that caps the tier.** Skincare brand, 44 products. Starting state: over **16,000 first-time customers**, **22% storewide repeat rate**; Vitamin C took **58% of Facebook spend ($41,760/month) at a 1.5 ROAS and $78 CPA**; Barrier Repair took **6% ($4,300/month) at a 0.98 ROAS and $130 CPA**; total **$1.8 million spent at a 1.27 ROAS and $90 CPA, about $72,000 a month**. They rebuilt the account around Barrier Repair. End state, August 2026: **44,000 first-time customers, 33.7% storewide repeat rate, $340,000 a month in spend**, Barrier Repair moved from **6% to 80% of spend**, and it now generates **over $2 million in returning revenue** against the roughly **$200,000** Vitamin C produced when it was the hero.
+
+**The headline result is that the account metrics got worse on purpose.** Blended ROAS fell from **1.27 to 1.02** and CPA rose from **$90 to $138**, while the business became dramatically more profitable and spend went up **4.7x**. That is the concrete version of the argument in [[Marketing Math & Unit Economics#MM-223|MM-223]].
+
+**Tier discipline.** This is a two-year before-and-after on a single account with no control and no holdout, so everything else that changed in two years is inside the result. It is banked as T3 with shown numbers, not as T2, and it should be quoted as a case rather than as an effect size.
+
+**One honest finding inside the data that cuts the other way.** **Scaling an offer almost always makes its repeat rate a little worse**, because the spend reaches further up the funnel. They saw it and the business still improved.
+Sources: Professor Charley T, This Facebook Ads Lie is Killing Your Business!, 2026-09-21
+Last touched: 2026-09-22

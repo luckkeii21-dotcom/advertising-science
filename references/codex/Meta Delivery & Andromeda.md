@@ -190,8 +190,10 @@ Tier: T3 · Status: active
 During learning, Meta reaches the same warm people repeatedly (frequency 1.6 = 60% saw it twice in a single day, 1.2 = 20%). As learning ends, spend goes up and frequency goes down because the ad starts reaching genuinely new people for the first time. The apparent performance drop after a few days is the ad graduating to colder audiences.
 Read frequency broken down BY DAY and it becomes a permanent funnel-position diagnostic with thresholds at both ends: 1.05 means 5% saw the ad twice today, so 95% of that ad's spend is prospecting; 1.95 means 95% saw it twice today, so the ad is almost entirely retargeting. The consequential half is the decoupling of audience setting from delivery reality. A retargeting ad set can read 1.05 while a worldwide no-exclusion audience reads 1.9, because the creative does the targeting. Two operator corrections follow. Stop treating a frequency above 3 as a fatigue alarm without naming the window ("three over what? Three per day, three per week, three per month"). And stop assuming a retargeting ad set is doing retargeting work. He grounds high frequency as desirable through the frequency-illusion sequence: frequency bias at 3-5 impressions, selection bias at 5-10, confirmation bias well past 12, making 12+ exposures the familiarity target rather than a warning.
 One more pairing seen repeatedly in post-Andromeda reads: frequency climbing while CPM does NOT climb to match means the machine found a small pocket of people who love the ad. That is a high-quality experience delivered to a tiny audience, fine as a bottom-of-funnel closer and useless as a scaling asset. Fix which part of the funnel the ad is used for rather than band-aiding the number.
-Sources: Professor Charley T, Copy This Simple Meta Ads Strategy, 2026-08-10 and The NEW BEST Meta Ads Andromeda Course to Scale in 2026, 2026-01-24 and Record Profits: the Meta Ads Andromeda Playbook, 2026-01-03
-Last touched: 2026-08-18
+
+**Restated independently 2026-09-21 with an explicit kill-rule consequence.** Charley T describes the same early-life shape, new ads carrying higher CPMs, higher frequency and strong performance for a few days before dropping off, and names the drop as the ad graduating into colder traffic rather than fatiguing. The instruction he draws from it is the addition: **a three to five day read is not a kill signal.** "How an ad performs in the first few days tells you almost nothing about how it's going to perform over the first few weeks or months, unless it was no good anyway. Bad ads don't get better." Full entry, including the churn-cost argument attached to it, at [[Meta Delivery & Andromeda#MD-163|MD-163]].
+Sources: Professor Charley T, Copy This Simple Meta Ads Strategy, 2026-08-10 and The NEW BEST Meta Ads Andromeda Course to Scale in 2026, 2026-01-24 and Record Profits: the Meta Ads Andromeda Playbook, 2026-01-03; Professor Charley T, This Facebook Ads Lie is Killing Your Business!, 2026-09-21
+Last touched: 2026-09-22
 
 ### MD-009 · Personalization on Meta is a delivery-sequence problem: the system needs a small number of distinct ads with clear jobs, not more ads
 Tier: T3 · Status: active
@@ -1590,3 +1592,31 @@ Four product deltas from one Meta post, each with the method Meta itself states 
 **Standing against our own book.** The Advantage+ and omnichannel numbers are the two that touch what we run. Neither has been tested on our accounts and both are Meta measuring its own products, so they are a prior for a test, never a result to report.
 Sources: Meta for Business News, "How winning hearts before peak season boosts baskets when it matters most", 11 June 2026, read in full 2026-09-20 including all eight footnotes
 Last touched: 2026-09-20
+
+### MD-163 · The cost of daily on-off churn: if half the ads the model was learning from yesterday are gone today, it has no basis for tomorrow
+Tier: T3 · Status: active
+The mechanism half of the case against high-churn account management, from an operator claiming over a billion dollars of Facebook spend.
+
+**The claim.** An account running dozens of campaigns, hundreds of ad sets and thousands of creatives is asking the ranking system to choose between a very large number of options that each carry almost no data, while the operator turns ads off continuously. "If half the ads it was learning from yesterday are gone today, it has no confidence on what to do tomorrow." **His conclusion is that the day-to-day unpredictability operators blame on Meta is produced by the operator.**
+
+**The early-life reading rule that follows, and it is the practically useful part.** New ads are tested against the people most likely to act on them, which is the bottom of the funnel, so they show **higher CPMs, higher frequency and strong performance for a few days and then drop off.** That drop is not fatigue. It is the ad graduating into colder traffic, and nothing performs as well against cold as against warm. **"How an ad performs in the first few days tells you almost nothing about how it's going to perform over the first few weeks or months, unless it was no good anyway. Bad ads don't get better."** This is the same delivery behaviour already banked at [[Meta Delivery & Andromeda#MD-006|MD-006]] and [[Meta Delivery & Andromeda#MD-008|MD-008]]; what is new here is the explicit instruction that a three-day read is not a kill signal.
+
+**The at-bats argument he rejects.** More at-bats is true, but "more at-bats doesn't mean giving more batters just a few swings. It means giving the batters who are good more practice." He puts the choice as a thousand ads getting $10 each against ten ads getting $1,000 each, and says a machine-learning system is never better off with less data per option.
+
+**LIVE TENSION with the same day's harvest, recorded rather than resolved.** [[Scaling Models#SC-167|SC-167]] has Nick Theriot turning off around 60 ad sets on one account, 52 of which were spending with zero sales at about $6,000 a month, and treating that cleanup as recovered money. Both operators are describing real accounts. The distinction that probably reconciles them is WHICH ads get cut: Theriot is removing ads that spend and do not convert, this claim is against removing ads the model is still learning from. Neither has tested the other's policy, and no shown data supports either.
+Sources: Professor Charley T, This Facebook Ads Lie is Killing Your Business!, 2026-09-21
+Last touched: 2026-09-22
+
+### MD-164 · Proposed: the account's own sales MIX steers delivery, so pushing one offer past 50% of sales points the whole system at that offer's buyer
+Tier: T4 · Status: active
+Banked at T4 deliberately. The idea is coherent and the specific numbers in it have no source.
+
+**The claim.** Andromeda is described as maintaining homeostasis: whatever is happening most often is what it will do more of. If the hero offer moves from **13% of sales to 25%**, the machine becomes "dramatically more likely" to make the next sale a hero-offer sale. **Once the hero offer crosses 50% of all sales**, every signal and optimisation decision in the account is said to point at finding more of that ideal customer, cheaper and at higher volume.
+
+**Why it is only T4.** The 13%, 25% and 50% are illustrative, not measured. No mechanism inside Meta's published architecture is named to support a threshold effect at 50%, and a monotonic relationship between sales mix and delivery mix, which is plausible, would not produce a threshold at all. The neighbouring assertion that **"your CPMs drop because Meta recognises you as a quality signal provider"** has no support of any kind and should not be repeated.
+
+**What survives if the threshold is discarded.** The directional part is consistent with claims this codex already holds at higher tiers: delivery reinforces on whatever the conversion event actually captures ([[Learning & Signal#LS-008|LS-008]]), and a mixed bag of outcomes inside one optimisation target teaches the system to sell anything ([[Learning & Signal#LS-079|LS-079]]). **So the operating advice, concentrate the account on one offer so the signal is coherent, is supported. The specific 50% tipping point is not.**
+
+Testable on our own accounts cheaply, which is the reason to keep it: track the hero-offer share of total conversions against blended CPA over the same window, on an account we are already concentrating.
+Sources: Professor Charley T, This Facebook Ads Lie is Killing Your Business!, 2026-09-21
+Last touched: 2026-09-22

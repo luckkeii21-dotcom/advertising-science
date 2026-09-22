@@ -637,3 +637,17 @@ Google's own page describes it as: "Stop guessing which leads to call first and 
 **Honest limit.** T1 for existence, the three-tier scale and the stated purpose. **No eligibility, no campaign-type scope, no accuracy figure, no method for how the score is computed, and no case data of any kind on Google's page.** A vendor-computed quality grade with an unpublished method has the same standing as Opportunity Score at law 4c: usable as a hint, never quotable to a client as a measurement. Nobody here has seen one. Announced at Google Marketing Live 2026 and absent from this codex until today.
 Sources: Google Ads product announcement page, "Lead intent scores", read 2026-09-19; Google Ads & Commerce Blog, "Build campaigns that drive high-converting, sales-ready leads", 2026-09-18
 Last touched: 2026-09-19
+
+### GA-079 · Google is a PREPARATION platform in the peak, and its Black Friday ROAS spike is largely Meta's demand arriving as branded search
+Tier: T3 · Status: active
+The clearest statement in this codex of why the two platforms should not be scaled the same way in a sale period.
+
+**The performance split, from the Triple Whale 2025 Black Friday report, period on period.** Meta CPMs **+50%**, Google CPMs **+10%**. On Meta, **CPA falls and ROAS improves** over the weekend, which offsets the gross margin compression from discounting. On Google, **CPA gets worse, ROAS gets worse, and impression-to-purchase falls.** Read across Triple Whale's dataset, **Google performed worse overall for everyone while Meta performed better.**
+
+**The attribution trap that hides it.** Google ROAS looks excellent during Black Friday in most accounts, and for many of them it has little to do with Google. Meta traffic drives demand, that demand arrives as branded search, and branded traffic converts better because the brand is on sale. **Google is a demand capture platform, so it looks better when demand rises without having caused it.** He is explicit that some of the lift is real for some accounts and that the general pattern is a lot of wasted Google spend from operators cranking budget on the strength of the ratio.
+
+**What the work on Google actually is.** Preparation, done in advance, not budget ramping: titles, descriptions and assets rewritten to be relevant to the sale; Merchant Center rolled over and optimised; promotion feeds in place; promotional titles rolled into Search and PMax; discounted price lines feeding correctly. That prep is what produces the CTR and conversion rate advantage over competitors who skip it.
+
+**The operating rule.** Ramp Google on a schedule with the prep done, and never scale it the way Meta is scaled.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22

@@ -1763,8 +1763,10 @@ Feeds law 4a. Until 2026-08-25 the codex had exactly one launch rate keyed to sp
 **A stated exception to the ratio, which is a second regime rather than a contradiction:** once a winner bank exists, the requirement decays at flat spend. "if you're doing 50 net new ads per month, after about six to 12 months of doing this, you'll have so many winners pre-existing within the account that you actually don't need to continue to introduce 50 new ads a month. You could drop this down to 10, maybe 20." That is one ad per $2,500 to $5,000 at the same $50,000, so an account holding spend steady with an established bank needs 2.5x to 5x less new creative than one trying to scale.
 **Scaling behaviour, and the absence is the finding: he says the ratio is non-linear and gives no exponent.** "you can actually scale spend more exponentially than ad volume requirements increase um if you're global. If you're in Australia, it actually becomes very tough. It's actually the opposite way. You actually need exponentially more ads because the TAM is so small." **"Exponentially" appears twice with zero figures attached. Do not supply one.** The TAM mechanism behind it is at [[Scaling Models#SC-144|SC-144]].
 **A third spend-independent number joined the disagreement on 2026-09-03, and it is stated as a floor rather than a ratio.** Mark Builds Brands: "an absolute minimum of 25 net new concepts a week. That's completely new creative material. This is no variations, no iterations, new creative concepts." His diversity axis is FORMAT as much as idea, and he lists the formats he counts: distinct image concepts, short-form UGC, long-form UGC, full VSL and mini VSL. He attaches the number to no spend level at all, which is what makes it incompatible with both rules already in this claim: Blue Sense's one net-new ad per $1,000 of monthly spend would put 25 a week at roughly $100,000 a month, while Nick Theriot's concept ladder puts 20 concepts a week at a $40,000-a-month client. So the three cannot be reconciled by arithmetic, because one is a ratio to spend, one is a ratio to retainer, and this one is a fixed personal floor. Nothing is measured behind any of the three. Also note his own qualifier, "if you're just kind of starting out it'll be less", which he does not quantify.
-Sources: Blue Sense Digital, How to Audit Your Ad Account for Scale Step-by-Step Guide, 2025-12-10; Mark Builds Brands, 10 brutal lessons after making $9,867,257 in 2025 w/ branded dropshipping, 2026-01-02
-Last touched: 2026-09-03
+
+**A THIRD spend-keyed method arrived 2026-09-22, and it keys off a different quantity, so it does not extend this disagreement so much as sidestep it.** Both rules above divide MONTHLY spend by a rate to get a launch count. The new one divides **PEAK DAILY spend by how much a single ad can absorb in a day**, which answers a capacity question rather than a cadence question, and returns a count of winners rather than a count of launches. Banked in full at [[Creative Science#CR-255|CR-255]]. It comes from the same operator as the one-ad-per-$1,000 rule on this claim, in the same month, with no attempt made to reconcile the two, which is worth knowing before either is quoted as his position.
+Sources: Blue Sense Digital, How to Audit Your Ad Account for Scale Step-by-Step Guide, 2025-12-10; Mark Builds Brands, 10 brutal lessons after making $9,867,257 in 2025 w/ branded dropshipping, 2026-01-02; Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
 
 ### CR-186 · Creative hit rate is claimed to cap at 13 to 14% of all ads ever introduced, with a stated statistical definition and a self-contradiction in the next sentence
 Tier: T3 · Status: contested
@@ -2645,3 +2647,93 @@ The gap, from a WARC study produced with L'Oreal and Meta: "Less than 40% of mar
 **One platform fact from the same page:** Meta's Creator Marketplace now states "more than 5M discoverable creators". That is a sizing number for [[Creative Science#CR-115|CR-115]], which describes the tool but carried no scale figure.
 Sources: Meta for Business News, "Closing the creator measurement gap: How L'Oreal turned a reporting function into a strategic lever for growth", 11 June 2026, read in full 2026-09-20, citing WARC/L'Oreal/Meta, "The Creator x Paid Media Equation"
 Last touched: 2026-09-20
+
+### CR-255 · Forecast creative volume from peak daily spend divided by per-ad spend capacity, and the answer is a count of WINNERS, not a count of ads
+Tier: T3 · Status: active
+A third spend-keyed volume method, and it keys off a different quantity from the two already contested at [[Creative Science#CR-185|CR-185]]. Those two divide MONTHLY spend by a rate. This one divides PEAK DAILY spend by how much a single ad can actually absorb in a day.
+
+**The method.** Look at last November. Find the peak daily spend reached by a single ad in the account, and what type of ad it was. Divide the daily spend you intend to reach by that figure.
+
+**His numbers, pulled from the Meta MCP.** Highest single ad in an AUD account, **$12,500 a day**. Most evergreen ads spending between **$4,000 and $8,500 a day**. Realistic working ceiling **$8,000 to $13,000 a day**. Defaults he offers to anyone who will not pull their own: assume the **average evergreen ad spends about $5,000 a day** and a **winner's realistic working ceiling is $10,000 to $12,000 a day**.
+
+**The worked case, and the sentence that makes the claim.** To spend **$150,000 on a peak day you need 12 to 18 ads that can carry real spend**, and "there's a difference between 12 to 18 ads and 12 to 18 ads that can hold $10,000 a day in ad spend. Very big difference. This is like 12 to 18 winners."
+
+**Why this method is worth having alongside the monthly rules.** It answers a question the monthly rules cannot: whether the account has enough spend CAPACITY to deploy a given budget on a given day, which is the constraint that actually binds in a peak. Pair it with [[Scaling Models#SC-163|SC-163]], which says the winners will not carry all of it anyway and roughly half the spend lands in the tail. Read together, the two say: size the winner count off peak-day spend, then ship the tail volume as well, because the tail is where the other half of the budget goes.
+
+Portfolio figures described off slides, no dataset published, and the per-ad ceilings are AUD accounts in his own book.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### CR-256 · Offer creative buys SPEND CAPACITY, not conversion rate: the same one-day ROAS as evergreen while absorbing 4 to 5x the spend
+Tier: T3 · Status: active
+The most useful creative finding in the 2026 Black Friday read, and it inverts the reason most operators give for making offer creative.
+
+**The finding.** Motion, the creative analysis platform, published that **offer creative delivered the same one-day ROAS as evergreen creative but was able to absorb four to five times more spend.** Blue Sense's own portfolio agrees independently: pure offer statics hold far more spend than any of the evergreen ads in the same accounts.
+
+**So the reason to make offer creative is not that it converts bottom-funnel traffic better.** On the evidence it does not convert better at all. It is that it raises the account's spend ceiling, which is the binding constraint in a peak per [[Creative Science#CR-255|CR-255]] and [[Scaling Models#SC-163|SC-163]].
+
+**The share of spend he recommends by archetype**, which is his portfolio's own 2025 shape and which he explicitly endorses repeating: offer statics about **19%**, offer-overlaid evergreen and catalog about **18%**, creator and founder ads a large share, product and VSL about **14%** (top of funnel, deliberately not pushed harder), catalog about **12%**, plus early access and VIP.
+
+**A diagnostic that travels beyond the season.** Catalog evergreen showed an **8 ROAS** in this data, which looks like the thing to double down on until you read its frequency, which is very high. **Frequency is a good indicator of where an ad sits in the stages of awareness**, so a high-ROAS high-frequency line is bottom-funnel retargeting harvesting demand, not a better ad. High ROAS and high frequency move together in his table.
+
+Motion's figure is quoted from their report, which was not read here. Blue Sense's corroboration is portfolio data described off slides.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### CR-257 · Creative is a CPM lever, not only a conversion lever: in a 72% more expensive auction, better and more diverse creative pushed CPMs DOWN
+Tier: T3 · Status: active
+Reviewing last year's Black Friday data, Blue Sense found a relationship between creative quality, diversity and volume on one side and CPM inflation on the other. **In a window where the auction ran 72% more expensive, accounts with better creative, measured as how diverse it was and how much of it there was, ended up with lower CPMs.**
+
+**His own hedge is part of the claim and must travel with it.** He calls the relationship **qualitative**, not measured, and offers the mechanism as a likelihood rather than a finding: there were a lot more impressions available last year, and you win more auctions with more diverse creative and more of it, so the effect is probably an auction-win-rate effect.
+
+**Why it still matters.** It reframes the creative budget. If creative only moved conversion rate, its return is bounded by the lift it produces on the traffic you were already buying. If it also moves CPM, it changes the price of every impression in the account, and in a peak window that price is moving 25 to 50% against you anyway ([[Auction Mechanics & Bidding#AU-092|AU-092]]).
+
+Qualitative by the source's own description, no regression and no dataset shown. This is the weakest-evidenced claim banked today and should not carry a decision on its own.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### CR-258 · The offer corrupts the creative feedback loop exactly when the account is generating the most data, which makes CTR and CPC the least-bad read in this one window and noise in every other
+Tier: T3 · Status: active
+The sharpest methodological point in the 2026 Black Friday read, and it is unusual because the same operator argues both halves against himself.
+
+**The problem.** During a sale, ad one can post a strong ROAS because its product was a best seller at 50% off, and ad two can post a poor ROAS while being the better ad, because its product was neither discounted nor a best seller. The offer and the product dominate the result. **So the window that produces the year's largest volume of creative data is also the window where that data says least about the creative.** You cannot take the top-ROAS ads out of Black Friday and call them your good ads.
+
+**What to read instead, and the concession it costs him.** Lean on creative metrics, click-through rate and cost per click, during this window because ROAS is unreliable here. He then states the opposite for every other week of the year in the strongest terms: if someone told you to judge ads on CTR and CPC, "I would say that is crazy, and there is no meaningful causal data to showcase that CPCs have any correlation to return on ad spend over large data sets." His test is to plot CPC against ROAS over a large set and look at the R squared, which he reports as very low and the data as very muddy.
+
+**The banked position is therefore conditional, and the condition is load-bearing: CTR and CPC are diagnostic only when the result metric is known to be corrupted by offer and product mix, and are noise the rest of the year.**
+
+**Second half, which generalises further.** Judge creative at the **ad set level rather than the ad level** during the period, because you have multi-touch optimisation reporting into last-click attribution, and Meta's breakdown effect makes ad-level ROAS less reliable still. That is the same direction as [[Attribution & Incrementality#AT-039|AT-039]], which already banks ad-level ROAS as corrupted by last-click sequencing and ad-set level as usable, arriving here from the creative side.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### CR-259 · Diversity means diversity of CONCEPTS, not of visuals: Skims shipped 429 unique visuals built on three core ideas
+Tier: T3 · Status: active
+From a scrape of large fashion brands' November 2025 ad libraries, and it puts a number on a distinction this codex has stated qualitatively.
+
+**Distinct creative concepts run by each brand:** True Classic **11**, Ridge **10**, Threadheads **9**, Alo Yoga **7**, Gymshark **6**. His reading of the ordering is that concept volume decreases as performance-marketing capability decreases.
+
+**The case that makes the point.** **Skims shipped 429 unique visuals, all built on three core ideas.** He is careful not to call that a mistake at the scale Skims was operating, and says it becomes a problem as you push to higher spend, which is the same ceiling logic as [[Creative Science#CR-255|CR-255]]: 429 executions of three ideas is still three ideas competing for the same clusters.
+
+**The static rules that go with it, for the volume half.** There is no correct Black Friday aesthetic. There are two tests: **is the offer legible in under a second**, and **does the brand still look like itself**. Practical version: can you read the discount at thumbnail size. Three axes to spin volume off one offer static, which is how 50 of them get made quickly: **change the person using the product, change the product, or change the offer.** Two placement traps he names: do not let a 9:16 design push the offer into the region feed placements crop, and **put the offer or the deadline in the FIRST line of copy**, because copy truncates on story and several other placements.
+
+**One nearly unexploited surface.** In their scrape of cold brands, catalog ads with no written messaging were **74%** and catalog with sale messaging was **3%**. Writing the offer into catalog copy is close to free and almost nobody does it.
+
+**One constraint that will bite accounts ramping volume.** The Meta **page limit** on ads. Brands that have never hit it roll into November with high creative volume and hit it; the fix is cloned or additional pages, arranged in advance.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
+
+### CR-260 · Never turn evergreen off for the sale: it held 50 to 60% of portfolio budget and performs BETTER in the window, because the campaign carries its conversion history
+Tier: T3 · Status: active
+Named outright as **the single biggest mistake people make during Black Friday**, and stated as a rule he has repeated every year for seven years.
+
+**The numbers.** In the 2025 portfolio, **evergreen campaigns held 50 to 60% of budget** through the sale period, and they perform better during Black Friday than outside it. The mechanism he gives is structural rather than creative: **evergreen campaigns carry campaign-level conversion history**, which is why they keep delivering, and turning them off and on "really messes with the learnings of the account".
+
+**The one genuine decision inside the rule, stated with both sides.** Whether to re-badge evergreen copy with Black Friday messaging. Downside, **it resets learning phases**. Upside, more bottom-funnel messaging on ads that are already winning. He declines to prescribe and calls it account specific.
+
+**The practical kit that follows.** Take the best-performing evergreen ads, **including fatigued winners from a year ago**, duplicate them, and badge the offer onto them. **Do not turn the originals off** when you run the badged duplicate. Run the same overlay treatment on creator videos and VSLs. For VSLs and other far-top-of-funnel assets, the Black Friday message usually cannot open the video and has to be pushed back into it, which is a re-edit; he tells fashion brands to skip this entirely and CPG brands to consider it, while warning it should not be a large share of spend.
+
+**Creative phasing across the window:** build and teaser and early access, then launch, then a mid-sale refresh, then final 24 to 48 hour scarcity and deadline messaging.
+
+**Volume multiples against October from the same brand scrape, offered as context and explicitly NOT as a target:** Represent Clo **12.6x**, Skims **4x**, Aesop **3x**, then 2.6x and 2.1x. **Alo Yoga did not increase creative volume at all**, which he flags as questionable. His instruction is to derive volume from expected spend over expected spend per ad ([[Creative Science#CR-255|CR-255]]), never from another brand's multiple.
+Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
+Last touched: 2026-09-22
