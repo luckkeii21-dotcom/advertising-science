@@ -1235,3 +1235,35 @@ The intraday version of [[Attribution & Incrementality#AT-122|AT-122]], and the 
 Portfolio observation, described rather than shown, and no multiplier table published.
 Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
 Last touched: 2026-09-22
+
+### AT-125 · Meta says a Conversion Lift study reaches a reliable read in 2 to 3 weeks at holiday conversion volume against 6+ weeks in a quiet quarter, which makes peak the cheapest time to buy proof
+Tier: T1 · Status: active
+A duration figure, which is the number that actually decides whether a lift study is worth proposing to a client.
+
+**What Meta states.** "The holiday season's massive conversion volume means results are reliable in 2 to 3 weeks rather than the 6+ weeks it might take in a quieter quarter." The mechanism is only conversion volume: a randomised holdout resolves when enough events land on both arms, so the calendar cost of the test falls as the event rate rises.
+
+**This cuts directly against [[Attribution & Incrementality#AT-081|AT-081]], and the conflict is real.** AT-081 says never to run an incrementality test in a high-seasonality month, because seasonal noise swamps the effect and a Black Friday holdout is the textbook mistake. Meta says peak is the best time to run one. **Both are defensible and they are answering different questions.** AT-081 is about a test whose result you want to GENERALISE to the rest of the year, where November contaminates the estimate. Meta is arguing for a test whose result you want to use for NEXT YEAR'S PEAK, where November is the population you actually care about. A holdout measured at peak measures peak. Recorded as a scope split rather than as a contradiction, and neither claim is set to contested.
+
+**The operating rule that falls out.** If the question is "what does Meta do for us in general", run the holdout in a flat month, per AT-081. If the question is "what did Meta do for us at peak, so the CFO funds next peak", run it at peak and accept that the answer is only about peak.
+
+**What Meta says you get out of it**, quoted because the third item is the one clients never ask for and should: incremental conversions, cost per incremental result, and a stated confidence level. Meta also names the design plainly as the same randomised controlled method used in medical trials, one group sees the ads and one holdout group does not, and the difference is the lift.
+
+**The self-interest is obvious and does not make it wrong.** Meta sells the ads whose incremental value the study measures, and the post exists to get advertisers to book a study through their Meta rep before peak. The duration claim is still the most useful thing in it, and it is falsifiable against our own next study.
+Sources: Meta for Business News, "Holiday measurement strategies", 13 August 2026, read in full 2026-09-23
+Last touched: 2026-09-23
+
+### AT-126 · Meta publishes FICTIONAL case studies on its business news channel, disclosed only in a footnote under the article
+Tier: T1 · Status: active
+A reading rule about the source, banked because the codex now draws heavily on Meta's own business posts and this changes how the narrative parts of them must be read.
+
+**What was published.** "Holiday measurement strategies" opens with two brands. Brand A had a good season, could not answer the CFO asking how they knew the sales would not have happened anyway, and had its budget frozen. Brand B ran a Conversion Lift study and walked into January with **"14,200 incremental conversions attributed to their Meta ads, at $7.40 per incremental result"**, and **"the budget would grow by 20% for next year."** It reads exactly like every advertiser case study on the same channel, down to the specificity of the two figures.
+
+**At the foot of the page:** "*Disclaimer: This is a fictional example and does not represent a real brand example."
+
+**Why this is worth a claim rather than a shrug.** Nothing on the page marks the numbers as invented at the point where a reader meets them. There is no "hypothetically", no "imagine a brand". The disclosure sits below the sources, after the call to action, in the same run of small print as the Ipsos citation. Anyone skim-reading, screenshotting the opening, or quoting "$7.40 per incremental result" into a deck carries an invented number forward as a Meta benchmark. **We have banked genuine advertiser figures from this exact channel**, including everything in the 2026 Agency Awards post read the same day. The lesson is that the channel mixes real named case studies and invented unnamed ones in the same format, and only the footnote separates them.
+
+**The standing rule for this source.** On any Meta for Business post, before banking a performance figure: check whether the advertiser is NAMED. Named brands with a quoted executive are real cases. An unnamed "Brand A" or "a leading retailer" is a narrative device, and the disclaimer for it is at the bottom of the page. Read the small print before the number.
+
+**The same post's survey figures are real and separately weak.** 88% of shoppers use various formats on social media for holiday inspiration, and 68% of those who discover products on Facebook are likely to purchase, both from a Meta-commissioned Ipsos online survey of 14,473 holiday shoppers across 18 countries, November 2025. Vendor-commissioned survey material at law 4c standing, and the numbers are about stated behaviour, not measured behaviour.
+Sources: Meta for Business News, "Holiday measurement strategies", 13 August 2026, read in full 2026-09-23
+Last touched: 2026-09-23

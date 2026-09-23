@@ -1564,8 +1564,9 @@ The first dataset in this file that disagrees with [[Scaling Models#SC-058|SC-05
 **The operating consequence, and it is why the slide exists.** It is not only winners that hold up an account in the peak. A plan that funds 12 winners and nothing else leaves roughly half the required spend with nowhere to go. Volume is load-bearing here for a structural reason, not as insurance.
 
 **How to read this against [[Scaling Models#SC-058|SC-058]].** SC-058 says CBO compounds Pareto until about 4% of ads hold about 64% of spend, asserted across two videos with no dataset shown. This is a dataset and it disagrees, but it is measured in a window where spend per account sits several times above its evergreen level. **Treat it as a boundary on SC-058 rather than a refutation: concentration looks like a function of how much spend the account is pushing relative to its winners' ceilings, so it compounds at normal spend and decompresses under a peak ramp.** Neither has been tested against the other on one account across both windows, which is the test that would settle it.
+**Tested for a measurement artefact on 2026-09-23 and it survived, stronger.** [[Scaling Models#SC-170|SC-170]] shows the "share held by the top 20% of ads" rises purely from launching low-spend ads, and larger accounts run more ads, so the artefact pushes this claim's bracket table the OPPOSITE way to the 53-44-33 fall it reports. Real spend has to be moving into the tail hard enough to overcome it. **Separately, do not cite [[Creative Science#CR-255|CR-255]]'s 12-to-18 winner count as corroboration of the 7% top-ad share: one over 0.07 is 14.3 and the two figures are the same measurement restated.** The settling test still cannot be run on our book, where no account has ever pushed a peak ramp.
 Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
-Last touched: 2026-09-22
+Last touched: 2026-09-23
 
 ### SC-164 · Revenue-spend elasticity is a CUT instrument only, and scaling on it overspends by construction
 Tier: T3 · Status: active
@@ -1622,3 +1623,72 @@ The first figure in this file that prices the tail of an unmanaged CBO, and it a
 **Live tension with the same day's harvest, recorded rather than resolved.** [[Meta Delivery & Andromeda#MD-163|MD-163]] argues that turning ads off at this rate destroys the sequencing signal and manufactures the volatility operators blame on Meta. Theriot's figure says the spend is real and recoverable. Nobody has run both policies on one account.
 Sources: Nick Theriot, How We Helped This Brand Scale To $5M a Year (It's Boring But It Works), 2026-09-21
 Last touched: 2026-09-22
+
+### SC-168 · Concentration stated as a SHARE of ads is partly a count of what you launched, and on our own accounts the top ad's share measures the budget rather than a ceiling
+
+Tier: T2 · Status: active
+Measured on this machine from five Meta ad-level exports across four accounts, so the arithmetic is reproducible. Banked as the boundary that stops [[Scaling Models#SC-163|SC-163]] and [[Creative Science#CR-255|CR-255]] being read off our own book.
+
+**Finding one, the relative metric is not an instrument.** The share of spend held by the "top 20% of ads" moves when ads are launched, with no change in delivery. Adding twelve ads spending $0.50 each: ChiroWorks 11 to 20 September moves **87.7% to 96.4%**, StayWell same window **73.4% to 93.3%**, SJR Commercial 9 to 16 June **61.1% to 71.3%**. The absolute top-5 share over the identical change moves **92.9% to 92.0%**, **95.0% to 93.3%** and **36.5% to 36.4%**. So state concentration as a count of ads, never as a share of them.
+
+**The direction of that artefact strengthens SC-163 rather than dissolving it, and this was tested for.** Adding low-spend ads pushes the relative figure UP, and larger accounts run more ads. SC-163 reports the top 20% share FALLING across spend brackets, 53% then 44% then 33%. The artefact therefore works against its headline, so real spend must be moving into the tail hard enough to overcome it.
+
+**Finding two, CR-255 and SC-163 are one measurement, not two.** Total account spend divided by the top ad's spend is identically one over the top ad's share of spend. Verified to nine decimal places on all five windows. SC-163's top-ad share of **7%** inverts to **14.3**, which sits inside CR-255's independently stated **12 to 18 winners** for a $150,000 peak day. **Do not quote the two as agreeing evidence; it double-counts one slide.**
+
+**Finding three, and it is why neither claim can be imported to our book.** The identity only reads as capacity when the top ad is at its ceiling. Ours are not, by a factor of roughly 150.
+
+| Account | Window | Ads spending | Spend | Per day | Top ad per day | Top ad share |
+|---|---|---|---|---|---|---|
+| SJR Commercial | 2026-06-09 to 06-16 | 52 | $4,897.15 | $612.14 | $66.39 | 10.8% |
+| SJR Commercial | 2026-07-10 to 07-20 | 8 | $1,024.02 | $93.09 | $56.83 | 61.0% |
+| ChiroWorks | 2026-09-11 to 09-20 | 22 | $624.10 | $62.41 | $24.76 | 39.7% |
+| StayWell | 2026-09-11 to 09-20 | 12 | $337.49 | $33.75 | $21.48 | 63.6% |
+| Phoenix Truxx | 2026-04-17 to 04-24 | 5 | $581.86 | $72.73 | $34.03 | 46.8% |
+
+SJR's 10.8% looks like SC-163's 7% and means the opposite: their top ad is pinned near $10,000 a day by [[Creative Science#CR-255|CR-255]]'s ceiling, ours absorbed $66.39 a day because that is what the budget offered. StayWell's best ad took $21.48 a day out of a $33.75 daily account budget. This is [[Meta Delivery & Andromeda#MD-137|MD-137]] as arithmetic: under $30,000 a month the platform funds about one ad, so our tails are not overflow capacity, because nothing overflowed.
+
+**Finding four, the leakage tail priced on our own accounts, against [[Scaling Models#SC-167|SC-167]]'s $200 a day.** Ads that spent and returned zero opt-ins: SJR 19 of 52 ads, $106.89, 2.2% of spend, **$13.36 a day**, median $3.68 and max $29.01; ChiroWorks 16 of 22, $35.55, 5.7%, **$3.56 a day**; StayWell 10 of 12, $98.05, 29.1%, **$9.81 a day**; Phoenix Truxx 2 of 5, $0.93, 0.2%. **The worst share on our book is worth $9.81 a day, so tail cleanup here is tidiness and not recovered money.** StayWell's window produced 12 opt-ins on 12 ads, too thin to rank an ad.
+
+**Guards, and they matter.** Five windows on five DIFFERENT date ranges, so the table compares accounts and not periods; one common window on all five is the cheap upgrade. Opt-ins are used in place of sales because no account on our book holds an attributed-sale series except Phoenix Truxx. The SJR files ship an unnamed account-total row carrying exactly half of each file's spend, which is the summed denominator the 2026-09-19 teaching pass corrected and the weighted-average mechanism already banked at [[Attribution & Incrementality#AT-116|AT-116]]; it is excluded everywhere above, confirmed by $4,897.15 over 783 opt-ins returning $6.2543. The SC-163 settling test, one account across a peak and an evergreen window, **cannot be run on our book, because no account here has ever pushed a peak ramp.**
+Sources: EvrythingAI own Meta ad-level exports, SJR Commercial, ChiroWorks, StayWell, Phoenix Truxx; computed 2026-09-23
+Last touched: 2026-09-23
+
+### SC-170 · A named account nearly doubled peak-window spend year over year and cost per purchase still FELL, on 10 to 20% increments gated on returns holding
+Tier: T3 · Status: active
+The single-account companion to [[Auction Mechanics & Bidding#AU-094|AU-094]], and it is the clearest worked example in the codex of scaling into the most expensive auction of the year without paying for it.
+
+**The brand and the window.** Compartés, a Los Angeles chocolate maker, run by elk Marketing. The goal going into Black Friday and Cyber Monday was to **nearly double ad spend against the same nine days a year earlier while holding a 4x return**.
+
+**What they actually did**, in the order it matters:
+- Handed **about 87% of the budget** to Meta's Advantage suite and let the ads run anywhere across Facebook and Instagram.
+- Fed that system genuine variety, because it only works if there is something to choose between: creator videos, holiday photography, animated graphics, and catalogue-built ads.
+- **Launched in rounds**, so they could see which idea was carrying the season and build the next round from it.
+- Raised budget **10 to 20% at a time, and only while returns held**.
+
+**Reported results.** Over the nine days around Black Friday and Cyber Monday, spend **+99%** year over year, revenue **+105%**, cost per purchase **-9.8%**. Across the eight-week season, **$2.8M in sales and 21,000+ orders, up 33.1% and 32.1%**. And the composition change that is easy to miss: **42.1% more orders from first-time buyers, shifting the campaign from mostly repeat customers to mostly new ones.**
+
+**The operator's own account of why it held**, from James Dupre, VP of Paid Media at elk: "Firm budget and efficiency guardrails gave us the confidence to scale when the account was ready." The guardrail is the mechanism, not the increment size. A 10 to 20% step with no efficiency gate is just a faster way to lose money.
+
+**Read this next to [[Scaling Models#SC-058|SC-058]] and the 2026-09-22 peak-window finding.** Those establish that the concentration behaviour the codex treats as settled does not behave the same way inside a peak-spend window. This case is consistent with that: the account got MORE efficient while doubling into the busiest auction of the year, on a wide creative base and an automated budget.
+
+**Provenance, and it applies to every number in this claim.** The source is Meta's own 2026 Agency Awards post. The entrants are agencies competing for an award, the results are agency-submitted, the judging panel is drawn from Meta and its award partners, and the winners were selected partly ON these numbers. That is survivorship selection at its maximum: the population is the winners of a contest, so nothing here says what the same tactic does on an average account. None of these campaigns ran a holdout except where the text names one. Meta publishing the post makes it T1 for *what Meta says happened*; it does not make the mechanism a law. Tiered T3 for that reason. The nine-day and eight-week figures are also year-over-year against a base the post does not disclose, so a 99% spend rise says nothing about the absolute size of the account.
+Sources: Meta for Business News, "Meet the 2026 Meta Agency Award Winners", 21 September 2026, read in full 2026-09-23
+Last touched: 2026-09-23
+
+### SC-169 · Several holiday campaigns split by audience and goal were found COMPETING for the same shoppers; merging them into one Advantage+ Shopping campaign with CRM-fed value signals returned 59% more per dollar at 41% lower cost per sale
+Tier: T3 · Status: active
+The consolidation claims in this topic ([[Scaling Models#SC-052|SC-052]], [[Scaling Models#SC-053|SC-053]], [[Scaling Models#SC-086|SC-086]]) are mostly arguments about reach, frequency and starvation. This is a named case where the stated fault was **internal auction competition**, and it is the largest brand attached to that diagnosis anywhere in the codex.
+
+**The diagnosis.** Christian Dior Couture's holiday campaign, its largest commercial moment of the year, had over several years been split across many separate campaigns, each with its own audience and its own goal. Code3's finding was that **they had started competing with one another for the same shoppers**, and that the fix was structural rather than budgetary. Code3's own framing: the way to sell more without spending more "didn't actually involve budget or the ads themselves. It was all about account structure."
+
+**What was changed, over eight weeks.** Several campaigns were combined into one using **Advantage+ Shopping**. The ad account was set up to favour shoppers likely to spend more. **Dior's CRM data was connected** so the system could learn from real purchases rather than from inferred value.
+
+**Reported results.** Return per dollar **+59%** year over year, cost per sale **-41%**, and nearly **four times** as many people watching Dior's videos to completion. Dior has adopted the structure for future campaigns, which is a stronger signal than any single number here: the advertiser kept it.
+
+**The honest reading, and it is a caution.** Three changes shipped together, consolidation, value optimisation, and a CRM connection. The post attributes the outcome to structure. Nothing in it separates the three, and connecting first-party purchase data to a value-optimised campaign is on its own a well-evidenced lift. **Do not quote this as proof that consolidation alone produced 59%.** Quote it as a named case where a large advertiser found its own campaigns bidding against each other and fixed it by merging them.
+
+**Scope.** Luxury e-commerce at Dior's scale, eight-week rebuild, agency-run. [[Scaling Models#SC-053|SC-053]] already says full consolidation is wrong for about 90% of advertisers. This case does not touch that: it is consolidation of campaigns chasing ONE audience for ONE seasonal goal, which is the situation SC-053's exceptions were written for.
+
+**Provenance, and it applies to every number in this claim.** The source is Meta's own 2026 Agency Awards post. The entrants are agencies competing for an award, the results are agency-submitted, the judging panel is drawn from Meta and its award partners, and the winners were selected partly ON these numbers. That is survivorship selection at its maximum: the population is the winners of a contest, so nothing here says what the same tactic does on an average account. None of these campaigns ran a holdout except where the text names one. Meta publishing the post makes it T1 for *what Meta says happened*; it does not make the mechanism a law. Tiered T3 for that reason.
+Sources: Meta for Business News, "Meet the 2026 Meta Agency Award Winners", 21 September 2026, read in full 2026-09-23
+Last touched: 2026-09-23

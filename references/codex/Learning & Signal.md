@@ -749,3 +749,21 @@ Measured on our own raw exports, so the counts are T2 and the ratios derived fro
 **Operating rule.** Put Result indicator next to Results before ranking anything, never compare two rows whose indicators differ, report each unit on its own line, and price the opt-in on the count of opt-ins rather than the count of results. Related: [[Attribution & Incrementality#AT-015|AT-015]] on what the column counts, [[Learning & Signal#LS-022|LS-022]] on event selection, [[Learning & Signal#LS-051|LS-051]] on defining the event as the business outcome, and [[Learning & Signal#LS-075|LS-075]] on the destination deciding what can be learned.
 Sources: own account exports, SJR Commercial and ChiropracticWorks, 2026-06-09 to 2026-06-16 and 2026-08-24 to 2026-08-30, recomputed 2026-09-17
 Last touched: 2026-09-17
+
+### LS-082 · Feeding server-verified IN-STORE conversions back through the Conversions API and optimising to store trips instead of web clicks cut the cost of driving a high-value shopper into a store by 44%
+Tier: T3 · Status: active
+A clean worked example of the thing this topic keeps asserting, which is that the optimisation event decides everything downstream.
+
+**The setup.** The Winn-Dixie Company, fresh off a January 2026 rebrand, wanted store visits rather than site traffic. Net Conversion implemented **Meta's Conversions API as a direct server-to-server connection**, feeding reliable real-time **in-store** conversion data back into Ads Manager, and **moved the campaign's optimisation target from web clicks to server-verified store trips**.
+
+**Reported result.** A **44% reduction in the cost of driving a high-value shopper to a Winn-Dixie store.**
+
+**Why the mechanism is the interesting half.** The change was not a bid, an audience or a creative. It was giving the ranking system a truthful signal about the outcome the business actually sells, and then asking it to optimise for that outcome. Web clicks were a proxy that correlated loosely with store visits; server-verified store trips are the thing itself. Everything the codex records about signal quality predicts exactly this shape of result.
+
+**Where it touches our own accounts.** Every client we run has an outcome that happens off the website: an appointment attended, a truck sold, a call booked and held. We optimise to a form submission because that is the event that is easy to fire. This case is the argument for pushing the real downstream event back through CAPI, and the 44% is the size of prize somebody else measured for doing it.
+
+**The limit.** A national grocery chain has point-of-sale infrastructure that can verify a store trip at scale. A single-location chiropractic clinic does not, and the equivalent for us is CRM-side appointment-attended data, which is only as good as whoever updates the CRM. The mechanism transfers. The data quality does not transfer automatically and is the actual work.
+
+**Provenance, and it applies to every number in this claim.** The source is Meta's own 2026 Agency Awards post. The entrants are agencies competing for an award, the results are agency-submitted, the judging panel is drawn from Meta and its award partners, and the winners were selected partly ON these numbers. That is survivorship selection at its maximum: the population is the winners of a contest, so nothing here says what the same tactic does on an average account. None of these campaigns ran a holdout except where the text names one. Meta publishing the post makes it T1 for *what Meta says happened*; it does not make the mechanism a law. Tiered T3 for that reason.
+Sources: Meta for Business News, "Meet the 2026 Meta Agency Award Winners", 21 September 2026, read in full 2026-09-23
+Last touched: 2026-09-23

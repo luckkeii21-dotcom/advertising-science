@@ -432,8 +432,9 @@ Charley T's seasonal calendar, stated across two videos. Impression supply spike
 **Confirmed again 2026-09-22 from portfolio data, with the window stated slightly wider.** Blue Sense calls **16 to 31 December the cheapest media of the quarter** and says CPMs drop massively, which matches this claim's direction on a window that starts a few days earlier than Boxing Day. Portfolio frequency also relaxes across it, from a 1.96 Black Friday peak back to 1.82 ([[Auction Mechanics & Bidding#AU-093|AU-093]]).
 
 **One mechanism he adds, which cuts against the obvious read of a cheap window.** He states that CPMs correlate with auction pressure and more specifically with **expected action rate on the landing page**: when conversion rates are strong and returns are good, Meta charges more, because it can. When an advertiser is unprofitable, CPMs sometimes come down. He flags the statement as a generalisation with a lot of nuance. The practical consequence for Q5 is that arriving with a genuinely good offer will itself inflate the CPM somewhat, so the cheap window is cheaper before you succeed in it than after. Asserted, nothing shown, and it should not be quoted as a mechanism Meta has described.
-Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Meta for Business, Maximise Q5 Performance: Unlocking the Value of Q5 Marketing for Mobile Game Developers, 2025-10-13 (read 2026-08-20); Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
-Last touched: 2026-09-22
+**The "Meta shows no figures" limit above is now PARTLY closed (2026-09-23).** A second Meta post, the Cyber 5 2025 review, publishes measured median advertiser rates for the peak window itself: conversion rate +74% and CPA -14% on Black Friday, +43% and -15% on Cyber Monday, both against early October, from all purchase-optimised ads across all verticals between 1 October and 30 November 2025. Banked in full at [[Auction Mechanics & Bidding#AU-094|AU-094]]. **Read the scope carefully before treating this as support for Q5.** The figures cover CYBER 5, the five days from Thanksgiving to Cyber Monday. The same post restates the Q5 claim, that CPMs fall to their lowest levels of the season while purchase intent holds, in words with no number attached, exactly as the 2025 mobile-games post did. So Meta has now measured the window BEFORE Q5 and still not measured Q5. The tier stays T3 and the lead-gen scope warning below is untouched.
+Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Meta for Business, Maximise Q5 Performance: Unlocking the Value of Q5 Marketing for Mobile Game Developers, 2025-10-13 (read 2026-08-20); Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21; Meta for Business News, "Cyber 5 2025: What worked, what changed and how to win Q5", 15 December 2025, read in full 2026-09-23
+Last touched: 2026-09-23
 
 ### AU-035 · Holding-company agencies return in the first weeks of January and their budget-insensitive spend lifts CPMs and takes the best impressions
 Tier: T3 · Status: contested
@@ -823,3 +824,24 @@ Directly against the common belief that frequency spikes during Black Friday. Ac
 **Read against [[Creative Science#CR-177|CR-177]]**, where the fatigue metric operators actually use is ad-level frequency above 2.0 over 14 days on cold. A whole portfolio peaking at 1.96 at the busiest moment of the year suggests that threshold is rarely crossed at account level even under maximum pressure, which makes it a much less common trigger than its usage implies.
 Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
 Last touched: 2026-09-22
+
+### AU-094 · Meta's own median advertiser rates show CPA FALLING through Cyber 5 even as CPMs rise, because conversion rate rises faster than price
+Tier: T1 · Status: active
+The first figures Meta has published for what the peak window does to an advertiser's costs, and they point the opposite way to the instinct that a crowded auction is an expensive one.
+
+**What Meta measured.** Daily median advertiser rates, across all purchase-optimised ads and all verticals, 1 October to 30 November 2025. Against early October:
+
+| Day | Conversion rate | Cost per acquisition |
+|---|---|---|
+| Black Friday | **+74%** | **-14%** |
+| Cyber Monday | **+43%** | **-15%** |
+
+Meta states the CPM half in words rather than numbers: CPMs rose through November as auction pressure intensified, and conversion rates rose faster, so the cost per acquisition came down anyway. Meta's own phrasing for the conclusion: "auction dynamics reward preparation and conversion excellence, not just budget size."
+
+**Why this matters to the codex specifically.** [[Auction Mechanics & Bidding#AU-034|AU-034]] has carried the line that Meta shows no figures for the seasonal windows, only direction, so nothing there was checkable. For Cyber 5 that limit is now closed. It also lands on the same side as the peak-window finding of 2026-09-22 and as the single-advertiser case at [[Scaling Models#SC-170|SC-170]], where one brand nearly doubled spend across the same nine days and cost per purchase still fell 9.8%. Population-level median and one named account now agree on direction.
+
+**The limit, and it is not small.** This is observational, not a test. The advertisers buying on Black Friday are not the same population, at the same budgets, with the same offers and creative, as the advertisers buying in early October. A median CPA that falls is partly a real efficiency effect and partly a mix shift toward brands that prepared, discounted, and ramped. Meta publishes no decomposition and has a direct commercial interest in the reader concluding that peak spend is cheap. Read the direction as trustworthy and the magnitude as an upper bound.
+
+**One thing in the footnote does not parse and is recorded rather than resolved.** Meta's method note says the window is 1 October to 30 November 2025 with "rates normalised to 1 October 2024 = 1", a base a full year before the window. Either the year is a typo for 2025 or the index is rebased to a prior-year anchor. Nothing about the direction changes either way, and the number should not be quoted to a client without that sentence attached.
+Sources: Meta for Business News, "Cyber 5 2025: What worked, what changed and how to win Q5", 15 December 2025, read in full 2026-09-23 on the en_GB locale
+Last touched: 2026-09-23

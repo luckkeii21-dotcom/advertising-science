@@ -302,3 +302,71 @@ Caught and run as catch-up on the Tuesday. **Add to the runbook's reading of "We
 **Merchant Center renders differently by transport, and the difference looks like a rollback.** A plain fetch on 2026-09-22 showed a newest dated entry of 15 July 2026; the 2026-09-07 WebFetch check recorded 11 August 2026. Same page, two transports, and the older-looking result is the artefact. This is the same class as the Marketing API changelog index under-rendering to v25.0. **Never report a newest-entry date going backwards as news; re-read on the other transport first.**
 
 **The Developer Blog post-body regex is not universal.** The urllib plus `post-body` div route recorded on 2026-09-07 returned nothing on the 2026-09-10 permalink `new-onboarding-experience-for-google-ads-api.html`, so that post's body has not been read. The index and the Atom feed both render its title and date fine.
+
+
+### Meta for Business News: the TITLE BASELINE now exists, and it found four unread posts sitting in plain sight (2026-09-23)
+
+Every note above prescribes a title diff and none of them could run one, because no title set had ever
+been stored. `cache/watchlist-seen.json` carried `meta-business-news` with the result string
+"NOT CHECKED" and a `last_checked` of 2026-09-17. **Both locales' 12-card title sets are now saved
+under `pages.meta-business-news.titles_us` and `titles_uk`.** From tomorrow the diff the 2026-09-14 rule
+asks for is mechanical.
+
+**Ceilings on the first browser read since 2026-09-20.** US moved, UK did not:
+
+| Locale | Ceiling | Change since 2026-09-20 |
+|---|---|---|
+| `?locale=en_US` | **21 September 2026**, "Meet the 2026 Meta Agency Award Winners" | **New.** Previous ceiling 15 September |
+| bare URL (renders en_GB) | 10 September 2026, Instant Hydration spotlight | Unchanged, eleven days behind the US shelf |
+
+**The locale-partition rule of 2026-09-20 held again and the gap WIDENED to eleven days.** It was four
+days on 20 September. A run reading only the bare URL today would have reported the source quiet while
+the US catalogue had moved twice.
+
+**Four posts were on the shelf, unread and unbanked, and reading them produced most of today's haul.**
+Three were US-only and one UK-only, and none was new:
+
+- *How do advertisers increase holiday ad budgets?* (card 11 Aug, post header **13 Aug 2026**), source of AT-125 and AT-126
+- *Cyber 5 2025: What worked, what changed and how to win Q5* (15 December 2025, UK-only), source of AU-094, CR-261 and the CR-058 amendment
+- *New Meta AI Features for Small Businesses* (19 August 2026), merged into MD-159
+- *Game Changers: Why the fastest-growing audience in sports* (19 August 2026), read in full and **deliberately not banked**
+
+**This is the same failure the 2026-09-20 entry diagnosed, arriving a second time.** There, a three-part
+series sat unread for four months because only one locale was ever read. Here, four posts sat unread
+because a title baseline that every note asked for had never been written. **The pattern in both: the
+ceiling check answers "has the newest thing changed" and says nothing about what is already on the shelf.
+A source can be checked daily for a month and still have unread posts in view.** The fix in both cases is
+a stored SET rather than a remembered maximum.
+
+**A new date artefact, and it is the third distinct one on this source.** *How do advertisers increase
+holiday ad budgets?* shows **11 August** on its card and **August 13, 2026** in its own post header. That
+is a two-day gap between card and post, which is larger than the one-day timezone drift recorded on
+2026-09-14 and different in kind from the format difference recorded on 2026-09-20. **Cite the date from
+the POST, never from the card**, and treat a card date as an approximate sort key only.
+
+**Meta publishes fictional case studies on this channel and discloses it only in the footnote.** Banked at
+AT-126 because it is a reading rule for this source, and repeated here because this is where a future run
+will look. Before banking any figure from a Meta for Business post, check whether the advertiser is NAMED.
+
+**Transport and browser, 2026-09-23.** `playwright` and `playwright-arcads` both failed CONNECT_TIMEOUT at
+session start again, a fourth consecutive day. **`playwright-higgsfield` connected and did every read**,
+after failing yesterday. The 2026-09-18 instruction to try every profile is doing real work: on two of the
+last four days exactly one profile answered, and it was a different one each time. Plain fetch was not
+attempted for this source; the standing instruction is still "use the browser". Plain fetch DID answer
+normally on `engineering.fb.com` and `about.fb.com`, so the Meta HTTP 400 wall recorded on 2026-09-22 is
+specific to `facebook.com` and `transparency.meta.com` properties.
+
+### The watchlist cache had not been committed since 2026-09-19 (found 2026-09-23)
+
+`cache/watchlist-seen.json` carried `last_run: 2026-09-19T14:37 IST` and every feed's `last_checked` read
+2026-09-19. The 09-20 and 09-22 runs ran `watchlist_check.py` without `--commit`, so their diffs were
+taken against a baseline up to four days stale and their "new links" counts were cumulative rather than
+daily. **Nothing was missed**, because a stale baseline over-reports rather than under-reports, and both
+days' logs record having read what surfaced. The cost is that neither day's count means what it says.
+
+Today's run committed. **Add to the runbook reading of step 2: the watchlist check is not finished until
+the cache is committed, and the cheapest verification is that `last_run` in `watchlist-seen.json` carries
+today's date.** Today's committed figures: Meta Engineering 2 items (both already read on 09-22, neither
+about ads), Meta Newsroom 2 (one the same subsea cable, one the Singapore enforcement post banked into
+MD-160), Google Ads & Commerce 0, arXiv 20 new with **0 passing the ad filter**, TikTok SDK unchanged at
+v0.1.8, Google Ads Announcements 396 answer ids with 0 added and 0 removed.
