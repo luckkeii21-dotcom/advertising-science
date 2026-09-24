@@ -2805,3 +2805,19 @@ The first figure in this codex that puts a number on the Spanish-language advant
 **Provenance, and it applies to every number in this claim.** The source is Meta's own 2026 Agency Awards post. The entrants are agencies competing for an award, the results are agency-submitted, the judging panel is drawn from Meta and its award partners, and the winners were selected partly ON these numbers. That is survivorship selection at its maximum: the population is the winners of a contest, so nothing here says what the same tactic does on an average account. None of these campaigns ran a holdout except where the text names one. Meta publishing the post makes it T1 for *what Meta says happened*; it does not make the mechanism a law. Tiered T3 for that reason.
 Sources: Meta for Business News, "Meet the 2026 Meta Agency Award Winners", 21 September 2026, read in full 2026-09-23
 Last touched: 2026-09-23
+
+### CR-265 · A portfolio operator reports results BETTER than ever post-Andromeda, at 50-plus new ads a week per business, against the roster-wide narrative that Andromeda made things worse
+Tier: T3 · Status: active
+Second-hand, no data shown, and banked because it is the only voice on this roster pushing the other way on a question the codex has been hearing one-sidedly.
+
+**The claim.** Ben Heath, reporting a paid day with Alex Hormozi: Hormozi's Meta results are better than ever after Andromeda, and explicitly **not only on the personal brand**. Heath raises and dismisses that objection himself, saying it holds "across the board" on the portfolio companies. Heath's framing of why it is interesting is the right one: "that goes against the narrative of what you hear from most advertisers online."
+
+**The stated price of it.** More creative than ever, at a cadence of **50-plus ads recorded every single week** per business, by whoever records for that portfolio company. Heath relays that Hormozi finds the work boring and does it anyway.
+
+**Evidence status, stated bluntly.** This is one person relaying a second person's verbal summary of unshown accounts. No spend, no account count, no before-and-after, no window, no definition of "better". It cannot be quoted as a result. What it is good for is as a counterweight: every "Andromeda broke my account" claim in this file is also an unshown assertion, and this is the same class of statement pointing the other way from an operator with a portfolio rather than one account.
+
+**Where it connects.** [[Creative Science#CR-001|CR-001]] has Meta building Andromeda explicitly to absorb rising creative volume, which is the T1 mechanism this anecdote is consistent with. [[Creative Science#CR-255|CR-255]] already warns that a creative-volume target is a count of WINNERS rather than a count of ads, and 50 a week is a production number with no win rate attached. [[Meta Delivery & Andromeda#MD-125|MD-125]] holds the per-ad-set ceiling.
+
+**The honest reading for a client conversation.** Two things could produce "better post-Andromeda" here and they have different costs: the system genuinely rewarding creative diversity, or an operator who can afford 50 ads a week outcompeting operators who cannot. Nothing in the account distinguishes them, and the second one is the reading a smaller client should price first.
+Sources: Ben Heath, "I paid Alex Hormozi $235,000 for his Facebook Ads Strategy", 2026-09-23
+Last touched: 2026-09-24

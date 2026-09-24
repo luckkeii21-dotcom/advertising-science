@@ -9,6 +9,142 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-24 (research run)
+
+⚠ **Meta now caps organic Facebook Page link posts at 2 a month on the free tier, and sells the increase through Meta One. Links in ads are exempt, so no client campaign is affected. Client ORGANIC posting is.** Read at source on Meta's own help centre today. This entry also corrects a call this engine made on 2026-09-15.
+
+**3 transcripts in, 7 new claims, 8 merges, 0 contested, 0 refuted, 0 harvest errors, 0 watchlist errors.** The YouTube roster carried the day. The Meta lane was fully readable for the second consecutive day and returned nothing new.
+
+### 1. YouTube harvest
+
+`harvest.py daily` ran clean. **3 new transcripts, 11 skipped short, 1 missing subtitles, 0 errors, 0 RSS fallbacks.**
+
+| Channel | Video | Outcome |
+|---|---|---|
+| nick-theriot | I tested ABO & Cost Caps (here's the results), 20 min | AU-095, SC-171, SC-172, MD-167, merges into SC-044, SC-008, SC-161, AU-051 |
+| ben-heath | I paid Alex Hormozi $235,000 for his Facebook Ads Strategy, 17 min | CR-265, merges into MD-125, LS-074 |
+| jon-loomer | Meta Wants Businesses to Pay to Share Links, 10 min | Triggered the MD-166 source read. Banked on Meta's page, not on his |
+
+**The RSS fallback count went to zero for the first time since 2026-09-05.** Every run since then has logged 12 fallbacks because YouTube's `feeds/videos.xml` endpoint was returning 404 or 500 for every channel and `harvest.py` was falling through to the `/videos` tab via yt-dlp. Today it did not need to. Recorded as an observation, not as a fix: nothing in our code changed, so this is YouTube's endpoint behaving, and it may not hold tomorrow.
+
+Unextracted backlog after the run: **0**. The 25-a-day rule never engaged.
+
+### 2. Watchlist
+
+**Browser: the `playwright` profile connected on the first attempt and did every Meta read.** Second consecutive day with a working browser after the 2026-09-22 zero-browser outage.
+
+**Meta for Business News, both locales, and the title diff the 2026-09-23 entry set up ran mechanically for the first time.**
+
+| Locale | Ceiling | Result |
+|---|---|---|
+| `?locale=en_US` | 21 September 2026, Meta Agency Awards | **12 titles, byte-identical to the cached set, same order. 0 new** |
+| bare URL (renders en_GB) | 10 September 2026, Instant Hydration | **12 titles, identical to cache. 0 new.** Now twelve days behind the US shelf |
+
+**This is what the diff is supposed to look like on a quiet day**, and it took nine days of notes to get here. The baseline written yesterday did its job: two locale reads, two clean comparisons, zero judgement calls about rotation or date drift.
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 200, build 24 Sep 00:02 UTC. **1 new: Private Processing on Meta AI Glasses.** Read for ad content, none, not banked |
+| Meta Newsroom (RSS) | 200, build 24 Sep 06:15 UTC. **3 new, all 23 Sep, all Connect hardware:** Ray-Ban Display features, Meta VR Glasses, Ray-Ban Meta Audio. All three scanned in full for advertising content. **The only match in any of them is the cookie banner.** Not banked |
+| Google Ads & Commerce (RSS) | 200, build 23 Sep 08:30 UTC. **1 new, and it is real platform news:** AI Brief in seven more languages plus a new AI Max reporting feature. Read in full, banked at GA-080 |
+| Google Ads Announcements | 200. **396 answer ids, 0 added, 0 removed.** Fifth consecutive clean run on the set diff shipped 09-20 |
+| TikTok SDK changelog | 200, unchanged at v0.1.8 |
+| arXiv cs.IR (RSS) | 200, **today's own 04:00 UTC build**, 32 items, 28 new, **0 passed the ad filter.** Normal |
+
+Weekly (Mon) sources were not due. Monday 09-22 ran them as catch-up, so the lane recorded on 2026-09-22 is current.
+
+**TikTok product and policy news remains unmonitored** behind the permanent India geo-block. Only the SDK changelog answered, so this lane is not logged as clean.
+
+**The checker committed.** `last_run` carries today's date, per the rule added 2026-09-23.
+
+### 3. Claims merged
+
+**7 new, 8 merges, 0 contested, 0 refuted.** A full duplicate scan across all eleven topic files after the merge returns **1,294 claims and zero duplicate IDs**.
+
+| ID | Topic | Tier | Claim |
+|---|---|---|---|
+| MD-166 | Meta Delivery | **T1** | Facebook Pages capped at 2 organic link posts a month free, 8/20/unlimited by Meta One tier; **links in ads exempt** |
+| MD-167 | Meta Delivery | T4 | The same post ID in two live campaigns appears to self-compete: $3,600 in one, $26 in the other |
+| AU-095 | Auction | T2 | The cost-cap ratchet: open at $30 under a $50-60 average, +$5 every 2-3 days, and raise the BUDGET freely |
+| SC-171 | Scaling | T2 | An ABO testing campaign cost ~$10k for what the operator estimates a CBO would learn for ~$2k |
+| SC-172 | Scaling | T2 | Across 51 ad-set tests, killing the top-spending ad to feed a cheaper sibling failed 99% of the time |
+| CR-265 | Creative | T3 | A portfolio operator reports BETTER results post-Andromeda, at 50+ new ads a week per business |
+| GA-080 | Google Auction | T1 | Google's unified Search-ads-journey report for AI Max, plus AI Brief in 7 more languages, no ship date |
+
+**Merges:** MD-157, MD-125, SC-044, SC-008, SC-161, AU-051, LS-074, GA-043.
+
+### The correction, and it is ours
+
+**On 2026-09-15 this log banked Meta One at MD-157 and deliberately withheld a ⚠, writing: "Meta One removes nothing, bans nothing and breaks nothing. It is a new optional product, so it gets a headline and not an alarm."** That was written off Meta's announcement, which lists "links in organic posts and Reels" as a feature the subscription unlocks.
+
+Meta's help centre states the same change as a cap. Free and Essential tiers: **2 organic Facebook Page posts or comments carrying links per month.** Advanced $49.99: 8. Expert $149.99: 20. Max $499.99: unlimited. Resets on the 1st, or on the renewal date for subscribers, no rollover.
+
+**The failure mode is worth naming because it will recur.** A feature list and a limit table describe the same product from two ends, and only one of them reads as a restriction. Reading the announcement alone is how a paywall gets logged as a product launch. The rule that follows: when a platform announces that a subscription "unlocks" something users already do, go find the page that states the free-tier number.
+
+**What does NOT change, and it is most of it.** Links in ads are exempt. So are links to Meta properties, affiliate-partnership links, and additional links inside the comments of a post that already carries one. Nothing in this touches delivery, cost or ranking on any client campaign. MD-157's closing line, that nothing in Meta One touches ad delivery, survives intact.
+
+**Meta's own hedge, quoted because it has to travel with the claim:** "Limits on posts and comments with links may not apply to all Pages." Meta does not say which. Nobody can state from this article whether a given client Page is subject to it.
+
+### Source discipline, exercised twice
+
+**Once against a practitioner.** Jon Loomer's video is what surfaced this, and two of his specifics did not survive the source read. He states per-tier Instagram splits (8 Facebook plus 4 Instagram at Advanced, 20 plus 8 at Expert); **the article is Facebook Pages only and publishes one number per tier with no Instagram split**, so those figures are unverified and are not in the claim. He states that a link in the comments does not get around the limit; **Meta exempts extra links in the comments of a post that already carries one.** MD-166 is banked on Meta's page. Loomer is credited as the pointer, not as the source of a number.
+
+**Once against Meta.** The help centre prints Expert **$149.99** and Max **$499.99**. The Meta for Business announcement, re-read in full on the same day, prints **$149.00** and **$499.00**. Two Meta surfaces, one day, a dollar apart. Third documented self-contradiction on this source after the card-date drift (2026-09-14) and the locale partition (2026-09-20).
+
+### The count nobody has ever produced
+
+**SC-008 has been `contested` since 2026-08-19** on whether to kill an ad eating an entity's budget: four operators asserting leave-it-on, one asserting kill-the-worst-profit, **zero numbers from anyone on either side**.
+
+Theriot ran 51 ad-set tests and reports the reflex failing: "99% of the time that we tested, in all of these different 51 tests... turning off the top spending ad and putting spend towards the lower spending ad that was converting way better, 99% of the time it did not hold performance at all." His response was structural rather than tactical: he stopped reading the ad level inside a testing campaign and now kills whole ad sets.
+
+**It does not close SC-008 and SC-172 says so on its face.** Different structure (ABO within an ad set, not CBO within a campaign), and "99% of 51" is recalled on camera with no log, no definition of "did not hold performance" and no before-and-after CPA on any of the 51. It is still the only number either side has produced in five weeks.
+
+### An operating rule that changed shape
+
+**SC-044's 3x kill gate has been carrying two different anchors and nobody had noticed.** Charley T and Matt Shiver state it against TARGET cost per result. Theriot states it against ACCOUNT AVERAGE. In a healthy account those converge. In a rescue they do not: an account at a $300 cost per purchase against a $100 target burns **$900 an ad set** on the account-average version to learn nothing.
+
+Theriot's own fix is to swap the anchor to 3x AOV in that case, taking his example from $900 to $300. Merged into SC-044 as: **3x the smaller of target CPA and AOV, over at least 3 days.** This matters for us specifically, because takeover accounts arrive running far off target by definition.
+
+### Read in full and deliberately not banked
+
+- **Three Meta Connect hardware posts** (Ray-Ban Display features, Meta VR Glasses, Ray-Ban Meta Audio, all 23 Sep) and **Private Processing on Meta AI Glasses** on Meta Engineering. All four scanned end to end for advertising, monetisation or campaign content. **The only match in any of the four is the cookie consent banner.** No new ad surface is announced in any of them.
+- **Most of the Ben Heath video.** A sponsor read, a Skool pitch, and the qualified-lead-event walkthrough, which is a clean restatement of material already banked at LS-008, LS-011, LS-074, AT-030 and CR-096 and added no mechanism. Only the creative-volume claim and the OTP corroboration were taken.
+
+### 4. Skill update
+
+**No law moved.** The hot layer in `SKILL.md` was rewritten at its opening paragraph for four things: the MD-166 correction of this engine's own 2026-09-15 call, the SC-172 count on SC-008, the SC-044 anchor split, and the two things that did NOT move (zero controlled cost-cap comparisons still, GA-043 still open).
+
+### 5. Errors and gaps
+
+**Errors: 0 in the harvest, 0 in the watchlist checker, 0 browser failures.**
+
+**Gaps, carried forward:**
+
+1. **Still open from 09-22:** read the Haus Black Friday report at source to upgrade AT-122 to T2, and read arXiv 2603.01590v2 (IDProxy, Xiaohongshu) in full rather than from its abstract.
+2. **Still open from 09-23:** the Cyber 5 method footnote does not parse (AU-094); CR-261's 7.3% has no stated comparison group; the generative-AI shopping figures cited only to "Forbes, December 2025" are unchased.
+3. **New: MD-166's scope is unknown for our own clients.** Meta says the limit "may not apply to all Pages" and names no criterion. **Nobody has checked whether the ChiroWorks, StayWell, SJR Commercial or Phoenix Truxx Pages are subject to it.** That is a five-minute check inside each Page and it has not been done.
+4. **New: MD-167 has a cheap test nobody ran.** Pause the ad in the first campaign for 72 hours and read the second campaign's spend on the same post ID. Until someone does, the self-competition read and a plain starvation read are indistinguishable.
+5. **New: GA-080 has no ship date.** "Later this year" is all Google states. Re-check the Google Ads release notes on the next weekly Monday lane rather than waiting for the blog to repeat itself.
+
+
+## 2026-09-24 (teacher run; the research lane was still running and had written no entry)
+
+**Lesson 035 shipped: Brand A Does Not Exist. No video, Thursday.** Harvest-driven from the **2026-09-23 research entry**, which banked 11 claims and 4 merges and went untaught because lesson 034 was built on the 2026-09-22 entry the research lane had not written in time.
+
+**The spine is [[Attribution & Incrementality#AT-126|AT-126]], T1: Meta for Business News prints invented case studies and real ones in the same format.** "Holiday measurement strategies" opens on a Brand B walking into January with 14,200 incremental conversions at $7.40 per incremental result and a 20% budget rise. The disclaimer that the example is fictional sits below the sources and below the call to action. Nothing at the point where a reader meets the number says it is invented.
+
+**Built out into a four-grade reading of one publisher on one day**, because all four grades were produced in a single reading session and that is what makes the point teachable. Invented: AT-126. Selected: the six 2026 Agency Awards claims, all tiered T3 on survivorship despite Meta publishing them, [[Creative Science#CR-264|CR-264]] and [[Scaling Models#SC-170|SC-170]] among them. Real but conditioned: the [[Creative Science#CR-058|CR-058]] partnership merge, where Meta's 19% lower acquisition cost was generated at **20% or more of cell spend** against the roughly 10% this codex has been briefing, on data running June 2021 to January 2022 and June 2023 to June 2024. Real and motivated: [[Auction Mechanics & Bidding#AU-094|AU-094]], T1 Cyber 5 medians, cost per acquisition down 14% and 15% while CPMs rose, observational, with Meta holding a direct commercial interest in the conclusion.
+
+**The decision rule the lesson produces: a published number can move money only when you can name the advertiser, name the method, and show the conditions match yours.**
+
+**Our own version of the failure, and it is the section that should land.** On **24 April 2026 we put "83% Spanish" in a Phoenix Truxx client report.** The tag marked a call Spanish whenever "en español" appeared in the transcript, and our own voice agent says that line in its opening on every call it makes. The phrase appears in **748 of 912 transcripts**, and in **309 of the calls tagged Spanish the customer never speaks a word of Spanish**. Real share 58.6% on customer speech, 61.3% on opt-in forms, 25.1% of Facebook opt-ins by July. It did not stay a number: `07 - Ad Targeting Brief.md` turned it into "Spanish-first, English is the 17% minority cut" and that shaped every concept briefed on the account for months.
+
+**Measured, and new: the codex is 69% T3.** 1,231 claims on file. **92 T1, 109 T2, 850 T3, 153 T4, 27 untiered.** Counted off the 11 topic files by claim header and tier line. The 109 T2s are the only claims measured on our own accounts. **26 claims cite Meta for Business News**, which is the population AT-126's named-advertiser test now has to be run against.
+
+**No claim was amended and no law changed.** The lesson is a reading of claims banked yesterday, so nothing new was banked. Three open items created: run the named-advertiser test across those 26 claims, size any partnership-ads brief at 20% of cell spend, and settle the Phoenix Truxx language share, which is still 61.3% Spanish against a later 83% English read of 2,577 contacts and unusable either way.
+
+**Engine.** Both lanes launched at **12:39:16**, the same second again. Thirteen-plus days deep, and research is scheduled 07:00 against teacher 08:00, so both went more than four hours late together. The watchdog logged "a run is in progress; standing down" at 12:39:20 and correctly did nothing. The research lane was still running through this whole pass, so all four source claims were re-checked free at 12:43:08 and the four topic files were confirmed untouched since 2026-09-23 09:55. **Inbox empty for the thirty-fifth consecutive run.** Rotation pointer **HOLDS at 6**: the lesson landed on Attribution & Incrementality at index 5, which is not the pointer's own topic, so no exception was needed. Next topic is still Google Auction & Smart Bidding.
+
 ## 2026-09-23 (research run)
 
 - **0 transcripts in, 11 new claims and 4 merges, all of it from the Meta watchlist.** The YouTube roster was genuinely quiet and the browser lane carried the whole day. First browser read of Meta for Business News since 2026-09-20, after two days with no browser at all.
@@ -26,6 +162,24 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 - **A process defect found and fixed: the watchlist cache had not been committed since 2026-09-19.** The 09-20 and 09-22 runs ran the checker without `--commit`, so both diffed against a baseline up to four days stale and both reported cumulative "new link" counts as daily ones. Nothing was missed, because a stale baseline over-reports rather than under-reports. Today's run committed. **The check is not finished until `last_run` in `watchlist-seen.json` carries today's date.**
 - **Read in full and deliberately NOT banked.** *Game Changers: Why the fastest-growing audience in sports lives across Meta technologies* (19 Aug 2026): a category and audience post with two unmethoded survey numbers, no auction, no delivery, no creative mechanic, and no client of ours in the vertical. *Open-Sourcing Rebalancer* and *Petal* on Meta Engineering: datacenter allocation and a subsea cable.
 - **Gaps noticed.** (1) **Yesterday's two open items are still open**: read the Haus Black Friday report at source to upgrade AT-122 to T2, and read arXiv 2603.01590v2 (IDProxy, Xiaohongshu) in full. (2) The Cyber 5 method footnote says the window is Oct to Nov 2025 with "rates normalised to 1 October 2024 = 1", a base a year before the window; unresolved, flagged on AU-094. (3) CR-261's 7.3% has no stated comparison group, so the direction is usable and the magnitude is not. (4) The generative-AI shopping numbers in the same post (AI traffic +670% year over year, AI involved in 20% of all online orders, AI-referred shoppers 38% more likely to convert) are cited only as "Forbes, December 2025" with no study named, so they were read and not banked; worth chasing to source, because nothing else in this codex measures AI-referred commerce traffic.
+
+## 2026-09-23 (teacher run; the research lane was still running)
+
+**Lesson 034 shipped: A Ceiling and a Budget Look the Same in the Spend Column. Video yes, 3m 16s, Wednesday.** Harvest-driven from the **2026-09-22 research entry**, which lesson 033 could not use because the research lane had not written it when the teacher pass ran. That was the biggest single-source day in a while, 22 new claims, and it went untaught. Took [[Scaling Models#SC-163|SC-163]], the Pareto break, and went to test it against our own five export windows.
+
+**I went to break SC-163 and made it stronger.** The "share of spend held by the top 20% of ads" is not an instrument: it moves when you launch an ad, with delivery unchanged. Adding twelve ads spending $0.50 each takes ChiroWorks from **87.7% to 96.4%**, StayWell from **73.4% to 93.3%** and SJR from **61.1% to 71.3%**, while the absolute top-5 share over the identical change moves 92.9 to 92.0, 95.0 to 93.3 and 36.5 to 36.4. **Then the direction saved the claim.** The artefact pushes the relative figure UP and larger accounts run more ads, so it works AGAINST SC-163's reported 53-44-33 fall rather than explaining it.
+
+**A double-count found in the same harvest, and it is arithmetic.** Total account spend divided by the top ad's spend is identically one over the top ad's share, verified to nine decimals on all five windows. SC-163's 7% inverts to **14.3**, which sits inside [[Creative Science#CR-255|CR-255]]'s independently stated **12 to 18 winners**. Those are one measurement, not two, and quoting them as agreeing evidence double-counts one slide. Both claims amended to carry the warning.
+
+**Banked: [[Scaling Models#SC-168|SC-168]], T2** on our own exports. **The finding that matters for our book: the identity only reads as capacity when the top ad is at its ceiling, and ours are not, by a factor of roughly 150.** SJR's top ad holds 10.8% of spend against Blue Sense's 7%, and it means the opposite: theirs is pinned near $10,000 a day, ours absorbed **$66.39 a day** because that is what the budget offered. StayWell's best ad took $21.48 a day out of a $33.75 daily budget. This is [[Meta Delivery & Andromeda#MD-137|MD-137]] as arithmetic, so our tails are not overflow capacity, because nothing overflowed. **Amended: SC-163 and CR-255.** No law changed.
+
+**The leakage tail priced against [[Scaling Models#SC-167|SC-167]]'s $200 a day.** Ads that spent and returned zero opt-ins: SJR 19 of 52 at $13.36 a day, ChiroWorks 16 of 22 at $3.56, StayWell 10 of 12 at $9.81, Phoenix Truxx 2 of 5 at $0.12. **The worst share on our book is worth under ten dollars a day, so tail cleanup here is tidiness and not recovered money.** Worth saying plainly before someone spends an afternoon on it.
+
+**The lesson 031 trap is still live in the files.** The SJR export ships an unnamed account-total row carrying exactly half of each file's spend. Sorted by spend it lands on top and reads as the biggest ad at 50.0%. It would have doubled every figure above. Excluded everywhere, confirmed by $4,897.15 over 783 opt-ins returning $6.2543.
+
+**Open items created, all cheap.** One common window across all five accounts, because SC-168 compares accounts and not periods. Retire the share-of-ads concentration metric from our reporting. And SC-163's settling test cannot be run on our book at all, because no account here has ever pushed a peak ramp.
+
+**Engine.** Both lanes launched at **09:40:00**, the same second again, twelve-plus days deep. The research lane was still running during this pass, so SC-168 was re-checked free at 09:51:33 and again at 09:52:58 immediately before writing. **Inbox empty for the thirty-fourth consecutive run.** Rotation pointer HOLDS at 6, because a harvest-driven lesson landed on Scaling Models at index 4 rather than on the pointer's own topic. Next topic is still Google Auction & Smart Bidding.
 
 ## 2026-09-22 (research run)
 

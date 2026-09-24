@@ -337,8 +337,9 @@ Tier: T3 · Status: active
 As of December 2025, an account running broad match keywords, shopping ads with a feed, Performance Max, or AI Max had the potential to serve inside AI Overviews and AI Mode. There is no setting to turn it off and no report that breaks those clicks out, so no advertiser can state what share of spend landed there. His words: "I have no reporting either. So I don't even know if I'm getting clicks there or not and how many." He hoped Google would ship the reporting during 2026, which is worth re-checking now. This is a live measurement blind spot rather than a tactic, and it is the most consequential Google claim in this batch. Two consequences for us. Any account of ours running any of those four surfaces contains an unmeasured spend allocation, and any statement we make about where Google budget went inherits that unknown. Practitioner claim with no platform documentation cited, so verify against Google's current help docs and promote to T1 on confirmation.
 **Checked against Google's own release, 2026-09-17, and the gap is still open.** On 2026-09-16 Google made AI performance insights generally available in Merchant Center across five countries, giving a retailer a **share-of-voice view of how its brand and products are discovered on AI Mode and AI Overviews**. That is the closest thing Google has shipped to answering this claim and it does not answer it. It is a brand and product visibility report inside Merchant Center, not a spend or click breakout inside Google Ads, and it reaches only merchants with a feed. **An account running broad match, PMax or AI Max still cannot state what share of its spend landed on an AI surface.** Full release detail at [[Google PMax & Shopping#GP-047|GP-047]]. Keep re-checking; do not let a visibility product be reported to a client as ad reporting.
 
+**Re-checked 2026-09-24 against Google's newest reporting release, and the gap is still open.** Google announced a "single, unified view of the Search ads journey" for AI Max, showing the triggering search term, the creative assets the user saw and the landing page they reached, with availability stated only as "later this year". **That is a within-Search attribution view and not a surface-level spend breakout**, so an account running broad match, PMax or AI Max still cannot state what share of its spend landed inside AI Overviews or AI Mode. Full record at [[Google Auction & Smart Bidding#GA-080|GA-080]]. Second adjacent-but-insufficient release in eight days, after [[Google PMax & Shopping#GP-047|GP-047]] on 2026-09-17.
 Sources: Blue Sense Digital, Google Ads in 2026 (w/ Austin from Grow My Ads), 2025-12-15 · Google, Boost your holiday sales with these agentic commerce updates, 2026-09-16
-Last touched: 2026-09-17
+Last touched: 2026-09-24
 
 ### GA-044 · One agency's whole book shows no paid-side decline from zero-click AI results, with the traffic collapse landing on informational and publisher pages instead
 Tier: T3 · Status: active
@@ -651,3 +652,21 @@ The clearest statement in this codex of why the two platforms should not be scal
 **The operating rule.** Ramp Google on a schedule with the prep done, and never scale it the way Meta is scaled.
 Sources: Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21
 Last touched: 2026-09-22
+
+### GA-080 · Google is shipping a unified Search-ads-journey report for AI Max and AI Brief in seven more languages, and neither closes the AI-surface spend blind spot
+Tier: T1 · Status: active
+Google Ads & Commerce Blog, 23 September 2026, read in full. T1 for existence and product copy only. Nothing here states that AI Max performs, and the same tier guard applies as at [[Google Auction & Smart Bidding#GA-062|GA-062]].
+
+**What was announced, two things.**
+
+1. **AI Brief closed beta widens to seven more languages:** Dutch, French, German, Italian, Japanese, Portuguese and Spanish. Google's description of the feature: it "lets you guide AI Max in your own words with detailed context on your business, audience, and key messaging." Still a closed beta, so availability is by invitation.
+
+2. **A new report in Google Ads**, described as "a single, unified view of the Search ads journey", showing "what search terms triggered your ads, which creative assets the user saw, and exactly where they landed on your website." Google's stated purpose includes validating "the strategic value AI Max brings to your campaigns."
+
+**Availability, quoted because it is the whole limit:** "We'll share additional details and availability later this year." So there is no ship date, no eligibility list and nothing an account can be checked against today.
+
+**Checked against the open blind spot, and it stays open.** [[Google Auction & Smart Bidding#GA-043|GA-043]] records that broad match, Shopping feeds, PMax and AI Max can all serve inside AI Overviews and AI Mode with no setting to disable it and no report that segments those clicks or that spend. **A search-term-to-asset-to-landing-page report is a within-Search attribution view. It does not break out what an ad account spent on an AI surface**, so the thing GA-043 is waiting for has not shipped. This is the second time in eight days that a Google reporting release has been checked against GA-043 and found adjacent rather than sufficient, after the Merchant Center AI performance insights release at [[Google PMax & Shopping#GP-047|GP-047]] on 2026-09-17.
+
+**One line worth keeping for an account review.** Google is describing a first-party report whose stated job includes validating its own product's value. Read the journey data, do not read the framing. The instrument that actually measures AI Max on our accounts is still the within-campaign experiment documented at [[Google Auction & Smart Bidding#GA-062|GA-062]].
+Sources: Google Ads & Commerce Blog, "We're bringing AI Brief to more languages and adding a new AI Max reporting feature", 23 September 2026, read in full 2026-09-24
+Last touched: 2026-09-24

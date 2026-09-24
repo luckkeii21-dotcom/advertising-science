@@ -11,6 +11,8 @@ tags: [advertising-science, lesson, scaling-models, concentration, creative-volu
 
 # Lesson 034 · A Ceiling and a Budget Look the Same in the Spend Column
 
+🎬 **Lesson video (3m 16s, silent, watch anywhere):** [[video/2026-09-23-lesson-034.mp4]]
+
 For a year this codex has carried concentration as a law. Twenty percent of ads take eighty percent of spend, and a CBO compounds it until about 4% of ads hold about 64% of the account. That is [[Scaling Models#SC-058|SC-058]].
 
 On Monday a dataset landed that disagrees, and it came from the same operator who taught us the law.

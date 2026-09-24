@@ -1083,8 +1083,9 @@ Jon Loomer, 6 May 2026: "it was nice when Meta actually came out and said a few 
 Ben Heath independently confirms the withdrawal and dates his own revision to it, 3 April 2026: "We now aim for 20 different ad creatives per ad set. We used to be limited to six, that's what Meta used to recommend, but post Andromeda things have really changed."
 **Why this is worth its own claim: anyone still quoting "Meta says six" is quoting a retired document.** Two operators say it was withdrawn and both tie the withdrawal to Andromeda. Neither shows the original or the removal, so this is T3 on the fact of withdrawal. The 50 ceiling is stated from memory on audio with no screen, so it is T3 and not a documented platform limit.
 Feeds law 4a. Heath's 20 is live-concurrent creatives per ad set, stated unambiguously, which corroborates the count already on file for him and dates it.
+**Third statement of the same position from this source, 2026-09-23.** Ben Heath, relaying a paid session with Alex Hormozi: "They used to say no more than six ad creative in any one ad set. Totally throw that out. You can have 20, 30, 50 or more running at any one time." His stated constraint is supply rather than the platform: "the limiting factor is not what the platform can handle anymore... the constraining factor is always how much good stuff can you actually produce." That raises his own live-concurrent number from the 20 recorded here in April 2026 to an open range topping out at the 50 ceiling, from the same speaker, and still with nothing shown. The portfolio-scale version of the same argument is at [[Creative Science#CR-265|CR-265]].
 Sources: Jon Loomer, Does Adding More Ads Actually Hurt Performance, 2026-05-06; Ben Heath, Facebook Ads in 2026 NEW Secrets Tips Strategies, 2026-04-03
-Last touched: 2026-08-24
+Last touched: 2026-09-24
 
 ### MD-126 - Left unconstrained, Meta drives engaged-audience spend up until it nearly equals prospecting spend, and forcing separation cut engaged spend by $1.2M year over year with prospecting flat
 Tier: T2 - Status: active
@@ -1518,8 +1519,11 @@ Meta's own newsroom post is the source for every number here. Meta One is a subs
 **The feature list confirms the closing line above rather than changing it.** Competitive Insights on Instagram comparing up to 10 public accounts on public metrics, extended insights history beyond 90 days with CSV export, Custom Audience Insights on Facebook covering people who engage but do not follow, content scheduling up to a year ahead for reels and posts and 30 days for stories, links in organic posts and reels, an Instagram link page holding up to 20 links, a bold follow button, verified WhatsApp channels and a custom WhatsApp web URL. **Every one of those is organic, profile or support tooling. Nothing in Meta One touches ad delivery, ad cost or ad ranking.**
 Sources (added 2026-09-18): Meta for Business, "Introducing Meta One plans for businesses", 2026-09-15, read in full 2026-09-18
 
+**The link feature is also a CAP, found 2026-09-24 and banked in full at [[Meta Delivery & Andromeda#MD-166|MD-166]].** This claim lists "links in organic posts and reels" among the Meta One features and closes by saying every feature in the bundle is organic, profile or support tooling. Both statements survive. What this claim did not carry is the other side of the same change: Meta's help centre states a **default limit of 2 organic Facebook Page posts or comments with links per month** on the free and Essential tiers, rising to 8 on Advanced, 20 on Expert and unlimited on Max. So Meta One is not only adding a capability, it is charging for one that was previously unmetered. **Links in ads are explicitly exempt**, which is why the closing line about ad delivery, ad cost and ad ranking still holds exactly as written.
+
+**A price correction against this claim's own numbers.** This claim records Expert at $149/mo and Max at $499/mo from the newsroom and business posts. The help centre, read 2026-09-24, prints **$149.99 and $499.99**. Both are Meta's own surfaces on the same day. Quote neither figure without naming which page it came from.
 Sources: Meta Newsroom, Introducing Meta One: A Subscription Service With More Features and AI to Create, Connect, and Stand Out, 2026-09-15, https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/; Ben Heath, Breaking Meta Ads News! Meta One is here..., 2026-09-15
-Last touched: 2026-09-18
+Last touched: 2026-09-24
 
 ### MD-158 · Human support and organic distribution are now things a business buys from Meta by subscription, and neither is in Meta's own Meta One announcement
 Tier: T3 · Status: active
@@ -1646,3 +1650,47 @@ Most Advantage+ Audience evidence in this codex is either Meta marketing with no
 **Provenance, and it applies to every number in this claim.** The source is Meta's own 2026 Agency Awards post. The entrants are agencies competing for an award, the results are agency-submitted, the judging panel is drawn from Meta and its award partners, and the winners were selected partly ON these numbers. That is survivorship selection at its maximum: the population is the winners of a contest, so nothing here says what the same tactic does on an average account. None of these campaigns ran a holdout except where the text names one. Meta publishing the post makes it T1 for *what Meta says happened*; it does not make the mechanism a law. Tiered T3 for that reason.
 Sources: Meta for Business News, "Meet the 2026 Meta Agency Award Winners", 21 September 2026, read in full 2026-09-23
 Last touched: 2026-09-23
+
+### MD-166 · Meta caps organic Facebook Page link posts at 2 a month on the free tier and sells the increase through Meta One, and links in ads are explicitly exempt
+Tier: T1 · Status: active
+Read off Meta's own help article today, "About links in organic Facebook Page posts and comments". This is the half of Meta One that [[Meta Delivery & Andromeda#MD-157|MD-157]] recorded as an added feature, stated from the other direction as a restriction on something that was previously free.
+
+**The table, verbatim from Meta, in USD per month:**
+
+| Meta One plan | Posts or comments with links per month |
+|---|---|
+| Free, no subscription | 2 |
+| Essential, $14.99 | 2 |
+| Advanced, $49.99 | 8 |
+| Expert, $149.99 | 20 |
+| Max, $499.99 | Unlimited |
+
+**The reset rule.** The default limit resets on the 1st of the month. A subscriber's limit resets on the subscription renewal date. Unused link posts do not carry forward.
+
+**What does NOT count against the limit, and the fourth exemption is the one that matters to a media buyer.** Additional links in the comments of a post that already carries a link; links to Meta properties (Facebook, Instagram, WhatsApp, Threads); affiliate-partnership links connected through Facebook; and **links in ads**. So paid delivery is untouched. Nothing in this changes what a client can run, what it costs, or how it delivers. It changes what a client's Page can post for free.
+
+**The scope caveat is Meta's own first sentence and it should be quoted before this is repeated to anyone:** "Limits on posts and comments with links may not apply to all Pages." Meta does not say which Pages, so no one can state from this article whether a given client Page is subject to it. Check the Page.
+
+**Two things a widely-shared practitioner reading of this gets wrong, and both were checked against the source today.** Jon Loomer states per-tier splits of 8 Facebook plus 4 Instagram at Advanced and 20 Facebook plus 8 Instagram at Expert. **This article is Facebook Pages only and publishes a single number per tier with no Instagram split**, so the Instagram figures are unverified and should not be repeated. He also states that putting the link in the comments will not get around the restriction. That is right for a standalone comment and wrong for the case Meta exempts: extra links inside the comments of a post that already carries one are free.
+
+**Meta's own two pages disagree on the price.** The help article says Expert $149.99 and Max $499.99. The Meta for Business announcement, re-read in full on the same day, says Expert $149.00 and Max $499.00. A dollar either way changes no decision, and it is the third documented case on this source of two Meta surfaces disagreeing about the same fact, after the card-date drift of 2026-09-14 and the locale partition of 2026-09-20. Never quote a Meta price from a single page.
+
+**Why this is banked as a restriction rather than as a product note.** The 2026-09-15 harvest entry deliberately withheld a warning line from MD-157 on the reasoning that "Meta One removes nothing, bans nothing and breaks nothing." That reasoning was written from the announcement, which frames links in posts as a new capability. The help article is the same change written as a cap, and it does remove something that was free.
+Sources: Facebook Help Centre, "About links in organic Facebook Page posts and comments", https://www.facebook.com/help/1929252614431792, read in full 2026-09-24; Meta for Business News, "Introducing Meta One plans for businesses", 15 September 2026, re-read 2026-09-24; Jon Loomer, "Meta Wants Businesses to Pay to Share Links", 2026-09-23
+Last touched: 2026-09-24
+
+### MD-167 · The same post ID running in two live campaigns appears to self-compete at the AD level: $3,600 in the testing campaign, $26 in the cost cap campaign it was copied into
+Tier: T4 · Status: active
+Nick Theriot, from a 7-day test on a client store, and he flags it as a belief with the control named and not run.
+
+**The observation.** A winning ad was found in an ABO testing campaign and scaled there from $100 a day to $800 a day before it collapsed. The same ad, carried into a separate cost cap campaign by post ID, **took $26 of spend** over the same window against **$3,600** in the testing campaign.
+
+**His read:** "this ad right here did work in the ABO campaign before we moved it to a CBO campaign... the CBO for that particular ad is getting bullied out by the ABO campaign", on the reasoning that the testing campaign had already taken the cold audience the second campaign needed.
+
+**What is missing, stated by him.** The ad was never run in the second campaign alone. He says so directly: "would this ad have worked well if we just tossed them in a CBO campaign, non cost cap, no nothing, and just start scaling it? Who knows. Honestly, couldn't tell you the answer because we didn't do that here." So a plain starvation explanation is not excluded, and neither is the cost cap simply refusing to bid at the price.
+
+**Why it is worth an ID despite being T4.** Duplicating a proven post ID into a second campaign is standard practice across this roster, and no claim in this codex prices what the first campaign costs the second one. It is the ad-level version of the entity-level cannibalisation already recorded at [[Meta Delivery & Andromeda#MD-045|MD-045]], and it is the counterweight to [[Scaling Models#SC-161|SC-161]], where the same operator reports a second campaign rescuing new creative that could not win inside the incumbent CBO. Both cannot be freely true at the same spend, and nobody has tested which regime applies when.
+
+**The cheap test, if anyone wants to close it:** pause the ad in the first campaign for 72 hours and read the second campaign's spend on the same post ID.
+Sources: Nick Theriot, "I tested ABO & Cost Caps (here's the results)", 2026-09-23
+Last touched: 2026-09-24
