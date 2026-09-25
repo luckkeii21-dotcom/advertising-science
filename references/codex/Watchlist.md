@@ -370,3 +370,70 @@ today's date.** Today's committed figures: Meta Engineering 2 items (both alread
 about ads), Meta Newsroom 2 (one the same subsea cable, one the Singapore enforcement post banked into
 MD-160), Google Ads & Commerce 0, arXiv 20 new with **0 passing the ad filter**, TikTok SDK unchanged at
 v0.1.8, Google Ads Announcements 396 answer ids with 0 added and 0 removed.
+
+### blog.google footnotes live at `#footnote-N` anchors and a naive tag-strip DROPS them (found 2026-09-25)
+
+The September Demand Gen drop prints "a 40% increase in conversions at the same ROI". A tag-strip plus
+line-dedup extraction of the `<article>` element returned the whole post and **no footnote**, and this
+run came within one step of logging the figure as having no provenance at all. It has provenance:
+**"Google Internal Data, Global, Gmail Ads, February 2026"**, sitting outside the paragraph flow behind
+a `1` that links to `#footnote-1`.
+
+Method for any blog.google post: after stripping tags, search the text for `Internal Data`, `Google Data`
+and `Based on`, and pull every `#footnote-N` anchor from the article's link list. **The footnote is
+usually the most important sentence in a Google announcement**, because it is where the data window and
+the population appear. Three of the five vendor figures now catalogued (GA-081, GA-083, GA-084) are
+weakened mainly by what their own footnote says.
+
+### The Google Ads Announcements page does NOT carry Demand Gen drops (found 2026-09-25)
+
+The three help-article ids linked from the September Demand Gen drop (`16040527`, `16024357`,
+`16388390`) are **not** among the 396 answer ids on `support.google.com/google-ads/announcements/9048695`.
+That page's 396-id set has been stable at 0 added and 0 removed for days while Google shipped a monthly
+product drop. **The announcements page is not a superset of Google ads product news.** The Ads &
+Commerce RSS feed is the only lane in this watchlist that caught it, and it caught it one day late
+because the post is dated 24 September and surfaced in the 25 September feed read.
+
+### Demand Gen Drops Hub: a MONTHLY Google series with a year of unread instalments (found 2026-09-25)
+
+`https://business.google.com/us/accelerate/demand-gen-drops/` answers a **plain fetch, HTTP 200**, no
+browser needed. It lists every Demand Gen Drop back to the "Introducing Demand Gen Drops" post, twelve
+entries, monthly cadence. This codex held exactly one of them (GA-068, August).
+
+**The hub LAGS the blog.** On 2026-09-25 its newest listed drop was August, a day after the September
+drop published on blog.google. So the hub is the back catalogue, not the alarm. Watch the Ads & Commerce
+RSS for new drops and use the hub to work the backlog.
+
+**This is the third instance of the same failure shape**, after Meta for Business News on 2026-09-20
+(a three-part series unread for four months behind a locale partition) and again on 2026-09-23 (four
+posts unread in plain sight because no title baseline existed). **A source can be watched daily and
+still have a year of instalments behind it, because a ceiling check answers "has the newest thing
+changed" and says nothing about the shelf.** Reading two of the ten unread drops on 2026-09-25 produced
+GA-083 and GA-084 and re-dated two things the September post appeared to introduce.
+
+**Backlog, eight posts, queued:** June 2026, April 2026, March 2026, February 2026, January 2026,
+December 2025, November 2025, October 2025, plus the introduction post. Body extraction: strip tags,
+then anchor on `Social Module` and read to `Return to top of page`. Anchoring on the post title fails
+on some of them because the chrome repeats it.
+
+### arXiv filter: TWO outcome-clause false positives in a single day (2026-09-25)
+
+The 2026-09-07 entry predicted "roughly one false positive a week" and proposed two candidate fixes.
+On 2026-09-25 the filter passed 3 items and **2 were false positives of exactly the documented shape**,
+with 1 genuine:
+
+| Paper | Verdict | The single trigger |
+|---|---|---|
+| 2609.28972 *Cross-Country Code-Mixing for Generative Recommendation* | **False positive** | "+1.77% advertising revenue" in the final clause of the abstract. Method is cross-market recsys token substitution, no auction, no bidding |
+| 2609.30001 *Advancing Model Research in AgentX* | **False positive** | "15-20% in target-segment advertising spend" in an outcome list. Method is agentic automation of recsys model research |
+| 2609.29182 *ScalarLens: Numerical Embeddings ... for CTR Prediction* | **Genuine** | CTR prediction throughout the method, evaluated on Criteo, an advertising dataset |
+
+**Both false positives would be killed by the first proposed fix**, which discounts a single bank-list
+hit confined to the first or last sentence of an abstract. That fix now has three supporting
+observations (2026-09-07, plus two today) and zero counter-examples. **It is worth shipping into
+`lib/watchlist_check.py` rather than leaving as an instruction**, the same way the answer-href set diff
+was shipped on 2026-09-20 after being diagnosed on 2026-09-18.
+
+ScalarLens was read and **deliberately not banked**: it is a benchmark method paper about numerical
+feature embeddings, not a deployed ad system, and it changes no operating decision. Logged so a future
+run does not re-read it.
