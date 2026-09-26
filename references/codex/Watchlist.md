@@ -1,4 +1,4 @@
----
+﻿---
 title: "Watchlist"
 type: reference
 created: 2026-08-18
@@ -411,10 +411,23 @@ still have a year of instalments behind it, because a ceiling check answers "has
 changed" and says nothing about the shelf.** Reading two of the ten unread drops on 2026-09-25 produced
 GA-083 and GA-084 and re-dated two things the September post appeared to introduce.
 
-**Backlog, eight posts, queued:** June 2026, April 2026, March 2026, February 2026, January 2026,
-December 2025, November 2025, October 2025, plus the introduction post. Body extraction: strip tags,
-then anchor on `Social Module` and read to `Return to top of page`. Anchoring on the post title fails
-on some of them because the chrome repeats it.
+**BACKLOG CLOSED 2026-09-26.** The nine remaining instalments were read in full at source in one
+pass: the introduction post of 1 September 2025, then October, November and December 2025 and January,
+February, March, April and June 2026. With the two read on 2026-09-25 and the August and September 2026
+drops already banked, the series is complete at **thirteen instalments, monthly with no month missing,
+1 September 2025 through 24 September 2026**.
+
+Body extraction, confirmed working on all nine: strip tags, then anchor on `Social Module` and read to
+`Return to top of page`. Anchoring on the post title fails on some of them because the chrome repeats
+it. **Footnotes are reachable only through the `#footnote-1` anchor**, and a tag-strip plus line-dedup
+drops them, which is where both of today's provenance findings were hiding.
+
+**What closing the shelf produced:** GA-085, GA-086, GA-087 and GA-088 in
+[[Google Auction & Smart Bidding]] and CR-266 in [[Creative Science]], plus amendments to GA-068,
+GA-081 and GA-083. Two of those are provenance defects invisible in the body text of the posts.
+
+**Maintenance from here:** the hub is the back catalogue and the Ads & Commerce RSS is the alarm. One
+new instalment is expected per month. Read its footnote before its body.
 
 ### arXiv filter: TWO outcome-clause false positives in a single day (2026-09-25)
 

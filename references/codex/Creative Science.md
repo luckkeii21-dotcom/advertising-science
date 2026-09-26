@@ -2821,3 +2821,16 @@ Second-hand, no data shown, and banked because it is the only voice on this rost
 **The honest reading for a client conversation.** Two things could produce "better post-Andromeda" here and they have different costs: the system genuinely rewarding creative diversity, or an operator who can afford 50 ads a week outcompeting operators who cannot. Nothing in the account distinguishes them, and the second one is the reading a smaller client should price first.
 Sources: Ben Heath, "I paid Alex Hormozi $235,000 for his Facebook Ads Strategy", 2026-09-23
 Last touched: 2026-09-24
+### CR-266 · Google says it is shipping Pathmatics competitor-ad creative into the Google Ads asset picker
+Tier: T1 · Status: active
+Demand Gen Drop, November 2025, published 17 November 2025, read in full at source 2026-09-26. T1 for the product statement only. Google states it as coming rather than shipped.
+
+**Google's sentence, quoted:** "The availability of Pathmatics-provided images and videos in Google Ads will soon enable advertisers to easily lift and shift top-performing creative assets from other platforms into Demand Gen."
+
+Pathmatics is a paid competitive-intelligence service that indexes ads running across platforms. Google is describing putting that index inside its own ad builder, so an advertiser picks a creative already running elsewhere and pushes it into a Demand Gen campaign in one session.
+
+**Why it matters to how we work.** Our competitor-creative lane runs on the Meta Ad Library and the Google Ads Transparency Center, harvested by hand and by script. If Google ships a first-party route from somebody else's running ad into your campaign, the collection half of that work becomes a platform feature for anyone who pays for it, and the whole edge moves to judgment about which ad is actually winning and why it is winning.
+
+**Two limits, stated because they are real.** Google wrote "will soon" in November 2025 and this codex has no confirmation that it shipped. And a lifted asset arrives without the hook, the offer or the audience that made it work, which is the part a real teardown produces.
+Sources: Google, Demand Gen Drop November 2025, business.google.com/us/accelerate/resources/articles/demand-gen-drop-november-2025/, read in full 2026-09-26
+Last touched: 2026-09-26

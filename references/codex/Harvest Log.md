@@ -1,4 +1,4 @@
----
+﻿---
 title: "Harvest Log"
 type: log
 created: 2026-08-18
@@ -8,6 +8,52 @@ tags: [advertising-science, log]
 # Harvest Log
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
+
+## 2026-09-26 (research run)
+
+**0 transcripts in, 5 new claims, 3 merges, 0 contested, 0 refuted. 0 harvest errors, 0 watchlist errors. One new operating rule.**
+
+Every live lane returned nothing. The whole day came out of closing a backlog this engine flagged on 2026-09-25: **nine unread Demand Gen Drops read in full at source**, which completes the series at thirteen instalments and turns a five-instance pattern into a seventeen-figure census.
+
+**Harvest.** `harvest.py daily` clean, 12 of 12 channels listed, 0 new transcripts, 8 skipped short, 1 no subs, 0 errors, 0 RSS fallbacks. Second consecutive zero-transcript day and the fifth on record, after 2026-09-06, 09-07, 09-23 and 09-25. Unextracted backlog 0.
+
+**Watchlist, 0 new across every lane.** Meta Engineering 200 build 24 Sep, 0 new. Meta Newsroom 200 build 24 Sep, 0 new. Google Ads & Commerce 200 build 24 Sep, 0 new. Google Ads Announcements 200, **396 answer ids, 0 added, 0 removed**, unchanged for a third day. Meta for Business News read in the browser in **both locales**: US 12 titles 0 new, ceiling 21 Sep 2026; UK 12 titles 0 new, top card rendering 11 Sep against 10 Sep yesterday, the same post and a one-day drift artefact. arXiv cs.IR 200 with **an empty feed body, Saturday build**, the documented weekend condition. TikTok SDK changelog 200, unchanged at v0.1.8; TikTok policy and creative remain unmonitored behind the India geo-block. Weekly (Mon) sources not due.
+
+**Claims banked.** [[Google Auction & Smart Bidding#GA-085|GA-085]] T1: Google has spent thirteen months shipping instruments that make Demand Gen comparable to other platforms on the other platform's terms, and six of the thirteen drops carry one. [[Google Auction & Smart Bidding#GA-086|GA-086]] T1: one study, one May-to-June-2025 window and one over-fifty-products survivorship filter back **both** a 20% product-feed figure in October 2025 and a 33% one in May 2026, the qualifier moving from "tROAS goals" to "large product selections" while the data stood still. [[Google Auction & Smart Bidding#GA-087|GA-087]] T1: the October 2025 drop footnotes its 11.5% new-customer figure with "internal studies conducted on **Search & Shopping campaigns**", which is not the product the post is about. [[Google Auction & Smart Bidding#GA-088|GA-088]] T1: a census of all seventeen headline figures in the series, where **three carry no footnote at all**, three name a real experiment or A/B test, one is a third-party retail panel of 127 brands, and the rest are averages over self-selected adopters with no control group. [[Creative Science#CR-266|CR-266]] T1 for the statement only: Google wrote in November 2025 that Pathmatics-provided images and videos would arrive in the Google Ads asset picker so advertisers can "lift and shift top-performing creative assets from other platforms into Demand Gen", stated as coming and never confirmed shipped.
+
+Merges into **GA-068** (backlog closed, forward pointer to the census), **GA-081** (the pattern it called stable is now measured across the whole series) and **GA-083** (its footnote has an October 2025 twin behind a different number).
+
+**Law moved once.** The SKILL.md hot layer carries a new cross-channel rule: Google's default columns and Meta's default columns are two different attribution models, so a side-by-side of the two default sets is not a comparison. Use the matched set when the question is which channel to fund, say which column set produced every number, and never mix the two inside one table. The limit is unchanged, these are first-party instruments measuring their own product, and the only counterfactual this codex owns on Demand Gen is still a 21-day geo holdout that found no new-customer lift (GA-055, AT-072). Alongside it, a standing reading rule: **read the footnote before you read the sentence.**
+
+**Gaps carried forward.** The arXiv single-hit-in-first-or-last-sentence fix now has three supporting observations and zero counter-examples and is still an instruction rather than code in `lib/watchlist_check.py`. The Google Ads Announcements page is confirmed for a third day as not a superset of Google ads product news. TikTok policy and creative stay unmonitored until a non-India egress exists.
+
+**Run split across two sessions.** The 16:12 session completed the harvest, the watchlist, the merge and the hot layer and exited without writing a log, so the watchdog relaunched at 21:52. The second session verified the merge on disk, spot-checked the October 2025 footnotes at source against GA-086 and GA-087, both matching word for word, and wrote this entry, the run log, the commit and the team sync.
+
+## 2026-09-26 (teacher run; the research lane was still running and had written no entry)
+
+**Lesson 037 shipped: The Benchmark Outlived the Machine. Video no, Saturday.** **Taken from the rotation** at index 6, **Google Auction & Smart Bidding**, so the pointer **advances 6 to 7** in the ordinary way. That closes the four-lesson hold recorded yesterday as a queue defect. Google PMax & Shopping is next.
+
+**The spine is the pair the 2026-09-25 entry named.** [[Google Auction & Smart Bidding#GA-082|GA-082]], T1: Google's help page states a Gmail click is reported from the teaser tap "whether the click expands the ad body or navigates directly to the advertiser's site", so the September one-click switch puts two different human actions under one counter with no change to its name. [[Google Auction & Smart Bidding#GA-084|GA-084]], T1 for the copy: the July 2026 Demand Gen tROAS upgrade has **no toggle and no published figure**, so it cannot be checked in an account, cannot be switched off, and every pre-July tROAS result was made by a different bidder.
+
+**The framing is what makes it new rather than a fourth metric-boundary lesson.** Lessons 002, 023 and 029 all teach a number you are reading wrong. Each of those has a remedy you control: choose a different column, decompose the weights, name the unit. **This one has no remedy you control.** There is no "count the expand" checkbox once Gmail goes one-click and no "cautious bidder" setting for a pre-July comparison. Lesson 002 said the attribution column is an instrument you choose. This one says the platform also chooses, without telling you, and does not offer the old one back.
+
+**Second-order point carried straight out of yesterday's research and it is the operationally useful half.** On 24 September the Google Ads Announcements page held **396 answer ids, 0 added, 0 removed**, on the same day Google shipped a monthly Demand Gen drop, and **none of that drop's three help-article ids is in the 396**. Behind that, ten monthly drops exist and this codex had read two, and reading two more re-dated Maps inventory and automotive product feeds to May 2026. A daily ceiling check answers "has the newest thing moved" and never answers "what is already on the shelf."
+
+**Our accounts, and the honest opener is that there is no exposure.** **No Demand Gen runs anywhere on our book.** The only Google account was Mattia Spinal Care, PMax on a roughly 12-mile presence ring around Orlando 32835, offboarded **24 July 2026**. GA-082 and GA-084 cost us nothing this week, so the lesson carries on the Meta instance instead.
+
+**Phoenix Truxx is the account with a benchmark sitting on a wall, and the arithmetic is new to this pass.** The all-time counter opens **on or about 22 February 2026**: the 24 April report states **1,069 leads at $3.19 across 61 days**, and 61 days back from 24 April is 22 February. [[Attribution & Incrementality#AT-036|AT-036]], now T1, puts Meta's click redefinition in **March 2026**. So roughly the first five weeks of that counter ran on the old definitions. **The $4.00 all-time blended is then quoted as the judging benchmark in six filed reports** (23 May, 27 June, 5 July, 9 July, 12 July, 16 July), twice as a pass/fail scorecard row, and the 9 July report calls it the best-ever benchmark. **Our earliest filed report covers 17 to 24 April**, so no pre-change reading exists on the account at all. The wall is inside the benchmark and outside every report.
+
+**Whether the redefinition moved that number is unanswerable on our book, and the reason is already banked.** Compare attribution settings does not break out on-platform Instant Form results; every window column dashes. T2, from the within-account control on ChiroWorks on 2026-08-26: four Instant Form campaigns all dashed against one website-pixel campaign in the same view and the same date range populating at 1-day click 42 and 7-day click 46. **The instrument that would date this wall does not render on the accounts that need it.** The half that does render is clicks, and [[Attribution & Incrementality#AT-097|AT-097]], T2 shown, sizes it at 415 link clicks against 1,179 all clicks, widest on video-heavy campaigns. Phoenix's filed CTR series is entirely post-change and therefore internally consistent, which is an accident of the reporting having started in April rather than a decision.
+
+**One live flag raised and sent back rather than reported: Phoenix Truxx CTR reads 1.70% for 18 to 24 September against 3.21% for the overlapping 1 to 20 September window.** The filed series held between 2.90% and 3.50% for five months. Two different pulls, windows overlapping by three days. Settle whether they are the same metric on the same denominator before anyone writes "engagement dropped" in front of Ruddy.
+
+**ChiroWorks is the wall we built ourselves.** invisa-RED moved from a free consultation to a **$49 introductory session on 6 September 2026**. No Meta pull since **30 August**. The ad and the live Instant Form still say free consultation. September is therefore a blend of two offers, bought against the old promise, with no clean pre-change week on file.
+
+**AT-036's tier move is taught as the evidence lesson inside the lesson.** It was **T3** when lesson 002 taught it on 18 August and it is **T1** today, with nothing about Meta having changed. What changed is that somebody read Meta's own product copy off the screen with the old and new option sets side by side and dated it out loud. The rule stated for Lucky: the tier attaches to the observation, never to the speaker and never to how long the claim has sat in the file.
+
+**No claim was banked, no claim was amended and no law changed.** The lesson reads claims banked yesterday and measurements already on file.
+
+**Engine.** Both lanes launched at **16:12:08**, the same second for the fifteenth-plus consecutive day, and more than nine hours after their 07:00 and 08:00 schedules. The watchdog logged "a run is in progress; standing down" at 16:12:11 and correctly did nothing. **The research lane had written no Harvest Log entry by writing time**, which is why this lesson was taken from the rotation rather than from a harvest. The collision workaround ran as standing practice: `Google Auction & Smart Bidding.md` was re-checked at **16:21:36** at 84 GA headers with GA-082 and GA-084 intact, and AT-036 and AT-097 were re-read at T1 and T2 before a word was written. **Inbox empty for the thirty-seventh consecutive run.**
 
 ## 2026-09-25 (research run)
 
@@ -79,6 +125,28 @@ Merge: **GA-068** gains a forward note establishing that it is one instalment of
 - **The arXiv filter fix has three supporting observations and zero counter-examples** and is still only an instruction. Both of today's false positives would be killed by discounting a single bank-list hit confined to the first or last sentence.
 - **TikTok remains unmonitored** for policy and creative. Only the SDK changelog answers, and it ships endpoint names.
 
+
+## 2026-09-25 (teacher run)
+
+**Lesson 036 shipped: Twenty-Two Ads and Six Verdicts. Video yes, Friday.** Harvest-driven from the **2026-09-24 research entry**. Topic **Scaling Models**, rotation index 4, so the pointer **HOLDS at 6**.
+
+**The spine is the paired Theriot receipt banked yesterday, and both halves are about the same thing.** [[Scaling Models#SC-171|SC-171]], T2: a dedicated ABO testing campaign ran 7 days, about **51 tests at $100 a day each**, cut at 2 to 3 days, three creatives per ad set, **about $10,000 total** at a **$106 new-customer cost per acquisition against a $65 target**. He estimates a CBO learns the same for about $2,000, so roughly **$8,000 of the $10,000 bought certainty rather than results**, unverified because no control ran. [[Scaling Models#SC-172|SC-172]], T2: inside those same 51 tests, killing the top-spending ad to feed a cheaper-converting sibling **failed to hold performance 99% of the time**, and he moved the decision unit up from the ad to the whole ad set.
+
+**Joined to [[Scaling Models#SC-044|SC-044]]'s 3x gate, the pair produces a forward planning rule this series has not taught before.** Every prior lesson on this ground reads a row after the fact: lesson 003 rules on where the verdict is read, lesson 011 on what one ad's spend can say. This one runs before the launch. **Window spend divided by three times the account's cost per opt-in is the number of verdicts the window can buy**, and launching more units than that produces blanks rather than losers.
+
+**One arithmetic observation fell out of SC-171 and is recorded here rather than banked as a claim.** $10,000 across 51 ad sets is **$196.08 per test**, and three times his stated $65 target is **$195**. Theriot never names SC-044 and he landed on it to the dollar. Consistent with the gate, not evidence for it, and not merged into SC-044 because one operator arriving at a number he did not state is not a fourth voice.
+
+**Measured on our own book, off [[Scaling Models#SC-168|SC-168]]'s exports, and the spread is the finding.** ChiroWorks 11 to 20 September: **$624.10 across 22 ads**, gate **$100.57**, so the window could buy **6.2 verdicts**. It split three ways. The top ad took **$247.60**, worth 2.46 verdicts. Five ads took **$340.95**, **$68.19 each**, two thirds of a verdict each and therefore short. Sixteen ads spent and returned zero opt-ins on **$35.55 between them, $2.22 an ad**, which is 0.02 of a verdict. StayWell over the same ten days: **$337.49 across 12 ads**, gate **$77.17**, **4.4 verdicts**, and **10 of the 12 returned zero on $98.05**, $9.80 each. SJR Commercial 21 to 27 August, at **$2.78** blended, gates at **$8.33** and buys **104 verdicts in one week**. Same agency, same arithmetic, two different decision units.
+
+**A boundary on [[Scaling Models#SC-167|SC-167]] comes out of it and it is worth stating plainly.** A tail that cleared the gate and returned nothing is leakage and switching it off is money, which is Theriot's $6,000 a month. A tail that never reached the gate is untested and switching it off is tidiness. Ours are the second kind: StayWell's ten silent ads are $9.81 a day and ChiroWorks' sixteen are $3.56 a day.
+
+**No claim was amended, no claim was banked and no law changed.** The lesson reads claims banked yesterday and measurements already on file.
+
+**Two open items created, and the first one is the reason the second exists.** **No account we run has a written target cost per opt-in**, so every gate in the lesson is anchored to each account's own achieved figure, which is the number the gate is supposed to judge. Write a target per account. And **re-count the live ad sets on ChiroWorks and StayWell**: the seven-ad-set figure at [[Auction Mechanics & Bidding#AU-090|AU-090]] is from the 10 to 20 July window, and the whole ad-set-level half of the lesson is conditional on it still holding.
+
+**The Google topic was passed over for a fourth consecutive lesson and it is logged as a queue defect rather than accepted.** Today's own research pass banked **GA-081 to GA-084**, all Google, on the exact topic the rotation pointer has been sitting on since 2026-09-22. It was passed over because all four are T1 for existence and product copy only, on Demand Gen surfaces with almost no live spend on our book, and because the readable half of the pair is a metric-boundary lesson this series has already taught three times, at lessons 002, 023 and 029. **The next rotation-taken lesson should be the Google one**, built on GA-082 and GA-084: a Gmail click now counts a site visit where it used to count an expand, and Demand Gen tROAS before July 2026 was a different bidder, so neither metric can be read across its own boundary.
+
+**Engine.** Both lanes launched at **16:29:05**, the same second for the fourteenth-plus consecutive day, and more than eight hours after their 07:00 and 08:00 schedules. The watchdog logged "a run is in progress; standing down" at 16:29:08 and correctly did nothing. **The research lane finished during this pass**, writing `SKILL.md` at 16:50:18 and the Google topic file at 16:49:47, so the collision workaround earned its place again: the source claims were re-checked free at **16:50:26** and `Scaling Models.md` was confirmed untouched at 172 claim headers with SC-171 and SC-172 intact before a word was written. **Inbox empty for the thirty-sixth consecutive run.**
 
 ## 2026-09-24 (research run)
 
