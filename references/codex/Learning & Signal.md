@@ -772,3 +772,22 @@ A clean worked example of the thing this topic keeps asserting, which is that th
 **Provenance, and it applies to every number in this claim.** The source is Meta's own 2026 Agency Awards post. The entrants are agencies competing for an award, the results are agency-submitted, the judging panel is drawn from Meta and its award partners, and the winners were selected partly ON these numbers. That is survivorship selection at its maximum: the population is the winners of a contest, so nothing here says what the same tactic does on an average account. None of these campaigns ran a holdout except where the text names one. Meta publishing the post makes it T1 for *what Meta says happened*; it does not make the mechanism a law. Tiered T3 for that reason.
 Sources: Meta for Business News, "Meet the 2026 Meta Agency Award Winners", 21 September 2026, read in full 2026-09-23
 Last touched: 2026-09-23
+### LS-083 · A billion-user production ad platform refreshes user profiles WEEKLY and runs ONE shared compressed behaviour representation across tasks, because throughput forces it
+Tier: T2 · Status: active
+arXiv 2609.31045, *KuaFu: Compressing Long User Behavior into Understanding at Billion Scale*, announced 2026-09-28. Abstract read in full. Tencent advertising and recommendation platform, ten months in production. T2 rather than T1: it is a deployment paper with reported production numbers rather than a platform doc, and none of the numbers is independently auditable.
+
+**Three facts about how a large ad platform's user-understanding layer actually runs, and none of them is how an operator usually pictures it.**
+
+1. **Profiles refresh on a schedule, not per impression.** The paper states the production load as a billion users weekly at roughly 100K queries per minute in aggregate. The user-understanding representation feeding downstream tasks is rebuilt on that cadence under a fixed GPU budget, which the authors call a hard throughput floor.
+2. **The industry default they are replacing is one model per task**, where each task extracts its own subsequence from the full behaviour history and trains a dedicated model on it. Even after filtering, a single-task sequence stays at several hundred items per user, tens of thousands of tokens once serialised.
+3. **Compression is not an optimisation, it is a precondition.** And crude compression corrupts the profile in four named ways: fabrication, omission, date misattribution and broken logic. Because there was no way to evaluate the compressed representation on its own, those errors previously surfaced only as diffuse degradation in downstream metrics.
+
+**The reported results.** Matches or beats uncompressed single-task production models on all five headline metrics across four production profiling tasks, raises per-GPU throughput 37% to 350%, saves 190 GPUs, and over ten months in production lifted overall GMV by 1.37%.
+
+**Why it belongs in this topic.** It is a direct observation about the resolution and latency of the user-side signal a modern ad system actually holds. A behavioural profile driving candidate selection is a weekly-refreshed compressed artefact, not a live read of what the user did an hour ago. That sets a floor on how fast a change in a person's behaviour can propagate into which ads they are shown, and it is the same architectural direction as Meta's move to unified representations.
+
+**Two honest limits.** This is Tencent, not Meta or Google, so the cadence is evidence about what a platform at that scale finds economical rather than about our platforms specifically. And the paper is an infrastructure paper: it says nothing about auction mechanics, bidding or creative selection, and should not be stretched to.
+
+**Filter note for the watchlist, recorded because it cuts against the pending rule.** This passed the arXiv bank-list filter on two `advertis` hits, both in framing sentences, the first and the last. That is the exact shape of the three recorded false positives, and it is a true positive. It is direct evidence against shipping the "discount a lone bank-list hit in the first or last sentence" rule as code.
+Sources: arXiv 2609.31045, KuaFu: Compressing Long User Behavior into Understanding at Billion Scale, arxiv.org/abs/2609.31045, abstract read in full 2026-09-28
+Last touched: 2026-09-28

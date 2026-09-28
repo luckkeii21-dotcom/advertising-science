@@ -838,3 +838,32 @@ The backlog flagged at [[Google Auction & Smart Bidding#GA-068|GA-068]] is close
 **Standing rule for this series and for Google announcements generally: read the footnote before you read the sentence.** Most of what is wrong with these figures is invisible in the body and visible in the footnote, and one whole class of it is visible only in the absence of a footnote.
 Sources: Google Demand Gen Drops, all thirteen instalments, business.google.com/us/accelerate/demand-gen-drops/; the nine previously unread ones read in full at source 2026-09-26
 Last touched: 2026-09-26
+### GA-089 · Google now ships a recommendation that names a tCPA or tROAS target as too low for a Search campaign TO ENTER AUCTIONS, and hands you the multiplier
+Tier: T1 · Status: active
+Google Ads API v25.2, released 2026-09-23, adds two recommendation types and their apply operations. Release notes read in full at source 2026-09-28.
+
+- `Recommendation.raise_target_cpa_performance_bid_too_low_recommendation` (enum `RAISE_TARGET_CPA_PERFORMANCE_BID_TOO_LOW`), applied through `RaiseTargetCpaPerformanceBidTooLowParameters.target_cpa_multiplier`.
+- `Recommendation.lower_target_roas_performance_bid_too_low_recommendation` (enum `LOWER_TARGET_ROAS_PERFORMANCE_BID_TOO_LOW`), applied through `LowerTargetRoasPerformanceBidTooLowParameters.target_roas_multiplier`.
+
+**Google's own words for what the two are for, and this is the load-bearing sentence:** "to support raising Target CPA or lowering Target ROAS when bids are too low for Search campaigns to **enter auctions**."
+
+**Why this is worth banking rather than filing as an API note.** The failure it describes is not underdelivery, it is non-participation. A target set too aggressively does not buy fewer, cheaper conversions, it keeps the campaign out of the auction, which surfaces to an operator as a Search campaign that simply will not spend. That mechanic has been operator folklore for years. This is Google building a first-party detector for it, naming it in its own schema, and quantifying the gap.
+
+**The quantification is the genuinely new part.** Each recommendation returns `recommended_target_multiplier`, greater than 1.0 for tCPA and less than 1.0 for tROAS, alongside `current_average_target_cpa_micros` or `current_average_target_roas`. So the system will state how far off the target is, as a factor, rather than only that it is off.
+
+**Two limits, stated plainly.** Google does not publish the threshold, the lookback or the confidence behind the multiplier, so the number is a platform opinion and not a measurement we can audit. And it is a recommendation surface, which historically optimises toward spend; the direction of both recommendations is loosen the target. Read the multiplier as a useful diagnostic that a Search campaign is target-blocked rather than demand-blocked, and decide the size of the move yourself.
+Sources: Google Ads API v25.2 release notes, developers.google.com/google-ads/api/docs/release-notes, read at source 2026-09-28; Google Ads Developer Blog, Announcing v25.2 of the Google Ads API, 2026-09-23, read in full 2026-09-28
+Last touched: 2026-09-28
+### GA-090 · BenchmarksService now returns your PERCENTILE standing against all advertisers in a category, not only category averages
+Tier: T1 · Status: active
+Google Ads API v25.2, 2026-09-23. `BenchmarksService.GenerateBenchmarksMetrics` gains `CustomerMetrics.percentile_metrics`, carrying `PercentileMetrics` and a `BenchmarksCustomerPercentileTier`, on both `GenerateBenchmarksMetricsResponse.customer_metrics` and `BreakdownMetrics.customer_metrics`.
+
+**It is gated and the gate is easy to miss.** The field populates only when BOTH conditions hold in the request: `PERCENTILE_DATA` is in `supplemental_data`, AND `benchmarks_source` is set to `all_advertisers`, which itself requires a `category_filter`. Ask for it any other way and the field comes back empty with no error explaining why.
+
+**Date coverage differs by metric family, and this is the part that will bite a reporting build.** Customer aggregate metrics, customer rate metrics and the new customer percentile metrics are supported across every date in `ListBenchmarksAvailableDatesResponse.supported_dates`, **including open quarters**. Customer share metrics and the benchmark source's own rate metrics (for example the average CPM of `/Apparel/Clothing` ads) are **not** supported for open quarters and are silently omitted from the response unless the requested range falls inside the narrower `supported_dates_for_all_metrics`. So a dashboard mixing percentile and share metrics over a current quarter will render half a table.
+
+**Also added:** a dedicated `BenchmarksError.NO_METRICS_FOUND`, so an empty result is now distinguishable from a malformed request.
+
+**What it is worth to us.** Competitive standing moves from an estimate we derive off the Ads Transparency Center to a first-party number Google will state. The caveat is the one that applies to every Google-supplied benchmark: the peer set is Google's category taxonomy, not our client's actual competitive set, so a percentile against `/Apparel/Clothing` is not a percentile against the four dealerships in the same county. Useful as a direction check, never as a client-facing scoreboard without saying whose peer group it is.
+Sources: Google Ads API v25.2 release notes, developers.google.com/google-ads/api/docs/release-notes, read at source 2026-09-28
+Last touched: 2026-09-28

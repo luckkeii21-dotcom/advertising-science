@@ -78,3 +78,33 @@ A named threshold, which this file has been short of: "most people should just s
 **Fit rule: YouTube suits mass-market B2C** (his examples are online weight loss and investing) and works for B2B only when the addressable market is large enough, "it's just a lot harder". **His own account is the honest footnote on the whole claim**: he spends $3,000 to $5,000 a month on YouTube, most of it retargeting people already watching his organic videos, at roughly $30 to $50 a day. So the operator giving the threshold is not himself running YouTube as an acquisition channel, and every figure here is asserted with no cost comparison shown.
 Sources: Dr. Matt Shiver, YouTube Ads vs Facebook Ads: Who Each One Is Actually For, 2026-09-15
 Last touched: 2026-09-16
+### EC-007 · Ads in WhatsApp Status is live and it is a RIDER on Instagram Stories, with an exclusion list that rules out several of our verticals outright
+Tier: T1 · Status: active
+Found on the Meta Marketing API changelog and read in full on the Ads in WhatsApp Status documentation, both at source 2026-09-28. The placement was not previously in this codex.
+
+**What it is.** Ads inside WhatsApp Status, which is the 24-hour vertical feed separate from chats and calls. Single vertical image or video, 9:16, statuses run up to 60 minutes.
+
+**It cannot be bought on its own.** The ad set must target both platforms and both positions together:
+```
+"publisher_platforms": ["instagram", "whatsapp"],
+"instagram_positions": ["story"],
+"whatsapp_positions": ["status"]
+```
+Meta states plainly that "standalone Status campaigns are not supported at this time." So this is incremental inventory attached to an Instagram Stories buy, not a channel you can isolate, and you cannot read its performance apart from Stories without Meta shipping a breakdown.
+
+**The exclusions, and this is the part that decides whether it is relevant to a given client.**
+- **Special ad categories are not eligible**: Finance, Employment, Housing, and Social Issues, Elections or Politics.
+- **Sensitive verticals are excluded from delivery**: Pharma, Healthcare and GSI (gambling, state lotteries, alcohol and similar restricted categories).
+- A/B testing, Dynamic Creative Optimization and Reach and Frequency buying are not compatible.
+- Advantage+ Creative tools are not available on this placement.
+- Collection and flexible format ads are not supported. Single image, single video and carousel up to 10 cards are.
+- Available globally **except** the EU, UK, Iran, Cuba, Syria, Russia and North Korea.
+- `wamo_whatsapp_identity_spec` cannot be updated on an existing creative; changing the identity means a new creative.
+
+**Read against our book of business: this is not a lane for the chiropractic clients**, which sit inside Healthcare, and vehicle finance offers sit inside the Finance special ad category. It is available to the truck dealerships only where the ad does not carry a credit or financing offer.
+
+**Objectives and optimisation goals Meta lists.** Awareness (reach, impressions, thruplay); Traffic, Leads and Sales (link clicks, reach, impressions, conversations, landing page views); Engagement, which is the only objective carrying **offsite conversions** in addition to the rest. Note the asymmetry: **`OUTCOME_LEADS` does not list offsite conversions**, so a conversion-optimised lead campaign cannot pick up this inventory under the Leads objective. Destinations are WhatsApp chat and website, and a WhatsApp Business Account is not required for the website destination.
+
+**One targeting switch to make deliberately.** Because Meta does not hold an age for every WhatsApp user, ad sets carry a `user_age_unknown` flag. Opting in reaches those users and obliges the ad to be suitable for all ages. It is optional and reversible with `user_age_unknown: false`.
+Sources: Meta, Ads in WhatsApp Status, developers.facebook.com/documentation/ads-commerce/marketing-api/ads-in-whatsapp-status, read in full 2026-09-28; Meta Marketing API changelog, read at source 2026-09-28
+Last touched: 2026-09-28
