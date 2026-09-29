@@ -9,6 +9,159 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-09-29 (research run)
+
+**0 transcripts, 0 claims added, 0 merged, 0 contested, 0 refuted. Codex unchanged at 1,322. 0 harvest errors, 0 watchlist errors.** Fourth consecutive zero-transcript day and the seventh on record. One maintenance edit and no new ID: LS-076 now carries a dated watch note.
+
+**Meta Newsroom had the day's only new item. It was read in full and deliberately not banked.** "Launching Meta Enterprise Platform", 2026-09-28: Meta is starting an enterprise business line selling its own AI stack (Muse agent, Muse API, Muse Code, Meta Business Agent) to businesses and developers, and Chirantan "CJ" Desai joins from MongoDB as Chief Enterprise Platform Officer reporting to Zuckerberg. **No ad product, no placement, no mechanism and no performance figure**, so there is nothing to tier.
+
+**It earned a watch note on LS-076 instead of an ID.** LS-076 banks Meta's launch-day sentence that Muse conversations and VM data do not reach the ad systems, and the claim's own text instructs a future re-check. Twenty days later Meta put a business line and a direct report to the CEO on top of that same stack. **The post says nothing about the ad-system boundary**, so nothing is contested, the tier is unchanged, and the note is filed as context. The commercial weight now sitting on Muse is the reason the re-check matters.
+
+**arXiv passed 3 through the ad filter and all 3 are false positives.** All three abstracts were read before the call.
+
+| Paper | Term that fired | Why it fails |
+|---|---|---|
+| EvoSkillRec, 2609.34552, new | `CTR prediction` | LLM-driven architecture search for recommenders. CTR prediction is one of three benchmark tasks. No auction, no bidding, no ad ranking |
+| FARE, 2609.31890, cross | `CTR prediction` | Share-of-Voice-constrained re-ranking of financial product content. Fairness of organic exposure, no advertising |
+| SAGA, 2608.15429v2, replace-cross | `conversion lift` | Multi-surface user action embeddings at a financial services firm. "Click and conversion lift" is a downstream recsys metric |
+
+**Two things about the filter are worth recording, and neither is visible from the pass count.**
+
+**One, the failure rate is running well above what this file predicts.** The 2026-09-07 note estimated "roughly one false positive a week". Today produced **three in a single build**, and the open fix is still an instruction rather than code. **SAGA is also the first recorded instance of `conversion lift` firing on a non-advertising paper**; the three failures already on file fired on `CTR prediction`, on `sponsored`, and on an advertising mention inside a framing sentence. That is a fourth bank term now known to be leaky.
+
+**Two, the documented bank list and the shipped bank list disagree.** Watchlist.md still lists `click-through rate` as a bank term. It was removed from the regex in `lib/watchlist_check.py` on 2026-09-03, after it was the only hit on a job-matching recommender. **The doc overstates what the filter actually matches.** Left as found and flagged rather than edited, because which terms bank is Lucky's call.
+
+### Watchlist
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 200, build 24 Sep 00:02 UTC. 9 in feed, **0 new**. Build now 5 days flat |
+| Meta Newsroom (RSS) | 200, build 28 Sep 12:37 UTC. 10 in feed, **1 new**, read in full, not banked |
+| Google Ads & Commerce (RSS) | 200, build 24 Sep 16:00 UTC. 20 in feed, **0 new** |
+| Google Ads Announcements | 200. **396 answer ids, 0 added, 0 removed.** Sixth consecutive unchanged day |
+| arXiv cs.IR | 200, build **Tue 29 Sep 05:12 UTC**, run landed after 04:00 UTC so this is today's build. 85 items, 80 new, **3 passed the filter, 0 banked** |
+| TikTok SDK changelog | 200, **unchanged at v0.1.8** |
+| TikTok blog / Newsroom | India geo-block, permanent, not retried. **Policy and creative still unmonitored** |
+| Meta for Business News | **Local browser unavailable.** Partial answer from a third locale, see below |
+| Weekly (Mon) lane | **Not due.** Today is Tuesday |
+
+### Meta for Business News: the browser lane was down and the fallback answered in the wrong locale
+
+**All four local Playwright servers timed out at 30 seconds this session**, so the usual US and UK browser reads could not run. Plain fetch was tried anyway to confirm the documented behaviour and returned **HTTP 400 on both `www` and `en-gb`**, exactly as Watchlist.md records.
+
+**WebFetch did render the page, in the India locale.** That is neither baseline, so **it was not committed as the daily slug diff** and the US and UK slug sets stay dated 2026-09-28. The observation still answers the operating question. The shelf carried **12 slugs, newest dated 10 September 2026**, the Instant Hydration Performance Spotlight, which is the **same top card as the UK baseline**. Eight of the twelve are in the cached UK set. **The four that are not are all back catalogue**, dated 15 September 2025, 17 June 2024, 28 February 2023 and 29 July 2022, which is the rotating-module behaviour this file has warned about since 2026-08-20. **Zero genuinely new items.**
+
+Two method points fall out of it. **The US-to-UK ceiling gap now has a third locale**: India shows the UK top card and none of the US-only recent posts (Agency Awards, Meta One plans, IAB Creator Week). And **the same slug renders 10 September in India against 11 September in the UK**, which is the one-day date drift already recorded on 2026-09-27 and the reason the diff runs on slugs rather than on dates.
+
+### One filing error in this file, found and fixed
+
+**The 2026-09-28 research entry had been appended to the BOTTOM of a newest-first file**, landing below the 2026-08-18 entry where nothing would ever read it. Moved to its correct position above the 2026-09-28 teacher entry. The runbook says "append", the file is ordered newest-first, and the two disagree. **Worth one line so the next run writes to the top.**
+
+### Gaps carried forward
+
+- **TikTok policy and creative stay unmonitored** behind the India geo-block. The SDK changelog reports API surface and never policy.
+- **The arXiv single-hit fix is still an instruction rather than code**, and today raised its cost from one false positive a week to three in one build.
+- **No en-gb hash set for Meta Ad Standards**, open since 2026-09-14.
+- **Marketing API v24.0 sunsets 6 October 2026**, 7 days out. Nothing of ours is pinned to it, still worth one check.
+- **The 14 craft claims banked 2026-09-28 are untested on our own accounts.** CR-268, agitate the accommodation rather than the symptom, is still the cheapest T3-to-T2 upgrade on the board.
+- **The Playwright browser lane needs to come back** before the next daily Meta for Business News diff is trustworthy.
+
+## 2026-09-28 (Monday)
+
+**1 transcript in, 19 claims added, 6 merged, 0 contested, 0 refuted, 1 major RETRACTION absorbed. Codex 1,303 to 1,322. Law layer moved. 0 harvest errors, 0 watchlist errors.** The Monday weekly lane ran in full and produced three corrections to our own methods.
+
+**The day's headline: the source of "the hook is 80% of performance" retracted it, and this codex graded it folklore on 2026-08-19, forty days earlier.** Blue Sense shipped a 181-minute, 37,218-word scripting masterclass and opened it by withdrawing his own figure: "This is not true. This wording is actually bad by me." His replacement is narrower and survives, the hook is 80% of the AUDIENCE and sells nobody. CR-124's FOLKLORE block had already traced the number to an Ogilvy print-headline readership observation restated as a video retention statistic. The persuasion half of the claim is now withdrawn by its own source; the audience-selection half is untouched, and the open empirical question (does re-cutting 3 to 5 seconds of an existing shoot revive a fatigued winner) is still unanswered by anyone.
+
+### YouTube harvest
+
+```
+1 new transcript | 1 skipped short | 1 no subs | 0 out of window
+0 errors | 0 RSS fallbacks | 12 of 12 channels listed
+```
+
+The one transcript is the densest single source the engine has harvested: Blue Sense Digital, *How To Write Meta Ads That Scale: Copywriting Masterclass*, 181 minutes, 37,218 words, read end to end. RSS fallbacks stayed at 0 for a fifth consecutive day. Unextracted backlog **0**, verified across all 477 transcript files.
+
+### Claims banked
+
+**Creative Science, 14 new (CR-267 to CR-280), all T3, all from the one source.** The nine-beat script and what each beat is for (CR-267). **Agitate the ACCOMMODATION, never the symptom** (CR-268), the sharpest idea in the batch: an accommodation is what the buyer already changed about their life to work around the symptom and has never said out loud, where the symptom is something they already know and every competitor already says. **The promise must precede the mechanism**, and a feature with no mechanism gets cut or swapped for proof (CR-269). The proof ladder, demonstration down to founder assertion, and proof must outrank the claim (CR-270). Six objections mapped to six script elements in the order they arrive (CR-271). **Retention falls at the BRIDGES, and batch-generated hooks stitched onto an unchecked body cause the first drop** (CR-272). Length is bought from the problem and mechanism beats and nowhere else, with a beat-by-beat table by runtime (CR-273). **Believing is not wanting** (CR-274), with the organisational diagnosis attached: a logically perfect ad passes every review meeting because the room checks whether it is correct and never whether anyone wants it. Storytelling as a delivery mechanism across all beats rather than a tenth beat (CR-275). Sentence craft and the two AI tells, uniform staccato and contrast negation (CR-276). AI scripting is retrieval not invention, and selection is the human job (CR-277). Five research sources and the five outputs that feed five of the nine beats (CR-278). The three-question differentiator test and the specificity ladder (CR-279). The offer outranks the copy, and most offer wins are repackaging what the business already does (CR-280).
+
+**Two more self-corrections inside the same video, both recorded.** He retracts his earlier advice to script one long ad and cut it down ("that was bad advice", build for the length instead, CR-273), and he retracts teaching the mechanism as though believing equalled wanting (CR-274). Three retractions from one operator in one video is worth noting as a source-quality signal in the right direction.
+
+**Six merges, no duplicates created.** CR-124 (the retraction), CR-136 (mass desire cannot be created, now with an evidence gate: if you cannot find the desire outside your own marketing you do not have a concept), CR-230 (format choice, now with a six-property scorecard and the diagnosis that format failures are writing failures misdiagnosed as production failures), CR-114 (the lock-and-vary builder, expressed as persona x angle x offer with the 2x3x10 arithmetic), CR-127 (introduce the product late, now with the 0-to-100 product-awareness mechanic), CR-206 (competitor replication, now with the belief-chain reason it does not transfer).
+
+**Google, 3 new from v25.2 (2026-09-23), all T1, read at source.** **GA-089** is the one that matters: Google now ships `RAISE_TARGET_CPA_PERFORMANCE_BID_TOO_LOW` and `LOWER_TARGET_ROAS_PERFORMANCE_BID_TOO_LOW`, in its own words for "when bids are too low for Search campaigns to **enter auctions**". The failure named is non-participation rather than underdelivery, which has been operator folklore for years and is now in the platform's schema with a `recommended_target_multiplier` sizing the gap. GA-090, BenchmarksService now returns percentile-tier standing against all advertisers, gated on `PERCENTILE_DATA` plus `all_advertisers` plus a category filter, with share metrics silently absent for open quarters. GP-048, `GeneratePMaxDraftCampaign` converts a Smart campaign to a paused PMax draft (Business Profile and image options error rather than degrade), asset groups get their own tracking URL options, and automated video crawl becomes an explicit per-source opt-in including `SOCIAL`, which points Google at content nobody briefed or compliance-checked.
+
+**Meta, 1 new, T1. EC-007, ads in WhatsApp Status, which was not in this codex at all.** It is a rider on Instagram Stories and cannot be bought standalone. The exclusion list decides who it is relevant to: **special ad categories (Finance, Employment, Housing, SIEP) are not eligible, and Pharma, Healthcare and GSI are excluded from delivery.** That rules out the chiropractic clients outright and rules out any truck ad carrying a credit or financing offer. Also no A/B testing, no DCO, no Reach and Frequency, no Advantage+ Creative, and `OUTCOME_LEADS` does not carry offsite conversions on this placement even though `OUTCOME_ENGAGEMENT` does.
+
+**arXiv, 1 new, T2. LS-083**, from KuaFu (2609.31045, Tencent, ten months in production). Three facts about the user-side signal a large ad platform actually holds: profiles refresh **weekly** at roughly 100K QPM rather than per impression, the layer being replaced was one model per task, and compression is a precondition rather than an optimisation because throughput sets a hard floor. Reported: +37% to 350% per-GPU throughput, 190 GPUs saved, +1.37% GMV. Stated limit: Tencent is not Meta, and the paper says nothing about auctions, bidding or creative selection.
+
+### Law layer
+
+**Moved.** The hot layer's folklore verdict on the 80% figure now records that its own source conceded it, with the instruction to keep the audience-selection half and stop repeating the persuasion half in any form. The 14 new craft claims are listed there as a block with their tier stated plainly, T3 from a teaching video with worked rewrites and no split test, so they brief and grade scripts and never carry a lift figure. GA-089 is added as a T1 confirmation of a previously folkloric Google mechanic.
+
+### Watchlist
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 200, build 24 Sep 00:02 UTC. 9 in feed, **0 new** |
+| Meta Newsroom (RSS) | 200, build 24 Sep 21:16 UTC. 10 in feed, **0 new** |
+| Meta for Business News, both locales | Browser. **US 12 slugs, UK 12 slugs, 0 new and 0 removed on both.** First run of the slug diff and it worked clean |
+| Google Ads & Commerce (RSS) | 200, build 24 Sep 16:00 UTC. 20 in feed, **0 new** |
+| Google Ads Announcements | 200. **396 answer ids, 0 added, 0 removed.** Fifth consecutive unchanged day |
+| arXiv cs.IR | 200, build **Mon 28 Sep 04:00 UTC**, 24 items, 1 passed the ad filter and it was a true positive |
+| TikTok SDK changelog | 200, **unchanged at v0.1.8** |
+| TikTok blog / Newsroom | India geo-block, permanent. **Policy and creative genuinely unmonitored** |
+| **Marketing API changelog** (Mon) | Browser. **URL MOVED**, no version change, still v26.0. v24.0 sunsets 6 Oct 2026 |
+| **Graph API changelog** (Mon) | Browser. No change, v26.0 |
+| **Meta Advertising Standards** (Mon) | Browser. **UNCHANGED, 16 of 16 section hashes byte-identical** to the 2026-09-14 baseline |
+| **Google Ads API release notes** (Mon) | **CHANGED, v25.2.** Read in full, three claims banked |
+| **Google Ads Developer Blog** (Mon) | **1 new post**, v25.2 announcement, 2026-09-23. Body read in full first try |
+| **Merchant Center changelog** (Mon) | No change. Newest still 11 Aug 2026, already banked at GP-043 |
+| **AI at Meta Blog** (Mon) | No change, newest 27 July 2026, **63 days flat**, zero ads content |
+| Demand Gen Drops Hub | Not fetched. Backlog closed; the Ads & Commerce RSS is the alarm and it returned 0 |
+
+**Browser connected on the first attempt**, `playwright` profile, all six browser reads in one session. Cache committed, `last_run: 2026-09-28T13:45 IST`.
+
+### Three corrections to our own method, all found by checking rather than by failing
+
+**1. The Merchant Center "transport artefact" of 2026-09-22 never existed. It is an ORDINAL-DATE BUG on our side.** That note recorded a plain fetch at 15 July against a WebFetch at 11 August and concluded the transports render differently. Today a plain fetch and a real browser BOTH reported 15 July, which the transport theory cannot explain. The page renders the entry as **"August 11th, 2026"**, and a `Month D, YYYY` regex cannot see an ordinal suffix, so the scraper skipped it. This is the **second** occurrence of the same bug in the watchlist; the Meta for Business News section already warned about "13th October 2025". Standing rule added: every date regex in this lane accepts `(st|nd|rd|th)?` and an optional comma, and no newest-entry date moving backwards is ever explained as a rollback or a transport difference before an ordinal-aware re-read.
+
+**2. The Meta Ad Standards hash method failed on a 106-character header change, and the fault is in the baseline.** The 2026-09-14 method says start the first search at offset 150. The page's leading chrome shrank, `1. Overview` moved to offset 102, and the offset-150 start skipped it and anchored the entire sequence on the FOOTER nav where all 16 names repeat. Every section hashed nav text, section 16 came back missing, and the output looked exactly like a full-page rewrite. Re-anchored on the first `Overview`, all 16 slices are byte-identical to baseline. Baseline amended: anchor on the first occurrence, never a magic offset, and match section 16 on its rendered name, "Transparency requirements under the EU Digital Services Act".
+
+**3. The arXiv first-or-last-sentence rule would have been WRONG today, and that is the first counter-example.** KuaFu passed on two bank-list hits, both `advertis`, one in the first sentence and one in the last, which is the exact shape of the three recorded false positives. It is a true positive and it was banked. The proposed rule would have suppressed it, and so would the two-distinct-terms variant, because both hits are the same term. The gap stays open and the reason has changed: it is no longer only that a judgement enforced in code is Lucky's call, it is that the rule as specified is now known to produce false negatives.
+
+### Gaps carried forward
+
+- **TikTok policy and creative stay unmonitored** behind the India geo-block. The SDK changelog reports API surface and never policy.
+- **No en-gb hash set for Meta Ad Standards**, open since 2026-09-14, so the locale lag is still described rather than measured.
+- **The Marketing API index under-rendering artefact did not reproduce.** Recorded as fixed, to be re-opened if it returns.
+- **v24.0 of the Marketing API sunsets 6 October 2026**, eight days out. Nothing of ours is pinned to it, worth one check.
+- **Nothing in this codex tests the 14 new craft claims against our own accounts.** They are T3 from a teaching video. CR-268 in particular, agitate the accommodation rather than the symptom, is testable on any live script this week and would convert to T2 with our numbers.
+
+## 2026-09-29 (teacher run; the research lane launched in the same second and had written no entry at topic-lock)
+
+**Lesson 040 shipped: Seven Gates and None of Them Is the Buyer. Video no, Tuesday.** **Harvest-driven** from the 2026-09-28 research entry, which banked 19 claims and 6 merges and moved the codex 1,303 to 1,322 and went untaught because it was written at 13:40, after lesson 039 shipped at 13:13. Topic is Creative Science, rotation index 3, while the pointer sits at 8. Not the pointer's own topic, so the pointer **HOLDS at 8** and TikTok Delivery remains next. Fourth Creative Science lesson in 40, after 007, 016 and 030.
+
+**FILING DEFECT, and it is the reason yesterday's biggest harvest nearly went unread a second time: the 2026-09-28 research entry is at LINE 2438 of this file, near the bottom, beside the 2026-08-18 founding entry.** Every other entry is newest-first at the top. Anyone reading `head` of this log sees the 2026-09-28 teacher entry as the newest thing and concludes the research lane was quiet, when it ran the densest day the engine has had: one 181-minute transcript, 14 new Creative Science claims, 3 Google claims off v25.2, 1 Meta claim, 1 arXiv claim, and a retraction absorbed. The content is intact and correct. Only its position is wrong. Left in place rather than moved, because reordering this log is outside the teacher lane, and recorded here so the next run can find it.
+
+**The spine is [[Creative Science#CR-274|CR-274]], T3: believing is not wanting.** "You can build an argument so logical that a buyer agrees with every single sentence and still does nothing." The organisational half is what made it teachable: "everybody in the room is checking whether it's correct... but nobody in the room is checking whether anybody actually wants it." A checklist produces competence. [[Creative Science#CR-267|CR-267]] supplies the structural reason it goes missing: the nine-beat order has a slot for the problem, the mechanism and the proof, identity has no slot, and anything with no slot falls out of a structured process by construction.
+
+**The in-house half is a fresh count taken today and it is the finding: SEVEN gates stand between our copy and a client, and all seven measure a property of the text with the reader absent.** `flow_check.py` sentence rhythm, `turn_check.py` beat-card truth, `episode_check.py` past-event assertions, the compliance gate, `plain_check.py` reader presence, `slop_check.py` batch variance, and the Hook and Angle scorecard. Two come close and both were named as stopping short: `plain_check` tests whether copy is ADDRESSED to the reader, and the scorecard's Relevance criterion tests whether it agitates a PROBLEM. Neither is a want.
+
+**Our own ruler carries the market's bias and we had already written the proof down.** The Hook and Angle Checklist states in the file that all five criteria are properties of seconds 0 to 3, that a perfect hook with a missing middle scores full marks, and that this happened on 2 September 2026. Set beside [[Creative Science#CR-124|CR-124]]'s new number, a scrape of **360 YouTube transcripts** where **70 to 75% of total runtime went to hooks**, that is the same bias measured outside and inside.
+
+**The 45 captions were re-read as the lesson's cold open and the sting is new.** All 45 passed compliance, all scored 33 to 35 out of 35, 0 of 45 were in a human first-person voice, 45 of 45 opened with the identical string, 3 structural shapes across 45 pieces. **The remedy we shipped that day was `slop_check.py`, which is another correctness test.** A wanting failure was answered with a better ruler. Stated plainly in the lesson and not softened.
+
+**[[Scaling Models#SC-168|SC-168]] carried with its own limit rather than as a verdict.** Ads that spent and returned zero opt-ins: StayWell 10 of 12, $98.05, 29.1%, $9.81 a day; ChiroWorks 16 of 22, $35.55, 5.7%, $3.56; SJR 19 of 52, $106.89, 2.2%, $13.36; Phoenix Truxx 2 of 5, $0.93, 0.2%. Every one cleared every gate. **None is evidence nobody wanted it**, because StayWell's window produced 12 opt-ins across 12 ads and cannot rank an ad. The honest conclusion taught: our gates cannot tell whether an ad was wanted and our accounts mostly cannot either, because most ads on our book never reach the spend that would answer.
+
+**Decision rule shipped.** Before anything ships, finish "someone who acts on this gets to be the kind of person who ___" from the copy alone. If nobody can finish it, every gate passed and the piece is not ready. Two riders carried: all seven gates stay in the same order, and the identity has to attach to a mechanism the business actually has.
+
+**Deliberately differentiated.** Lesson 007 taught hook rate ranking the wrong ad, which is a metric problem with a remedy you control. This one is about what a hook can DO after its own source withdrew the 80% figure, and about the instrument stack rather than any single number. Lessons 035, 037 and 038 all graded how to read somebody else's claim; this one grades our own gates.
+
+**No claim was banked, no claim was amended and no law changed.** The lesson reads claims banked yesterday plus one fresh count of our own gate stack.
+
+**Engine.** Both lanes launched at **12:44:19**, the same second again and more than five hours after their 07:00 and 08:00 schedules. The watchdog logged "a run is in progress; standing down" at 12:44:23 and correctly did nothing. The collision workaround ran as standing practice: `Creative Science.md` was checked at **12:58:58** at 280 CR headers with CR-124, CR-267, CR-268, CR-270, CR-272, CR-274 and CR-279 all present, tiers re-read at T3 for four of them and T3 contested for CR-124, and SC-168 re-read at T3 in `Scaling Models.md`. **Inbox empty for the fortieth consecutive run**, so no grading was performed and no scoreboard row was written.
+
 ## 2026-09-28 (teacher run; the research lane had written no entry at topic-lock and banked its first transcript three minutes later)
 
 **Lesson 039 shipped: The Same End State Has Two Prices. Video yes, 3m 22s.** **Taken from the rotation** at index 7, Google PMax & Shopping, after the newest Harvest Log entry (2026-09-27 research) came back fully quiet: 0 transcripts from 12 of 12 channels, 0 claims added, codex unchanged at 1,303. Pointer advanced **7 to 8, TikTok Delivery is next.** Only the SECOND lesson on this topic in 39 lessons, after lesson 020 on 2026-09-08.
@@ -2434,75 +2587,3 @@ Zero new material arrived, so the run went at the 242-transcript backlog under t
 - Deep backfill (top-30 per channel for 12 months + full BlueSense catalog) running; unextracted backlog will be worked at 25/day by the daily research runs.
 - Gaps noticed: Google PMax topic has T1 docs only, zero practitioner claims so far (Solutions 8 deep catalog + Mike Rhodes backfill should fill it); TikTok topic is T1-only; no channel currently covers Google Ads with shown test data.
 - Lesson 001 shipped: Creative Is the Targeting (no video today; first video day is Wed 20 Aug).
-
-## 2026-09-28 (Monday)
-
-**1 transcript in, 19 claims added, 6 merged, 0 contested, 0 refuted, 1 major RETRACTION absorbed. Codex 1,303 to 1,322. Law layer moved. 0 harvest errors, 0 watchlist errors.** The Monday weekly lane ran in full and produced three corrections to our own methods.
-
-**The day's headline: the source of "the hook is 80% of performance" retracted it, and this codex graded it folklore on 2026-08-19, forty days earlier.** Blue Sense shipped a 181-minute, 37,218-word scripting masterclass and opened it by withdrawing his own figure: "This is not true. This wording is actually bad by me." His replacement is narrower and survives, the hook is 80% of the AUDIENCE and sells nobody. CR-124's FOLKLORE block had already traced the number to an Ogilvy print-headline readership observation restated as a video retention statistic. The persuasion half of the claim is now withdrawn by its own source; the audience-selection half is untouched, and the open empirical question (does re-cutting 3 to 5 seconds of an existing shoot revive a fatigued winner) is still unanswered by anyone.
-
-### YouTube harvest
-
-```
-1 new transcript | 1 skipped short | 1 no subs | 0 out of window
-0 errors | 0 RSS fallbacks | 12 of 12 channels listed
-```
-
-The one transcript is the densest single source the engine has harvested: Blue Sense Digital, *How To Write Meta Ads That Scale: Copywriting Masterclass*, 181 minutes, 37,218 words, read end to end. RSS fallbacks stayed at 0 for a fifth consecutive day. Unextracted backlog **0**, verified across all 477 transcript files.
-
-### Claims banked
-
-**Creative Science, 14 new (CR-267 to CR-280), all T3, all from the one source.** The nine-beat script and what each beat is for (CR-267). **Agitate the ACCOMMODATION, never the symptom** (CR-268), the sharpest idea in the batch: an accommodation is what the buyer already changed about their life to work around the symptom and has never said out loud, where the symptom is something they already know and every competitor already says. **The promise must precede the mechanism**, and a feature with no mechanism gets cut or swapped for proof (CR-269). The proof ladder, demonstration down to founder assertion, and proof must outrank the claim (CR-270). Six objections mapped to six script elements in the order they arrive (CR-271). **Retention falls at the BRIDGES, and batch-generated hooks stitched onto an unchecked body cause the first drop** (CR-272). Length is bought from the problem and mechanism beats and nowhere else, with a beat-by-beat table by runtime (CR-273). **Believing is not wanting** (CR-274), with the organisational diagnosis attached: a logically perfect ad passes every review meeting because the room checks whether it is correct and never whether anyone wants it. Storytelling as a delivery mechanism across all beats rather than a tenth beat (CR-275). Sentence craft and the two AI tells, uniform staccato and contrast negation (CR-276). AI scripting is retrieval not invention, and selection is the human job (CR-277). Five research sources and the five outputs that feed five of the nine beats (CR-278). The three-question differentiator test and the specificity ladder (CR-279). The offer outranks the copy, and most offer wins are repackaging what the business already does (CR-280).
-
-**Two more self-corrections inside the same video, both recorded.** He retracts his earlier advice to script one long ad and cut it down ("that was bad advice", build for the length instead, CR-273), and he retracts teaching the mechanism as though believing equalled wanting (CR-274). Three retractions from one operator in one video is worth noting as a source-quality signal in the right direction.
-
-**Six merges, no duplicates created.** CR-124 (the retraction), CR-136 (mass desire cannot be created, now with an evidence gate: if you cannot find the desire outside your own marketing you do not have a concept), CR-230 (format choice, now with a six-property scorecard and the diagnosis that format failures are writing failures misdiagnosed as production failures), CR-114 (the lock-and-vary builder, expressed as persona x angle x offer with the 2x3x10 arithmetic), CR-127 (introduce the product late, now with the 0-to-100 product-awareness mechanic), CR-206 (competitor replication, now with the belief-chain reason it does not transfer).
-
-**Google, 3 new from v25.2 (2026-09-23), all T1, read at source.** **GA-089** is the one that matters: Google now ships `RAISE_TARGET_CPA_PERFORMANCE_BID_TOO_LOW` and `LOWER_TARGET_ROAS_PERFORMANCE_BID_TOO_LOW`, in its own words for "when bids are too low for Search campaigns to **enter auctions**". The failure named is non-participation rather than underdelivery, which has been operator folklore for years and is now in the platform's schema with a `recommended_target_multiplier` sizing the gap. GA-090, BenchmarksService now returns percentile-tier standing against all advertisers, gated on `PERCENTILE_DATA` plus `all_advertisers` plus a category filter, with share metrics silently absent for open quarters. GP-048, `GeneratePMaxDraftCampaign` converts a Smart campaign to a paused PMax draft (Business Profile and image options error rather than degrade), asset groups get their own tracking URL options, and automated video crawl becomes an explicit per-source opt-in including `SOCIAL`, which points Google at content nobody briefed or compliance-checked.
-
-**Meta, 1 new, T1. EC-007, ads in WhatsApp Status, which was not in this codex at all.** It is a rider on Instagram Stories and cannot be bought standalone. The exclusion list decides who it is relevant to: **special ad categories (Finance, Employment, Housing, SIEP) are not eligible, and Pharma, Healthcare and GSI are excluded from delivery.** That rules out the chiropractic clients outright and rules out any truck ad carrying a credit or financing offer. Also no A/B testing, no DCO, no Reach and Frequency, no Advantage+ Creative, and `OUTCOME_LEADS` does not carry offsite conversions on this placement even though `OUTCOME_ENGAGEMENT` does.
-
-**arXiv, 1 new, T2. LS-083**, from KuaFu (2609.31045, Tencent, ten months in production). Three facts about the user-side signal a large ad platform actually holds: profiles refresh **weekly** at roughly 100K QPM rather than per impression, the layer being replaced was one model per task, and compression is a precondition rather than an optimisation because throughput sets a hard floor. Reported: +37% to 350% per-GPU throughput, 190 GPUs saved, +1.37% GMV. Stated limit: Tencent is not Meta, and the paper says nothing about auctions, bidding or creative selection.
-
-### Law layer
-
-**Moved.** The hot layer's folklore verdict on the 80% figure now records that its own source conceded it, with the instruction to keep the audience-selection half and stop repeating the persuasion half in any form. The 14 new craft claims are listed there as a block with their tier stated plainly, T3 from a teaching video with worked rewrites and no split test, so they brief and grade scripts and never carry a lift figure. GA-089 is added as a T1 confirmation of a previously folkloric Google mechanic.
-
-### Watchlist
-
-| Source | Result |
-|---|---|
-| Meta Engineering (RSS) | 200, build 24 Sep 00:02 UTC. 9 in feed, **0 new** |
-| Meta Newsroom (RSS) | 200, build 24 Sep 21:16 UTC. 10 in feed, **0 new** |
-| Meta for Business News, both locales | Browser. **US 12 slugs, UK 12 slugs, 0 new and 0 removed on both.** First run of the slug diff and it worked clean |
-| Google Ads & Commerce (RSS) | 200, build 24 Sep 16:00 UTC. 20 in feed, **0 new** |
-| Google Ads Announcements | 200. **396 answer ids, 0 added, 0 removed.** Fifth consecutive unchanged day |
-| arXiv cs.IR | 200, build **Mon 28 Sep 04:00 UTC**, 24 items, 1 passed the ad filter and it was a true positive |
-| TikTok SDK changelog | 200, **unchanged at v0.1.8** |
-| TikTok blog / Newsroom | India geo-block, permanent. **Policy and creative genuinely unmonitored** |
-| **Marketing API changelog** (Mon) | Browser. **URL MOVED**, no version change, still v26.0. v24.0 sunsets 6 Oct 2026 |
-| **Graph API changelog** (Mon) | Browser. No change, v26.0 |
-| **Meta Advertising Standards** (Mon) | Browser. **UNCHANGED, 16 of 16 section hashes byte-identical** to the 2026-09-14 baseline |
-| **Google Ads API release notes** (Mon) | **CHANGED, v25.2.** Read in full, three claims banked |
-| **Google Ads Developer Blog** (Mon) | **1 new post**, v25.2 announcement, 2026-09-23. Body read in full first try |
-| **Merchant Center changelog** (Mon) | No change. Newest still 11 Aug 2026, already banked at GP-043 |
-| **AI at Meta Blog** (Mon) | No change, newest 27 July 2026, **63 days flat**, zero ads content |
-| Demand Gen Drops Hub | Not fetched. Backlog closed; the Ads & Commerce RSS is the alarm and it returned 0 |
-
-**Browser connected on the first attempt**, `playwright` profile, all six browser reads in one session. Cache committed, `last_run: 2026-09-28T13:45 IST`.
-
-### Three corrections to our own method, all found by checking rather than by failing
-
-**1. The Merchant Center "transport artefact" of 2026-09-22 never existed. It is an ORDINAL-DATE BUG on our side.** That note recorded a plain fetch at 15 July against a WebFetch at 11 August and concluded the transports render differently. Today a plain fetch and a real browser BOTH reported 15 July, which the transport theory cannot explain. The page renders the entry as **"August 11th, 2026"**, and a `Month D, YYYY` regex cannot see an ordinal suffix, so the scraper skipped it. This is the **second** occurrence of the same bug in the watchlist; the Meta for Business News section already warned about "13th October 2025". Standing rule added: every date regex in this lane accepts `(st|nd|rd|th)?` and an optional comma, and no newest-entry date moving backwards is ever explained as a rollback or a transport difference before an ordinal-aware re-read.
-
-**2. The Meta Ad Standards hash method failed on a 106-character header change, and the fault is in the baseline.** The 2026-09-14 method says start the first search at offset 150. The page's leading chrome shrank, `1. Overview` moved to offset 102, and the offset-150 start skipped it and anchored the entire sequence on the FOOTER nav where all 16 names repeat. Every section hashed nav text, section 16 came back missing, and the output looked exactly like a full-page rewrite. Re-anchored on the first `Overview`, all 16 slices are byte-identical to baseline. Baseline amended: anchor on the first occurrence, never a magic offset, and match section 16 on its rendered name, "Transparency requirements under the EU Digital Services Act".
-
-**3. The arXiv first-or-last-sentence rule would have been WRONG today, and that is the first counter-example.** KuaFu passed on two bank-list hits, both `advertis`, one in the first sentence and one in the last, which is the exact shape of the three recorded false positives. It is a true positive and it was banked. The proposed rule would have suppressed it, and so would the two-distinct-terms variant, because both hits are the same term. The gap stays open and the reason has changed: it is no longer only that a judgement enforced in code is Lucky's call, it is that the rule as specified is now known to produce false negatives.
-
-### Gaps carried forward
-
-- **TikTok policy and creative stay unmonitored** behind the India geo-block. The SDK changelog reports API surface and never policy.
-- **No en-gb hash set for Meta Ad Standards**, open since 2026-09-14, so the locale lag is still described rather than measured.
-- **The Marketing API index under-rendering artefact did not reproduce.** Recorded as fixed, to be re-opened if it returns.
-- **v24.0 of the Marketing API sunsets 6 October 2026**, eight days out. Nothing of ours is pinned to it, worth one check.
-- **Nothing in this codex tests the 14 new craft claims against our own accounts.** They are T3 from a teaching video. CR-268 in particular, agitate the accommodation rather than the symptom, is testable on any live script this week and would convert to T2 with our numbers.
