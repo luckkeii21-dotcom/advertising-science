@@ -716,8 +716,9 @@ Meta's published copy, read on screen: "With data from current and prior campaig
 SHOWN, and this is the T2 half. In a live lead-gen account the assistant returns both industry and internal benchmarks per entity: an ad set with a cost per result "154% above the industry benchmark for lead generation prospecting" with a 52% recent trend improvement, one ad at £3.79 CPR which is £3.14 below the internal benchmark, against another at £30 which is £23 above. Ben Heath's read is that the analysis layer is the value, because the benchmark comparison is information the account did not previously contain.
 THE RECOMMENDATION LAYER IS WHERE IT FAILS. Heath catches it recommending that Advantage+ audience be enabled on a campaign where Advantage+ audience was already enabled, and names the incentive problem: "Particularly be skeptical around the advice on increasing budgets. Like, who's that serving? A lot of the time advice and recommendations from Meta as a platform will help you as an advertiser, but sometimes it helps Meta out more than it does the advertiser." Same posture MD-099 takes on Opportunity Score, and the 12% cost-per-result figure Meta attaches to this product is in fact an Opportunity Score figure (MD-099).
 Access: it appears as an icon in the left rail of Ads Manager on most accounts, and you scope it by selecting the campaign, ad set and ads before asking a question.
-Sources: Ben Heath, How Good Is Meta's New AI Business Assistant?, 2026-06-03 (Meta article and account output shown)
-Last touched: 2026-08-20
+**The 20% account-issue figure is now on record in two incompatible forms, 2026-09-29.** The line above quotes Meta's published "20% increased resolution rates of common account issues". Heath restates the same figure from a Meta briefing as the assistant being "able to resolve about 20% of account issues". A 20% relative improvement in a resolution rate and a 20% absolute resolution rate are different claims, and one of the two readings is wrong. **Neither carries a methodology, so the figure is unusable in either form** and should never be repeated to a client. Ads Creative Studio, built on this same assistant, is at [[Meta Delivery & Andromeda#MD-168|MD-168]].
+Sources: Ben Heath, How Good Is Meta's New AI Business Assistant?, 2026-06-03 (Meta article and account output shown); Ben Heath, AI Just Changed Facebook Ads Forever!, 2026-09-29, youtube.com/watch?v=RTrRKB0iXwQ, 19 min, read in full
+Last touched: 2026-09-30
 
 ### MD-112 · Meta now exposes MCP and CLI access to ad accounts, granted through a Business Manager system user
 Tier: T1 · Status: active
@@ -1694,3 +1695,44 @@ Nick Theriot, from a 7-day test on a client store, and he flags it as a belief w
 **The cheap test, if anyone wants to close it:** pause the ad in the first campaign for 72 hours and read the second campaign's spend on the same post ID.
 Sources: Nick Theriot, "I tested ABO & Cost Caps (here's the results)", 2026-09-23
 Last touched: 2026-09-24
+
+### MD-168 · Meta is rolling out Ads Creative Studio, a second AI surface in Ads Manager that grades each asset against a numeric threshold, compares it to top performers in your category, and generates variations of your own winners
+Tier: T2 · Status: active
+Ben Heath, 2026-09-29, demonstrated live in a client ad account and preceded by a private briefing from the Meta team building the feature. T2 covers the surface and the interface copy, which were on screen. **Nothing the studio produces has any performance data attached, so every outcome implication below is untested.**
+
+**Access and rollout state.** Three-line menu, then All tools, then under Advertise, "Ads creative studio". Live in a small number of accounts as a pre-release test, with Heath reporting Meta intends a broad rollout soon. Meta told him the surface will be extended, so the panel list here is a starting state and not a specification.
+
+**It sits on top of the AI business assistant at [[Meta Delivery & Andromeda#MD-105|MD-105]].** That is the account-level chat surface. This is the creative-level version of the same machine: the same benchmarking reach beyond your own account, the same generate-a-recommendation layer, pointed at individual assets instead of at campaigns. The same human-filter caution applies, for the same reason.
+
+**Panel 1, Improve creatives.** Lists assets failing the minimum performance threshold ([[Creative Science#CR-281|CR-281]]) with a written diagnosis of why. One diagnosis verbatim: "the creative underperforms because it relies on static flatlay that lacks human connection and trust signals." It then states what the category's top performers do differently, verbatim: "When analyzing top performing ads in your category, we found that successful creatives often feature products in use by a model or styled in a studio setting with a strong focus on specific material benefits and quality", with "clear trust signals such as a multi-year warranty, official certifications" named. It closes with three named creative styles and generated example images for each.
+
+**Panel 2, Scale top creatives.** A leaderboard of the account's best assets, breakable by product, objective or audience, filterable to image or video, with a selectable ranking metric and a time window. Columns shown: spend, ROAS, trend over time, cost per result, frequency, and for video **hook rate, hold rate and thruplay**, which is the native-column change recorded against [[Creative Science#CR-176|CR-176]].
+
+**The generation layer, and the lever names are the part worth keeping**, because they are Meta stating which edits it believes are worth making to a proven asset.
+
+- **Video:** new hooks, described in-product as "swap out the first 3 to 5 seconds of a video with a different approach", with hook types selectable as satisfying intro, emotional storytelling, skit, fear of missing out, or auto. Also add subtitles, and generate a voiceover with a specified voice type. Video generation is quoted in-product at "up to 15 minutes".
+- **Image:** resize to match placements, animate the still by moving its elements over time, swap a different product image into the frame while holding everything else, change visual elements while preserving the text and the core idea, update the text on the creative while holding the visuals, or try a new style.
+
+**The hook lever is the one that matters beyond the feature list**, because it is Meta recommending and generating the exact operation the codex has been unable to settle for four passes. Full reading at [[Creative Science#CR-124|CR-124]].
+
+**Limits, stated plainly.** One account, one operator, one session. No generated asset was shown, because the demo ran on a live client account. No hit rate, no before-and-after, no cost per result for anything the studio made. Heath's own guard is the same one MD-105 earns, "you need to be the filter", and he names the case where the written diagnosis would be wrong for an account that has already tested what it recommends.
+
+**Two ROAS figures quoted from the assistant during the same demo, an 82% decrease and a 99% drop, are deliberately not banked.** They come from an auto-transcript that garbles the metric name throughout, they are internally inconsistent as read, and no dashboard was shown.
+Sources: Ben Heath, AI Just Changed Facebook Ads Forever!, 2026-09-29, youtube.com/watch?v=RTrRKB0iXwQ, 19 min, read in full
+Last touched: 2026-09-30
+
+### MD-169 · Meta's consumer AI agent now connects to Meta ad accounts in a few clicks and drafts campaigns, which puts an agent with ad-account access in front of the small-business owner rather than in front of a developer
+Tier: T1 · Status: active
+Meta Newsroom, 2026-09-29, "The Future Is for Everyone: Muse for Small Business". Meta's own announcement, read in full.
+
+**The load-bearing sentence:** "Muse can connect your Instagram professional account analytics, Facebook Pages, and Meta ad accounts in a few clicks, and it already understands your business: what you sell, what your brand sounds like, and what customers keep asking you about."
+
+**One of the five use cases Meta publishes is an advertising one, with the prompt written out:** "How do I improve my ads and content? Can you analyze what's working or not, and draft a campaign for next week? Make sure to look at what's trending." A second is "Analyze this year's sales, campaigns, and social and make me a growth plan to meet my business goals for next year."
+
+**Why it gets an ID.** [[Meta Delivery & Andromeda#MD-159|MD-159]] recorded the first agent-reachable Meta buying surface, the Meta Ads MCP connector, which is a developer route. This is the same class of capability arriving through a consumer app aimed at the business owner directly. Muse is US and Canada, connects to dozens of third-party tools including Canva, supports custom connectors, and Meta says it acts proactively rather than only on request. **Meta names no ad-account write scope and no permission model in the post**, so what "draft a campaign" actually creates is unknown.
+
+**The commercial read, and it is a reason to watch rather than to act.** Our clients are exactly the population this is aimed at. An owner who can ask an agent to analyse the ads and draft next week's campaign is being handed the surface layer of what an agency does, free, inside an app they already have. What it does not do is media-buying judgement, and Meta's recommendation layer has a recorded failure rate at [[Meta Delivery & Andromeda#MD-105|MD-105]], including the incentive problem when the platform recommends raising budgets. Carry it as a positioning fact to answer when a client raises it.
+
+**It also moves [[Learning & Signal#LS-076|LS-076]] from a watch note to a live question.** LS-076 banks Meta's launch-day sentence that Muse conversations and VM data do not reach the ad systems. Three weeks later Muse reads ad accounts. Reading an ad account is the opposite direction from feeding the ad systems, so nothing is contested and the tier there is unchanged. The two surfaces now sit inside one agent, which is why the re-check matters.
+Sources: Meta Newsroom, The Future Is for Everyone: Muse for Small Business, 2026-09-29, about.fb.com/news/2026/09/introducing-muse-small-business/, read in full
+Last touched: 2026-09-30

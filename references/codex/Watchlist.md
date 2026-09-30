@@ -488,3 +488,46 @@ One paper passed the bank-list filter, arXiv 2609.31045, *KuaFu: Compressing Lon
 **That is the precise shape of the three recorded false positives, and this one is a TRUE positive.** The paper describes the production user-understanding layer of a real advertising platform at billion-user scale, with deployment numbers, and it was banked as LS-083.
 
 So the rule proposed on 2026-09-07 and carried as a gap ever since, discount a bank-list hit confined to the first or last sentence of an abstract, **would have suppressed a genuine finding today.** The co-occurrence variant (require two distinct bank terms) would also have suppressed it, because both hits are the same term. This is the first counter-example against a rule that previously had three supporting observations and none against. **The gap stays open and the rule stays unshipped, and the reason has changed: it is no longer only that enforcing a judgement in code is Lucky's call, it is that the rule as specified is now known to produce false negatives.** Reading the abstract remains the only method that has never been wrong.
+
+### The US shelf IS readable on a zero-browser day, through WebFetch with `?locale=en_US` (found 2026-09-30)
+
+The 2026-09-22 entry above rules that "the whole Meta lane is unreadable when no Playwright profile connects", on the
+evidence that every Meta property this watchlist tracks serves HTTP 400 to a plain fetch. **That ruling is about PLAIN
+FETCH and it over-reaches to the lane.** Today all four Playwright profiles failed CONNECT_TIMEOUT at session start, a
+plain fetch returned HTTP 400 on both Business News URLs, and **WebFetch rendered `?locale=en_US` in English (US) with
+all 12 card titles and dates**. Diffed against `pages.meta-business-news.titles_us`: **0 added, 0 removed, set identical
+to the 2026-09-28 baseline.** Ceiling holds at 21 September 2026, "Meet the 2026 Meta Agency Award Winners".
+
+That is the first clean title-set diff ever run on the US lane without a browser, and it makes the most important source
+on this watchlist browser-optional rather than browser-only.
+
+**The `?locale=en_US` parameter is load-bearing and yesterday's run is the control.** On 2026-09-29 WebFetch was pointed
+at the bare URL and rendered the India catalogue, which that run correctly refused to commit. Today the bare URL did the
+same thing again, in Hindi, while the parameterised URL rendered US English in the same session. **The parameter
+controls the render. The absence of it does not fall back to UK or to US, it falls back to our egress.**
+
+### The bare URL does NOT give us the UK shelf, so `titles_uk` cannot be diffed from here without a browser (2026-09-30)
+
+The 2026-09-20 standing instruction says to read BOTH the bare URL and `?locale=en_US` every day and diff the two title
+sets separately, on the finding that the bare URL "renders en_GB from our New Delhi egress". **That was true on
+2026-09-20 and it is not a property of the URL.** The bare URL rendered Hindi/India on 2026-09-29 and again on
+2026-09-30, and the India catalogue is a third shelf, not the UK one.
+
+Today's India set against the cached UK set: **8 of 12 titles overlap** (Instant Hydration, Meta AI ads, winning hearts
+before peak season, Conversations 2026, optimise content for social search, trends reshaping search, why social search
+and traditional search coexist, Cyber 5 2025). The four that do not are all back catalogue: 15 September 2025,
+17 June 2024, 28 February 2023, 29 July 2022. **Byte-for-byte the same 8-and-4 split as 2026-09-29**, so the India shelf
+is stable day over day and is not quietly rotating past us.
+
+**Standing instruction, amended.** Read `?locale=en_US` and diff it against `titles_us`; that lane works with or without
+a browser. **A bare-URL read from our egress is an INDIA read and must never be committed against `titles_uk`.** The UK
+shelf needs a browser with an explicit `en-gb` path, or a UK egress. Until one of those runs, log the UK lane as not
+checked and say how stale the baseline is, rather than logging the source as clean.
+
+### Meta's HTTP 400 pages can be 267 KB and still contain nothing (2026-09-30)
+
+Recorded so no future run chases the byte count. `transparency.meta.com/policies/ad-standards/` returned **HTTP 400 with
+a 266,875-byte body** on a plain fetch, against the 1,542-byte error body the 2026-09-22 entry records for
+`facebook.com/business/news`. The large body looks like a successful render and is not one: strip scripts and tags and
+**the visible text is 7 characters and reads "Error"**. None of the 16 section names appears. Both localess behaved the
+same way. **Judge a Meta 400 on its rendered text, never on its content length.**
