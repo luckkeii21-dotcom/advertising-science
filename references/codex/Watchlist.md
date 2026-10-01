@@ -531,3 +531,62 @@ a 266,875-byte body** on a plain fetch, against the 1,542-byte error body the 20
 `facebook.com/business/news`. The large body looks like a successful render and is not one: strip scripts and tags and
 **the visible text is 7 characters and reads "Error"**. None of the 16 section names appears. Both localess behaved the
 same way. **Judge a Meta 400 on its rendered text, never on its content length.**
+
+
+### The UK shelf IS readable without a browser, and the key is `?locale=en_GB` (found 2026-10-01)
+
+The 2026-09-30 entry above rules that "the UK shelf needs a browser with an explicit `en-gb` path, or a UK
+egress", and instructs future runs to log the UK lane as not checked until one of those exists. **That
+ruling is retired. WebFetch on `?locale=en_GB` rendered the UK shelf in English (UK) today, with all 12
+card titles, all 12 dates and all 12 slugs, on the first attempt.** All four Playwright profiles failed
+CONNECT_TIMEOUT at session start, so no browser was involved at any point.
+
+**Both shelves therefore diffed clean in one pass with no browser, for the first time:**
+
+| Locale | Ceiling | Slugs | Against the 2026-09-28 baseline |
+|---|---|---|---|
+| `?locale=en_US` | 21 September 2026, "Meet the 2026 Meta Agency Award Winners" | 12 | **0 added, 0 removed** |
+| `?locale=en_GB` | 10 September 2026, Instant Hydration spotlight | 12 | **0 added, 0 removed** |
+
+**What the 2026-09-30 entry got right and what it got wrong.** It was right that the bare URL is an India
+read from our egress and must never be committed against the UK baseline. It was wrong to generalise from
+"the bare URL does not give us the UK shelf" to "the UK shelf needs a browser". The missing step was to try
+the parameter that already worked for the US lane with the other locale code in it. **The parameter is the
+key on every locale, and it was never only a US fix.**
+
+**Standing instruction, now simple enough to state in one line: read `?locale=en_US` and `?locale=en_GB`
+through WebFetch, diff the SLUG sets, and never read the bare URL at all.** The whole source is
+browser-optional. The US-to-UK ceiling gap is 11 days, unchanged from 2026-09-23, so the gap is a property
+of Meta's publishing and not of our reading.
+
+**Ask WebFetch for the hrefs, not the titles.** The 2026-09-27 note established that a slug diff is stable
+where a title diff is not. WebFetch returns titles by default and three of today's twelve UK titles differ
+from the stored baseline on punctuation alone: `L'Oreal` against `L'Oréal`, a hyphen against an en dash in
+the social-search title, and double against single quotes in "Auto-Pilot". **A title diff would have had
+three adjudications to make and a slug diff had none.** One extra WebFetch call per locale buys the stable
+key.
+
+### arXiv filter: `ad-hoc` is a FOURTH false-positive mechanism, and this one survives the whole-word rule (fixed in code 2026-10-01)
+
+The filter notes above record three false-positive shapes, all of them about WHERE a genuine advertising
+term sits in an abstract. This one is different: it is a term that is not about advertising at all.
+
+**`\bads?\b` matches the "ad" in "ad-hoc", because a hyphen is a word boundary.** It fired on the GEAR
+abstract at "stabilizing gradient dynamics without ad-hoc heuristics". GEAR is a true positive on two other
+hits, "Ad Retrieval" in the title and "Douyin Ads" in the deployment sentence, so nothing was mis-banked
+today. **The exposure is a pure recommender-systems paper that says "ad-hoc" once and nothing else**, which
+would pass the filter on that alone. "ad-hoc" is ordinary machine-learning prose and appears constantly.
+
+**The whole-word rule already in this file does not catch it.** That rule was written against substring
+matches, naming "adaptive", "advanced" and "gradient", and `\bads?\b` correctly excludes all three. It was
+never tested against a hyphenated compound whose first element is literally "ad".
+
+**Shipped, because it is a literal exclusion with no judgement in it:** `lib/watchlist_check.py` now uses
+`r"\bads?\b(?![- ]hoc)"`. Five regression cases are in `lib/_wl_20261001.py` and all five pass. A blanket
+`(?!-)` was deliberately NOT used, because "ad-level" and "ad-set" are genuine advertising terms and would
+have become false negatives.
+
+**This stays separate from the first-or-last-sentence rule, which is still unshipped and should stay that
+way.** That rule asks for a judgement about where meaning sits in a paragraph and it now has two known false
+negatives (LS-083 on 2026-09-28, LS-084 on 2026-09-30). This one asks whether four characters are the word
+"ad", which code can answer.

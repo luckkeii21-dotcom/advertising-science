@@ -1349,8 +1349,10 @@ The cleanest resolution in this codex of an argument that is usually had without
 **2026-09-09: the platform is about to enforce the ordering rule this claim recommends, and the same source supplied the enforcement.** Loomer's "prioritize using value rules first before removing a placement entirely" was operator judgement when it was banked. Meta's in-product notice at [[Meta Delivery & Andromeda#MD-150|MD-150]] withdraws ad-set placement, platform, device and operating-system exclusion, which leaves the value rule as the only ad-set-level lever and makes the ordering compulsory rather than advised.
 **Two additions to the substance, both from his 2026-08-24 post on the change.** The upper-funnel exposure gets named precisely: link clicks and landing-page views should watch **Audience Network**, and ThruPlay should watch **Audience Network Rewarded Video**, where third-party apps pay users in virtual currency to watch video. And he now argues the fix is to abandon the goal rather than prune the placement, because "you're still bound to get cheap, low-quality optimized actions from other placements". **On the conversion side he goes further than this claim recorded:** "You should rarely need to use value rules to adjust bids by placement when using a performance goal that maximizes the number or value of conversions", with "do not apply value rules universally" attached. So under conversion optimisation the correct action after the change is still nothing.
 **The limit that stops this being a clean substitution, from [[Meta Delivery & Andromeda#MD-151|MD-151]]:** the 90% maximum bid decrease suppresses delivery and cannot switch a placement off, and only seven placements are eligible for a value rule at all. The soft version of the hard exclusion is genuinely softer.
-Sources: Jon Loomer, Every Change You Make Should Solve a Problem, 2026-06-08
-Last touched: 2026-09-09
+**2026-09-30: the same operator reversed the remedy, and the reversal is banked at [[Scaling Models#SC-173|SC-173]] rather than contested here.** The paragraph above records him on 2026-08-24 naming Audience Network for link clicks and landing-page views, and ads-on-Facebook-Reels for reach, then arguing the fix is to abandon the goal rather than prune the placement. Five weeks later he prescribes both of those goals and prunes exactly those two placements, as a paid replacement for the organic link posts Meta capped at [[Meta Delivery & Andromeda#MD-166|MD-166]]. **Nothing in this claim is refuted.** The condition that decides the argument, the performance goal, is unchanged, and so is the mechanism. What changed is the availability of his remedy: abandoning the goal assumes a bottom-funnel action to fall back to, and a campaign driving traffic to a blog post or a podcast episode has none. SC-173 carries the full structure and the fact that he has not run it.
+
+Sources: Jon Loomer, Every Change You Make Should Solve a Problem, 2026-06-08; Jon Loomer, "An Ad Solution for Meta's Restriction on Organic Link Sharing", Pubcast, 2026-09-30, youtube.com/watch?v=vjNRpNSASOQ, 10 min, 1,535 words, read in full
+Last touched: 2026-10-01
 
 ### SC-150 · A $10-per-ad budget floor, and an exception clause that can never fire. His own minimum structure already exceeds it
 Tier: T4 · Status: active
@@ -1731,3 +1733,29 @@ The largest stated n anyone on this roster has put behind the kill-the-hog quest
 **Why it matters more than the usual corroboration.** [[Scaling Models#SC-085|SC-085]]'s whole disagreement is about whether an expensive-looking top spender is doing top-of-funnel work for its siblings. This is 51 chances for that hypothesis to be wrong in a structure where the reallocation is forced and immediate, and it was reported wrong roughly once.
 Sources: Nick Theriot, "I tested ABO & Cost Caps (here's the results)", 2026-09-23
 Last touched: 2026-09-24
+
+
+### SC-173 · Loomer prescribes the upper-funnel goal and the placement pruning he told advertisers to abandon five weeks earlier, as a $5-a-day paid replacement for capped organic link posts
+Tier: T3 · Status: active
+Jon Loomer, 2026-09-30, who flags it as an exception to his own standing advice four times in a ten-minute episode: "these are all things I would normally not recommend", "this is one of those situations that is an exception to my typical recommendations", "I have to keep reminding you that this is a rare exception", and "in most cases, I'd give you a side eye for talking about doing this in the first place".
+
+**The problem he is solving is [[Meta Delivery & Andromeda#MD-166|MD-166]].** Meta caps a Facebook Page at 2 organic link posts a month on the free tier and sells the increase through Meta One. His frame: do not buy the subscription, spend the same money on ads. The budget is set to match, $5 a day against the $149 Expert tier.
+
+**The structure, every parameter he states:**
+
+- One permanent ad set that replaces the organic publishing routine. "Instead of publishing today's blog post to your page, publish an ad that promotes it."
+- Performance goal high in the funnel: maximise reach, link clicks, landing page views or interactions. He names no single choice and says to experiment. Video views and ThruPlay are ruled out because the goal is traffic.
+- Targeting restricted to the Page's own Facebook and Instagram followers through custom audiences, with the country count limited as well.
+- Placements pruned by goal: remove Audience Network on link clicks or landing page views, remove ads on Facebook Reels on reach.
+- Up to 50 ads in the one ad set, one per blog post or podcast episode, added as they publish.
+- A frequency cap or frequency target, because the audience is a fixed follower pool.
+
+**Why this is banked rather than discarded as a repeat: it reverses the remedy in [[Scaling Models#SC-149|SC-149]], and the same operator supplied both sides.** SC-149 records him on 2026-08-24 naming exactly these two pairings as the upper-funnel exposure, then arguing the fix is to abandon the goal rather than prune the placement, "because you're still bound to get cheap, low-quality optimized actions from other placements". Today he keeps the goal and prunes the placement. The mechanism underneath is unchanged and he restates it in the same words: with no conversion to optimise for, "Meta will exploit weaknesses to find the cheapest and likely lowest quality optimized actions".
+
+**The boundary that lets both statements survive.** SC-149's remedy answers "the campaign's job is conversions and the goal is wrong". This answers "the campaign's job is traffic to content that has no conversion". Where there is no bottom-funnel action to fall back to, abandoning the goal is not an available move, so guard rails are the only one left. He also restates the piece of placement-control scope that makes this possible at all: Meta's withdrawal of placement exclusion is bottom-of-funnel only, so the control still exists on the goals this design uses.
+
+**Nothing here has been run, and he says so.** "Will $150 of ads be better than the $149 paid for Meta 1? We'll see. But my hunch is that it would be." No spend, no account, no before-and-after. The reasoning for preferring ads is one sentence and it is the strongest part of the episode: "Meta has devalued link sharing over the years by throttling reach for businesses. With ads, I can guarantee a certain amount of delivery."
+
+**The cheap test, and our own book is the population for it.** This design is [[Scaling Models#SC-130|SC-130]] doing a different job: same small fixed budget, same upper-funnel goal, same frequency cap, same large creative pool against one fixed audience. SC-130 is a retargeting presence layer; this is an organic-distribution replacement. Any client Page subject to the MD-166 cap that posts links more than twice a month can run it, and the only new question is whether follower-targeted reach buys more clicks than the subscription buys link slots.
+Sources: Jon Loomer, "An Ad Solution for Meta's Restriction on Organic Link Sharing", Pubcast, 2026-09-30, youtube.com/watch?v=vjNRpNSASOQ, 10 min, 1,535 words, read in full
+Last touched: 2026-10-01

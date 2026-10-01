@@ -5,11 +5,13 @@ lesson: 41
 date: 2026-09-30
 topic: TikTok Delivery
 claims: [TT-017, TT-018, TT-019, TT-020, TT-024, AU-056, AU-058, AU-090, AT-061]
-video: none
+video: video/2026-09-30-lesson-041.mp4
 tags: [advertising-science, lesson, tiktok-delivery, incrementality, contested-claims, test-design]
 ---
 
 # Lesson 041 · We Measured It and the Argument Did Not Move
+
+🎬 **Watch first (3m 27s):** [[video/2026-09-30-lesson-041.mp4|Lesson 041 video]]
 
 On 16 September we measured ad-set overlap on two of our accounts.
 

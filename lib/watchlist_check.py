@@ -45,7 +45,12 @@ BANK_RE = re.compile("|".join([
     # hit on arXiv 2609.01652, a job-matching recommender with zero advertising
     # content, and Watchlist.md already states CTR alone must not qualify.
     # "CTR prediction" stays, because the doc lists it.
-    r"advertis", r"\bads?\b", r"ad auction", r"sponsored",
+    # "ad-hoc" / "ad hoc" excluded 2026-10-01: the hyphen is a word boundary, so
+    # \bads?\b matched the "ad" in "ad-hoc heuristics" in the GEAR abstract. The
+    # whole-word rule in Watchlist.md was written against substring matches
+    # (adaptive, advanced, gradient) and does not catch this one. Narrow literal
+    # exclusion only: "ad-level", "ad-set" and "ad auction" stay genuine.
+    r"advertis", r"\bads?\b(?![- ]hoc)", r"ad auction", r"sponsored",
     r"CTR prediction", r"bid landscape", r"bidding", r"conversion lift",
     r"incrementality", r"budget pacing", r"creative selection", r"\bGSP\b",
     r"second-price",

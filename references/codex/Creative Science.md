@@ -3122,3 +3122,19 @@ Read off one live account inside Ads Creative Studio ([[Meta Delivery & Andromed
 **The cheap test, when the surface reaches us.** Read the default threshold on each account before touching the slider and compare it to that account's own trailing click-through rate. If the default is just the account's own history, the competitor story is decoration.
 Sources: Ben Heath, AI Just Changed Facebook Ads Forever!, 2026-09-29, youtube.com/watch?v=RTrRKB0iXwQ, 19 min, read in full
 Last touched: 2026-09-30
+
+
+### CR-282 · A search-ads platform writes advertisers' ad descriptions with a reward model that scores LANDING PAGE CONSISTENCY, live since late May 2026 across more than 140,000 advertisers
+Tier: T1 · Status: active
+arXiv 2606.15911v2, *Interactor: Agentic RL oriented Iterative Creation for Ad Description Generation in Sponsored Search*, EMNLP 2026 Industry Track, v1 14 June 2026, v2 30 September 2026, six authors. **The platform is not named**; the paper says only "a leading search ads system". **"Since late May 2026, it has been deployed online in a leading search ads system, where the framework serves over 140k advertisers."**
+
+**The finding for our lane is what the platform's own reward model grades.** The generator is a policy. The environment is several generative reward models that score each draft on **knowledge capacity** and **landing page consistency**, return a binary signal plus written feedback, and the policy rewrites against that feedback over multiple turns.
+
+**Two operating consequences, and the first is the one that costs money.**
+
+1. **Description-to-landing-page agreement is a scored quantity inside a live ad system.** [[Google Auction & Smart Bidding#GA-010|GA-010]] already carries landing page experience as one of Quality Score's three T1 components. This is a second, independent instance on a different surface, and it sits further upstream: the platform grades the copy against the page while the copy is being written. A description that promises something the page does not say is failing a model trained to catch exactly that.
+2. **The platform separates titles from descriptions by job.** The paper's own framing is that titles are optimised to attract clicks, while a description has "a longer text span and possesses the potential of incorporating world knowledge to address user search intents while presenting the fine-grained selling points of the ads". The description is the slot where the specifics belong, which is the opposite of treating it as padding.
+
+**The guard.** No numbers are published on either side. The deployment line reads "contributing to both ad revenue and user experience", with no lift, no window and no control group. And a platform optimising descriptions against its own revenue and its own quality definition is not an advertiser optimising for cost per opt-in. **Carry this as evidence about what the machine scores, never as evidence that machine-written descriptions beat ours.**
+Sources: arXiv 2606.15911v2, Interactor: Agentic RL oriented Iterative Creation for Ad Description Generation in Sponsored Search, v1 2026-06-14, v2 2026-09-30, EMNLP 2026 Industry Track, https://arxiv.org/abs/2606.15911, abstract read in full at source
+Last touched: 2026-10-01

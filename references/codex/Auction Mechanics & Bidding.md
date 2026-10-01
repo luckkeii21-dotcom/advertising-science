@@ -868,3 +868,21 @@ The first shown-account cost-cap operating procedure in this topic. Every other 
 One account, 7 days, no holdout, and the same window also changed campaign structure and creative, so nothing here isolates the cap.
 Sources: Nick Theriot, "I tested ABO & Cost Caps (here's the results)", 2026-09-23
 Last touched: 2026-09-24
+
+
+### AU-096 · Generative retrieval is in production on a second major ad platform's candidate-generation stage, and its two named bottlenecks are coupled against each other
+Tier: T1 · Status: active
+arXiv 2609.39327, *GEAR: Generative End-to-end Ad Retrieval at Douyin*, submitted 30 September 2026, eleven authors, no affiliations printed on the arXiv page. **"It currently serves hundreds of millions of daily active users on Douyin Ads."**
+
+**The mechanism worth keeping is a scaling constraint rather than a result.** Generative retrieval reformulates candidate selection as the generation of discrete item tokens. The paper names two bottlenecks that appear only at real-system scale:
+
+1. **Representation collapse.** The item tokenizer converges to degenerate results under continuous distribution shift, which blocks stable end-to-end adaptation.
+2. **Item collisions.** The candidate pool is large enough that distinct items receive identical token sequences, which costs retrieval precision.
+
+**The coupling is the claim: "expanding codebook capacity to mitigate collisions inevitably exacerbates collapse."** The obvious fix for one failure causes the other. GEAR's answer is an orthogonal-basis re-parameterisation of the codebook (BasisVQ, extended to prefix-aware BasisRQ) plus a context-conditioned reranking head placed inside the generative process.
+
+**What it does not say, and the abstract is the whole of what we have.** "Substantial empirical improvements in extensive online A/B tests", with **no percentage, no revenue figure and no baseline anywhere on the arXiv page.** The deployment is established and the magnitude is unpublished. Do not carry this as a measured gain.
+
+**Why it is banked when it changes no decision we make this week.** Beside the TAGR half of [[Auction Mechanics & Bidding#AU-081|AU-081]], which refreshes an ad's semantic ID as its live-stream content changes and does publish its lifts, it makes two large ad platforms running semantic-ID retrieval in production. And beside [[Meta Delivery & Andromeda#MD-001|MD-001]], where Meta's multi-stage retrieval selects candidates on predicted per-user relevance of the creative, it says the industry is arriving at the same place by a different route: **the candidate set is generated from a learned representation of the item, so what the ad IS decides which pool it can be drawn from at all.** That is the mechanism under our creative-volume position, reported from a third codebase.
+Sources: arXiv 2609.39327v1, GEAR: Generative End-to-end Ad Retrieval at Douyin, 2026-09-30, https://arxiv.org/abs/2609.39327, abstract read in full at source
+Last touched: 2026-10-01

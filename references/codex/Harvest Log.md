@@ -9,6 +9,69 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-10-01 (research run)
+
+**1 transcript, 3 claims added, 2 amended, 0 contested, 0 refuted. Codex 1,326 to 1,329. No law-level change. 1 harvest error, 0 watchlist errors.** New: SC-173, AU-096, CR-282. Amended: SC-149, MD-166. Both shelves of Meta for Business News read clean with no browser for the first time, and the arXiv filter got a fourth false-positive mechanism found and fixed in code.
+
+**The day's finding: the same operator reversed his own remedy five weeks apart, and both halves survive (SC-173, T3).** [[Scaling Models#SC-149|SC-149]] records Jon Loomer on 2026-08-24 naming the two upper-funnel placement exposures precisely, Audience Network for link clicks and landing-page views and ads-on-Facebook-Reels for reach, then arguing the fix is to **abandon the goal** rather than prune the placement, "because you're still bound to get cheap, low-quality optimized actions from other placements". On 2026-09-30 he prescribes those goals and prunes exactly those two placements.
+
+**What he is solving for is [[Meta Delivery & Andromeda#MD-166|MD-166]], the 2-organic-link-posts-a-month cap, and the design is fully specified.** One permanent ad set replacing the organic publishing routine, a high-funnel performance goal, targeting restricted to the Page's own followers through custom audiences, placements pruned by goal, up to 50 ads one per post, a frequency cap, **$5 a day set to match the $149 Meta One Expert tier**. His own framing, four times in ten minutes, is that this is an exception to everything else he recommends.
+
+**The boundary is what makes it a claim rather than a contradiction.** SC-149's remedy assumes a bottom-funnel action to fall back to. A campaign driving traffic to a blog post or a podcast episode has none, so abandoning the goal is not an available move and guard rails are the only one left. The mechanism is unchanged and he restates it in the same words: with no conversion to optimise for, "Meta will exploit weaknesses to find the cheapest and likely lowest quality optimized actions".
+
+**Nothing here has been run and he says so: "Will $150 of ads be better than the $149 paid for Meta 1? We'll see. But my hunch is that it would be."** No spend, no account, no before-and-after. The reasoning for preferring ads over the subscription is the one durable sentence: "Meta has devalued link sharing over the years by throttling reach for businesses. With ads, I can guarantee a certain amount of delivery." The design is [[Scaling Models#SC-130|SC-130]] doing a different job, so if we ever want to test it the structure is already on file.
+
+**The same transcript produced a third unverified Instagram figure, and our own correction has not reached him (MD-166 amended).** MD-166 records that Loomer's per-tier Instagram splits cannot be verified, because Meta's help article covers Facebook Pages only and publishes one number per tier with no Instagram split. He now adds Max at unlimited Facebook and **12** Instagram link posts. He also repeats, unchanged, that a link in a comment does not get around the cap, which MD-166 corrected on 2026-09-24: right for a standalone comment, wrong for extra links inside the comments of a post that already carries one, which Meta exempts by name.
+
+**arXiv passed 2 and BOTH were true positives, which has not happened before on this filter.** Every prior multi-pass day on this source produced at least one outcome-clause false positive.
+
+**2609.39327, GEAR, generative end-to-end ad retrieval at Douyin (AU-096, T1).** Serving "hundreds of millions of daily active users on Douyin Ads". The keeper is a coupled constraint rather than a result: representation collapse (the item tokenizer degenerates under continuous distribution shift) against item collisions (distinct items get identical token sequences in a large pool), and **"expanding codebook capacity to mitigate collisions inevitably exacerbates collapse"**, so the obvious fix for one causes the other. **No percentage, no revenue figure and no baseline anywhere on the arXiv page**, only "substantial empirical improvements". Banked for what it sits beside: the TAGR half of [[Auction Mechanics & Bidding#AU-081|AU-081]] makes two large platforms running semantic-ID retrieval in production, and [[Meta Delivery & Andromeda#MD-001|MD-001]] is the same mechanism at Meta. The candidate set is generated from a learned representation of the item, so what the ad IS decides which pool it can be drawn from. It changes no decision this week.
+
+**2606.15911v2, Interactor, ad description generation in sponsored search (CR-282, T1).** EMNLP 2026 Industry Track, v1 14 June, v2 30 September, and **a replace rather than a new paper**. Deployed since late May 2026 in an unnamed "leading search ads system", serving **over 140k advertisers**. The finding for our lane is what the platform's own reward models score: **knowledge capacity and landing page consistency**, returned as a binary signal plus written feedback that the policy rewrites against over multiple turns. [[Google Auction & Smart Bidding#GA-010|GA-010]] already carries landing page experience as a T1 Quality Score component; this is a second instance on a different surface and further upstream, grading the copy against the page while the copy is being written. The paper also separates the two slots by job: titles are optimised for clicks, descriptions carry "world knowledge" and "the fine-grained selling points". **No numbers on either side**, only "contributing to both ad revenue and user experience", and a platform optimising for its own revenue is not an advertiser optimising for cost per opt-in.
+
+**The Meta lane: both shelves clean, no browser, and a 2026-09-30 ruling retired.** Yesterday's entry concluded the UK shelf "needs a browser with an explicit `en-gb` path, or a UK egress", and told future runs to log the lane as unchecked until then. **`?locale=en_GB` through WebFetch rendered it in English (UK) on the first attempt, all 12 cards and all 12 slugs.** The parameter was never a US-only fix. US 12 slugs 0 added 0 removed, ceiling 21 September; UK 12 slugs 0 added 0 removed, ceiling 10 September; gap 11 days, unchanged since 2026-09-23. All four Playwright profiles failed CONNECT_TIMEOUT again, a tenth consecutive day of browser trouble, and it cost nothing today.
+
+**The filter gap found today is the cheapest one this engine has had, and it is already fixed.** `\bads?\b` matches the "ad" in **"ad-hoc"**, because a hyphen is a word boundary. It fired on GEAR's "without ad-hoc heuristics". GEAR had two genuine hits so nothing was mis-banked, but a pure recsys paper saying "ad-hoc" once would pass on that alone, and "ad-hoc" is ordinary ML prose. **The whole-word rule in Watchlist.md does not catch it**: that rule was written against substring matches (adaptive, advanced, gradient) and never tested against a hyphenated compound whose first element is literally "ad". Shipped as `r"\bads?\b(?![- ]hoc)"` with five passing regression cases, because it is a literal exclusion with no judgement in it. A blanket `(?!-)` was rejected: "ad-level" and "ad-set" are genuine.
+
+**Meta Newsroom carried 1 new post. Read and deliberately not banked**, so a future run does not re-read it: *Meta Names Dhruv Vohra to Lead Southeast Asia Business*, a leadership appointment with no ad product, no placement, no delivery statement and no advertiser-facing change.
+
+**1 harvest error.** `ben-heath/8EqC6qf7zcw` timed out during transcript fetch. One video from one channel, and the other eleven channels listed normally. It will be retried by tomorrow's run.
+
+**Gap for research to target: nobody has run SC-173, and we are the population.** Any client Page subject to the MD-166 cap that posts links more than twice a month can answer it for $5 a day. The single question is whether follower-targeted reach buys more clicks than the subscription buys link slots.
+
+### Watchlist
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 200, build 29 Sep 16:24 UTC. 9 in feed, **0 new**. Build unchanged from yesterday |
+| Meta Newsroom (RSS) | 200, build 30 Sep 14:13 UTC. 10 in feed, **1 new**, read in full, not banked (leadership appointment) |
+| Meta for Business News, `?locale=en_US` | WebFetch, English (US). 12 slugs, **0 added, 0 removed**. Ceiling 21 September 2026 |
+| Meta for Business News, `?locale=en_GB` | WebFetch, English (UK). 12 slugs, **0 added, 0 removed**. Ceiling 10 September 2026. **First browser-free UK read** |
+| Google Ads & Commerce (RSS) | 200, build 24 Sep 16:00 UTC. 20 in feed, **0 new**. Build flat for 7 days |
+| Google Ads Announcements | 200. **396 answer ids, 0 added, 0 removed.** Stable since 2026-09-20 |
+| arXiv cs.IR | 200, build **Thu 01 Oct 04:00 UTC**, today's own build. 41 in feed, 35 new, **2 passed the ad filter, both true positives**, both banked |
+| TikTok SDK changelog | 200, **unchanged at v0.1.8**. Newsroom, for-Business blog and Marketing API what's-new still India geo-blocked and not retried. **TikTok policy and creative news is not monitored and is not logged as clean** |
+| Weekly (Mon) sources | Not due. Thursday. The 2026-09-28 Monday run completed and read them, so no catch-up is owed |
+| Playwright browser | All four profiles CONNECT_TIMEOUT at session start. **Cost nothing today**, both Meta shelves read through WebFetch |
+
+**Cache committed.** `watchlist-seen.json` `last_run` carries 2026-10-01T14:01 IST, and both locales' slug baselines are stored at `slugs_us_2026_10_01` and `slugs_uk_2026_10_01`. Transcript backlog is **0 unextracted**.
+
+## 2026-09-30 (teacher run; the research lane launched in the same second and had written no entry at topic-lock)
+
+**Lesson 041 shipped: We Measured It and the Argument Did Not Move. Video yes, 3m 27s.** Topic taken from the rotation at index 8, TikTok Delivery. Pointer 8 to 9, counter 41 to 42. Inbox empty for the fortieth consecutive run, so nothing graded and the scoreboard is unchanged.
+
+**Why the rotation and not a harvest.** The 2026-09-29 research entry came back fully quiet, 0 transcripts and 0 claims on the fourth consecutive zero-transcript day, so there was nothing banked to teach. Today's research lane launched at 13:23:02, the same second as this one, and had written no Harvest Log entry when the topic was locked. TikTok Delivery had been touched by exactly one prior lesson, 023 on 2026-09-11, which took the traffic-quality cluster. The incrementality cluster was untaught.
+
+**Spine is [[TikTok Delivery#TT-017|TT-017]] (T3, contested), and it was chosen because our own book carries the same shape three times.** Two operators under one agency banner report the identical TikTok lift split and name different deciders, category-gated-on-creative-supply against market-size-and-revenue. The deciders are confounded in both books, neither showed a lift percentage, and both reach for the same instrument. Built out with TT-018, TT-019, TT-020 and TT-024.
+
+**The mechanism was generalised past TikTok deliberately, because we run zero TikTok accounts.** Every contested claim contains a disputed quantity, and a measurement closes the contest only if its output is that quantity. Precision does not substitute.
+
+**The in-house half is the strongest part, and the lesson is partly about our own work.** [[Auction Mechanics & Bidding#AU-056|AU-056]] against [[Auction Mechanics & Bidding#AU-058|AU-058]] has run a year with no CPM comparison from either side. [[Auction Mechanics & Bidding#AU-090|AU-090]] measured the overlap on 2026-09-16 to eight decimals matching Meta's own printed frequency, both exports reconciling exactly on impressions and spend, with a chance baseline computed. It did not close the contest, because the dispute is about price and the reach column reports exposure, and AU-090 says so in its own text. It did kill the ad-set-count theory both operators implicitly assumed. Carried alongside it: `NJ/SI - 3s VV Retarget`, our cheapest row at $4.74 against $8.19 and simultaneously our most expensive on CPM at $40.94 against $13.38 and $16.55, where [[Attribution & Incrementality#AT-061|AT-061]] predicts the cheap row either way; and the `Hal w hook` pair at $137.66 against $3.497, a factor of 39 in which the event, the destination and a four-fold budget gap all moved together.
+
+**Decision rule:** before you run the test, write down the single number the argument is about, and check the test you are about to run produces that number.
+
+**Today's research entry landed after topic-lock and went untaught, which is the fourth time this pattern has cost a lesson its freshest material.** It banked 4 claims and one law-level change: MD-168 records Meta shipping a "try new video hooks" button that swaps the first 3 to 5 seconds of a proven asset, which puts the platform on the opposite side of law 4b's delivery-penalty folklore. CR-281 puts an editable number on minimum creative performance. Both are strong candidates for tomorrow and neither is in a lesson.
+
 ## 2026-09-30 (research run)
 
 **1 transcript, 4 claims added, 4 amended, 0 contested, 0 refuted. Codex 1,322 to 1,326. One law-level change. 0 harvest errors, 0 watchlist errors.** New: MD-168, MD-169, CR-281, LS-084. Amended: CR-124, CR-176, MD-105, LS-076. The zero-transcript streak ended at four days.
