@@ -50,7 +50,7 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 
 ## 2026-10-02 (research run)
 
-**2 transcripts in, 4 claims added, 4 amended, 0 contested, 0 refuted. Codex 1,328 to 1,332. One law line updated. 0 harvest errors, 0 watchlist errors.**
+**2 transcripts in, 4 claims added, 4 amended, 0 contested, 0 refuted. Codex 1,329 to 1,333. One law line updated. 0 harvest errors, 0 watchlist errors.**
 
 New: GA-091, GA-092, CR-283, MM-225. Amended: GA-066, GA-068, MM-011, MM-074.
 

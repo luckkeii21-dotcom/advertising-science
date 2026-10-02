@@ -5,10 +5,13 @@ lesson: 43
 date: 2026-10-02
 topic: Scaling Models
 claims: [SC-173, SC-149, MD-166, SC-130, MD-150, MD-151]
+video: video/2026-10-02-lesson-043.mp4
 tags: [advertising-science, lesson, scaling-models, placements, upper-funnel, reading-evidence]
 ---
 
 # Lesson 043 · What the First Answer Assumed You Had
+
+🎬 **Watch first (3m 25s):** [[video/2026-10-02-lesson-043.mp4|Lesson 043 video]]
 
 On 24 August, Jon Loomer said that when an upper-funnel goal is buying junk inventory, the fix is to abandon the goal rather than prune the placement. He named the exposures by hand: Audience Network on link clicks and landing-page views, ads on Facebook Reels on reach.
 
