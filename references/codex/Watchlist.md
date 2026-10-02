@@ -590,3 +590,31 @@ have become false negatives.
 way.** That rule asks for a judgement about where meaning sits in a paragraph and it now has two known false
 negatives (LS-083 on 2026-09-28, LS-084 on 2026-09-30). This one asks whether four characters are the word
 "ad", which code can answer.
+
+### An Ads & Commerce post that recaps a podcast is a POINTER, not a source: pull the episode (found 2026-10-02)
+
+The 2026-10-01 feed carried *Turn your existing social assets into high-impact YouTube ads*. On its own it is **three
+bullets and no numbers**: one product mention already banked at GA-068 and two pieces of generic creative advice. A run
+that read it and moved on would have logged a quiet day.
+
+It ends "Catch the full episode here" against an embedded player. **Pulling the video id and running the transcript
+returned 3,049 words of a Google product manager for Demand Gen talking about creative**, and produced GA-091, GA-092 and
+CR-283, including the only finding of the day that changes how we would brief a Demand Gen account. **Three of the four
+claims banked on 2026-10-02 would have been missed by reading the post and stopping.**
+
+**Method, verified today.** The embed is a `uni-youtube-player-article` element in the page HTML carrying
+`video-id="..."`. `<article>`-scoped link extraction does NOT find it, because it is a sibling block outside the article
+element; grep the whole page body for `video-id=`. Then:
+
+```
+".venv-research/Scripts/python.exe" ".claude/skills/advertising-science/lib/ytresearch.py" pull <video-id> --out "<run-dir>"
+```
+
+**Standing instruction: when an Ads & Commerce post embeds or links an episode, pull the episode transcript before
+deciding the day is quiet.**
+
+**This is the fourth instance of one failure shape on this watchlist**, after the locale partition (2026-09-20), the
+missing title baseline (2026-09-23), the unread Demand Gen Drops back catalogue (2026-09-25) and the dropped
+`#footnote-N` anchors (2026-09-25). **In every one, the thing being read was an index of the thing worth reading.** The
+general rule this source family keeps teaching: on a Google or Meta publishing surface, assume the published page is a
+summary of something else until you have checked what it points at.

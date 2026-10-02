@@ -298,8 +298,9 @@ Last touched: 2026-08-30
 ### MM-011 · Improving gross margin via supply chain beats improving ads: one brand moved manufacturing countries and went from ~50 to 65-70 points landed
 Tier: T3 · Status: active
 A brand at roughly 50 points of landed margin net of returns relocated manufacturing to another country and projects 65-70 points, dramatically raising how fast it can grow without any ad improvement. The rule: if gross margin is the binding lever, chasing supply chain (new suppliers, renegotiation) improves outcomes without making the ads a single moment better, and should shape which products get advertising firepower.
-Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27
-Last touched: 2026-08-18
+**Amended 2026-10-02, a second named instance on the same channel.** Reformation Heritage Books moved printing of its larger works to an international printer, R.R. Donnelley, sourced for them by an outside supply-chain team, and their director of supply chain calls international sourcing "probably going to be our biggest profit lever in the coming year", ahead of anything in the ad account. The saving is described only as "a small percentage of what it used to be", **with no landed-margin figure on either side**, so it corroborates the direction of MM-011 and adds nothing to its sizing. Two mechanics worth carrying: higher order quantities buy a better unit cost, so better inventory visibility feeds the margin lever as well as the stockout one, and the second-source discipline here is to hold **approved print samples with backup manufacturers you have never ordered from**, because a disruption upstream of your vendor (they lost a paper mill to a tornado) stops production at a supplier who is otherwise fine. Disclosed sponsored episode for the supply-chain vendor; the guest is that vendor's client.
+Sources: Andrew Faris, You're Working Hard On The Wrong Problem. Here's How To Tell., 2026-07-27; Andrew Faris, Their Business Doubled But Their Supply Chain Wasn't Ready., 2026-10-02 (sponsored)
+Last touched: 2026-10-02
 
 ### MM-012 · Returning-customer revenue raises the tolerable CPA and lets you outbid single-product competitors; every $100k+/mo spender has retention products, added around $30k/mo spend
 Tier: T3 · Status: active
@@ -482,8 +483,9 @@ CCC = DIO + DSO - DPO. The mechanism: gross profit from one purchase order only 
 
 His closing line is the cleanest statement of the mechanism anywhere in this claim: **the cash conversion cycle does not start at the first dollar of ad spend, it starts at the first dollar of inventory purchase.** Read alongside [[Marketing Math & Unit Economics#MM-189|MM-189]], which says advertising sits outside the accounting formula and lengthens the real cycle. Those are the two ends of the same clock. Illustrative model plus one asserted client case, no documents shown.
 
-Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04; Blue Sense Digital, Why eCommerce Is So Difficult (Deep Dive), 2025-01-23
-Last touched: 2026-09-05
+**Amended 2026-10-02 with a worked case where the same scaling failure happened WITHOUT the cash mechanism, which narrows what MM-074 is actually about.** Reformation Heritage Books, a legacy Christian publisher running the Faris playbook (manual bids on Meta, high creative volume, message-first), grew **two to three times year over year through the 2025 holiday depending on the month**, and **went out of stock on its top sellers at the start of 2026**. That is this claim's failure arriving on schedule. **The cash lever was not the binding one**: the business runs 60 to 70 points of gross margin on direct sales (stated from memory, not read off a document), and carries donation income alongside the trade. Their director of supply chain names the actual constraint as visibility: "our biggest problem was we didn't have any visibility into our inventory from a stockout perspective, our sales velocity perspective." **So the mechanism generalises past the cash conversion cycle: scaling paid media relocates the bottleneck downstream, and the new bottleneck is whichever supply capability was never built, which may be cash, lead time, or simply knowing what is selling.** His own framing of the pattern is the cleanest line in the episode: "whenever you expand a bottleneck, give it more capacity, that creates bottlenecks down the road." The remedies they ran are at [[Marketing Math & Unit Economics#MM-225|MM-225]] (tier-segmented velocity windows and safety stock). **The recovery number must not be read as an effect size.** They report a **75% year-over-year growth rate** after the work, and the same speaker immediately attributes it to both halves at once: "that's the full picture of both the improvement in the marketing and then being able to catch those big sales moments by having supply at the ready." Self-reported, on a disclosed sponsored episode for the vendor that did the supply-chain work, with no control.
+Sources: Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, Everything You Need to Know About Finance in eCommerce, 2026-05-04; Blue Sense Digital, Why eCommerce Is So Difficult (Deep Dive), 2025-01-23; Andrew Faris, Their Business Doubled But Their Supply Chain Wasn't Ready., 2026-10-02 (sponsored)
+Last touched: 2026-10-02
 
 ### MM-075 · Paid media is an inventory liquidation tool: push grade B/C/D stock at breakeven or a slight loss to convert balance-sheet inventory back into cash
 Tier: T3 · Status: active
@@ -2226,3 +2228,29 @@ A statistical method for a decision this codex has so far treated as judgement: 
 **One honest finding inside the data that cuts the other way.** **Scaling an offer almost always makes its repeat rate a little worse**, because the spend reaches further up the funnel. They saw it and the business still improved.
 Sources: Professor Charley T, This Facebook Ads Lie is Killing Your Business!, 2026-09-21
 Last touched: 2026-09-22
+
+### MM-225 · Set the sales-velocity window by how fast the SKU moves, short for fast movers and long for slow ones, because one averaging window across the catalogue stocks you out of exactly the products the ads are working on
+Tier: T3 · Status: active
+**Read the sourcing note at the bottom before quoting any number here. This is a disclosed sponsored episode and the guest is a client of the sponsor.**
+
+[[Marketing Math & Unit Economics#MM-076|MM-076]] says to allocate budget by days of inventory rather than by ROAS, and assumes days of inventory is a number you have. This is the layer underneath it: how the number gets computed, and the finding is that the averaging window itself has to vary by tier.
+
+**The operator's statement of the problem:** "averages will kill you." Joel Taylor, director of supply chain at Reformation Heritage Books, after the business went out of stock on its top sellers.
+
+**The spec they run, stated in full.**
+
+| Tier | Safety stock | Sales-velocity window |
+|---|---|---|
+| A and hero | 180 days | **30 days** |
+| B | 90 days | longer, up to a year on some |
+| C | 60 days | ~365 days |
+
+**The reasoning, which is the transferable part.** A fast mover is volatile and can clear in days off one promotion, so it needs a short window that catches the acceleration while there is still time to reorder: "you could do a sale and it could sell out super quick." A slow mover carries the opposite risk, so a long window smooths the noise and stops a single good week triggering an order that ties up cash. The stated goal is "profitable in stock": deliberately overstocked on fast movers, deliberately not on slow ones.
+
+**The tiering key is two-dimensional, and the reason matters for any wide-AOV catalogue.** A and B and C are assigned on revenue contribution **and** sales velocity together, Pareto-ranked, because a $300 set and a $10 book with the same order velocity are not the same product to the business. A catalogue with a wide price range will mis-tier on either axis alone.
+
+**Why this sits in the advertising codex.** The products a short window protects are precisely the ones paid media is currently working, so the window length decides whether a winning ad runs into a stockout. It is the inventory-side twin of [[Creative Science#CR-133|CR-133]], which briefs multi-product assets so a stockout does not kill the ad.
+
+**Tier discipline, and it is the whole caveat.** This is one operator describing a system a vendor built for him, on a **disclosed sponsored episode** for that vendor, with the host stating the sponsorship at the top. The day counts are his current policy and he describes them as still being revised ("we're even learning this past couple weeks"). **No before-and-after on stockout rate, no inventory-turn figure, and no control.** Bank the mechanism, which is checkable on any account, and do not repeat 180/90/60 as a benchmark.
+Sources: Andrew Faris, Their Business Doubled But Their Supply Chain Wasn't Ready. So They Did This., 2026-10-02, youtube.com/watch?v=DlIbUPnfF9s, 36 min, 6,928 words, transcript read in full. DISCLOSED SPONSORED EPISODE for Move Supply Chain; the guest, Joel Taylor of Reformation Heritage Books, is a client of the sponsor
+Last touched: 2026-10-02

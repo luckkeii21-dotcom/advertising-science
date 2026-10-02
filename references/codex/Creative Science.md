@@ -3138,3 +3138,21 @@ arXiv 2606.15911v2, *Interactor: Agentic RL oriented Iterative Creation for Ad D
 **The guard.** No numbers are published on either side. The deployment line reads "contributing to both ad revenue and user experience", with no lift, no window and no control group. And a platform optimising descriptions against its own revenue and its own quality definition is not an advertiser optimising for cost per opt-in. **Carry this as evidence about what the machine scores, never as evidence that machine-written descriptions beat ours.**
 Sources: arXiv 2606.15911v2, Interactor: Agentic RL oriented Iterative Creation for Ad Description Generation in Sponsored Search, v1 2026-06-14, v2 2026-09-30, EMNLP 2026 Industry Track, https://arxiv.org/abs/2606.15911, abstract read in full at source
 Last touched: 2026-10-01
+
+### CR-283 · Google looked at its own data and refuses to publish an asset-refresh cadence for Demand Gen, recommending AGAINST any blanket rule; the replacement is add-do-not-remove until the ad is at capacity
+Tier: T1 · Status: active
+A platform declining to answer the question operators ask most, with the reason given, which makes it more useful than most answers would have been.
+
+**The refusal, in Osio's words.** "As much as I'd love to be able to give a definitive number, **when we look at the data, we find that the answer is really that it depends**." The named dependencies: the type of asset, the inventory it is serving on, and the particular behaviours of the audience. His instruction follows directly: "**I would actually recommend against setting a blanket rule for your business on how frequently to replace assets.**"
+
+**What he gives instead is a per-asset read, not a calendar.** Open asset reporting and compare an asset against **its own start**, not against the other assets: "is there a declining trend relative to when you first added that asset... if you see that it is markedly declining relative to how it was performing when it was fresh, that's a good indication that it is a stronger candidate to consider swapping out."
+
+**The decision rule, and it is the operationally new part.** Decline alone does not justify removal. "It's generally better to keep it in if it is still showing strong serving in traffic", and "**the only time where it makes sense to actively remove or replace assets is if you're already at capacity within your Demand Gen ad AND a specific asset has shown a significant decline in performance relative to its start.**" Both conditions, together. Where there is room in the ad, the prescribed move is to add the new asset and leave the old one running.
+
+**Why this belongs next to the fatigue claims rather than in a settings note.** [[Creative Science#CR-028|CR-028]] carries fatigue as embedding-cluster saturation and [[Creative Science#CR-029|CR-029]] carries the open question of whether iterating around the fatigue point extends or ends a winner. **Google is saying, from inside the system, that the fatigue point is not a property of the asset or of elapsed time, it is a joint property of the asset, the inventory and the audience, so no cadence can be right in general.** That is consistent with CR-028's mechanism and it kills the "refresh every N days" rule for this channel specifically.
+
+**Carries directly into our own retainers.** Any creative calendar built on a fixed replacement cadence for Demand Gen is unsupported by the platform that runs it. The replacement is a weekly read of asset reporting against each asset's own baseline, plus an add-first default.
+
+**The guard.** Nothing is shown. No distribution of asset lifespans, no definition of "markedly declining", no capacity number for a Demand Gen ad, and no evidence that add-first beats replace-first. This is Google's stated recommendation, not a measured result, and it is also the answer that keeps the most assets in the auction.
+Sources: Google Ads, Demand Gen campaign creative, explained: asset variety, testing, and fatigue, Ads Decoded S2E5, 2026-10-01, youtube.com/watch?v=yz-ui2LSMtQ, transcript read in full
+Last touched: 2026-10-02
