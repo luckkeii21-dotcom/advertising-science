@@ -426,3 +426,15 @@ Three PMax-relevant additions in Google Ads API v25.2, 2026-09-23, read at sourc
 **3. Automated video crawl becomes a controllable setting.** `Campaign.AssetAutomationSetting` gains `AutomatedVideoCrawlSetting` with `AssetAutomationType.AUTOMATED_VIDEO_CRAWL`. Each `AutomatedVideoCrawlInfo` entry configures a crawl url, a `source_platform` (`LANDING_PAGE`, `SOCIAL` or `YOUTUBE`) and an `enabled` opt-in flag. So Google will pull video from a client's landing page, social profiles or YouTube channel to build PMax video assets, and the opt-in is now explicit and per-source. **Worth a deliberate decision on every PMax build rather than a default**, because `SOCIAL` points Google at content nobody briefed, approved or compliance-checked for use as an ad.
 Sources: Google Ads API v25.2 release notes, developers.google.com/google-ads/api/docs/release-notes, read at source 2026-09-28; Google Ads Developer Blog, Announcing v25.2 of the Google Ads API, 2026-09-23, read in full 2026-09-28
 Last touched: 2026-09-28
+
+### GP-049 · Merchant Center opened loyalty-program connection to non-advertisers through the Merchant API, and the entry was sitting unread because the changelog is not in date order
+Tier: T1 · Status: active
+Merchant Center changelog entry, "Loyalty program updates: Loyalty Customer Match via Merchant API", dated 24 September 2026.
+
+**What it says.** "We are expanding our loyalty features to ensure all merchants, including non-advertisers, can deliver tailored shopping experiences to users across Google surfaces." Connecting a loyalty programme lets existing members see member-exclusive pricing and dedicated shipping perks directly on the product listing. The stated scope change: "All merchants, whether you are an advertiser or solely use free listings, can" connect, where the feature previously required advertising.
+
+**Relevance to our book is low and stated as low.** No live client of ours runs Shopping or free listings. It is banked because it extends [[Google PMax & Shopping#GP-043|GP-043]]'s surface and because Customer Match arriving through the Merchant API rather than through Google Ads is a first-party-data route worth knowing exists.
+
+**The finding that actually matters is how it was found, and it is a method defect on our side.** See the 2026-10-07 entry in [[Watchlist]]: this changelog's post list is NOT in date order, and this entry is the LAST of 78 in the page, behind entries dated October 2025. Every previous run reported the newest Merchant Center entry as 11 August 2026 by reading the first date on the page. The true newest entry has been 24 September 2026 since that date.
+Sources: Google Merchant Center changelog, https://support.google.com/merchants/announcements/6192467, entry read at source with its own permalink /merchants/answer/18514318
+Last touched: 2026-10-07

@@ -809,3 +809,15 @@ arXiv 2607.26621v3, *OneLatent: Latent Reasoning for Efficient Foundation Recomm
 **Filter note for the watchlist.** The only bank-list term in the abstract is `advertis`, appearing once, in the second-to-last sentence. That is the outcome-clause shape recorded as a false-positive signature on 2026-09-07 and twice on 2026-09-25, and this one is a partial true positive: the deployment is genuinely inside an ad system while the method is not about advertising. Reading the abstract is again the only step that decided it, and it is a second counter-example against shipping the first-or-last-sentence rule as code, after [[Learning & Signal#LS-083|LS-083]].
 Sources: arXiv 2607.26621v3, OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models, arxiv.org/abs/2607.26621, abstract read in full 2026-09-30
 Last touched: 2026-09-30
+
+### LS-085 · A visitor purchase-propensity model sold on "80 plus% accuracy" is reporting the least informative number available for a three-bucket classifier on a skewed base
+Tier: T3 for the existence, T4 for the quality · Status: active
+Announced as live and shipping the week of 5 October 2026 by a split-testing platform. The stated mechanism: from the FIRST page view, in about 5 milliseconds, sort the visitor into unlikely to buy, somewhat likely to buy, or very likely to buy. The stated gaps between buckets: somewhat likely is "six times more likely than that bottom bucket", and very likely is "another six times" above that. Intended use is targeting offers, content, tests and upsells by bucket, with education-weighted content for the unlikely bucket.
+
+**Why it is banked with the quality tier at T4, which is the point of the entry.** The headline is "it's like 80 plus% accuracy", and accuracy is close to uninformative here. E-commerce site-wide conversion rates sit in the low single digits, so a model that assigns every visitor to the bottom bucket scores well above 90% accuracy and carries no information at all. **The numbers that would make this claim assessable are precision and recall per bucket, or lift over base rate, and none is given.**
+
+**The 6x and 6x figures are the useful half, and they are the ones not called accuracy.** A monotonic 36x spread between the top and bottom bucket, if real, is a usable segmentation regardless of what the accuracy figure means. They are stated without a sample, a window or a client count.
+
+**Where this belongs in the codex.** It is the same reading failure as [[Meta Delivery & Andromeda#MD-171|MD-171]] and the Google vendor-figure series, arriving through a metric choice rather than through a missing footnote: **the published number is the one that flatters, and the one that would settle it is absent.** Operating rule for any propensity or predicted-value model a vendor sells us or a platform ships: ask for lift over base rate by bucket, and treat a bare accuracy percentage on a rare-event classifier as marketing.
+Sources: Andrew Faris (guest Drew Marconi, Intelligems), The Black Friday Offer & Website Playbook From Intelligems' CEO, 2026-10-05
+Last touched: 2026-10-07

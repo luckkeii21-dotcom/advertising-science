@@ -847,8 +847,15 @@ Tier: T3 · Status: contested
 The mechanism is sound and simple. The recipient of a gift card does not have to be the buyer, so a share of redeemed value lands with people who were never customers, and that share is a direct reduction in effective CAC with no change to the ads. The size of the effect is what is contested, and it is contested by one speaker against himself on one case study.
 
 Version one, 2025-12-20: on the Made by Mary bundle, over 40% of redeemed gift card value was claimed by someone who was not yet a customer, so a $100 CAC becomes $60. Version two, 2026-02-28: on the same Made by Mary case, 20% of gift card recipients became new customers, one free customer for every five sales, a 20% CAC reduction. The two tellings also measure different things, share of redeemed VALUE in the first and share of RECIPIENTS in the second, which are not the same quantity and cannot be reconciled without the underlying data. Neither telling showed data. A factor-of-two swing in the headline number across ten weeks, from the same person about the same brand, is reason to treat the figure as an illustration rather than a benchmark. What resolves it: a redemption export splitting redeemed value and redeemer count by whether the redeemer had a prior order. Use the mechanism, measure your own rate, and do not plan a CAC target off either number.
+**A THIRD figure from the same speaker, and it is a different mechanism rather than a third version of the same one. Added 2026-10-07.** This matters because the obvious reading is that the 40/20 contest just got worse, and it did not.
+
+The two figures already here both measure acquisition: share of redeemed value claimed by a non-customer (40%), and share of recipients who became new customers (20%). On 2026-10-06 the same speaker states **breakage**: "over 30% of gift card value goes unclaimed." That is value never redeemed by anybody, which is the opposite event from value redeemed by a new customer. **The three numbers are three quantities and only the first two are candidates for the same measurement.** Separate them before citing any of them.
+
+**The new case, and its arithmetic does not support the sentence attached to it.** He describes selling a $200 gift card for $150 and concludes "every one of those we sold was profit in the bank before anybody spent a dollar." Selling $200 of liability for $150 is a 25% discount. At his own stated breakage of just over 30%, expected redeemed value is about $140 against $150 collected, so the position clears by roughly $10 of face value before any cost of goods on what does get redeemed. **It is a thin positive, not profit in the bank, and it turns negative at any breakage below 25%.** What the sale genuinely buys is cash today against a liability later, which is a working-capital win and should be argued as one.
+
+**Operating consequence unchanged and now better specified:** use the mechanism, measure your own breakage and your own new-customer redemption rate separately, and never price a gift-card discount deeper than your measured breakage.
 Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Professor Charley T, How to Scale Facebook Ads in 2026, 2026-02-28
-Last touched: 2026-08-19
+Last touched: 2026-10-07
 
 ### MM-129 · Buyers of a multi-product bundle carry over 2.5x the LTV of a normal customer, 70 to 85% of the time
 Tier: T3 · Status: active
@@ -883,8 +890,19 @@ Last touched: 2026-08-19
 ### MM-133 · Build bundles from the actual first-three-purchase sequence of your highest-repeat customers, not from your bestsellers
 Tier: T3 · Status: active
 The method: isolate customers who have bought more than three times, look at what they bought in their first three orders, and package those items. That is a different query from bestseller volume and it produces a different answer, because bestsellers are selected by first-purchase behaviour while this is selected by proven lifetime value. His live example on an apparel store reads a velvet cami at 77 days to second purchase with a $317 combined AOV, a blazer at 71 days and $300, and a floral pin at 32 days and $106, and he picks the fastest repeat drivers over the highest revenue items. He then adds a gift card to inflate perceived value without giving away product margin ([[Marketing Math & Unit Economics#MM-127|MM-127]]). This is the bundle-construction counterpart to the SKU-selection method in [[Marketing Math & Unit Economics#MM-079|MM-079]] and it collapses a 145-to-400-day natural purchase sequence into one transaction, which is the point of it. Real store data shown on screen, no controlled test.
+**A second case from the same speaker, a stated selection threshold, and the first time the cohort step is described as the point of the method. Added 2026-10-07.**
+
+**The threshold, which this claim previously lacked.** Target customer journeys that are "replicatable with an LTV at least 30% above your average". Group those customers and he states the shape of the result: the great majority fall into a handful of cohorts and one cohort is significantly more valuable than the others. That cohort's first, second and third purchases are the bundle.
+
+**Case two, a women's jewellery brand, with the sequence shown.** Store average lifetime value around $100. Among customers who had spent at least $130, over three quarters were gift-givers, men buying for women, while more than two thirds of sales by volume were women buying for themselves whose lifetime value sat near $85, below the store average. Four out of five of the gift-givers had bought the $65 hero necklace during the prior Black Friday, then returned for the earrings and a charm that had always been on the site. **That journey's lifetime value was $137, and the bundle compressed it: all three pieces plus a jewellery cleaner, a personalised note, a $50 gift card, wrapped, with guaranteed overnight shipping, at $159 against an over-$270 retail.** He reports the brand went from $3M in five years to $8M in twelve months, and that the gift card drove the recipients to spend more than twice what non-recipients spent.
+
+**This is a direct confirmation of [[Marketing Math & Unit Economics#MM-130|MM-130]] on a second brand:** the bundle price, $159, is above the store's average customer lifetime value, $100.
+
+**Case three, in the same video, is the AOV end of the same method.** A men's goods brand at $18M stuck on one hero product with a 15% repeat rate found a $140 travel wallet whose buyers repeated at nearly one in four. A year of work built an aspirational package around it, luggage, bags, engraving and a lifetime warranty. The discount went from 30% to nearly 40%, average order value went from just under $100 to nearly $1,400, peak spend reached $250,000 in 24 hours, and he reports the business nearly doubling in 18 months.
+
+**Both cases are recalled, self-reported, with no exports shown, and both are now permanent year-round offers on those sites**, which is the claim's own strongest consequence: if the compressed-journey bundle outperforms, it should replace the thing you normally promote rather than return to the shelf after the season.
 Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20
-Last touched: 2026-08-19
+Last touched: 2026-10-07
 
 ### MM-134 · When the hero product structurally cannot repeat, build a high-ticket kit around it rather than chase more hero sales
 Tier: T3 · Status: active
@@ -2254,3 +2272,59 @@ Tier: T3 · Status: active
 **Tier discipline, and it is the whole caveat.** This is one operator describing a system a vendor built for him, on a **disclosed sponsored episode** for that vendor, with the host stating the sponsorship at the top. The day counts are his current policy and he describes them as still being revised ("we're even learning this past couple weeks"). **No before-and-after on stockout rate, no inventory-turn figure, and no control.** Bank the mechanism, which is checkable on any account, and do not repeat 180/90/60 as a benchmark.
 Sources: Andrew Faris, Their Business Doubled But Their Supply Chain Wasn't Ready. So They Did This., 2026-10-02, youtube.com/watch?v=DlIbUPnfF9s, 36 min, 6,928 words, transcript read in full. DISCLOSED SPONSORED EPISODE for Move Supply Chain; the guest, Joel Taylor of Reformation Heritage Books, is a client of the sponsor
 Last touched: 2026-10-02
+
+### MM-226 · Across one testing platform's corpus, upsells very rarely cost conversion rate once the readout is gross profit per visitor
+Tier: T3 · Status: active
+The fear being answered is the specific one that stops operators installing upsells: the upsell raises average order value and quietly takes conversion rate with it, so the net is a loss nobody sees. The CEO of a split-testing platform, asked directly and against his own commercial interest, answers from six years of running these tests for other brands: "I'm not going to say that we've never seen an upsell decrease conversion because there are some ones that are like very interruptive... But like when we ultimately look at what is the gross profit per visitor, there were very very few times we've seen tested on-site upsells, checkout upsells, or post-purchase upsells obviously reduce conversion rate."
+
+**Two conditions are attached.** Interruptive placements are the real exception. And the metric that settles it is gross profit per visitor, not conversion rate on its own. He also declines the premise that average order value and conversion rate always trade off, allowing only that higher price points convert worse and that the relationship is not linear.
+
+**Where it sits.** [[Marketing Math & Unit Economics#MM-090|MM-090]] sizes the post-purchase opportunity at 10 to 15% of AOV, [[Marketing Math & Unit Economics#MM-091|MM-091]] ranks take rates by placement, [[Marketing Math & Unit Economics#MM-092|MM-092]] sets the optimisation metric. None of them answers the conversion-rate objection. This closes it.
+
+**The limit, and it is the usual vendor limit.** No test count, no distribution, no effect size, and the speaker sells the upsell product. It is a direction from a large private corpus, not a measured effect. Our own exposure is narrow: no live account of ours is e-commerce, so this governs advice we give rather than work we do.
+Sources: Andrew Faris (guest Drew Marconi, Intelligems), The Black Friday Offer & Website Playbook From Intelligems' CEO, 2026-10-05
+Last touched: 2026-10-07
+
+### MM-227 · A subscriber's LTV multiple is partly a function of the discount that bought it, so a steeper subscribe offer can buy 20% more subscribers and hand back a quarter of their lifetime value
+Tier: T3 · Status: active
+The error named is treating the subscriber LTV multiple as a constant of the business. In his words, "often we have a fixed estimate of the LTV of a subscriber and fail to recognise that a steeper discount to incentivise you to subscribe" changes who subscribes and how long they stay.
+
+**The shape he narrates, from observed cohorts.** Overly steep subscription discounts "really increased churn of those subscriptions in the first 30 to 60 days". The arithmetic as he tells it: 20% more subscribers at an assumed 4x single-purchase LTV, and the realised figure lands nearer 3x because a block of them cancelled early. He names the behaviour from his own side of the transaction: "sometimes I'd be stupid not to take this deal and just cancel right after."
+
+**The operating consequence, which is a measurement-window rule.** The gain, subscription opt-in rate, is visible on day one. The cost is visible at day 30 to 60. So any subscribe-offer test read inside a month reads only the good half. Judge a subscription discount on the 60-day retained cohort, never on opt-in rate.
+
+**Against what the codex holds.** [[Marketing Math & Unit Economics#MM-031|MM-031]] says subscription retains when the delivery mechanism itself serves the customer. This adds the price dimension: the same mechanism retains worse when the discount that recruited it made cancelling the rational move.
+
+Observed across customer cohorts on a testing platform, no numbers shown, and the speaker states outright he has no comprehensive data set on the question. The 4x and 3x are illustrative, not measured.
+Sources: Andrew Faris (guest Drew Marconi, Intelligems), The Black Friday Offer & Website Playbook From Intelligems' CEO, 2026-10-05
+Last touched: 2026-10-07
+
+### MM-228 · Churn is close to immovable, so subscriber value is raised through subscription ORDER value, and a large upfront purchase is the deliberate alternative
+Tier: T3 · Status: active
+Two halves of one position on growing a subscription business, both stated plainly.
+
+**Half one, churn.** "It's almost impossible to get people to churn less... there's a ceiling." The conclusion: "The actual way to increase the value of your subscribers is to get people to add more stuff to their cart... it's to build the subscription order value." He names the structural requirement, which is the catch: with one product this is very hard, so it needs multiple products or add-ons. His framing is that subscription businesses "really undervalue bundling".
+
+**Half two, the bulk alternative.** Instead of a monthly subscription, offer and actively favour a large upfront purchase, for example a six-month supply. What he reports on a brand that did it: return rate rose, "their cohort value was not as good as some other approaches", and against that "they got way more spend volume out", average order value rose materially, the cash arrived up front and was easier to manage. The trade is explicit, a worse cohort for more working capital, and the working capital buys the next customers.
+
+**The caveat he raises against his own advice, and it is real.** The subscription may still be worth more than the cohort maths says, because investors and acquirers put a higher multiple on recurring revenue with a card on file. He notes this cannot be split-tested: "unfortunately you can't test that with Intelligems."
+
+**Where it sits.** [[Marketing Math & Unit Economics#MM-074|MM-074]] makes the cash conversion cycle the growth limiter in inventory e-commerce, which is this argument arriving from the balance sheet. [[Marketing Math & Unit Economics#MM-156|MM-156]] records that a blended CAC across a page selling both one-time and subscription hides two different acquisition costs, which is the measurement problem this choice creates.
+
+Asserted from client observation, no cohort export shown.
+Sources: Andrew Faris (guest Drew Marconi, Intelligems), The Black Friday Offer & Website Playbook From Intelligems' CEO, 2026-10-05
+Last touched: 2026-10-07
+
+### MM-229 · The best-performing price is not separable from how the product is presented, so an isolated price test answers a narrower question than it appears to
+Tier: T3 · Status: active
+From the operator whose company began as a pure price-testing tool, explaining why they stopped treating price as the variable. His background was dynamic pricing in ride-share, and the first product asked "should this phone case be 40, 50 or 60 bucks?"
+
+**The retraction, in his words.** "We so quickly realised that that was a completely myopic and narrow view of how to maximise the value. Because great, I can take everything else for granted and tell you that 50 bucks balances revenue, conversion and profit margin the best. But maybe I didn't show you the product well. Maybe I didn't explain the value proposition in a compelling way. Perhaps I didn't tell you that it has the matching colour of your watch band... And if I do that, well, now actually $70 is like the best performing price point."
+
+**The claim in one line: a price test holds presentation constant, so its winner is the best price for the worse version of the page.** The move he describes is $20 on a $50 item, 40%, and it came from the imagery and the value proposition rather than from the price.
+
+**What this constrains.** [[Marketing Math & Unit Economics#MM-101|MM-101]] prescribes very large uncontrolled price swings first and A/B tests only once the band is narrowed. That method survives with an order attached: fix the presentation before narrowing the band, or the band you narrow belongs to the old page. [[Marketing Math & Unit Economics#MM-102|MM-102]] on price-pack architecture is the same insight on a different surface.
+
+Six years of platform testing behind the position, one illustrative case, no data shown.
+Sources: Andrew Faris (guest Drew Marconi, Intelligems), The Black Friday Offer & Website Playbook From Intelligems' CEO, 2026-10-05
+Last touched: 2026-10-07

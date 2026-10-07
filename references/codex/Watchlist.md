@@ -618,3 +618,78 @@ missing title baseline (2026-09-23), the unread Demand Gen Drops back catalogue 
 `#footnote-N` anchors (2026-09-25). **In every one, the thing being read was an index of the thing worth reading.** The
 general rule this source family keeps teaching: on a Google or Meta publishing surface, assume the published page is a
 summary of something else until you have checked what it points at.
+
+### Merchant Center: the changelog is NOT in date order, its newest entry sits LAST, and "newest is 11 August" has been wrong since 24 September (found 2026-10-07)
+
+The 2026-09-28 entry above corrects a date-regex bug on this source and closes with "Merchant Center's true newest entry has been 11 August 2026 throughout". **That closing sentence is wrong and it is retired.** The regex fix was right. The assumption underneath it, that the first dated entry in the page is the newest, was never checked.
+
+**What the page actually is.** The announcement list is an `<ol>` of **78 `announcement__post` items, and it is not sorted by date.** Index 1 is 11 August 2026 near the top. **Index 77, the LAST item in the list, is 24 September 2026.** The four items before it are dated October 2025, October 2025, undated, and 1 July 2026. Several items carry no date at all.
+
+| Read | Result |
+|---|---|
+| First date in page order | 11 August 2026, "Merchant Center performance reporting updates" |
+| **Max over entry dates** | **24 September 2026, "Loyalty program updates: Loyalty Customer Match via Merchant API"** |
+| Max over ALL dates in the visible text | 30 September 2026, which is a FUTURE REQUIREMENT inside the 28 April entry body, not an entry date |
+
+**The method, and all three parts are load-bearing.** Extract `announcement__post-title` paired with its own `announcement__post-sub-head` date, accept an optional ordinal suffix and an optional comma per the 2026-09-28 rule, and take the **MAX over entry dates**. Never take the first date in page order, because the list is unsorted. Never take the max over all dates in the body text, because entry bodies announce future effective dates that are later than any entry.
+
+**The entry itself is banked at [[Google PMax & Shopping#GP-049|GP-049]].** Low relevance to our book, no client on Shopping, and it is the finding about the reading that matters.
+
+**This is the fifth instance of one failure shape on this watchlist** after the locale partition (2026-09-20), the missing title baseline (2026-09-23), the unread Demand Gen Drops back catalogue (2026-09-25) and the dropped `#footnote-N` anchors (2026-09-25). Previous four were all "the page is an index of the thing worth reading". **This one is narrower and sharper: the page IS the thing, and we read only the top of it.** A sixth-week restatement of the general rule: on any Google or Meta publishing surface, never assume the order on the page is the order of publication.
+
+### The Developer Blog weekly check reads dates out of post BODIES, so the fetch script's `dates_first5` is not a post date (found 2026-10-07)
+
+`lib/_weekly_20260928.py` prints `dates_first5` from a date regex over the whole fetched body. On this source that output is meaningless as a recency signal. Today it returned "October 7, 2026", "October 7, 2026", "October 1, 2026", "October 12, 2026", which reads like four fresh posts. **All four are dates INSIDE post text:** 7 October 2026 is the Google Ads API v22 sunset date, 1 October and 12 October 2026 are Display & Video 360 deprecation milestones.
+
+**The correct read is the Atom feed's own `published` element, and it says the source is quiet.** 25 entries, newest **2026-09-23, "Announcing v25.2 of the Google Ads API"**, which predates the last completed weekly read on 2026-09-28. **Nothing new on this source.** Same correction applies to `changed: true`, which was reported for all three Google sources and only means the bytes differ between fetches.
+
+**One live date came out of it and it is worth knowing: Google Ads API v22 sunsets 7 October 2026, which is today.** All v22 requests begin to fail from this date. We do not call the Google Ads API directly for client work, so there is no action, and a tool that does would break today.
+
+### arXiv: the RSS lane IS backfillable through the API, so a missed build is not a lost build (found 2026-10-07)
+
+Every arXiv note above treats the RSS feed as the lane and reasons about which build a run happens to read. The feed carries one build, so four consecutive failed runs (3 to 6 October, OAuth) looked like three unreadable builds and a permanent hole.
+
+**It is not a hole. `export.arxiv.org/api/query` with `cat:cs.IR`, `sortBy=submittedDate`, `sortOrder=descending` and `max_results=250` returns the full submission history with titles and abstracts**, which covers any missed window. Run today across 2026-10-02 to 2026-10-07: **63 cs.IR submissions, and 0 passed the bank-list filter.** Date histogram: 6 Oct 16, 5 Oct 22, 4 Oct 12, 3 Oct 3, 2 Oct 10.
+
+So the outage cost this lane nothing, and that is now verified rather than assumed. **Standing instruction: after any missed run, backfill arXiv through the API rather than recording the window as unchecked.** Note the API's `published` is the SUBMISSION date while the RSS announces on a separate schedule, so query a window one day wider than the gap on each side.
+
+Today's own RSS read for the record: 35 items in the `Wed, 07 Oct 2026 04:00:03 +0000` build, 33 not previously seen (the count is cumulative over the outage, not a daily figure), **0 passing the filter**. The run fired at 07:03 UTC, after the 04:00 UTC rebuild, so this is today's build and the 2026-09-07 correction applies.
+
+### Meta for Business News: the US shelf moved for the first time since the slug baseline existed, and the locale gap more than doubled (2026-10-07)
+
+| Locale | Ceiling | Slugs | Against the 2026-10-02 baseline |
+|---|---|---|---|
+| `?locale=en_US` | **6 October 2026** | 12 | **2 added, 2 removed** |
+| `?locale=en_GB` | 10 September 2026, Instant Hydration spotlight | 12 | 0 added, 0 removed |
+
+**Added, both dated 6 October 2026 and both read in full at source:** `advertising-week-new-york-2026` (banked at [[Meta Delivery & Andromeda#MD-170|MD-170]] and [[Meta Delivery & Andromeda#MD-171|MD-171]]) and `a-new-way-for-businesses-and-personal-agents-to-work-together` (the Personal Agent Protocol with Sierra; **read in full and deliberately NOT banked**, no advertising, ad delivery, measurement or lead-capture content, logged here so a future run does not re-read it).
+
+**Rotated out:** `holiday-advantage-is-creative-advantage` and `skip-the-single-surface-holiday-strategy`, both August back catalogue, which is the known 12-card rotation.
+
+**The US-to-UK ceiling gap went from 11 days to 26.** It had been pinned at 11 days from 2026-09-23 through 2026-10-02, and the 2026-10-01 entry concluded the gap was a property of Meta's publishing rather than of our reading. That still holds and the gap is not a constant. **A run that read only one locale today would have reported this source either quiet or moved, depending purely on which one.**
+
+**Transport.** WebFetch rendered `?locale=en_US` in English (US) and `?locale=en_GB` in English (UK), both on the first attempt, no Playwright profile used or needed. Fourth consecutive browser-free read of both shelves. The slug diff needed zero punctuation adjudication again.
+
+### The weekly (Monday) lane was run on a WEDNESDAY, under the 2026-09-22 catch-up rule (2026-10-07)
+
+Recorded because the rule has now fired twice. The 2026-09-22 entry says: if the previous Monday's run did not complete, run the weekly sources on the next day that does. **The research runs of 3, 4, 5 and 6 October all exited on `Failed to authenticate: OAuth session expired and could not be refreshed`**, which took Monday 5 October's weekly lane with it. Weekly sources were run today.
+
+**All seven were read. Four of the seven are Meta properties and all four returned HTTP 400 to plain fetch**, consistent with every prior observation, and **WebFetch then read all four.** The 2026-09-22 ruling that "the whole Meta lane is unreadable when no Playwright profile connects" is now retired for the WEEKLY sources as well as for Business News, and on the same evidence: the 400 is about plain fetch, not about the lane.
+
+| Weekly source | Transport that worked | Result |
+|---|---|---|
+| Marketing API changelog | WebFetch | **Index under-rendered to v25.0 again, see below** |
+| Graph API changelog | WebFetch | **Unchanged. Newest v26.0, 29 July 2026** |
+| Advertising Standards | WebFetch | **16 section headings, order and names IDENTICAL to baseline** |
+| AI at Meta blog | WebFetch | Newest post 27 July 2026, nothing on advertising, ranking or measurement |
+| Google Ads API release notes | plain fetch | 200, no new dated release surfaced by an ordinal-aware pattern |
+| Google Ads Developer Blog | plain fetch | Newest post 23 September 2026, predates the last weekly read |
+| Merchant Center changelog | plain fetch | **Newest entry is 24 September 2026, not 11 August, see above** |
+
+**The Advertising Standards read is a partial close and the split matters.** The heading-level check is clean: 16 sections, in order, including section 7 as "Prohibited Commercial Practices" (the 2026-09-14 rename banked at MD-156) and section 16 rendering "Transparency requirements under the EU Digital Services Act" (the 2026-09-28 correction). **The per-section SHA-256 map CANNOT be diffed through WebFetch**, because WebFetch returns a rendered summary rather than the raw body the hashes were taken from. So a silent rewrite under an unchanged heading is still undetected, and the honest statement is that the hash map has not been diffed since 2026-09-28, nine days, and *Restricted goods and services* is the section ChiroWorks and StayWell depend on. **Method note for a future run: the heading check is browser-optional, the hash check is not.**
+
+**The Marketing API index under-rendering artefact HAS reproduced, and the 2026-09-28 "treat it as fixed" is withdrawn.** That entry recorded the index rendering v26.0, v25.0 and v24.0 on a plain urllib fetch and declared the artefact fixed. Today WebFetch on the same URL lists only v25.0 (18 February 2026), v24.0 and v23.0, with v25.0 presented as newest. **The true newest is v26.0, 29 July 2026, confirmed on the Graph API changelog in the same session.** So the artefact is transport-dependent, it was never fixed, and the standing rule stands: a run reporting "newest is v25.0" from this index alone is seeing a rendering artefact, never a rollback.
+
+**One live date out of the same read: Marketing API v24.0's Available Until was 6 October 2026, which was yesterday.** The 2026-09-28 entry flagged it as eight days out. It has now passed.
+
+**A third page on this watchlist renders out of date order.** The AI at Meta blog listing presents 9 July 2026 first and 27 July 2026 third. With Merchant Center above and the known Business News card drift, that is three sources where position on the page does not imply recency. **Take the max over parsed dates on every listing source, never the first item.**

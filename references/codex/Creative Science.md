@@ -3156,3 +3156,34 @@ A platform declining to answer the question operators ask most, with the reason 
 **The guard.** Nothing is shown. No distribution of asset lifespans, no definition of "markedly declining", no capacity number for a Demand Gen ad, and no evidence that add-first beats replace-first. This is Google's stated recommendation, not a measured result, and it is also the answer that keeps the most assets in the auction.
 Sources: Google Ads, Demand Gen campaign creative, explained: asset variety, testing, and fatigue, Ads Decoded S2E5, 2026-10-01, youtube.com/watch?v=yz-ui2LSMtQ, transcript read in full
 Last touched: 2026-10-02
+
+### CR-284 · One hero offer carried unchanged across every surface beats a menu of offers, and the surfaces include the ones nobody treats as merchandising
+Tier: T3 · Status: active
+Stated as the strongest regularity a split-testing platform has on offer presentation: "we have never seen being more clear about the value you're providing and how generous you're being in the offer... the more clear you're on that, it always wins. It always generates more uptake and uplift." A "we have never seen" from a company whose whole product is other people's split tests is worth more than the usual practitioner assertion, and it is still an assertion with no distribution behind it.
+
+**Pick one angle and repeat it, do not stack angles.** "You don't want to overwhelm people with like, oh, there's like 17 different offers available. That's going to create friction." The instruction is one hero offer with a foot forward, then the same offer on the homepage, as a sticker on the collection page, on every product page for every product inside the bundle, in the cart, at checkout, inside the upsells, and in an email two days after purchase. Repetition of one offer, not addition of more offers.
+
+**The merchandising surface that makes the claim concrete, because nobody thinks of it as one.** Brands won tests last peak season by renaming the free-shipping option in the shipping menu to "Black Friday shipping, arrives in time for Christmas". Nothing about the shipping changed. "Nothing different about it, but just it's another opportunity to merchandise this."
+
+**The companion rule, which already has a number in this codex.** Never make the buyer do arithmetic: "just every time show the lower price. Just make it so any amount of thinking or math the customer needs to do, you've lost a fraction of a conversion." The cost of breaking that is banked at [[Creative Science#CR-207|CR-207]], where a discount code living only in the ad while the page showed a struck-through price cost one brand 36 points of conversion rate.
+
+**The segmentation that qualifies the one-offer rule.** The same operator runs tiered offers by audience, and the tiers are genuinely incompatible with each other: one food brand gives VIPs a very high discount behind a very high threshold, spend $500 and get $300 of value, and he says that offer "would totally turn off someone clicking through your Meta ad or someone who's never bought before, but it crushes for their VIPs". So the rule is one offer per audience, carried everywhere that audience goes, not one offer for the whole market.
+Sources: Andrew Faris (guest Drew Marconi, Intelligems), The Black Friday Offer & Website Playbook From Intelligems' CEO, 2026-10-05
+Last touched: 2026-10-07
+
+### CR-285 · The four-format creative set for a finite high-intent window, with two executions of each arriving at the same point from different directions
+Tier: T3 · Status: active
+Prescribed specifically for a short, high-intensity sales window against a warm, already offer-aware audience, and explicitly NOT the evergreen creative strategy. Four formats, in his stated order of funnel position:
+
+1. **Product demonstration video.** Makes the offer legible, whether the buyer is choosing a gift or buying aspirationally for themselves. Upper-funnel work inside a warm audience, aimed at the people already circling who have not decided.
+2. **Mini-VSL.** Systematic objection handling, and allowed to run long: "five minutes, 10 minutes, even longer." The stated goal is enthusiasm, the buyer selling themselves and arriving at the purchase having already lived the outcome.
+3. **Customer review static.** Social proof carrying what the brand cannot say about itself, and the quality bar is not the star rating. His example of a review that closes: "I've held off buying this for 6 months, and the second it showed up, I knew I'd never buy from anybody else."
+4. **Direct-response static.** The full bundle front and centre with the discount, and no cleverness. "Your headline might be as straightforward as Black Friday offer. This won't last."
+
+**The rule governing the pair inside each format, which is the part worth keeping.** Two executions, "two sides of the same coin", arriving at the same point from different directions. His worked case is the direct-response pair: one execution on urgency, one on the size of the saving.
+
+**Reading note on the transcript.** The per-format ad count is spoken repeatedly as "322 ads", which is an auto-transcript artefact for a spoken digit sequence and is not recoverable from the audio text. The four formats and the two-executions rule are stated unambiguously; the count is not, and is deliberately not banked.
+
+**Where it sits.** [[Creative Science#CR-077|CR-077]] already asks a retargeting ad set for 10 or more concurrent ads across different pain points and formats, which this is a specific instantiation of for one window. [[Creative Science#CR-239|CR-239]] holds that a static gets a glance and therefore carries three parts and no more, which is the constraint on formats 3 and 4.
+Sources: Professor Charley T, Your Black Friday Facebook Ads Strategy Sucks, 2026-10-06
+Last touched: 2026-10-07

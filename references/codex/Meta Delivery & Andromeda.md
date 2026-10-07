@@ -1738,3 +1738,34 @@ Meta Newsroom, 2026-09-29, "The Future Is for Everyone: Muse for Small Business"
 **It also moves [[Learning & Signal#LS-076|LS-076]] from a watch note to a live question.** LS-076 banks Meta's launch-day sentence that Muse conversations and VM data do not reach the ad systems. Three weeks later Muse reads ad accounts. Reading an ad account is the opposite direction from feeding the ad systems, so nothing is contested and the tier there is unchanged. The two surfaces now sit inside one agent, which is why the re-check matters.
 Sources: Meta Newsroom, The Future Is for Everyone: Muse for Small Business, 2026-09-29, about.fb.com/news/2026/09/introducing-muse-small-business/, read in full
 Last touched: 2026-09-30
+
+### MD-170 · Advertising Week New York 2026: Meta moved campaign creation itself into an agent, opened Customer Lifecycle Strategy to all advertisers, and put plain-language audience description into Detailed Targeting
+Tier: T1 · Status: active
+Meta's own announcement post, read in full at source, dated 6 October 2026. Six items, in the order they matter to our accounts.
+
+1. **Customer Lifecycle Strategy is now available to all advertisers.** Acquisition-focused campaigns with automatic recommendations to exclude existing customers. This is the one item that touches live work: it puts an exclusion recommendation in the product for a decision this codex has argued both sides of, at [[Auction Mechanics & Bidding#AU-059|AU-059]] (worked arithmetic against excluding past purchasers) and [[Auction Mechanics & Bidding#AU-061|AU-061]] (without exclusions Meta prioritises warm audiences and cold scale stalls). A platform default will now push accounts one way.
+2. **AI-enabled audience discovery, in Detailed Targeting, "available by the end of the year".** Describe the ideal customer in plain language instead of scrolling the interest list. Announced, not shipped.
+3. **The Meta AI business assistant becomes agentic.** Stated capability: "plan and create a campaign, generate creative imagery and text, update targeting" conversationally, plus memory of the business's history, seasonality and goals, plus scheduled tasks and performance monitoring. Described as in testing.
+4. **Ads Creative Studio access broadens** after summer testing, carrying creative performance insights, and those insights now feed the assistant.
+5. **Generative video is generally available:** video generation from static assets, and product image-to-video at scale.
+6. **In-conversation checkout is in test "this fall"** through Meta Business Agent, Meta AI and Muse, with Adyen, PayPal, Shopify and Stripe.
+
+**The figure in the post has no provenance of any kind, and the construction is one this codex already tracks.** See [[Meta Delivery & Andromeda#MD-171|MD-171]].
+Sources: Meta for Business, Advertising Week New York 2026: New AI Capabilities to Guide Campaigns and Reach Customers, 2026-10-06, https://www.facebook.com/business/news/advertising-week-new-york-2026, read in full
+Last touched: 2026-10-07
+
+### MD-171 · The unfootnoted adopter-versus-non-adopter figure is not a Google habit, it is an industry one: Meta's 5% claim uses the same construction and carries no footnote at all
+Tier: T1 for the sentence, T4 for the effect · Status: active
+**The sentence, verbatim:** "Advertisers who adopt its recommendations are typically seeing 5% more conversions at the same cost per conversion than those who don't."
+
+**There is no footnote anywhere on the page.** No data window, no population, no geography, no "Meta internal data" line, nothing. Checked explicitly against the whole rendered page, not just the body paragraph.
+
+**Two defects, both visible without any outside information.**
+- **"At the same cost per conversion" is volume at constant efficiency**, which is the identical construction catalogued at [[Google Auction & Smart Bidding#GA-088|GA-088]] as "at the same ROI" across thirteen Google Demand Gen Drops. It is a weaker promise than it reads as, because it says nothing about whether the conversions are worth the same.
+- **"Than those who don't" is an adopter-versus-non-adopter comparison with no control group.** Advertisers who adopt a platform's recommendations are selected on budget, attention and account health before any recommendation is applied. The gap measures who adopts at least as much as it measures what adopting does.
+
+**Why this is banked as its own claim.** The vendor-figure pattern in this codex has been a Google finding. [[Google Auction & Smart Bidding#GA-085|GA-085]], [[Google Auction & Smart Bidding#GA-086|GA-086]], [[Google Auction & Smart Bidding#GA-087|GA-087]] and GA-088 were all built from reading Google footnotes against Google sentences, and the standing rule that came out of it was "read the footnote before you read the sentence" on Google announcements. **Meta's post shows the same construction with no footnote to read at all, which is a worse position for a reader than Google's.** The rule generalises: on any platform announcement, find the population and the counterfactual before carrying the number, and when there is no footnote, the number is an illustration and not a measurement.
+
+**What we do with the 5%.** Nothing. Do not quote it to a client, do not put it in a deck, and do not use it to argue for or against adopting Meta's recommendations.
+Sources: Meta for Business, Advertising Week New York 2026, 2026-10-06, footnote presence verified absent across the full page
+Last touched: 2026-10-07

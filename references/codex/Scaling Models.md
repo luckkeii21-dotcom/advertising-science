@@ -1759,3 +1759,25 @@ Jon Loomer, 2026-09-30, who flags it as an exception to his own standing advice 
 **The cheap test, and our own book is the population for it.** This design is [[Scaling Models#SC-130|SC-130]] doing a different job: same small fixed budget, same upper-funnel goal, same frequency cap, same large creative pool against one fixed audience. SC-130 is a retargeting presence layer; this is an organic-distribution replacement. Any client Page subject to the MD-166 cap that posts links more than twice a month can run it, and the only new question is whether follower-targeted reach buys more clicks than the subscription buys link slots.
 Sources: Jon Loomer, "An Ad Solution for Meta's Restriction on Organic Link Sharing", Pubcast, 2026-09-30, youtube.com/watch?v=vjNRpNSASOQ, 10 min, 1,535 words, read in full
 Last touched: 2026-10-01
+
+### SC-174 · The peak-season ramp: launch the peak offer at broad now, go dark on the day itself, and open the retargeting windows behind it
+Tier: T3 · Status: active
+A complete campaign protocol for a dated peak, stated end to end. Recorded as one claim because the steps are load-bearing on each other.
+
+**The structure.** One CBO campaign. Three ad sets: broad with no exclusions, a 7-day retargeting window, a 30-day retargeting window. The same ads in all three. Every ad drives the same single offer. He is explicit on exclusions: "no exclusions at all."
+
+**The sequence.**
+1. **Now, weeks out.** Every creative intended for the peak goes live at broad, in a single ad set, at a budget no greater than 20% of total spend.
+2. **As gross profit per transaction and AOV on that campaign beat the rest of the account, shift budget into it weekly.** The stated target is that by the peak it carries over 90% of daily spend, at a daily budget above anything the account has run.
+3. **On the peak day itself, turn the ads off.** Owned channels carry the day, three or four email and SMS sends.
+4. **The next morning, open the 7-day retargeting ad set.**
+5. **Open the 30-day ad set only when budget exceeds what the 7-day pool can absorb.**
+6. **Automate the scale-up on a Monday, Wednesday, Friday cadence**, his reason being so "the account doesn't compound interest against itself", which is a pacing argument against daily rule firing.
+
+**The governor he puts on budget, and it needs a warning.** "Once this is live, you're managing to daily frequency. We keep it above 2.5 and scale the budget to maintain that number for as long as the economics make sense." **This is DAILY frequency on a warm retargeting pool, and it is far above every frequency number this codex holds.** [[Meta Delivery & Andromeda#MD-051|MD-051]] has ad-level frequency on cold campaigns almost never exceeding 2 over a 30 to 60 day pull. [[Creative Science#CR-177|CR-177]] records 2.0 over 14 days on cold as the fatigue threshold operators actually use. [[Auction Mechanics & Bidding#AU-093|AU-093]] is our own portfolio at peak, where frequency moved 1.75 to 1.96 and back to 1.82. **Do not carry 2.5 to a cold prospecting ad set, and do not read it against a 7-day or 30-day figure.** A different window and a different audience temperature make it a different quantity.
+
+**What he concedes about the readout.** Platform-reported performance on this campaign will overstate, because the ads take credit for sales also arriving from email, search and direct: "your performance is going to look astronomical according to platform attribution... and that's totally fine. The scorecard isn't ROAS."
+
+**The operating rule that sits against our own book.** Nothing here is e-commerce-shaped only; the ramp-early logic is the transferable part. The Black-Friday-dark instruction is in direct tension with [[Auction Mechanics & Bidding#AU-094|AU-094]], where Meta's own median advertiser cost per acquisition FELL 14% on Black Friday and 15% on Cyber Monday. See that claim for the reconciliation.
+Sources: Professor Charley T, Your Black Friday Facebook Ads Strategy Sucks, 2026-10-06
+Last touched: 2026-10-07

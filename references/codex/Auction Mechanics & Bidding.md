@@ -434,14 +434,37 @@ Charley T's seasonal calendar, stated across two videos. Impression supply spike
 
 **One mechanism he adds, which cuts against the obvious read of a cheap window.** He states that CPMs correlate with auction pressure and more specifically with **expected action rate on the landing page**: when conversion rates are strong and returns are good, Meta charges more, because it can. When an advertiser is unprofitable, CPMs sometimes come down. He flags the statement as a generalisation with a lot of nuance. The practical consequence for Q5 is that arriving with a genuinely good offer will itself inflate the CPM somewhat, so the cheap window is cheaper before you succeed in it than after. Asserted, nothing shown, and it should not be quoted as a mechanism Meta has described.
 **The "Meta shows no figures" limit above is now PARTLY closed (2026-09-23).** A second Meta post, the Cyber 5 2025 review, publishes measured median advertiser rates for the peak window itself: conversion rate +74% and CPA -14% on Black Friday, +43% and -15% on Cyber Monday, both against early October, from all purchase-optimised ads across all verticals between 1 October and 30 November 2025. Banked in full at [[Auction Mechanics & Bidding#AU-094|AU-094]]. **Read the scope carefully before treating this as support for Q5.** The figures cover CYBER 5, the five days from Thanksgiving to Cyber Monday. The same post restates the Q5 claim, that CPMs fall to their lowest levels of the season while purchase intent holds, in words with no number attached, exactly as the 2025 mobile-games post did. So Meta has now measured the window BEFORE Q5 and still not measured Q5. The tier stays T3 and the lead-gen scope warning below is untouched.
+**The fullest telling of this calendar yet, and it arrives with a numbers problem inside it. Added 2026-10-07.** A 51-minute video from the same speaker lays out all twelve months in five phases and supplies figures this claim previously lacked. The figures, as stated:
+
+| Figure | As stated |
+|---|---|
+| Monthly CPM series | June $14.88, July $12.90, September $11.21, November $21.96 |
+| Cyber Monday CPM | $17.70, called 138% above the annual average |
+| Annual average CPM | $7.43 |
+| January against October | "roughly 15% below October" |
+| Q5 CPM drop | "CPMs dropped by nearly 50%" |
+| September against November | "buying next month's customer at $11 instead of 22" |
+| Online spend index by month, against the average | February 84.3 the low, December 138.3 the high, July 97.2, clothing 104.3 |
+| Post-holiday buying | "41% of shoppers keep buying after the holidays" |
+
+**The inconsistency, and it is not a transcription artefact.** $17.70 against $7.43 is exactly 138% above, so that pair is internally consistent and was clearly computed. But a year whose June, July, September and November CPMs are $14.88, $12.90, $11.21 and $21.96 cannot have an annual average of $7.43. The two sets describe different populations, or one of them is wrong, and the video never reconciles them. **Use the ORDERING of the monthly series and the Cyber-Monday-to-average RATIO. Never quote $7.43 as an annual average CPM and never mix the two sets in one sentence.**
+
+**What is genuinely new to this claim rather than a restatement.** The Q5 arbitrage here is given a duration against competitors rather than against consumers: the cheap window runs "nearly a month before the brands with millions in marketing budgets start playing again", which is a materially later date than this speaker's own account in [[Auction Mechanics & Bidding#AU-035|AU-035]]. See that claim. And the ranking is stated explicitly for the first time: September is "the cheapest attention will be for the rest of the year, except for Q5", which puts Q5 first and September second rather than leaving January and February as an undifferentiated floor.
+
+**None of these figures has a source attached anywhere in the video.** No platform report, no account export, no screenshot of a series. They are a practitioner's numbers spoken over a slide.
 Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Meta for Business, Maximise Q5 Performance: Unlocking the Value of Q5 Marketing for Mobile Game Developers, 2025-10-13 (read 2026-08-20); Blue Sense Digital, Black Friday 2026 Strategy: Spend, Creative, Offers, Pacing, 2026-09-21; Meta for Business News, "Cyber 5 2025: What worked, what changed and how to win Q5", 15 December 2025, read in full 2026-09-23
-Last touched: 2026-09-23
+Last touched: 2026-10-07
 
 ### AU-035 · Holding-company agencies return in the first weeks of January and their budget-insensitive spend lifts CPMs and takes the best impressions
 Tier: T3 · Status: contested
 The auction-side explanation for January cost rises. Charley T names Omnicom-scale buyers spending a million dollars a day, says teams like his did not work the first week of January, and that when they come back they buy the most attractive impressions with no revenue target attached: "there are now businesses willing to spend more in a day than you will a year with no revenue goals at all, spiking your CPMs and taking the impressions of the people who are most likely to be interested in what you have to say." He says he personally ran a million a day. The claimed cost is twofold, a higher CPM and reduced access to your best prospects, which would also degrade quality at constant CPM. Marked contested because the same speaker states in AU-034 that January and February carry the lowest CPMs of the year. Both can hold if the January rise is measured against the late-December Q5 trough while the month still sits far below Q4 in absolute terms, but he never reconciles them, so the expected direction of January CPM on a given account is unresolved. Resolution: pull weekly CPM for December through February on any account with two years of history and check whether weeks 1 to 3 of January rise off the late-December floor and by how much. Practitioner testimony, no CPM data shown.
+**A third version of the timing from the same speaker, and it moves the date later. Added 2026-10-07.** This claim records holding-company money returning "in the first weeks of January". On 2026-10-06 the same speaker describes the cheap window as lasting "nearly a month before the brands with millions in marketing budgets start playing again", and separately puts January "roughly 15% below October" in CPM, which is a month-level statement rather than a first-week spike.
+
+**So there are now three incompatible accounts of January from one operator:** January and February are the annual CPM floor (AU-034, 2026-01-24), holding companies return in the first weeks of January and spike CPMs (this claim, 2026-01-24, same video), and the cheap window runs nearly the whole month (2026-10-06). The contested status stands and the reason is now stronger: it is not two statements that might be reconcilable by choice of baseline, it is three statements across nine months with no baseline stated in any of them.
+
+**The resolution already specified in this claim is unchanged and is now the only way out:** pull weekly CPM for December through February on any account with two years of history and read whether weeks 1 to 3 of January rise off the late-December floor. Until that is run, give a client a January CPM direction only with the uncertainty attached.
 Sources: Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24
-Last touched: 2026-08-19
+Last touched: 2026-10-07
 
 ### AU-037 · On auto bids, day-level performance tracks the number of daily active users in market, so a bad day can be a supply effect rather than an account effect
 Tier: T4 · Status: active
@@ -539,8 +562,11 @@ Last touched: 2026-08-20
 ### AU-060 · The one exclusion Charley T ran: past purchasers excluded for 30 days only, set off a repeat-purchase cluster at day 25, on an account that went from $50k/month to $1M/week
 Tier: T3 · Status: active
 The exception to AU-059, and the more instructive half because the window was derived rather than picked: "When I was scaling under outfit and we went from 50k a month to a million a week in a year and a half, we understood once we found the hero product that was most likely to get customers to come back and buy in again and again and again, those customers did. So on average about 25 days after their initial purchase. So we excluded customers for 30 days because we knew those people were likely to buy." Read the logic carefully, because it inverts the usual reason for the exclusion. Those customers were about to buy again on their own at day 25, so paying to reach them inside that window buys a purchase you were getting free. The transferable method is to find the repeat-purchase interval first and set the exclusion window just past it, instead of choosing 30, 60 or 180 days off a template. Two cautions. This is an ecommerce hero-product pattern and nothing here says a service business has an equivalent interval to find. And the $50k/month to $1M/week growth is attached to the story without any claim that the exclusion caused it, so do not let the number transfer credit to the tactic. Practitioner recollection, no cohort data shown.
+**The same account is now credited to a second mechanism by the same speaker. Added 2026-10-07.** This claim carries the 30-day past-purchaser exclusion on an account that went "from $50k/month to $1M/week". On 2026-10-06 the same speaker names that account, a shapewear brand he calls Underoutfit, and attributes the same trajectory to an offer: a buy-three-get-one-free built because the average customer bought 2.5 times, which worked in email, then on a landing page, then in ads, and is now permanent on every product on the site. "That brand went from 50,000 a month to a million dollars a week in a year and a half."
+
+**Nothing here contradicts the exclusion claim**, and the exclusion was always described as a narrow tactical setting rather than a growth driver. What it does is remove the account from use as evidence for the exclusion: **one hero case is now the headline example for at least two different mechanisms from one operator, so it cannot carry weight for either.** Cite the exclusion setting on its own merits and stop citing the growth figure beside it.
 Sources: Professor Charley T, Copy This Facebook Ads Strategy (Post-Andromeda), 2026-02-07
-Last touched: 2026-08-20
+Last touched: 2026-10-07
 
 ### AU-061 · Without heavy exclusions on cold campaigns Meta prioritises warm audiences and cold scale stalls, and the severity rises with returning-customer share and account age
 Tier: T3 · Status: contested
@@ -611,8 +637,15 @@ Separated deliberately, because the sound half is doing credibility work for the
 **The diagnostic rule it produces is stated as an absolute and should not be:** "if your ctrs are greater than 1% has nothing to do with c GTRs it has everything to do with conversion rate", against a stated CTR floor of 1% and target of 1.5%.
 **Useful context numbers, tiered T3 because they come from named client accounts.** Conversion rate anchors to price: a $50 product at 10.5% against a $2,000 product at 0.88%. He also notes Meta normalises the expected-action-rate premium to the vertical, so the 10.5% client does not get a $1 CPM.
 **⚠ Several failures in the same file's illustrative numbers.** A $3 CPC at 2% CVR is $150 exactly, stated as "a $100 $150 CPA". 10.5% against 3% is 3.5x, stated as "3x lower". A CPA improvement from $150 to $50 is 66.7%, transcribed as "a 7% drop in your CPA". The last is probably a transcription artefact for 67%, and as written it understates the effect by a factor of ten.
+**A second operator, the same identity stated in combined form, and the same class of arithmetic failure in the illustration. Added 2026-10-07.** Charley T states the identity as one expression: cost per acquisition is CPM divided by a thousand, times click-through rate, times the rate at which clicks turn into purchases. His first worked case recomputes exactly: a $16 CPM at 2% click-through and 3% conversion gives $26.67.
+
+**The second case does not.** He drops the CPM to $13, holds click-through at 2%, says the conversion rate falls "to 1%", and reports the result as $36.11, which he then correctly describes as impressions 19% cheaper and customers 35% more expensive. Both of those percentages check out against $16 to $13 and $26.67 to $36.11. **But $13 at 2% and 1% is $65.00, not $36.11.** Solving backwards, $36.11 requires a conversion rate of 1.8%. So the endpoints are consistent with each other and with his conclusion, and the spoken conversion rate is wrong by a factor of nearly two.
+
+**The consequence is specific: the example as spoken overstates the damage a conversion-rate fall does, and the conclusion it supports is unaffected.** The point being made, that a cheaper CPM can sit under a more expensive customer, holds at 1.8% exactly as it holds at 1%. Use the structure, recompute any number before repeating it, and never quote the $13/2%/1% triple.
+
+**This is the second speaker in this claim's file to publish arithmetic that does not survive a recompute**, after the $3-CPC case and the "7% drop" already recorded above. The pattern across both: the identity is always stated correctly and the illustration is where the error lands, which is the opposite of where a reader looks for it.
 Sources: Blue Sense Digital, How To Fix High CPCs on Meta Ads, 2025-03-18
-Last touched: 2026-08-27
+Last touched: 2026-10-07
 
 ### AU-081 · Two industrial ad-ranking papers land the same week, both feeding CREATIVE CONTENT into the prediction model as a first-class input
 Tier: T1 for the systems described, T4 as evidence about Meta · Status: active
@@ -844,8 +877,15 @@ Meta states the CPM half in words rather than numbers: CPMs rose through Novembe
 **The limit, and it is not small.** This is observational, not a test. The advertisers buying on Black Friday are not the same population, at the same budgets, with the same offers and creative, as the advertisers buying in early October. A median CPA that falls is partly a real efficiency effect and partly a mix shift toward brands that prepared, discounted, and ramped. Meta publishes no decomposition and has a direct commercial interest in the reader concluding that peak spend is cheap. Read the direction as trustworthy and the magnitude as an upper bound.
 
 **One thing in the footnote does not parse and is recorded rather than resolved.** Meta's method note says the window is 1 October to 30 November 2025 with "rates normalised to 1 October 2024 = 1", a base a full year before the window. Either the year is a typo for 2025 or the index is rebased to a prior-year anchor. Nothing about the direction changes either way, and the number should not be quoted to a client without that sentence attached.
+**A practitioner operating rule now sits in direct contradiction to this, and the contradiction is worth stating rather than resolving away. Added 2026-10-07.** Charley T's instruction for the peak day is to spend nothing: "The number one trick to maximizing profit volume on Black Friday is to not spend any money on ads on Black Friday. Not a single dime to start with." He opens the ads the following morning instead, on retargeting windows. The full protocol is at [[Scaling Models#SC-174|SC-174]].
+
+**The two are not arguing about the same number, and that is most of the reconciliation.** This claim measures Meta's median advertiser cost per acquisition, which fell 14% on Black Friday and 15% on Cyber Monday because conversion rate rose faster than CPM. Charley T argues on CPM, which he puts at 138% above average on Cyber Monday, and on customer QUALITY, where his position is that a discount-driven peak buyer has roughly half the lifetime value of an average customer. He explicitly accepts a worse cost per acquisition when average order value compensates, so a falling median CPA is not evidence against his thesis.
+
+**What does genuinely conflict.** This claim's population median says the average advertiser's acquisition cost improves on the day, and his rule says to be absent on the day. Both cannot be the right default. The tiers decide the weight: this is T1 from Meta's own data across all purchase-optimised ads and all verticals, and his is T3 practitioner assertion with no export shown. **So the default stays "peak is not automatically expensive on a CPA basis" and his rule is a bet, not a law**, with the caveat this claim already carries that Meta's median is observational and partly a mix shift toward advertisers who prepared.
+
+**The testable split between them is customer quality, not cost.** [[Marketing Math & Unit Economics#MM-073|MM-073]] already holds that November and December cohorts retain worse, which is his side of the argument and is the half Meta's figures do not address at all. Anyone running this on a real account should read cohort value at 90 and 180 days, not cost per acquisition on the day.
 Sources: Meta for Business News, "Cyber 5 2025: What worked, what changed and how to win Q5", 15 December 2025, read in full 2026-09-23 on the en_GB locale
-Last touched: 2026-09-23
+Last touched: 2026-10-07
 
 ### AU-095 · The cost-cap ratchet: open the cap far below the account average, raise it $5 every 2 to 3 days, and raise the BUDGET freely, because a cap cannot force spend
 Tier: T2 · Status: active
@@ -886,3 +926,33 @@ arXiv 2609.39327, *GEAR: Generative End-to-end Ad Retrieval at Douyin*, submitte
 **Why it is banked when it changes no decision we make this week.** Beside the TAGR half of [[Auction Mechanics & Bidding#AU-081|AU-081]], which refreshes an ad's semantic ID as its live-stream content changes and does publish its lifts, it makes two large ad platforms running semantic-ID retrieval in production. And beside [[Meta Delivery & Andromeda#MD-001|MD-001]], where Meta's multi-stage retrieval selects candidates on predicted per-user relevance of the creative, it says the industry is arriving at the same place by a different route: **the candidate set is generated from a learned representation of the item, so what the ad IS decides which pool it can be drawn from at all.** That is the mechanism under our creative-volume position, reported from a third codebase.
 Sources: arXiv 2609.39327v1, GEAR: Generative End-to-end Ad Retrieval at Douyin, 2026-09-30, https://arxiv.org/abs/2609.39327, abstract read in full at source
 Last touched: 2026-10-01
+
+### AU-097 · Read CPM, CPA and AOV together and the three combinations tell you whether a cost rise is the market, a broken account, or a conversion-rate problem
+Tier: T3 · Status: active
+The most portable thing in a 51-minute video, and the speaker flags it himself: "these are the three most useful lines in this whole video."
+
+| What you see | What it is | Where the work goes |
+|---|---|---|
+| CPM up, CPA up, AOV flat | Seasonal. The market repriced and it is outside your control | Nowhere in the account. Re-plan the month, do not rebuild |
+| CPM flat, CPA up | You broke something | The account and the change log |
+| CPM down, CPA up | The pattern he calls summer | Conversion rate and the offer, NOT targeting |
+
+**The third row is what earns the claim.** A falling CPM beside a rising CPA looks like a delivery fault, and it is the one case where an operator reliably reaches for targeting. The identity forbids it: the price of attention went down, so the loss has to sit in click-through rate or in the rate at which clicks convert. That routes the work to the landing page and the offer, which is a different team and a different week from an audience rebuild.
+
+**The limits.** AOV appears in only the first row, so the table cannot separate a seasonal rise from a product-mix shift. None of the three rows is quantified, so there is no threshold for how much CPM movement counts as flat. Read it as a routing rule for the diagnosis, never as a test.
+Sources: Professor Charley T, Your Black Friday Facebook Ads Strategy Sucks, 2026-10-06
+Last touched: 2026-10-07
+
+### AU-098 · The folk explanation for expensive summers is retracted by an operator who spread it, and the retraction names the four links nobody ever established
+Tier: T3 · Status: active
+The explanation under retraction, stated so it is on the record: the days are longer, the weather is better, people are outside more and therefore off their phones, so there is less attention available and it costs more to reach them. The speaker says he has given that answer himself for a long time and corrects it on camera: "It's a hypothesis that was repeated so many times it became general knowledge even though it was completely wrong."
+
+**What he concedes is established.** Leisure-time energy expenditure runs 15 to 20% higher in spring and summer.
+
+**The four links he says were never established, and this list is the useful part.** Nobody has shown that longer days cause adults to spend less MEANINGFUL time on Facebook and Instagram. Nobody has shown that any such reduction is large enough to CONSTRAIN the supply of impressions. Nobody has shown that summer cost-per-acquisition damage is caused by attention supply AT ALL rather than by conversion rate, offer strength, product mix and who is being reached.
+
+**The evidence he puts against it is a monthly CPM series: June $14.88, July $12.90, September $11.21, November $21.96.** On those figures summer is among the cheapest attention of the year, the opposite of what the folk explanation predicts, and November runs roughly 1.7x July. **No source is given for the series and it does not reconcile with the annual-average figure stated earlier in the same video (see [[Auction Mechanics & Bidding#AU-034|AU-034]]), so carry the ORDERING and not the levels.**
+
+**Where it lands here.** The folk explanation was never banked in this codex, so nothing is being refuted; this closes a gap before it opened. It supplies the argument behind the third row of [[Auction Mechanics & Bidding#AU-097|AU-097]], and it sits beside [[Auction Mechanics & Bidding#AU-083|AU-083]], where our own five non-overlapping weeks on one account had CPM and cost per lead moving in opposite directions three times. **The operating consequence is a prohibition: never explain a summer cost rise to a client as reduced attention supply. The person who popularised that explanation has withdrawn it and nobody has measured it.**
+Sources: Professor Charley T, Your Black Friday Facebook Ads Strategy Sucks, 2026-10-06
+Last touched: 2026-10-07
