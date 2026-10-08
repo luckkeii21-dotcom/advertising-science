@@ -693,3 +693,18 @@ Recorded because the rule has now fired twice. The 2026-09-22 entry says: if the
 **One live date out of the same read: Marketing API v24.0's Available Until was 6 October 2026, which was yesterday.** The 2026-09-28 entry flagged it as eight days out. It has now passed.
 
 **A third page on this watchlist renders out of date order.** The AI at Meta blog listing presents 9 July 2026 first and 27 July 2026 third. With Merchant Center above and the known Business News card drift, that is three sources where position on the page does not imply recency. **Take the max over parsed dates on every listing source, never the first item.**
+
+### Meta for Business News: the UK shelf moved, the locale gap went to ZERO, and the gap is noise rather than a property of Meta's publishing (2026-10-08)
+
+| Locale | Ceiling | Slugs | Against the 2026-10-07 baseline |
+|---|---|---|---|
+| `?locale=en_US` | 6 October 2026 | 12 | **0 added, 0 removed** |
+| `?locale=en_GB` | **6 October 2026** | 12 | **1 added, 1 removed** |
+
+**Added on the UK shelf and read in full at source:** `creator-marketing-whitepaper`, "Together creates better: building for a creator-first future", a creator-marketing white paper. Its one real number is an IPA long-term ROI index of 151 against a short-term 99 across 220 campaigns and 144 brands, banked with its methodology defects at [[Marketing Math & Unit Economics#MM-230|MM-230]]. **Rotated out:** `unlocking-the-value-of-q5marketing-for-mobile-game-developers`, December 2025 back catalogue, the known 12-card rotation.
+
+**The 2026-10-01 conclusion that the US-to-UK ceiling gap is "a property of Meta's publishing and not of our reading" should not be repeated.** The gap has now read **11 days** (2026-09-23 through 2026-10-02), **26 days** (2026-10-07) and **0 days** (today) inside eight days. It is a by-product of which shelf happened to publish last, and it carries no information. What the two-locale read is actually worth is unchanged and is the reason to keep doing it: **today the US shelf was flat and the UK shelf moved, so a run reading only en_US would have reported this source quiet and missed the only new platform document of the day.** That is the second time in two runs that the answer depended on which locale was read, in the opposite direction each time.
+
+**Transport.** WebFetch rendered both locales on the first attempt, no Playwright profile used or needed. **Fifth consecutive browser-free read of both shelves.** The slug diff needed zero punctuation adjudication for the third run running.
+
+**One date discrepancy, recorded because it is the known card-date drift and not a new fault.** The UK card renders "6 October 2026" and the article page itself says 7 October 2026. The 2026-09-14 entry above established that card dates drift by one day, which is why the slug set is the diff key. Bank the article's own date, not the card's.
