@@ -725,3 +725,67 @@ Recorded because the rule has now fired twice. The 2026-09-22 entry says: if the
 **And the locale gap is now confirmed worthless as a number, for the third run running.** It has read 11 days, 26 days, 0 days and today 28 days inside nine days. The 2026-10-08 entry already said to stop quoting it. Today it moved 28 days on a day when neither shelf published anything new in the UK. **The two-locale read still earns its place for the opposite reason: today the UK shelf was pure rotation and the US shelf carried the day's only new platform document, which is the reverse of yesterday.**
 
 **Transport.** WebFetch rendered both locales on the first attempt, no Playwright profile used or needed. **Sixth consecutive browser-free read of both shelves.** The slug diff needed zero punctuation adjudication for the fourth run running.
+
+### The shelf rotation is at most DAILY, so a same-day second pass buys nothing on Meta for Business News (2026-10-09, pass 2)
+
+The entry above found a UK slug rotating out and back inside 24 hours and left the cadence open. **Both
+shelves were read again 10 hours later on the same calendar day, 04:35 IST then 14:50 IST, and both
+returned the identical 12 slugs in the identical order.** 0 added, 0 removed on each. US ceiling still
+8 October 2026, UK ceiling still 10 September 2026.
+
+So the rotation is **not per-render and not sub-daily.** It moves at most once a day. **One read per day
+is sufficient on this source, and a second same-day pass is wasted fetches.** That also rules out the
+cheaper explanation for the non-monotonic ceiling: the slug did not flicker on a short timer, Meta
+genuinely re-cut the slice between one day and the next.
+
+**The cumulative seen-set the entry above asked for now exists**, at
+`cache/watchlist-seen.json` -> `pages.meta-business-news.slugs_seen_cumulative`, seeded at 26 slugs from
+every per-date baseline already in the file. A slug that leaves and returns will no longer re-fire as new.
+
+### arXiv is the ONE daily source where a second same-day pass does advance the lane (2026-10-09, pass 2)
+
+The 04:32 IST run read the **Thursday 08 October 04:00 UTC** build, 27 items, 0 new. The 14:45 IST run
+read the **Friday 09 October 04:00 UTC** build, 28 items, **24 new.** 0 passed the advertising filter in
+both passes.
+
+This is the 2026-08-20 scheduling-lag entry and the 2026-09-07 run-time correction shown end to end in a
+single day. **A pre-dawn IST run always reads the previous calendar day's build; an afternoon IST run
+reads the current day's.** The 04:00 UTC build lands at 09:30 IST, between the two slots.
+
+Practical consequence: the pre-dawn slot is never wrong, it is just one build behind, and the next day's
+run picks the missed build up because the seen-set is cumulative. **Nothing is lost by running pre-dawn.**
+Worth knowing only if the schedule is ever argued about, or if a specific build has to be read on its
+own publication day.
+
+Today's 24 were read as titles plus abstracts and every one is genuinely non-advertising. The four closest
+were `LIFT` (unified retrieval and ranking), `Language Models for Page-Level Layout Decisions in E-commerce
+Search`, `LIME` (user-item interaction modelling) and a spatiotemporal intent recommender from Amap.
+**All four are ranking, retrieval or recommendation with no advertising content**, which is exactly what
+the filter's standing rule says must never qualify on its own.
+
+### Meta for Business News: the UK shelf is a 12-SLOT WINDOW and one head post toggles, so a 1-in-1-out diff is ONE event (2026-10-10)
+
+| Locale | Ceiling | Slugs | Against the 2026-10-09 baseline |
+|---|---|---|---|
+| `?locale=en_US` | 8 October 2026, unchanged | 12 | **0 added, 0 removed** |
+| `?locale=en_GB` | **6 October 2026, back up from 10 September** | 12 | 1 added, 1 removed, **one event** |
+
+**Today's UK set is byte-identical, in order, to the 2026-10-08 shelf.** `creator-marketing-whitepaper` is back at slot 1 and `unlocking-the-value-of-q5marketing-for-mobile-game-developers` is gone from slot 12.
+
+**That kills the swap framing the two entries above both use.** Lay the three days out by slot and the mechanism reads directly: on 2026-10-09 the whitepaper was absent from slot 1, the other eleven posts each shifted up one position, and the window reached one item deeper into the back catalogue, which is where q5marketing came from. The two slugs never traded places. **One post appears or disappears at the head of an ordered list, and a fixed 12-slot window slides by one as a consequence.**
+
+**The rule that follows, and it is a reading rule.** On this source, a 1-added-1-removed diff where the addition sits at **slot 1** and the removal sits at **slot 12** is a single head-of-list event. Do not write it up as two rotations, and do not go looking for a reason the slot-12 post moved: it moved because the window is 12 long. Check the slot positions before interpreting any diff here.
+
+**The ceiling is non-monotonic in both directions now, for the same single cause.** 6 October, then 10 September, then 6 October again, purely because the only recent UK post (6 October 2026, against a second item dated 10 September) is intermittently present. **Why it flickers is unexplained and is not worth guessing at.** It is live at its own URL throughout.
+
+**Observed cadence: absent 10-07, present 10-08, absent 10-09, present 10-10.** One-day alternation across four consecutive reads, n=4. Short series, so it is an observation rather than a property. **Falsifier: if the 2026-10-11 read shows the whitepaper absent, the alternation holds at five points; anything else means a longer cycle and this entry is the coincidence.** The practical risk if it does hold is that an every-other-day cadence on the UK lane would see one state forever and read the other as a permanent absence, which reinforces rather than weakens yesterday's one-read-per-day ruling.
+
+**The cumulative seen-set fired for the first time and it worked.** `creator-marketing-whitepaper` returned today and did not re-fire as new, because `pages.meta-business-news.slugs_seen_cumulative` already held it from 2026-10-08. Every slug on both shelves today was already in that set, so there was nothing to read. That is exactly the failure the set was added to prevent, one day after it was added.
+
+**Transport.** WebFetch rendered both locales on the first attempt. **Seventh consecutive browser-free read of both shelves**, and today there was no browser to fall back on: the `playwright` and `playwright-arcads` profiles both failed CONNECT_TIMEOUT at session start.
+
+### Demand Gen Drops Hub: the hub has CAUGHT UP to the blog, so the ~1 month lag is confirmed as lag and not a ceiling (2026-10-10)
+
+The 2026-09-25 entry recorded the hub listing August as its newest a day after the September drop published on blog.google, and ruled that the hub is the back catalogue while the Ads & Commerce RSS is the alarm. **Read again today: 13 instalments, newest is September 2026.** So the hub did publish the September drop, roughly two weeks late, and the gap was a publishing lag rather than a missing instalment.
+
+That leaves the 2026-09-26 backlog closure intact at thirteen, monthly with no month missing, 1 September 2025 through 24 September 2026. **The October drop is not out yet**, on either surface: the Ads & Commerce feed has not rebuilt since 1 October and the hub ends at September. Expected around 24 October on the monthly cadence. The standing maintenance rule is unchanged, watch the RSS for the alarm and use the hub to confirm the shelf.
