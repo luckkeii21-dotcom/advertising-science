@@ -789,3 +789,49 @@ the filter's standing rule says must never qualify on its own.
 The 2026-09-25 entry recorded the hub listing August as its newest a day after the September drop published on blog.google, and ruled that the hub is the back catalogue while the Ads & Commerce RSS is the alarm. **Read again today: 13 instalments, newest is September 2026.** So the hub did publish the September drop, roughly two weeks late, and the gap was a publishing lag rather than a missing instalment.
 
 That leaves the 2026-09-26 backlog closure intact at thirteen, monthly with no month missing, 1 September 2025 through 24 September 2026. **The October drop is not out yet**, on either surface: the Ads & Commerce feed has not rebuilt since 1 October and the hub ends at September. Expected around 24 October on the monthly cadence. The standing maintenance rule is unchanged, watch the RSS for the alarm and use the hub to confirm the shelf.
+
+### Advertising Standards: the hash lane is CLOSED at 14 days and the page is unchanged (2026-10-12)
+
+The 2026-10-07 entry left this source as a partial close: the heading check was clean, the per-section SHA-256 map could not be diffed through WebFetch, and the honest statement was that the hashes had not been compared since 2026-09-28. **A Playwright browser connected today for the first time in eight runs and the hash lane was run. Nothing has changed.**
+
+| Check | 2026-10-12 | Baseline |
+|---|---|---|
+| Whole-page `innerText` | **32,505 chars** | 32,505 (2026-09-28) |
+| Sections located | **16 of 16, zero not-found** | 16 |
+| *Restricted goods and services* | **6,531 chars, `75a81517aee32a45`** | 6,531, `75a81517aee32a45` (2026-09-14) |
+| "Health and Wellness" | **present** | present |
+| "Privacy Violations and Personal Attributes" | **present** | present |
+
+So the section ChiroWorks and StayWell depend on is byte-identical across 28 days, and the two strings four of our accounts run against are both still there. The full 16-section map is written to `cache/adstd-sections-2026-10-12.json` and into `watchlist-seen.json`, so the next run has a complete map to diff rather than one section.
+
+**The 2026-09-28 offset-0 anchor fix is confirmed on a second run.** All 16 headings resolved in order with no not-found, which is what the offset-150 bug produced last time.
+
+**New finding, and it is the reason this source needs a browser. WebFetch and the browser disagree on the heading list, and the browser is right.** Today's WebFetch read returned *Introduction to the Advertising Standards* as item 1 and **omitted "Overview" entirely**, giving 16 headings that are all shifted by one. That reads exactly like a rename of section 1 and it is not one: the browser's `innerText` carries both strings, with **Overview as section 1 at 958 chars** and the Introduction string as the page H1, which is what the 2026-09-07 amendment established.
+
+**Correction to the 2026-10-07 method note.** It said "the heading check is browser-optional, the hash check is not." That is too generous. The heading check is browser-optional only if you accept a list that is off by one at the top. **A correct heading list and the hash map both need the browser.** Any future run that reads this source through WebFetch alone and reports 16 headings beginning with *Introduction* has not checked section 1.
+
+### Google Ads API release notes carries a PER-RENDER NONCE, so the weekly byte diff is noise (2026-10-12)
+
+The weekly fetch reported `changed: true` on this source against the 2026-10-07 cache, and the top version was unchanged at v25.2. **Tested with two fetches taken seconds apart. They differ.** Byte counts went 366,207 then 366,203, and the diff is two lines: a `<script nonce="...">` attribute value, and the key order inside the inline `application/json analytics` blob.
+
+So the `changed` flag on this source is meaningless and has probably been firing falsely since the weekly script was written. **This is the same defect already documented on the Google Ads Announcements page**, where `added=1 / removed=1` fired on a response nonce and the fix was to diff the answer-id set instead of the body.
+
+**Rule, now covering the whole host.** Never report a raw byte diff on `developers.google.com` as a change. Diff a stable key. On release notes that key is the **version-heading set**, which reads v25.2, v25.1, v24.2, v23.3, v22.2, v21.2 and is unchanged against the 2026-09-28 read. The three other weekly sources that fetch cleanly should be assumed to have the same defect until each is given a stable key.
+
+### Merchant Center: "take the max over parsed dates" returns an EFFECTIVE date, not a publication date (2026-10-12)
+
+The 2026-10-07 entry set a rule for every listing source on this watchlist: take the max over parsed dates, never the first item. **On this source that rule returns the wrong answer, and today it would have manufactured a new announcement that does not exist.**
+
+A max over all 42 date hits returns **September 30, 2026**. That string is not an entry date. It is a sub-heading, *"Changes beginning September 30, 2026"*, sitting **inside the 28 April 2026 entry** about pickup cost and minimum order values becoming required in the United Kingdom, Switzerland and all EEA countries. A forward-looking compliance deadline, not a publication.
+
+**Qualifier for this source: only count a date that stands ALONE on its own line.** On that rule the page yields 72 dated entries and the newest is **"Loyalty program updates: Loyalty Customer Match via Merchant API", 24 September 2026**, identical to the 2026-10-07 read. The max-over-dates instinct was right; the eligibility of the dates was wrong.
+
+**The out-of-order rendering is worse than the 2026-10-07 entry recorded.** Page order is not date order at **either** end. 11 August 2026 renders first, and the two genuinely newest entries, 1 July 2026 and 24 September 2026, render **last**, after a run of 2019 and 2020 items. So neither the top nor the bottom of this page can be trusted as recency, which is why the 2026-10-07 run first read 11 August as newest.
+
+### The 2026-10-11 run did not complete, and it cost exactly one observation (2026-10-12)
+
+Recorded because the catch-up rule needs the evidence. `runs/2026-10-11-1230-harvest.json` exists and is clean (0 new, 0 errors), and there is **no `2026-10-11-research-log.md` and no Harvest Log entry**. So the Sunday run died after step 1. Today's watchdog logged `research run incomplete; relaunching` at 12:55 before this run started.
+
+**The weekly lane was unaffected**, because 11 October was a Sunday and today is the scheduled Monday. The 2026-09-22 catch-up rule did not need to fire.
+
+**What it did cost is the Meta for Business falsifier.** The 2026-10-10 entry named it precisely: an 11 October read showing `creator-marketing-whitepaper` absent would hold the one-day alternation at five points. That read never happened. Today the whitepaper is present at UK slot 1 and both shelves are identical in order to the 10 October baseline, which is consistent with the alternation (absent 11, present 12) **and** with no rotation at all since 10 October. **Today's read distinguishes neither, so the alternation stays at n=4 and must not be reported as holding at five.** Testing it now needs two consecutive reads, not one.
