@@ -41,6 +41,38 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 
 **Errors: none.** Harvester clean on 12 channels, watchlist clean on all six lanes. TikTok Newsroom and the TikTok for Business blog were **skipped: browser unavailable** (every Playwright MCP server failed to connect at session start), third day running. Both are India geo-blocked to a plain fetch, so they are skipped rather than reported clean.
 
+**Publish.** Vault committed and pushed (`179481c`). `Sync-TeamRepo.ps1`: team repo sync pushed (1363 claims), personal mirror pushed.
+
+## 2026-10-15 (teacher run)
+
+**No claims added by this lane. No quiz answers were waiting, so nothing was graded.** The inbox held only its header.
+
+**Lesson 051 shipped: "The Default Was Never Yours", video no (Thursday).** Harvest-driven off today's research run. [[Google Auction & Smart Bidding#GA-094|GA-094]] (T1) carries the mechanism: the on/off Google Display Network switch inside a Search campaign is being replaced by channel prioritization plus a percentage budget allocation, and **"starting in February 2027, for Search campaigns with the Google Display Network turned on, the current spend allocation setup will go away"**, with the replacement default published nowhere. Preservation setting taught as published: Display on "Low priority" with a 50% budget allocation. Supporting: [[Google Auction & Smart Bidding#GA-032|GA-032]] (T3, Display inside Search as the first of three leaking defaults), [[Google Auction & Smart Bidding#GA-053|GA-053]] (T3, brand overspend in roughly 90% of audited accounts at $2,000 and $100,000 a month alike), [[Google Auction & Smart Bidding#GA-091|GA-091]] (T1, budget-rationed exploration on Demand Gen, cited as the same rationing machine behind the new priority tier).
+
+**Two things were taught as mechanism rather than quote.** First, why a priority order does nothing on a target-bid campaign that is not budget-limited: a priority queue is a rationing device and there is no shortage to ration, so the percentage cap is the control with teeth and the tier is decoration. Second, a new tier beat. **GA-094 is T1 and contains no number at all**, the first Google announcement in thirteen months of this engine's reading with no headline figure, and the cap holds only "on a best-effort basis" with no tolerance published. The rule drawn out of it: a tier ranks how well sourced a claim is, not whether it is quantified, so GA-094 can order an audit and cannot support a forecast or a client promise.
+
+**Our-accounts half ran honest and short, because the honest answer is thin.** No account on our book runs a Google Search campaign today; all five live accounts are Meta. The only Google account we have ever run was Mattia Spinal Care in Orlando: two inherited live campaigns audited, one Performance Max campaign built to spec and pasted by the client on 2026-07-08, a $997 Google package and a 2026-07-04 decision to put 100% of $4,000 a month onto Google, offboarded 2026-07-24 before that budget ran. The campaign we built was PMax, so the February 2027 Search-plus-Display line would not have reached it, and PMax is also where the new control gives least because the Google surfaces are one undivided group there.
+
+**The lesson sharpened research gap 2 instead of just repeating it.** The gap asks which client Google accounts have Display or Search partners on. Today that audit costs nothing, because there is nothing live to audit. **What it converts into is a prepaid intake step: the Google intake checklist gets Display state, Search-partners state, and the date the state was read.** The two campaigns we inherited at Mattia are the worked example of why, since nobody recorded their network state and nobody now can say what it was.
+
+**Decision rule shipped:** when a platform retires a default, the deadline lands on the setting and not on the announcement, so record the state of every inherited switch with the date it was read, then set the state you actually want. Leaving it alone stops being the same as keeping it.
+
+**Rotation.** The exception applied for the fifth time. The lesson was harvest-driven onto Google Auction & Smart Bidding, which is the pointer's own topic at index 6, so holding would have queued the same topic tomorrow. Pointer advances 6 to 7, Google PMax & Shopping is next, and that happens to be one of the two joint least-served topics on the board at two lessons each, untouched since lesson 039. Topic counts recomputed from the frontmatter of all 51 lesson files and they tie to the file count. **GA-091 is no longer carried as untaught**, after twelve days in the teacher queue.
+
+### 2026-10-15, second pass
+
+**0 transcripts in, 0 claims, 0 merges, 0 errors. One source closed that the morning run had skipped, and one reporting correction.** Quiet, and the quiet is the finding.
+
+**The morning run skipped Meta for Business News and reported as if it had not.** "Watchlist clean on all six lanes" covers the six sources inside `watchlist_check.py`. Meta for Business News is deliberately outside that script, needs its own fetch method, and its cache record read `last_checked: 2026-10-12`, so it had gone unread for three days behind a log that read complete. Read on this pass: **zero new posts on either shelf.** The US shelf is 0 added, 0 removed and identical in order to the 2026-10-12 baseline, ceiling still 8 October 2026. The UK shelf moved 1 in and 1 out, which is the 12-slot head-of-list event documented on 2026-10-10 rather than two rotations, and both slugs were already banked. Nothing to extract. WebFetch on both locales, ninth consecutive browser-free read, and today no Playwright server connected at all.
+
+**Correction to the morning run log.** It logged the two TikTok sources as "skipped: browser unavailable, third day running". They are a permanent India geo-block, verified 2026-08-19 across both the browser and curl, and the standing instruction on both is "do not retry, do not log as an outage" because a browser does not move an egress. The morning framing accrues a fake multi-day outage against the engine for a known permanent blind spot. Both corrections are written into `Watchlist.md`.
+
+**Everything else re-confirmed clean on a second read.** Harvester 0 new transcripts across 12 channels. Meta Engineering, Meta Newsroom, Google Ads and Commerce, arXiv cs.IR, TikTok SDK changelog at 0.1.8 and Google Ads Announcements at 396 answer IDs, all 0 added and 0 removed since 03:21. Demand Gen Drops Hub not due, read 2026-10-12 with the next instalment expected around 24 October. Thursday, so the Monday-only weekly sources were not due.
+
+**Gap, new and cheap.** The Meta for Business News alternation falsifier has now been lost twice running, to the dead 11 October run and to this skip. It needs consecutive daily reads and 11, 13 and 14 October are all missing. It stays at n=4.
+
+**No law changed. Nothing banked, because nothing new was published.**
+
 ## 2026-10-14 (research run)
 
 **1 transcript in, 6 claims added, 10 merges, 0 contested, 0 refuted, 0 errors. Two laws amended.** Meta published the 2026 generation of GEM and it is the largest single T1 source this engine has read in weeks. Read in full from the saved page, not summarised.

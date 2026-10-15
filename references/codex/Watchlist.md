@@ -835,3 +835,23 @@ Recorded because the catch-up rule needs the evidence. `runs/2026-10-11-1230-har
 **The weekly lane was unaffected**, because 11 October was a Sunday and today is the scheduled Monday. The 2026-09-22 catch-up rule did not need to fire.
 
 **What it did cost is the Meta for Business falsifier.** The 2026-10-10 entry named it precisely: an 11 October read showing `creator-marketing-whitepaper` absent would hold the one-day alternation at five points. That read never happened. Today the whitepaper is present at UK slot 1 and both shelves are identical in order to the 10 October baseline, which is consistent with the alternation (absent 11, present 12) **and** with no rotation at all since 10 October. **Today's read distinguishes neither, so the alternation stays at n=4 and must not be reported as holding at five.** Testing it now needs two consecutive reads, not one.
+
+### The scheduled run SKIPPED Meta for Business News entirely, and the gap ran three days (2026-10-15, pass 2)
+
+The 03:15 run logged "watchlist clean on all six lanes" and listed five feeds plus Google Ads Announcements. **Meta for Business News is not one of those six.** It is the only watchlist source that needs its own fetch method, and the cache record shows `last_checked: 2026-10-12`, so it had gone unread on 13, 14 and 15 October while the log read as complete.
+
+**A source that lives outside `watchlist_check.py` does not appear in that script's summary, and a run that reports only the script's summary silently drops it.** The script's own docstring says so plainly: Meta for Business News is not handled there. Every future run must read this source by hand and say so in the log, or say it skipped it. "Clean on all six lanes" is not a statement about this source.
+
+**Read on this pass. Zero new posts on either shelf.** US shelf 0 added, 0 removed, **identical in order** to the 2026-10-12 baseline over a three-day gap, ceiling still 8 October 2026. UK shelf 1 added, 1 removed: `creator-marketing-whitepaper` absent from slot 1, the other eleven shift up, and `unlocking-the-value-of-q5marketing-for-mobile-game-developers` surfaces at slot 12. That is the 12-slot-window behaviour recorded on 2026-10-10, so it is **one head-of-list event, not two rotations**, and both slugs were already in `slugs_seen_cumulative`. Nothing to read and nothing to bank.
+
+**The alternation falsifier is now unevaluable for a second consecutive attempt.** It needs consecutive daily reads. 11 October was lost to the dead run, and 13 and 14 October were lost to this skip. Whitepaper presence reads absent 10-07, present 10-08, absent 10-09, present 10-10, present 10-12, absent 10-15, which fits daily alternation and also fits several longer cycles. **Still n=4. Do not report it as holding.**
+
+**Transport: WebFetch on both locales, first attempt, ninth consecutive browser-free read of both shelves.** Today no Playwright MCP server connected at all, so WebFetch was not a preference, it was the only option, and it was sufficient.
+
+### The TikTok lanes are a GEO-BLOCK, and logging them as "browser unavailable" invents an outage (2026-10-15, pass 2)
+
+The 03:15 log recorded: "Skipped: browser unavailable. TikTok Newsroom and the TikTok for Business blog, third day running, every Playwright MCP server failed to connect." **That framing contradicts the standing ruling on both sources and it should not be repeated.**
+
+The cache records on `tiktok-newsroom` and `tiktok-business-blog` both read "India geo-block, permanent. Do not retry, do not log as an outage," and the 2026-10-12 note settles the browser question directly: a browser was available that day and was deliberately not spent, because **a browser does not move an egress.** The block was verified on 2026-08-19 across both the browser and curl, on four paths each.
+
+**So the browser's absence is not why these two are unread, and it never was.** Reporting it that way accrues a fake consecutive-day outage counter against the engine for a blind spot that is permanent, understood, and nobody's fault. The honest line is the one already in the cache: not retried, permanent India geo-block, not an outage. The runbook's "browser unavailable" escape hatch applies to a source we could otherwise read. These two are not that.
