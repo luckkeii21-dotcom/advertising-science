@@ -1807,3 +1807,19 @@ The first claim in this topic about qualifying an ad set for scaling rather than
 **Guards.** Prescriptive video, nothing shown. No account, no worked breakdown, no case where the test changed a decision, and no evidence offered that a new-audience-clean ad set actually scales better than a contaminated one. The second test rests on the assumption that one-day click equals prospecting, which is a proxy and not a definition. Loomer's own "most surface level conversion results lie" is an assertion about a population he does not quantify. Read as a diagnostic worth running, not as a validated filter. Directly related: [[Attribution & Incrementality#AT-087|AT-087]] states the same rule one level down, at the creative rather than the ad set, and is T4 for the same reason.
 Sources: Jon Loomer, How Do You Scale Your Meta Ads Budget?, 2026-10-14
 Last touched: 2026-10-15
+
+### SC-177 · The first published attempt at a fully automated media-buying loop closes planning, adjustment and diagnosis into one feedback cycle, and its numbers come from a SIMULATOR with three accounts
+Tier: T4 · Status: active
+Banked at T4 deliberately, and the tier is the whole point of the entry. The architecture is the first of its kind this engine has read; the evidence behind it is a simulation.
+
+**What it proposes.** Three specialised roles on different clocks, which is the structure worth noting because it is the first formal description of the job we do by hand. A **Planner** sets account-level budget allocation once per period. An **Optimizer** adjusts delivery strategy at every remaining timestep inside the period. An **Inspector** diagnoses at end of period after settlement, aggregating delivery performance, budget utilisation and action records. "Diagnostic results guide account planning and strategy adjustment in the next period", and one role is updated per period in rotation on settled feedback, which is what the authors call co-evolution.
+
+**What it reports.** "AdCoEvo increases advertiser value by 14.02% while reducing cost per acquisition by 7.07%" against a rule-based operational baseline, and 3.96% and 1.24% against a fixed-parameter multi-agent version. **Those figures are the reason this is T4 and not T2.**
+
+**The evidence, stated so nobody quotes the 14% as a result.** "Experiments use the AuctionNet simulator with its official period length and traffic volume. The environment contains 48 ad units that can purchase traffic." Three controlled accounts, twelve controlled ad units, 500,000 simulated opportunities per period, 48 timesteps per period. **No live platform, no real traffic, no real spend, no advertiser count, and no platform named.** The baseline being beaten by 14.02% is a rule-based policy inside the same simulator, which is not a human media buyer. Authors are from JD Opensource; code is published.
+
+**Why bank it at all.** Every other paper on this lane describes the platform's side of the glass. This one describes ours: the loop from diagnosis to budget decision to adjustment that an operator runs weekly. Having it on file, dated and tiered, means that when a vendor sells autonomous media buying the question is already written down. **The question is what the 14.02% is measured against, and in the first published case the answer is a rule in a simulator.**
+
+**Standing against our own book.** Nothing to adopt and nothing to test. It does supply a usable frame: our own cycle is Planner on a weekly budget call, Optimizer on mid-week changes, Inspector in the weekly report, and the Inspector's output does not currently feed the next Planner decision in any written form. That gap is real and it is ours, not the paper's.
+Sources: arXiv 2610.19454, AdCoEvo: A Co-Evolving Multi-Agent Advertising Delivery System, submitted 2026-10-14, https://arxiv.org/abs/2610.19454, abstract and HTML body read 2026-10-16
+Last touched: 2026-10-16

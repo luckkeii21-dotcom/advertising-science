@@ -1278,3 +1278,19 @@ A reading rule about the source, banked because the codex now draws heavily on M
 **The same post's survey figures are real and separately weak.** 88% of shoppers use various formats on social media for holiday inspiration, and 68% of those who discover products on Facebook are likely to purchase, both from a Meta-commissioned Ipsos online survey of 14,473 holiday shoppers across 18 countries, November 2025. Vendor-commissioned survey material at law 4c standing, and the numbers are about stated behaviour, not measured behaviour.
 Sources: Meta for Business News, "Holiday measurement strategies", 13 August 2026, read in full 2026-09-23
 Last touched: 2026-09-23
+
+### AT-127 · Meta is building a WEEK-LEVEL attention objective, and the research it cites says distributed attention beats the same seconds delivered in one block
+Tier: T1 · Status: active
+A product in alpha and one finding under it. The finding is the part worth keeping, because it cuts against how every frequency conversation on our accounts is actually run.
+
+**The product.** "We are in the early stages of testing a product called Aggregated View Time", described as a way to measure and optimise the total time someone spends with your brand across a week rather than each impression on its own. Meta's own hedge is on the page: "While it's early and this product is in alpha."
+
+**The finding, quoted.** "Five seconds of attention added up over a week drove 32% more offline sales than one continuous five second view." Same total exposure, split across a week, 32% more offline sales.
+
+**Why this earns a claim.** It makes the UNIT of attention the week instead of the impression, and it puts a number on distribution rather than on volume. If it holds, two accounts with identical total view time and identical frequency are not equivalent, and the one that spread its seconds wins. Nothing else in this codex measures exposure that way: [[Auction Mechanics & Bidding#AU-097|AU-097]] reads the cost of attention, not its shape, and the frequency material we hold is about saturation rather than spacing.
+
+**Guards, and they are heavy.** Meta measuring its own product. No sample size, no vertical, no geography, no window, no lift-study design and no control definition published for the 32%. "Offline sales" is not defined and offline conversion measurement is the weakest instrument Meta sells. Vendor-commissioned brand research sits at law 4c standing, which is a prior for a test and never a result to report. **The product is alpha, so there is nothing to opt into and nothing to configure.**
+
+**What we cannot do with it, said plainly.** No client on our book has an offline sales instrument, so this cannot be tested on our accounts as published. The testable residue is cheaper: whether cost per lead differs between a week where one person saw the same total video seconds in one sitting versus spread across days. We have no column that reports it, so this stays unfalsifiable here until an instrument is named.
+Sources: Meta for Business News, "Meta Brand Building Summit: New Ways to Help Marketers Build Unforgettable Brands on Meta", published 2026-10-15, read in full 2026-10-16 (two passes)
+Last touched: 2026-10-16

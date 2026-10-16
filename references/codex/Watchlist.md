@@ -855,3 +855,20 @@ The 03:15 log recorded: "Skipped: browser unavailable. TikTok Newsroom and the T
 The cache records on `tiktok-newsroom` and `tiktok-business-blog` both read "India geo-block, permanent. Do not retry, do not log as an outage," and the 2026-10-12 note settles the browser question directly: a browser was available that day and was deliberately not spent, because **a browser does not move an egress.** The block was verified on 2026-08-19 across both the browser and curl, on four paths each.
 
 **So the browser's absence is not why these two are unread, and it never was.** Reporting it that way accrues a fake consecutive-day outage counter against the engine for a blind spot that is permanent, understood, and nobody's fault. The honest line is the one already in the cache: not retried, permanent India geo-block, not an outage. The runbook's "browser unavailable" escape hatch applies to a source we could otherwise read. These two are not that.
+
+
+### Read and NOT banked: Google's Universal Cart, because the announcement has no advertiser in it (2026-10-16)
+
+Google launched Universal Cart on 15 October 2026, US only, across Search and the Gemini app. Named participating merchants include Nike, Sephora, Target, Ulta Beauty, Walmart, Wayfair and Shopify merchants. It is built on the Shopping Graph, stated at 60 billion-plus product listings, and on something called the Universal Commerce Protocol. Checkout runs through Google Pay or passes through to the merchant.
+
+**Read in full and deliberately not banked.** The post contains zero advertising content: no Shopping ads, no Performance Max, no Merchant Center requirement, no attribution or conversion-tracking change, no advertiser opt-in and no advertiser action. Same handling as *Launching Structured Data Files v11* on 2026-10-07: a real platform change with nothing in it for how an account is run. Recorded here so a future run does not re-read it.
+
+**Why it is worth a note rather than silence.** A cart that lives on Google's surface and completes with Google Pay moves the purchase event off the merchant's site, and that is the sort of change that eventually arrives at Shopping attribution. **Nothing in the published post says it does, and this engine does not bank an inference.** The trigger to look again is an ads-side announcement that names Universal Cart, not another consumer post.
+
+### Read and NOT banked: the Meta/YouGov APAC small-business AI survey (2026-10-16)
+
+Meta Newsroom, 15 October 2026. YouGov on Meta's commission, 3,983 small business owners across nine APAC markets, fieldwork 6 August to 2 September 2026. Headline figures: 84% use AI, 76% report a positive productivity effect, 71% a positive revenue effect over twelve months, 86% say small businesses need more guidance.
+
+**One advertising datum in it**, and it is self-reported usage rather than a mechanism: among owners whose business used AI in the past year, "51% have used it to create or edit content, 43% for local advertising and marketing, 38% for translation, and 37% for customer support."
+
+**Not banked.** Stated behaviour from a vendor-commissioned attitude survey, no mechanism, no outcome measurement, and the piece then promotes Advantage+, click-to-WhatsApp ads and Meta Business Agent. The case study inside it (Zayya, Indonesia, 8x return on roughly $1.68 a day) is a named-advertiser showcase on Meta's own channel with no method, which is exactly what the AT-126 reading rule exists for. Logged so a future run does not re-read it.
