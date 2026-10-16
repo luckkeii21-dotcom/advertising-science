@@ -9,6 +9,12 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-10-16 (research run, second pass same day)
+
+**0 transcripts in, 0 claims, 0 merges, 0 errors. Nothing new.** Every lane re-run at 15:27 IST, nine hours after the 06:34 pass: 0 new transcripts across 12 channels with zero RSS fallbacks needed, which is the first clean RSS read since the 2026-09-05 outage opened. 23 new arXiv cs.IR items, all 23 titles read, 0 passed the advertising filter. Meta Engineering, Meta Newsroom and Google Ads & Commerce 0 new each. Google Ads Announcements unchanged at 396 answer IDs, TikTok SDK unchanged at 0.1.8. Meta for Business News UK shelf re-read and identical to the morning read; the US shelf geo-redirected to the `hi` locale and was not confirmed a second time, so the 06:34 hand read stands as the day's US read.
+
+**The pass found one thing, and it is about our own coverage.** arXiv cs.IR replaced 23 of its 26 feed items between 06:34 and 15:27 with no change to the feed build stamp. One read per day sees roughly half of what that lane publishes, and the missing half leaves no trace in the log. The two papers banked this morning are unaffected; what was overstated is every past line claiming the lane was fully read. Fix is a second afternoon arXiv-only read.
+
 ## 2026-10-16 (research run)
 
 **0 transcripts in, 4 claims added, 2 merges, 0 contested, 0 refuted, 0 errors. No law changed.** The YouTube roster published nothing, and the day's whole haul came off the watchlist: one Meta post that had gone unread for a day, and two arXiv papers.
@@ -51,6 +57,8 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 6. Codex hygiene unchanged and still deliberate. MD-103 and MD-141 stay near-duplicates, because collapsing them changes an ID other claims link to.
 
 **Errors: none.** 12 channels listed clean, all six script lanes answered, both Meta Business News shelves read, 0 failures anywhere.
+
+**Publish.** Vault committed and pushed (`ca0ef41`). `Sync-TeamRepo.ps1`: team repo sync pushed (**1367 claims**, up from 1363, matching the four banked today exactly), personal mirror pushed.
 
 
 ## 2026-10-15 (research run)
