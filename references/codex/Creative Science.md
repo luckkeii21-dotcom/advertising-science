@@ -446,8 +446,20 @@ Last touched: 2026-08-20
 Tier: T3 · Status: active
 Every batch of 3 videos (or photos) shares the same body and text hook; the only difference is the visual hook (for photos, a different background). Text hooks are tested at the idea level: every new ad idea entering the account carries a new one. This isolates the visual-hook variable inside a batch while cycling text hooks across batches.
 Restated verbatim on 2026-08-19 while showing the live ad set, with the window named: "All three of these videos are exactly the same. The only difference with each video is that the visual hook is different for each one. That's it. The text hook is the same, the script, the voiceover, literally everything's identical. The only difference is the visual hook, the first three to five seconds is different." No per-variant comparison has ever been shown for this batch design. It matters beyond production because it is also this operator's DEFINITION of a hook swap, which is why he and Blue Sense reach opposite verdicts on hook swapping in [[Creative Science#CR-124|CR-124]] while describing different operations.
-Sources: Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20; Nick Theriot, How To Test Facebook Ads in 2026 When You Can't Find a Winner, 2026-08-19
-Last touched: 2026-08-19
+**Restated unchanged 2026-10-16, a fourth date, and the account behind it is the largest yet recorded
+for this batch design.** "On average, we do three ads per ad idea, and that's going to be three videos
+or three photos. The three videos are going to be exactly the same. The only difference is the visual
+hook of each particular video is going to be different. Not a text hook, not what the person says in
+the video as the hook, the visual hook, what people see for the first three to four seconds." For
+photos, "three of the exact same photos, just a different background on each photo." The window is given
+as three to four seconds here against three to five seconds on 2026-08-19, which is the same answer at
+the resolution anyone can act on. **The account: $328,000 of spend over 30 days returning $1.03 million,
+a stated 3.08 blended ROAS and a stated $112,000 of profit, with 13 new ad sets launched in September
+inside one of its three campaigns.** Still no per-variant comparison shown for any batch, at any date,
+which is the whole evidentiary hole in this claim and it is now four videos old.
+
+Sources: Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20; Nick Theriot, How To Test Facebook Ads in 2026 When You Can't Find a Winner, 2026-08-19; Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17
 
 ### CR-036 · Test in a fixed order with all other variables locked: offer first, then 5 pain points, then formats/angles
 Tier: T3 · Status: active
@@ -673,8 +685,31 @@ One number reported in the source batch's reader notes is NOT banked here: that 
 **Blue Sense supplies a live-concurrent number and then disowns precision.** "We generally aim for three to six, sometimes up to 10 ads in an ad set. Um, I wouldn't recommend running one. Probably wouldn't recommend running a 100." His own summary is the honest one and belongs in any answer we give: **"transparently nobody knows what the actual right amount is."**
 **Nick Theriot, after SEVEN transcripts, still states no live concurrent count.** Every figure remains a launch rate (1 ad idea per day per client, 5 per week), a composition ratio (3 creatives per idea), or an account topology (campaigns = countries x product categories). The nearest miss is hedged and illustrative: "at any given time we could have 10 ad sets with all problem aware each one." **New and better than the revenue ladder: he states the launch rate is set by HEADCOUNT, not by budget or account size.** "every week we just keep launching five ad sets. That's just cuz what my creative strategists are paid to do." One strategist at one idea per working day yields five a week, which predicts the 10-20 and 20-40 tiers are simply headcount multiples and explains why he refuses to index ad count to daily budget: budget does not employ the strategist. He also never mentions switching ads off between launches in either transcript, so the climbing-live-count finding survives intact.
 **Ben Heath gives NO live count in four transcripts read this pass.** The only ad-count figure is "the five new ad creative that we produced at the end of the week", a batching example, launched per week. Do not read it as a concurrency ceiling.
-Sources: Professor Charley T, If you run Facebook Ads... everything just changed., 2025-12-06; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Professor Charley T, Do these 5 things each day to scale Facebook Ads, 2026-02-21; Professor Charley T, Facebook Ads in 2026: NEW Secrets, Tips & Strategies, 2026-04-15; Professor Charley T, Meta Ads expert reacts to $1M/month Strategy, 2026-02-14; Blue Sense Digital, Here's Exactly How Many Creatives You Need To Hit Revenue Targets, 2025-02-24; Nick Theriot, Sh*t I care about when scaling Facebook Ads, 2026-07-10; Sam Piliero, The BEST Facebook Ads Campaign Structure for 2026, 2026-07-05; Sam Piliero, Meta Ads Insider Exposes How The Algorithm ACTUALLY Works, 2026-06-04; Ben Heath, Copy This Meta Ads Testing Strategy for Better Results, 2026-03-03; Ben Heath, The BEST Way To Scale Meta Ads (from $300M ad spend), 2026-05-19; Ben Heath, The BEST Facebook Ad Campaign Structure for 2026, 2026-02-17; Nick Theriot, How Many Ads Should You Be Testing a Week?, 2026-06-26; Nick Theriot, Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m), 2026-06-10; Blue Sense Digital, Stop Sending Cold Traffic on Meta to PDPs, 2025-10-30; Blue Sense Digital, 5 Step Checklist to Increase Meta Ad Performance Overnight, 2025-02-26; Dr. Matt Shiver, The Exact Facebook Ad Testing System I Use to Scale Clients Past $100k/mo, 2026-07-07; Dr. Matt Shiver, I've Tested 1,000 Facebook Ads, These 15 Print For Online Coaches, 2026-06-16; Professor Charley T, Copy This Facebook Ads Strategy (Post-Andromeda), 2026-02-07; Professor Charley T, ROAS is STUPID, Let's Make Money with Meta, 2026-02-14; Professor Charley T, The BEST NEW Way to Run Facebook Ads in 2026 (Andromeda 2.0), 2026-06-13; Nick Theriot, How To Create Avatars That Scale Facebook Ads To 500k Months, 2026-06-12; Professor Charley T, Copy This NEW Facebook Ads Creative Strategy, 2026-02-17; Professor Charley T, The NEW BEST Way to Scale Meta Ads for 2026, 2026-02-04; Dr. Matt Shiver, The Truth About ABO vs CBO Facebook Ads, 2026-05-26; Blue Sense Digital, ABO vs CBO Which One You Should Use, 2026-01-26; Nick Theriot, Best Facebook Ads Campaign Structure To Scale In 2026, 2026-08-21; Nick Theriot, My Most Successful Products That Scale With Facebook Ads, 2026-07-08; Ben Heath, Facebook Ads in Learning Limited Here's The Fix, 2026-03-31
-Last touched: 2026-08-23
+**Theriot's "more would not break anything" became a reported action on 2026-10-16: he launched TWELVE
+statics in one ad set.** Every earlier entry for him in this claim is an assertion about what would
+happen ("if I go over four, if I go to 20, it's not going to break anything"). The event: a Labor Day
+sale in early September, where his designer produced twelve statics instead of the standard three, "we
+just created the ad set, we loaded in the 12 ads and we launched it. I didn't think anything of it."
+That ad set is the $20,000-of-spend, $19-cost-per-purchase one recorded in
+[[Scaling Models#SC-095|SC-095]], so it is the account's heaviest-spending ad set of the month and also
+the one carrying four times his standard ad count. He names six as another observed count when the
+design team has extra ideas. **This is still not a concurrency test: it is one ad set at twelve against
+a book of ad sets at three, with no matched comparison and a sale offer confounding the performance.**
+What it removes is the gap between his stated indifference to ad count and his observed behaviour,
+which previously only ever ran at three.
+
+**He also puts the argument at its bluntest, and it is worth quoting because it is the position this
+whole claim is contested over:** "Some of you guys literally think that your success is dependent on how
+many ads you put in an ad set or how many ad sets you have running in the campaign. I can tell you what,
+it doesn't matter." He lists the structural superstitions he personally held and discarded over eleven
+years, including raising budget only at certain hours, only to odd numbers, manipulating the values sent
+to the pixel, and duplicating campaigns to reach a fresh audience pocket. **None of that is evidence
+against any specific number in this claim, and it is the clearest statement on the roster of the prior
+that structure is not the lever: "just create great creative, have a good offer, have a good product,
+have a good product page, you'll be set."**
+
+Sources: Professor Charley T, If you run Facebook Ads... everything just changed., 2025-12-06; Professor Charley T, How to Scale Profits with Meta Ads, 2026-01-24; Professor Charley T, Do these 5 things each day to scale Facebook Ads, 2026-02-21; Professor Charley T, Facebook Ads in 2026: NEW Secrets, Tips & Strategies, 2026-04-15; Professor Charley T, Meta Ads expert reacts to $1M/month Strategy, 2026-02-14; Blue Sense Digital, Here's Exactly How Many Creatives You Need To Hit Revenue Targets, 2025-02-24; Nick Theriot, Sh*t I care about when scaling Facebook Ads, 2026-07-10; Sam Piliero, The BEST Facebook Ads Campaign Structure for 2026, 2026-07-05; Sam Piliero, Meta Ads Insider Exposes How The Algorithm ACTUALLY Works, 2026-06-04; Ben Heath, Copy This Meta Ads Testing Strategy for Better Results, 2026-03-03; Ben Heath, The BEST Way To Scale Meta Ads (from $300M ad spend), 2026-05-19; Ben Heath, The BEST Facebook Ad Campaign Structure for 2026, 2026-02-17; Nick Theriot, How Many Ads Should You Be Testing a Week?, 2026-06-26; Nick Theriot, Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m), 2026-06-10; Blue Sense Digital, Stop Sending Cold Traffic on Meta to PDPs, 2025-10-30; Blue Sense Digital, 5 Step Checklist to Increase Meta Ad Performance Overnight, 2025-02-26; Dr. Matt Shiver, The Exact Facebook Ad Testing System I Use to Scale Clients Past $100k/mo, 2026-07-07; Dr. Matt Shiver, I've Tested 1,000 Facebook Ads, These 15 Print For Online Coaches, 2026-06-16; Professor Charley T, Copy This Facebook Ads Strategy (Post-Andromeda), 2026-02-07; Professor Charley T, ROAS is STUPID, Let's Make Money with Meta, 2026-02-14; Professor Charley T, The BEST NEW Way to Run Facebook Ads in 2026 (Andromeda 2.0), 2026-06-13; Nick Theriot, How To Create Avatars That Scale Facebook Ads To 500k Months, 2026-06-12; Professor Charley T, Copy This NEW Facebook Ads Creative Strategy, 2026-02-17; Professor Charley T, The NEW BEST Way to Scale Meta Ads for 2026, 2026-02-04; Dr. Matt Shiver, The Truth About ABO vs CBO Facebook Ads, 2026-05-26; Blue Sense Digital, ABO vs CBO Which One You Should Use, 2026-01-26; Nick Theriot, Best Facebook Ads Campaign Structure To Scale In 2026, 2026-08-21; Nick Theriot, My Most Successful Products That Scale With Facebook Ads, 2026-07-08; Ben Heath, Facebook Ads in Learning Limited Here's The Fix, 2026-03-31; Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17
 
 ### CR-158 · Funnel position has a readable metric signature, so brief the next ad against a target frequency and CPM instead of against a target CPA
 Tier: T3 · Status: active
@@ -3190,3 +3225,50 @@ Prescribed specifically for a short, high-intensity sales window against a warm,
 **Where it sits.** [[Creative Science#CR-077|CR-077]] already asks a retargeting ad set for 10 or more concurrent ads across different pain points and formats, which this is a specific instantiation of for one window. [[Creative Science#CR-239|CR-239]] holds that a static gets a glance and therefore carries three parts and no more, which is the constraint on formats 3 and 4.
 Sources: Professor Charley T, Your Black Friday Facebook Ads Strategy Sucks, 2026-10-06
 Last touched: 2026-10-07
+
+### CR-286 - Meta published a partner case study tying AI-creative share of spend to revenue growth, and it fails both provenance tests this codex already applies: no named advertiser and no counterfactual
+Tier: T3 · Status: active
+**What the post is.** "Creative diversification at scale: how Nest builds for the way Meta technologies
+work now", on Meta for Business News, dating itself 19 October 2026. Nest Commerce is described in the
+post as "a UK performance agency specialising in scaling digital-first brands on Meta technologies", and
+the subject is the agency's own product, "its AI performance and creative solution, Nest AI Creative",
+which "turns a single brief into multiple platform-native variants". **This is an agency marketing its
+own tool on the platform's channel, so the publisher is Meta and the measurer is the vendor.**
+
+**The figures, quoted exactly.** Brands that "scaled to an average of 40% of spend" on the tool saw
+"revenue grow 70%, with 20% higher CVR" against non-AI creative. One health brand at 57% of spend saw "5%
+lower cost per result and 17% higher CVR". Another at 20% of spend saw "56% higher ROAS". The composition
+figures are "68% of spend on video against 38% across the benchmark" and "93% vertical-first video
+adoption". The cohort: "In Q1 2026, Nest onboarded seven brands onto its Nest AI Creative platform",
+across health and wellness, food and beverage, and home and lifestyle.
+
+**The defects, and they are the ones the standing rule names.** This codex's rule since 2026-10-07 is to
+find the population and the counterfactual before carrying any platform figure, and that when there is no
+footnote the number is an illustration rather than a measurement. Here: **no footnote anywhere on the
+page, no data window for the results, no definition of the benchmark the 38% video share is measured
+against, and not one of the seven brands is named**, which is exactly the check
+[[Attribution & Incrementality#AT-126|AT-126]] exists to force on this source. **The counterfactual is
+worse than absent, it is structurally impossible as stated.** Seven brands that chose to onboard a new
+creative platform in one quarter are selected on budget, on appetite and on having creative headroom
+before any variant is generated, and "40% of spend on the tool" is itself an outcome of the account doing
+well enough to keep feeding it. **Revenue growing 70% alongside a rising AI-creative share is a
+correlation in seven self-selected accounts with no holdout.** The one sentence in the post that carries a
+mechanism is the agency CEO's, and it is a restatement of what this codex already holds at law level:
+"The Meta ad delivery system rewards creative diversity, and we've built our approach around that
+insight."
+
+**What is usable.** The direction only, and only as corroboration of claims that already stand on better
+evidence: variant volume from one brief, video-heavy composition and vertical-first framing are what a
+delivery-led account looks like, which is the format-and-style diversification argument already banked in
+[[Creative Science#CR-154|CR-154]] and in the diversification material above. **Never quote 70%, 20%,
+56%, 17% or 5% to a client or put any of them in a forecast.** The honest sentence for a client
+conversation is that agencies running high AI-variant volume report better outcomes and nobody has
+published a controlled comparison.
+
+**One thing in it is cheap and worth copying: the share-of-spend framing.** Reporting AI or
+newly-generated creative as a PERCENTAGE OF SPEND rather than as a count of ads is a better instrument
+than an ad count, because it prices the creative by what delivery actually bought, which is the same
+correction [[Scaling Models#SC-009|SC-009]] reaches on the kill side. We do not currently track that
+number on any client account and it is one breakdown away.
+Sources: Meta for Business News, Creative diversification at scale: how Nest builds for the way Meta technologies work now, dated 19 October 2026, read 2026-10-17
+Last touched: 2026-10-17

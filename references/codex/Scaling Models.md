@@ -48,8 +48,33 @@ A fourth independent step size, added 2026-08-21, and it sharpens how this whole
 
 **A sixth independent step size, 2026-10-14, and it arrives with the clearest argument yet that the percentage is the least important part of the decision.** Jon Loomer: "A safe increase that will hopefully result in minimal volatility will be around 15%. Again, it's just a number, and don't feel like you need to stick to it." That lands inside the converging 15 to 30% band and he refuses to defend the figure, which is the honest version of what every operator in this claim is doing. **What he adds is the reason to be cautious, and it is not the one this claim has been arguing about.** "It's not about restarting learning, it's about finding that sweet spot", where the sweet spot is the highest spend that still clears the profit bar. The step size exists to locate a profitability ceiling by bisection, so a smaller step buys resolution on where the ceiling sits and costs time, and the governing variable is the account's RUNWAY rather than any delivery mechanic: "If you have all the time in the world to find your sweet spot, you can take your time. But if you need to scale quickly, you may not have that flexibility." The mechanism behind the dip he attributes to audience expansion rather than to a learning reset, banked separately at [[Learning & Signal#LS-088|LS-088]].
 **One move at the ceiling that no other prescription in this claim contains.** When results stop holding, do not drop the budget first. "It could be a perceived ceiling. This is also an opportunity to create more ads and try something different and see if that improves your results before dropping your budget." Lower the budget only after new creative fails to lift it. That orders two levers this codex has carried separately, and it is consistent with [[Scaling Models#SC-161|SC-161]], where new creative inside an existing CBO cannot out-compete incumbent winners for funding. Prescriptive, 8-minute video, 1,284 words, no account, no spend figure and no before-and-after on any step.
-Sources: Professor Charley T, Copy This Simple Meta Ads Strategy, 2026-08-10; Professor Charley T, The NEW SIMPLE EASY WAY to Scale BIG with Meta Ads, 2026-02-07; Sam Piliero, Easiest Way to Scale Facebook Ads in 2026, 2026-08-03; Nick Theriot, I Spend $100k/Day On Facebook Ads, 2026-08-03; Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20; Ben Heath, $100 vs $100,000 Facebook Ads Strategy, 2026-08-12; Blue Sense Digital, How The Meta Ads Algorithm Works in 2026, 2026-07-28; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Professor Charley T, Mastering Andromeda: Creative Testing and Scaling, 2025-12-13; Professor Charley T, Do these 5 things each day to scale Facebook Ads, 2026-02-21; Professor Charley T, Copy this Meta Ad strategy to BLOW UP your business. (After Andromeda, Clothing Niche), 2026-01-31; Ben Heath, The BEST Way To Scale Meta Ads (from $300M ad spend), 2026-05-19; Nick Theriot, How To Test Facebook Ads in 2026 When You Can't Find a Winner, 2026-08-19; Nick Theriot, Sh*t I care about when scaling Facebook Ads, 2026-07-10; Nick Theriot, Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m), 2026-06-10; Nick Theriot, The 7 Levels of Scaling Facebook Ads, 2026-06-24; Dr. Matt Shiver, The Exact Facebook Ad Testing System I Use to Scale Clients Past $100k/mo, 2026-07-07; Sam Piliero, 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15; Dr. Matt Shiver, Facebook Ads Tutorial for Beginners Updated for 2026, 2026-03-24; Professor Charley T, The BEST NEW Way to Scale Facebook Ads, 2026-05-17; Sam Piliero, Everything You Need to Know About Facebook Ads in 2026, 2026-03-12; Dr. Matt Shiver, The Truth About ABO vs CBO Facebook Ads, 2026-05-26; Nick Theriot, Best Facebook Ads Campaign Structure To Scale In 2026, 2026-08-21; Nick Theriot, Inside a $1,000,000 Facebook Ads Campaign, 2026-08-31; Professor Charley T, The NEW BEST Way To Scale Facebook Ads, 2026-09-14
-Last touched: 2026-10-15
+**Theriot's lookback window moved for a THIRD time, 2026-10-16, and the new entry supplies the rule
+that picks the window.** The 2026-08-31 restatement above records him reading the cost-per-purchase
+gate on a 30-day average and arguing explicitly against operators "who literally look at a day to
+day". Today he reads YESTERDAY by default: "all we do is look at yesterday, and then if this CPA is
+below, I think it's like $22 for this account... as long as it's below that, then we scale", on a
+campaign at $6,000/day. The selector is account variance, not preference, and the full rule is
+banked at [[Scaling Models#SC-178|SC-178]]. **The 20% step itself is unchanged at a fifth date**, and
+he still names the rejected alternative, so the step size is the stable part of his protocol and the
+window is not.
+
+**He also states the anti-collapse reason the scale-DOWN prescriptions in this claim do not carry.**
+Charley T's half-speed-then-hold and Heath's 3% taper with a neutral band both describe HOW to come
+down. Theriot argues against coming down at all unless the account is losing badly, and his reason is
+recovery time rather than delivery: "if I go from $6,000 a day, scale all the way down to $600 a day,
+I find a new winner, it's like, great, it picked up performance, but it's going to be such a hard
+climb to get all the way back to $6,000 a day. So, I'd rather try to hold that." Under his own 20%
+ceiling per qualifying day, a 10x climb needs about 13 qualifying days, and the realised cadence
+measured elsewhere in this claim is one green light every 17 days, so the climb back from a 90% cut is
+a multi-month project. **That prices the cut: cutting a budget spends the account's recovery runway,
+and the asymmetry is arithmetic rather than a claim about Meta.** His decrease trigger is explicitly
+severity-gated and he gives it in blood: a scrape gets left alone, "a full-on gash where we're just
+pouring out blood" gets 20% a day for a few days. This is the same ordering as the ceiling move
+recorded above, add creative before dropping the budget, arriving at a second date with a different
+reason. Screen-shared account, no before-and-after on any hold decision.
+
+Sources: Professor Charley T, Copy This Simple Meta Ads Strategy, 2026-08-10; Professor Charley T, The NEW SIMPLE EASY WAY to Scale BIG with Meta Ads, 2026-02-07; Sam Piliero, Easiest Way to Scale Facebook Ads in 2026, 2026-08-03; Nick Theriot, I Spend $100k/Day On Facebook Ads, 2026-08-03; Nick Theriot, My Full Process For Scaling Facebook Ad Clients In 2026, 2026-07-20; Ben Heath, $100 vs $100,000 Facebook Ads Strategy, 2026-08-12; Blue Sense Digital, How The Meta Ads Algorithm Works in 2026, 2026-07-28; Blue Sense Digital, How to Scale an eCommerce Brand Profitably in 2026: The Full System, 2026-06-15; Blue Sense Digital, The Only Google Ads Strategy You Need for 2026, 2026-06-22; Professor Charley T, Mastering Andromeda: Creative Testing and Scaling, 2025-12-13; Professor Charley T, Do these 5 things each day to scale Facebook Ads, 2026-02-21; Professor Charley T, Copy this Meta Ad strategy to BLOW UP your business. (After Andromeda, Clothing Niche), 2026-01-31; Ben Heath, The BEST Way To Scale Meta Ads (from $300M ad spend), 2026-05-19; Nick Theriot, How To Test Facebook Ads in 2026 When You Can't Find a Winner, 2026-08-19; Nick Theriot, Sh*t I care about when scaling Facebook Ads, 2026-07-10; Nick Theriot, Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m), 2026-06-10; Nick Theriot, The 7 Levels of Scaling Facebook Ads, 2026-06-24; Dr. Matt Shiver, The Exact Facebook Ad Testing System I Use to Scale Clients Past $100k/mo, 2026-07-07; Sam Piliero, 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15; Dr. Matt Shiver, Facebook Ads Tutorial for Beginners Updated for 2026, 2026-03-24; Professor Charley T, The BEST NEW Way to Scale Facebook Ads, 2026-05-17; Sam Piliero, Everything You Need to Know About Facebook Ads in 2026, 2026-03-12; Dr. Matt Shiver, The Truth About ABO vs CBO Facebook Ads, 2026-05-26; Nick Theriot, Best Facebook Ads Campaign Structure To Scale In 2026, 2026-08-21; Nick Theriot, Inside a $1,000,000 Facebook Ads Campaign, 2026-08-31; Professor Charley T, The NEW BEST Way To Scale Facebook Ads, 2026-09-14; Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17
 
 ### SC-002 · A ROAS dip after a budget raise is time-to-purchase lag from newly reached upper-funnel people, not a learning reset
 Tier: T3 · Status: contested
@@ -310,8 +335,19 @@ FIRST SHOWN DATA, added 2026-08-20, and it lands on the kill side. Professor Cha
 The assist mechanism picked up two more voices the same day, both T3 and both asserted. Ben Heath supplies the diagnostic, which is the operationally useful half because it says what an assist ad looks like in a table: "some ads will consistently have money spent on them, but they don't have many conversions. Looks like their cost per lead or cost per sale isn't very good. And you think, why is Meta doing this? It's because they're using that in a top offunnel capacity and then using other ads to retarget and get the conversion." The signature is spend with weak conversions sitting beside a cheaper-converting ad that Meta is deliberately under-funding. Nick Theriot reads the same role off frequency instead of cost, calling a 1.26-frequency ad sitting beside top spenders at 1.69 and 2.1 "doing more of a top-of-funnel ad. It's bringing a lot of traffic for these other ads right here to convert." Three operators now describe the assist role and not one has isolated it.
 
 THE RECONCILIATION, and it is the first mechanism anyone has offered that fits both sides of this argument. The fight between "never kill low spenders" and the prune banked in [[Scaling Models#SC-050|SC-050]] and MD-046, where a campaign went from 89 ads to 4 and 10x'd spend in 90 days, turns on what FRACTION OF SPEND is being removed rather than on how many ads are removed. Charley T's stated principle is that kill risk scales with spend share: "So turning off 95 ads is the same thing as turning off one ad that spent 11 out of $100." Priced that way the positions stop competing. Blue Sense is defending ads at or near zero spend, where the removal is a near-zero move and the assist and reserve options are free to hold. The 95-ad cull is an 11% move wearing the costume of a 48% one. Counting ads makes those look like the same aggressive action, and counting spend share prices them correctly. The operating pair that falls out is to size a kill by the spend share it removes and to justify it by the money that share has lost, which is the prune-by-money-lost rule already banked in SC-050. Now the honest caveat, because it cuts against the principle: SC-050's own prune removed roughly HALF the campaign's spend, since the 85 ads that were cut had consumed $48,800 against the winners' $48,594, and the spend-share principle would score that as the maximum-risk move available. It 10x'd spend anyway, with platform ROAS falling from 2.9-3.8 to under 2 while gross profit per transaction held. So the spend-share framing explains why a wide cull of starved ads is cheap, and it does not predict SC-050. It is T4, banked at [[Scaling Models#SC-107|SC-107]], stated as a principle rather than measured, and untested. Nobody has shown data on the underlying question of whether killing low spenders helps or hurts. Do not promote this to law and do not read it as permission to cull the tail.
-Sources: Nick Theriot, When to Turn Facebook Ads Off in 2026, 2026-08-07; Blue Sense Digital, What To Do When 1 Ad Gets All The Spend, 2025-12-03; Professor Charley T, ROAS is STUPID, Let's Make Money with Meta, 2026-02-14; Ben Heath, The BEST Facebook Ad Campaign Structure for 2026, 2026-02-17; Nick Theriot, Best Meta Ads Columns Setup for Ecommerce (2026), 2026-07-03
-Last touched: 2026-08-20
+**A third reason to delete low-spend ad sets appeared on 2026-10-16 and it is not a performance reason
+at all, which matters because it looks identical to one in a change log.** Theriot prunes a campaign by
+switching the window to lifetime, sorting by schedule to surface the oldest ad sets, and deleting the
+ones that "barely spent anything like $2, $3". The purpose is to free slots against the
+200-ad-set-per-campaign ceiling banked at [[Scaling Models#SC-179|SC-179]], not to stop a leak. **The
+kill-side argument in this claim fires on cumulative spend at zero purchases, and the reserve-role
+objection fires on ads that might pick up slack. Neither applies to a $2 ad set from two years ago
+being cleared to make room.** Operating consequence for reading somebody else's account: a bulk ad-set
+deletion on a long-lived campaign near 200 ad sets is housekeeping and should not be read as a
+performance judgement.
+
+Sources: Nick Theriot, When to Turn Facebook Ads Off in 2026, 2026-08-07; Blue Sense Digital, What To Do When 1 Ad Gets All The Spend, 2025-12-03; Professor Charley T, ROAS is STUPID, Let's Make Money with Meta, 2026-02-14; Ben Heath, The BEST Facebook Ad Campaign Structure for 2026, 2026-02-17; Nick Theriot, Best Meta Ads Columns Setup for Ecommerce (2026), 2026-07-03; Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17
 
 ### SC-010 · Same-day kill exception: a new ad taking overall spend at ~3x target CPA and dragging account performance more than 50% gets turned off within the day
 Tier: T3 · Status: active
@@ -949,8 +985,24 @@ Read these as a structural check on whether the campaign is still reaching new p
 A third window and a different unit, added 2026-08-19, and this one is the most operationally specific of the three. Nick Theriot reads frequency at the AD level over the last 7 days, on the top two or three spending ads only, and rejects campaign-level frequency outright: "They show me their campaign frequency like maximum. Like, what am I looking at? This does nothing for me." His numbers: 1.0 over 7 days is the ideal, meaning the ad is reaching effectively all new people, and crossing roughly 1.46 to 1.5 is the early warning that the wall is coming. What the wall means in his model is a creative problem rather than a budget problem, "we need ads that appeal to a larger demographic of people", and the observable that follows it is cost per acquisition starting to climb. Read as a leading indicator on the ads that actually carry the account, which is a different instrument from a campaign-level average that gets diluted by every low-spend ad in the set. Specific thresholds from real accounts, no supporting data shown, and the three sources in this claim now use three different windows and two different units, so pick one and write it down before anyone quotes a number.
 
 Theriot restated the same method in a second video, added 2026-08-20, with two clarifications and one explicit non-rule. He reads the top THREE ads by amount spent, never campaign level, "I do not look at campaign level frequency. I look at individual ad level." The 1.5 to 2.0 band is a forecast rather than a trigger: "usually, when I see like a 1.5 to 2x, I just know that as we increase budget, we're eventually going to hit a wall cuz we're hitting a lot of the same people over and over. So, what we need essentially need to do is create creatives that appeal to a larger demographic of people." And he states plainly that he does not make decisions off frequency at all, which is the part most likely to be lost when the numbers are quoted. In the shown account the top spenders sat at 1.69 and 2.1 while a third ad sat at 1.26 with a decent cost per link click, which he read as a top-of-funnel ad with headroom rather than as a candidate to cut, and that reading is banked in [[Scaling Models#SC-009|SC-009]]. So the operating use of a low frequency on a spending ad is to protect it and to scale it, and the use of a high frequency is to brief new creative.
-Sources: Professor Charley T, How to Scale Facebook Ads in 2026, 2026-02-28; Nick Theriot, Sh*t I care about when scaling Facebook Ads, 2026-07-10; Nick Theriot, Best Meta Ads Columns Setup for Ecommerce (2026), 2026-07-03
-Last touched: 2026-08-20
+**Theriot left an ad set running at 5x frequency on 2026-10-16, which is the same operator breaching
+his own thresholds above by a factor of three, and the window and the unit are both different.** The
+figures, read off the screen: an ad set at $20,000 of spend over 30 days, a $19 cost per purchase
+against a $22 target, 5x frequency, carrying bottom-of-funnel statics launched for a sales event. His
+verdict: "I'd be brain dead if I decided to turn off all the ads... because that's such a high
+frequency here is because it's just converting a lower funnel traffic. That's still good because
+those people are still new customers that we're acquiring." **Before anyone reads this as a
+contradiction, check the axes.** The thresholds above are AD-level over 7 DAYS and this is AD-SET
+level over 30 DAYS, which is the exact window-and-unit confusion this claim already warns about, now
+produced inside one operator's own corpus. The honest reading is that his 1.46-to-1.5 early warning
+says nothing about this number and this number refutes nothing. **What it does add is a documented
+exception to reading frequency as a problem at all: a converting bottom-funnel ad set is allowed to
+run hot, and the test applied was cost per purchase against target, never frequency.** Consistent
+with his standing position, already recorded above, that he does not make decisions off frequency.
+One ad set, numbers shown on screen, no comparison against the same ad set at a lower frequency.
+
+Sources: Professor Charley T, How to Scale Facebook Ads in 2026, 2026-02-28; Nick Theriot, Sh*t I care about when scaling Facebook Ads, 2026-07-10; Nick Theriot, Best Meta Ads Columns Setup for Ecommerce (2026), 2026-07-03; Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17
 
 ### SC-096 · How much of an apparel budget belongs in catalog is contested: Charley T directs two brands to put over 75% of spend through catalog, while Blue Sense Digital calls an 80% DPA share a death spiral
 Tier: T3 · Status: contested
@@ -1823,3 +1875,104 @@ Banked at T4 deliberately, and the tier is the whole point of the entry. The arc
 **Standing against our own book.** Nothing to adopt and nothing to test. It does supply a usable frame: our own cycle is Planner on a weekly budget call, Optimizer on mid-week changes, Inspector in the weekly report, and the Inspector's output does not currently feed the next Planner decision in any written form. That gap is real and it is ours, not the paper's.
 Sources: arXiv 2610.19454, AdCoEvo: A Co-Evolving Multi-Agent Advertising Delivery System, submitted 2026-10-14, https://arxiv.org/abs/2610.19454, abstract and HTML body read 2026-10-16
 Last touched: 2026-10-16
+
+### SC-178 - The budget-decision lookback window is set by the account's day-to-day variance, not by preference, and the same operator has now published three different windows
+Tier: T3 · Status: active
+**The rule, stated 2026-10-16 while screen-sharing a campaign at $6,000/day.** Read yesterday by
+default and switch to a trailing 7 days when the account swings: "some accounts are a lot more, what I
+would say, volatile, where like every day it's crazy, like huge swings up and down. And all I'll do
+is, instead of looking at yesterday every day, I'll look at last 7 days every every day... but because
+this account is pretty like straightforward, then I'll still look at yesterday." In the shown account
+the two windows disagreed on the day and he followed yesterday: "last 7 days is saying don't scale".
+So the window is a property of the account's variance and the operator picks it once, which is the
+first time anyone on the roster has given a selector rather than a number.
+
+**The same operator's own window has now been recorded at three values across three dates, and that
+should lower confidence in any single one of them.** Yesterday (2026-10-16, default), trailing 7 days
+(2026-10-16, volatile accounts), and a 30-day average (2026-08-31, stated as the standing rule and
+stated explicitly AGAINST reading day to day). The 20% step size held across all three dates. **Read
+his protocol as a stable step with an unstable window**, and never quote the window without its date.
+
+**Why the selector is probably right even though the testimony is inconsistent.** It is the same
+argument [[Scaling Models#SC-102|SC-102]] makes from the other side, where delivery volatility falls as
+conversion volume rises, so a low-volume account swinging day to day is behaving as expected and a
+day-level read there is a read of noise. Charley T's conditional rule carries the matching precondition
+in [[Scaling Models#SC-001|SC-001]]: an account whose day-to-day performance is hyperbolic cannot run a
+trailing-7-day rule at all and should sit on a flat linear step. Three operators therefore agree that
+account variance governs the reading window and disagree on what to do about it.
+
+**For our book this picks the window today, and it picks the longer one.** ChiroWorks, StayWell and the
+two truck accounts all sit far below the volume where a single day carries a readable signal, so the
+trailing window is the correct instrument on every one of them, and a yesterday-based scaling decision
+on any of them is a reaction to noise. **The cheap test, and nobody has run it: take one account, log
+what the yesterday rule and the trailing-7 rule each would have decided for 30 days, and count how
+often they disagree and which one was right.** That is a paper test with no spend at risk and it would
+turn this T3 into a T2 with our own numbers.
+Sources: Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16; Nick Theriot (30-day window), 2026-08-31
+Last touched: 2026-10-17
+
+### SC-179 - A campaign holds at most 200 ad sets, so the "one new ad set per ad idea, never switch anything off" structure has a hard end and has to be pruned to continue
+Tier: T3 · Status: active
+**The ceiling, reported from hitting it 2026-10-16: "this campaign is 191 ad sets. At 200 ad sets, you
+can't make any more ad sets."** The remedy he uses is to switch the window to lifetime, sort by schedule
+to bring up the oldest entries, and delete the ad sets that spent $2 or $3, which frees slots without
+touching anything carrying money. The campaign in question has taken $4.5 million lifetime over roughly
+two years and holds about 600 creatives at his standard three per ad set.
+
+**This is the first stated limit on a structure this codex recommends in several places.** The
+add-an-ad-set-per-idea-inside-one-campaign pattern is the fix [[Scaling Models#SC-012|SC-012]]
+prescribes against the doom cycle, it is the topology recorded for this operator in
+[[Creative Science#CR-154|CR-154]], and no entry anywhere said it terminates. At his own launch rate of
+roughly five ad sets a week, 200 slots is about 40 weeks from an empty campaign, so **a campaign run
+this way reaches the ceiling inside a year and the maintenance is not optional.**
+
+**Tiering, and what to check.** The 200 figure is a practitioner report of a platform limit rather than a
+measured effect, so it sits at T3 by this codex's rules, and it is the kind of claim that is cheap to
+promote: it is either in Meta's own published limits or it is not. **Nobody has checked it against Meta
+documentation and that check is worth one search.** If it confirms, this becomes T1 and belongs with the
+structural constraints alongside the 50-ads-per-ad-set ceiling at
+[[Meta Delivery & Andromeda#MD-125|MD-125]]. Note the two limits multiply: 200 ad sets at 50 ads each is
+a 10,000-ad campaign ceiling, far above anything our book will reach, so **the binding constraint on a
+long-lived campaign is the ad-set count and not the ad count.**
+
+**Not relevant to our accounts yet, and worth saying so.** Our longest-running client campaigns hold
+single-digit to low-double-digit ad sets. This matters for reading somebody else's two-year-old account,
+and for any client campaign we intend to keep alive for years rather than rebuild.
+Sources: Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17
+
+### SC-180 - Inside a CBO the kill test for an AD SET is whether its spend damages the CAMPAIGN-level cost per result, not whether its own cost per result looks bad
+Tier: T3 · Status: active
+**The test, stated 2026-10-16: "I'm looking for ad sets that take a lot of spend and negatively impact
+overall... overall meaning the overall CPA at the campaign level."** Both halves are required. A bad cost
+per result on small spend fails the test and is left alone; the one ad set he named for switching off was
+a $37 cost per purchase against a $22 target. And a frightening-looking ad set that is actually
+converting gets defended rather than cut, which is the 5x-frequency case recorded in
+[[Scaling Models#SC-095|SC-095]].
+
+**The argument he answers is the one every operator gets asked, and his answer is about the direction of
+causation.** The question he receives: an ad set is top of the account in spend with a bad cost per
+result, the campaign overall is doing well, and the operator is sure killing it will help. His reply:
+"Did campaigns start doing good when that one took a lot of spend? Well, yeah, coincidentally. That
+particular ad set took a lot of spend. It's bringing in a ton of top of funnel traffic and it's allowing
+your other ads to convert." **The timing is the evidence and it is observational: the campaign improved
+when the expensive ad set started spending.** He has not isolated it and neither has anybody else in this
+codex.
+
+**Where this sits against the rest of the file.** [[Scaling Models#SC-011|SC-011]] moves the kill
+decision from ad level up to ad-set level, because ads inside an ad set sequence together. This moves it
+one level further up, from ad set to campaign, and the mechanism is the same mechanism one level out: ad
+sets inside a CBO are also not independent, because the budget is allocated at campaign level. That is
+consistent with the documentation-side statement in [[Attribution & Incrementality]] that in CBO or
+Advantage+ the whole budget distribution optimises against a campaign-level target, so no valid inference
+is available at ad-set level. **The three levels now line up: in ABO read the ad set, in CBO read the
+campaign, and in both cases the ad level is diagnostic only.**
+
+**The operating form, which is what to actually do.** Before switching off any ad set in a CBO, read the
+campaign-level cost per result with and without the period that ad set has been spending, and require the
+campaign number to be the thing that got worse. The assist and reserve mechanisms in
+[[Scaling Models#SC-009|SC-009]] are the same argument at ad level and are equally untested, so this is a
+strong hypothesis and a bet, never a law. **Nobody has run the only test that would settle it: switch the
+suspect ad set off and read the campaign for a week.**
+Sources: Nick Theriot, $30k/day Facebook Ads Campaign Structure, 2026-10-16
+Last touched: 2026-10-17

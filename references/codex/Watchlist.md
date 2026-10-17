@@ -872,3 +872,45 @@ Meta Newsroom, 15 October 2026. YouGov on Meta's commission, 3,983 small busines
 **One advertising datum in it**, and it is self-reported usage rather than a mechanism: among owners whose business used AI in the past year, "51% have used it to create or edit content, 43% for local advertising and marketing, 38% for translation, and 37% for customer support."
 
 **Not banked.** Stated behaviour from a vendor-commissioned attitude survey, no mechanism, no outcome measurement, and the piece then promotes Advantage+, click-to-WhatsApp ads and Meta Business Agent. The case study inside it (Zayya, Indonesia, 8x return on roughly $1.68 a day) is a named-advertiser showcase on Meta's own channel with no method, which is exactly what the AT-126 reading rule exists for. Logged so a future run does not re-read it.
+
+### Meta for Business News: a post can be dated in the FUTURE, which is a fourth distinct date artefact on this source (found 2026-10-17)
+
+The US shelf moved by one head-of-list event today: `meta-nest-ai-creative-diversification` in at slot 1,
+`game-changers-series-1` out of slot 12, the other eleven shifting down one. That is the 12-slot window
+behaviour recorded on 2026-10-10, so it is ONE event and not two rotations. The post was read in full and
+banked at [[Creative Science#CR-286|CR-286]].
+
+**The new card is dated 19 October 2026, two days after the read, and its own post header carries the same
+future date.** Every other date finding on this source is about a disagreement between two renderings of a
+past date: the one-day timezone drift across cards (2026-09-14), the two-day card-against-post gap
+(2026-09-23), and the format difference between a card and a post header (2026-09-20). **This one is not a
+disagreement. Both surfaces agree and both are ahead of the clock.**
+
+**Two consequences for the method.**
+
+- **Never treat a future-dated card as a render fault, a parse failure or a cache artefact. Read the post.**
+  A ceiling check that asks "is the newest card date later than the last read" passes this correctly by
+  accident; a check that sanity-tests a parsed date against today would reject the only new item on the
+  shelf.
+- **The 2026-09-23 rule, cite the date from the post and never from the card, does not help here**, because
+  the post agrees with the card. The honest citation is the published date as Meta states it, with the read
+  date beside it, which is how CR-286 records it. Do not silently correct it to the read date and do not
+  treat the post as unpublished because the date has not arrived.
+
+**The likely cause is a scheduled publication whose timestamp is set in a locale or an editorial calendar
+ahead of ours, and it does not matter, because the post is live and readable now.** What matters is that a
+date on this source is not evidence about when anything happened, which is the fourth independent reason to
+stop using these dates as anything but an approximate sort key.
+
+**UK shelf: 0 added, 0 removed, identical in content and order to the 2026-10-16 read.** Ceiling holds at
+10 September 2026 and `creator-marketing-whitepaper` is absent from slot 1 for a second consecutive day.
+The head-of-list alternation diagnosed on 2026-10-10 now has two flat days in it (10-16 and 10-17) on top of
+the falsifier recorded on 2026-10-16, so **it is not a daily metronome and should not be reported as a
+pattern at all.** Observed presence: absent 10-07, present 10-08, absent 10-09, present 10-10, present
+10-12, absent 10-15, absent 10-16, absent 10-17.
+
+**Transport, 2026-10-17.** WebFetch on both `?locale=en_US` and `?locale=en_GB`, hrefs requested rather than
+titles, first attempt each. **Eleventh consecutive browser-free read of both shelves.** `playwright`,
+`playwright-arcads` and `hostinger-hosting` all failed CONNECT_TIMEOUT at session start and
+`playwright-higgsfield` and `playwright-metatech` connected, so a browser was available today and was not
+needed. The bare URL was not read, per the standing instruction.
