@@ -914,3 +914,23 @@ titles, first attempt each. **Eleventh consecutive browser-free read of both she
 `playwright-arcads` and `hostinger-hosting` all failed CONNECT_TIMEOUT at session start and
 `playwright-higgsfield` and `playwright-metatech` connected, so a browser was available today and was not
 needed. The bare URL was not read, per the standing instruction.
+
+### A future-dated card is a FIXED date the clock catches up to, not a rolling offset (2026-10-18)
+
+Yesterday's entry recorded `meta-nest-ai-creative-diversification` carrying 19 October 2026 on a 17 October
+read, two days ahead of the clock, and ruled that a future-dated card must be read rather than dismissed as a
+render fault. **Today the same card still reads 19 October 2026, now one day ahead.** The date did not move
+with the clock, so it is a scheduled publication date and not a render offset that re-renders on every fetch.
+
+**Operating consequence, and it saves a read.** A future-dated card gets read once, on the day it appears.
+It does not need re-reading each day until its date arrives, and its reappearance at an unchanged date is not
+a second event. Both shelves today: **0 added, 0 removed**, identical in content and order to 2026-10-17.
+US ceiling 19 October 2026, UK ceiling 10 September 2026.
+
+**UK head-of-list alternation is retired.** `creator-marketing-whitepaper` is absent from slot 1 for a third
+consecutive day. Observed presence: absent 10-07, present 10-08, absent 10-09, present 10-10, present 10-12,
+absent 10-15, absent 10-16, absent 10-17, absent 10-18. Four flat days against it. Stop reporting it.
+
+**Transport, 2026-10-18.** WebFetch on both locales, hrefs requested rather than titles, first attempt each.
+**Twelfth consecutive browser-free read of both shelves.** Every `playwright` server failed CONNECT_TIMEOUT at
+session start, so no browser was available, and none was needed. The bare URL was not read.

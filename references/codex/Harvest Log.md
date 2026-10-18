@@ -9,6 +9,24 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-10-18 (research run)
+
+**2026-10-18: nothing new.** 0 transcripts across all 12 channels, 0 new items on every watchlist source, 0 claims banked, no law change. Both Meta for Business News shelves were identical in content and order to yesterday; the one thing worth keeping is a method refinement rather than a claim, filed in [[Watchlist]]: a future-dated card is a fixed publication date the clock catches up to, so it is read once and not re-read daily until its date arrives. Sunday, so the weekly sources were not due and the arXiv feed was its own empty Sunday build.
+
+## 2026-10-18 (teacher run; no research entry written today)
+
+**Lesson 054 shipped: *Yesterday Holds Two People*. No video, Sunday.** Weekday computed from the date before anything was written.
+
+**Topic taken from the harvest, not from the rotation.** The newest Harvest Log entry was 2026-10-17, written at 16:28 IST, after lesson 053 had already locked its topic at 16:00. So yesterday's four banked claims were still untaught at the start of today's run. Pointer sat at index 8, TikTok Delivery. Scaling Models is index 4, so the same-topic exception did not apply and the pointer HOLDS at 8.
+
+**Built on [[Scaling Models#SC-178|SC-178]] (T3), the first selector anybody on the roster has given instead of a number.** The budget-decision lookback window is a property of the account's own day-to-day variance. The same operator has published three windows across three dates, yesterday and trailing-7 on 2026-10-16 and a 30-day average on 2026-08-31, while the 20% step held across all three. Taught as a stable step with an unstable window. [[Scaling Models#SC-180|SC-180]] taught beside it as the ABO-ad-set / CBO-campaign ladder with [[Scaling Models#SC-011|SC-011]], and [[Scaling Models#SC-179|SC-179]] stated as a ceiling that exists but does not bind our book. [[Scaling Models#SC-102|SC-102]] and [[Scaling Models#SC-001|SC-001]] carried the two corroborating directions.
+
+**The lesson added one thing the claim does not carry, and it is the first time this engine has priced a day-level read on our own accounts.** Opt-in counts are Poisson, so percentage noise in a window is one over the square root of the events it holds. On the filed week of 30 September to 6 October: ChiroWorks 17 opt-ins, 2.4 a day, **64% noise in one day and 24% in a trailing seven**. StayWell 34, 4.9 a day, 45% and 17%. Phoenix Truxx 68, 9.7 a day, 32% and 12%. SJR Commercial about 100, 14.3 a day, 27% and 10%. Theriot's shown account runs $6,000 a day against a $22 target, about 273 conversions, **6% noise in one day**. **Not one of our accounts reaches in a full week what his reaches in a day.** Days needed to match his one-day precision: ChiroWorks 111, StayWell 55, Phoenix Truxx 28, SJR Commercial 19. All four stated in the lesson as **floors**, because they hold spend constant and the denominator carries its own variance.
+
+**Scoreboard updated.** Answers inbox empty for the fifty-third consecutive run, so nothing was graded. Fifty-four lessons out, none graded, 23 videos filed. Two new carried items, one of them the 30-day paper log on SJR Commercial that would turn SC-178 into a T2 on our numbers at zero spend.
+
+**Law layer: untouched.** Nothing taught today is new to the codex and nothing changed tier. Rotation history now runs 1 to 54 unbroken.
+
 ## 2026-10-17 (research run)
 
 **1 transcript in, 1 platform post in, 4 claims banked, 5 merges. Both of the day's real findings are the same shape: an operator and a platform each publishing a number that cannot support the sentence around it.**
