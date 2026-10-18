@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+"""Hot-layer update for the 2026-10-19 research run."""
+from pathlib import Path
+
+SKILL = Path(r"E:\claude code marketing skill\.claude\skills\advertising-science\SKILL.md")
+ANCHOR = "Updated only when the codex changes at law level. Each law cites its claims; depth lives in the codex. "
+
+NEW = (
+    "**The 2026-10-19 Monday pass opened a Meta source this engine had never read, and the most "
+    "important thing in it is a REPORTING failure that is invisible from the output** (8 new claims: "
+    "MD-182, MD-183, AT-128, AT-129, AT-130, GA-095, GA-096, GP-050; all T1). Meta's Marketing API "
+    "changelog moved to a new URL, stopped under-rendering for the first time since 24 August, and "
+    "exposed a per-year shelf of out-of-cycle changes going back to 2023. The 2026 shelf is twenty "
+    "entries and was read in full. **\u26a0 Three Ads Insights breakdowns now require per-account "
+    "enablement, and an account that has not enabled them returns NO RESULTS rather than an error** "
+    "(AT-128). The three are `impression_device`, `hourly_stats_aggregated_by_audience_time_zone` and "
+    "`frequency_value`, gated from 6 August 2026. **An empty pull and a genuine zero are "
+    "indistinguishable in the response, so a pipeline that reads device split, hour of day or "
+    "frequency on a gated account produces a clean, well-formed, false answer.** Frequency is quoted "
+    "directly in our own portfolio record (AU-093) and in our fatigue thresholds (CR-177), and hour "
+    "of day sits behind every speed-to-lead argument we make, so **any frequency or hour-of-day "
+    "figure pulled through the API since 6 August needs its account checked for enablement before it "
+    "is quoted again.** Meta says \"certain Ad Accounts\" and publishes no criterion, so the exposure "
+    "has to be tested per account rather than assumed. Historical data comes back only through "
+    "asynchronous jobs throttled at min(10, number_of_ad_groups) per 24 hours, which on a small "
+    "account is a few jobs a day. **A second measurement instrument was swapped mid-year and nothing "
+    "in our reporting marks the break.** Meta retired Nielsen DMAs for Comscore Markets on 22 June "
+    "2026 across both targeting and reporting, `breakdowns=dma` is no longer supported, and no "
+    "crosswalk is published (AT-129). Our entire book is local, so market-level reads matter: **never "
+    "compare a market-level Meta figure from before 22 June 2026 against one from after it without "
+    "saying the market definition changed.** The number can move because the ruler moved. **Two Meta "
+    "creative changes are new to this file and one of them touches the footage.** Age and gender can "
+    "now be set on the ad CREATIVE instead of the ad set, opt-in per ad set via "
+    "`creative_audience_pairing`, with a persona attachable to a single image or video and the "
+    "asset's own persona overriding the ad's (MD-182). That collapses the ad-set-declares-audience "
+    "and ad-declares-message split this file is built on, it is capability with no published effect, "
+    "and it is worth one look in Ads Manager to see whether the control exists outside the API. And "
+    "three Advantage+ enhancements shipped in June 2026 that ALTER a supplied asset rather than "
+    "arrange it: Image Animation turns a static image into a short animated video, Video Filter "
+    "applies colour changes including SDR to HDR conversion, and Video Uncrop expands a video to fill "
+    "taller placements (MD-183). **Uncrop is the sharpest of the three on our book, because reframing "
+    "a composition to fill a vertical surface is exactly what a whole-subject-in-frame rule exists to "
+    "prevent.** The change notes do not state whether any of the three is on by default, so the "
+    "honest instruction is to open `degrees_of_freedom_spec.creative_features_spec` on a live client "
+    "ad and read its actual state rather than assume either way. None of the three carries a "
+    "performance figure of any kind. **On the Google side, v26 landed on 14 October and the useful "
+    "items are a budget floor and a monitoring change.** Google now names a minimum spend twice: a "
+    "new Search recommendation that says the daily budget is too low for performance, and a "
+    "per-currency minimum daily budget for Demand Gen readable from the API (GA-096). That is the "
+    "first readable number behind GA-091's budget-per-asset argument, **and the actual figure is one "
+    "API call away, which makes it the cheapest open item on the board.** A raise-the-budget "
+    "recommendation from the company selling the inventory is still not evidence the raise pays. The "
+    "API also moved to two releases a month from v26 while the support window and the four-majors-a-"
+    "year rhythm stayed identical, and **the release blog drops to twice a quarter, so it stops being "
+    "a per-release alarm and the release notes page becomes the only reliable lane** (GA-095). Google "
+    "made a Search Lift study a queryable resource with 15 metrics and a campaign-level lift config "
+    "(AT-130), which is the first platform-maintained counterfactual we can read as a column rather "
+    "than build as a project; the design, control construction and significance treatment are all "
+    "Google's and none is published, it measures search behaviour rather than leads, and no "
+    "eligibility floor is stated, so check availability before mentioning it to anyone. And Local "
+    "Services Performance Max became externally creatable, capped at ONE per account, welded to a "
+    "single Google Business Profile listing with a locked conversion goal and an unpublished category "
+    "list (GP-050), which fits a single-service clinic far better than a dealership selling several "
+    "body types and comes with no performance figure at all. "
+)
+
+s = SKILL.read_text(encoding="utf-8")
+assert s.count(ANCHOR) == 1, s.count(ANCHOR)
+s = s.replace(ANCHOR, ANCHOR + NEW, 1)
+SKILL.write_text(s, encoding="utf-8")
+print("hot layer updated, +", len(NEW), "chars")

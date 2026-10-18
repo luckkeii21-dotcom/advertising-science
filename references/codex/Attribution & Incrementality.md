@@ -1294,3 +1294,51 @@ A product in alpha and one finding under it. The finding is the part worth keepi
 **What we cannot do with it, said plainly.** No client on our book has an offline sales instrument, so this cannot be tested on our accounts as published. The testable residue is cheaper: whether cost per lead differs between a week where one person saw the same total video seconds in one sitting versus spread across days. We have no column that reports it, so this stays unfalsifiable here until an instrument is named.
 Sources: Meta for Business News, "Meta Brand Building Summit: New Ways to Help Marketers Build Unforgettable Brands on Meta", published 2026-10-15, read in full 2026-10-16 (two passes)
 Last touched: 2026-10-16
+
+### AT-128 · Meta gated three Ads Insights breakdowns behind per-account enablement in August 2026, and an unenabled account returns NO RESULTS rather than an error
+Tier: T1 · Status: active
+Marketing API out-of-cycle change dated 8 May 2026, effective 6 August 2026, read in full at source. Three breakdowns now require enablement for certain ad accounts:
+
+- `breakdowns=impression_device`, including any combination containing it
+- `breakdowns=hourly_stats_aggregated_by_audience_time_zone`
+- `breakdowns=frequency_value`
+
+**The failure mode is silence, and that is the whole reason to bank this.** Meta's own sentence: "API requests using these breakdowns may return no results for Ad Accounts that have not enabled them, whether synchronous or asynchronous." An empty result set is not an error. **A report pipeline that reads device split, hour of day or frequency distribution from the API on an unenabled account produces a clean, well-formed, empty answer, and nothing in the response says the data was withheld rather than absent.** Downstream that reads as "no impressions on desktop" or "frequency unavailable", which is a false statement about the account.
+
+**How access is restored.** An account administrator requests the breakdown in Ads Manager. After enablement, synchronous calls work from that day onward, and **historical data comes back only through asynchronous report jobs**, which Meta throttles at `min(10, number_of_ad_groups)` per 24 hours. So a backfill on a small account is capped by its own ad-group count: an account with three ad groups gets three async jobs a day.
+
+**What we have to do about it.** Three of our own instruments touch these breakdowns. Frequency is quoted directly in our portfolio record at [[Auction Mechanics & Bidding#AU-093|AU-093]] and in the fatigue thresholds at [[Creative Science#CR-177|CR-177]]. Hour of day sits behind every speed-to-lead and business-hours argument we make. **Any frequency or hour-of-day figure pulled through the API since 6 August 2026 needs its account checked for enablement before it is quoted again**, because an empty pull and a genuine zero are indistinguishable in the output. The cheapest check is to request the breakdown over a known-busy window and see whether rows come back at all.
+
+**Limit on the claim, stated.** Meta says "certain Ad Accounts", not all, and publishes no list and no criterion for which accounts are affected. So the exposure is unknown per account and has to be tested rather than assumed.
+Sources: Meta for Developers, 2026 Out-Of-Cycle Changes to Marketing API, entry dated 2026-05-08 effective 2026-08-06, read in full 2026-10-19
+Last touched: 2026-10-19
+
+### AT-129 · Meta retired Nielsen DMAs for Comscore Markets on 22 June 2026, and `breakdowns=dma` stopped being supported in the Ads Insights API
+Tier: T1 · Status: active
+Marketing API out-of-cycle change dated 22 June 2026, read in full at source. Meta's wording: "Effective June 22, 2026, we are transitioning from Nielsen Designated Market Areas (DMAs) to Comscore Markets across ads targeting and reporting solutions. When requesting market-level data via the Ads Insights API, `breakdowns=dma` will no longer be supported; to retrieve market-level data, please instead use `breakdowns=comscore_market`."
+
+**It is a change in both lanes, not just reporting.** The sentence says "across ads targeting and reporting solutions", so the market definitions available to target by changed on the same date as the ones available to report on.
+
+**Why it earns a claim rather than a footnote.** Market-level reads are how a local advertiser answers "where is the money going", and our whole book is local: clinics in Collinsville and Novi, truck dealerships in New Jersey. **A market boundary is a measurement instrument, and the instrument was swapped mid-year.** Any geography series that spans 22 June 2026 is two different partitions of the map stitched together, and a market that appears to have grown or shrunk across that date may have changed definition rather than performance. Same class of error as comparing unequal windows: the number moved because the ruler moved.
+
+**No crosswalk is published in the change note.** Meta links its help centre for what Comscore Markets are, and offers no mapping from DMA to Comscore Market, no count of markets under either scheme, and no guidance on comparing across the cut. So a pre-June against post-June market comparison cannot be reconciled from the platform's own documentation.
+
+**Operating instruction.** Never compare a market-level Meta figure from before 22 June 2026 against one from after it without saying the market definition changed. If a client asks for a year-over-year view by market, the honest answer names the break.
+Sources: Meta for Developers, 2026 Out-Of-Cycle Changes to Marketing API, entry dated 2026-06-22, read in full 2026-10-19
+Last touched: 2026-10-19
+
+### AT-130 · Google made a Search Lift study a QUERYABLE resource in Google Ads API v26, with 15 incrementality metrics and a lift config attached to the campaign
+Tier: T1 · Status: active
+Google Ads API v26, released 14 October 2026. Release notes and announcement post both read in full at source.
+
+**What shipped.** A new read-only resource `SearchLiftKeywordBundle` representing a keyword bundle in a Search Lift study; two new selectable segments, `segments.search_lift_keyword_bundle` and `segments.search_property`; three new enums, `SearchLiftKeywordBundleStatus`, `SearchLiftMatchingInfoSource` and `SearchLiftSearchProperty`; and **15 new Search Lift metrics**, of which Google names `relative_search_lift`, `normalized_incremental_searches`, `search_lift_cost_micros` and `search_lift_impressions`. The study itself links to a campaign through the new field `Campaign.lift_measurement_config`.
+
+**Why this is the most useful Google item of the month for us.** Everything this codex holds on incrementality has the same shape: the platform reports attributed conversions, and a real incremental read has to be built by hand as a holdout. Our own Demand Gen holdout at [[Google Auction & Smart Bidding#GA-068|GA-068]] found no lift, and building it was the work. **A lift study addressable from the reporting API is a different kind of instrument, because the counterfactual is maintained by the platform and the output is a column rather than a project.**
+
+**The guard, and it is the one that applies to every platform-run lift study.** The experiment design, the control construction, the exposure definition and the significance treatment are all Google's, none of them appears in the release notes, and an advertiser querying `relative_search_lift` is reading a number whose construction it cannot inspect. That is strictly weaker than a holdout we run ourselves, where we own the split. **Treat a platform lift figure as the platform's estimate of its own effect until the methodology is published**, which is the caution this file already applies to every adopter-versus-non-adopter figure at [[Google Auction & Smart Bidding#GA-088|GA-088]].
+
+**Note what it measures.** `normalized_incremental_searches` and `search_lift_impressions` are search-behaviour outcomes, not purchases or leads. A Search Lift study answers "did the advertising make more people search", which is an upper-funnel question. It is not a substitute for an incremental cost per lead.
+
+**Eligibility is unstated.** Nothing in the release notes says which accounts or spend levels can run a Search Lift study, and lift studies on every other platform carry a spend floor. Our clients run four-figure monthly budgets, so the realistic expectation is that this is not available to them. **Worth one check before it is mentioned to anyone.**
+Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full via the Feedburner Atom content element
+Last touched: 2026-10-19

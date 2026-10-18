@@ -928,3 +928,38 @@ Tier: T1 · Status: active
 **Operating position, held until the controls appear in our accounts.** Check every client Search campaign for Google Display Network and Search partners state now, before February 2027, because the deadline falls on the setting rather than on the announcement. Where Display is on without a reason, the answer is still off. Where it is on deliberately, set Low priority with an allocation and treat the percentage as a ceiling that may leak. Related: [[Google Auction & Smart Bidding#GA-032|GA-032]] records Display-inside-Search as one of three default settings that silently leak budget; [[Google Auction & Smart Bidding#GA-085|GA-085]] records the thirteen-month pattern of Google shipping controls that make its automated channels comparable on other platforms' terms.
 Sources: Google Ads & Commerce Blog, "Guide your campaign spending with new priority and allocation features", Tal Akabas, Director of Product Management, Google Ads, 2026-10-14, read in full; page cached at .claude/skills/advertising-science/cache/google-channel-priority-20261015.html
 Last touched: 2026-10-15
+
+### GA-095 · The Google Ads API moved to TWO releases a month from v26, while the support window and the four-majors-a-year rhythm stayed exactly as they were
+Tier: T1 · Status: active
+Google Ads Developer Blog, "Google Ads API Release and Sunset Schedules for 2026-2027", 12 October 2026, read in full at source including the whole 2026-2027 release table.
+
+**What actually changed, and it is only the frequency.** "We are thrilled to accelerate our launch timelines even further, moving to two Google Ads API releases per month starting from version v26." Everything structural is explicitly unchanged: "We will still ship four major releases per year. All other releases will be minor releases that add only new, non-breaking features. Each major release will still be available for one year after the release. Sunset schedules are also unchanged, so you will not need to migrate more often. Each minor release sunsets together with its parent major version."
+
+**The published schedule, for reference.** v26 major October 2026 sunsetting November 2027; v27 major January 2027; v28 major April 2027; v29 major July 2027; v30 major October 2027. Minors sit between them, roughly two a month, and Google marks the December instalments as ones it may skip because they fall in the holiday season. Sunsets for 2027: v23 February, v24 May, v25 August, v26 November. Google labels every date "estimated and subject to change" and says it may add or remove releases, or switch a release between major and minor.
+
+**The stated reason, quoted because the framing is the news.** "As we enter a new agentic era where speed and agility are paramount", and "this faster cadence gives your automated agents and workflows near-instant access to cutting-edge features." Google is pacing its own API releases to how fast automated clients can consume them.
+
+**The consequence that touches a human, and it is a monitoring consequence.** "Our release blog posts and YouTube live events will move to twice a quarter, covering key updates across several releases at once." **So the announcement channel gets SPARSER while the release channel gets denser, and the blog stops being a per-release alarm.** Google's own instruction is to watch the release notes page directly. This watchlist already reads that page weekly, which is now the right lane, and the blog is no longer sufficient on its own. That is the same failure shape already recorded for the Google Ads Announcements page, which does not carry Demand Gen drops: a source that looks like a superset of product news is not one.
+
+**No performance content of any kind.** Nothing here says anything about delivery, bidding or auction behaviour. Banked as a monitoring and migration fact.
+Sources: Google Ads Developer Blog, Google Ads API Release and Sunset Schedules for 2026-2027, 2026-10-12, read in full; confirmed against the v26 announcement post of 2026-10-14 and the release notes page
+Last touched: 2026-10-19
+
+### GA-096 · Google now names a BUDGET FLOOR in two places at once: a Search recommendation that says the daily budget is too low for performance, and a per-currency minimum daily budget for Demand Gen exposed in the API
+Tier: T1 · Status: active
+Both arrived in Google Ads API v26, 14 October 2026, release notes read in full at source.
+
+**The Search recommendation.** New `RecommendationType.RAISE_BUDGET_PERFORMANCE_TOO_LOW`, with `Recommendation.raise_budget_performance_too_low_recommendation` and `ApplyRecommendationOperation.raise_budget_performance_too_low`, added "to support raising budgets when daily budgets are too low for Search campaigns."
+
+**The Demand Gen floor.** New field `demand_gen_info.minimum_budget_per_day_micros` on `CurrencyConstant`, which "specifies the minimum required budget per day for Demand Gen campaigns in that currency. This field's value updates when the minimum budget enforced by the API changes."
+
+**Why the pair is worth one claim.** This file already holds, from Google's own product manager, that Demand Gen explores creative only as far as the budget stretches and that budget per asset is the governing quantity ([[Google Auction & Smart Bidding#GA-091|GA-091]]). **These two fields are the first time Google has put a readable number behind that idea rather than leaving it to be inferred.** A minimum enforced daily budget is the cleanest possible statement that below some spend the channel does not function, which is an argument our own forecasting has had to make from first principles.
+
+**The honest limits, both of them sharp.**
+
+1. **Neither field publishes its threshold in the release note.** `minimum_budget_per_day_micros` is a field to query, not a figure Google states, so the actual floor for USD is unknown until somebody reads it off an account. **That read is one API call and it is the cheapest open item this run produced.**
+2. **A raise-the-budget recommendation from the company selling the inventory is not evidence the raise pays.** It is the same class of object as every other Google recommendation, and [[Meta Delivery & Andromeda#MD-171|MD-171]] and [[Google Auction & Smart Bidding#GA-088|GA-088]] both record how adopter-versus-non-adopter recommendation figures are built. The recommendation tells us Google has a model of "too low". It tells us nothing about where profit sits.
+
+**What it does not change.** Our scaling rules are unaffected. The step size and the gate at [[Scaling Models#SC-001|SC-001]] and [[Scaling Models#SC-176|SC-176]] govern raising a budget that is already working. A floor governs whether the channel is usable at all, which is a different question, asked before the first dollar.
+Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full
+Last touched: 2026-10-19

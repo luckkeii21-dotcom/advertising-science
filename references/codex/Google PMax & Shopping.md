@@ -438,3 +438,23 @@ Merchant Center changelog entry, "Loyalty program updates: Loyalty Customer Matc
 **The finding that actually matters is how it was found, and it is a method defect on our side.** See the 2026-10-07 entry in [[Watchlist]]: this changelog's post list is NOT in date order, and this entry is the LAST of 78 in the page, behind entries dated October 2025. Every previous run reported the newest Merchant Center entry as 11 August 2026 by reading the first date on the page. The true newest entry has been 24 September 2026 since that date.
 Sources: Google Merchant Center changelog, https://support.google.com/merchants/announcements/6192467, entry read at source with its own permalink /merchants/answer/18514318
 Last touched: 2026-10-07
+
+### GP-050 · Local Services Performance Max became an externally creatable campaign type in October 2026, capped at ONE per account and welded to a single Google Business Profile listing
+Tier: T1 · Status: active
+Google Ads API v26, 14 October 2026, release notes read in full at source. This is a local-business campaign type and our entire book is local businesses, so it gets read closely.
+
+**What changed mechanically.** `PmaxCampaignSettings.local_services_enabled` moved from `OUTPUT_ONLY` to `IMMUTABLE`, which means an external client can now set it to true when creating a campaign and can never change it afterwards. Two fields are required at creation: `LocalServicesPmaxCampaignSettings.country_code`, which v26 turned from optional into a hard requirement, and `LocalServicesPmaxCampaignSettings.listing_id`, which exposes "the Google Business Profile listing ID linked to the Local Services Performance Max campaign" and is marked REQUIRED at creation.
+
+**The constraints, read off the new error codes, because the error list is where the real rules are.**
+
+- `CampaignError.LOCAL_SERVICES_MULTIPLE_PERFORMANCE_MAX_CAMPAIGNS_NOT_ALLOWED`. **One Local Services PMax campaign per account.** That is a hard structural ceiling and it rules out the campaign-per-service or campaign-per-location structure a multi-service local business would otherwise want.
+- `CampaignError.LOCAL_SERVICES_AGREEMENT_REQUIRED`. An agreement has to be accepted before the campaign can exist.
+- `AssetSetLinkError.LOCATION_ASSET_DOES_NOT_MATCH_CAMPAIGN_LISTING_ID`. The location assets attached to the campaign must match the listing it was created against, so the campaign is tied to one Google Business Profile.
+- `AssetGroupError.UNSUPPORTED_LOCAL_SERVICES_CATEGORY`. The category named in `AssetGroup.google_local_services_info` has to be on a supported list, and the list is not published in the release note.
+- A family of goal errors: `CANNOT_UNLINK_LOCAL_SERVICES_GOAL_FROM_LOCAL_SERVICES_CAMPAIGN`, `GOAL_NOT_ALLOWED_FOR_LOCAL_SERVICES_CAMPAIGN`, `LOCAL_SERVICES_GOAL_NOT_ALLOWED_FOR_NON_LOCAL_SERVICES_CAMPAIGN` and `CANNOT_DISABLE_CAMPAIGN_OVERRIDE_GOALS_FOR_LOCAL_SERVICES_CAMPAIGN`. **The conversion goal is fixed to the Local Services goal and cannot be unlinked or overridden**, so the usual Performance Max freedom to choose and weight conversion goals is not available here.
+
+**Lead plumbing arrived with it.** `LocalServicesLead.campaign` now links a lead to the campaign that produced it, which is the attribution join that was previously missing, and `COUPON` was added to `LocalServicesLeadType`.
+
+**The operating read, stated honestly.** This is a plausible fit for a single-location service business with one Google Business Profile and one primary service, which describes a chiropractic clinic better than it describes a truck dealership selling several body types. **It is also a tightly bounded campaign type: one per account, one listing, a locked goal and an unpublished category list.** Nothing in the release notes says it performs, and no cost, lead-volume or comparison figure appears anywhere, so there is no basis here for recommending it over a standard Search campaign. The next step is a category-list check against the verticals we actually serve, not a build.
+Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full
+Last touched: 2026-10-19

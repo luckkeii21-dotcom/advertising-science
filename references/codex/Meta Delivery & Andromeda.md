@@ -1936,3 +1936,39 @@ Three inventory products announced on one page, all United States, all measured 
 **Standing against our own book, and it is a clean no.** Every one of these is a United States brand-reach product sold on recall and awareness. Our book is lead generation for local businesses in New Jersey, Illinois and Michigan buying cost per lead, with no brand-lift instrument on any account. Category exclusivity and 34 million reach in a day are not purchasable or useful at our budgets. **Banked as platform direction, not as anything to buy.** The one piece with a plausible route to our work is the trending-Reels topic list, because Spanish-language content is now an always-on topic and two of our clients sell to Spanish-speaking buyers; that is a lead to check, not a claim.
 Sources: Meta for Business News, "Meta Brand Building Summit: New Ways to Help Marketers Build Unforgettable Brands on Meta", published 2026-10-15, read in full 2026-10-16 (two passes)
 Last touched: 2026-10-16
+
+### MD-182 · Meta moved AGE AND GENDER off the ad set and onto the CREATIVE in October 2026, and a persona can now be attached to a single image or video inside one ad
+Tier: T1 · Status: active
+Meta Marketing API out-of-cycle change dated 14 October 2026, read in full at source. "Creative audience pairing lets you set age and gender on the ad creative instead of the ad set."
+
+**How it is switched on, exactly.** It is opt-in per ad set, by setting `creative_audience_pairing` to 1 inside `targeting_automation` in the ad set targeting spec. The parameter accepts only 0 or 1, and Meta states that omitting it leaves the feature off. So nothing changes in an existing account until somebody turns it on, which is the opposite of the Advantage+ enhancements recorded at [[Meta Delivery & Andromeda#MD-183|MD-183]].
+
+**The granularity is the finding.** A persona is attached through `creative_audience_pairing_persona`, and it can sit at two levels: on the ad, which pairs the whole ad, or on an individual image or video inside `media_sourcing_spec`, which pairs a single media asset. Meta states the precedence rule itself: **a media asset's own persona overrides the persona set on the ad.** One ad can therefore carry several assets each aimed at a different age and gender band, resolved per asset rather than per ad set.
+
+**Why this matters more than it looks.** Every structural claim in this file treats the ad set as the unit where audience is declared and the ad as the unit where the message is declared. This collapses that split: demographic intent becomes a property of the asset. It runs in the same direction as [[Meta Delivery & Andromeda#MD-001|MD-001]], where the creative is the primary targeting input, and it is the first time Meta has given the advertiser a field to say which person a specific piece of footage is for.
+
+**What is NOT established, and no run should imply it.** Meta publishes no performance figure, no test, no rollout scope and no statement that paired creative delivers better than unpaired. There is nothing here about whether a declared persona narrows the candidate pool, biases retrieval, or is treated as a hint the system can ignore. It is a capability, not an effect.
+
+**The operating read for our book.** Both our chiropractic work and our truck-dealership work already run separate ads for separate buyer types, split across ad sets. If pairing holds up, the same split could live inside one ad set, which is the structure [[Scaling Models#SC-179|SC-179]] says is bounded at 200 ad sets per campaign. Nothing to act on until the field appears in an account and somebody measures it. Worth one look in Ads Manager on a client account to see whether the control exists outside the API at all.
+Sources: Meta for Developers, 2026 Out-Of-Cycle Changes to Marketing API, entry dated 2026-10-14, read in full 2026-10-19 at developers.facebook.com/documentation/ads-commerce/marketing-api/out-of-cycle-changes/occ-2026
+Last touched: 2026-10-19
+
+### MD-183 · Meta shipped three Advantage+ enhancements in June 2026 that ALTER the footage itself, animating a static image, converting video to HDR and uncropping video to fill vertical placements, each controlled per creative
+Tier: T1 · Status: active
+Three Marketing API out-of-cycle changes all dated 28 June 2026, read in full at source, plus a fourth from 1 June 2026. All four change the asset Meta serves rather than the targeting or the budget.
+
+**Image Animation.** "A static image in your ad is automatically transformed into a short, subtly animated video to make your creative more engaging." Controlled per creative through the `image_animation` field in `degrees_of_freedom_spec.creative_features_spec`.
+
+**Video Filter.** "A visual enhancement is automatically applied to your video creative, for example, improving color or converting standard dynamic range (SDR) video to high dynamic range (HDR)." Field `video_filtering`, same spec.
+
+**Video Uncrop.** "Your video is automatically expanded (uncropped) to better fit the aspect ratio of additional placements, for example, filling vertical, full-screen surfaces instead of cropping or letterboxing your video." Field `video_uncrop`, same spec.
+
+**IG Audio Swap, 1 June 2026, and this one is advertiser-initiated.** New parameters on `POST /act_{id}/advideos` replace copyrighted music on Instagram Reels with royalty-free audio from Meta's Sound Collection: pass `source_instagram_media_id` with `selected_audio_spec`. It is asynchronous, and Meta's instruction is to poll `replace_audio_status` on `GET /{ad-video-id}` until it returns `SUCCESSFUL` before building creative on the swapped video.
+
+**The consequence for a graded edit, and it is the reason to bank this.** We grade our own video work on deliberate choices: one font family, a specific colour treatment, framing that keeps the whole subject in shot, levels set per track. Image Animation, Video Filter and Video Uncrop each override one of those after delivery, and Meta's phrasing is "automatically applied". **Uncrop is the sharpest risk on our book, because it reframes a composition to fill a taller surface, and a reframe is exactly what a subject-in-frame rule exists to prevent.** Nothing in the change notes states whether the enhancements are on by default; Meta says only that you opt in to or out of them per creative. **So the honest instruction is to open `degrees_of_freedom_spec` on a live client ad and read its actual state, not to assume either way.**
+
+**Unevidenced.** No performance figure, no test and no sample appears beside any of the three. "To make your creative more engaging" and "more visually appealing" are product copy. Same reading rule as [[Meta Delivery & Andromeda#MD-171|MD-171]]: find the population and the counterfactual before carrying a number, and here there is no number at all.
+
+**Where this sits in the existing record.** This file already holds Advantage+ creative enhancements as a category. These three are new members of it, and they are the first that modify the pixels and the audio of a supplied asset rather than arranging it, cropping it to a known ratio, or adding an overlay.
+Sources: Meta for Developers, 2026 Out-Of-Cycle Changes to Marketing API, entries dated 2026-06-28 (Image Animation, Video Filter, Video Uncrop) and 2026-06-01 (IG Audio Swap), read in full 2026-10-19
+Last touched: 2026-10-19

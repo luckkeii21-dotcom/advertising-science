@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Watchlist"
 type: reference
 created: 2026-08-18
@@ -934,3 +934,122 @@ absent 10-15, absent 10-16, absent 10-17, absent 10-18. Four flat days against i
 **Transport, 2026-10-18.** WebFetch on both locales, hrefs requested rather than titles, first attempt each.
 **Twelfth consecutive browser-free read of both shelves.** Every `playwright` server failed CONNECT_TIMEOUT at
 session start, so no browser was available, and none was needed. The bare URL was not read.
+
+
+### The Marketing API changelog MOVED, and the under-rendering defect is CLOSED (2026-10-19)
+
+Every note on this source since 2026-08-24 records the same defect: the changelog index rendered only
+through v25.0 and stated that the latest version was v25.0, while the true newest was v26.0 of 29 July
+2026, confirmable only from the Graph API changelog. It was re-observed on 2026-09-28, 2026-10-07 and
+2026-10-12, and the 2026-09-28 "treat it as fixed" was withdrawn.
+
+**It is fixed, and the page moved.** `developers.facebook.com/docs/marketing-api/marketing-api-changelog`
+now redirects to **`developers.facebook.com/documentation/ads-commerce/marketing-api/marketing-api-changelog`**,
+which renders correctly: "The latest Graph API version is: v26.0", with v26.0 (29 July 2026), v25.0
+(18 February 2026) and v24.0 (8 October 2025) listed. Update the watchlist URL to the new path; the old
+one works through the redirect but the browser lands on the new address.
+
+**Two "Available Until" dates MOVED BACKWARDS INTO THE FUTURE, and this retires an open worry.** The
+2026-09-28, 10-07 and 10-12 entries tracked Marketing API v24.0 as "Available Until 6 October 2026", a
+date that passed with no action. It now reads **10 November 2026**, and v25.0 moved from TBD to
+**23 February 2027**. **So a Marketing API "Available Until" date can be EXTENDED after it has passed.**
+Never report a passed sunset date on this source as a shutdown, and never raise it as a risk without
+re-reading the page.
+
+**The real find: a per-year OUT-OF-CYCLE CHANGES shelf that nothing on this watchlist pointed at.** The
+new page's nav carries `out-of-cycle-changes/occ-2023`, `occ-2024`, `occ-2025` and `occ-2026`. The 2026
+shelf is **20 entries, 17 February through 22 October 2026**, auto-generated every two weeks from the API
+spec, and it is T1 Meta platform documentation on delivery, creative, targeting and reporting mechanics.
+It was read in full on 2026-10-19 and produced five of the day's eight claims. **The 2023, 2024 and 2025
+shelves are unread.**
+
+This is the fourth instance of the same failure shape, after Meta for Business News on 2026-09-20 (a
+three-part series unread for four months behind a locale partition), 2026-09-23 (four posts unread
+because no title baseline existed) and the Demand Gen Drops hub on 2026-09-25 (a year of instalments
+behind a source watched daily). **The pattern, now four for four: a ceiling check answers "has the
+newest thing changed" and says nothing about the shelf behind it. A source can be read every morning
+for two months and still have years of unread material in view.** Add `occ-2026` to the weekly lane and
+work the 2025 shelf as a backlog.
+
+**One date artefact, and it is the same one recorded on Meta for Business News on 2026-10-17.** The 2026
+shelf declares itself "Updated: Oct 22, 2026" and its newest entry is dated 22 October 2026, three days
+ahead of the clock on the day it was read. Per the 2026-10-18 refinement, a future date on a Meta
+property is a fixed publication date the clock catches up to, not a render offset. Read it once; do not
+re-read daily waiting for the date to arrive.
+
+### Meta Advertising Standards: the UK locale renders every heading in SENTENCE CASE, and a case-sensitive US list reports the two sections our clinics depend on as MISSING (found 2026-10-19)
+
+The 2026-09-14 entry made it a standing instruction to read both `/policies/ad-standards/` and
+`/en-gb/policies/ad-standards/`, because Meta stages policy rewrites by locale. That instruction is
+right. **What it does not say is that the two locales disagree on the ORTHOGRAPHY of almost every
+heading, so the US heading list cannot be reused against the UK page as-is.**
+
+Observed 2026-10-19, same browser session, both pages read minutes apart:
+
+| US render | UK render |
+|---|---|
+| Prohibited Commercial Practices | Prohibited commercial practices |
+| Product and format-specific policies | Product- and format-specific policies |
+| Privacy Violations and Personal Attributes | Privacy violations and personal attributes |
+
+**The consequence is a false alarm on the highest-consequence section on this whole watchlist.** A
+case-sensitive run of the US list against the UK page returned `Product and format-specific policies`
+as NOT-FOUND and `Privacy Violations and Personal Attributes` as absent. **Neither is absent. Both are
+present in sentence case, and the hyphen in "Product-" is an additional difference that no case fold
+fixes.** The baseline note in `cache/meta-ad-standards-baseline.md` says a heading that "moved, added or
+disappeared" means read the section in full and open a claim, so this artefact would have produced a
+policy-removal finding on the personal-attributes rules that ChiroWorks and Chiropraise run against.
+
+**Method, for every future run: match the heading list CASE-INSENSITIVELY and treat hyphens as optional,
+or keep a separate UK heading list. Never report a section as missing from one locale until it has been
+searched for in that locale's own casing.**
+
+**What the corrected UK read actually found: unchanged, and it closes a 2026-09-14 question.** All 16
+sections located with zero not-found, 33,587 chars of `innerText`, and both `Health and Wellness` and
+`Privacy violations and personal attributes` present. **`Prohibited commercial practices` is 199 chars
+in the UK locale and `Prohibited Commercial Practices` is 199 chars in the US locale**, so the section
+rename banked at MD-156 on 2026-09-14 has now propagated to both locales at identical length. The
+locale-staging concern that entry raised for this section is resolved.
+
+**First UK section-hash map ever recorded**, saved in `cache/watchlist-seen.json` under
+`pages.meta-ad-standards.section_map_uk_2026_10_19`. Before today only the US page had one, so a silent
+UK-only rewrite was undetectable. From the next run it is diffable.
+
+**The US page is unchanged.** 32,505 chars, exactly the 2026-09-28 and 2026-10-12 figure, all 16 sections
+byte-identical to the 2026-10-12 hashes.
+
+**Anchor method, stated precisely because it was nearly got wrong today.** The 2026-10-12 note calls it
+"the offset-0 anchor". That phrasing is ambiguous and a literal `indexOf(name)` from position 0 is WRONG:
+`Community Standards` occurs 20 times on the US page, and a from-zero search put section 4 at 25,944
+chars instead of 483. **The working method is a SEQUENTIAL scan: search for each heading starting from
+the end of the previous heading's match.** That reproduces the 2026-10-12 figures exactly.
+
+### Google Ads Developer Blog: the Feedburner feed carries the FULL post body, which retires the post-body regex (found 2026-10-19)
+
+Two notes above this one are about failing to extract a Developer Blog post body. On 2026-08-31 WebFetch
+returned the chrome without the article and cost GA-069 its primary source. On 2026-09-07 the fix was
+recorded as "plain urllib plus a `post-body` div regex", and on 2026-09-22 that route itself returned
+nothing on the `new-onboarding-experience-for-google-ads-api.html` permalink, leaving that post unread.
+
+**Neither is necessary. The Atom feed at `feeds.feedburner.com/GoogleAdsDeveloperBlog` carries each
+post's entire body inside its `<content>` element.** Both new posts of 2026-10-12 and 2026-10-14 were
+read in full from the feed on the first attempt, including the complete 2026-2027 release and sunset
+tables, with no permalink fetch and no browser. 25 entries are in the feed, which is roughly a two-month
+window.
+
+**Method for this source from now on: read titles, dates AND bodies from the Feedburner feed. Only fetch
+a permalink when a post has aged out of the 25-entry window.** The 2026-09-22 unread post is recoverable
+this way if it is still in range.
+
+### Google Ads API release notes: the VERSION HEADING set is the stable key, confirmed by a real change (2026-10-19)
+
+The 2026-10-12 entry established that a raw byte diff on `developers.google.com` is meaningless because
+the page carries a per-render script nonce, and prescribed diffing the version-heading set instead.
+**That method has now caught its first real change.** Cached headings on 2026-10-12: v25, v24, v23, v22.
+Today: **"Release summary and quick links", "v26 major version", v25, v24, v23**. So v26 appeared and v22
+dropped to the archive, and a new summary section was added. The raw byte count also changed, from
+371,961 to 376,334, but it changes on every render anyway and says nothing.
+
+**Merchant Center, same weekly check, same stable-key approach: 79 `/merchants/answer/(\d+)` ids, 0 added
+and 0 removed against the 2026-10-12 cache.** The answer-id set is a better key on this source than the
+bare-line entry dates the 2026-10-12 note had to qualify twice.
