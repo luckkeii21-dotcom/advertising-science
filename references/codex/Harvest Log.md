@@ -9,6 +9,18 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-10-19 (research run, second pass same day)
+
+**Quiet, and it corrects this morning's own read.** 0 transcripts, 0 claims, codex holds at 1,379, no law change. Two things worth keeping, both about method rather than mechanics.
+
+- **Harvest:** `lib/harvest.py daily`, all 12 roster channels, **0 new transcripts, 0 errors**, 3 skipped short, 1 no subtitles, 0 out of window. Unextracted backlog 0.
+- **The arXiv deferral from 03:38 is closed, and it is a clean zero.** That pass fired at 22:08 UTC Sunday and correctly read Sunday's empty build. The Monday build is now up, `lastBuildDate` Mon 19 Oct 2026 04:00:07 UTC: **18 items, 12 new against the cache, 0 passing the advertising filter.** All 12 titles were read by hand and the filter is right. Semantic-ID reranking, Portuguese IR judging, quality-diversity recsys, sparse news recsys, generative engine optimisation, astronomy VQA, LLM benchmarking, OCR, code search, tool recommendation, CoT supervision, novelty assessment. No auction, no bidding, no advertising paper in the batch.
+- **⚠ The UK Meta for Business News shelf changed between 03:38 and 13:50 today, so one early read does not see the whole day.** `creator-marketing-whitepaper` (6 October 2026) is back at slot 1 and `unlocking-the-value-of-q5marketing-for-mobile-game-developers` has dropped off the bottom. The 03:38 pass read both shelves as identical in order to 2026-10-18 and **retired the slot-1 alternation as a dead pattern after four flat days. It is not dead, it rotated later the same day.** The consequence for method: a flat-day streak counted from a single daily read understates how often this shelf moves, so a retirement decision needs more than one read per day behind it. Nothing is banked from it. The returning card is a fortnight old, so this stays a rotation under the standing rotating-module rule. US shelf unchanged, 12 slugs, 0 added 0 removed.
+- **The future-dated card reached its own date and the read-once rule held.** `meta-nest-ai-creative-diversification` now reads 19 October on a 19 October page. It was opened in full and is the same post already banked as [[Creative Science#CR-286|CR-286]] on 2026-10-17. Nothing re-banked, nothing re-tiered.
+- **Rest of the daily lane flat:** Meta Engineering 0 new (build Thu 15 Oct), Meta Newsroom 0 new (build Thu 15 Oct), Google Ads & Commerce 0 new (build Thu 15 Oct), Google Ads Announcements 396 answer ids 0 added 0 removed, TikTok SDK unchanged at v0.1.8, TikTok Newsroom and for-Business blog still geo-blocked and not retried. 0 fetch errors on every source.
+- **Weekly lane not re-run.** The Monday sources were read in full at 03:38 on this same Monday, so re-fetching them would diff a page against itself.
+- **Gaps unchanged from this morning.** The 2023, 2024 and 2025 Marketing API out-of-cycle shelves are still unread, the gated-breakdown enablement check (AT-128) is still the highest-consequence open item on the board, and the Demand Gen USD minimum daily budget is still one API call nobody has made.
+
 ## 2026-10-19 (research run)
 
 **The biggest Meta haul in a month, and it came from a source this engine had never read.** 0 transcripts, 8 claims banked, all T1, law layer and one watch item amended. Monday, so the weekly lane ran.

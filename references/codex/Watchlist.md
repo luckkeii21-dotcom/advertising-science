@@ -1053,3 +1053,42 @@ dropped to the archive, and a new summary section was added. The raw byte count 
 **Merchant Center, same weekly check, same stable-key approach: 79 `/merchants/answer/(\d+)` ids, 0 added
 and 0 removed against the 2026-10-12 cache.** The answer-id set is a better key on this source than the
 bare-line entry dates the 2026-10-12 note had to qualify twice.
+
+### Meta for Business News: the UK shelf ROTATES INSIDE THE DAY, so a rotation pattern must never be retired on a streak of single daily reads (found 2026-10-19, second pass)
+
+The 03:38 run read both shelves as identical in content and order to 2026-10-18, and on the strength of
+four flat days it **retired the UK slot-1 alternation as a dead pattern**. A second read of the same page
+at 13:50 the same day found the UK shelf different:
+
+| Slot | 03:38 read | 13:50 read |
+|---|---|---|
+| 1 | performance-spotlight-how-instant-hydration-built-a-system-for-ai-to-scale | **creator-marketing-whitepaper** (6 October 2026), back after three days absent |
+| 12 | unlocking-the-value-of-q5marketing-for-mobile-game-developers | **dropped off the bottom** |
+
+**The pattern is not dead. It rotated later the same day.** Reinstated.
+
+**The finding that matters is about the instrument, not the pattern.** A flat-day streak counted from one
+early-morning read is a biased sample of a module that rotates on its own clock, so the streak understates
+movement and any retirement decision built on it is unsafe. Two rules follow:
+
+1. **Never retire a rotation pattern on this source from single daily reads.** Either read the shelf twice
+   in a day before calling a pattern dead, or do not retire it at all.
+2. **A card returning is not publication.** The returning card here is dated 6 October 2026, a fortnight
+   old. This is the standing 2026-08-20 rule holding: the listing is a rotating module, not a
+   chronological feed, so appearance and disappearance both mean nothing on their own. Diff on dates.
+
+The US shelf did not move between the two reads: 12 slugs, 0 added, 0 removed, ceiling 19 October 2026.
+Whatever drives the UK rotation is not driving the US one on the same day.
+
+Transport on both reads: WebFetch, hrefs and dates, first attempt each locale, no browser. Thirteenth
+consecutive browser-free read of this source.
+
+### The future-dated card reached its own date and the read-once rule HELD (closed 2026-10-19, second pass)
+
+`meta-nest-ai-creative-diversification` read 19 October on the 17 Oct fetch, 19 October on 18 Oct, and
+19 October today, which is the date itself. The 2026-10-18 refinement called it a fixed publication date
+the clock catches up to rather than a rolling render offset, and prescribed reading such a card once and
+leaving it alone. **Opened in full today to test that.** It is the same post, same seven-brand Q1 2026
+cohort, same 70%, 20%, 56%, 17% and 5% figures, already banked as [[Creative Science#CR-286|CR-286]] on
+2026-10-17. Nothing new, nothing re-banked. The rule is confirmed and this artefact is closed: read a
+future-dated card once, on sight, and do not revisit it when its date arrives.
