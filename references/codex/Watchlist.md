@@ -1092,3 +1092,27 @@ leaving it alone. **Opened in full today to test that.** It is the same post, sa
 cohort, same 70%, 20%, 56%, 17% and 5% figures, already banked as [[Creative Science#CR-286|CR-286]] on
 2026-10-17. Nothing new, nothing re-banked. The rule is confirmed and this artefact is closed: read a
 future-dated card once, on sight, and do not revisit it when its date arrives.
+
+### A 1-in-1-out diff on the US shelf has TWO causes, and the cumulative-slug check is what separates them (2026-10-20)
+
+Every rotation note in this file was written on the UK shelf, where a 1-in-1-out diff has meant a
+returning back-catalogue card every time. **Today the US shelf produced the identical shape and the
+cause was the opposite.** `agencies-testing-incrementality`, dated 19 October 2026, arrived at slot 1
+and `meta-ai-for-small-businesses` dropped off the bottom of the 12-slot window.
+
+**The standing rotating-module rule would have read that as noise and banked nothing.** What
+separated the two cases was one lookup: the added slug was checked against `slugs_seen_cumulative`
+and had never appeared in either locale. So it was opened and read in full, and it is now
+`AT-131`: four Meta agency lift studies, eleven numbers, no footnote, no sample, no window and no
+spend, including the first Meta-published car-dealership incrementality case.
+
+**The rule, and it costs one lookup.** On a 1-in-1-out diff, never classify before checking the
+added slug against `slugs_seen_cumulative`. Absent from it means a new post and the page must be
+opened. Present in it means a rotation and it banks nothing. **The shape of the diff does not tell
+you which, and the shelf being a 12-slot window guarantees every genuinely new post arrives looking
+exactly like a rotation.**
+
+**Also true today and worth separating:** the UK shelf was identical in order to the 2026-10-19 FIRST
+pass, while against the SECOND pass it was 1 added and 1 removed. Which baseline a run diffs against
+decides whether it reports a change at all, so a day with two passes needs the pass named in the
+comparison.
