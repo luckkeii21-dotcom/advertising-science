@@ -27,8 +27,10 @@ Summit relay, second-hand, and worth exactly the weight that carries. Andrew Far
 CREATIVE OVERRIDES ACCOUNT HISTORY, and this is the sharpest form anyone has put the law in. Sam Piliero: "Even if historically you have run all 65 plus age groups ... If you run a creative in your ad account that is geared to a younger group, it's going to get shown to a younger group." So the routing decision is made on the asset in front of the retrieval model rather than on the demographic profile the account's own purchase history would predict, which is a strictly stronger claim than "creative influences delivery" and the reason a single off-avatar test ad can pull delivery sideways in a mature account. T4 and it stays T4: ASSERTED with no age breakdown shown, no before-and-after on a real account, and no named account. If it holds it also explains part of MD-006, since a new ad with no history has nothing but its own content to be routed on. He states the inversion plainly as the operating consequence, that you now build the ad for an avatar and the ad finds the people, which is what the rest of this claim already says.
 THE VOLUME SIDE of the same law, from Matt Shiver, because the standing objection to narrowing is always reach. "a lot of times people think that if I niche down too niche that like, 'How am I going to get enough leads?' ... But it's actually kind of the reverse. It's like as long as the total addressable market TAM is big enough, you're going to be fine." So the constraint he names is TAM size, not audience-setting width, which is the correct place to put it if creative does the targeting. Evidence is one account's low cost per message, and the "you probably could spend upwards of a thousand dollars plus a day" attached to it is a projection of headroom rather than observed spend, so do not quote it as a spend figure. T3, one account, no comparison against a broader avatar. Faris's reach-efficiency point above is the same finding from a different book of accounts.
 Input list for the retrieval read, from Mark Builds Brands and consistent with everything above: hook, format, the on-screen demographics of the people in the ad, copy, script, thumbnail and the landing page. On casting, "if you're running an ad that is featuring a woman that is 55 years old, Facebook takes note of that and it's going to use that to power the targeting." Banked as a source rather than a finding, since it restates this claim and Theriot's presenter-swap rule. The landing-page half is MD-043. ASSERTED, nothing shown.
-Sources: Fraser Cottrell, How to Make Meta Ads So Good People Can't Stop Watching, 2026-08-16; Sam Piliero, The Only Facebook Ads Video You Need in 2026, 2026-07-26 and Meta Ads Insider Exposes How The Algorithm ACTUALLY Works (with Matt Steiner of Meta), 2026-06-04 and 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15; Dr. Matt Shiver, How the Facebook Ads Algorithm Actually Works, 2026-07-21 and How Francis Scaled His Fitness Business with Instagram Ads, 2026-04-30; Andrew Faris, The 3-Part Creative Diversity Framework I Use To Scale Past $10M On Meta Ads, 2026-05-01 and Ezra Firestone: Nothing Has Changed In Ecom In 20 Years, 2026-05-15 and 2026 Meta Performance Marketing Summit Recap, 2026-05-20; Professor Charley T, Meta Ads expert reacts to $1M/month Strategy, 2026-02-14; Nick Theriot, How To Test Facebook Ads in 2026 When You Can't Find a Winner, 2026-08-19 and Sh*t I care about when scaling Facebook Ads, 2026-07-10; Ben Heath, The BEST Way To Scale Meta Ads (from $300M ad spend), 2026-05-19; Mark Builds Brands, the entire meta ads algorithm explained in 21 mins, 2026-05-11
-Last touched: 2026-08-21
+
+**2026-10-20, the strongest T1 sentence this claim has.** Meta now states that the representation of an ad is built by reading that ad: "Pre-trained multimodal models read each ad, product, and page, including its text and images." See [[Meta Delivery & Andromeda#MD-184|MD-184]]. The practitioner claims in this entry stay T3; what moved is that the mechanism they assert is now described by the platform in its own words. Read [[Meta Delivery & Andromeda#MD-186|MD-186]] before carrying the word generative anywhere near it.
+Sources: Fraser Cottrell, How to Make Meta Ads So Good People Can't Stop Watching, 2026-08-16; Sam Piliero, The Only Facebook Ads Video You Need in 2026, 2026-07-26 and Meta Ads Insider Exposes How The Algorithm ACTUALLY Works (with Matt Steiner of Meta), 2026-06-04 and 21 Facebook Ad Tricks to Improve Your ROAS INSTANTLY, 2026-05-15; Dr. Matt Shiver, How the Facebook Ads Algorithm Actually Works, 2026-07-21 and How Francis Scaled His Fitness Business with Instagram Ads, 2026-04-30; Andrew Faris, The 3-Part Creative Diversity Framework I Use To Scale Past $10M On Meta Ads, 2026-05-01 and Ezra Firestone: Nothing Has Changed In Ecom In 20 Years, 2026-05-15 and 2026 Meta Performance Marketing Summit Recap, 2026-05-20; Professor Charley T, Meta Ads expert reacts to $1M/month Strategy, 2026-02-14; Nick Theriot, How To Test Facebook Ads in 2026 When You Can't Find a Winner, 2026-08-19 and Sh*t I care about when scaling Facebook Ads, 2026-07-10; Ben Heath, The BEST Way To Scale Meta Ads (from $300M ad spend), 2026-05-19; Mark Builds Brands, the entire meta ads algorithm explained in 21 mins, 2026-05-11; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-002 · Meta targeting is vector-embedding based: broad delivery sprinkles spend across the space, then hones into converting clusters
 Tier: T2 · Status: active
@@ -131,8 +133,10 @@ Last touched: 2026-08-18
 ### MD-070 · A creative asset carries its learned performance across campaigns, and changing the headline or primary text changes it
 Tier: T3 · Status: active
 Charley T says a video or static keeps the performance it has learned no matter which campaign it is placed into, so re-uploading a proven asset elsewhere does not restart it from zero. Changing the headline or the primary text attached to it does change the performance. Two operator consequences follow. A winner that fails in a new ad set is more likely losing to the ad next to it than decaying on its own, so check the neighbours before killing it. And a copy-only refresh on a proven asset is a change to that asset's delivery, not a free test. Sits in tension with MD-003, which reports that metadata tweaks like a headline swap do not register as a distinct entity. Both can hold only if a headline swap changes how an existing asset is scored without making it a new entity. Asserted, no data shown.
-Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20
-Last touched: 2026-08-19
+
+**2026-10-20, the direction is confirmed and the claim is not.** Meta published "Semantic tokenization creates a stable vocabulary that allows the models to carry insights across campaigns for advertisers" (see [[Meta Delivery & Andromeda#MD-185|MD-185]]). That is the MODEL's representation of an item transferring, not an ad object's delivery performance transferring, and the two must not be conflated. **Tier stays T3.** What is now T1 is that the system does not treat the same product in a new campaign as a stranger. Still unevidenced: that a re-uploaded winner skips anything, and that a headline or primary-text swap changes the asset's performance.
+Sources: Professor Charley T, Q5: the 2nd Black Friday: Meta Ads for Profit, 2025-12-20; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-071 · Andromeda did not change the rules, it raised the price of a messy account
 Tier: T3 · Status: contested
@@ -735,8 +739,10 @@ Last touched: 2026-08-20
 Tier: T1 · Status: active
 Retrieval is the first step of the multi-stage ads recommendation system, "selecting ads from tens of millions of ad candidates into a few thousand relevant ad candidates", processing three orders of magnitude more ads than subsequent stages. Larger ranking models then predict people and advertiser value to determine the final set shown. Blue Sense, citing Meta documentation, adds that the whole retrieval-ranking-auction pass runs in about 200 milliseconds and that Andromeda is a retrieval-stage change, which is why the creative content itself decides which auctions an ad even enters.
 PRACTITIONER RESTATEMENT, T4, and it amends nothing here. Mark Builds Brands describes four stages inside the same roughly 200 millisecond window: retrieval, light ranking, heavy ranking, then auction. His numbers are tens of millions entering retrieval, "say like roughly 5,000" surviving light ranking, and a few hundred reaching heavy ranking. Checked against what this file holds from Meta's own posts: the tens-of-millions entry and the ~200ms budget match MD-022 exactly, and his four stages map onto MD-023's sourcing, ESR and LSR with the auction appended. The 5,000 figure sits inside Meta's "a few thousand" and his own hedge ("say like roughly") concedes it is an estimate. The few-hundred-into-heavy-ranking figure is the one number Meta's posts do not carry anywhere, so treat it as unsourced rather than as a fifth data point. He cites no Meta source and shows a hand-drawn funnel diagram. A hand-drawn diagram is not documentation and never amends a documented architecture, so this paragraph is a T4 relay banked for the vocabulary, not evidence.
-Sources: Engineering at Meta, Meta Andromeda post, 2024-12-02; Blue Sense Digital, How The Meta Ads Algorithm Works in 2026, 2026-07-28; Mark Builds Brands, the entire meta ads algorithm explained in 21 mins, 2026-05-11
-Last touched: 2026-08-21
+
+**2026-10-20, one stage is missing from this cascade.** GR2 (arXiv 2602.07774, Meta authors) treats **reranking** as a fourth stage distinct from retrieval and ranking, and says it is "largely overlooked". See [[Meta Delivery & Andromeda#MD-186|MD-186]]. Abstract only, research rather than confirmed production, so this is a flag on the cascade description and not a correction to it.
+Sources: Engineering at Meta, Meta Andromeda post, 2024-12-02; Blue Sense Digital, How The Meta Ads Algorithm Works in 2026, 2026-07-28; Mark Builds Brands, the entire meta ads algorithm explained in 21 mins, 2026-05-11; arXiv 2602.07774, GR2: Generative Reasoning Re-ranker, abstract read at source 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-023 · Within a surface, the ranking funnel has three layers: sourcing (retrieval), early-stage ranking, and late-stage ranking, each on fewer candidates as operations get costlier
 Tier: T1 · Status: active
@@ -1015,8 +1021,10 @@ Meta's engineering post of 3 August 2026 describes the central model plainly: "G
 **Note exactly what that sentence does and does not settle.** It settles that the creative itself enters the foundation model as a first-class feature, alongside user location, and that GEM is trained on ad content. That is documentation rather than testimony, which is what law 1 has been short of. It does NOT say the creative decides who sees the ad, it does not rank the feature against the others, and it says nothing about avatars or scenarios. The avatar half of law 1 stays T3 on [[Meta Delivery & Andromeda#MD-001|MD-001]].
 One further architectural detail from the same post: "cross-attention learns user x ads interaction with long queries but short key/value", and the ads optimization tasks are named as CTR and CVR prediction.
 **The rest of this post is GPU infrastructure and was deliberately not banked.** Kernels, MXFP8 precision, 5D parallelism, NCCLX, model FLOPs utilisation of 20-25%, a 4x FLOPs scale-up in 12 months. Real engineering, no advertising consequence. Recording the discard so nobody re-reads 35,000 words expecting delivery claims.
-Sources: Engineering at Meta, GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model, 2026-08-03
-Last touched: 2026-08-24
+
+**2026-10-20.** Third T1 statement in the series, and the first to describe the pixels being read rather than naming ad content in a taxonomy. See [[Meta Delivery & Andromeda#MD-184|MD-184]].
+Sources: Engineering at Meta, GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model, 2026-08-03; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-121 - Hierarchical Interest Representation is a RESEARCH AREA, not a shipped delivery behaviour, and Meta's own framing of it names deep-funnel signal scarcity as the core problem
 Tier: T1 for the research programme and Meta's problem statement ONLY - Status: active
@@ -1810,8 +1818,10 @@ Tier: T1 for the sentence, T4 for the effect · Status: active
 **Why this is banked as its own claim.** The vendor-figure pattern in this codex has been a Google finding. [[Google Auction & Smart Bidding#GA-085|GA-085]], [[Google Auction & Smart Bidding#GA-086|GA-086]], [[Google Auction & Smart Bidding#GA-087|GA-087]] and GA-088 were all built from reading Google footnotes against Google sentences, and the standing rule that came out of it was "read the footnote before you read the sentence" on Google announcements. **Meta's post shows the same construction with no footnote to read at all, which is a worse position for a reader than Google's.** The rule generalises: on any platform announcement, find the population and the counterfactual before carrying the number, and when there is no footnote, the number is an illustration and not a measurement.
 
 **What we do with the 5%.** Nothing. Do not quote it to a client, do not put it in a deck, and do not use it to argue for or against adopting Meta's recommendations.
-Sources: Meta for Business, Advertising Week New York 2026, 2026-10-06, footnote presence verified absent across the full page
-Last touched: 2026-10-07
+
+**2026-10-20, the rule gets a sharper edge.** A Meta ads figure finally arrived with a footnote, and the footnote reads in full "Meta Internal Data, measured in February 2026" (see [[Meta Delivery & Andromeda#MD-184|MD-184]]). It names a data owner and a month, and no population, window, control or sample. **So the presence of a footnote is not the test. The presence of a population and a counterfactual is.** Fired again the same day on a page with no footnote at all: [[Attribution & Incrementality#AT-131|AT-131]], eleven numbers across four agency lift studies.
+Sources: Meta for Business, Advertising Week New York 2026, 2026-10-06, footnote presence verified absent across the full page; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-172 · Customer Lifecycle Strategy and the identical manual custom-audience exclusion are NOT behaviourally equivalent, and the operator claiming it has a learning-phase confound in his comparison
 Tier: T3 · Status: active
@@ -1888,8 +1898,10 @@ The sentence in full: "GEM has delivered 18.9% conversion improvement and 12% ad
 **This is a house construction, not an oversight.** [[Meta Delivery & Andromeda#MD-171|MD-171]] catalogues the unfootnoted platform-improvement figure as a Meta habit, and [[Meta Delivery & Andromeda#MD-162|MD-162]] records that Meta does publish experiment design in a footnote when it chooses to. The absence is a choice.
 **Against the previous generation.** [[Meta Delivery & Andromeda#MD-031|MD-031]] holds +5% conversions on Instagram and +3% on Facebook Feed for Q2 2025. The directions agree and the magnitudes are not comparable across the two posts.
 **The rule for us, unchanged by a bigger number.** An account inherits whatever share of a platform-wide average its own audience earns, and [[Meta Delivery & Andromeda#MD-090|MD-090]] carries Meta's own statement that the gains concentrate on heavy-engagement users. Never put 18.9% in front of a client as something their account will see, and never put it in a forecast.
-Sources: Engineering at Meta, GEM: Scaling the Central Model and Compute Engine for Frontier Ads AI, 2026-10-13, read in full
-Last touched: 2026-10-14
+
+**2026-10-20, and the pair is now unreconcilable in public.** Meta attributes +0.35% in conversions to GEM paired with the Adaptive Ranking Model and GenRecs Tokenization ([[Meta Delivery & Andromeda#MD-184|MD-184]]). This claim carries GEM's 18.9%. Two Meta posts, seven days apart, with GEM in both, two orders of magnitude apart, and neither states what the other is measuring. **Neither figure may go in front of a client and the pair may not go in a forecast.**
+Sources: Engineering at Meta, GEM: Scaling the Central Model and Compute Engine for Frontier Ads AI, 2026-10-13, read in full; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-178 · GEM's new Kunlun architecture doubles performance at the same compute and carries 2.5x the model complexity, and Meta names the cuts that paid for it
 Tier: T1 · Status: active
@@ -1898,8 +1910,10 @@ Kunlun replaces the InterFormer design banked at [[Meta Delivery & Andromeda#MD-
 **The efficiency moves, with Meta's own numbers where it gives them.** Block-aligned sparse attention replaces full self-attention and takes complexity from quadratic to linear in window size. Generalized Dot-Product Attention reformulates per-example feed-forward networks into attention operations so they share one GPU kernel, "delivering up to 2x forward speedup". Expert parallelism shards the cross-interaction experts so each GPU processes a subset. CompSkip selectively deactivates sequence modules per layer and routes only the residual: "we reduce FLOPS by 43% with negligible quality loss". OneSeq unifies heterogeneous user sequences chronologically after event-feature aggregation, because a purchase event is described by ad ID and account ID while a post event is described by actors and object ID, and the two cannot be merged at the data-source level.
 **The sentence to keep for law 1.** Meta defines its feature taxonomy as "non-sequence features (such as user demographics, ad content representations), and sequence features with a sequence of events". That is the second T1 statement placing the ad creative's representation in the model's first-class feature set, after [[Meta Delivery & Andromeda#MD-120|MD-120]], and the first to put it beside demographics inside a standing architecture definition rather than as a passing example.
 No operator lever here. Bank it because it dates the architecture and because the taxonomy is evidence.
-Sources: Engineering at Meta, GEM: Scaling the Central Model and Compute Engine for Frontier Ads AI, 2026-10-13, read in full
-Last touched: 2026-10-14
+
+**2026-10-20.** The taxonomy sentence banked here is now backed by a description of how the ad content representation is actually produced, from the ad's text and images. See [[Meta Delivery & Andromeda#MD-184|MD-184]].
+Sources: Engineering at Meta, GEM: Scaling the Central Model and Compute Engine for Frontier Ads AI, 2026-10-13, read in full; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-179 · Meta precomputes the user-ad score BEFORE the request needs it, and when the exact pair is missing it substitutes the user's own recent embeddings for the same ad group or borrows from behaviourally similar users
 Tier: T1 · Status: active
@@ -1909,8 +1923,10 @@ Two post-training systems in the 2026-10-13 post, and the second carries the onl
 **The degradation rule, quoted in full, because this is the operator-relevant part.** "When an exact user-ad embedding is unavailable, the system degrades rather than drops. It substitutes an aggregate of the user's own recent embeddings across the same ad groups, or borrows from behaviorally similar users."
 **What that settles and what it does not.** It settles that a user-ad pair with no history is not scored from zero: it inherits an aggregate at the ad-group level, and failing that, a behavioural neighbour's. It does not define "ad groups" in Meta's internal taxonomy, and that phrase is not an Ads Manager object, so nobody may map it onto ad sets or campaigns. It quantifies nothing: no share of requests served by either fallback and no accuracy cost for either. Do not build a structural rule on it.
 **Where it lands on an argument this codex has been running.** The fight at [[Meta Delivery & Andromeda#MD-067|MD-067]] and [[Scaling Models#SC-009|SC-009]] over new ads taking no spend has been argued with nothing on file about how Meta scores an ad it has never served. This is that missing middle, from Meta, and it describes borrowed intelligence rather than a cold start. It also pairs with [[Meta Delivery & Andromeda#MD-174|MD-174]]: both systems move foundation-model work off the live request, one into idle capacity and one into asynchronous background jobs, so they are two halves of the same budget.
-Sources: Engineering at Meta, GEM: Scaling the Central Model and Compute Engine for Frontier Ads AI, 2026-10-13, read in full
-Last touched: 2026-10-14
+
+**2026-10-20, the other half of the pair arrived.** This claim is the USER side of cold start. [[Meta Delivery & Andromeda#MD-185|MD-185]] is the ITEM side: an ad with no engagement inherits the representation of semantically similar items, stated to apply "even before anyone sees the new ad". Together they mean neither side of a user-ad pair is scored from zero. Still unquantified on both sides: no share of requests served by any fallback and no accuracy cost.
+Sources: Engineering at Meta, GEM: Scaling the Central Model and Compute Engine for Frontier Ads AI, 2026-10-13, read in full; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### MD-180 · Sequence length is its own scaling law: prediction quality follows a POWER LAW in how much engagement history the model reads, and larger models gain disproportionately from longer history
 Tier: T1 · Status: active
@@ -1972,3 +1988,153 @@ Three Marketing API out-of-cycle changes all dated 28 June 2026, read in full at
 **Where this sits in the existing record.** This file already holds Advantage+ creative enhancements as a category. These three are new members of it, and they are the first that modify the pixels and the audio of a supplied asset rather than arranging it, cropping it to a known ratio, or adding an overlay.
 Sources: Meta for Developers, 2026 Out-Of-Cycle Changes to Marketing API, entries dated 2026-06-28 (Image Animation, Video Filter, Video Uncrop) and 2026-06-01 (IG Audio Swap), read in full 2026-10-19
 Last touched: 2026-10-19
+
+### MD-184 · Meta replaced the per-item ID with a stable semantic vocabulary built from the ad's own text and images, and the only published outcome is +0.35% conversions
+Tier: T1 · Status: active
+Published 2026-10-19 and read in full. GenRecs Tokenization is the data layer under the generative
+ads stack: "Rather than maintaining a dedicated ID for every item, GenRecs Tokenization represents
+each item with a set of tokens from a stable semantic vocabulary." Scope is stated as every item
+type in the system, "including ads, products, pages, and pixels", across both retrieval and ranking.
+
+**How an ad becomes tokens, in Meta's own order.** "Pre-trained multimodal models read each ad,
+product, and page, including its text and images, and encode the items into an embedding that
+carries world knowledge. The tokenizer combines that content signal with representations learned
+from how people engage with the items, then quantizes the result into a short sequence of discrete
+tokens." The pipeline is three stages: **encode** the item into a semantic embedding space,
+**decompose** that embedding into independent subspaces, **quantize** by mapping each subspace to a
+codebook entry. For many ad representations Meta says it uses prefix n-grams combining a learned
+encoder, residual decomposition, learned vector codebooks and token parametrization.
+
+**The sentence that matters for law 1.** The model's representation of an ad is built from that ad's
+text and its images. This is the third T1 statement placing the creative's own content inside the
+first-class feature set, after [[Meta Delivery & Andromeda#MD-120|MD-120]] and
+[[Meta Delivery & Andromeda#MD-178|MD-178]], and it is the first that describes the pixels being
+read as an input rather than naming "ad content representations" in a taxonomy.
+
+**The number, and read it slowly.** "Paired with Meta's GEM and Adaptive Ranking Model, GenRecs
+Tokenization delivered a +0.35% lift in conversions." The footnote reads, in full: "Meta Internal
+Data, measured in February 2026." **Four defects, three of which the footnote creates rather than
+cures.** The attribution is joint across three systems, so no part of the 0.35% is separable to
+tokenization. The measurement is dated February 2026 and published in October 2026, an eight-month
+lag, with nothing said about whether it still holds. No population, no window, no control group and
+no sample appear anywhere. And a footnote exists this time, which is the first on a Meta ads figure
+this engine has recorded since [[Meta Delivery & Andromeda#MD-162|MD-162]], yet it names only the
+data owner and a month. **So the rule at [[Meta Delivery & Andromeda#MD-171|MD-171]] gets a sharper
+edge: the presence of a footnote is not the test, the presence of a population and a counterfactual
+is.** A footnote that says "internal data, February" satisfies nothing.
+
+**The magnitude is the other finding, and nobody at Meta draws attention to it.**
+[[Meta Delivery & Andromeda#MD-177|MD-177]] carries GEM's published 18.9% conversion improvement.
+This post attributes +0.35% to the trio including GEM. The two figures are not reconcilable, are not
+stated to be measuring the same thing, and sit two orders of magnitude apart. **Never put either in
+front of a client, and never put the pair in a forecast.**
+
+**One mechanism claim with no lever attached, banked because it is testable from outside.** Meta says
+tokenizer quality can be read without training a ranking model, on three intrinsic measures: cluster
+purity, distribution balance and codebook utilization. "Across the eight tokenizer versions we
+tested, we see a strong correlation between these intrinsic quality metrics and downstream ranking
+prediction accuracy." No correlation coefficient, no scatter and no sample size is published, so
+"strong" is unquantified. There is nothing here an advertiser touches.
+
+**What is NOT here.** No statement that an advertiser should change anything. No eligibility, no
+rollout scope, no surface list, no date on which tokenization reached any account. Treat it as a
+description of the machine, not a lever.
+Sources: Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
+
+### MD-185 · A new ad inherits the model's representation of semantically similar items BEFORE anyone sees it, and Meta now states cross-campaign transfer in its own words
+Tier: T1 · Status: active
+The item-side half of a mechanism this codex has only ever held from the user side. The 2026-10-19
+GenRecs Tokenization post, read in full.
+
+**The cold-start sentence, quoted.** "Because tokens describe what an item (e.g., ads, products,
+services, etc.) is, the model can relate an item it has never seen engagement for, to items it knows
+well. A newly launched 'trail shoe' inherits what the model has already learned about that category,
+rather than starting a new representation with no signal." And the timing, stated outright: "When a
+sportswear brand launches next season's trail shoe, tokenization lets the new product and its ads
+build on what the model learned from last season's shoe, **even before anyone sees the new ad.**"
+
+**Where it lands.** [[Meta Delivery & Andromeda#MD-179|MD-179]] holds Meta's only published cold-start
+path and it is user-side: a missing user-ad pair inherits an aggregate of that user's own recent
+embeddings, or a behavioural neighbour's. This is the item-side counterpart, and the two together
+mean neither side of the pair starts from zero. It also upgrades the evidence under
+[[Creative Science#CR-003|CR-003]], which has carried content-feature cold start since August on a
+single sentence from a different post; this one names the mechanism.
+
+**Cross-campaign transfer is now a T1 sentence.** "Enabling cross-campaign transfer: Semantic
+tokenization creates a stable vocabulary that allows the models to carry insights across campaigns
+for advertisers." [[Meta Delivery & Andromeda#MD-070|MD-070]] has carried that as a T3 practitioner
+assertion since August, that a proven asset keeps what it has learned when moved to another campaign.
+**The direction is now confirmed by Meta. The claim is not, and the difference is load-bearing.**
+Meta is describing the MODEL's representation of an item transferring across campaigns. MD-070 is
+about an ad object's delivery performance transferring. Those are different things, and a run that
+reads the first as proof of the second has mis-banked it. What is established is that the system does
+not treat the same product in a new campaign as a stranger. What is not established is that an ad
+object carries its own history, or that re-uploading a winner skips anything.
+
+**Where the benefit is claimed to concentrate, and it is not our book.** Meta names two beneficiaries.
+"Tokenization maximizes the efficiency of high-volume campaigns by uncovering deeper semantic patterns
+across their vast product catalogs", which is a large-catalogue e-commerce advertiser. And "For tail
+ads that accumulate fewer impressions, tokenization enables ads recommendation models to generalize
+across them via shared content structure, recovering cold-start performance". Its own forward-looking
+section says "Tail ad inventory is where semantic tokens contribute most and where advertiser impact
+is largest." **Our clients are local service businesses with a handful of services and no catalogue,
+so they sit in neither named group squarely.** The tail-ad argument is the closer of the two, since a
+four-figure monthly budget accumulates few impressions per ad. Nothing is quantified for either group.
+
+**The flywheel, asserted and unmeasured.** "By improving tail ad prediction quality, tokenization not
+only lets tail ads be ranked accurately, but also improves the training data, which then improves
+prediction quality for all ads." No figure, no window, no measurement of either leg.
+
+**Announced and not shipped, so nobody may plan on it.** Fully verbalized tokenization is stated to
+need "context windows that are impractical at ads scale", and Meta is "combining compacted verbalized
+tokens with semantic IDs". A single token space spanning text, image, audio and video across surfaces
+is described as exploration, in the conditional: "we are exploring whether".
+Sources: Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
+
+### MD-186 · "Generative recommenders" does NOT mean Meta retrieves or writes ads generatively, and Meta's own cited retrieval paper is titled "The Case Against Generation for Retrieval"
+Tier: T1 · Status: active
+A reading rule, and the sharpest thing found on 2026-10-20. Same shape as the scaling-axis rule at
+[[Auction Mechanics & Bidding#AU-085|AU-085]]: one word in a Meta post means something narrower than
+it reads.
+
+**The framing in the post.** "Generative Recommenders (GenRecs) represent a paradigm shift from
+scoring every ad to reasoning about ad content and user preferences together", and GenRecs "shifts
+our approach from scoring every individual ad candidate to leveraging LLM architecture".
+
+**The paper the post cites for that, in the same paragraph.** Under the words "Our work on LLM-native
+retrieval shows how far this can go", the post links arXiv 2607.25346. Its title is **"The Case
+Against Generation for Retrieval: Discriminative Language Models as Effective Retrievers"**, and two
+of its six authors, Carl Hu and Justin Johnson, are the first two authors of the blog post itself.
+Its abstract states that deploying LLMs "as generative recommenders or zero-shot rankers at web-scale
+remains bottlenecked by prohibitive computational overhead and grounding challenges", that it
+"revitalize[s] the classic, highly efficient two-tower retrieval architecture by adapting LLMs as
+semantic representation backbones **rather than generative engines**", and concludes that "the
+traditional two-tower paradigm remains an exceptionally competitive and practical solution for
+industrial retrieval systems". It reports internal production results as "substantial topline
+retrieval improvements along with high resilience to model staleness and superior data scaling",
+with no figure attached to any of the three.
+
+**So the resolution, and it is not a contradiction.** What is generative is the **representation**:
+items are described by composed semantic tokens instead of opaque IDs. The retrieval mechanism stays
+discriminative two-tower scoring. **Nothing in either source says Meta generates an ad, writes copy,
+or produces creative.** A run that carries "Meta is generative now" into a client conversation has
+invented a capability, and the clearest refutation is Meta's own citation.
+
+**Two further details from the cited stack, both abstracts read at source.** GR2 (arXiv 2602.07774,
+Meta authors) names **reranking** as a third stage distinct from retrieval and ranking, which this
+codex's cascade claims at [[Meta Delivery & Andromeda#MD-022|MD-022]] do not separate, and reports a
+failure mode worth knowing: "LLMs tend to exploit reward hacking by preserving item order" when
+rewarded on reranking. Its reported gains, +2.4% Recall@5 and +1.3% NDCG@5 over OneRec-Think, are
+offline benchmark metrics on two public datasets, not a deployed outcome, and must never be quoted as
+a performance figure. And the tokenizer is not text-only: arXiv 2607.10016 maps continuous numerical
+features and dense embeddings into the LLM embedding space as soft tokens, on three Amazon
+benchmarks, which is consistent with the post's "combines that content signal with representations
+learned from how people engage".
+
+**Guards.** The two arXiv papers document Meta-authored research, not necessarily shipped Meta
+production, and only the abstracts were read today. Benchmark deltas on public datasets say nothing
+about any ad account.
+Sources: Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20; arXiv 2607.25346, The Case Against Generation for Retrieval, abstract read at source 2026-10-20; arXiv 2602.07774, GR2: Generative Reasoning Re-ranker, abstract read at source 2026-10-20; arXiv 2607.10016, Tokenizing Numerical and Embedding Features for LLM RecSys, abstract read at source 2026-10-20
+Last touched: 2026-10-20

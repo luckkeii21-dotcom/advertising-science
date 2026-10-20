@@ -1340,5 +1340,66 @@ Google Ads API v26, released 14 October 2026. Release notes and announcement pos
 **Note what it measures.** `normalized_incremental_searches` and `search_lift_impressions` are search-behaviour outcomes, not purchases or leads. A Search Lift study answers "did the advertising make more people search", which is an upper-funnel question. It is not a substitute for an incremental cost per lead.
 
 **Eligibility is unstated.** Nothing in the release notes says which accounts or spend levels can run a Search Lift study, and lift studies on every other platform carry a spend floor. Our clients run four-figure monthly budgets, so the realistic expectation is that this is not available to them. **Worth one check before it is mentioned to anyone.**
-Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full via the Feedburner Atom content element
-Last touched: 2026-10-19
+
+**2026-10-20, the Meta counterpart is a marketing page rather than an API resource.** Meta published four agency lift studies the day before, with eleven numbers and no footnote, no sample, no window and no spend: [[Attribution & Incrementality#AT-131|AT-131]]. The contrast is the finding. Google shipped lift as 15 queryable metrics on a campaign resource; Meta shipped four case studies. Both carry an unstated eligibility floor and both need one check in a client account before anyone mentions them.
+Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full via the Feedburner Atom content element; Meta for Business News, "agencies-testing-incrementality", dated 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
+
+### AT-131 · Meta published four agency lift studies with eleven numbers and NO footnote, no sample, no window and no spend on any of them, and one is a car-dealership cross-channel read
+Tier: T1 for the sentences · Status: active
+Meta for Business News, "agencies-testing-incrementality", dated 2026-10-19, read in full 2026-10-20.
+Four agency cases, each a Meta lift study. Every number below was quoted verbatim from the page.
+
+**Tinuiti and DSW.** Campaign structure rebuilt to feed in-store sales alongside online tracking.
+"The new setup drove 23% more total purchases, 45% more purchases in stores, and a 15% better return
+on ad spend."
+
+**WPP Media and Parfums Christian Dior, Taipei.** Meta layered onto existing out-of-home. "Ad recall
+increased 10.2 points, the share of people who said they wanted to own the fragrance rose 7.7 points,
+and 3.9X lift in incremental sales."
+
+**C-4 Analytics and car dealerships, and this is the one on our book.** The question was whether Meta
+ads move search behaviour. "People who saw Meta ads looked at 7.67 times as many vehicle listing
+pages. They also generated 14% more paid search traffic."
+
+**AdYogi and Borosil.** "For the group that saw Meta ads, searches for Borosil by name more than
+doubled, up 2.2X. Unpaid search traffic rose 24%. Across all types of search combined, the lift was
+17%."
+
+**The evidence state, checked and stated plainly: no footnote present.** No asterisk note, no source
+note, no "Meta internal data" line, no study date, no sample size and no test duration appears
+anywhere on the page. No spend level is given for any of the four. The cases are agency-supplied, and
+agencies submit the tests that worked. **So this is the fifth Meta page in six weeks carrying
+numbers without a population or a window**, after [[Meta Delivery & Andromeda#MD-171|MD-171]],
+[[Meta Delivery & Andromeda#MD-177|MD-177]], [[Marketing Math & Unit Economics#MM-230|MM-230]] and
+[[Meta Delivery & Andromeda#MD-181|MD-181]]. Carry the direction, never the digits.
+
+**The one thing it does better than most Meta pages, and the limit of it.** The counterfactual is at
+least named: the method is described as comparing an exposed group against "a randomly selected
+control group", and the page states the principle as "when you look at the results of your ads, you
+should consider how much of this would have happened anyway". Randomised holdout is the right
+instrument and it is Meta's own tooling, so the design is better than an adopter-versus-non-adopter
+comparison. **What is still missing is every parameter of it**: holdout share, duration, power, and
+whether each quoted figure is the study's primary metric or one read off a panel of many. A lift
+number with no sample and no window cannot be checked and cannot be forecast from.
+
+**Why the dealership case is worth more to us than the other three.** We run two commercial truck
+dealerships on Meta, both reported on last-click. This is Meta's own published claim that its ads move
+downstream search behaviour, 7.67x vehicle listing page views and 14% more paid search traffic, for
+exactly our vertical. It is direction-only and the digits are unusable, but it is T1-adjacent support
+for the standing rule that a zero-lead last-click column is **no last-click leads attributed** and
+never evidence of waste. It also pairs with [[Attribution & Incrementality#AT-120|AT-120]], where a
+geo-tested vendor put 64% of Meta's incremental conversions on new-to-brand customers.
+
+**Where it sits against the rest of the lift record.** [[Attribution & Incrementality#AT-125|AT-125]]
+holds Meta's own statement that a Conversion Lift study reaches a reliable read in 2 to 3 weeks at
+holiday volume against 6+ weeks in a quiet quarter, and
+[[Attribution & Incrementality#AT-070|AT-070]] holds the ~$100,000-a-month gate on Meta's geo lift
+product. **This page names no eligibility floor at all, and four-figure monthly budgets are the whole
+of our book, so the realistic expectation is still that none of our clients can run one of these.**
+The page's closing line, "None of this required extra budget or new technology", is about the test
+rather than the account and should not be read as a statement that lift studies are available at any
+spend. **Worth one check in a client account before it is mentioned to anyone.** The Google
+counterpart banked the day before is [[Attribution & Incrementality#AT-130|AT-130]].
+Sources: Meta for Business News, "agencies-testing-incrementality", dated 2026-10-19, read in full 2026-10-20 at facebook.com/business/news/agencies-testing-incrementality
+Last touched: 2026-10-20

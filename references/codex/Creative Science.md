@@ -32,8 +32,10 @@ Last touched: 2026-08-20
 ### CR-003 · Semantic content features from foundation models let Meta rank new ads with no engagement history (cold start)
 Tier: T1 · Status: active
 Meta's multi-stage ranking architecture integrates semantic content features from foundation models specifically to support cold-start scenarios, meaning new ads or advertisers with limited historical engagement data. A fresh creative is scored partly on what it IS (content understanding), not only on accumulated engagement.
-Sources: Engineering at Meta, From User Sequences to Scaling Laws, 2026-08-05
-Last touched: 2026-08-18
+
+**2026-10-20, the mechanism behind this claim is now published.** GenRecs Tokenization describes how the content feature is built and why it transfers: tokens describe what an item is, so "the model can relate an item it has never seen engagement for, to items it knows well". See [[Meta Delivery & Andromeda#MD-185|MD-185]] and [[Meta Delivery & Andromeda#MD-184|MD-184]]. Meta also now names where the benefit concentrates, and it is tail inventory and large catalogues rather than any account: "Tail ad inventory is where semantic tokens contribute most and where advertiser impact is largest." Nothing is quantified.
+Sources: Engineering at Meta, From User Sequences to Scaling Laws, 2026-08-05; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### CR-004 · Meta's stated GEM roadmap is a multimodal whole-ecosystem model that ranks organic content and ads together and understands creative across text, image, audio, and video
 Tier: T1 · Status: active
@@ -3272,3 +3274,49 @@ correction [[Scaling Models#SC-009|SC-009]] reaches on the kill side. We do not 
 number on any client account and it is one breakdown away.
 Sources: Meta for Business News, Creative diversification at scale: how Nest builds for the way Meta technologies work now, dated 19 October 2026, read 2026-10-17
 Last touched: 2026-10-17
+
+### CR-287 · A deployed video-ad system published an online A/B for per-user GENERATED creative, and the honest read of its numbers is narrower than the headline
+Tier: T2 · Status: active
+Two arXiv papers on the same day, 2026-10-20, both arguing that a fixed set of pre-produced creatives
+is now the binding constraint on personalisation. Abstracts read at source. **Neither documents Meta
+and neither may ever be quoted as documentation of Meta.**
+
+**MAPS (arXiv 2610.25748), the one with a production number.** Four collaborating agents form a
+closed loop: user profile modelling, script generation, video synthesis, and feedback-driven
+refinement, with the script-writing agent trained by reinforcement learning against a
+multi-dimensional reward. Reported: "Online A/B experiments in a specific scenario in the Kuaishou
+advertising system show that MAPS improves CTR by 2.87%, CVR by 2.74%, and ARPU by 9.85% **over the
+generative baseline**."
+
+**The three words that change what those numbers mean.** The comparison is against a *generative*
+baseline, not against retrieval from a pre-produced set. So the paper's motivation is
+generation-versus-retrieval and its measurement is not. **Nothing here quantifies what generated
+creative buys over a human-made creative library, and a run that reports it that way has
+over-claimed.** What the A/B measures is one generation method against another.
+
+**What is still worth keeping.** ARPU moved 9.85% against CTR 2.87%, so roughly three quarters of the
+value landed downstream of the click rather than at the click. That is the same place our own
+arguments live: [[Auction Mechanics & Bidding#AU-097|AU-097]] puts a CPM-down, CPA-up account's loss
+in conversion rate and offer, not in targeting. A creative system that moves ARPU three times as hard
+as it moves CTR is being paid for match quality, not for attention.
+
+**NextAds (arXiv 2603.02137v2), the vision half, and it is T4.** A position paper proposing a
+generation-based paradigm with an agentic planning, generation, verification and reflection loop, plus
+creatives that "evolve across impressions through feedback-driven refinement and progressive
+storytelling". Its own stated result is mixed: exploratory experiments on "lightweight benchmarks,
+revealing both the promise and limitations of existing GenAI". **It is a research agenda, it decides
+nothing, and the T4 tier is the whole of its weight here.**
+
+**Guards, all load-bearing.** Kuaishou, a Chinese short-video platform, with its own auction, its own
+users and its own creative norms. Authors reporting on their own system. "A specific scenario" is
+undefined, and no sample size, test duration, spend level or vertical is published. The optimised
+metrics are platform CTR, CVR and ARPU, not an advertiser's cost per lead. **The percentages sit on
+someone else's baseline and must never be quoted to a client or used in a forecast.**
+
+**Why bank it at all.** Nothing to do this week. It dates the direction: two independent 2026 papers
+say the pre-produced creative set is the ceiling, and on the same day Meta published
+[[Meta Delivery & Andromeda#MD-184|MD-184]], which makes the creative's own content the model's
+representation of it. Three sources, one week, same direction, and
+[[Meta Delivery & Andromeda#MD-186|MD-186]] is the guard that stops it being read as Meta writing ads.
+Sources: arXiv 2610.25748, MAPS: A Multi-Agent Personalized Script-Driven Video Advertising System Enhanced by Reinforcement Learning, abstract read at source 2026-10-20 via cs.IR feed; arXiv 2603.02137v2, NextAds: Towards Next-generation Personalized Video Advertising, abstract read at source 2026-10-20 via cs.IR feed
+Last touched: 2026-10-20

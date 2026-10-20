@@ -724,8 +724,10 @@ Picked up on the arXiv cs.IR lane on 2026-09-02. Same handling rules as [[Auctio
 **TGR (arXiv 2609.00986), Tencent's generative recommendation framework, deployed across Tencent surfaces serving hundreds of millions of users.** Its stated motivation is that "industrial recommender systems typically rely on cascaded retrieval, pre-ranking, ranking, and reranking stages, whose separately optimized models limit scaling, fragment decision making, and lack semantic knowledge and reasoning". Reported A/B results include **"+3.57% CTR and +1.71% advertising revenue"** from its unified ranking model, fully launched on two of five tested surfaces.
 **The read, and it is a direction rather than a lever.** Everything this codex holds about Meta describes a cascade: retrieval, early ranking, late ranking, auction. Both papers say the industry is now spending its engineering budget on making that cascade less cascaded, by scaling one sequence model across it or by unifying the stages outright. Nothing in either paper changes an operating decision this week. What it changes is the expected direction of travel: **the parts of delivery an advertiser can address with settings keep shrinking, and the parts addressed by what the creative and the user history contain keep growing**, which is the same direction law 1a already points.
 **Guards, all of them load-bearing.** Different platforms, different markets, authors reporting on their own systems, and the optimised metrics are platform revenue and CTR rather than advertiser outcome. Percentage lifts on someone else's baseline mean nothing for our accounts and must never be quoted as an expectable gain. Abstracts read in full on 2026-09-02; the full papers were not read. A third paper the filter surfaced the same morning, CoGR (arXiv 2609.00638), was read and NOT banked: its ad-relevant content restates the cascade already documented at [[Meta Delivery & Andromeda#MD-022|MD-022]] and its contribution is LLM-generated keyword representations for search retrieval, which touches nothing we operate.
-Sources: ReST: From Language to Behavior, arXiv 2609.01240, abstract read 2026-09-02 via cs.IR feed; TGR: Tencent Generative Recommendation, arXiv 2609.00986, abstract read 2026-09-02 via cs.IR feed
-Last touched: 2026-09-02
+
+**2026-10-20.** Meta has now published its own axis list, "sequence length, training data, and model architecture", which includes the sequence axis this claim is about and omits parameter count. See [[Auction Mechanics & Bidding#AU-100|AU-100]].
+Sources: ReST: From Language to Behavior, arXiv 2609.01240, abstract read 2026-09-02 via cs.IR feed; TGR: Tencent Generative Recommendation, arXiv 2609.00986, abstract read 2026-09-02 via cs.IR feed; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### AU-085 · A deployed search-ads ranking model reports 90% of its gain from reorganising the INPUT and almost none from parameter count, and throws away 75.4% of its computation for a difference inside its own noise floor
 Tier: T1 · Status: active
@@ -744,8 +746,10 @@ Picked up on the arXiv cs.IR lane on 2026-09-04, full HTML read rather than the 
 **A consistency check the paper does not run, and it passes.** Revenue is RPM times impressions, so +3.09% RPM against +2.95% revenue implies impressions fell about 0.14%, which is flat. And +3.09% RPM against +2.07% CTR implies revenue per click rose about 1.0%. **So roughly two thirds of the revenue-per-impression gain came from more clicks and one third from better-paying clicks.** All three published numbers are mutually consistent.
 
 **Guards, all load-bearing.** Different platform, different market, authors reporting on their own system, and the optimised metrics are platform RPM and revenue rather than advertiser outcome. **The percentage lifts sit on someone else's baseline and must never be quoted to a client or forecast as an expectable gain.** Nothing here changes an operating decision this week. What it changes is one word in how we read this lane.
-Sources: UniCon: A Unified Context-Centric Modeling Paradigm for CTR Prediction, arXiv 2609.03290v1, full HTML read 2026-09-04 via cs.IR feed
-Last touched: 2026-09-04
+
+**2026-10-20, the axis distinction now has Meta on both sides of it.** This claim drew the distinction from Meituan's data. Meta's own 2026-10-19 post names three axes it is pushing and parameter count is not among them. See [[Auction Mechanics & Bidding#AU-100|AU-100]]. Absence from a product post is weak evidence about a roadmap, so this is corroboration of the reading rule and not of the flat-parameter finding.
+Sources: UniCon: A Unified Context-Centric Modeling Paradigm for CTR Prediction, arXiv 2609.03290v1, full HTML read 2026-09-04 via cs.IR feed; Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
 
 ### AU-086 · A manual bid is deliberately slow to update, so it breaks in BOTH directions whenever the future stops resembling the past
 Tier: T3 · Status: active
@@ -985,3 +989,28 @@ Picked up on the arXiv cs.IR lane on 2026-10-16. Same handling rules as [[Auctio
 **Guards.** Different platform, unnamed, authors reporting on their own system, and the optimised metric is the platform's "primary advertiser-value metric", which is not defined and is not our cost per lead. The 3.51% is a lift on someone else's baseline and must never be quoted as an expectable gain. The paper itself reports a failure case: "under a sensitivity backend, CASI does not outperform Singleton." Abstract read in full at source; the full paper was not opened, and this claim says nothing the abstract does not.
 Sources: arXiv 2610.20293v1, CASI: Credit Assignment via Set Intervention for Agentic Retrieval, submitted 2026-10-14, https://arxiv.org/abs/2610.20293, abstract read in full at source 2026-10-16
 Last touched: 2026-10-16
+
+### AU-100 · Meta names THREE scaling axes for the tokenized stack and parameter count is not one of them, which is the first Meta-side support for the axis distinction
+Tier: T1 · Status: active
+One sentence from the 2026-10-19 GenRecs Tokenization post, banked because it advances an open
+reading rule rather than because it changes a decision.
+
+**The sentence.** "A new way to scale: Across production ranking and retrieval, tokens bend the
+scaling curve along **sequence length, training data, and model architecture**."
+
+**Why it matters.** [[Auction Mechanics & Bidding#AU-085|AU-085]] opened the rule that this codex must
+stop treating "scaling" as one word, after a deployed search-ads system published 90% of its total
+gain at its smallest model and found parameter count nearly flat. That distinction was drawn from
+non-Meta evidence. **Meta has now published its own list of the axes it is pushing, and parameter
+count is absent from it.** Sequence length is the axis already carried at
+[[Meta Delivery & Andromeda#MD-180|MD-180]] with a power law attached. Training data and model
+architecture are new to the list. Nothing here refutes anything; it means the two sides of the
+distinction now both have T1 statements, and the rule stands: **when a source says scaling, ask which
+axis before carrying the claim.**
+
+**What is NOT established.** "Bend the scaling curve" is unquantified for all three axes. No curve, no
+exponent, no figure and no comparison between the three is published. Meta does not say parameter
+scaling is exhausted, only that it is not in this list, and absence from a product post is weak
+evidence about an engineering roadmap. No operating consequence this week.
+Sources: Engineering at Meta, GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary, 2026-10-19, read in full 2026-10-20
+Last touched: 2026-10-20
