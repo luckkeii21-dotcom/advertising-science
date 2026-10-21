@@ -1116,3 +1116,28 @@ exactly like a rotation.**
 pass, while against the SECOND pass it was 1 added and 1 removed. Which baseline a run diffs against
 decides whether it reports a change at all, so a day with two passes needs the pass named in the
 comparison.
+
+### Meta for Business News: the cumulative-slug check earned its place on the SECOND day it existed (2026-10-21)
+
+| Locale | Ceiling | Slugs | Against the 2026-10-20 baseline |
+|---|---|---|---|
+| `?locale=en_US` | **20 October 2026**, "The Team of One That Doesn't Look Like It" | 12 | **2 absent from yesterday's read, and they are two different things** |
+| `?locale=en_GB` | 10 September 2026, Instant Hydration spotlight | 12 | 0 new; all 12 slugs already in the cumulative set |
+
+**Yesterday's new rule was written for a 1-in-1-out diff. Today it had to adjudicate a 2-in diff, and
+it split the two items in opposite directions.** `muse-smb-jaeluxe-shoetique`, dated 20 October, had
+never appeared in either locale, so it is genuinely new and was opened and read in full.
+`meta-nest-ai-creative-diversification`, dated 19 October, was already in
+`slugs_seen_cumulative`, so it is a rotation card returning to view rather than a post we missed.
+
+**The consequence for the method is that a shelf diff cannot be counted, only classified.** A run
+that reported "2 new on the US shelf" today would be half wrong, and a run that applied the old
+rotating-module rule and reported 0 would be half wrong in the other direction. The cumulative set is
+what distinguishes them and it costs one lookup per candidate.
+
+**Do not quote the US-to-UK ceiling gap, which is 40 days today.** The 2026-10-08 and 2026-10-09
+entries already established that this number has read 0, 11, 26 and 28 days inside nine days and
+carries no information. It is recorded here only so a future run does not rediscover it as a finding.
+
+**Transport, 2026-10-21.** WebFetch on both locales, first attempt each, no browser. The
+`playwright` MCP server was available in session but was not needed.

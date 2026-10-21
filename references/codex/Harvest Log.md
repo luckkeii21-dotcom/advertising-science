@@ -3459,3 +3459,112 @@ generated creative against a human-made library, and CR-287 says so explicitly.
   and our book is neither.
 - **One cheap check created today:** AT-131 claims Meta ads move dealership search behaviour. We run
   two commercial truck dealerships and have never read a search-behaviour column on either.
+
+## 2026-10-21
+
+**1 transcript in, 2 claims banked, 4 merges, law layer untouched. Codex 1,385 to 1,387.** Wednesday,
+so the Monday-only lane was not due.
+
+**The day's one T1 item is a Google policy with a 2027 date, and the useful part of it is a
+denominator.** Google is adding a regulator-credential check on top of identity verification for
+financial-services advertisers in the US and Canada from early 2027 (GA-097). Its headline figure,
+more than 97% of ads people see already coming from identity-verified advertisers, is weighted by ads
+SEEN. Meta's 90%-by-end-2026 target at MD-149 is weighted by REVENUE. **Neither counts advertisers,
+both are dominated by the largest spenders, and a high figure on either is compatible with a large
+unverified tail of small advertisers, which is where our own book sits.** The 97% also carries the
+best-formed platform footnote this codex has logged in months, "Google Internal Data, US and Canada,
+Sept 1, 2025-Aug 31, 2026", and it still fails the population half of the MD-171 test.
+
+### 1. Harvest
+
+`lib/harvest.py daily` across all 12 roster channels. **1 new transcript, 0 errors.** 8 skipped short,
+2 no subtitles, 0 out of window, 0 listing failures, 0 RSS fallbacks. Ran 15:04:48 to 15:06:08 IST.
+Unextracted backlog 0.
+
+### 2. Watchlist
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | HTTP 200, 9 in feed, 0 new, build Tue 20 Oct 22:37 UTC |
+| Meta Newsroom (RSS) | HTTP 200, 10 in feed, 0 new, build Thu 15 Oct 10:31 UTC |
+| Google Ads & Commerce (RSS) | HTTP 200, 20 in feed, **1 new**, build Tue 20 Oct 15:00 UTC |
+| Google Ads Announcements | HTTP 200, 396 answer ids, 0 added, 0 removed |
+| arXiv cs.IR | HTTP 200, 26 in feed, 24 new links, **0 passed the ad filter**, build Wed 21 Oct 04:00 UTC |
+| TikTok SDK changelog | HTTP 200, unchanged at v0.1.8 |
+| Meta for Business News, `?locale=en_US` | 2 absent from yesterday's read; **1 genuinely new, 1 rotation** |
+| Meta for Business News, `?locale=en_GB` | 0 new, all 12 slugs already in the cumulative set |
+| TikTok Newsroom and for-Business blog | Geo-block, not retried, not an outage |
+
+**arXiv read after the rebuild, so the lag note does not apply.** Build Wed 21 Oct 04:00:16 UTC
+against a run at 09:35 UTC. 24 previously unseen links and **zero** of them advertising, which is the
+normal result for cs.IR and is reported as zero rather than padded.
+
+**The US shelf needed yesterday's new rule on its second day of existence, and the rule had to split a
+2-item diff in opposite directions.** `muse-smb-jaeluxe-shoetique` (20 Oct) had never appeared in
+either locale and was read in full. `meta-nest-ai-creative-diversification` (19 Oct) was already in
+`slugs_seen_cumulative`, so it is a rotation card. **A shelf diff on this source cannot be counted,
+only classified.** Method note appended to `Watchlist.md`.
+
+### 3. Claims
+
+**2 new.** GA-097 (Google Financial Services Verification in the US and Canada from early 2027, plus
+the ads-seen-versus-revenue denominator split against MD-149), SC-181 (the rationale under every
+testing-share number in the Scaling file: testing and current performance trade off directly, so the
+best available short-term result is always zero testing).
+
+**4 merges.** AU-023, AU-024, MD-035, LS-023.
+
+**The merge worth separating is AU-023, because it is a scope split that reads like a
+contradiction.** This claim records Meta's CMO saying impression supply is not capped, with growing
+total digital supply as the evidence. Heath now states the opposing mechanism affirmatively: Meta
+cannot meaningfully raise its own per-session ad load without users leaving, so supply "can't continue
+to increase which would decrease price". **Both hold, because they are different quantities.** Total
+digital advertising supply has grown, largely from outside Meta; Meta's own inventory is near its
+user-experience ceiling. Recorded as a scope split, not marked contested.
+
+**LS-023 was merged as a source date and nothing more, and the reason is the finding.** Heath restated
+the conversion-volume index for the third time in eight months, with the numbers freely substituted
+each telling: 20 conversions in an hour versus 2 months, 10 in 20 minutes versus 3 months, six a week
+taking a month. **A rule restated three times with different numbers is held by shape rather than by
+measurement**, which is the limit to attach whenever we quote it at a client who wants a weekly
+creative verdict on a thin account.
+
+### 4. Read and NOT banked
+
+- **"The Team of One That Doesn't Look Like It" (Meta for Business News, 20 Oct)**, read in full. The
+  one genuinely new post on the US shelf and it carries **zero performance figures**: no spend, no
+  ROAS, no revenue, no conversion lift. The only numbers in it are biographical (12 years in
+  business, store closed 2023, relaunched October 2025, 11 months of backlog, testing began September
+  2026). A qualitative Muse for Small Business case study. **Discarded as fluff, and the absence is
+  worth one line: a Performance Spotlight with no performance number is a different object from the
+  four agency lift studies banked at AT-131 yesterday.**
+- **The rest of the Ben Heath transcript.** 6,330 words, read in full, and most of it restates claims
+  already banked. The CPM demand-supply argument went to AU-023, the judge-on-ROAS reading to AU-024,
+  the equilibrium bound to MD-035, the conversion-volume index to LS-023. Discarded outright:
+  partnership ads as the highest-leverage lever (already CR-058, MM-022, MM-181), value rules as
+  underused (already AU-018 through AU-078, twelve claims), and the best-advertisers-have-higher-CPA
+  point (already AU-004, MM-081, MM-120).
+- **Two round numbers in the same transcript, both unsourced and both left out.** "Half of all the
+  time spent on a smartphone is spent on a Meta app" and "half of all advertising budget is spent on
+  Google and Meta". Neither carries a source, a year or a geography, and the Starbucks "$14,000
+  average lifetime value" alongside them is third-hand. **None of the three is load-bearing in his own
+  argument, so there is nothing to flag as unsupported; they are simply not evidence.**
+
+### 5. Gaps and open leads
+
+- **New lead: "Meta 1" / Meta One plans for businesses.** Heath calls it "a massive change to the way
+  businesses are going to use Meta for their marketing going forward" and points at his own video on
+  it. The Meta for Business announcement, `introducing-meta-one-plans-for-businesses` dated 15
+  September 2026, is in the cumulative slug set, so it has been SEEN on the shelf and there is no
+  claim in this codex about what it does. **Open item: read the announcement and Heath's video.**
+- **GA-097 creates one cheap read.** Google says it will publish accepted registries and required
+  credentials ahead of the early-2027 rollout, and the category boundary for "certain financial ads"
+  is unpublished. Nothing in it names vehicle finance. **Check once the country-specific guidance
+  lands, because two of our accounts sit next to lenders.**
+- **Still open and not touched today:** the Meta Q2 2026 earnings call transcript (logged
+  2026-10-20), the three Meta-authored arXiv papers read at abstract level only, the MD-180 question
+  about whether our own accounts' results differ by buyer platform-activity, and the AT-131 check on
+  whether dealership search behaviour appears in any column we read.
+- **SC-181 names the open quantity it cannot close:** no source in this codex has ever shown what a
+  given testing share costs the current period. Four testing-allocation numbers are on file and not
+  one of them has a measured price attached.
