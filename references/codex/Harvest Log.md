@@ -29,13 +29,13 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 
 **Two engine notes.** The 22 October run never produced an entry: its 00:31 launch died with an API connection refusal and the 13:41 relaunch wrote no log, so today's pass covers both days and the harvest window picked up the 21 October upload. And **this entry is PREPENDED**, which resolves the file-ordering defect raised in the 2026-10-21 teacher entry below, where the research lane had begun writing to the bottom of this file and was being read as silent at topic-lock.
 
-## 2026-10-23 (teacher run; no research entry exists for 22 or 23 October)
+## 2026-10-23 (teacher run; locked its topic at 14:05, before the research entry above was written)
 
 **Lesson 058 shipped: *The Better Number Was Already in the Column*. Video yes, Friday.** `video/2026-10-23-lesson-058.mp4`, 3m 22.0s, 12 scenes, silent typographic, 6.7 MB. HyperFrames check passed with 0 errors, 0 layout issues across 9 samples, 34/34 contrast checks at WCAG AA, 2 warnings both structural (file length, track density) and both carried by every lesson in this series. A twelve-frame contact sheet and a six-frame end-state sheet were read at the pixel level before filing.
 
 **Nothing shipped on 22 October, and the run logs say why.** `runs/2026-10-22/research-claude.log` holds one line, an API connection refused. The watchdog relaunched once at 00:31, then stood down four times. No lesson note, no teacher log, no Harvest Log entry. So 21 October's lesson 057 is followed directly by today's 058, and the lesson counter has no gap even though the calendar does.
 
-**Topic taken from the rotation at index 8, TikTok Delivery, in the ordinary way.** Both ends of this file were read at topic-lock per the defect recorded on 21 October, and both are quiet: the newest research entry at the bottom is 2026-10-21, and nothing was banked on 22 or 23 October. TikTok Delivery had been next in line for five consecutive lessons and the 21 October log named taking it as a requirement. Pointer advances 8 to 9, so Marketing Math & Unit Economics is next.
+**Topic taken from the rotation at index 8, TikTok Delivery, in the ordinary way.** Both ends of this file were read at topic-lock per the defect recorded on 21 October, and both were quiet at 14:05: the newest research entry was 2026-10-21, at the bottom of the file. **Today's research pass finished afterwards and its entry now sits above this one**, banking [[Creative Science#CR-288|CR-288]] and contesting [[Creative Science#CR-116|CR-116]]. None of that was available when the topic was chosen, so it goes untaught today and the next harvest-driven lesson should take it. The research lane also prepended this time, which closes the file-ordering defect. TikTok Delivery had been next in line for five consecutive lessons and the 21 October log named taking it as a requirement. Pointer advances 8 to 9, so Marketing Math & Unit Economics is next.
 
 **The lesson is the attribution window taught as two changes wearing one sentence.** [[TikTok Delivery#TT-028|TT-028]] carries the rep's own quote, "You'll always get better performance in the business when you run 7 click one day views", and the tier work is the spine: the quote is T3 and the operator reporting it says outright he has no data on whether it is true, while the incentive story beside it is T4 with no compensation document behind it. [[TikTok Delivery#TT-027|TT-027]] is the instrument, tiered T2 rather than T1 because the screen was walked through on camera and no TikTok document was quoted. The reporting half is shown at T2 ([[Attribution & Incrementality#AT-012|AT-012]]) and the delivery half, which is the half that moves money, sits mostly at T4 ([[Attribution & Incrementality#AT-076|AT-076]]). That asymmetry was taught out loud rather than smoothed over.
 
@@ -3622,3 +3622,37 @@ creative verdict on a thin account.
 - **SC-181 names the open quantity it cannot close:** no source in this codex has ever shown what a
   given testing share costs the current period. Four testing-allocation numbers are on file and not
   one of them has a measured price attached.
+
+## 2026-10-24
+
+**Zero transcripts, one source, four new claims. The whole day came from one Meta for Business best-practice post.**
+
+**YouTube harvest.** Ran 03:03:37 to 03:04:18. Errors none, 0 of 12 channels failed, **0 new transcripts**. skipped_short 3, no_subs 1, out_of_window 0, rss_fallback none. Every channel returned 0. No unextracted backlog.
+
+**Watchlist.** Meta Engineering 0 new (feed built 2026-10-20). Meta Newsroom 1 item, read, Forum group-admin tools, no advertising content anywhere in it, discarded. Google Ads & Commerce 1 item and arXiv 1 item passing the ad filter, **both already read and dispositioned on 2026-10-23** and resurfaced only because that run did not actually commit the cache (see Watchlist.md). TikTok SDK changelog unchanged at 0.1.8. Google Ads announcements 396 answer IDs, 0 added, 0 removed. Weekly Monday sources not due, today is Saturday, and the 2026-10-19 Monday run completed. TikTok Newsroom and for-Business blog unreadable, India geo-block, four working browser profiles in session and none of them helps.
+
+**Meta for Business News, the find.** US shelf read in the browser at `?locale=en_US`, plain fetch HTTP 400 again. One genuinely new slug at slot 1 on both the US and UK shelves: **"Peak Season 2026: You Don't Beat The Auction. You brief it.", Best Practice, dated 21 October 2026.** Read in full. Ceiling moves from 19 to 21 October 2026.
+
+**Claims banked, 4 new.**
+- **LS-089**, T1 for the sentence. Meta publishes the ad-set count formula, weekly budget / (cost per result x 50), and says most accounts exceed it. **It is the exact back-propagation Blue Sense Digital calls a mistake, so the LS-001 contest is now practitioner-versus-Meta.** Reconciled: forwards it caps ad set count, backwards it is LS-060.
+- **LS-090**, T1 for the sentences, T4 for the diagnosis. Every edit costs twice, the restarted learning phase plus the old instruction spending at full price the whole time it was wrong, and only the first appears on screen. This codex had never priced the cost of NOT changing. Prescription: batch the changes, one learning phase instead of five.
+- **MD-187**, T1 for the sentence. The optimisation event decides which creative wins, not only who is reached. "Same ads, same budget, different winner, because you changed what winning meant." **Measurement consequence: any creative before-and-after spanning an event change is void.**
+- **AT-132**, T1. Meta's three attribution settings defined side by side, standard counts what the ads touched, incremental what they added, custom the way the business counts it. Custom attribution appears nowhere else in the file. The auditable sentence is Meta's own: it is "the decision most likely to be inherited rather than chosen".
+
+**Merges, 2.**
+- **LS-001.** The first first-party performance number ever attached to the 50-conversion threshold, about 28% more expensive per purchase below it. Its whole footnote is "in our analysis". Carry the direction, never the digits.
+- **MD-171.** Sixth instance of the unfootnoted-Meta-figure pattern in seven weeks, and a new failure mode: **a superscript footnote marker with no footnote text anywhere on the page.** The 42% planned-to-spend-less against 4.2% actually-spent-more pair is kept as a direction only.
+
+**Discarded as fluff:** the Meta Newsroom Forum admin post, the post's closing product link.
+
+**Law layer:** updated. SKILL.md hot layer carries a 2026-10-24 lead paragraph.
+
+**Gaps noticed.**
+1. The 23 October run log claimed a cache commit that did not happen. Standing mtime check added to Watchlist.md.
+2. The 23 October log framed the TikTok lanes as "browser unavailable", which the 2026-10-15 ruling forbids. Corrected in Watchlist.md.
+3. The arXiv new-ID re-submission defect diagnosed on 2026-10-23 is still unfixed in `lib/watchlist_check.py`.
+4. "Promotion mode" still has no Google documentation.
+5. **Free check available on our own book:** run LS-089's formula on every client account, weekly budget over cost per opt-in times fifty, against the live ad set count. Turns a T1 sentence into an audit instrument.
+6. Zero YouTube uploads in the window. Not a fault, the roster simply did not publish.
+
+**Errors.** Harvest none. Watchlist none from the checker.

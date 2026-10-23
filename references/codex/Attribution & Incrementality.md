@@ -1403,3 +1403,19 @@ spend. **Worth one check in a client account before it is mentioned to anyone.**
 counterpart banked the day before is [[Attribution & Incrementality#AT-130|AT-130]].
 Sources: Meta for Business News, "agencies-testing-incrementality", dated 2026-10-19, read in full 2026-10-20 at facebook.com/business/news/agencies-testing-incrementality
 Last touched: 2026-10-20
+
+### AT-132 · Meta names its three attribution settings side by side and defines each in one line: standard counts what the ads TOUCHED, incremental counts what the ads ADDED, custom counts it the way the business already counts it
+Tier: T1 · Status: active
+**The definitions, verbatim:** "Standard attribution counts what the ads touched. Incremental attribution counts what the ads added. Custom attribution counts it the way your business already counts it. Those are three different numbers. If the one you optimise against isn't the one your finance team uses, you're reading a different campaign from the one you're running."
+
+**Why this is banked when [[Attribution & Incrementality#AT-001|AT-001]] through AT-006 already cover incremental attribution.** Everything on file about the incremental setting arrived through operators, mostly Andrew Faris and Blue Sense Digital, arguing about whether to switch and what the switch buys. **None of it is Meta stating the choice as a three-way selection with the third option named.** Custom attribution does not appear anywhere else in this file. The one-line definitions are also the cleanest statement of the distinction this codex holds, and they are quotable to a client, which almost nothing else in this topic is.
+
+**The two sentences that do the operating work.** First, "The attribution setting is how you agree to be judged", from the same post's brief framing, which puts attribution inside the campaign setup rather than inside reporting. Second, "It's the decision most likely to be inherited rather than chosen." **That is the auditable one.** On any account we take over, the attribution setting was chosen by whoever built it and almost certainly never revisited, and it is now the setting Meta itself flags as the most likely to be stale.
+
+**The circularity warning at [[Attribution & Incrementality#AT-003|AT-003]] still governs, and Meta's post does not mention it.** You cannot judge a change of attribution model from the column that model produces. The read-out for an attribution switch is store-level or CRM-level revenue over the switch window, not Ads Manager. Meta tells the operator the three numbers differ and does not tell them that comparing the three in-platform is reading the instrument against itself.
+
+**Our book, plainly.** We run lead-gen accounts where the finance number is a closed sale weeks downstream and the Meta number is an opt-in. Meta's finance-team sentence is the right instinct and the mapping is not available to us in-platform at all, which is why the CRM count is the one we report. That is already the standing rule and this post is first-party support for it.
+
+**Evidence state.** Definitions only. No number, no test, no statement of how the incremental model is fitted, and no eligibility floor named for any of the three.
+Sources: Meta for Business News, "you-dont-beat-the-auction-you-brief-it", Best Practice, dated 21 October 2026, read in full 2026-10-24 in the Playwright browser
+Last touched: 2026-10-24

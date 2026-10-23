@@ -1180,3 +1180,19 @@ no primary source exists to read.
 undocumented Google feature name**, after the 2026-10-12 entry that produced GA-076, GA-077 and
 GA-078. The pattern is worth naming: the teasers name features earlier than the docs publish them, so
 a named feature with no doc is a GAP TO CARRY, never a claim to bank.
+
+### A run log claiming the cache was committed is not evidence that it was (2026-10-24)
+
+The 2026-10-23 pass recorded "Cache committed by `watchlist_check.py`" under its watchlist table. It was not. `cache/watchlist-seen.json` still carried an mtime of 21 October 15:13 when today's run opened it, so three items the 23 October log had already read and dispositioned came back as new today: the Google Ads & Commerce holiday bidding teaser, the arXiv OneLatent re-submission, and a Meta Newsroom post on Forum group-admin tools.
+
+**No harm done, because all three were checked against the 23 October log before anything was banked and none of them was re-banked.** The cost was three lookups. The risk if it had gone unnoticed is worse than the cost: a re-surfaced item read fresh gets banked twice under two IDs, which is exactly the duplicate the merge protocol exists to prevent.
+
+**Standing check, and it is one line.** Before trusting the diff, compare the mtime of `cache/watchlist-seen.json` against the previous run's date. If the cache is older than the last completed run, treat every "new" item as unverified and check it against the previous run log before reading it as news. Run `watchlist_check.py --commit`, never the bare form, on a real pass.
+
+### The TikTok lanes are a geo-block and the 2026-10-23 log repeated the banned framing (2026-10-24)
+
+The 2026-10-23 run log recorded "TikTok Newsroom / blog: **Skipped: browser unavailable.**" That is the exact framing the 2026-10-15 pass-2 note rules out. The block is an India geo-block, verified 2026-08-19 across both the browser and curl on four paths each, and a browser does not move an egress. **A session with a working browser cannot check these sources either, so browser availability is not the reason and must not be named as one.** The honest line is the one already written into this file: TikTok policy and creative announcements are genuinely unmonitored until a non-India egress exists. Today's run had four working Playwright profiles and the TikTok lanes were still unreadable.
+
+### Both locale shelves carried the same new post on 2026-10-24, which the partition finding does not predict
+
+The 2026-09-20 locale-partition finding is that the US and UK shelves hold different catalogues, so a source can look quiet on one while the other has moved. On 2026-10-24 the new post, "you-dont-beat-the-auction-you-brief-it", dated 21 October 2026, arrived at **slot 1 on BOTH shelves**, and the UK shelf's only departure was `unlocking-the-value-of-q5marketing-for-mobile-game-developers`, the known slot-1 toggle. So a simultaneous arrival happens too, and reading one shelf would have found this post. **The partition rule still stands as a floor rather than a prediction: read both, because a one-shelf arrival is possible and a two-shelf arrival costs nothing extra to confirm.** A plain HTTPS fetch returned HTTP 400 again today, bare and with `?locale=en_US`, so the browser remains required for this source.
