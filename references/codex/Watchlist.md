@@ -1141,3 +1141,42 @@ carries no information. It is recorded here only so a future run does not redisc
 
 **Transport, 2026-10-21.** WebFetch on both locales, first attempt each, no browser. The
 `playwright` MCP server was available in session but was not needed.
+
+
+### arXiv dedup: the same paper can return under a NEW ID, not just a new version (2026-10-23)
+
+The filter passed 1 item today, *OneLatent: Latent Reasoning for Efficient Foundation Recommendation
+Models*, arXiv **2610.30675**, submitted 2026-10-22. It is the third arrival of one piece of work:
+
+| Arrival | ID | Title | Outcome |
+|---|---|---|---|
+| July 2026 | 2607.26621 v1 | *WhisperRec* | not seen by the engine |
+| 2026-09-30 | 2607.26621v3 | *OneLatent* (retitled) | banked as LS-084, T2 |
+| 2026-10-23 | **2610.30675** | *OneLatent* | duplicate, nothing banked |
+
+Same abstract, same numbers: 17.44% on SID@64, over 17x inference throughput, "an estimated 9.6%
+revenue lift" in Kuaishou's local-services advertising scenario.
+
+**Why the engine could not catch it.** The arXiv check diffs item LINKS against the seen cache. A
+version replace keeps the base ID and so is catchable; a re-submission under a new ID shares no link
+with anything cached and is indistinguishable from a new paper. **A title-level check would have caught
+this one** and costs nothing, since titles are already parsed for the keyword filter. Worth shipping
+into `lib/watchlist_check.py` as a normalised-title set alongside the link set, the same way the
+answer-href set diff was shipped on 2026-09-20.
+
+**Reading the abstract is still the only step that decided it**, which is now the third consecutive
+entry to reach that conclusion.
+
+### Google Ads & Commerce blog: a teaser named a feature with no documentation behind it (2026-10-23)
+
+The feed's one new item, *New bidding and budgeting tools can transform your upcoming holiday ad
+strategy*, published 2026-10-21, is a podcast announcement rather than a product post. It names
+**"demand-led budgeting"**, already banked as [[Google Auction & Smart Bidding#GA-077|GA-077]], and
+**"promotion mode"**, which the codex has never heard of. A support-doc search returned **no Google
+documentation for "promotion mode" at all**. Nothing banked, because the page states no mechanics and
+no primary source exists to read.
+
+**This is the second time an Ads & Commerce podcast teaser has been the thing that surfaced an
+undocumented Google feature name**, after the 2026-10-12 entry that produced GA-076, GA-077 and
+GA-078. The pattern is worth naming: the teasers name features earlier than the docs publish them, so
+a named feature with no doc is a GAP TO CARRY, never a claim to bank.

@@ -837,8 +837,12 @@ arXiv 2607.26621v3, *OneLatent: Latent Reasoning for Efficient Foundation Recomm
 **Three limits, and they are large.** Kuaishou is neither Meta nor Google, so this is evidence about what a platform at that scale finds worth building. The lift is labelled "estimated", with no absolute baseline, no window and no spend. And **a revenue lift for the platform is not an advertiser's cost per result** and must never be quoted as one.
 
 **Filter note for the watchlist.** The only bank-list term in the abstract is `advertis`, appearing once, in the second-to-last sentence. That is the outcome-clause shape recorded as a false-positive signature on 2026-09-07 and twice on 2026-09-25, and this one is a partial true positive: the deployment is genuinely inside an ad system while the method is not about advertising. Reading the abstract is again the only step that decided it, and it is a second counter-example against shipping the first-or-last-sentence rule as code, after [[Learning & Signal#LS-083|LS-083]].
-Sources: arXiv 2607.26621v3, OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models, arxiv.org/abs/2607.26621, abstract read in full 2026-09-30
-Last touched: 2026-09-30
+
+**THE SAME PAPER HAS NOW ARRIVED A THIRD TIME, UNDER A SECOND arXiv ID, 2026-10-23.** Today's cs.IR feed carried *OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models* as arXiv 2610.30675, submitted 2026-10-22. The abstract was read in full and it is the same work reporting the same numbers: 17.44% on SID@64 against the Think variant, over 17x online inference throughput, and the identical single sentence on "an estimated 9.6% revenue lift" in Kuaishou's local-services advertising scenario against OneRec and OneReason. **No claim changes and nothing new was banked.**
+
+**Recorded because the lineage is now a dedup problem.** This work has reached the watchlist as 2607.26621 v1 in July 2026 under the title *WhisperRec*, as 2607.26621v3 announced 2026-09-30 retitled *OneLatent*, and now as a fresh submission under a new ID. The watchlist diffs on item links, so **a re-submission under a new arXiv ID reads as a brand-new paper and will keep doing so**. Filter note added to Watchlist.md.
+Sources: arXiv 2607.26621v3, OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models, arxiv.org/abs/2607.26621, abstract read in full 2026-09-30; arXiv 2610.30675, OneLatent (same work, new submission), arxiv.org/abs/2610.30675, abstract read in full 2026-10-23
+Last touched: 2026-10-23
 
 ### LS-085 · A visitor purchase-propensity model sold on "80 plus% accuracy" is reporting the least informative number available for a three-bucket classifier on a skewed base
 Tier: T3 for the existence, T4 for the quality · Status: active
