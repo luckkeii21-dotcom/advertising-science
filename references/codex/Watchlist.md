@@ -28,6 +28,10 @@ So a link-set diff produces a 5-item false positive on this source. Read the dat
 
 **Transport note, 2026-09-10.** Earlier runs recorded HTTP 400 on a plain curl and moved this source to the browser. A plain HTTPS fetch answered fine today, so the 400 was not permanent. The page geo-renders in Hindi from our New Delhi egress; append `?locale=en_US` to read it in English, and never transcribe a number out of the machine-translated Hindi.
 
+**Transport note, 2026-10-25. WebFetch is a third working route, and it removes the browser from the critical path.** The Playwright MCP server failed to connect in this session, all four profiles, and a plain urllib fetch returned HTTP 400 on both the bare URL and `?locale=en_US`, re-verified today. WebFetch read the `?locale=en_US` shelf fine: twelve titles, twelve dates, twelve slugs. Route order from now on: plain fetch, then WebFetch, then the browser. A session with no browser is no longer a blind day on this source.
+
+**Date a post from its own page, never from its listing card (2026-10-25).** The card for `you-dont-beat-the-auction-you-brief-it` reads "October 22, 2026" on two separate fetches. The post's own page reads "21st October 2026". The 2026-10-24 run dated it from the post page and banked it as 21 October, which is the correct one. This extends the 2026-10-08 observation, where a card and a page differed only in date FORMAT, to a case where they differ in VALUE by a day. One day is enough to put a post in the wrong week of a report.
+
 ## Google
 
 | Source | URL | Method | Check |

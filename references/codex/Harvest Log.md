@@ -3656,3 +3656,34 @@ creative verdict on a thin account.
 6. Zero YouTube uploads in the window. Not a fault, the roster simply did not publish.
 
 **Errors.** Harvest none. Watchlist none from the checker.
+
+## 2026-10-24 (teacher run)
+
+**Lesson 059 shipped: *The Formula Only Needs One Number*. Video no, Saturday.** Weekday computed from the date before anything was written. Inbox empty, so no grading, fifty-seven for fifty-seven.
+
+Harvest-driven onto Learning & Signal off this morning's LS-089. Rotation pointer HOLDS at 9, Marketing Math & Unit Economics, which is now owed a rotation-taken lesson across two consecutive days.
+
+**The lesson did gap 5 above rather than only teaching it.** Left side of LS-089's formula run off filed weeklies: the formula allows 1.90 ad sets on SJR Commercial, 1.90 on Phoenix Truxx, 0.36 on StayWell and 0.34 on ChiroWorks. Not one of the four is allowed two. LS-060's prediction holds on our whole book. Right side, the live ad set count, still unverified and now the cheapest open item on the scoreboard.
+
+**One finding for LS-089 itself: the formula reduces to weekly results over fifty.** Weekly budget over cost per result is weekly results by definition, so two of the three published inputs cancel. The three-input form is a correct quote and a misleading instrument, because it reads as though budget were a lever inside it. The reduced form also makes the forwards-only ruling self-evident: with no budget term left, the backwards use is a different formula rather than a different reading.
+
+**Carried defect, third day: the Harvest Log still has two write ends.** The research lane wrote its 2026-10-24 entry at the BOTTOM of this file while 2026-10-23 sits at the top. Topic-lock read both ends plus `runs/2026-10-24-research-log.md` to be safe. Flagged 21 October, still unfixed.
+
+
+## 2026-10-25
+
+**Nothing new. 0 transcripts, 0 watchlist items, 0 claims.** Twelve roster channels listed clean, 4 uploads under the 150-second floor, 1 with no subtitles. Every automated source returned HTTP 200 with zero new links: Meta Engineering, Meta Newsroom, Google Ads & Commerce, Google Ads announcements (396 answer ids, 0 added, 0 removed), TikTok SDK changelog (still v0.1.8). arXiv cs.IR publishes no feed on Saturday or Sunday and declared the skip itself. Weekly (Mon) sources not due, today is Sunday, and the 2026-10-19 Monday run completed. TikTok Newsroom and for-Business blog not retried: India geo-block, permanent, not an outage.
+
+**Meta for Business News read in full and the ceiling has not moved.** Twelve slugs on the `?locale=en_US` shelf, byte-identical to the 2026-10-24 set, 0 added and 0 removed against a 31-slug cumulative. Slot 1 is still the 21 October Peak Season post banked yesterday. The bare URL was read as well: India shelf, Hindi, ceiling still 10 September 2026.
+
+**Two instrument findings, both filed to [[Watchlist]], neither a codex claim.**
+1. **WebFetch is a third working route to Meta for Business News, and it takes the browser off the critical path.** Playwright MCP failed to connect this session on all four profiles, and a plain urllib fetch returned HTTP 400 on the bare URL and on `?locale=en_US`, re-verified today rather than assumed. WebFetch read titles, dates and slugs without trouble. Route order from now on: plain fetch, then WebFetch, then the browser.
+2. **A listing card and the post's own page disagree on the publication date by one day.** The card for the Peak Season post reads "October 22, 2026" across two separate fetches; the post page reads "21st October 2026". Yesterday's run dated it from the post page and banked 21 October, which is the right one. The 2026-10-08 note had card and page differing only in date FORMAT. They can differ in VALUE. Date a post from its own page.
+
+**Law layer:** untouched. Nothing moved at law level.
+
+**Gaps noticed.** No new ones. The six carried from 2026-10-24 all stand, including the unfixed arXiv new-ID re-submission defect in `lib/watchlist_check.py` and the live-ad-set-count check against LS-089's formula, still the cheapest open item on our own book.
+
+**Carried defect, fourth day: this file still has two write ends.** The research lane writes at the bottom, the teacher lane at the top. This entry is at the bottom, consistent with the research lane. Flagged 21 October, still unfixed.
+
+**Errors.** Harvest none. Watchlist none from the checker. Playwright MCP unavailable, worked around rather than logged as a blind day.
