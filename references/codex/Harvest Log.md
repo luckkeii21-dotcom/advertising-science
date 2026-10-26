@@ -9,6 +9,21 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-10-25 (teacher run)
+
+**Lesson 060 shipped: *The Tighter Ceiling Is Always the Same One*. No video, Sunday.** Inbox empty for the fifty-eighth consecutive run that executed, so no grading and no influence on the topic.
+
+**Topic taken from the rotation at index 9, Marketing Math & Unit Economics, in the ordinary way.** This morning's research pass reached every source and banked nothing, so there was no harvest to teach. Marketing Math had been next in line across lessons 058 and 059 and was owed. Pointer advances 9 to 0, which **closes the second full cycle of the ten topics**, opened at lesson 026 on 2026-09-14. `lesson_counter` 60 to 61.
+
+**The lesson is yesterday's ceiling meeting a second one, and the two of them produce a constant.** [[Marketing Math & Unit Economics#MM-019|MM-019]] (T3, four independent operators, no shown test) puts a floor under each ad set at 1x the target cost per result per day. The count that floor allows is daily spend over cost per result, which **is daily results by definition**, so both published inputs cancel exactly as they did in [[Learning & Signal#LS-089|LS-089]] yesterday. LS-089 reduces to weekly results over fifty. Daily results is weekly results over seven. **So the budget ceiling is looser than the signal ceiling by exactly 50/7 = 7.1429, on every account, at every budget, at every cost per result, with no input left in the ratio to vary.** Verified on all four filed weeklies: budget allows 13.57 ad sets on SJR Commercial, 13.57 on Phoenix Truxx, 2.57 on StayWell and 2.43 on ChiroWorks, against 1.90, 1.90, 0.36 and 0.34 from the signal side. **The operating rule: affordability is the wrong question on every account we run.** The reduced form belongs in MM-019 itself, the same edit LS-089 received on 24 October; filed to the scoreboard for the research lane.
+
+**One hole stated in the lesson rather than smoothed over.** The budget column substitutes ACTUAL cost per opt-in for TARGET cost per opt-in, because no client has ever handed us a target. [[Marketing Math & Unit Economics#MM-015|MM-015]] bars borrowing one from another vertical, so it cannot be inferred. Noted with its counterintuitive direction: a target below what we currently pay makes the budget ceiling LOOSER, since each ad set needs less daily rent, while the signal ceiling does not move at all.
+
+**[[Marketing Math & Unit Economics#MM-018|MM-018]]'s markup convention is taught and off the queue after thirteen days held.** It lands as the second half of the lesson, a denominator discipline: MM-019 itself states its floor at two denominators doing two different jobs, per day for whether the account can learn and per month at 1x the offer price for whether the month produces one sale at all. [[Marketing Math & Unit Economics#MM-210|MM-210]]'s conversions are taught with it, and MM-018's own "5x markup" on a $10 cost sold at $50 is used as the live example of the bug inside our own codex. Residual: MM-018's heading still names no convention, which is a one-line research-lane edit.
+
+**Carried defect, fifth day: this file still has two write ends.** Both ends were read at topic-lock plus `runs/2026-10-25-research-log.md`. The research lane wrote its 2026-10-25 entry at the BOTTOM again while 2026-10-23 sits above this one. A pointer line has been appended to the bottom entry so the lesson is findable from either end, which is a patch and not the fix. Flagged 21 October, still unfixed.
+
+
 ## 2026-10-23 (research run; covers the 22 October gap, which never ran)
 
 **1 transcript in, 1 new claim, 4 merges, and the day's real finding is a UNIT error inside a counter-example.** Jon Loomer, *When Does Frequency Lead to Creative Fatigue*, 2026-10-21, 1,175 words, read in full. New: [[Creative Science#CR-288|CR-288]]. Merged into [[Creative Science#CR-116|CR-116]] (status active to **contested**), [[Creative Science#CR-027|CR-027]], [[Meta Delivery & Andromeda#MD-051|MD-051]] and [[Learning & Signal#LS-084|LS-084]]. Watchlist: 1 duplicate paper, 1 undocumented Google feature name, nothing else moving.
@@ -3689,3 +3704,76 @@ Harvest-driven onto Learning & Signal off this morning's LS-089. Rotation pointe
 **Errors.** Harvest none. Watchlist none from the checker. Playwright MCP unavailable, worked around rather than logged as a blind day.
 
 **Second pass at 15:27, and it confirms the morning read rather than extending it.** The 03:40 run finished at 03:48; the launcher fired again at 15:24, so the day was re-read twelve hours later. Harvest: 0 new across the same twelve channels, 2 uploads under the 150-second floor, 0 without subtitles, 0 errors. Watchlist: all six automated sources HTTP 200, 0 new links, Google Ads announcements still 396 answer ids, TikTok SDK still v0.1.8, arXiv still declaring the Sunday skip. Meta for Business News re-read end to end: the same twelve slugs in the same order, slot 1 still the 21 October Peak Season post. Nothing was committed to the cache on this pass because nothing differed from the morning commit. The new route order earned its keep: plain fetch returned HTTP 400 again, WebFetch read the shelf, and Playwright was down on all four profiles for the second time today.
+
+**Teacher lane, same day:** Lesson 060 shipped, *The Tighter Ceiling Is Always the Same One*, taken from the rotation at index 9 because this run banked nothing. Full entry at the TOP of this file under `## 2026-10-25 (teacher run)`.
+
+---
+
+## 2026-10-26 (Monday) · 0 transcripts in · 1 claim added, 0 merged, 0 contested · weekly lane ran
+
+⚠ **GOOGLE IS FLIPPING A DEFAULT WE RELY ON, AND IT OVERRIDES A SWITCH THE ADVERTISER ALREADY SET. Deadline 4 December 2026, 39 days out.** From that date every newly created Performance Max campaign ships with landing-page image extraction ON, across the API, the Google Ads UI and Editor, **even on accounts where Dynamic Image Extensions is turned off at account level**. Campaigns stop inheriting the account switch, so the switch keeps reading Off and stops governing anything new. Google scans the landing pages we give it for high-resolution images and runs them as creative on Search, YouTube, Display, Discover, Gmail and Maps, and puts the image-rights burden in writing on the advertiser. Banked as [[Google PMax & Shopping#GP-051|GP-051]], T1. **Action, and it is small: any Performance Max campaign we create from 4 December must set `GENERATE_IMAGE_EXTRACTION` explicitly instead of relying on the account setting.** The API trap that comes with it: `asset_automation_settings` is a repeated field and a write replaces the whole array, so a naive opt-out clears `TEXT_ASSET_AUTOMATION` along with it.
+
+### YouTube harvest
+
+`lib/harvest.py daily`, 15:01:31 to 15:02:46. **0 new transcripts, 12 of 12 channels listed, zero errors.** 3 uploads under the 150-second floor, 3 with no subtitles available, 0 out of window, no RSS fallback. Per channel all zero. **Fourth consecutive day the roster published nothing long enough to transcribe.** Not a fault, and long enough now to say the pattern rather than the day. Backlog verified empty: 489 transcripts in `wiki/sources/transcripts`, 0 carrying `extracted: false`.
+
+### Watchlist, daily lane
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 9 items, 0 new. Feed built Tue 20 Oct 2026 |
+| Meta Newsroom (RSS) | 10 items, 0 new. Feed built Thu 22 Oct 2026 |
+| Google Ads & Commerce (RSS) | 20 items, 0 new. Feed built Wed 21 Oct 2026 |
+| arXiv cs.IR (RSS) | Today's build, 20 items, 17 not seen before, **0 past the advertising filter** |
+| TikTok Business API SDK changelog | Top version 0.1.8, baseline 0.1.8, unchanged |
+| Google Ads announcements | 396 answer ids, 396 cached, 0 added, 0 removed |
+| Meta for Business News | 12 slugs, 0 added, 0 removed. Ceiling unchanged, fourth flat day |
+| TikTok Newsroom / for-Business blog | Not retried. India geo-block, permanent. **TikTok product and policy news is unmonitored and is not logged as clean** |
+
+The arXiv read is worth one line because it is the good case rather than the documented empty one. The run fired at 15:05 IST, 09:35 UTC, **after** the 04:00 UTC rebuild, so it read Monday's own build. 17 unseen papers, none about advertising. That is the normal result for cs.IR and is not the Monday-empty-feed case, which only applies to a run before 04:00 UTC.
+
+### Watchlist, weekly (Monday) lane
+
+Last weekly read was 2026-10-19, so all of them were due.
+
+| Source | Result |
+|---|---|
+| Google Ads API release notes | **UNCHANGED** on the version-heading key. v26 still newest, 2026-10-14, already banked |
+| Google Ads Developer Blog | **2 new posts**, both read in full. One banked (GP-051), one deliberately not |
+| Merchant Center changelog | **CHANGED.** 80 answer ids against 79, one added, read in full, deliberately not banked |
+| Meta Marketing API changelog | **UNCHANGED.** v26.0 latest, all three version dates identical to 10-19 |
+| Meta Graph API changelog | **UNCHANGED.** Newest v26.0, 29 July 2026, 14 versions |
+| Meta Advertising Standards | **UNCHANGED on both locales, and now reproducible.** All 32 section hashes byte-identical |
+| AI at Meta blog | **UNCHANGED.** Newest post 27 July 2026, 91 days flat, zero ads content |
+| Meta out-of-cycle shelf (occ-2026) | **UNCHANGED** since the 10-19 full read. Still Updated: Oct 22, newest entry 22 Oct |
+
+**Two items were read in full and deliberately NOT banked, which is a decision and not an omission.** *Announcing beta launch of Display & Video 360 API v5* (2026-10-22): advertiser-level YouTube exclusions, Digital Out of Home insertion orders, refactored Demand Gen audience targeting, and Customer Match management removed in favour of the Data Manager API. No client of ours runs DV360. *New warranty attribute for products targeting Canada* (October 2026): under Quebec Bill 29, merchants selling certain new electronics and household appliances must show a mandatory legal warranty duration near the price, including in digital ads, and Merchant Center added an optional `[warranty]` attribute for Canadian Shopping ads and free listings, with display beginning later this year. No client of ours sells into Canada and none runs Shopping or free listings.
+
+### Law layer
+
+**Updated, and this is the first law move since 2026-10-24.** GP-051 is T1, dated, and lands on law 1a's axis, so the hot layer in `SKILL.md` gained one paragraph and law 1a gained one. **The new wrinkle, stated separately because the existing law does not cover it: a control can be ORPHANED rather than withdrawn.** The 2026-09-09 paragraph under law 1a is about four hard controls being taken away at ad-set level, which is visible. Google's version is quieter: the account switch stays on screen, stays reading Off, and new campaigns stop inheriting it. **Reading a setting is no longer proof it applies. Ask what inherits it.**
+
+### Three instrument findings, all filed to [[Watchlist]]
+
+None is a codex claim. They are about our reading instruments, not about how advertising systems work.
+
+**The Advertising Standards per-section hash is now reproducible, and the method was never written down.** A reimplementation that slices from after the heading and trims whitespace returned 16 mismatches against the 2026-10-12 map on a page that had not changed, which reads exactly like a silent policy rewrite. Four boundary variants were run against the live page. **Only start-AT-heading, untrimmed, reproduces the baseline, and it reproduces all 16 char counts and all 16 hashes exactly.** The boundary rule is now written into the Watchlist so the next implementation cannot miss it.
+
+**The same page's TOTAL character count is a guaranteed false positive.** US read 32,611 against 32,505 cached, UK 33,693 against 33,587, **both +106 exactly, with all 32 section hashes holding.** The delta is page chrome outside the first and last section, the same 106 characters the 2026-09-28 note recorded moving the other way. Diff the sections, never the length.
+
+**Browser profiles fail independently, and WebFetch is not a full substitute.** `playwright` and `playwright-arcads` timed out at 30 seconds again. `playwright-metatech` connected first try and drove every Meta source this run. Yesterday's note concluded the browser was down after four profiles failed together; today proves that conclusion needs re-testing per profile, because **WebFetch renders the Marketing API changelog version table correctly and silently omits the occ-YYYY shelf links the browser shows on the same page**, the shelf that produced four claims on 10-19.
+
+### Gaps
+
+Six carried, none closed, one narrowed.
+
+- The arXiv new-ID re-submission defect in `lib/watchlist_check.py`, diagnosed 2026-10-23. Still unfixed. The `last_build` field in the cache is also stale at 17 September while `last_checked` tracks correctly.
+- The live ad set count on every client account, still unverified against [[Learning & Signal#LS-089|LS-089]]'s formula. Cheapest open item on our own book, now five days old.
+- `occ-2025`, `occ-2024` and `occ-2023`, three years of T1 Meta platform documentation, unread. **Narrowed only in the sense that the browser was proven available today, so the instrument excuse is gone.**
+- "Promotion mode" still has no Google documentation.
+- TikTok product and policy news, geo-blocked, genuinely unmonitored.
+- **Carried defect, fifth day: the Harvest Log has two write ends.** Research writes at the bottom, teacher at the top. This entry is at the bottom, consistent with the research lane. Flagged 21 October, still unfixed.
+
+### Errors
+
+Harvest: none. Watchlist checker: none, all HTTP 200. Plain fetch returned HTTP 400 on all seven Meta hosts, re-tested rather than assumed, which is the documented behaviour. Playwright `playwright` and `playwright-arcads`: CONNECT_TIMEOUT, worked around on `playwright-metatech`. `plugin:pdf-viewer:pdf` and `rizzdial` also failed to connect; neither is a research source. No source went unread this run.

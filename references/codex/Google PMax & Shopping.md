@@ -458,3 +458,27 @@ Google Ads API v26, 14 October 2026, release notes read in full at source. This 
 **The operating read, stated honestly.** This is a plausible fit for a single-location service business with one Google Business Profile and one primary service, which describes a chiropractic clinic better than it describes a truck dealership selling several body types. **It is also a tightly bounded campaign type: one per account, one listing, a locked goal and an unpublished category list.** Nothing in the release notes says it performs, and no cost, lead-volume or comparison figure appears anywhere, so there is no basis here for recommending it over a standard Search campaign. The next step is a category-list check against the verticals we actually serve, not a build.
 Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full
 Last touched: 2026-10-19
+
+### GP-051 · From 4 December 2026 Google turns landing-page image extraction ON by default for every NEW Performance Max campaign, and the campaign default overrides the account-level off switch
+Tier: T1 · Status: active
+Google Ads Developer Blog, "Upcoming changes to image extraction in Performance Max campaigns starting December 4, 2026", dated 21 October 2026, read in full at source.
+
+**What changes, in Google's words.** "Starting December 4, 2026, image extraction (`GENERATE_IMAGE_EXTRACTION`) will be enabled by default (`OPTED_IN`) for newly created Performance Max campaigns across Google Ads interfaces, including the the Google Ads API, Google Ads UI, and Google Ads Editor." Image extraction has Google scan the landing pages you supply for high-resolution images and use them as creative "across Search, YouTube, Display, Discover, Gmail, and Maps". Existing campaigns keep whatever they are set to now.
+
+**The sentence that matters more than the default itself.** "Crucially, this new campaign-level default applies even if Dynamic Image Extensions are disabled at the account level (`isImageExtractionAdExtensionEnabled`). Previously, campaigns left unset inherited their status from this account-level setting." **An account-level off switch that an advertiser already set, deliberately, stops governing new campaigns on 4 December.** Nobody gets a prompt, because the campaign simply stops inheriting. This is the same shape as [[Google Auction & Smart Bidding#GA-066|GA-066]] on Google and [[Meta Delivery & Andromeda#MD-128|MD-128]] on Meta: an automation ships on, and the control that used to hold it off quietly stops reaching it.
+
+**Where it is set and the trap in setting it.** The field is `campaign.asset_automation_settings`, with `AssetAutomationType.GENERATE_IMAGE_EXTRACTION` and `AssetAutomationStatus.OPTED_IN` or `OPTED_OUT`. **`asset_automation_settings` is a repeated field and an update REPLACES the entire array rather than merging into it.** So an opt-out written naively onto a live campaign silently clears every other entry, `TEXT_ASSET_AUTOMATION` included. Read the current array, add the opt-out to it, write the whole thing back. Google's own audit query:
+
+```
+SELECT campaign.id, campaign.name, campaign.asset_automation_settings
+FROM campaign
+WHERE campaign.advertising_channel_type = 'PERFORMANCE_MAX'
+```
+
+A campaign with no `GENERATE_IMAGE_EXTRACTION` entry is currently inheriting from the account, which means it is one of the campaigns the 4 December default will capture if it is recreated after that date. The UI path to the account-level switch, for checking the old setting: Campaigns, Assets, the three-dot More menu, Account-level automated assets, three-dot menu again, Advanced settings, then read whether Dynamic images is On or Off.
+
+**The operating read, and it is a rights question before it is a performance question.** Our entire book is local service businesses, and their landing pages carry client-supplied photography, licensed stock and, on the pages we build, composited ad creative. An automation that lifts whatever sits on the page into live ads on six Google surfaces is a brand-control exposure first. Google explicitly puts the legal burden on the advertiser: "confirm that you own all legal rights or permissions to the images published on your landing pages and allow Google to utilize them for commercial and advertising purposes." For the clinic accounts the exposure is sharper than rights, because a page image that is fine as a page image can be an ad violation: we have a disapproval on file for a before-and-after image used in an ad.
+
+**No performance number appears anywhere in the post.** No lift, no sample, no comparison against campaigns without it. So there is no evidence basis for leaving it on, and none for turning it off either; the decision is made on creative control and on image rights, not on expected performance. **What this does buy is a dated deadline: any PMax campaign we create from 4 December 2026 onwards must state its image-extraction status explicitly rather than rely on the account setting.** Related: [[Google PMax & Shopping#GP-012|GP-012]], where "automatically created assets OFF" is already load-bearing for the feed-only PMax structure, and URL expansion is named as the other setting that silently rebuilds asset groups.
+Sources: Google Ads Developer Blog, "Upcoming changes to image extraction in Performance Max campaigns starting December 4, 2026", 2026-10-21, read in full from the Feedburner feed body
+Last touched: 2026-10-26
