@@ -9,6 +9,26 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-10-26 (teacher run)
+
+**Lesson 061 shipped: *Two Identical Requests Do Not Get the Same Machine*. Video yes, Monday.** Inbox empty for the fifty-ninth consecutive run that executed, so no grading and no influence on the topic.
+
+**Topic taken from the rotation at index 0, Meta Delivery & Andromeda, in the ordinary way.** Both ends of the Harvest Log were read. The newest research entry is 2026-10-25 at the bottom of the file and it banked zero. Today's research lane launched in the same second as this one and had written no entry at topic-lock, so there was no harvest to teach. Pointer advances 0 to 1, which **opens the third full cycle of the ten topics**. `lesson_counter` 61 to 62.
+
+**The lesson is five T1 claims that together say the amount of thinking your ad gets is not a constant.** [[Meta Delivery & Andromeda#MD-119|MD-119]] (T1, Meta engineering 5 Aug 2026): the user embedding is precomputed, cached and built with no knowledge of any particular ad candidate, so the person's half of the match is finished before your ad exists. [[Meta Delivery & Andromeda#MD-179|MD-179]] (T1, 13 Oct): the user-ad pair score is precomputed in background jobs with no latency budget, because evaluating the big model inside a live request "is not affordable", and when the exact pair is missing the system degrades rather than drops. [[Meta Delivery & Andromeda#MD-174|MD-174]] (T1, 12 Oct): part of ads ranking runs on preemptible idle capacity, so ranking depth varies and optional work is shed within milliseconds. [[Meta Delivery & Andromeda#MD-175|MD-175]] (T1): the better model is routed by predicted likelihood of engagement, with exploratory traffic preserved permanently. [[Meta Delivery & Andromeda#MD-180|MD-180]] (T1): prediction quality follows a power law in how much engagement history the model reads.
+
+**Both guards were taught as guards, not softened.** MD-179's "ad groups" is not an Ads Manager object and nobody may map it onto ad sets, so the tempting rule "launch new ads inside an established ad set to inherit its score" is named in the lesson as an invented mechanism. MD-175's request-value signal has no event, no window and no account-visible field, so it is evidence about the machine and not a dial. Quiz question 2 is built on the first guard and the answer key deducts for the mapping.
+
+**The operating rule: a difference between two short windows on the same creative, same audience and same budget is not evidence about the creative, because the amount of ranking work spent on those windows was not the same.** First question becomes "how many events is this built on", then widen the window until the number can carry a verdict.
+
+**Our own numbers in the lesson are filed ones, none new.** Lesson 059's table carried forward: SJR Commercial $779.67 / 95 / $8.21 for 16-22 Oct, Phoenix Truxx $1,336.39 / 95 / $14.07 for 9-15 Oct, StayWell $537.61 / 18 / $29.87 for 16-22 Oct, ChiroWorks $463.28 / 17 / $27.25 for its last live week before the account went dark on 14 October. Set against [[Meta Delivery & Andromeda#MD-129|MD-129]] (T1), over 400 billion requests a day on Meta's serving fleet, against SJR's roughly $111 a day.
+
+**Video:** `lessons/video/2026-10-26-lesson-061.mp4`. Built in `Advertising-Science-Videos/lesson-061/`, HyperFrames, rendered locally with the CLI. 3m 22.0s, 202s timeline, 6,060 frames at 30 fps, 7.4 MB, 1920x1080, 12 scenes. Render 7m 19.3s, three workers, first attempt, no retry. Check: 0 errors, 0 runtime errors, 0 layout issues across 9 samples, 0 motion errors, **32/32 text checks pass WCAG AA**, two structural warnings carried by every lesson in the series. A twelve-frame contact sheet across the full runtime and one full-resolution frame of the table scene were read at the pixel level before filing; every scene composes without overflow or clipping.
+
+**Amended after the fact, because the research lane landed later the same day and this page should not claim it was silent.** Topic locked at roughly 15:02 IST against a Harvest Log whose newest research entry was 2026-10-25 with zero banked. The research pass finished afterwards and wrote its entry at the BOTTOM of this file, banking one claim: [[Google PMax & Shopping#GP-051|GP-051]], T1, Google turning landing-page image extraction ON by default for every newly created Performance Max campaign from 4 December 2026, overriding the account-level Dynamic Image Extensions switch. That was not available at topic-lock and it is untaught. It is also the strongest candidate the harvest has produced in four days, it carries a 39-day deadline, and it belongs to the next harvest-driven lesson ahead of the older backlog.
+
+**Three findings filed to the scoreboard.** A teaching backlog (CR-288 three days untaught, MD-187 and AT-132 two days untaught, all passed over because three consecutive rotation lessons won on merit against a silent harvest). The capacity cluster is unmeasurable at our spend and that is itself the finding. And MD-180 hands us a gap nobody has ever opened: whether our own results differ by how platform-active the buyer is, on a book that sells to tradesmen and back-pain patients.
+
 ## 2026-10-25 (teacher run)
 
 **Lesson 060 shipped: *The Tighter Ceiling Is Always the Same One*. No video, Sunday.** Inbox empty for the fifty-eighth consecutive run that executed, so no grading and no influence on the topic.
@@ -3777,3 +3797,17 @@ Six carried, none closed, one narrowed.
 ### Errors
 
 Harvest: none. Watchlist checker: none, all HTTP 200. Plain fetch returned HTTP 400 on all seven Meta hosts, re-tested rather than assumed, which is the documented behaviour. Playwright `playwright` and `playwright-arcads`: CONNECT_TIMEOUT, worked around on `playwright-metatech`. `plugin:pdf-viewer:pdf` and `rizzdial` also failed to connect; neither is a research source. No source went unread this run.
+
+## 2026-10-27 (Tuesday) · 0 transcripts in · 0 claims added, 0 merged, 0 contested
+
+2026-10-27: nothing new.
+
+**Everything readable was read and nothing earned a claim.** Harvest listed all 12 channels with zero errors and returned 0 transcripts, the fifth consecutive day. Daily watchlist lane: all sources HTTP 200, zero errors. One genuinely new item arrived and was read in full before being set aside: Meta Engineering, *Meta Networking at the 2026 OCP Global Summit*, 26 October 2026, which covers liquid-cooled network racks, scale-up and scale-across fabrics, FBOSS, OSPA v1.0, ESUN and MetaRoCE. **Deliberately not banked: zero advertising, ranking, delivery or measurement content.** Meta for Business News read via WebFetch, 12 slugs identical in set and order to 25 and 26 October, ceiling unchanged at the Peak Season post banked 10-24. Google Ads announcements 396 answer ids against 396 cached. TikTok SDK changelog unchanged at 0.1.8. Weekly Monday sources correctly not due, yesterday's weekly lane stands.
+
+**Two instrument notes, neither a claim.** RSS listing on the roster failed for 9 of 12 channels (HTTP 500 or 404) and the /videos tab fallback carried every one of them, so the zero is a real zero and not an outage; yesterday the fallback was used on none. And the arXiv read was yesterday's build again, Mon 26 Oct 04:00:24 UTC, because the run fired at 07:00 IST which is 01:30 UTC, ahead of Tuesday's 04:00 UTC rebuild. Zero new links there means re-read, not newly empty.
+
+Gaps: all six carried, none closed. The live ad set count against the LS-089 formula is now six days old and still the cheapest open item on our own book. **Carried defect, sixth day: the Harvest Log still has two write ends, research at the bottom and teacher at the top.** This entry is at the bottom.
+
+### Errors
+
+Harvest: none, zero listing failures. Watchlist checker: none, every source HTTP 200. Plain fetch on Meta for Business News: HTTP 400, the documented behaviour from our egress, read via WebFetch instead. TikTok Newsroom and for-Business blog: not retried, permanent India geo-block, not an outage. `rizzdial` returned ENDPOINT_NOT_FOUND; it is not a research source. No source went unread.
