@@ -979,3 +979,21 @@ Both arrived in Google Ads API v26, 14 October 2026, release notes read in full 
 **What it does not change.** Our scaling rules are unaffected. The step size and the gate at [[Scaling Models#SC-001|SC-001]] and [[Scaling Models#SC-176|SC-176]] govern raising a budget that is already working. A floor governs whether the channel is usable at all, which is a different question, asked before the first dollar.
 Sources: Google Ads API release notes, v26 (2026-10-14), read in full; Google Ads Developer Blog, Announcing v26 of the Google Ads API, 2026-10-14, read in full
 Last touched: 2026-10-19
+
+### GA-098 · On real Google result pages the top-ads carousel is LOOKED AT almost every time and clicked one time in ten, and ads take about 16% of main-axis clicks
+Tier: T2 · Status: active
+arXiv 2605.04949v4, *AllSERP: Exhaustive Per-Element Enrichment of the Versatile AdSERP Dataset*, abstract read at source on 2026-10-28 via the cs.IR feed. Announced as a **replace**, so this is the fourth version of a paper the codex has never held; nothing was superseded here, it is new to us. The full paper was not opened.
+
+**The instrument, which is the reason this is T2 and not T3.** AdSERP is a public corpus of **2,776 search trials** recorded on **real Google result pages**, carrying eye gaze, cursor, scroll, pupil and click telemetry together with the page screenshots and the captured HTML. AllSERP is the layer that labels everything on the page that is not an ad: organic results, People Also Ask, image packs, local packs and other widgets. Three measured numbers are published and they are what gets carried.
+
+**One, the share of clicks ads get.** The shipped ad boxes cover placements "which receive about **16%** of main-axis clicks".
+
+**Two, and this is the finding.** "**99.7% of top-ads carousels are fixated but only 10% of clicks land on them.**" Almost every user looks at the top ads. One in ten clicks goes there.
+
+**Three, the control case on the same page.** "**44% of People-Also-Ask boxes are fixated but only two clicks in the corpus land on one.**" So the dissociation is not a property of ads, it is a property of element type, and it runs much harder against PAA than against ads.
+
+**Why it earns a place in this file.** Every Search decision we make reads impressions and clicks out of Ads Manager and has no instrument for what happened in between. **This measures the middle, and it says the top of a Google results page is a near-certain impression and a scarce click.** The operating consequence is about diagnosis, not about bidding: on a Search campaign holding high impression share with a weak click-through rate, the hypothesis "nobody saw it" is close to ruled out for the top-ads block, which moves the whole burden onto the ad text and the query match. It also means impression share on that block is close to a ceiling measurement rather than a growth lever, which sits beside the budget-floor reading at [[Google Auction & Smart Bidding#GA-096|GA-096]].
+
+**The guards, all load-bearing.** This is a lab-recorded corpus, not our accounts and not Google's data: the trials are tasks performed under eye-tracking, which is a context known to change scanning behaviour, and the paper states no date range, no geography, no device mix and no query mix in its abstract. **No vertical is named, so none of these percentages transfers to a specific account and none may be quoted to a client.** The 10% click figure is a share of clicks in the corpus, not a click-through rate, and reading it as one would be a plain error. The box-fidelity numbers (**95.7%** of final clicks landing in a typed area of interest under the gap-filled flavour, and the ad partition agreeing with the shipped ad rectangles on all **38,250** comparisons) are quality checks on the dataset, not findings about advertising.
+Sources: arXiv 2605.04949v4, AllSERP: Exhaustive Per-Element Enrichment of the Versatile AdSERP Dataset, abstract read at source 2026-10-28 via the cs.IR feed
+Last touched: 2026-10-28

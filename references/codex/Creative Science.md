@@ -353,6 +353,11 @@ Last touched: 2026-08-18
 
 So the unit being varied is the DESIGN and the thing held constant is the MESSAGE, which is the inverse of how most variation batches get built. His worked example is one message, a perfume line about claiming a scent before the group chat does, rendered as several visually unrelated statics including a call-out ad. He frames it as harder than it was: "with Meta's Andromeda changes, it can be a little bit harder. It's a bit more of a dance." Asserted from agency practice, no test shown, and it is the same threshold question left open at [[Creative Science#CR-172|CR-172]].
 Added source: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
+**A second operator predicts the two formats CONVERGE, added 2026-10-28, and it is a forecast rather than a finding.** Ben Heath, 2026-10-27: "I think we're going to see a blurring of the lines between what is a static and what is a video... instead of it just being there ready when someone scrolls, the text appears a split second after the background image, maybe one of the elements sort of flies in from the left." His reason is that the animated static keeps the static's advantage, the whole offer readable in a glance, and buys the one thing video has that matters to him, movement to interrupt a scroll.
+
+**Tier it honestly: T4.** He names no account, no cost, and no comparison between an animated and a flat version of the same design, and he presents it as what he expects rather than what he has measured. **What makes it worth a line is the agreement with the source above on a point neither tested:** both treat the animated static as a format in its own right rather than as a cheap video, and both reach it from production economics. The entity-ID claim at the head of this entry is still hedged by its own source and still untested.
+Added source: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
+
 ### CR-116 · Purchase probability collapses after two impressions of the SAME creative, but holds if impressions three and four are novel creatives
 Tier: T3 · Status: contested
 The curve as described: impression 1 baseline, impression 2 flat or slightly higher because the viewer is warmer, impression 3 declines massively, impression 4 near zero. Substituting a different ad at impression 3 holds probability at the impression-2 level. This is the mechanistic case for creative rotation as a delivery requirement rather than a nice-to-have. It converts to a concrete audit: pull the ad level on cold campaigns over 30-60 days and read frequency, and treat anything above 2 as a creative fatigue and diversity red flag.
@@ -827,6 +832,10 @@ That is two operators, on different channels and different formats, stating the 
 **Correction to the longevity outlier immediately above, from the same operator on 2026-09-18.** The acne static is three ads running in three cities, and the headline figure is all three added together: **$234,853 over the last 12 months at a $27 cost per lead, which is roughly $78,300 per ad.** So the entry above overstates the single-asset lifetime by about 3x, and the count of operators reporting six-figure spend on ONE static drops from three to two. The format point that entry was making survives at the lower number, because $78,300 on one static is still two orders of magnitude above the $700 to $1,500 mean at [[Creative Science#CR-117|CR-117]]. Full correction and the reading rule it produces are at [[Creative Science#CR-117|CR-117]].
 Sources: Nick Theriot, I Spend $100k/Day On Facebook Ads, 2026-08-03; Professor Charley T, Copy This Simple Meta Ads Strategy, 2026-08-10; Blue Sense Digital, Meta Ads Creative Strategy in 2026: The Full System, 2026-05-11; Blue Sense Digital, How to Write Ad Hooks That Scale, 2026-01-29; Mark Builds Brands, how to print money with AI (before NPCs ruin it), 2026-04-24; Mark Builds Brands, how to print money online (easier than scrolling youtube), 2025-12-26; Nick Theriot, UGC vs Native vs Static Ads: Which One Scales Best in 2026?, 2026-09-07; Nick Theriot, This Static Ad Spent $234,853 (Here's How), 2026-09-18
 Last touched: 2026-09-19
+**The production-economics argument gets its creative-volume version, added 2026-10-28.** Blue Sense's case in this entry is cost of production against contribution margin per ad. Ben Heath makes the same case against the volume target instead of against margin: "if you're trying to hit 20 ads, if you're doing that with say 16 statics and four videos, a lot easier than 10 and 10." Post-Andromeda creative volume is a requirement this codex already carries, so the format mix is partly set by what the production budget can physically reach, before any performance comparison is run.
+
+**His direction of travel runs against this entry's headline and is filed separately at [[Creative Science#CR-289|CR-289]]**, where the evidence and its weaknesses are set out. Read the two together: this entry holds that statics produce fewer winners than b-roll video on one operator's accounts, CR-289 holds that statics are now taking the budget on another's. **Neither is a format law, and the codex now contains shown instances in both directions, so a format decision made from this file alone is a coin flip. Split your own account's cost per result by format before deciding where the next production budget goes.**
+Added source: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
 
 ### CR-049 · Gadget/demo formats scale because a visible unique mechanism plus impulse price removes the need for awareness education
 Tier: T3 · Status: active
@@ -1966,7 +1975,7 @@ Sources: Blue Sense Digital, 2025-03-17 (Creative Planning That Considers Financ
 Last touched: 2026-08-27
 
 ### CR-196 · Do not put images and video in the same ad set: one format takes the spend and the other gets none
-Tier: T3 · Status: active
+Tier: T3 · Status: contested
 "typically what I see is if you throw a bunch of images and videos in the same ad set, one of them will cannibalize everything else. Like all the videos will get spent and the images will get no spend".
 **Number-free.** He describes a repeated cross-account observation and states no spend split, no frequency, no sample. **It is a delivery-mechanics claim, not a category one, so it transfers to lead-gen unchanged.**
 **Why it earns a place.** It is a concrete, testable, format-level version of the starvation behaviour we already have on file from our own accounts, where new creative gets starved inside campaign-budget structures. It also gives a cheap explanation for a common reading error: a static that "failed" may simply never have been funded, because a video in the same ad set absorbed the budget. **Check spend before judging a format.**
@@ -1974,7 +1983,17 @@ The same operator describes the general starvation shape with a worked illustrat
 **His attached testing preference is separate and weaker:** "I typically do my testing with images cuz you can typically just do it faster." Production speed, no performance comparison. It happens to match how our static-heavy chiropractic and truck work already runs.
 **Related and unevidenced, worth one line so it is not mistaken for a finding:** he claims heavy on-image text tends to raise CPMs, "I'm actually not a huge fan of having a ton of text on your image ads because a lot of times you can see it increase your CPMs, but sometimes it's worth it, you know?" **No cost figure, no threshold for how much text is too much, no test, and no Meta documentation.** It points the same direction as our own chiropractic result that the best-performing image ads carried no on-image text at all, which is corroboration of direction only.
 Sources: Mark Builds Brands, 2025-11-26 (how to test facebook ads post andromeda update); 2026-01-16 (AI image ads)
-Last touched: 2026-08-27
+Added source: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
+Last touched: 2026-10-28
+**CONTESTED 2026-10-28, and the split runs down the middle of the claim: a second operator corroborates the MECHANISM and rejects the PRESCRIPTION.**
+
+Ben Heath runs the opposite structure deliberately. "I like to put multiple ad formats in one adset. So we have a mixture of statics and videos and other and the meta can choose which ads to put in front of which people, where to allocate spend." He states three reasons: different people respond to different formats, Meta sequences them (his description is a video to build awareness then statics on retargeting), and Meta reads session length, so a long lunchtime session gets the video and a check of the phone before bed gets the image.
+
+**The mechanism half of this claim survives and is now reported by two operators.** Heath's finding at [[Creative Science#CR-289|CR-289]] is that inside those mixed ad sets one format takes the budget. He names the direction as statics, where this entry's original source named videos. **So "one format cannibalises the other" has a second independent sighting, and which format wins is not fixed.** Neither operator publishes a spend split.
+
+**The prescription half is genuinely contested and cannot be settled from the roster.** Mark Builds Brands says separate the formats so neither starves. Heath says mix them so Meta can allocate and sequence. **Meta's own measurement sits on Heath's side of the structural question and not on his reasoning for it:** [[Creative Science#CR-261|CR-261]] (T1) measures format diversity INSIDE the ad set and reports 7.3% lower cost per acquisition for ad sets carrying an image, a video and a vertical video with audio together. A T1 observational measurement does not refute a T3 delivery observation, because both can hold at once: the diverse ad set can perform better on average AND starve one of its formats.
+
+**The reading rule both sides agree on, and it is the only instruction to carry today: check spend by format before judging a format.** A static that "failed" in a mixed ad set may never have been funded, and from 2026-10-28 the same sentence has to be read in reverse as well, because the video is now the one that can go unfunded.
 
 ### CR-197 · A plain offer on a flat background is named the top performer across accounts and industries, which is independent support for our own zero-text finding
 Tier: T3 · Status: active
@@ -2048,6 +2067,10 @@ Two live examples. A perfume ad where a character sprays and is transported into
 **The novelty window is explicit and short.** "this claymation is fast becoming one of the winners in so many different accounts. So, if you jump on it now, you might be able to find yourself some winners." That is the same decaying premium Blue Sense describes in [[Creative Science#CR-057|CR-057]], so treat the style as a rotating slot rather than a permanent format. **Our own house rule for photoreal work, documentary realism with no HDR gloss, is unaffected: this is a different branch, not a relaxation of that one.** Asserted across two videos, no per-ad performance data, and his agency's own headline result drifts between the two, "average CPA decrease of around 30%" on 17 May and "around 30 to 40%" on 24 May.
 Sources: Fraser Cottrell, I Made This VIRAL AI Claymation Ad in 15 Minutes (Arcads Tutorial), 2026-05-24; Fraser Cottrell, I Made This Pixar Style Ad in 30 Minutes Using AI (MaxFusion), 2026-02-15; Fraser Cottrell, How to use AI to Copy Winning Ads (Step by Step), 2026-05-17
 Last touched: 2026-08-30
+**A flat contradiction from a second operator on the PHOTOREAL branch, added 2026-10-28, and it does not touch the stylised one.** Ben Heath, 2026-10-27: "you want to be careful making tons of statics and image ads that look like they're AI generated. We find them not perform well at all." His allowance is narrow and it is about concealment succeeding rather than about declaring the medium: a real product photograph placed by AI into a background or onto a model, "no one can tell. Brilliant. Go ahead and use those."
+
+**Read carefully, the two operators are not contradicting each other, which is why nothing here changes status.** This claim's point is that the uncanny valley is escaped by declaring the format, in claymation or 3D character work. Heath is describing an ad that reads as AI while trying to pass as real, which is the failure mode this claim says to stop attempting. **The combined rule: either the render is undetectable or the format is openly not real. The ad that loses is the one caught in between.** Heath states no per-ad figures, so this is assertion against assertion on the photoreal side, and it matches our own house rule for photoreal work.
+Added source: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
 
 ### CR-203 · Four AI production failures that recur across models, and the fixes: the product label degrades, characters drift, voiceovers sound dead, and a brand name mispronounced survives a voice swap
 Tier: T3 · Status: active
@@ -2573,6 +2596,12 @@ Fraser Cottrell, 2026-09-13, walking through four statics from his agency's clie
 **Read against [[Creative Science#CR-048|CR-048]], which holds that statics work across the awareness spectrum but produce fewer winners than b-roll video.** These are compatible: CR-048 is about where statics CAN work, this is about where this operator believes their yield is. The disagreement worth noting is that CR-048 treats statics as spectrum-wide and this treats them as a harvesting instrument, which changes what you measure them against.
 Sources: Fraser Cottrell, The Ultimate Guide to Static Image Ads (copy & scale), 2026-09-13
 Last touched: 2026-09-14
+**A second independent operator on the audience half, and he adds the condition that makes it testable, 2026-10-28.** Cottrell places statics at the bottom of the funnel because the viewer already knows the brand. Ben Heath arrives at the same place from his own account and then states what has to be true for it to hold: "all my ads are going to warm audience... we just need to describe the offer, make sure my face is on it so there's recognition and then very quickly explain what they need to do. And if we have a video we get the drop off so it's not worth it." He generalises it to any advertiser with an organic following: "a lot of warm audience advertising we're seeing work well with statics, people who have followings, organic content as part of their strategy, then static ads are outperforming."
+
+**He also names the inverse, which this entry did not have.** Video is the format when the thing being sold is NEW and has to be explained, or when the sale depends on believing the seller's expertise. "If you've invented something new or you've come up with a brand new concept, video is likely to perform better for you because you need the time and space to explain it." Both halves are asserted off his own and client accounts with no figures.
+
+**So the two operators now agree on a conditional rather than on a format: the static's yield rises with what the viewer already knows, and falls toward nothing on an unexplained product sold to a stranger.** That is a cheaper rule than "statics are bottom of funnel", and it is checkable on any account running both a cold and a warm ad set.
+Added source: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
 
 ### CR-240 · Frame a real on-site review as a social comment, with a face and a like heart, so a designed ad reads as organic: six figures of spend, ranked 3rd of 435 ads
 Tier: T3 · Status: active
@@ -3348,3 +3377,32 @@ The rule, from Jon Loomer on 2026-10-21: "Meta will tell you if frequency is a p
 **The guards, and they decide how far to trust it.** He describes what the label means without showing it, names no location in Ads Manager, and gives no case where its presence or absence was checked against an outcome. Meta's own diagnostic surfaces have a recorded history of recommending a setting that was already enabled, see [[Meta Delivery & Andromeda#MD-105|MD-105]], so a label is a signal and not a verdict. **Verify the label exists and where it reads before leaning on this on a client account.** It is the check both [[Creative Science#CR-027|CR-027]] and [[Creative Science#CR-116|CR-116]] lack.
 Sources: Jon Loomer, When Does Frequency Lead to Creative Fatigue, 2026-10-21
 Last touched: 2026-10-23
+
+### CR-289 · The format trend REVERSED: statics are taking the budget inside mixed-format ad sets, and the only number behind it is an audience poll
+Tier: T3 · Status: active
+Ben Heath, 2026-10-27. Advertising on the platform since 2013, states more than $300 million of lifetime spend, "hundreds of clients at any one time" and "almost a hundred million dollars last year". He frames the finding as a reversal of the one creative trend that has held for a decade.
+
+**Two pieces of evidence arrive together and they are not the same strength. Separate them before carrying either.**
+
+**One, the delivery observation, and it is the more useful half.** His standard structure puts several formats in a single ad set and lets Meta allocate. "We started noticing a trend recently where Meta was allocating more and more budget to statics to images." Asserted across an agency book. No account named, no window, no spend split, no cost per result, nothing on screen.
+
+**Two, the poll series, which is the only thing carrying numbers.** Four readings of his own YouTube audience, the same question each time, which format works best for you:
+
+| Reading | Static or single image | Video |
+|---|---|---|
+| About 4 years before 2026-10-27 | 38% | 44% |
+| About 3 years before | lower than 38% | 53% |
+| About 2 years before | 27% | 60% |
+| 3 days before the recording | **54%** | **38%** |
+
+**The guard that sets the tier, and it is the whole reason this is T3 and not T2.** A poll of an advertising audience measures what advertisers BELIEVE their accounts returned. Not one of the four readings publishes a respondent count, none is weighted by spend, "best results" is never defined, the pool is self-selected, and its composition is four years apart between the first reading and the last. **A wave of newer advertisers producing cheap AI statics would move this poll with no change in the auction at all.** Carry the direction. Never quote the 54%, and never put any of these percentages in front of a client.
+
+**Where the codex already stood, because the direction is not new here.** [[Creative Science#CR-167|CR-167]] is the same operator's screen share from 2026-02-24 showing video at 856 GBP against images at 189 and carousel at 222 in one account, with more of the budget sitting on the expensive format. [[Creative Science#CR-048|CR-048]] carries the production-economics case for over-indexing on images. Against it, [[Creative Science#CR-233|CR-233]] is a shown account where moving from statics to video cut cost per purchase from $491 to $119. **So the codex holds instances in both directions and no format law is available. What this adds is a second operator reporting the direction from the delivery side rather than from a cost column.**
+
+**His stated mechanism is T4 and must not be repeated as a cause.** Shrinking attention spans and higher video drop-off, so an image delivers the whole offer to everyone who glances at it while a video delivers the call to action only to whoever survives to the end: "how many people even make it to the end where you've actually got your call to action? Like is your drop off rate 90%? That wouldn't be unusual." He says the higher drop-off is visible in his numbers and shows none. The second limb is a feed-contrast argument, that a static now interrupts a feed which is mostly video, exactly inverting the position statics held when Instagram was an image feed. Plausible, unmeasured, and it predicts its own decay as everyone moves back.
+
+**The prescription is the part to act on, and it is not "switch to statics".** "Don't just make statics." He keeps both formats in the same ad set so Meta can allocate and sequence them, which contradicts [[Creative Science#CR-196|CR-196]] (now contested) and agrees with Meta's own measurement at [[Creative Science#CR-261|CR-261]]. He attaches one craft requirement specific to the format: a static has no room to explain, so it has to name its buyer narrowly. His worked example is running shorts sold not as running shorts but as shorts for sub-zero long-distance running that do not chafe. **That is the same move as cutting one broad ad into ten narrow ones, and the reason it is newly affordable is that statics are cheap, which closes the loop with the volume argument at [[Creative Science#CR-048|CR-048]].**
+
+**Discarded from the same video, recorded so it is not mistaken for evidence.** A paid sponsor segment for a third-party attribution tool asserts Meta tracking is "consistently off by 20 to 30% and as much as 50% plus for long-term sales" and a usual result of "around a 10 to 15% increase in ad revenue". Vendor figures inside a disclosed paid slot with an affiliate commission named on camera. The band is the same folklore-grade range already flagged at [[Attribution & Incrementality#AT-020|AT-020]] and it is not banked.
+Sources: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
+Last touched: 2026-10-28

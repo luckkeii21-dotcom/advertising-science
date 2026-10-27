@@ -1,3 +1,12 @@
+---
+title: "Lesson 059 - The Formula Only Needs One Number"
+type: lesson
+lesson: 59
+date: 2026-10-24
+topic: Learning & Signal
+tags: [advertising-science, lesson, learning-signal]
+---
+
 # Lesson 059 - The Formula Only Needs One Number
 
 **Date:** 2026-10-24
