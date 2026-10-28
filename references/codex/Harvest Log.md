@@ -3858,3 +3858,15 @@ Gaps: the six carried items all still stand, none closed. **The live ad set coun
 ### Errors
 
 Harvest: none. All 12 channels listed, zero errors, zero RSS fallback used (yesterday it carried 9 of 12). 8 uploads skipped under the 150-second floor, 3 had no subtitles available, 0 out of window. Watchlist checker: none, every source HTTP 200. Plain fetch on Meta for Business News: HTTP 400 again, documented behaviour from our egress, read via WebFetch. TikTok Newsroom and for-Business blog: not retried, permanent India geo-block, not an outage, so the TikTok lane is the SDK changelog alone and is not a clean TikTok check. `rizzdial` returned ENDPOINT_NOT_FOUND and is not a research source. No source went unread.
+
+### 2026-10-28, second pass (07:28 IST)
+
+A second research pass on the same day. **Nothing new.** Zero transcripts, zero claims, zero law movement. The count stays at 1,396.
+
+Harvest: 12 of 12 channels listed, 0 new uploads, 0 skipped, 0 errors. **Every one of the 12 channels fell back to the /videos tab route**, because all 12 RSS feeds returned 404 or 500. The morning pass at 03:45 used the fallback on none of them, so the feed outage arrived between 03:46 and 07:28 today. The transcript count is identical either way, which is exactly why this field is worth recording.
+
+Watchlist: all six automated sources HTTP 200, zero errors. One new link, Meta Newsroom's *Muse Is Now Available in Singapore*. Read at source: a consumer personal-AI-agent launch with Shopee, Grab and Singapore Airlines integrations. **No advertising, ranking, delivery, auction or measurement content**, so not banked. arXiv still serving Tuesday's 04:01 UTC build, 0 new, which is correct for a run that fired at 01:58 UTC. TikTok SDK changelog 0.1.8, unchanged. Google Ads announcements 396 ids, 0 added, 0 removed. Meta for Business News re-read: the same 12 slugs in the same order as this morning's key, 0 added, 0 removed, **seventh consecutive flat day**.
+
+**The TikTok geo-block was retried and confirmed live rather than carried forward on yesterday's word.** Newsroom returns HTTP 503. The for-Business blog 301-redirects to `ads.tiktok.com/business/en/blog`, which from our New Delhi egress serves TikTok India's 29 June 2020 ban statement and no posts at all. So the block is real, it is not an outage, and the TikTok lane remains the SDK changelog alone.
+
+**One carried gap closed.** The business-news cache step now writes its own key: `slugs_us_2026_10_28` exists and `last_checked` reads 2026-10-28, so the defect flagged this morning and on 2026-10-23 did not recur. The remaining gaps stand, including the live ad set count against the LS-089 formula, now eight days open, and the Harvest Log's two write ends, now day eight.
