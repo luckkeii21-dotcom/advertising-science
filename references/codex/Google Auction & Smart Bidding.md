@@ -997,3 +997,21 @@ arXiv 2605.04949v4, *AllSERP: Exhaustive Per-Element Enrichment of the Versatile
 **The guards, all load-bearing.** This is a lab-recorded corpus, not our accounts and not Google's data: the trials are tasks performed under eye-tracking, which is a context known to change scanning behaviour, and the paper states no date range, no geography, no device mix and no query mix in its abstract. **No vertical is named, so none of these percentages transfers to a specific account and none may be quoted to a client.** The 10% click figure is a share of clicks in the corpus, not a click-through rate, and reading it as one would be a plain error. The box-fidelity numbers (**95.7%** of final clicks landing in a typed area of interest under the gap-filled flavour, and the ad partition agreeing with the shipped ad rectangles on all **38,250** comparisons) are quality checks on the dataset, not findings about advertising.
 Sources: arXiv 2605.04949v4, AllSERP: Exhaustive Per-Element Enrichment of the Versatile AdSERP Dataset, abstract read at source 2026-10-28 via the cs.IR feed
 Last touched: 2026-10-28
+
+### GA-099 · Ads in AI Mode scaled to ten more countries on 2026-10-28, with Brazil, Mexico and the UK named for Q4, and multiturn ads launched in the US
+Tier: T1 · Status: active
+A dated platform expansion, read at source. It matters to us mainly because of what it does to the measurement gap at [[Google Auction & Smart Bidding#GA-043|GA-043]].
+
+**The rollout, verbatim.** "Now we're scaling ads in AI Mode in Australia, Canada, India, Kenya, Malaysia, New Zealand, Nigeria, Pakistan, the Philippines, and Singapore. In Q4 2026, we plan to expand to additional locales, including Brazil, Mexico, and the United Kingdom." Separately: "To allow ads in follow-up queries in AI Mode, we are launching multiturn ads in the U.S." Ads "will be clearly labeled as 'Sponsored'" and Google says it will "continue testing new formats".
+
+**Multiturn ads are the genuinely new product here.** Until now an AI Mode ad was attached to the opening query. Google now serves ads inside follow-up turns of the same conversation, in the US. **Google publishes no number for it, no format description, no campaign-type eligibility and no reporting.**
+
+**The two numbers Google does publish, with their footnotes, because the footnotes are the story.** "In AI Mode, queries are, on average, three times longer than traditional searches", footnoted to **"Google AI Mode Report, US, May 2026"**. And "click-through rates are already similar between sponsored and organic product list items within AI Mode", footnoted to **"Google Internal Data, US, August 20, 2026 - September 3, 2026"**. So the query-length figure is five months old and US-only, and the click-through parity claim rests on a **15-day US internal window** with no volume, no vertical and no absolute rate. Neither number is from any of the ten countries being switched on.
+
+**What it does to GA-043, and the answer is that it widens it.** GA-043 records that broad match, Shopping feeds, PMax and AI Max can all serve inside AI Overviews and AI Mode with no setting to disable it and no report that segments those clicks or that spend, and that gap has now been checked and found open three times. **This post says nothing about opt-out, nothing about which campaign types serve into AI Mode, and nothing about reporting.** More surface, more countries, more turns per conversation, and the same blind spot. For any client on those four surfaces, the unmeasured share of spend just got a larger place to land.
+
+**For our own book.** Our ad accounts are US, so the ten countries do not change what our clients buy. Multiturn ads in the US do. Nothing to action, because there is no control.
+
+**Guards.** No launch date per country, no campaign-type list, no opt-in or opt-out mechanism, no reporting commitment and no measurement detail of any kind. "Similar" click-through rates is Google's word, not a figure. Nothing states that ads in AI Mode perform better or worse than ads on a conventional result page.
+Sources: Google Ads & Commerce blog, "Ads in AI Mode expand to new markets", Shashi Thakur, VP and GM Google Search Ads, 2026-10-28, read in full 2026-10-29 including both footnotes
+Last touched: 2026-10-29
