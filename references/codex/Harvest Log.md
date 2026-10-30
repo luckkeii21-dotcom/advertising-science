@@ -3944,3 +3944,21 @@ Watchlist: all six automated sources HTTP 200, zero errors. One new link, Meta N
 **Gaps.** One new, six carried, none closed. NEW: the Ads Decoded podcast lane is unreadable to us, and Google is now publishing search-behaviour research in audio only. Carried: the arXiv new-ID re-submission defect in `lib/watchlist_check.py` and its stale `last_build`; the live ad set count on every client account still unverified against the LS-089 formula, now nine days old; `occ-2025`, `occ-2024`, `occ-2023` unread; "promotion mode" still undocumented by Google; TikTok product and policy news geo-blocked and genuinely unmonitored, re-confirmed live today at HTTP 503 and HTTP 451; and the Harvest Log's two write ends, flagged 21 October, ninth day, still unfixed.
 
 **Errors.** Harvest none. Watchlist checker none. Plain curl on Meta for Business News returned HTTP 200 today rather than yesterday's 400, but served a 1,542-byte JavaScript stub with zero slugs, so the 200 is not a usable read and the shelf was read via WebFetch; recorded because a status-code-only check would now report this source as healthy and extract nothing. TikTok Newsroom HTTP 503 and the for-Business blog HTTP 451, both the known permanent geo-block, not errors. `rizzdial` MCP ENDPOINT_NOT_FOUND, not a research source. No source went unread.
+
+## 2026-10-30 (Friday) · 0 transcripts in · 0 claims added, 0 merged, 0 contested
+
+Quiet day. Nothing new to bank.
+
+**Harvest.** All 12 roster channels listed, 0 new videos, 0 errors. YouTube's `feeds/videos.xml` returned 404 or 500 for 11 of the 12 channels, so those channels were listed through the `/videos` tab fallback instead. Every channel was genuinely read; this is the known 2026-09-05 RSS outage, not an unread roster. Science transcript backlog 0.
+
+**Watchlist, daily lane.** All sources HTTP 200, zero checker errors. Meta Engineering 1 new, *Catching Bugs Before They Land: JiTTesting*, fetched and read: LLM-generated software tests, zero advertising content, not banked. Meta Newsroom 2 new, a CNIB accessibility partnership in Canada and its French twin, set aside on title. Google Ads & Commerce 0 new (feed built Wed 28 Oct 21:30 UTC, same build as yesterday). TikTok SDK changelog unchanged at 0.1.8. Google Ads announcements 396 ids, 396 cached, 0 added, 0 removed. Weekly Monday sources not due.
+
+**arXiv cs.IR: stale read of an already-known empty build.** Build stamp Thu 29 Oct 04:00:02 UTC against a run at 07:00 IST, which is 01:30 UTC, so this is yesterday's build, and yesterday's 17:02 IST pass already read the same build and already recorded it as genuinely empty. Nothing was filtered and nothing was missed. Friday's own 04:00 UTC build will be read by tomorrow's run.
+
+**Meta for Business News: zero new on both shelves.** US shelf read on `?locale=en_US`, twelve slugs, identical set and order to 2026-10-29, newest still the two 28 October ads-ranking posts banked yesterday. UK shelf read on `?locale=en_GB`, twelve slugs, newest 22 October *You Don't Beat The Auction. You Brief It.* All twenty-four already in `slugs_seen_cumulative`; the cumulative set stays at 33.
+
+**Law layer.** Untouched. Nothing today changed law-level knowledge.
+
+**Gaps.** None closed, seven carried: the arXiv new-ID re-submission defect in `lib/watchlist_check.py` and its stale `last_build`; the Ads Decoded podcast lane unreadable; the live ad set count on every client account still unverified against the LS-089 formula, now ten days old; `occ-2025`, `occ-2024`, `occ-2023` unread; "promotion mode" still undocumented by Google; TikTok product and policy news geo-blocked and unmonitored; and the Harvest Log's two write ends, flagged 21 October, tenth day.
+
+**Errors.** Harvest none. Watchlist checker none. The 11 YouTube RSS failures are recorded above and were all covered by the fallback. No source went unread.
