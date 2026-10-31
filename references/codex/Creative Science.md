@@ -3406,3 +3406,26 @@ Ben Heath, 2026-10-27. Advertising on the platform since 2013, states more than 
 **Discarded from the same video, recorded so it is not mistaken for evidence.** A paid sponsor segment for a third-party attribution tool asserts Meta tracking is "consistently off by 20 to 30% and as much as 50% plus for long-term sales" and a usual result of "around a 10 to 15% increase in ad revenue". Vendor figures inside a disclosed paid slot with an affiliate commission named on camera. The band is the same folklore-grade range already flagged at [[Attribution & Incrementality#AT-020|AT-020]] and it is not banked.
 Sources: Ben Heath, This new Facebook Ads trend is crazy..., 2026-10-27
 Last touched: 2026-10-28
+
+### CR-290 · Meta's "more than 50% of auction outcomes" creative-diversity figure is a CPG household-panel SALES study with the outcome variable swapped, and the substitution is checkable at source
+Tier: T1 (for what Meta published) · Status: active
+**The sentence, quoted exactly** from Meta for Business News, "Meta Marketing Summit: 4 AI Shifts Reshaping Business Growth", a Hong Kong summit recap on the UK shelf: "As AI increasingly helps find relevant audiences, Meta said creative quality and diversity are becoming more important differentiators. **Research by Nielsen Catalina Solutions found that more than 50% of auction outcomes can be attributed to visually diverse creative.** Meta recommended that businesses diversify existing assets across settings, characters, emotions and product benefits."
+
+**This one carries a real footnote, which is why it could be checked.** Footnote 5 reads "Five Keys to Advertising Effectiveness: Quantifying the Impact of Advertising on Sales, Nielsen Catalina Solutions, 2026". That is a named, findable third-party study, and it is the first Meta figure in eight weeks on this source that cites one.
+
+**What the study actually measures, read at source** in the NCSolutions e-book edition of the same study. The outcome variable is **incremental SALES**, measured by linking ad exposure to household purchase behaviour, and the population is **CPG brands** ("UPDATED INSIGHTS FOR THE MODERN CPG MARKETER"). Its finding, verbatim: "This analysis found creative quality is responsible for almost half (**49%**) of the incremental sales driven by advertising." The five keys decompose incremental sales into creative, brand, targeting, reach and recency. Creative was graded weak, average or strong "based on a productivity measure that calculates incremental sales for every exposed purchase."
+
+**Four substitutions between the study and Meta's sentence, and each one matters on its own:**
+
+1. **Outcome variable swapped.** Incremental sales across a household panel became "auction outcomes". The study contains no auction, no bid, no win rate and no platform delivery mechanism of any kind. Nothing in it is measured inside an ad auction.
+2. **Construct swapped.** Creative QUALITY, graded on a sales-productivity measure, became "visually DIVERSE creative". Diversity and quality are different variables, and the study measures the one Meta did not name.
+3. **Population swapped.** CPG brands measured across media became Meta auctions.
+4. **Direction of the rounding.** A published 49% is rendered as "more than 50%". Meta cites a 2026 edition and the edition read here is the earlier one, so the underlying number may genuinely have moved. Either way the restatement rounds across the half mark in the publisher's own favour.
+
+**What survives, and it is not nothing.** A large third-party study finding creative the single largest driver of incremental sales, at roughly half, is real corroboration for the creative-first position this codex already holds on better evidence. **The direction is supported. The sentence is not.**
+
+**Operating consequence, and this claim exists mainly to enforce it.** **Never quote "50% of auction outcomes" to a client, in a report, in a deck or in a proposal.** Anyone who checks the footnote finds a CPG sales study, and the figure collapses under one question. The honest version, which is both quotable and defensible: independent research across consumer brands attributes close to half of the extra sales advertising produces to the creative itself, which is why creative gets the budget and the attention before targeting does. That sentence cites the study for what the study measured.
+
+**Where it sits.** [[Creative Science#CR-286|CR-286]] caught Meta publishing a vendor's uncontrolled case study as evidence; this is the adjacent failure, a real third-party study restated into a claim it does not make. **CR-286 needed no source check because the post cited nobody. This one needed a source check precisely because it cited somebody**, which is the new reading rule: a Meta figure WITH a footnote now earns a read of the footnoted source, because the citation is where the substitution hides. The law-layer rule that an unfootnoted Meta figure is the default expectation (2026-10-24) gains its mirror: a footnoted one is not thereby verified.
+Sources: Meta for Business News, "meta-marketing-summit-hongkong-2026", dated 29 October 2026 on its own page (card reads 27 October), read in full 2026-10-31; NCSolutions, "Five Keys to Advertising Effectiveness", e-book edition, pages 1 to 6 read at source 2026-10-31
+Last touched: 2026-10-31

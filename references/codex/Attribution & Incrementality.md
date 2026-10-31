@@ -1419,3 +1419,25 @@ Tier: T1 · Status: active
 **Evidence state.** Definitions only. No number, no test, no statement of how the incremental model is fitted, and no eligibility floor named for any of the three.
 Sources: Meta for Business News, "you-dont-beat-the-auction-you-brief-it", Best Practice, dated 21 October 2026, read in full 2026-10-24 in the Playwright browser
 Last touched: 2026-10-24
+
+### AT-133 · Meta's "US$4.13 per dollar" figure is footnoted to a one-WEEK experimental study across a million campaigns, and the window is the reason it cannot be carried
+Tier: T1 (for the figure and its stated method) · Status: active
+**The claim as published**, in Meta for Business News, "Meta Marketing Summit: 4 AI Shifts Reshaping Business Growth": "every US dollar spent with Meta generated **US$4.13** in revenue, up **25%** from 2022."
+
+**Its footnote 1, quoted exactly, and this is the banked part:** "Results from a large-scale study run on Meta's platforms from **April 13 to 20, 2026**, with over **one million ad campaigns**, following the testing framework developed by academics at the **University of California at Berkeley** and published with the **National Bureau of Economic Research** in **Tadelis et al., 2023**."
+
+**Why the footnote is more interesting than the number.** It is the first time on this source that a Meta figure names an experimental framework, an external academic lineage and an exact date window. Most Meta figures this codex has read carry "in our analysis" or nothing at all, which is the standing expectation recorded in the law layer. **So the methodology disclosure here is genuinely better than the house average, and the figure is still not usable.**
+
+**Three reasons it cannot be carried, in order of severity:**
+
+1. **The window is eight days.** 13 to 20 April 2026 is a single week in mid-April, with no holiday, no peak season and no seasonal spread. A platform-wide return measured over eight days is compared against a 2022 figure whose window is not stated at all, so the "up 25%" is a comparison between an eight-day measurement and an unknown one.
+2. **It is a blended average across more than a million campaigns.** Every vertical, every objective, every country, every budget size and every maturity level sit in one mean. A platform-wide mean of this kind predicts nothing about any single account, and the distribution behind it is not published. No median, no spread, no breakdown.
+3. **Revenue, not profit, and ecommerce-shaped.** "Revenue per dollar spent" is a ROAS, and our book is lead generation where the revenue event sits weeks downstream in a CRM. The figure has no definition we could reproduce on a single client account.
+
+**Operating consequence.** **Never put $4.13 or the 25% in a proposal, a forecast, a pitch or a client report.** A prospect who hears "Meta returns $4.13 per dollar" will hold us to it, and the number is an eight-day platform mean that describes no account we run. If a benchmark is genuinely needed, the account's own history is the only defensible one, which is the standing position at [[Attribution & Incrementality#AT-003|AT-003]].
+
+**What is worth keeping for our own use.** The Tadelis et al. 2023 NBER framework is the experimental-measurement lineage Meta says it now runs platform studies on. That is a real citation and a lead worth following if we ever need to argue incrementality methodology with a client or a vendor, independently of the figure it was used to produce here. Nobody in this workspace has read that paper, and this claim does not rest on it.
+
+**Where it sits.** Beside [[Creative Science#CR-290|CR-290]] from the same post, where a footnoted third-party study turned out to measure something other than what the sentence claimed. **Both findings come from reading the footnote rather than the headline, on the same page, on the same day.** The reading rule that falls out of the pair: a footnote changes a figure from unverifiable to checkable, and checking it is now the work, not a formality.
+Sources: Meta for Business News, "meta-marketing-summit-hongkong-2026", dated 29 October 2026 on its own page, read in full 2026-10-31
+Last touched: 2026-10-31
