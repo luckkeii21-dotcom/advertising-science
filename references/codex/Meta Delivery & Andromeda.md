@@ -1535,8 +1535,9 @@ Tier: T1 · Status: active
 **What it means for us.** Never quote a Meta policy section name without stating which locale it was read on. An appeal that cites a section name the reviewer's locale does not carry is arguing from a page that does not exist for them. And note the direction of the consolidation: two named prohibitions became one pointer at a Community Standard, which moves the binding rule text off the advertising page and onto the Community Standards page, which this lane does not watch.
 
 **A method gap closed on the same read.** The baseline could only detect a section being added, removed or renamed, which is exactly why it caught this and would have missed a silent rewrite inside an unchanged title. A per-section SHA-256 map of the rendered body was captured today, so the next run can detect a body rewrite as well as a heading change.
+**Amendment 2026-11-02.** The locale-staging half is now qualified rather than general. [[Meta Delivery & Andromeda#MD-193|MD-193]] records a body rewrite on this same page that landed on BOTH locales simultaneously. So Meta sometimes stages by locale and sometimes does not, and the instruction that survives is to read both locales every time, not to expect a gap.
 Sources: Meta Advertising Standards, https://transparency.meta.com/policies/ad-standards/ and https://transparency.meta.com/en-gb/policies/ad-standards/, both read 2026-09-14 through the Playwright browser; structural baseline of 2026-08-25 at .claude/skills/advertising-science/cache/meta-ad-standards-baseline.md
-Last touched: 2026-09-14
+Last touched: 2026-11-02
 
 ### MD-157 · Meta One went live globally on 2026-09-15 with four paid business tiers at $14.99, $49.99, $149 and $499 a month, and the brand is older than the launch
 Tier: T1 · Status: active
@@ -2258,3 +2259,27 @@ The first time this codex has held a combined, dated, cited quarterly figure for
 **Guards.** Meta's own measurement, with no methodology, no control, no confidence interval, no advertiser count and no vertical split. "Advances in our user-understanding models" is not defined, so the attribution across the three named systems cannot be apportioned. Facebook only. An earnings footnote establishes that Meta told investors the number, not that the number was independently verified.
 Sources: Meta for Business News, "how-metas-ads-system-matches-your-ad-to-the-right-person", 2026-10-28, read 2026-10-29, footnoted by Meta to Q2 2026 Earnings, Q3 2026 Earnings and Engineering at Meta
 Last touched: 2026-10-29
+
+### MD-193 · Meta hardened financial-services advertiser verification from discretionary to mandatory, on both locales at once, with no notice anywhere
+Tier: T1 · Status: active
+**The second change the Advertising Standards baseline has ever caught, and the first one the per-section hash map caught rather than the heading list.** [[Meta Delivery & Andromeda#MD-156|MD-156]] was a section rename, visible in a heading. This one is three characters inside an unchanged heading, and only a body hash finds it.
+
+**The sentence, before and after, under Restricted goods and services → Financial and Insurance Products and Services.**
+
+Before, read 2026-10-12 and verified byte-identical on 2026-10-19 and 2026-10-26: "Advertisers promoting financial products and services **may be required to** verify their business and/or individual identity and demonstrate that they are authorised by the relevant regulatory authorities where this is a requirement, and any such authorisation may be subject to review by Meta."
+
+Now, read 2026-11-02: "Advertisers promoting financial products and services **are required to** verify their business and/or individual identity and demonstrate that they are authorised by the relevant regulatory authorities where this is a requirement, and any such authorisation may be subject to review by Meta."
+
+**What it changes.** Identity and authorisation verification was a thing Meta reserved the right to ask for. It is now a stated requirement of running the ads. The rest of the sentence is untouched, including "where this is a requirement", which still ties the regulatory-authorisation half to local law. The verification half carries no such qualifier and now applies to anyone promoting financial products and services.
+
+**Both locales moved together, which the MD-156 locale-staging rule does not predict.** `/policies/ad-standards/` and `/en-gb/policies/ad-standards/` both read "are required" in the same browser session on 2026-11-02. MD-156 staged by locale and took weeks to propagate. One simultaneous change does not retire that rule, and it does mean a locale split is not guaranteed.
+
+**Dating, stated honestly because the page carries no date marker of any kind.** The change landed between 2026-10-26, when all 32 section hashes across both locales were verified byte-identical to their baselines, and 2026-11-02. It cannot be dated more precisely from the page, and Meta published no announcement, no changelog entry and no notice on any watched source.
+
+**Section-level evidence.** US "Restricted goods and services" went 6,531 chars to 6,528, exactly the three characters of "may be " becoming "are ". The other 15 US sections are byte-identical to the 2026-10-12 map. UK went 6,537 to 6,533, one character more than the US delta, and the extra character cannot be localised because no raw UK body text was ever cached, only hashes. All 15 other UK sections are byte-identical to the 2026-10-19 map.
+
+**Operating consequence for our book.** Nothing in the clinic lane touches this. The exposure is the truck dealerships, where financing is part of the offer: an ad promoting financing, a credit application or a payment term sits inside "Financial and Insurance Products and Services", and the business-verification step is no longer something Meta might ask for. **Treat identity and business verification as a precondition on any account whose ads mention financing, rather than as a request to answer when it arrives.** No account of ours has been asked yet, and this entry is the policy text changing, not an enforcement action observed.
+
+**Guards.** Policy text only. Meta published no effective date, no enforcement date and no statement about existing advertisers. Nothing here says enforcement has started, and the Community Standards page that MD-156 recorded the binding text moving onto is still not watched by this lane.
+Sources: Meta Advertising Standards, https://transparency.meta.com/policies/ad-standards/ and https://transparency.meta.com/en-gb/policies/ad-standards/, both read 2026-11-02 through the Playwright browser; prior body text from the cached 2026-10-12 innerText snapshot at .claude/skills/advertising-science/cache/adstd-raw-2026-10-12.json; section hash baselines at cache/watchlist-seen.json pages.meta-ad-standards
+Last touched: 2026-11-02
