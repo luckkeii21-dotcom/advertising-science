@@ -1216,3 +1216,52 @@ The 2026-10-25 note records the Playwright MCP server failing to connect on all 
 ## The Merchant Center answer-id key earned its keep (2026-10-26)
 
 The 2026-10-12 note replaced entry-date parsing with a `/merchants/answer/(\d+)` id SET diff on this changelog, after date parsing had failed twice (ordinal suffixes, then a forward-looking compliance sub-heading read as a publication date). First real change since: **80 ids against 79 cached, exactly one added, `18795602`, zero removed.** The entry was opened and read at source. No date parsing was involved at any point.
+
+### arXiv: `pubDate` is the key, NOT `lastBuildDate`, and reading the wrong one cost five days (found 2026-11-02)
+
+The 2026-09-07 correction above says: a run after 04:00 UTC reads today's build, so **a Monday run
+after 04:00 UTC is a normal, full read**, and it told this lane to check `lastBuildDate` against the
+clock. That instruction is incomplete, and today it returned the wrong answer.
+
+Read 2026-11-02 at 10:24 IST, which is 04:54 UTC on a Monday, after the rebuild:
+
+- `lastBuildDate` = **Mon, 02 Nov 2026 04:33:50 +0000**. By the 09-07 rule this is a normal full read.
+- `pubDate` = **Sun, 01 Nov 2026 00:00:00 -0400**.
+- Body = **892 bytes, zero `<item>` elements**, `skipDays` Saturday and Sunday.
+
+So the feed was **rebuilt** on Monday and the body it served was **Sunday's issue**, which is empty by
+`skipDays`. `lastBuildDate` records when the file was regenerated. `pubDate` records which issue the
+body belongs to. They disagreed by a day today, and only `pubDate` predicted the empty body.
+
+**Corrected instruction: read `pubDate` to decide whether a build is expected to be empty.** An empty
+body is the normal result when `pubDate` names a Saturday or a Sunday, whatever `lastBuildDate` says.
+A fresh `lastBuildDate` is not evidence that the lane advanced.
+
+**Why this is not a cosmetic correction: five consecutive builds went unread while submissions continued.**
+Every run from 29 October to 2 November reported the arXiv lane as 0 items. The 29 October log drew the
+explicit conclusion "Nothing was missed and nothing was filtered; there was nothing published on the feed
+to filter." That conclusion was wrong. Checked today against
+`export.arxiv.org/api/query` for `cat:cs.IR` over 2026-10-28 to 2026-11-02:
+
+| Submission date | cs.IR submissions |
+|---|---|
+| 2026-10-30 (Fri) | 16 |
+| 2026-10-29 (Thu) | 28 |
+| 2026-10-28 (Wed) | 7 |
+| 2026-10-31 (Sat) | 0 |
+| 2026-11-01 (Sun) | 0 |
+
+**51 submissions, 6 of them past the bank-list filter, and 0 of the 6 were in
+`cache/watchlist-seen.json`.** The weekend genuinely published nothing, so the Saturday and Sunday empty
+reads were correct. The Wednesday-through-Friday ones were not: the feed served an empty body across
+dates that carried 51 submissions, and the lane recorded that as "nothing published".
+
+**Standing instruction, stated once.** An empty arXiv body on a weekday `pubDate` is a **fault**, not a
+quiet day, and it must be backfilled through the API in the same run rather than logged as 0. The
+backfill route is already recorded in the 2026-10-07 note; the gap was never the route, it was that an
+empty body was being accepted as evidence of nothing to read. Sustained empty bodies across weekday
+`pubDate`s are how this lane loses papers silently, and five days is how long it took to notice.
+
+The six papers recovered today were all read. One was banked,
+[[Marketing Math & Unit Economics#MM-231|MM-231]]. The other five are dispositioned with reasons in the
+2026-11-02 Harvest Log entry.
