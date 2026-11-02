@@ -10,7 +10,7 @@ tags: [advertising-science, lesson, meta-delivery, policy, verification, truck-l
 
 # Lesson 068 · Permission Became A Requirement
 
-Topic: Meta Delivery & Andromeda, the law layer. Harvest-driven, so the rotation pointer holds at 4. This morning's research pass caught a three-character edit on Meta's Advertising Standards page and banked it as [[Meta Delivery & Andromeda#MD-193|MD-193]]. It reaches two of our accounts and only two.
+Topic: Meta Delivery & Andromeda, the law layer. Harvest-driven, so the rotation pointer holds at 4. This morning's research pass caught a three-character edit on Meta's Advertising Standards page and banked it as [[Meta Delivery & Andromeda#MD-193|MD-193]]. It reaches two of our accounts and only two. Video: `video/2026-11-02-lesson-068.mp4`.
 
 ## 1. The mechanism
 

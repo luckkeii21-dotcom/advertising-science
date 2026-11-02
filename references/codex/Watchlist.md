@@ -1265,3 +1265,24 @@ empty body was being accepted as evidence of nothing to read. Sustained empty bo
 The six papers recovered today were all read. One was banked,
 [[Marketing Math & Unit Economics#MM-231|MM-231]]. The other five are dispositioned with reasons in the
 2026-11-02 Harvest Log entry.
+
+### arXiv: the API backfill writes VERSIONED links and the RSS feed serves UNVERSIONED ones, so a backfilled paper comes back as new (found 2026-11-03)
+
+The 2026-11-02 second pass backfilled six papers through the API after five days of empty RSS bodies, read all six, and wrote their links into the cumulative seen set. **One of them came back as new on the very next run.** Today's feed passed the advertising filter on exactly one item, 2610.38378v2 GR4AD-X on Kuaishou, which is a paper yesterday read in full and deliberately did not bank.
+
+**The cause, and it is in our own code path rather than at arXiv.** The checker diffs on the RSS `<link>` string. The two routes do not agree on its form:
+
+| Route | Link form written or read |
+|---|---|
+| API backfill, 2026-11-02 | `https://arxiv.org/abs/2610.38378v2` |
+| RSS `<link>`, 2026-11-03 | `https://arxiv.org/abs/2610.38378` |
+
+The cache holds the versioned string, the feed serves the unversioned one, the strings do not match, and the paper reads as unseen. Every one of yesterday's six backfilled links carries a version suffix, so **all six can re-surface the same way.**
+
+**The fix, and it is two lines of method.** Normalise an arXiv link to its bare id before comparing, by stripping any trailing `v<digits>`, and store the bare id rather than the URL. Until the checker does that, a backfilled paper has to be de-duplicated by hand against the previous run's reading list.
+
+**And the field that would have answered this without any normalisation at all.** Each RSS item carries `<arxiv:announce_type>`, and on this item it reads **`replace`**. A replacement announcement is a paper the feed has carried before, under its earlier version. The checker does not read this field. **Reading it separates a genuinely new submission from a re-announcement directly, which is what both this defect and the 2026-10-23 new-ID defect were working around indirectly.**
+
+**This is the third distinct arXiv dedup failure and the first one caused by us.** 2026-10-23 recorded the same paper returning under a new ID. 2026-11-02 recorded `pubDate` versus `lastBuildDate`. Both of those are properties of the source. This one is a mismatch between two of our own routes, created by yesterday's fix, and it surfaced on the first run after it. **A backfill route that writes keys in a different shape from the primary route re-opens the lane it was built to close.**
+
+**Lane status, stated separately from the defect.** arXiv has recovered. Today's feed: `pubDate` Mon 02 Nov 2026 00:00:00 -0500, a weekday, `lastBuildDate` Mon 02 Nov 05:00:18 UTC, 76,758 bytes, **34 items**. The 02 Nov 04:33 build that yesterday's pass read empty carried Sunday's `pubDate`; the 05:00 build carries Monday's. So the empty body resolved when the build advanced its own `pubDate`, roughly 26 minutes later, and the 2026-11-02 rule that `pubDate` is the key reproduces exactly. The lane is off API backfill.
