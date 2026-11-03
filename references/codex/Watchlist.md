@@ -15,7 +15,7 @@ The pages the daily Research run monitors for platform updates. All URLs verifie
 |---|---|---|---|
 | Meta Engineering Blog (Andromeda/GEM posts land here first) | https://engineering.fb.com/ | RSS: https://engineering.fb.com/feed/ | Daily |
 | Meta Newsroom | https://about.fb.com/news/ | RSS: https://about.fb.com/news/feed/ | Daily |
-| Meta for Business News | https://www.facebook.com/business/news | Scrape listing, **compare DATES not links**, see below | Daily |
+| Meta for Business News | **`?locale=en_US` AND the `en-gb` host, both pinned. NEVER the bare URL, which renders a third Hindi catalogue 48 days stale (2026-11-03)** | Scrape listing, **diff the slug set against the cumulative seen set**, see below | Daily |
 | Marketing API changelog | https://developers.facebook.com/docs/marketing-api/marketing-api-changelog | Page diff | Weekly (Mon) |
 | Graph API version hub | https://developers.facebook.com/docs/graph-api/changelog | Page diff | Weekly (Mon) |
 | Advertising Standards (silent policy rewrites) | https://transparency.meta.com/policies/ad-standards/ | Page diff | Weekly (Mon) |
@@ -31,6 +31,14 @@ So a link-set diff produces a 5-item false positive on this source. Read the dat
 **Transport note, 2026-10-25. WebFetch is a third working route, and it removes the browser from the critical path.** The Playwright MCP server failed to connect in this session, all four profiles, and a plain urllib fetch returned HTTP 400 on both the bare URL and `?locale=en_US`, re-verified today. WebFetch read the `?locale=en_US` shelf fine: twelve titles, twelve dates, twelve slugs. Route order from now on: plain fetch, then WebFetch, then the browser. A session with no browser is no longer a blind day on this source.
 
 **Date a post from its own page, never from its listing card (2026-10-25).** The card for `you-dont-beat-the-auction-you-brief-it` reads "October 22, 2026" on two separate fetches. The post's own page reads "21st October 2026". The 2026-10-24 run dated it from the post page and banked it as 21 October, which is the correct one. This extends the 2026-10-08 observation, where a card and a page differed only in date FORMAT, to a case where they differ in VALUE by a day. One day is enough to put a post in the wrong week of a report.
+
+### Transport note, 2026-11-04: plain fetch answered HTTP 200 on BOTH pinned Meta for Business News URLs, after three consecutive days of HTTP 400
+
+The route order recorded on 2026-10-25 is plain fetch, then WebFetch, then the browser. On 2026-11-01, 11-02 and 11-03 the first step returned HTTP 400 on every Meta property tried, with a 1,542-byte body, and all three runs read the shelves through WebFetch. **Today the first step answered: HTTP 200 and 235,084 bytes on `?locale=en_US`, HTTP 200 and 231,643 bytes on the `en-gb` host.** Both bodies rendered the correct locale, verified by the slug sets matching `slugs_us_2026_11_03` and `slugs_uk_2026_11_03` exactly in content and in order. WebFetch was not needed and the browser was not tried.
+
+**So the HTTP 400 is intermittent and is not a wall.** The 2026-09-10 note already said the 400 was not permanent; this is the third separate confirmation and the first one where both pinned URLs answered in the same run. **Do not record a 400 on this source as the documented behaviour.** Record it as today's result, fall through to WebFetch, and keep trying the plain fetch first, because it is the only route that returns a body this lane can diff byte for byte.
+
+One thing the plain-fetch body does NOT give, and it is a real loss against WebFetch: the US body carries 24 parseable card dates (newest `October 28, 2026`, unchanged) and **the UK body carries zero.** The UK shelf renders its dates somewhere a plain regex over the HTML does not reach. So on a day when the UK slug set moves, the plain fetch can say which slugs moved and cannot date them, and the UK read has to go through WebFetch to get a ceiling.
 
 ## Google
 
@@ -99,6 +107,16 @@ Same empty file, different cause, and worth separating so neither is mistaken fo
 Observed 2026-09-05 at 06:31 UTC: **892 bytes, zero `<item>` elements, `lastBuildDate` Sat, 05 Sep 2026 04:00:04 +0000**, byte-signature identical to the 2026-08-24 Monday observation. **No build was skipped and no paper was lost**; Friday's build was read by Friday's run. Log it as "feed empty, weekend build" and move on.
 
 Practical consequence for the whole weekend: **a Friday-evening-through-Sunday window announces nothing**, so Saturday, Sunday and Monday runs all have an empty or stale arXiv lane by construction. Only Tuesday through Friday runs can return papers.
+
+### Checker defect, 2026-11-04: `last_checked` is stamped in UTC, so any run before 05:30 IST writes YESTERDAY
+
+`lib/watchlist_check.py` line 100 sets `today = datetime.now(timezone.utc)`. The scheduled run and every catch-up relaunch fire in the small hours IST, which is still the previous day in UTC. **So the checker writes yesterday's date into `last_checked` and into the per-source `result_*` keys for all six automated sources.** Observed today: the checker wrote `2026-11-03` on a run that happened on 2026-11-04 IST.
+
+**Why it went unnoticed for weeks.** `last_run` at the top of the cache uses `datetime.now()`, local time, and is correct. And the 2026-11-02 and 2026-11-03 runs both had evening second passes, after 13:30 IST, which re-committed with the right UTC date and overwrote the morning stamp. A day with one early pass and no second pass is the case that shows the bug.
+
+**Why it matters rather than being cosmetic.** The failure direction is the dangerous one. A cache that reads one day older than it is makes a staleness check report a source as unread when it was read, and in the other direction it means a genuinely missed day cannot be distinguished from a correctly-read one by date alone. The 2026-10-24 and 2026-10-28 entries above both caught runs that claimed a commit that had not happened, and both used file mtime and the date keys to prove it. **Those adjudications rely on the date key being the run's own date.**
+
+Fix: use the same clock `last_run` uses. Until it is fixed, read any `last_checked` on an automated source as "the run dated this or the next day", and trust the hand-written business-news keys, which are stamped on the IST date.
 
 ## Source-quality gaps recorded 2026-08-24
 
@@ -1286,3 +1304,42 @@ The cache holds the versioned string, the feed serves the unversioned one, the s
 **This is the third distinct arXiv dedup failure and the first one caused by us.** 2026-10-23 recorded the same paper returning under a new ID. 2026-11-02 recorded `pubDate` versus `lastBuildDate`. Both of those are properties of the source. This one is a mismatch between two of our own routes, created by yesterday's fix, and it surfaced on the first run after it. **A backfill route that writes keys in a different shape from the primary route re-opens the lane it was built to close.**
 
 **Lane status, stated separately from the defect.** arXiv has recovered. Today's feed: `pubDate` Mon 02 Nov 2026 00:00:00 -0500, a weekday, `lastBuildDate` Mon 02 Nov 05:00:18 UTC, 76,758 bytes, **34 items**. The 02 Nov 04:33 build that yesterday's pass read empty carried Sunday's `pubDate`; the 05:00 build carries Monday's. So the empty body resolved when the build advanced its own `pubDate`, roughly 26 minutes later, and the 2026-11-02 rule that `pubDate` is the key reproduces exactly. The lane is off API backfill.
+
+### The bare business-news URL no longer renders en_GB from our egress. It renders HINDI, and it is a THIRD catalogue (2026-11-03, pass 2)
+
+The 2026-09-20 locale-partition note records the bare `facebook.com/business/news` as rendering **en_GB**
+from our New Delhi egress, and every note since has treated the source as two shelves, US and UK.
+**Read today at 19:20 IST it rendered in Hindi, with a card set that is neither shelf.**
+
+| Read | Language | Newest card | Slug count |
+|---|---|---|---|
+| `facebook.com/business/news` (bare) | **Hindi** | **10 September 2026** | 12 |
+| `facebook.com/business/news?locale=en_US` | English (US) | 28 October 2026 | 12 |
+| `en-gb.facebook.com/business/news` | English (UK) | 27 October 2026 | 12 |
+
+**The two pinned reads matched the 01:12 first pass exactly, all 12 slugs each, in the same order.** So both
+real shelves are flat and this is not a publishing event. The finding is about our method only.
+
+**Why it matters, and it is the table at the top of this file that is wrong.** The source row still lists the
+bare URL as the address for this lane. The bare URL now returns a Hindi catalogue whose newest card is
+**48 days older** than the US shelf. A run that followed that row would report the source quiet while the US
+catalogue sat 48 days ahead of what it read. This is the same failure shape the 2026-09-20 entry was written
+to prevent, and the entry is being defeated by its own recorded render drifting from en_GB to hi_IN.
+**Fix applied to the table: the bare URL is never the address. Read `?locale=en_US` and the `en-gb` host, both
+pinned, every time.** The checker's own business-news step already uses the pinned pair, which is why the
+first pass was correct; only the human-readable row was stale.
+
+**Four slugs in the Hindi catalogue have never been seen by this lane**, found by diffing against
+`slugs_seen_cumulative` (36): `sports-consumer-research-2025` (15 Sep 2025),
+`dont-let-your-business-be-a-victim-protect-your-facebook-account-from-phishing` (17 Jun 2024),
+`how-businesses-are-seeing-value-through-ai` (28 Feb 2023), `scale-business-ad-creatives-meta-tools` (29 Jul 2022).
+**They were NOT read and nothing is claimed from them. They are deliberately NOT added to the cumulative seen
+set, because marking an unread slug as seen is how a post disappears from this lane permanently** — which is
+precisely what the 2026-09-23 title-baseline entry caught. Deprioritised rather than dropped: all four predate
+the 2026 ranking-system rewrite this codex tracks, the newest by over a year, and one is account-security
+guidance rather than advertising mechanics. Carried as a named gap until read.
+
+**The same-day rule from 2026-10-09 held for a third time and is restated rather than revised.** Both pinned
+shelves returned identical slug sets 18 hours after the first pass. **One read per day remains sufficient on
+this source, and today's re-read bought no coverage.** It is logged because it found the render drift, not
+because the second read was due.
