@@ -30,6 +30,19 @@ So a link-set diff produces a 5-item false positive on this source. Read the dat
 
 **Transport note, 2026-10-25. WebFetch is a third working route, and it removes the browser from the critical path.** The Playwright MCP server failed to connect in this session, all four profiles, and a plain urllib fetch returned HTTP 400 on both the bare URL and `?locale=en_US`, re-verified today. WebFetch read the `?locale=en_US` shelf fine: twelve titles, twelve dates, twelve slugs. Route order from now on: plain fetch, then WebFetch, then the browser. A session with no browser is no longer a blind day on this source.
 
+**Transport and parsing note, 2026-11-04 pass 2. THE UK SHELF HAS ALWAYS CARRIED CARD DATES AND OUR OWN REGEX COULD NOT SEE THEM.** The 04:46 pass recorded the US body as carrying 24 parseable card dates and the UK body as carrying zero, and concluded that a UK read needing a date ceiling still had to go through WebFetch. **That conclusion is wrong and is retired here.** Re-parsing the UK body saved this morning (`cache/bn-uk-20261104.html`, 231,511 bytes) finds **24 parseable card dates, 8 distinct, newest 27 October 2026**, confirming the ceiling that had been carried over from yesterday unverified. The two shelves render dates in **different formats**, and our parser only ever tries one of them:
+
+| Shelf | Rendered format | Example |
+|---|---|---|
+| `?locale=en_US` | month first, with a comma | `October 28, 2026` |
+| `en-gb` host | **day first, no comma, no ordinal suffix** | `27 October 2026` |
+
+**So the fix is a second pattern, not a different transport.** Accept `(\d{1,2})\s+(Month)\s+(20\d\d)` alongside the existing `(Month)\s+(\d{1,2}),\s+(20\d\d)`, and keep the ordinal-optional `(st|nd|rd|th)?` the Merchant Center lane already needs, because none of the three forms covers the other two. The ordinal form matched zero times on both bodies today, so the ordinal bug and this one are separate defects on separate sources.
+
+**Ceilings confirmed from today's own bodies, both locales, no WebFetch and no browser:** US newest **28 October 2026** (9 distinct dates, 15 September to 28 October), UK newest **27 October 2026** (8 distinct dates, 14 May to 27 October). The UK shelf reaching back to May against the US shelf's September is a separate observation worth keeping: the two shelves rotate at different speeds, so a slug ageing off the UK shelf is weaker evidence of a publishing event than the same slug ageing off the US one.
+
+**Plain fetch returned HTTP 400 on both pinned URLs at 18:42 IST**, roughly 14 hours after both answered HTTP 200 at 04:49. That is the fourth separate confirmation that the 400 is intermittent rather than a wall, and the first measurement of how fast a working window closes. Route order is unchanged: plain fetch, then WebFetch, then the browser. **No second shelf read was attempted or is owed**, under the one-read-per-day rule of 2026-10-09, which three pass-2 re-reads have now shown buys no coverage.
+
 **Date a post from its own page, never from its listing card (2026-10-25).** The card for `you-dont-beat-the-auction-you-brief-it` reads "October 22, 2026" on two separate fetches. The post's own page reads "21st October 2026". The 2026-10-24 run dated it from the post page and banked it as 21 October, which is the correct one. This extends the 2026-10-08 observation, where a card and a page differed only in date FORMAT, to a case where they differ in VALUE by a day. One day is enough to put a post in the wrong week of a report.
 
 ### Transport note, 2026-11-04: plain fetch answered HTTP 200 on BOTH pinned Meta for Business News URLs, after three consecutive days of HTTP 400
