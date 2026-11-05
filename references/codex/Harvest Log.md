@@ -9,6 +9,40 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-11-05 (teacher run; the research lane launched in the same second and had written no entry at topic-lock)
+
+**Lesson 072 shipped: *Nobody Has To Remember To Put It Back*. No video, Thursday.** Inbox empty for the fourteenth consecutive run that executed, so no grading and no influence on the topic.
+
+**This entry is at the TOP because there is no 2026-11-05 entry at the bottom to append to.** Both ends of this file were read at topic-lock, per the carried two-write-ends defect, now in its sixteenth day. The teacher lines for 1 to 4 November were appended into research entries at the bottom because research had already written on those days. Today's research lane launched in the same second as this one, so the newest research entry is the 2026-11-04 second pass at the bottom, which banked **0 claims added, 4 amended** (LS-035, LS-089, LS-060, MD-191) and did not move the law layer.
+
+**Quiet harvest, so the topic came from the rotation on merit, and the pointer finally moves.** Pointer sat at index 4, Scaling Models, for a **fifth consecutive lesson**, and [[Scaling Models#SC-182|SC-182]] was an untaught backlog item at **seven days** on that same topic. Pointer and backlog converged, which is the lesson-067 pattern, so **no exception was needed and the pointer advances 4 to 5, Attribution & Incrementality.** `lesson_counter` 72 to 73. Scaling Models moves 11 to 12 lesson files and draws level with Meta Delivery & Andromeda at the top.
+
+**GA-098 was the older item and was passed over, on merit rather than on tier.** T2 and eight days old, against SC-182's T3-and-T1 split at seven. Its own guards decide it: no vertical is named, none of its percentages transfers to a specific account, none may be quoted to a client, and we hold no live Google Search lane it would steer. **An older, higher-tier claim with no account to land on loses to a newer claim with a dated window on a live one.** It stays on the board.
+
+**The lesson is one control and the failure class it removes.** SC-182: Meta has a native scheduled-budget-increase control that ramps a daily budget for a set window and reverts on its own. Jon Loomer, quoted in the lesson: "if you're spending $100 per day, you can say to increase that to $200 per day for week one and $300 per day for week two. When that scheduled increase ends, your budget returns to normal." Taught with the second half as the finding, because **every scaling prescription in this codex assumes a human comes back and acts**: SC-100's 5 to 10 day holds, SC-044's 3x over at least 3 days, SC-001's 5%-to-folklore spread. Analogy: a push-button bathroom tap against a tap you turn, where the push-button tap does not run better and simply cannot be left running. [[Scaling Models#SC-134|SC-134]] carried as the standing correction, a ceiling is not a schedule, $100/day to $5,000/day in about 365 days is a realised 1.08% a day.
+
+**The tier work is the spine, and this is the cleanest two-tier claim on the board.** **T3 for the control**, because Loomer describes it, shows no screen, shows no account and publishes no result. **T1 for the recommendation**, because Meta's own peak-season page lists budget scheduling among its instructions to advertisers. Stated out loud in the lesson: **zero evidence that a scheduled increase performs differently from the same increase made by hand, and zero evidence on what it does to the learning phase.** The claim buys process safety and nothing else, and Q2 deducts for any answer implying a delivery benefit. Loomer's own counterweight is taught with it: "whether or not you have a good Black Friday, Cyber Monday is unlikely to be because of your budgeting decisions", an assertion from a high-credibility operator with no data attached, which runs against the careful-step orthodoxy without refuting it.
+
+**SC-182 closes a gap [[Scaling Models#SC-117|SC-117]] named in its own caveat, and the same file kills the obvious misuse.** SC-117's caveat: the flat-pacing argument "does not address lifetime budgets or scheduled budgets, which are the platform features that would make the manual correction unnecessary." The feature has a name now. **And scheduling Sunday budgets is already refuted on our own export:** Phoenix Truxx, 13 July to 2 August 2026, 21 days, $4,259.23, **469 opt-ins at $9.08**, spend leaning Sunday in all three weeks, opt-ins proportional to the dollars at **chi-square 2.414 on 6 df, p = 0.88**, Saturday the dearest day one week and the cheapest the next. Q4 grades exactly that and gives zero for approving on the spend lean alone.
+
+**⚠ Our own numbers, and the finding is that our only piece of budget automation ran the ramp in REVERSE while nobody forgot anything.** Phoenix Truxx carried the automated rule "Daily budget de-scaling 01", cutting 5% a day whenever Meta's cost per lead read over $9, floor $140. **It dragged every raise back to $140.** The scale-up rule is still on and capped at $100, so it never fires at all. Disabled 3 November; budgets reset to **$160 statics and $40 dump**, from $140 and $50. **Two separate defects and SC-182 would have prevented neither.** One, no dead band, which is exactly what [[Scaling Models#SC-101|SC-101]] exists to prevent. Two, the $9 trigger was anchored to a false number: September read **706 at $8.18 in Ads Manager against 417 real CRM people at $13.86** because of the GoHighLevel Conversions API echo, so a $9 rule on a $13.86 reality fires more or less permanently. **Automation failing while running exactly as configured is a different failure class from a human forgetting, and only the second has a product fix.** Q5 grades the split and requires naming that SC-182 is not the fix. The echo was removed from that account on 21 October, so a threshold set today is readable against real numbers.
+
+**Where a scheduled ramp has a real date to attach to, and it was opened today.** The 9 October structure audit found one Phoenix CBO at **$180.50 a day** holding about seven ad sets mixed together, including a winter English lane and a winter Spanish lane, and plow work is a named "why now" in that account's own ICP file. The open item dated **5 November** is up to four campaigns by division, roughly $50 Phoenix Experience, $60 box, $50 dump plus plow, $40 rest, once Ruddy's picks come back. **The ramp will get planned and the return date is the thing nobody has written down.** Q3 asks for that plan.
+
+**The scoping limit, stated plainly in the lesson: we have no Black Friday.** SC-182 arrives inside peak-season guidance. Commercial trucks in New Jersey, a spine clinic in Michigan, a final expense agency in California. Our seasonal events are plow season and the year-end truck buying window, and neither has ever had a dated budget plan written for it. The rest of the book is not a candidate today either: SJR **$767.78 / 136 / $5.65** for 23 to 29 October at roughly $110 a day, where SC-100 permits a 50% step and nobody has scheduled one; StayWell **$562.63 / 23 / $24.46** the same week, a recovery after two down weeks; RK Consumer Services built paused on 5 November at **$50 a day CBO**, whose own playbook says $50 flat for 7 to 14 days.
+
+**And the check nobody has run: whether this control is even present in our ad accounts.** [[Meta Delivery & Andromeda#MD-141|MD-141]] is the precedent, a Meta control present in only about half of one agency's accounts. **Sixth two-minute read in a live interface named across six consecutive lessons, and none of the six has an owner.**
+
+**Decision rule taught.** A budget raise is not planned until its return date is set in the same action. Use the scheduled increase so the ramp and the revert ship together; if the control is not in the account, the raise does not go in until a dated return and an owner are written down.
+
+**Quiz.** Five questions, three applied. Q3 is the Phoenix plow plan plus the one pre-check. Q4 is the Sunday trap, settled by p = 0.88. Q5 splits the de-scaling rule into its two defects and grades whether Lucky says SC-182 fixes neither.
+
+**Record-keeping: both write ends appended, third consecutive run under the 1 November fix.** `_rotation.json` got **history entry 63** and a note paragraph. Topic counts recomputed from the frontmatter of all 72 lesson files, **normalising quoted and unquoted topic values before counting, a step previous recounts did not state and which four files need**: Scaling Models 12, Meta Delivery & Andromeda 12, Attribution & Incrementality 9, Creative Science 8, Learning & Signal 8, Auction Mechanics & Bidding 6, Marketing Math & Unit Economics 5, Google Auction & Smart Bidding 5, Google PMax & Shopping 4, **TikTok Delivery 3**. Sum 72, file count 72, ties.
+
+**Backlog after today, cleared from the newest end rather than the oldest.** SC-182 cleared at seven days. Still untaught: **GA-098 (T2) eight days**, AU-102 and GA-099 **seven days each**, MD-194 **three days**. [[Learning & Signal#LS-088|LS-088]] stays flagged for the next Learning & Signal pass. **TikTok Delivery untaught thirteen days at three lesson files remains the strongest coverage case on the board.**
+
+**⚠ Flagged for Lucky and not for the engine, second day running: fourteen consecutive runs, seventy-two lessons, zero quiz answers.** The engine's output rate and the student's intake rate are not the same number, and the engine is the side that can change.
+
 ## 2026-10-31 (teacher run)
 
 **Lesson 066 shipped: *The Event Picks The Winner, Not The Ads*. No video, Saturday.** Inbox empty for the sixty-fourth consecutive run that executed, so no grading and no influence on the topic.
@@ -4216,3 +4250,68 @@ Re-checked at 07:00 IST, 15 minutes after the first pass. Harvest 0 new on all 1
 **Gaps.** Both gender gaps opened by the morning pass are unchanged and still ours to answer on our own accounts: whether a hard gender setting already saved on a live ad set survived the withdrawal, and whether the withdrawal is universal or partial. **One new, and it is cheap:** Loomer's 100-per-week line and Meta's formula now both bear on our live ad set count, which has been unverified against LS-089 for seventeen days and is one spreadsheet column. Carried: the business-verification status on SJR Commercial and Phoenix Truxx, sixth consecutive day and still the one errand with money behind it. The arXiv version-suffix normalisation and `announce_type` read still absent from the checker. The arXiv new-ID re-submission defect of 2026-10-23. The three business-news date patterns still absent from the parser, added today. The destination controls on a live account. The four unread Hindi-catalogue slugs. The Ads Decoded podcast lane unreadable. `occ-2025`, `occ-2024` and `occ-2023` unread. Google's promotion mode undocumented. TikTok product and policy news geo-blocked, SDK changelog only. The Community Standards page MD-156 flagged. The UK Advertising Standards fourth character unlocalised. The Nielsen Catalina 2026 edition unobtainable. The Harvest Log's two write ends, sixteenth day.
 
 **Errors.** Harvest `errors: []`, 0 of 12 channels on the secondary RSS route, which is the first clean primary-route run on this roster after 12/12, 0/12 and 6/12 fallbacks on the three preceding runs. Watchlist checker `errors: []` on both passes. Plain fetch HTTP 400 on both business-news URLs, handled as above and not an outage. The arXiv API returned nothing for either paper title, so both abstracts were read from the cs.IR RSS `<description>`, which carries them in full; recorded as a route note, not an error. The `rizzdial` MCP server failed to connect and several other MCP servers needed authorization; none is a research source and none affected this run. **No source in today's due set went unread.**
+
+## 2026-11-05 (Thursday) · 0 transcripts in · 1 claim added, 1 amended, 0 contested
+
+**One real finding, from arXiv, and it is Meta's own paper.** 0 transcripts in, **1 claim added, MD-198**, 1 amended (MD-197), 0 contested, 1 defect found in our own tooling. The law layer moved.
+
+**The finding in one line.** Meta published that its ads ranking and retrieval fleet is hundreds of separately tuned models, that each one's serving budget is being raised 1.2x to 10x, and that a whole generation of model work across 34 production models is worth 0.66% offline and summed online lifts of 0.07% and 0.29%, which is the first-party number that disqualifies "Meta changed their model" as an explanation for a client's drop.
+
+### 1. YouTube harvest
+
+`lib/harvest.py daily`, started 19:27:33, finished 19:29:42 IST. `errors: []`.
+
+- All 12 roster channels listed, every one returning 0. **0 new transcripts.** 5 uploads skipped as too short, 2 had no subtitles, 0 fell out of the window. No RSS fallback needed.
+- 11-03 and 11-04 each brought one transcript, so this is the first dry roster day since 2026-11-02.
+
+### 2. Watchlist
+
+Thursday, so the daily lane only. `lib/watchlist_check.py`, all six automated sources HTTP 200, `errors: []`, committed.
+
+| Source | Result |
+|---|---|
+| Meta Engineering (RSS) | 0 new links, 9 in feed, feed built 2026-11-03. The F3 Lightning post banked yesterday at MD-197 is still the newest |
+| Meta Newsroom (RSS) | 0 new links, 10 in feed, feed built 2026-10-29 |
+| Google Ads & Commerce (RSS) | 0 new links, 20 in feed, feed built 2026-10-28 |
+| arXiv cs.IR (RSS) | 31 in feed, 28 new links, **2 passed the ad filter, 1 genuine.** See below |
+| TikTok Business API SDK changelog | HTTP 200, top version 0.1.8, unchanged against baseline |
+| Google Ads Announcements | 396 answer ids, 0 added, 0 removed |
+| Meta for Business News | **0 new slugs on either shelf, second static day.** See below |
+
+**Meta for Business News: plain fetch 400s again, one day after answering 200.** Both pinned URLs returned HTTP 400 to the plain-fetch script, which is the ordinary state of this source and makes yesterday's pair of 200s the anomaly rather than a recovery. Read instead through WebFetch on `?locale=en_US` and `?locale=en_GB`, the fallback established 2026-09-30 and 2026-10-01. US shelf 12 slugs, ceiling 28 October, **0 new against the 36-slug cumulative set**. UK shelf 12 slugs, ceiling 27 October, **0 new**. Both shelves carry the same slug sets as 2026-11-04, so the three Hong Kong posts that arrived yesterday have not rotated off and nothing has arrived behind them.
+
+**Defect in our own tooling, found today, and it is the kind that reports a false haul rather than a false quiet.** `lib/_bizmeta_20261104b.py` reads `slugs_seen_cumulative` from the TOP LEVEL of `watchlist-seen.json`. The key does not live there. It lives at `pages/meta-business-news/slugs_seen_cumulative`. The script prints "cumulative seen: 0" and, had the fetch succeeded, would have declared **every slug on both shelves new**. It escaped notice because the fetch 400s before the diff runs, and because on the one day the fetch did work a human read the result. Recorded in the cache under `defect_2026_11_05`. Fix the key path before that script's new-slug count is trusted again.
+
+**arXiv, and the filter did its job in both directions.** Build dated 2026-11-05, read today, so no scheduling lag to correct for. 2 of 31 passed the keyword filter.
+
+| Paper | Verdict | Reason |
+|---|---|---|
+| 2611.06777 *WISE: An Agentic Framework for Whole-page Multimodal Search Experience Attribution* | **False positive** | "advertising" appears once, in the opening list "search, recommendation, and advertising". The method is quality diagnosis for industrial search, benchmarked on search pages. No auction, no bidding, no ads ranking |
+| 2611.05643 *Data-Efficient Scaling-Law Discovery for Recommendation Systems via Coupled Hyperparameter Scaling* | **Genuine, and the day's whole haul** | Affiliation printed as Meta, deployed on "Meta's ads ranking and retrieval fleet", 34 production model iterations. PDF pulled and read in full |
+
+The WISE false positive is the same mechanism recorded 2026-09-25: advertising named in a context list, never in the method. No filter change proposed, because the filter is meant to surface it and a human is meant to reject it, and the cost of reading one abstract is lower than the cost of a missed Meta paper.
+
+### 3. Claims
+
+**MD-198 added (T1).** Meta, arXiv 2611.05643v1, submitted 3 November 2026, 12 pages, read in full from the PDF. Thirteen authors, affiliation line reads Meta, and the system is stated as deployed on "Meta's ads ranking and retrieval fleet". A method paper on choosing model architectures; banked for four facts about the fleet it ran on and nothing about the method.
+
+1. **The fleet is hundreds of models, tuned individually.** Quoted: "hundreds of unique models that often share a common template" but differ "in signals, objectives, and serving capacity — and therefore in optimal configuration", with the operating point chosen "per model rather than once for the fleet" because each serves a surface with its own latency ceiling. This is the architectural reason a creative behaves differently by placement with nothing changed in the ad set, and it is a better first explanation than audience quality. Meta names no model and no surface.
+2. **Serving compute per model is rising 1.2x to 10x.** Quoted: "infrastructure investments provide each model with a serving budget between 1.2x and 10x that of its production predecessor". Meta frames its own problem as distributing finite serving compute across the fleet rather than building bigger models, and says that allocation was previously "made by hand, one model at a time, at a cost of days to weeks of training per decision".
+3. **What a model generation is worth, which is the number worth carrying.** 34 production model iterations, two development cycles: mean offline normalized-entropy improvement 0.66% (cycle 1, 11 models, 0.66%; cycle 2, 23 models, 0.67%; SD 0.59 percentage points), online lifts 0.07% across the 11 and 0.29% across the 23. Meta attaches "business impact on the order of hundreds of millions of dollars in annual revenue".
+4. **Meta wrote its own guard, so quote it.** The table footnote on the headline 0.36%: "The online value is the sum of the shipped cycle-level lifts over disjoint model sets, not a separately measured aggregate effect." It is an addition of two numbers from two different model sets. Never present it as a measured total; the honest form is 0.07% and 0.29%, each on its own set.
+
+**Why it is banked, in one sentence.** Put these magnitudes beside [[Meta Delivery & Andromeda#MD-188|MD-188]], where Meta's Andromeda figures are 2.4% conversions since 2025 and 1.37% on Facebook in Q3 2026: both lanes agree that a generation of Meta's model work moves a platform aggregate by a fraction of a percent to low single digits, which is far less than a single account's week moves from creative, budget, seasonality and sample size. So **"Meta changed their model" is now disqualified as an explanation for an account's drop by a first-party number instead of by our judgment**, and the breakdowns-first ladder in `Attribution & Incrementality.md` keeps its prior that the cause is local.
+
+**Limits recorded inside the claim.** Preprint, under review, not peer reviewed. Normalized entropy is an internal model-quality metric with no advertiser-facing equivalent, so 0.66% translates into nothing a client would ever see in a report. The 34 iterations are undated, no surface or model is identified, and "two development cycles" is not a calendar, so **this discloses no retrain or refresh cadence and [[Meta Delivery & Andromeda#MD-033|MD-033]] stands unchanged.** Nothing in it is a lever: no setting, no report, no opt-in.
+
+**MD-197 amended.** A pointer added to MD-198, because the two are the same story from opposite ends and were published within a day of each other: F3 Lightning says feature iteration got about 3.6x faster, and this paper says what an iteration is worth. `Last touched` moved to 2026-11-05.
+
+### 4. Skill law layer
+
+**Updated.** One paragraph added to the Current laws hot layer for the 2026-11-05 pass, carrying the fleet shape, the 1.2x to 10x serving-budget range, the 0.66% and the two online lifts with Meta's own footnote attached, and the disqualification of the platform-side explanation. It sits under law 1 beside the 2026-11-04 MD-197 paragraph.
+
+### 5. Gaps noticed
+
+- **Which Meta model serves which placement is unknown and probably unknowable from outside.** MD-198 establishes that they are separate models with separate budgets, which makes a placement-level performance gap an architecture fact rather than an audience fact. Nothing in the paper, and nothing in this codex, names a model or maps one to a placement. Our own placement breakdowns are the only instrument we have on this, which is an argument for reading them more often, not for explaining them.
+- **Normalized entropy has no bridge to anything we report.** Meta publishes model quality in NE, we publish cost per opt-in and bookings. There is no stated conversion between them anywhere in this codex, so every NE figure Meta publishes is directional only. Worth watching for a Meta source that connects the two; until then every NE number gets the same guard.
+- **The roster's dry days are not random and nobody has looked at the pattern.** Five uploads were skipped as too short today and two had no subtitles. A standing count of what the length and subtitle filters reject, per channel, would tell us whether a channel has changed format rather than gone quiet. Not built.
