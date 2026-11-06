@@ -9,6 +9,18 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-11-06 (research run)
+
+**A near-quiet day. 0 new transcripts, 0 new platform items, 3 arXiv filter hits, 1 source line merged and no new claim.**
+
+YouTube: all 12 channels listed clean, **0 new transcripts**, 0 errors. 5 videos skipped as too short, 3 had no subtitles. Every watchlist lane returned nothing: Meta Engineering RSS 0 new (build 3 Nov), Meta Newsroom RSS 0 new (build 5 Nov), Google Ads & Commerce RSS 0 new (build 28 Oct), Google Ads Announcements 396 answer ids with 0 added and 0 removed, TikTok Business API SDK still v0.1.8. Meta for Business News read through WebFetch on both pinned shelves: US 12 slugs ceiling 28 October, UK 12 slugs ceiling 27 October, **0 new against the 36-slug cumulative set and both sets byte-identical to 4 and 5 November**. TikTok Newsroom and the business blog stay suspended, and the Playwright browser failed to connect this session in any case.
+
+**arXiv: 3 through the ad filter, 1 worth a source line.** [[Auction Mechanics & Bidding#AU-084|AU-084]] gains **OneRanker (2603.02999v4)**, fully deployed on Tencent's WeiXin channels advertising system at **GMV +1.34%**, arguing the same cascade-collapse direction TGR already argues in that entry. It is a **merge and not a new claim**: it is a v4 replacement of a March 2026 paper rather than new research, and GMV is the platform's merchandise volume rather than any advertiser cost or outcome, so it sits further from an advertiser-side number than the figures already there. **BRIDGE (2611.07425) read and NOT banked**, +0.65% eCPM on an unnamed ads platform but a semantic-ID quantization method with no auction, bidding or ads-ranking content. **ZeroRAG (2611.07928) a false positive**, and a new kind: the filter hit the bare word *advertisements* in "neighbor advertisements", the peer-to-peer routing sense. No filter change proposed; the mechanism is recorded in [[Watchlist]] because no spelling rule removes a real sense of the word.
+
+**No law changed.** Nothing in today's haul touches the hot layer.
+
+**Gap noticed, our own process rather than a source.** Committing the seen cache before extracting the day's items marks every surfaced link as read whether or not it was used, which is how an item leaves a lane permanently. It bit today: the dry pass surfaced the 3 arXiv papers, the commit pass one minute later reported 0 new. The papers were still processed, from the titles the dry pass printed. Rule written into [[Watchlist]]: dry pass, capture the full JSON, extract, then commit.
+
 ## 2026-11-05 (teacher run; the research lane launched in the same second and had written no entry at topic-lock)
 
 **Lesson 072 shipped: *Nobody Has To Remember To Put It Back*. No video, Thursday.** Inbox empty for the fourteenth consecutive run that executed, so no grading and no influence on the topic.
@@ -4315,3 +4327,5 @@ The WISE false positive is the same mechanism recorded 2026-09-25: advertising n
 - **Which Meta model serves which placement is unknown and probably unknowable from outside.** MD-198 establishes that they are separate models with separate budgets, which makes a placement-level performance gap an architecture fact rather than an audience fact. Nothing in the paper, and nothing in this codex, names a model or maps one to a placement. Our own placement breakdowns are the only instrument we have on this, which is an argument for reading them more often, not for explaining them.
 - **Normalized entropy has no bridge to anything we report.** Meta publishes model quality in NE, we publish cost per opt-in and bookings. There is no stated conversion between them anywhere in this codex, so every NE figure Meta publishes is directional only. Worth watching for a Meta source that connects the two; until then every NE number gets the same guard.
 - **The roster's dry days are not random and nobody has looked at the pattern.** Five uploads were skipped as too short today and two had no subtitles. A standing count of what the length and subtitle filters reject, per channel, would tell us whether a channel has changed format rather than gone quiet. Not built.
+
+**2026-11-06, gap logged from a live decision (StayWell pixel).** The codex is silent on two questions research should target: how far back Meta delivery reads pixel history (a "150 days" claim is circulating, no source found; 180 days is the website custom audience cap), and whether a data source category restriction attaches to the pixel, the domain or the business. Meta's help pages name data sources such as website domains. One sighting on our book: a pixel under an hour old sent `dl` as the bare domain on a health page, consistent with Core Setup following the site or business. Not yet confirmed in Events Manager.

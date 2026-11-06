@@ -1356,3 +1356,41 @@ guidance rather than advertising mechanics. Carried as a named gap until read.
 shelves returned identical slug sets 18 hours after the first pass. **One read per day remains sufficient on
 this source, and today's re-read bought no coverage.** It is logged because it found the render drift, not
 because the second read was due.
+
+## The arXiv filter fires on "advertisement" in the networking sense, and no filter change is proposed (2026-11-06)
+
+`advertis` is the first and broadest term on the bank list, and today it matched **ZeroRAG (arXiv 2611.07928)**,
+a decentralized retrieval-augmented-generation routing paper, on the phrase **"a bounded set of neighbor
+advertisements"**. In peer-to-peer and routing literature an *advertisement* is a node announcing what it holds
+to its neighbours. It has nothing to do with paid media. The paper contains no auction, no bidding, no ads
+ranking and no advertiser.
+
+**This is a new mechanism, distinct from the two already recorded.** The 2026-08-19 cases were loose matching on
+the ranking list. The 2026-10-01 case was `\bads?\b` catching the "ad" in "ad-hoc", fixed with a narrow literal
+exclusion. This one is a **genuine whole-word hit on a real sense of the word**, so no spelling trick removes it.
+
+**No filter change is proposed, and that is the decision rather than an omission.** Excluding `advertisement`
+would cost real papers, because ad-systems papers use the full word freely. Excluding the collocation
+`neighbor advertisement` would fix exactly one paper and would not generalise to `route advertisement`,
+`service advertisement` or `prefix advertisement`. The cost of the false positive is one abstract read per
+occurrence, which is cheap. **Recorded so a future run recognises the shape in one line instead of re-deriving
+it**: a cs.IR or cs.NI cross-list whose only bank hit is the bare word *advertisement* inside a systems or
+networking method is a false positive until something else in the abstract says otherwise.
+
+## Never commit the seen cache before the day's claims are extracted (2026-11-06)
+
+Procedural, and it cost real work today. `lib/watchlist_check.py --commit` writes every link it fetched into
+the seen set **whether or not anything was done with the items it surfaced**. Today's dry pass reported 3 arXiv
+items through the ad filter; the `--commit` pass one minute later reported **0 new, because the commit had
+already banked those three links**. The three papers were still processed, from the titles captured in the dry
+pass, but nothing in the cache afterwards would have shown they were ever surfaced.
+
+**Why the failure direction is the bad one.** A missed extraction becomes invisible rather than loud. The link
+is marked seen, so no future run re-surfaces it, and the only trace is whatever the run log happens to say.
+This is the same hazard class as the 2026-09-23 title-baseline entry and the four deprioritised business-news
+slugs above, both of which turn on the same rule: **marking an unread item as seen is how an item disappears
+from a lane permanently.**
+
+**The order, from now on:** run the checker **dry**, capture the full JSON including every surfaced item, extract
+and merge the claims, and only then re-run with `--commit`. Never read a dry pass through `tail`, which is how
+today's `new_links` count was lost and the discrepancy took four extra fetches to explain.
