@@ -1394,3 +1394,21 @@ from a lane permanently.**
 **The order, from now on:** run the checker **dry**, capture the full JSON including every surfaced item, extract
 and merge the claims, and only then re-run with `--commit`. Never read a dry pass through `tail`, which is how
 today's `new_links` count was lost and the discrepancy took four extra fetches to explain.
+
+## The Demand Gen hub moved 26 days after the blog, and the RSS alarm that is supposed to catch it was 11 days asleep (2026-11-08)
+
+The Demand Gen Drops Hub went from 13 instalment cards to 14. The new card is "Build your data strength with October's Demand Gen Drop.", at `https://business.google.com/us/accelerate/announcements/demand-gen-drop-october-2026/`. The hub is checked monthly rather than daily because the Ads & Commerce RSS feed is the designated alarm for this series.
+
+**The alarm did not fire, and it could not have.** That feed's last build is 28 October and it has returned 0 new links for 11 straight days. The hub was read today by the same judgment call used on 2026-10-12: the alarm is stale, so read the source directly.
+
+**Two numbers worth holding.** Blog-to-hub lag on this instalment is **26 days**, blog 13 October, hub card seen 8 November, which sits inside the roughly one-month lag confirmed on 2026-10-10 and does not move the ceiling. The card count stays the only stable key on this page, because the page carries **zero parseable dates**.
+
+**Nothing was banked off the hub read.** The instalment body and footnote were read in full and every item in it is already in GA-093 from the 13 October blog read: the three forward-tense product items, the over-20% figure on its 14-day footnote window, and the unfootnoted Zebra case study. The hub is a mirror of the blog on about a month's delay, so a hub card is a lane observation and almost never a claim.
+
+**Proposed standing rule, not yet in code.** When the Ads & Commerce feed build is more than 7 days old, read the Demand Gen hub directly rather than waiting for the monthly slot. Twice now that has been the right call and both times it came from judgment.
+
+## The UTC date stamp bit again, and a run just after midnight IST writes YESTERDAY (2026-11-08)
+
+The run started 00:36 IST on Sunday 8 November. `lib/watchlist_check.py` stamped `date` and `last_checked` as **2026-11-07**, exactly the defect recorded 2026-11-04: the stamp is taken in UTC, so any run before 05:30 IST writes the previous day. The 2026-11-06 run at 19:25 IST did not hit it because local and UTC dates agreed.
+
+The consequence is in the cache, not in the findings: the feed entries this run committed carry `last_checked: 2026-11-07` while the page entries written by hand carry 2026-11-08. **A reader diffing those two groups would conclude a lane was skipped when it was not.** The fix is one line in the script, taking the local date, and it is still not made.

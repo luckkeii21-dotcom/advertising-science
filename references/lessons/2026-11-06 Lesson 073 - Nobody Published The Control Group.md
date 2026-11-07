@@ -12,7 +12,7 @@ tags: [advertising-science, lesson, attribution, incrementality, lift-studies, e
 
 🎬 Video: [[video/2026-11-06-lesson-073.mp4]]
 
-Topic: Attribution & Incrementality, rotation index 5, taken in the ordinary way. The research lane has opened no entry for today, so the newest banked work is yesterday's MD-198 and there is no harvest to teach. Three claims on this topic have sat untaught since the back half of October: [[Attribution & Incrementality#AT-130|AT-130]] and [[Attribution & Incrementality#AT-131|AT-131]] from 20 October, [[Attribution & Incrementality#AT-133|AT-133]] from 31 October. The first two arrived one day apart, from two platforms, about the same thing, and they only make sense read together. Friday, so video day.
+Topic: Attribution & Incrementality, rotation index 5, taken in the ordinary way. Today's research run came back near-quiet: 0 new transcripts, 0 new platform items, one source line merged into AU-084 and no claim banked, so there is no harvest to teach. Three claims on this topic have sat untaught since the back half of October: [[Attribution & Incrementality#AT-130|AT-130]] and [[Attribution & Incrementality#AT-131|AT-131]] from 20 October, [[Attribution & Incrementality#AT-133|AT-133]] from 31 October. The first two arrived one day apart, from two platforms, about the same thing, and they only make sense read together. Friday, so video day.
 
 ## 1. The mechanism
 

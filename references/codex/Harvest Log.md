@@ -9,7 +9,28 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-11-08 (research run)
+
+**A quiet day. 0 new transcripts, 0 new claims, no law change.** One source moved and the thing it moved to was already banked.
+
+YouTube: all 12 channels listed clean, **0 new transcripts**, 0 errors, 6 skipped as too short, 2 with no subtitles. Science extraction backlog **0**.
+
+Sunday, so the Monday-only sources were not due: Marketing API changelog, Graph API changelog, Advertising Standards, Google Ads API release notes, Ads Developer Blog, Merchant Center changelog, AI at Meta blog.
+
+Every daily lane returned nothing new. Meta Engineering RSS 0 new, build 3 November. Google Ads & Commerce RSS 0 new, build 28 October, now 11 days stale. Google Ads Announcements 396 answer ids, 0 added, 0 removed. TikTok Business API SDK still v0.1.8. TikTok Newsroom and the business blog stay geo-blocked, which is a block and not an outage. Meta for Business News read through WebFetch on both pinned shelves after the plain fetch returned HTTP 400 on both: US 12 slugs ceiling 28 October, UK 12 slugs ceiling 27 October, **0 new against the 36-slug cumulative set and both sets identical to 2026-11-05**.
+
+**Meta Newsroom: 1 new item, read and NOT banked.** "Design the Muse App, Just for You", 6 November, announces spaces in the consumer Muse app: user-described custom experiences, scheduling, app connections. Read in full at source. **Zero advertiser content and zero ads-system content.** Same disposition as the Universal Cart and the APAC AI survey on 2026-10-16.
+
+**Demand Gen Drops Hub moved for the first time since 2026-10-19, and the move carries no new claim.** The hub went from 13 instalment cards to 14. The new card is "Build your data strength with October's Demand Gen Drop." Body and footnote read in full today, and the content is **already banked as [[Google Auction & Smart Bidding#GA-093|GA-093]]**, read 2026-10-13 off the Ads & Commerce blog: the same three forward-tense product items, the same over-20% Demand Gen uplift figure on the same 14-day footnote window, the same unfootnoted Zebra case study. The only new fact is the lag, and it is a lane fact rather than an advertising fact: **26 days from blog to hub**, inside the roughly one-month lag confirmed on 2026-10-10. Recorded in [[Watchlist]].
+
+**arXiv: 0 items in the feed.** Build dated Saturday 7 November, 0 items, which is the weekend-empty state recorded 2026-09-05. The Friday 6 November build was read on 2026-11-06, so nothing sits between the two reads.
+
+**No 2026-11-07 run exists**, and it cost zero observations. The only arXiv build in the gap is Saturday's, which is empty. Meta's shelves, Google Ads Announcements and the TikTok SDK are byte-identical to their 2026-11-06 state, and the one source that did move carries content banked on 2026-10-13.
+
+**Gaps noticed.** The Ads & Commerce RSS feed has not built in 11 days, which is the second time this quarter the designated alarm for the Demand Gen series has gone stale before the series itself moved. The alarm is the reason the hub is checked monthly rather than daily, so an alarm that sleeps turns a monthly check into an unbounded one. Worth a standing rule: when that feed build is more than 7 days old, read the hub directly. That is what happened today and on 2026-10-12, both times by judgment rather than by rule.
+
 ## 2026-11-06 (research run)
+2026-11-06 gap: the codex holds Pixel plus Conversions API together (LS-015, LS-057) and is silent on optimising a website campaign on server events with no pixel at all. Search found vendor pages only, no Meta documentation. Research target: Meta's own statement on server-only optimisation, and whether the landing page views column needs the pixel.
 
 **A near-quiet day. 0 new transcripts, 0 new platform items, 3 arXiv filter hits, 1 source line merged and no new claim.**
 
@@ -20,6 +41,18 @@ YouTube: all 12 channels listed clean, **0 new transcripts**, 0 errors. 5 videos
 **No law changed.** Nothing in today's haul touches the hot layer.
 
 **Gap noticed, our own process rather than a source.** Committing the seen cache before extracting the day's items marks every surfaced link as read whether or not it was used, which is how an item leaves a lane permanently. It bit today: the dry pass surfaced the 3 arXiv papers, the commit pass one minute later reported 0 new. The papers were still processed, from the titles the dry pass printed. Rule written into [[Watchlist]]: dry pass, capture the full JSON, extract, then commit.
+
+### Teacher lane, same day
+
+**Lesson 073 shipped: Nobody Published The Control Group, video yes.** Topic Attribution & Incrementality, rotation index 5 taken in the ordinary way, pointer advances 5 to 6. Today's research run is the entry above: 0 new transcripts, 0 new platform items, one source line merged into AU-084 and no claim banked, no law changed. Nothing teachable came out of it, so the rotation decided the topic.
+
+Three claims cleared, none banked. [[Attribution & Incrementality#AT-130|AT-130]] and [[Attribution & Incrementality#AT-131|AT-131]] at seventeen days each, the two oldest items ever cleared, taught together because Google and Meta shipped lift measurement one day apart in October and solved it in opposite ways: Google made a Search Lift study a queryable API resource with 15 metrics, Meta published four agency case studies with eleven numbers and no footnote. [[Attribution & Incrementality#AT-133|AT-133]] at six days folded in as the mirror case, where a Meta figure did carry a real footnote and the footnote is what disqualified it.
+
+The teaching point is **tier is provenance, not quality**: AT-131 is T1 and none of its eleven numbers can be carried, while our own [[Google Auction & Smart Bidding#GA-055|GA-055]] is T2 and decided a channel. Nothing added, amended or contested, because everything taught was already on file and the lesson is a reading rather than a finding.
+
+Eligibility checked against our own book and it is not close: SJR $767.78 / 136 / $5.65 for 23 to 29 October at roughly $110 a day, StayWell $562.63 / 23 / $24.46 the same week, Phoenix $160 statics plus $40 dump, RK Consumer Services paused at $50 a day, against AT-070's roughly $100,000-a-month geo lift gate. GA-055's 85 orders against the 166 required is the honest picture of a holdout at our scale, and it is a power failure rather than a null.
+
+Video rendered first attempt: 3m 56s, 7,080 frames, HyperFrames check 0 errors, contrast 32/32 WCAG AA, frames eyeballed on a 25-cell contact sheet. Inbox empty for the fifteenth consecutive run.
 
 ## 2026-11-05 (teacher run; the research lane launched in the same second and had written no entry at topic-lock)
 
