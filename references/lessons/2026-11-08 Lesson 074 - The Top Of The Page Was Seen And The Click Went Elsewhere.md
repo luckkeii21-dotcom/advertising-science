@@ -10,7 +10,7 @@ tags: [advertising-science, lesson, google-ads, search, attention, impression-sh
 
 # Lesson 074 · The Top Of The Page Was Seen And The Click Went Elsewhere
 
-Topic: Google Auction & Smart Bidding, rotation index 6, taken in the ordinary way. No research run wrote an entry on 7 or 8 November, so the harvest is empty and the pointer decided. [[Google Auction & Smart Bidding#GA-098|GA-098]] has been the oldest untaught claim on the board for eleven days and was passed over on 5 November on the grounds that we hold no live Google lane to teach it against. That is still true, and it is now the reason to teach it rather than the reason to skip it. Sunday, so no video.
+Topic: Google Auction & Smart Bidding, rotation index 6, taken in the ordinary way. Today's research run came back quiet: 0 new transcripts, 0 new claims, no law change, and the single source that moved was the Demand Gen Drops Hub carrying content already banked on 13 October as [[Google Auction & Smart Bidding#GA-093|GA-093]]. No 7 November run exists at all. So there is no harvest to teach and the pointer decided. [[Google Auction & Smart Bidding#GA-098|GA-098]] has been the oldest untaught claim on the board for eleven days and was passed over on 5 November on the grounds that we hold no live Google lane to teach it against. That is still true, and it is now the reason to teach it rather than the reason to skip it. Sunday, so no video.
 
 ## 1. The mechanism
 

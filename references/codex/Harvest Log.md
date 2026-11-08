@@ -29,6 +29,23 @@ Every daily lane returned nothing new. Meta Engineering RSS 0 new, build 3 Novem
 
 **Gaps noticed.** The Ads & Commerce RSS feed has not built in 11 days, which is the second time this quarter the designated alarm for the Demand Gen series has gone stale before the series itself moved. The alarm is the reason the hub is checked monthly rather than daily, so an alarm that sleeps turns a monthly check into an unbounded one. Worth a standing rule: when that feed build is more than 7 days old, read the hub directly. That is what happened today and on 2026-10-12, both times by judgment rather than by rule.
 
+**Second pass, 07:36 IST, nothing new.** Harvest re-listed all 12 channels and found 0 unseen uploads. Every automated watchlist lane returned the same state as the 00:36 read: Meta Engineering 0 new on the 3 November build, Meta Newsroom 0 new on the 6 November build, Ads & Commerce 0 new on the 28 October build, arXiv 0 items on the Saturday build, Google Ads Announcements 396 answer ids with 0 added and 0 removed, TikTok SDK still v0.1.8. 0 claims, no law change. One lane fact: YouTube's RSS endpoint returned HTTP 404 on all 12 channels this pass against 0 at 00:36, the flapping outage first recorded 2026-09-05, and the yt-dlp listing fallback carried every channel with 0 errors.
+
+### Teacher lane, same day
+
+**Lesson 074 shipped: "The Top Of The Page Was Seen And The Click Went Elsewhere", video no.** Google Auction & Smart Bidding, rotation index 6, taken in the ordinary way, pointer advances 6 to 7. Sunday, so not a video day.
+
+Topic was locked on an empty harvest: at that moment the newest research entry on this file was still 6 November. The 8 November entry above landed mid-pass and is quiet, and its one moving source is content already banked as [[Google Auction & Smart Bidding#GA-093|GA-093]], so nothing teachable existed either way and the choice stands on merit.
+
+Built on [[Google Auction & Smart Bidding#GA-098|GA-098]] (T2, eleven days, the oldest untaught claim on the board) with [[Google Auction & Smart Bidding#GA-099|GA-099]] (T1, ten days) as its mirror. GA-098 measures the step between impression and click on real Google result pages: **99.7% of top-ads carousels fixated, 10% of clicks landing on them, about 16% of main-axis clicks on ad placements, and 44% of People Also Ask boxes fixated for two clicks in the whole corpus**. Both cleared. GA-099 and [[Google Auction & Smart Bidding#GA-043|GA-043]] carried as the reporting limb: more AI surface, more countries, multiturn ads in the US, same blind spot.
+
+Account section states plainly that **we hold zero live Google lanes**, and uses the only Google build in the vault, Mattia Spinal Care PMax, offboarded 24 July 2026 with campaigns off 16 August. An explicit guard was written into the lesson against carrying the 99.7% figure into a Meta conversation.
+
+No claim was banked, amended or contested by this pass. Everything taught was already on file and this lesson is a reading rather than a finding.
+
+Inbox empty for the **sixteenth consecutive run**. Full detail in `lessons/_scoreboard.md`.
+
+
 ## 2026-11-06 (research run)
 2026-11-06 gap: the codex holds Pixel plus Conversions API together (LS-015, LS-057) and is silent on optimising a website campaign on server events with no pixel at all. Search found vendor pages only, no Meta documentation. Research target: Meta's own statement on server-only optimisation, and whether the landing page views column needs the pixel.
 
