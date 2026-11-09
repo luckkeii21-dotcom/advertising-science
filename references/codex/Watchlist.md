@@ -45,6 +45,12 @@ So a link-set diff produces a 5-item false positive on this source. Read the dat
 
 **Date a post from its own page, never from its listing card (2026-10-25).** The card for `you-dont-beat-the-auction-you-brief-it` reads "October 22, 2026" on two separate fetches. The post's own page reads "21st October 2026". The 2026-10-24 run dated it from the post page and banked it as 21 October, which is the correct one. This extends the 2026-10-08 observation, where a card and a page differed only in date FORMAT, to a case where they differ in VALUE by a day. One day is enough to put a post in the wrong week of a report.
 
+### A UK shelf move can REVERSE, so a move is not a publishing event (2026-11-10)
+
+On 9 November the UK shelf dropped `meta-ai-now-available-in-hongkong`, `meta-agency-first-awards-winners-hongkong-2026` and `meta-marketing-summit-hongkong-2026` and pulled in `creator-marketing-whitepaper`, `2026-trends-from-around-the-world` and `meta-growth-drivers-putting-your-digital-marketing-strategy-on-auto-pilot`, taking the UK ceiling backwards from 27 to 22 October. On 10 November the shelf is back to the same 12 slugs in the same order as 4, 5 and 8 November, ceiling 27 October again.
+
+So the rotation is non-monotonic in date, already recorded on 9 October, and **reversible in membership**, which the 9 October note does not cover. Before treating any UK move as a publishing event, diff it against the last several saved `slugs_uk_*` lists, not only yesterday's. A one-day excursion looks identical to a real move if yesterday is the only comparison.
+
 ### Transport note, 2026-11-04: plain fetch answered HTTP 200 on BOTH pinned Meta for Business News URLs, after three consecutive days of HTTP 400
 
 The route order recorded on 2026-10-25 is plain fetch, then WebFetch, then the browser. On 2026-11-01, 11-02 and 11-03 the first step returned HTTP 400 on every Meta property tried, with a 1,542-byte body, and all three runs read the shelves through WebFetch. **Today the first step answered: HTTP 200 and 235,084 bytes on `?locale=en_US`, HTTP 200 and 231,643 bytes on the `en-gb` host.** Both bodies rendered the correct locale, verified by the slug sets matching `slugs_us_2026_11_03` and `slugs_uk_2026_11_03` exactly in content and in order. WebFetch was not needed and the browser was not tried.
@@ -120,6 +126,10 @@ Same empty file, different cause, and worth separating so neither is mistaken fo
 Observed 2026-09-05 at 06:31 UTC: **892 bytes, zero `<item>` elements, `lastBuildDate` Sat, 05 Sep 2026 04:00:04 +0000**, byte-signature identical to the 2026-08-24 Monday observation. **No build was skipped and no paper was lost**; Friday's build was read by Friday's run. Log it as "feed empty, weekend build" and move on.
 
 Practical consequence for the whole weekend: **a Friday-evening-through-Sunday window announces nothing**, so Saturday, Sunday and Monday runs all have an empty or stale arXiv lane by construction. Only Tuesday through Friday runs can return papers.
+
+### FIXED 2026-11-10. The UTC stamping defect above is closed
+
+The 10 November run fired at 03:58 IST and reproduced the defect exactly as described below: report date and every `last_checked` key written as `2026-11-09`. One line in `lib/watchlist_check.py` now reads `datetime.now()` instead of `datetime.now(timezone.utc)`, a re-run on the same morning reported `2026-11-10`, and the six mis-stamped source keys from that run were corrected by hand. The previous file is kept at `lib/watchlist_check.py.bak-20261110`. The section below stays for the reasoning about why the failure direction matters.
 
 ### Checker defect, 2026-11-04: `last_checked` is stamped in UTC, so any run before 05:30 IST writes YESTERDAY
 

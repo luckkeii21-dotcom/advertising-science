@@ -99,7 +99,9 @@ def main():
     seen = json.loads(SEEN.read_text(encoding="utf-8-sig")) if SEEN.exists() else {}
     feeds = seen.setdefault("feeds", {})
     pages = seen.setdefault("pages", {})
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    # Local date, not UTC. A run before 05:30 IST is still yesterday in UTC, which
+    # stamped the wrong day into last_checked and every result_* key. Fixed 2026-11-10.
+    today = datetime.now().strftime("%Y-%m-%d")
     report = {"date": today, "sources": {}, "errors": []}
 
     for name, url in RSS.items():
