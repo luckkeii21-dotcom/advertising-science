@@ -1441,3 +1441,19 @@ Tier: T1 (for the figure and its stated method) · Status: active
 **Where it sits.** Beside [[Creative Science#CR-290|CR-290]] from the same post, where a footnoted third-party study turned out to measure something other than what the sentence claimed. **Both findings come from reading the footnote rather than the headline, on the same page, on the same day.** The reading rule that falls out of the pair: a footnote changes a figure from unverifiable to checkable, and checking it is now the work, not a formality.
 Sources: Meta for Business News, "meta-marketing-summit-hongkong-2026", dated 29 October 2026 on its own page, read in full 2026-10-31
 Last touched: 2026-10-31
+
+### AT-134 · Meta can now split partnership-ads reporting by the creator's Instagram handle, and the supported-field list stops at clicks and video views, so there is no result-per-creator in it
+Tier: T1 · Status: active
+Marketing API out-of-cycle change dated 5 November 2026, read in full at source on 2026-11-09. The Ads Insights API accepts a new breakdown, `pa_creator_ig_handle`, which "groups partnership ads results by the Instagram handle of the creator or partner whose identity the ads ran with". It applies to all API versions and to the account, campaign, ad-set and ad insights endpoints. Results can also be filtered by creator through the `filtering` parameter.
+
+**What it will report, in Meta's own list:** impressions, reach, link clicks (`inline_link_clicks`) and the video completion metrics `video_p25_watched_actions` through `video_p100_watched_actions`.
+
+**What that list leaves out, and this is the reading that matters.** No conversions, no leads, no purchases, no cost-per-result. Every metric named is a top-of-funnel delivery metric. So the breakdown answers which creator's identity got seen and clicked, and it does not answer which creator's identity produced a customer. Anyone briefing a creator deal off this breakdown is comparing reach and clicks, not outcomes, and should say so out loud. Meta publishes no statement that the result metrics are coming.
+
+**One hard constraint, stated by Meta.** The breakdown "cannot be combined with other breakdowns". So creator by placement, creator by age, creator by device and creator by hour are all unavailable in a single pull, and any such view has to be assembled from separate per-creator filtered requests rather than one breakdown call.
+
+**Where this sits against the breakdown lane we already hold.** [[Attribution & Incrementality#AT-128|AT-128]] records that three Insights breakdowns are gated behind per-account enablement and that an unenabled account returns an empty result set rather than an error. **Nothing in the 5 November entry says `pa_creator_ig_handle` is gated**, and nothing says it is not. Treat an empty creator breakdown the way AT-128 says to treat an empty device or frequency breakdown: test it against a window you know carried partnership-ad delivery before reporting the emptiness as a fact about the account.
+
+**Scope limit on our own book, stated.** No client we currently run uses partnership ads, so this is banked as a published capability with its guard attached and not as something we have exercised. The linked "Partnership ads creator breakdown" reference page was not opened; this claim rests on the out-of-cycle entry text.
+Sources: Meta for Developers, 2026 Out-Of-Cycle Changes to Marketing API, entry dated 2026-11-05, read in full 2026-11-09 in the Playwright browser
+Last touched: 2026-11-09
