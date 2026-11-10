@@ -51,6 +51,40 @@ On 9 November the UK shelf dropped `meta-ai-now-available-in-hongkong`, `meta-ag
 
 So the rotation is non-monotonic in date, already recorded on 9 October, and **reversible in membership**, which the 9 October note does not cover. Before treating any UK move as a publishing event, diff it against the last several saved `slugs_uk_*` lists, not only yesterday's. A one-day excursion looks identical to a real move if yesterday is the only comparison.
 
+### The UK shelf changes WITHIN a single day, so no UK diff is a publishing signal (2026-11-10, second pass)
+
+This supersedes the reversal section above it. That section read the 9 November UK move, and its reversal
+on the morning of 10 November, as a shelf that rotates and can rotate back. Two reads on 10 November, 3
+hours 47 minutes apart, show it is not rotating on a daily clock at all.
+
+| Read | UK slots 1 to 3 | UK slots 10 to 12 | State |
+|---|---|---|---|
+| 10 Nov 03:58 IST | the three Hong Kong posts | `social-search-series-2`, `-3`, `-1` | same as 10-31 through 11-08 |
+| 10 Nov 07:45 IST | `you-dont-beat-the-auction-you-brief-it`, Instant Hydration, Meta AI ads | `2026-trends-from-around-the-world`, `meta-growth-drivers-...`, `cyber-5-2025-what-worked` | **exactly `slugs_uk_2026_10_24`, in order** |
+
+The second read reproduces a state last served 17 days earlier, byte for byte and in order. Across all 29
+saved UK reads there are only **5 distinct ordered states**, and they recur out of date order: 30 October
+and 9 November share one, and 31 October through 8 November plus the 10 November morning read share
+another. What the 9 October note called non-monotonic, and what the note above called reversible, are both
+the same thing: **request-level variance between edge variants, read as publishing.**
+
+**What this changes in the method.**
+
+- **Never log a UK added or removed list as a publishing event, and never let a UK move trigger a read.**
+  An added list is which variant answered, not what Meta posted.
+- **Only membership against `slugs_seen_cumulative` counts.** That diff is variant-proof, because a slug
+  is either in the cumulative set or it is not.
+- **A single daily read of the UK shelf is not full coverage.** A genuinely new post can sit in a variant
+  we were not served. The proof is on the books: `creator-marketing-whitepaper` is in the cumulative set
+  and is absent from both of today's reads.
+- **The one-read-per-day rule of 2026-10-09 is wrong on this source and is retired.** The 4 November note
+  says three pass-2 re-reads bought no coverage. This one did: the only finding of 10 November came from
+  the second read, and a run that read the UK shelf once would have recorded a flat day and been wrong
+  about why. Read the UK shelf twice, several hours apart, and treat the union of the two as the day's
+  coverage.
+- The US shelf shows none of this. It has been identical in set and in order on all 12 reads from 29
+  October to the 10 November second pass, ceiling 28 October 2026.
+
 ### Transport note, 2026-11-04: plain fetch answered HTTP 200 on BOTH pinned Meta for Business News URLs, after three consecutive days of HTTP 400
 
 The route order recorded on 2026-10-25 is plain fetch, then WebFetch, then the browser. On 2026-11-01, 11-02 and 11-03 the first step returned HTTP 400 on every Meta property tried, with a 1,542-byte body, and all three runs read the shelves through WebFetch. **Today the first step answered: HTTP 200 and 235,084 bytes on `?locale=en_US`, HTTP 200 and 231,643 bytes on the `en-gb` host.** Both bodies rendered the correct locale, verified by the slug sets matching `slugs_us_2026_11_03` and `slugs_uk_2026_11_03` exactly in content and in order. WebFetch was not needed and the browser was not tried.

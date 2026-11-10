@@ -17,6 +17,42 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 
 **One behaviour worth banking about a source rather than a platform: a Meta for Business News shelf move can reverse.** Yesterday the UK shelf dropped its three Hong Kong posts and pulled in three older ones. Today it is back to the same 12 slugs in the same order as 4, 5 and 8 November, and the UK ceiling moved forwards again from 22 to 27 October. So the rotation is non-monotonic in date, already recorded on 9 October, and also reversible in membership, which is new. Diff a UK move against the last several saved lists before anyone reads it as a publishing event. The US shelf did not move at all and its ceiling has been 28 October for six days.
 
+### Second pass, 07:34 to 07:55 IST
+
+**Still nothing new, and the day's one real finding came from re-reading a source the one-read-per-day rule
+said not to re-read.** Harvest re-run: 0 new transcripts on all 12 channels, 0 errors, backlog still 0
+against 504 transcript files. All six automated watchlist sources re-fetched: HTTP 200 each, 0 new, byte
+identical to the morning read, and the checker now stamps `2026-11-10` correctly, so this morning's one-line
+fix holds. 0 claims added, merged or contested. No law change, no codex write.
+
+**The UK Meta for Business News shelf changed state within the day, which kills the reversal story written
+above.** Plain fetch HTTP 400 on both pinned URLs again, read through WebFetch. The US shelf is identical in
+set and in order to the morning read and to every US read since 29 October, 12 for 12. The UK shelf served a
+different 12 slugs than it had 3 hours 47 minutes earlier: the three Hong Kong posts are gone from slots 1 to
+3 and `2026-trends-from-around-the-world`, `meta-growth-drivers-...` and `cyber-5-2025-what-worked` are back
+at slots 10 to 12. That list is exactly `slugs_uk_2026_10_24`, in order, a state last served 17 days ago.
+Across all 29 saved UK reads there are only 5 distinct ordered states and they recur out of date order. So
+the UK shelf is not rotating on a daily clock, it is serving edge variants per request, and a UK
+added-or-removed list is which variant answered rather than what Meta published. Only membership against the
+36-slug cumulative set counts, and on that measure today is 0 new on both shelves, same as the morning.
+
+**Two method changes written into the Watchlist.** A UK move must never be logged as a publishing event or
+used to trigger a read. And the one-read-per-day rule of 2026-10-09 is retired for this source: the 4
+November note recorded that three pass-2 re-reads bought no coverage, and today's bought the only finding of
+the day, so the UK shelf gets two reads several hours apart and the union of them is the day's coverage. The
+coverage hole is already on the books rather than hypothetical: `creator-marketing-whitepaper` is in the
+cumulative set and absent from both of today's reads.
+
+**One instrument note, no action taken.** YouTube's `feeds/videos.xml` returned HTTP 404 for all 12 channels
+on this run, where it answered fine at 03:57. The designed fallback to the `/videos` tab carried every
+channel, `errors` came back empty, so the 0 is a verified zero and not a blind spot. Worth recording only
+because it puts a number on how fast that endpoint flips: clean and fully 404 within 3 hours 37 minutes on
+the same morning.
+
+**arXiv, stated again because it did not improve.** The second pass ran at 02:10 UTC, still before the 10
+November 04:00 UTC rebuild, so both of today's reads saw the 9 November build. 10 November papers arrive
+tomorrow. Nothing lost, nothing gained by the re-run on this source.
+
 **Gap, unchanged and unaddressed.** The 5 November entry asked for a standing count of what the length and subtitle filters reject per channel. Today the harvest skipped 4 uploads as too short and 3 for having no subtitles, and as on every previous day there is no record of which channels those were, so a channel that has switched to clips still cannot be distinguished from a channel that has gone quiet. Not built.
 
 ## 2026-11-09 (research run, and the teacher run that preceded it)
