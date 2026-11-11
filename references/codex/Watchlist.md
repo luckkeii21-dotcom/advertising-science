@@ -51,6 +51,22 @@ On 9 November the UK shelf dropped `meta-ai-now-available-in-hongkong`, `meta-ag
 
 So the rotation is non-monotonic in date, already recorded on 9 October, and **reversible in membership**, which the 9 October note does not cover. Before treating any UK move as a publishing event, diff it against the last several saved `slugs_uk_*` lists, not only yesterday's. A one-day excursion looks identical to a real move if yesterday is the only comparison.
 
+### The UK shelf serves 5 recurring states and today was a third sighting of one of them (2026-11-11)
+
+The 2026-11-10 pass-2 note established that the UK shelf varies by request rather than by publishing date, on the
+evidence that two reads 3 hours 47 minutes apart served different ordered lists. Today's single read landed on the
+**2026-10-30 / 2026-11-09 state exactly, in order**, 2 days after it was last served and 12 days after the first
+sighting.
+
+**The count that matters: 31 saved UK reads, still exactly 5 distinct ordered states, no sixth state in 46 days.** A
+small closed set of variants recurring out of date order is what request-level variance looks like. A publishing event
+would introduce a state nobody has seen. **So the test for a real UK move is a slug absent from
+`slugs_seen_cumulative`, which has held at 36 members since 9 October, and never an added-or-removed list against
+yesterday.**
+
+What today does NOT settle is how many variants exist, because one read per day samples one variant. The two-read rule
+from yesterday stays; a single read is one sample of a set whose size is unknown.
+
 ### The UK shelf changes WITHIN a single day, so no UK diff is a publishing signal (2026-11-10, second pass)
 
 This supersedes the reversal section above it. That section read the 9 November UK move, and its reversal

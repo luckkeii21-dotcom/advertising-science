@@ -1114,8 +1114,8 @@ The replacement is reached through "set up creative" at the ad level and **appea
 Capacity and per-combination control, both read off the screen: "You'll notice that you can upload up to 10 creatives here", and "you can customize every combination. Crop, placement, copy, URL. Before, all the ads in the flex or dynamic creative shared the same settings. Now, you can customize each iteration inside the same ad." He notes this enables multiple funnels from one ad object. Per-element reporting returns: "Finally, you'll get reporting for each element. We haven't seen this since iOS 14, and now it's standard."
 **The counting consequence is the reason this sits in the codex, and it feeds law 4a directly. Ten creatives still resolve to ONE ad object.** So an ad-count discipline stated in ad objects and an ad-count stated in creative assets can differ by 10x on the same account. This is the same failure mode as live-versus-launched at [[Creative Science#CR-154|CR-154]] and it compounds with the Dynamic Creative on/off problem at [[Scaling Models#SC-122|SC-122]]. Ask which unit before comparing any two operators' numbers.
 His own usage rule is T3 and much tighter than the ceiling: no more than three creatives per ad and a single format per ad. His enhancement allow/block list is T3 and the auto-transcript garbles it, so it is not banked as a rule.
-Sources: Charley T, Facebooks New Update Just KILLED Flexible Ads, 2026-04-26
-Last touched: 2026-08-24
+Sources: Charley T, Facebooks New Update Just KILLED Flexible Ads, 2026-04-26; Jon Loomer, How I'm Using AI to Create Meta Ads, 2026-11-11 (restates the 10-asset capacity from the operator side and notes that aspect-ratio variants of one concept push the asset count past 10 inside a single ad object)
+Last touched: 2026-11-11
 
 ### MD-125 - Meta WITHDREW its "no benefit above six ads" recommendation around Andromeda, and the live ceiling is 50 ads per ad set
 Tier: T3 - Status: active

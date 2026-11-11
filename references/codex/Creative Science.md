@@ -1108,8 +1108,12 @@ THE TEST TO RUN ON OUR OWN ACCOUNTS, which is cheap and is the reason this claim
 
 **What it does improve is the test design this claim asks for.** The hybrid arm is the cheap version: an AI-generated first 8 seconds on otherwise conventional footage is a hook swap, which our accounts already produce on cadence, so the matched pair costs one extra asset per concept instead of a parallel production line.
 
-Sources: Mark Builds Brands, i tried running only AI ads for 30 days, 2026-04-29; Fraser Cottrell, The New Way to Make Ai UGC in 2026, 2026-03-15; Fraser Cottrell, Watch Me Create 3 Static Ads With AI From Scratch, 2026-04-05
-Last touched: 2026-09-18
+**Amended 2026-11-11, and this is the cleanest confirmation the claim has had.** Jon Loomer, 11 November 2026, asserts a performance improvement outright: "the ads I've created so far aren't perfect, but I'm actually getting better results than I was with the ads I created myself." **No number of any kind accompanies it.** No cost per result, no spend, no window, no sample, no control arm, and the comparison is against his own remembered prior output. The only quantity in the transcript is production time, "a couple of hours start to finish", which is a production-cost figure, which is the exact category this claim says every AI-creative advantage falls into.
+
+**So the first outright "better results" sentence from a high-credibility Meta operator arrives with the same evidence shape as all the rest, and the rule is unchanged.** We do not write that AI creative performs better. The control architecture he credits for the improvement is worth having on its own terms and is banked separately at [[Creative Science#CR-291|CR-291]].
+
+Sources: Mark Builds Brands, i tried running only AI ads for 30 days, 2026-04-29; Fraser Cottrell, The New Way to Make Ai UGC in 2026, 2026-03-15; Fraser Cottrell, Watch Me Create 3 Static Ads With AI From Scratch, 2026-04-05; Jon Loomer, How I'm Using AI to Create Meta Ads, 2026-11-11
+Last touched: 2026-11-11
 
 ### CR-168 · Thirty days of AI-only ads produced $2.2M in sales on just over $1M of spend, with no control period
 Tier: T2 · Status: active
@@ -3429,3 +3433,22 @@ Tier: T1 (for what Meta published) · Status: active
 **Where it sits.** [[Creative Science#CR-286|CR-286]] caught Meta publishing a vendor's uncontrolled case study as evidence; this is the adjacent failure, a real third-party study restated into a claim it does not make. **CR-286 needed no source check because the post cited nobody. This one needed a source check precisely because it cited somebody**, which is the new reading rule: a Meta figure WITH a footnote now earns a read of the footnoted source, because the citation is where the substitution hides. The law-layer rule that an unfootnoted Meta figure is the default expectation (2026-10-24) gains its mirror: a footnoted one is not thereby verified.
 Sources: Meta for Business News, "meta-marketing-summit-hongkong-2026", dated 29 October 2026 on its own page (card reads 27 October), read in full 2026-10-31; NCSolutions, "Five Keys to Advertising Effectiveness", e-book edition, pages 1 to 6 read at source 2026-10-31
 Last touched: 2026-10-31
+
+### CR-291 · The only AI-creative control architecture on file that an operator says changed his own output: a written rule book updated on every correction, adversarial review roles including one reviewer whose sole job is catching AI-looking visuals, and the operator's own published corpus as the voice reference
+Tier: T3 · Status: active
+**The problem he states first is a production problem, not a performance one**, and it is the one [[Meta Delivery & Andromeda#MD-124|MD-124]] creates: "the most painful part of meta ads for me is the ad creation itself. Specifically, the images and videos." Ten assets per ad object, multiplied again by aspect ratios, is more creative than a one-or-two-ads-at-a-time operator produces by hand.
+
+**Seven controls, as he names them.**
+1. **A written rule book** for how ads are planned and created, updated every time he corrects something or says what he likes. His own consequence, and it is the right way round: "the ads I'm creating early are bound to be the worst ads that I create."
+2. **Named adversarial roles**: copywriters, creative directors, designers and an auditor, each with a defined job and each "told to push back when judging the work."
+3. **Voice fitted from his own corpus**, "hundreds and hundreds of pages of blog posts", rather than from a described tone.
+4. **A maintained list of AI-tell words and phrases**, his own, supplied as a block list.
+5. **A voice-editor role** that audits every piece of copy against that corpus.
+6. **One reviewer whose single job is catching AI-looking visuals**, run twice: on the design plan before a single image exists, and again on the finished images and videos.
+7. **Three human approval gates after two automated rounds**: messaging, visual direction, mock-ups. Results of previous batches are read in before the next batch starts.
+
+**The mechanism claim under all seven, and it is the part worth keeping.** Without operator-specific input the output is "generic and based on the average of advertising advice found on the internet." That names why an unconstrained AI creative pipeline converges on the category median, which is the same failure a batch slop gate catches in copy from the other direction, and it is an argument for the rule book rather than for the tool.
+
+**Guards, and they are heavy.** One operator, zero numbers, no control, no window, no spend, no sample. The pipeline is his own and the episode closes on a paid-membership promotion. The only quantity anywhere in the transcript is cycle time, "a couple of hours start to finish", which is a production-cost figure. **Build a pipeline from this list. Do not quote it as evidence that the pipeline works.** His performance assertion and why it changes nothing are at [[Creative Science#CR-169|CR-169]].
+Sources: Jon Loomer, How I'm Using AI to Create Meta Ads, 2026-11-11
+Last touched: 2026-11-11
