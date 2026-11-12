@@ -1031,3 +1031,17 @@ From the Google Ads Developer Blog release of 2026-11-04, read in full on 2026-1
 **The honest limit.** T1 for what the field is and for the caveat, on the [[Meta Delivery & Andromeda#MD-099|MD-099]] precedent of T1-for-existence-only. Nothing here was tested on an account we hold, and no client on the current book runs Google lead forms with an offline upload, so this is a trap recorded before we can walk into it rather than one we hit.
 Sources: Google Ads Developer Blog, "Data Manager API now supports Google Ads call conversions and row-level diagnostics", 2026-11-04, read in full 2026-11-09 via the Feedburner Atom body
 Last touched: 2026-11-09
+
+### GA-101 - Google now shows invalid-traffic savings and credits in the Ads UI, and states it cut advertiser exposure to invalid LEADS by an average of 30% so far in 2026
+Tier: T1 . Status: active
+Google Ads & Commerce blog, 12 November 2026, by Keerat Sharma, VP and General Manager, Ads Privacy and Safety. Three things are stated, and only the first is a product change.
+
+**One, a new surface.** An **Invalid Traffic Overview Card** is rolling out in Google Ads so advertisers can see, "for the first time", both the amount saved by invalid traffic being blocked before billing and the credits Google issues automatically when it is detected after the fact.
+
+**Two, the billing position restated.** "We don't charge for invalid traffic, and our multi-layered defenses have always worked in the background to catch it before an advertiser is billed. We issue a credit when it's detected later, **where appropriate and possible**." Carry that qualifier verbatim; it is the whole difference between a guarantee and a best effort.
+
+**Three, the only number in the post.** "So far in 2026, we've reduced advertiser exposure to invalid **leads** by an average of 30% through continuous system upgrades." Note the word is leads, not clicks, which makes it the more relevant figure for the lead-gen accounts we actually run, and note what is absent: no baseline, no denominator, no definition of an invalid lead, no methodology, and no per-account or per-vertical breakdown. It is a platform-wide average asserted in a marketing post.
+
+**What to do with it, and what not to.** When a client's Google spend or lead count looks lower than expected, this card is now a place to look before building a theory, and the credit line is worth reading on any account where we have previously eaten a spike of junk form-fills. It is **not** a reason to tell a client their junk-lead problem is solved, and the 30% must never be quoted to a client as something their account received. Same reporting discipline as our own rule on never calling last-click-zero spend "wasted": a platform-reported saving is the platform's own measurement of its own work. Adjacent to the financial-scam-ads enforcement work in the same author's earlier post.
+Sources: Google Ads & Commerce blog, We're introducing a new transparency tool for invalid traffic in Google Ads, 2026-11-12 (read in full 2026-11-12)
+Last touched: 2026-11-12

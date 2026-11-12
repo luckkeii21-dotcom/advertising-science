@@ -1,0 +1,11 @@
+import io
+P = r"E:\claude code marketing skill\.claude\skills\advertising-science\SKILL.md"
+t = io.open(P, encoding="utf-8").read()
+anchor = "\n**The 2026-10-26 pass adds a dated erosion of operator control on Google"
+assert t.count(anchor) == 1
+new = """
+**The 2026-11-12 pass establishes that the DEPTH of Meta's ranking funnel is a per-request prediction, not a constant (MD-199, T1).** Meta Engineering, 11 November, "Intelligent Delivery". A model called the Resource Core Model, 6B sparse and 20M dense parameters, runs ONCE before candidate retrieval and predicts, for that single ad request, its outcome, its compute consumption and its latency impact. Downstream engines then decide which region serves it, which CPU or accelerator generation it lands on, how much of that host it gets, and "the number of ads to rank for each request in each ranking stage, what ad candidates enter the pool, and much more". Meta credits the allocation layer alone with "an additional ~10% improvement in ads ranking performance" from 2017 through the first half of 2026, and reports the request-identification model as about 20% better than its predecessor on offline benchmarks. **The operating consequence is a mechanism, never a lever.** It is the first T1 statement that two identical requests to two identical ad sets can receive genuinely different serving treatment, including explicitly cheaper treatment when the predicted return is low and when the host is busy: "as the host load increases, the performance trade-off rises and resource-intensive low-impact work is trimmed first". That is a named cause sitting underneath the volatility SC-102 tells low-volume accounts to accept, and a reason cheap impressions can be structurally thinner rather than merely colder. **There is no advertiser control, no reporting surface and no published methodology behind either percentage, so neither number is ours to quote and nothing in today's law changes what we do tomorrow.** One further T1 the same pass: Google shipped an Invalid Traffic Overview Card showing blocked-traffic savings and automatic credits, and claims invalid-LEAD exposure down "an average of 30%" so far in 2026, with no baseline and no definition (GA-101).
+"""
+t = t.replace(anchor, new + anchor, 1)
+io.open(P, "w", encoding="utf-8", newline="\n").write(t)
+print("law ok", t.count("MD-199"))

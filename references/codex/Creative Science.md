@@ -576,6 +576,8 @@ Observed spend shape inside the unit, from the same session: "there's one in her
 Sources: Dr. Matt Shiver, New Facebook Ads Features & Changes (July 2026), 2026-06-30
 Last touched: 2026-08-20
 
+**The operator whose objection this claim corrected restated the obsolete version on 2026-11-11, after the correction, and defended it as intentional:** "You'll never see an itemized breakdown for each permutation. And that's not a bug. It's a feature." Read precisely, half of that is still true and half is not. There is still no readout crossing a primary text with a headline, so the COPY half of a 3-2-2 remains unmeasurable and his paired-322 workaround is still the only route to it. Per-MEDIA spend is visible, so the blanket "never" is wrong as stated. The distinction matters whenever this claim is quoted to decide whether a flexible ad can be read: ask which half of the unit is in question before answering. Source added 2026-11-12, as a dated restatement rather than new evidence.
+
 ### CR-044 · Slow creative approval pipelines are a hard scaling blocker
 Tier: T3 · Status: active
 Clients requiring strict brand-guideline compliance and multi-step signoff before a creative goes live drastically slow speed of execution, which he lists among hard disqualifiers for scaling. The testing engine's throughput is the scaling constraint, so anything throttling creative velocity throttles scale.
