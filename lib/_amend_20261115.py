@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+import io, re
+
+P = (r"E:\claude code marketing skill\Obsidian God-level Marketing Vault"
+     r"\God-level Marketing\wiki\science\Attribution & Incrementality.md")
+t = io.open(P, encoding="utf-8").read()
+
+AMEND = {
+"AT-138": u"""
+**THE METHODOLOGY REPORT WAS READ 2026-11-15, AND THE GAP THIS CLAIM OPENED IS NOW CLOSED.** The report named here, "Building a Suite of Truth: A Hybrid Approach to Measuring Incrementality" at `facebook.com/business/f/1094917955782254`, is **ungated**: the URL 302s to a `scontent` PDF, 20 pages, no form and no login. It was downloaded and read in full. Seven claims came out of it, [[Attribution & Incrementality#AT-139|AT-139]] through [[Attribution & Incrementality#AT-145|AT-145]]. The headline result for this claim: the report **does carry the magnitude** the blog series omitted, a median 31% undervaluation and a 1.45X minimum multiplier off 307 studies ([[Attribution & Incrementality#AT-139|AT-139]]), and it **does not carry the test-design parameters** this claim predicted it would ([[Attribution & Incrementality#AT-144|AT-144]]). Both halves are now recorded, so this report never needs re-reading.
+
+**ONE CORRECTION TO THE GEN Z FOOTNOTE ABOVE, AND IT IS A CONFLICT BETWEEN TWO META DOCUMENTS.** This claim records the footnote on "Gen Z is twice as likely to make a purchase without clicking" as "91 advertisers across the 'Retail' vertical between 11/26/2023 - 02/27/2024 (Meta, North America)", read off the blog post on 2026-11-13. **The report prints the same claim with a different footnote**: "research shows that on average Gen Z consumers are twice as likely to make a purchase without clicking on an ad compared to other age groups", footnote 5, "**GlobalWebIndex, 2024, n=955,000 global excluding China**". Two Meta documents, the same sentence, two unrelated sources: one is Meta's own in-platform view-through data on 91 retail advertisers in North America, the other is a third-party global consumer survey of 955,000 people. **Neither footnote is quoted here as the correct one, because the pair cannot both be.** The 2026-11-13 pass examined this exact sentence against [[Attribution & Incrementality#AT-120|AT-120]], concluded the retail footnote was the right one and banked nothing against AT-120. That conclusion was reached before the report existed in this lane and should now be read as unsettled rather than as settled. The operating rule either way is unchanged and is reinforced: **never quote the Gen Z figure**. The method lesson generalises at [[Attribution & Incrementality#AT-145|AT-145]].
+""",
+"AT-131": u"""
+**2026-11-15 SUPPLIES THE CONTRAST CASE, AND IT SHOWS A FOOTNOTE CAN BE PRESENT AND STILL BUY NOTHING.** The "Building a suite of truth" report at [[Attribution & Incrementality#AT-139|AT-139]] carries **four branded case studies and every one is footnoted**, which is the opposite of the no-footnote state this claim records on the agency page. The footnotes are the finding: all four point at **Meta's own case-study pages**, not at a study, a dataset or a method. H&M, footnoted to Meta for Business May 2025, "incremental ROAS tripled in key markets from 2023 to 2025" and "overall attributed ROAS in the first half of 2025 grew by 21% year over year", with **no market named, no spend and no baseline ROAS**. Huel, Meta for Business April 2024, "6X increase in marginal return", "11.8M more incremental people reached", "10% average increase in brand favorability", with **no window and no starting marginal return**. Product Madness, Meta for Business April 2025, "3X improvement in reporting accuracy for Android campaigns" and "5X improvement in reporting accuracy for iOS campaigns" across five game titles. **"3X improvement in reporting accuracy" is an uninterpretable unit**: accuracy is bounded and does not take a multiplier, and the report never defines what was multiplied. Laura Geller, Meta for Business September 2024, the one case with a stated design and real numbers, banked at [[Attribution & Incrementality#AT-141|AT-141]]. **So the rule this claim sets stands and sharpens: check whether the footnote points at a method or only at another Meta page.** Three of these four point at another Meta page.
+
+**One structural detail from the H&M case worth keeping on its own.** Its four pillars are named: MMM for quarterly cross-channel allocation, an **agile digital MMM for weekly incrementality reporting that replaced the legacy last-click model**, Brand Lift and Conversion Lift for in-channel optimisation, and a calibration framework across multiple lift methodologies. The weekly-MMM-replacing-last-click pillar is the only published instance in this file of an advertiser retiring last-click as the operating report rather than supplementing it. No method, no vendor and no cost given, so it is a shape to recognise and not a plan.
+""",
+"AT-132": u"""
+**CUSTOM ATTRIBUTION NOW HAS A MECHANISM, FROM THE REPORT READ 2026-11-15, AND IT IS A TEST RATHER THAN A SETTING.** This claim records Meta's one-line definition, "custom attribution counts it the way your business already counts it", and notes the option appears nowhere else in this file. The "Building a suite of truth" report at [[Attribution & Incrementality#AT-139|AT-139]] describes how it works, verbatim: "Advertisers that share click-level attribution information **can now test a new feature** to share the value they assign to different touchpoints in the consumer journey, and optimise for the outcomes as measured in their analytics tools. For example an advertiser may assign more credit to Meta for a conversion where Meta was the first click in the user's cross publisher journey before a purchase. With custom attribution ads, we can incorporate this attribution insight into our optimisation, **focusing on finding more people who are likely to discover the advertiser's products on Meta first.**"
+
+**Three things that changes.** The prerequisite is real and excludes most accounts: the advertiser must already send **click-level** attribution data, not conversion events. The optimisation target becomes the advertiser's own analytics model rather than Meta's, so the setting hands the credit rule to the client's stack. And the worked example is a **first-click** weighting, which turns delivery toward discovery rather than toward closing, the opposite direction from the dynamic-product-ad behaviour at [[Attribution & Incrementality#AT-040|AT-040]]. **Status is "can now test a new feature", so it is not general availability**, and the report gives no eligibility criteria, no rollout date and no figure. Not reachable on our accounts: none of our clients sends click-level attribution data. Named in the same report alongside value optimisation, where Meta's own worked example is that two purchases at $100 outweigh four at $20.
+""",
+"AT-022": u"""
+**2026-11-15: META PUBLISHES THE SAME ORDERING AS A NAMED, DRAWN LADDER, WHICH IS ONE STEP MORE EXPLICIT THAN THE PROSE RANKING ALREADY RECORDED.** The report at [[Attribution & Incrementality#AT-139|AT-139]] prints a figure Meta calls "**the ladder of incrementality**", introduced as "a helpful paradigm to consider how reliable a method typically is in measuring causality, as techniques get closer to capturing causality as you climb". Three named rungs, bottom to top: **rules-based attribution** ("effective at measuring correlated results" and "lack the ability to make a causal distinction, which can lead to biased estimates of incrementality"), **modeling**, meaning MMM and statistical MTA ("still relying on statistical or econometric modeling as opposed to direct experimentation"), and **experiments** ("Randomised experiments sit on the top rung, offering the most robust means to measure incrementality"). A second figure maps each rung to a job: attribution for "develop and test hypotheses" on speed and tactics, modeling for "granular insights" on scope, experiments to "align ground truth" on accuracy and validation.
+
+**Tier stays T3 and that is deliberate.** This is the third interested-platform statement of our ordering, after Meta's prose at [[Attribution & Incrementality#AT-138|AT-138]] and Google's at [[Attribution & Incrementality#AT-115|AT-115]], and all three sell the instrument they put on top. What the ladder adds is the concession list rather than the ranking: Meta states that experiments trade against "speed, interpretability, simplicity, cost and comprehensiveness in measuring cross channel impact", that "Experiments are not always feasible to run in all scenarios", and that "Each methodology has value and a role to play". **Meta also omits geo testing from the ladder entirely**, naming only "Conversion Lift, Geo-Based Testing" as a pair on one adjacent table, so the rung this file puts above Conversion Lift is not ranked by Meta at all. Our own pyramid still has the level Meta's lacks.
+""",
+"AT-002": u"""
+**META'S OWN COMPARABLE FIGURE ARRIVED 2026-11-15 AND IT IS HIGHER, ON A SELECTED SAMPLE.** Meta publishes "an average 46% lift in performance" for campaigns optimised for incremental conversions, off 37 conversion lift studies, 30 advertisers, 8 verticals, July to October 2024, **restricted to studies where statistically significant incrementality was already detected in at least one cell**. Full entry and the selection problem at [[Attribution & Incrementality#AT-141|AT-141]]. Against Haus's up-to-38% here, Meta's number is larger, from the interested party, and from a sample that excludes the studies that found nothing, while Haus's is a geo-holdout read across its own book. **This claim's DTC-versus-omnichannel split has no counterpart in Meta's figure**: Meta reports no vertical breakdown beyond the count of 8, so the signal-completeness mechanism proposed here is neither confirmed nor contradicted. Keep Haus's 38% as the figure to quote, because its sample is not conditioned on the outcome.
+"""
+}
+
+for cid, para in AMEND.items():
+    m = re.search(r"^### " + cid + r" .*?(?=^Sources:)", t, re.S | re.M)
+    assert m, cid
+    block = m.group(0)
+    assert para.strip()[:40] not in block, cid + " already amended"
+    newblock = block.rstrip("\n") + "\n" + para
+    t = t[:m.start()] + newblock + t[m.end():]
+    # bump Last touched on that block only
+    s = t.index("### " + cid + " ")
+    e = t.find("\n### ", s + 5)
+    e = len(t) if e == -1 else e
+    seg = t[s:e]
+    seg2 = re.sub(r"^Last touched: \d{4}-\d{2}-\d{2}", "Last touched: 2026-11-15",
+                  seg, count=1, flags=re.M)
+    assert seg2 != seg, cid + " last-touched not bumped"
+    t = t[:s] + seg2 + t[e:]
+    print("amended", cid)
+
+io.open(P, "w", encoding="utf-8").write(t)
+print("new length", len(t))
