@@ -116,8 +116,33 @@ One thing the plain-fetch body does NOT give, and it is a real loss against WebF
 | Google Ads Announcements | https://support.google.com/google-ads/announcements/9048695 | Scrape dated entries | Daily |
 | Ads & Commerce Blog | https://blog.google/products/ads-commerce/ | RSS: https://blog.google/products/ads-commerce/rss/ | Daily |
 | Google Ads API release notes | https://developers.google.com/google-ads/api/docs/release-notes | Page diff | Weekly (Mon) |
-| Ads Developer Blog | https://ads-developers.googleblog.com/ | RSS: http://feeds.feedburner.com/GoogleAdsDeveloperBlog | Weekly (Mon) |
+| Advertising and Measurement Developer Blog (was the Ads Developer Blog) | https://developers.google.com/ads/blog | RSS: **https://developers.google.com/ads/blog/rss.xml**. The Feedburner feed below is dead weight from 11 November 2026, see the section on it | Weekly (Mon) |
 | Merchant Center changelog | https://support.google.com/merchants/announcements/6192467 | Scrape dated entries | Weekly (Mon) |
+
+### The Google Ads Developer Blog moved on 11 November 2026, and the old feed goes stale WITHOUT failing (found 2026-11-16)
+
+Google announced on 10 November that the blog moves off Blogger to the Google for Developers platform, renamed the
+**Google Advertising and Measurement Developer Blog**. From 11 November, `ads-developers.googleblog.com` redirects to
+`developers.google.com/ads/blog`, and Google's own wording on the feed is the sentence that matters to this lane:
+"While blog updates will be reflected only in our new RSS feed after November 10, the existing feed will continue to
+be accessible to avoid breaking existing integrations."
+
+**So the failure mode is silence, not an error.** Today the Feedburner feed answered HTTP 200 with 25 entries and a
+newest item of 10 November. The new feed answered HTTP 200 with 25 entries and a newest item of **12 November**,
+"Manage responsive YouTube ads with Display & Video 360 API v5", which is absent from the Feedburner feed entirely.
+**One post had already been missed, on the first weekly check after the cutover.** A source that keeps returning a
+healthy body while quietly stopping at a fixed ceiling is the worst shape this watchlist has, because nothing in a
+status code or a byte count flags it.
+
+**Method changes, effective now.**
+
+- Read `https://developers.google.com/ads/blog/rss.xml`. It carries the most recent 25 posts and supports no
+  product-specific feeds.
+- Posts published before 2024 live on Blogger only and are not in the new feed. They are listed on the archive page.
+- Keep no fallback to Feedburner. It will answer forever and it will never move again.
+- **The general lesson, and it applies to every source in this file: a flat ceiling plus a healthy HTTP 200 is not
+  evidence a source is being read.** Where a source announces a migration, verify the new route carries something
+  the old one does not, which is what settled it today.
 
 ## TikTok
 
@@ -190,6 +215,30 @@ The 10 November run fired at 03:58 IST and reproduced the defect exactly as desc
 **Why it matters rather than being cosmetic.** The failure direction is the dangerous one. A cache that reads one day older than it is makes a staleness check report a source as unread when it was read, and in the other direction it means a genuinely missed day cannot be distinguished from a correctly-read one by date alone. The 2026-10-24 and 2026-10-28 entries above both caught runs that claimed a commit that had not happened, and both used file mtime and the date keys to prove it. **Those adjudications rely on the date key being the run's own date.**
 
 Fix: use the same clock `last_run` uses. Until it is fixed, read any `last_checked` on an automated source as "the run dated this or the next day", and trust the hand-written business-news keys, which are stamped on the IST date.
+
+## Advertising Standards: diff the WHOLE document line by line, not the section hashes (2026-11-16)
+
+The section-hash map at `cache/adstd-sections-2026-10-19.json` cannot be reproduced from the saved raw text. Our
+own re-derivation off `document.body.innerText` lands 20 to 60 characters below every stored section length and
+matches 0 of 16 hashes, because the stored map was cut on DOM headings and the raw text is cut on text lines.
+**Two derivations, so a stored hash and a fresh hash are not comparable and a mismatch against that file means
+nothing.** Four of the sixteen names are in-page navigation rather than text lines and do not appear in
+`innerText` at all, in either locale.
+
+**What works instead, and it is both simpler and stronger.** Unified line diff of today's `innerText` against the
+last saved raw text for the same locale. Today, US against `cache/adstd-raw-us-2026-11-02.json`: 335 lines to 344,
+**the only difference is nine added navigation lines at the top** (Transparency Center, Policies, Enforcement,
+Security, Features, Governance, Research tools, Reports, English (US)). Every policy line is identical, which
+covers the four sections the section-locator cannot reach. That also explains the innerText total the 9 November
+entry warned against reading: 32,502 to 32,608 is the nav chrome and nothing else.
+
+**UK raw text now has its first baseline**, `cache/adstd-raw-uk-2026-11-16.json`, 33,689 characters. The 11-02 UK
+line-length vector is **not** comparable to a fresh read: it is 266 entries truncated at the footer, today's read
+is 447 entries including nav, so index-by-index comparison is invalid and was not attempted. 12 of 12 body
+sections located. The UK diff starts tomorrow against today's text.
+
+Save the raw text for both locales on every read. It is 33 KB and it is the only artefact that makes the next
+day's diff possible.
 
 ## Source-quality gaps recorded 2026-08-24
 
