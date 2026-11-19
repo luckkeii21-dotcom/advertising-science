@@ -9,6 +9,47 @@ tags: [advertising-science, log]
 
 One line per Research run: what came in, what changed. Quiet days get one line and nothing else.
 
+## 2026-11-19 (Thursday) - 1 transcript in - 4 claims added, 8 amended, 0 contested, 1 law amended
+
+**Meta published a clock on its own ranking changes, and the clock is the finding.** Two Meta Engineering posts, both dated 18 November, both about ads ranking models, read in full. Meta's sentence: "Today it can take over a year for every proven technique to reach every applicable model", target three months. [[Meta Delivery & Andromeda#MD-198|MD-198]] established that there is no single ads model and said in its own limits that no refresh cadence was disclosed anywhere. It is disclosed now, so the fleet is heterogeneous in time as well as in architecture. 4 claims added, 1 law paragraph.
+
+**Harvest: 1 new transcript, 0 errors.** 12 of 12 roster channels listed clean, 0 RSS fallbacks, which is the first fully clean listing in this run series after yesterday's `nick-theriot` 404. That channel listed fine today, so the 404 was transient and no handle check is owed. 5 uploads skipped as too short, 2 with no subtitles, 0 out of window. Unextracted backlog after this run: 0.
+
+**Banked [[Meta Delivery & Andromeda#MD-202|MD-202]], T1: a proven ranking improvement takes over a year to reach every model it applies to.** Both posts are one series about one system, Standard Model Templates plus the agent layer that propagates techniques across it, so they are one claim. What is new against MD-198: the propagation latency, a published shelf life on Meta's own work ("an innovation that delivers gains today may be superseded within a couple of model development cycles"), the template system named and described, and a second two-year scoreboard. The scoreboard: per-model engineering time down 92%, 5,000+ technique-model combinations, 80 new techniques, 0.63% average offline gain at neutral serving capacity, 0.86% cumulative online lift over 70% of models by count. Against MD-198's 0.66% offline and summed 0.36% online from a separate publication, that is **two independent first-party sources landing in the same order of magnitude, so the under-one-percent rule holds and "Meta changed their model" still cannot explain an account moving by tens of percent in a week.** The ship gate is published too: offline normalized-entropy gain, no regression on training or inference cost guardrails, then a statistically significant online A/B win, with regression rate weighed alongside average gain. The agent figures (60% of propagation since March 2026, 3x productivity, median 4x compute reduction, $45M+ savings) are all hedged in Meta's own text and are banked as context, not as evidence.
+
+**The operating use of MD-202 is narrow and it is worth stating plainly.** A tactic that genuinely works on one placement or one optimisation event and genuinely does not work on another, at the same time, in the same account, can be a propagation gap rather than audience quality or creative. Hold it as an explanation. Never offer it as a diagnosis, because Meta names no model, no surface and no technique, and nothing in it is readable from an ad account.
+
+**Banked [[Auction Mechanics & Bidding#AU-103|AU-103]], T1: the first outside figure that connects a model-quality metric to advertiser money, with the cost attached.** arXiv 2611.24283v1, announced today, abstract read, full paper not opened. A deployed real-time-bidding system compresses user history into tokens computed offline and reused across candidates. Published both halves: 0.81% relative offline normalized-entropy reduction and +4.65% on a business metric reflecting advertiser conversion value plus +2.96% clicks, bought for **15% more online inference cost per request**. The company is not named. Treat the 0.81%-to-4.65% ratio as one data point from one unnamed system and never as a conversion factor for Meta's own NE figures. The cost side is the counterweight to [[Meta Delivery & Andromeda#MD-199|MD-199]]: a win that costs 15% more per request is exactly the work an allocation layer declines to run when predicted return is low.
+
+**Banked [[Google Auction & Smart Bidding#GA-103|GA-103]], T1: Seasonality Adjustments are now available in Demand Gen.** Google's November Demand Gen drop, 18 November, read in full. One control in it generalises, and it is the first dated instrument for the problem a short promotion creates in any Smart Bidding campaign. It has to be entered before the promotion, since its stated purpose is bidding competitively from day one. Everything else in the post is catalogue and e-commerce machinery that our lead-generation book cannot use: product feeds on YouTube, checkout links, Universal Commerce Protocol checkout, two creator-boost products. **Its six case-study figures are not evidence.** Petco 6% purchase intent, 71% store visits, 30% Omni ROAS; Javvy 50% conversion rate; Shopee 9x ROI. No baseline, no window, no spend, no control group and no method for any of them.
+
+**Banked [[Meta Delivery & Andromeda#MD-203|MD-203]], T4: a five-item test for whether a practitioner source has stopped keeping up.** Jon Loomer, 18 November, 9 minutes, 1,445 words, read in full. Zero numbers, zero account data, zero settings, so the tier is T4 and the claim is reasoning. Banked anyway because this engine reads twelve practitioner channels every day and nothing in the codex held a source-staleness test. The five tells: constant remarketing strategies; arguing broad can never match remarketing while not understanding the remarketing that happens naturally inside broad; building complicated structures to exert control; switching off setting after setting in the ad set while optimising for a conversion; stopping and starting on small samples. **Every one of the five is already a law here, reached independently**, which is the reason to record the convergence: MD-052, MD-075, SC-014, MD-015 and MD-014, LS-006 and LS-055. He also states the conflict of interest that produces the pattern, from his own case: "deep down I also knew that this evolution was an attack on my brand as a targeting guy." The limit is in the video, and it is recorded in the claim: the closing line "avoid making anyone your go-to source on anything" sits immediately before a pitch to subscribe to his own weekly tips for a year.
+
+**Watchlist: 0 errors, 5 new items across 3 feeds, 3 of the 5 banked or recorded.** Meta Engineering 2 new, both read in full and both inside MD-202, feed build 18 November. Meta Newsroom 2 new, both opened and read in full. Google Ads & Commerce 1 new, read in full, banked at GA-103. Google Ads announcements flat at 396 answer IDs, 0 added, 0 removed. TikTok SDK changelog unchanged at v0.1.8. arXiv cs.IR: 21 items in the Thursday 05:00 UTC build, 2 passed the advertising filter, 1 banked.
+
+**The second Newsroom item is a fifth re-check on [[Learning & Signal#LS-076|LS-076]] and it moves the boundary a step closer.** Muse added Loblaw on 18 November as its first Canadian retail partner. Still no advertising content, one occurrence of the word ads anywhere on the page and that is site furniture, and the launch-day sentence about ad systems is not repeated. **What is new is that a purchase now completes inside the agent:** catalogue in, basket built, checkout done in Muse, with brand preferences and food allergies remembered between sessions. A transaction that completes inside Muse touches no website, so it fires no pixel and has no landing page, which would be an unmeasurable conversion even if an ad surface existed. Still no ad inventory, no lead capture and no advertiser-facing surface. Amendment recorded, tier unchanged, re-check again on the next Muse post.
+
+**The first Newsroom item was read and not banked.** "Our Approach to Updating Our Commercial Terms of Service", 18 November. Meta has put the proposed commercial-terms updates on hold after objections from news publishers about how the terms apply to its web crawlers, and has defined a three-phase consultation. It is a crawler and publisher-rights matter with no advertising content, so no claim.
+
+**The second arXiv hit was read and not banked.** "UniRank: Benchmarking Ranking Models for Unified Sequential Modeling and Feature Interaction", a v3 replacement. It is a genuine advertising-adjacent paper rather than a filter false positive, benchmarking 15 unified ranking models on five public datasets with an open PyTorch toolkit. It carries no operational claim and no deployed result, so it is recorded here and not given an ID.
+
+**Meta for Business News, the one Daily scrape source the script does not handle: not read today, and that is a coverage gap rather than a clean check.** The Playwright MCP server failed to connect in this session on every profile, and the two shelves were not fetched. Under the 2026-11-10 pass-2 rule the UK shelf needs two reads several hours apart to count as covered, so a session with no read at all is a blind day on this source. `slugs_seen_cumulative` is untouched.
+
+**TikTok Newsroom, the for-Business blog and the Marketing API what's-new page were not retried.** Permanent India geo-block per the standing ruling, not an outage.
+
+**Weekly (Monday) sources not due today.**
+
+### Skill law layer
+
+**Updated.** One paragraph added to the Current laws hot layer for the 2026-11-19 pass, carrying the over-a-year propagation latency and the three-month target, the shelf-life sentence, the second under-one-percent scoreboard, the published ship gate, and AU-103's paired win-and-cost figures with the guard that the ratio is not a conversion factor. It sits above the 2026-11-12 MD-199 paragraph.
+
+### Gaps noticed
+
+- **We still cannot name which Meta model serves which placement, and MD-202 raises the price of not knowing.** MD-198 made a placement-level gap an architecture fact. MD-202 makes it a dated architecture fact: two placements can be a year apart in which improvements they carry. Our own placement breakdowns remain the only instrument, and now there is a second reason to read them more often. Nothing in either post maps a model to a surface.
+- **Normalized entropy now has one bridge to advertiser money and one is not enough.** AU-103 is the first figure anywhere in this codex translating an NE gain into advertiser conversion value, at roughly 6 to 1. It is one unnamed system, one experiment, read at abstract level. A second independent sighting would make it usable; until then every NE figure stays directional and the ratio stays unquotable.
+- **No browser in this session, and today it cost the whole Meta for Business News lane.** Yesterday the plain fetch returned HTTP 400 and WebFetch carried the source. Today the lane was not read at all. The honest statement is a blind day on one Daily source, and the cheap fix is to attempt the plain fetch for that source from inside `watchlist_check.py` so it never depends on a browser or on a session tool being available.
+- **The skipped-upload counters are still not tracked over time.** Five too-short and two no-subtitle skips today, the same shape as yesterday's eight and two. A per-channel standing count of what the length and subtitle filters reject would show a channel changing format rather than going quiet. Logged for the fourth time, not built.
+
 ## 2026-11-18 (Wednesday) - 1 transcript in - 1 claim added, 3 amended, 0 contested, 0 laws amended
 
 **A new Meta ad product was read off the live screen for the first time, and it is a pair of products rather than the one we had banked. 1 claim added, [[Meta Delivery & Andromeda#MD-201|MD-201]], T1. 3 amended: [[Auction Mechanics & Bidding#AU-032|AU-032]], where the author of the claim now argues against his own mechanism, [[Meta Delivery & Andromeda#MD-181|MD-181]], and [[Learning & Signal#LS-076|LS-076]] on its fourth Muse re-check. No law changed.**
@@ -46,6 +87,42 @@ One line per Research run: what came in, what changed. Quiet days get one line a
 - **We have never once opened Reach Planner on a client account.** MD-201 is read entirely off somebody else's UK screen, and the cheapest thing that would make it ours is five minutes per account checking whether Reach Planner and the two burst products are even present on Phoenix Truxx, SJR Commercial and StayWell. That is a presence check, not a spend decision, and it would also date the rollout on US accounts, which is the one thing MD-181 and MD-201 together still cannot say.
 - **The forecast tool is a free read on auction demand and we are not using it.** The day tiers and the hour-of-day addressable-audience numbers in MD-201 come out of Reach Planner without spending anything. If it is present on a client account it prices peak against standard days for that geography, which is the same demand signal our CPM claims argue about with no instrument. Unverified for a lead-gen geography, worth the five minutes above before it is believed.
 - **`nick-theriot` returned HTTP 404 on listing.** First failure on that handle in this run series. One error does not retire a channel; two consecutive ones should trigger a handle check against the Channel Roster.
+
+**Teacher run, 2026-11-18.** Lesson 084 shipped: The Guarantee Was On Delivery, The Price Was A Forecast.
+Auction Mechanics & Bidding, harvest-driven on today's own entry above, and **the race was won for the first time
+since 3 November**: MD-201 and the AU-032 amendment were on the board at topic-lock, so this pass taught claims
+hours old instead of yesterday's. Pointer ADVANCES 1 to 2 under the documented exception, fifth use, because the
+harvest-driven topic is the pointer's own. Inbox empty for the twenty-sixth consecutive run, nothing graded.
+
+The lesson teaches one idea with two threads hanging off it. A reservation guarantee covers delivery and nothing
+else, and the price it locks is a forecast off the same demand the auction prices. Carried on the live screen
+numbers: four controls greying out at once, the one-country-or-region floor, GBP 6.00 peak CPM against GBP 4.50
+nine days earlier, the midnight default window at 14.9 million addressable against 33.3 million for 07:00 to
+13:00, and GBP 33,010.67 for one six-hour flight. Second thread is the method one and the better one: AU-032's
+author found the edge of his own mechanism rather than another example inside it, which is a scope finding and not
+a falsification, and the operator rule survives on the share cost and the one-impression cap.
+
+**Correction against this file and against MD-201, and it is arithmetic.** Both state that the roughly 10x
+cheap-reach gap comes almost entirely from the frequency term. It does not. MD-053's identity gives 13.3x, which
+decomposes into a **4.44x CPM term (20 to 4.50)** and a **3x frequency term (3 to 1)**, so frequency is the
+smaller of the two factors. The 10x conclusion is unaffected and only the stated cause changes. A dated correction
+sentence was appended to MD-201 by this pass. **The sentence above in today's research entry is left as written
+and should be reconciled by the next research run.**
+
+Carried onto the accounts with the 15 November Phoenix Truxx pull, labelled as Ads Manager counts throughout:
+statics at a $32.29 CPM and 2.0053 frequency is **$64.75 per thousand people reached**, a metric nobody on this
+account has read, and lesson 081's split of the same 2.0053 into 1.5477 repetition times 1.2957 distinct ads per
+person is what says that campaign is broad rather than tired. SJR Commercial 1.70x account average, 2.19x dump.
+The free move named is the gap this entry already flagged: **Reach Planner prices day tiers and hour-of-day
+addressable audience for a geography without spending anything, and nobody has opened it on any of our five
+accounts.** It joins the Experiments tab as the second no-cost item on the unowned list, fourth day open for
+Experiments.
+
+**Video: built and filed. `video/2026-11-18-lesson-084.mp4`, **3m 32.0s inside the 2 to 4 minute band**, 7.1 MB, 1920x1080 at 30fps, 6,360 frames, 12 scenes, rendered in 5m 51s. Check passed with **0 errors, 0 runtime errors, 0 layout issues across 9 samples, 0 motion errors and 25/25 text checks at WCAG AA**, carrying only the two standing warnings this series always carries. Contact sheet inspected before filing: every scene lands, no overflow and no clipped cell. **Twenty-sixth lesson video on file.** One process note worth keeping: the first render attempt stalled with an empty transaction directory and produced nothing in nine minutes, so it was killed and re-run, and the second attempt completed in under six. A stalled hyperframes render shows no error and no output, which looks identical to a slow one.**
+
+**CR-292 and CR-293 are still untaught.** Yesterday's pass flagged them as the first thing this run should take
+and they were displaced by material banked hours before topic-lock. They are a day old now and go to the front of
+the queue tomorrow, ahead of MD-194 at sixteen days and MD-198 at thirteen.
 
 ## 2026-11-17 (Tuesday) - 1 transcript in - 2 claims added, 4 amended, 0 contested, 0 laws amended
 
